@@ -1,0 +1,39 @@
+{
+  "name": "spectra/theme",
+  "description": "Spectra is fast, fully customizable & beautiful WordPress theme",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Spectra",
+      "email": "hello@wpspectra.com"
+    }
+  ],
+  "type": "wordpress-theme",
+  "scripts": {
+    "install:dev": "@composer update",
+    "install:prod": "@composer update --no-dev",
+    "install:cs": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+    "phpcs": "phpcs -s",
+    "phpcbf": "phpcbf",
+    "phpstan": "phpstan"
+  },
+  "minimum-stability": "dev",
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    },
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "composer/installers": "^1.5 || ^2.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+    "php-parallel-lint/php-parallel-lint": "^1.3",
+    "szepeviktor/phpcs-psr-12-neutron-hybrid-ruleset": "dev-master",
+    "szepeviktor/phpstan-wordpress": "^1.1",
+    "wp-coding-standards/wpcs": "^2.3"
+  }
+}
