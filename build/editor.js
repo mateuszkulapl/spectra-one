@@ -30,21 +30,6 @@ const {
 const {
   __
 } = wp.i18n;
-function StickyHeaderAttributes(settings) {
-  const includeBlock = ["core/template-part"];
-  if (includeBlock.includes(settings.name)) {
-    if (settings.attributes) {
-      settings.attributes = Object.assign(settings.attributes, {
-        SWTStickyHeader: {
-          type: "boolean",
-          default: false
-        }
-      });
-    }
-  }
-  return settings;
-}
-wp.hooks.addFilter("blocks.registerBlockType", "swt/sticky-header-attributes", StickyHeaderAttributes);
 const StickyHeader = createHigherOrderComponent(BlockEdit => {
   return props => {
     console.log(props);
@@ -73,6 +58,21 @@ const StickyHeader = createHigherOrderComponent(BlockEdit => {
   };
 }, "StickyHeader");
 addFilter("editor.BlockEdit", "swt/sticky-header", StickyHeader);
+function StickyHeaderAttributes(settings) {
+  const includeBlock = ["core/template-part"];
+  if (includeBlock.includes(settings.name)) {
+    if (settings.attributes) {
+      settings.attributes = Object.assign(settings.attributes, {
+        SWTStickyHeader: {
+          type: "boolean",
+          default: false
+        }
+      });
+    }
+  }
+  return settings;
+}
+wp.hooks.addFilter("blocks.registerBlockType", "swt/sticky-header-attributes", StickyHeaderAttributes);
 
 /***/ }),
 

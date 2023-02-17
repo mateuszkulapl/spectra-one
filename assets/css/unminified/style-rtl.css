@@ -11,3 +11,11 @@
 .site-content {
   flex-grow: 1;
 }
+
+header.sticky-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+}

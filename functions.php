@@ -26,4 +26,4 @@ const SWT_DIR  = __DIR__ . SWT_DS;
 require_once SWT_DIR . 'inc/utility/dom.php';
 require_once SWT_DIR . 'inc/utility.php';
 require_once SWT_DIR . 'inc/scripts.php';
-//require_once SWT_DIR . 'inc/extensions/sticky-header.php';
+require_once SWT_DIR . 'inc/extensions/sticky-header.php';
