@@ -211,11 +211,30 @@
       },
       "button": {
 				"typography": {
-					"fontSize": "14px"
+					"fontSize": "var(--wp--preset--font-size--small)",
+          "fontWeight": "500",
+          "lineHeight": "1.5em"
 				},
-				"border": {
-					"radius": "6px"
-				}
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "var(--wp--preset--color--background)"
+				},
+        "spacing": {
+          "padding": {
+            "top": "0.5em",
+            "right": "1em",
+            "bottom": "0.5em",
+            "left": "1em"
+          }
+        },
+        "border": {
+          "radius": "0.375em"
+        },
+        ":hover": {
+          "color": {
+            "background": "var(--wp--preset--color--secondary)"
+          }
+        }
 			},
       "h1": {
         "typography": {
