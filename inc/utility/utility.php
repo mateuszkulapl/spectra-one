@@ -4,9 +4,6 @@ declare( strict_types=1 );
 
 namespace Spectra\Theme;
 
-use function get_template_directory_uri;
-use function trailingslashit;
-
 /**
  * Get template directory uri
  *

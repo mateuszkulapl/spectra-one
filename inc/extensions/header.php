@@ -79,7 +79,7 @@ function sticky_header_js():string {
             if( header ) {
                 const height = header.offsetHeight;
                 if( height ) {
-                    body.style.paddingTop = height + 'px' 
+                    body.style.paddingTop = height + 'px';
                 }
             }
         });
