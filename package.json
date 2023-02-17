@@ -3,13 +3,19 @@
     "description": "Spectra theme.",
     "author": "Brainstorm Force",
     "license": "GPL-2.0-or-later",
-    "main": "assets/js/index.js",
     "version": "1.0.0",
     "scripts": {
-        "start": "wp-scripts start"
+        "start": "wp-scripts start",
+        "build": "wp-scripts build --output-path=assets/js",
+        "minify": "grunt minify",
+        "release" : "grunt release"
     },
     "devDependencies": {
         "@lodder/grunt-postcss": "^3.1.1",
+        "@wordpress/blocks": "^12.3.0",
+        "@wordpress/components": "^23.3.0",
+        "@wordpress/i18n": "^4.26.0",
+        "@wordpress/icons": "^9.17.0",
         "@wordpress/scripts": "^25.3.0",
         "grunt": "^1.6.1",
         "grunt-contrib-clean": "^2.0.1",

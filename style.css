@@ -8,21 +8,9 @@
  * Tested up to: 6.1.1
  * Requires PHP: 7.4
  * Version: 1.0.0
- * License: GPL-2.0-or-later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * License: GNU General Public License v2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: spectra
  * Domain Path: /languages
  * Tags: full-site-editing, block-patterns, block-styles, custom-logo, editor-style, featured-images, sticky-post, wide-blocks, translation-ready, grid-layout, one-column, two-columns, three-columns, four-columns, e-commerce, news, portfolio
 */
-
-/* Temporary  */
-
-.wp-site-blocks {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.site-content {
-    flex-grow: 1;
-}

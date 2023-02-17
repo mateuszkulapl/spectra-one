@@ -211,8 +211,8 @@ module.exports = function (grunt) {
                     },
 
                     {
-                        src: 'assets/css/unminified/woocommerce-rtl.css',
-                        dest: 'assets/css/minified/woocommerce.min-rtl.css',
+                        src: 'assets/css/unminified/compatibility/woocommerce-rtl.css',
+                        dest: 'assets/css/minified/compatibility/woocommerce.min-rtl.css',
                     },
 
                 ]
@@ -256,11 +256,11 @@ module.exports = function (grunt) {
     // Style
     grunt.registerTask('style', ['scss', 'postcss:style', 'rtl']);
 
-    // Grunt release - Create installable package of the local files
-    grunt.registerTask('release', ['clean:zip', 'copy:main', 'compress:main', 'clean:main']);
-
     // min all
     grunt.registerTask('minify', ['style', 'uglify:js', 'cssmin:css']);
+
+    // Grunt release - Create installable package of the local files
+    grunt.registerTask('release', ['clean:zip', 'copy:main', 'compress:main', 'clean:main']);
 
     grunt.util.linefeed = '\n';
 };

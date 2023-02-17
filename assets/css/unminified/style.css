@@ -1,3 +1,13 @@
 .equal-padding {
-  padding: 1em;
+  padding: 10em;
+}
+
+.wp-site-blocks {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex-grow: 1;
 }

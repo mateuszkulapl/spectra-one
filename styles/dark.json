@@ -3,34 +3,31 @@
     "version": 2,
     "title": "Dark",
     "settings": {
-      "custom": {
-        "patternStyle": "default"
-      },
-      "color": {
+      "color": { 
         "palette": [
             {
                 "name": "Primary",
-                "color": "#4F46E5",
+                "color": "#C7D2FE",
                 "slug": "primary"
               },
               {
                 "name": "Secondary",
-                "color": "#6366F1",
+                "color": "#A5B4FC",
                 "slug": "secondary"
               },
               {
                 "name": "Foreground",
-                "color": "#111827",
+                "color": "#FFFFFF",
                 "slug": "foreground"
               },
               {
                 "name": "Heading",
-                "color": "#1F2937",
+                "color": "#FFFFFF",
                 "slug": "heading"
               },
               {
                 "name": "Body",
-                "color": "#4B5563",
+                "color": "#E5E7EB",
                 "slug": "body"
               },
               {
@@ -40,17 +37,17 @@
               },
               {
                 "name": "Outline",
-                "color": "#E5E7EB",
+                "color": "#4B5563",
                 "slug": "outline"
               },
               {
                 "name": "Surface",
-                "color": "#F9FAFB",
+                "color": "#1F2937",
                 "slug": "surface"
               },
               {
                 "name": "Background",
-                "color": "#FFFFFF",
+                "color": "#111827",
                 "slug": "background"
               },
               {
