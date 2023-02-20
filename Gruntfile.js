@@ -3,7 +3,7 @@ module.exports = function (grunt) {
 
     // Project configuration.
     const autoprefixer = require('autoprefixer');
-    const sass = require('node-sass');
+    const sass = require('sass');
     const pkgInfo = grunt.file.readJSON('package.json');
 
     grunt.initConfig({

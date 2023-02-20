@@ -1,11 +1,9 @@
 node_modules/
 wp/
 wp-content/
-src/
 vendor/
 *.zip
 *.lock
 *cache
 package-lock.json
 composer.lock
-bun.lockb
