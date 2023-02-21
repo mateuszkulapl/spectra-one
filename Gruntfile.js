@@ -22,7 +22,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: 'sass/',
-                        src: ['style.scss'],
+                        src: ['**.scss'],
                         dest: 'assets/css/unminified',
                         ext: '.css'
                     },

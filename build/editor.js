@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/extensions/sticky-header/index.js":
-/*!***********************************************!*\
-  !*** ./src/extensions/sticky-header/index.js ***!
-  \***********************************************/
+/***/ "./src/block-extensions/header.js":
+/*!****************************************!*\
+  !*** ./src/block-extensions/header.js ***!
+  \****************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -30,9 +30,8 @@ const {
 const {
   __
 } = wp.i18n;
-const StickyHeader = createHigherOrderComponent(BlockEdit => {
+const Header = createHigherOrderComponent(BlockEdit => {
   return props => {
-    console.log(props);
     const {
       attributes,
       name,
@@ -46,7 +45,7 @@ const StickyHeader = createHigherOrderComponent(BlockEdit => {
         title: "Header Settings",
         initialOpen: true
       }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
-        label: __("Sticky Header", "spectra-theme"),
+        label: __("Sticky Header", "swt-theme"),
         checked: SWTStickyHeader,
         onChange: () => setAttributes({
           SWTStickyHeader: !SWTStickyHeader
@@ -56,9 +55,9 @@ const StickyHeader = createHigherOrderComponent(BlockEdit => {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props));
     }
   };
-}, "StickyHeader");
-addFilter("editor.BlockEdit", "swt/sticky-header", StickyHeader);
-function StickyHeaderAttributes(settings) {
+}, "Header");
+addFilter("editor.BlockEdit", "swt/header", Header);
+function HeaderAttributes(settings) {
   const includeBlock = ["core/template-part"];
   if (includeBlock.includes(settings.name)) {
     if (settings.attributes) {
@@ -72,7 +71,100 @@ function StickyHeaderAttributes(settings) {
   }
   return settings;
 }
-wp.hooks.addFilter("blocks.registerBlockType", "swt/sticky-header-attributes", StickyHeaderAttributes);
+wp.hooks.addFilter("blocks.registerBlockType", "swt/header-attributes", HeaderAttributes);
+
+/***/ }),
+
+/***/ "./src/block-extensions/responsive.js":
+/*!********************************************!*\
+  !*** ./src/block-extensions/responsive.js ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+
+const {
+  createHigherOrderComponent
+} = wp.compose;
+const {
+  InspectorControls
+} = wp.editor;
+const {
+  addFilter
+} = wp.hooks;
+const {
+  ToggleControl,
+  Panel,
+  PanelBody,
+  PanelRow
+} = wp.components;
+const {
+  __
+} = wp.i18n;
+const Responsive = createHigherOrderComponent(BlockEdit => {
+  return props => {
+    const {
+      attributes,
+      name,
+      setAttributes
+    } = props;
+    // Adding compatibility with spectra plugin. So the slugs are same as the plugin.
+    const {
+      UAGHideDesktop,
+      UAGHideTab,
+      UAGHideMob
+    } = attributes;
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelBody, {
+      title: "Responsive Settings",
+      initialOpen: true
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
+      label: __("Hide Desktop", "swt-theme"),
+      checked: UAGHideDesktop,
+      onChange: () => setAttributes({
+        UAGHideDesktop: !UAGHideDesktop
+      })
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
+      label: __("Hide Tablet", "swt-theme"),
+      checked: UAGHideTab,
+      onChange: () => setAttributes({
+        UAGHideTab: !UAGHideTab
+      })
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
+      label: __("Hide Mobile", "swt-theme"),
+      checked: UAGHideMob,
+      onChange: () => setAttributes({
+        UAGHideMob: !UAGHideMob
+      })
+    }))))));
+  };
+}, "Responsive");
+if (!spectra.is_spectra_plugin) {
+  addFilter("editor.BlockEdit", "swt/responsive", Responsive);
+}
+function ResponsiveAttributes(settings) {
+  if (settings.attributes) {
+    settings.attributes = Object.assign(settings.attributes, {
+      UAGHideDesktop: {
+        type: "boolean",
+        default: false
+      },
+      UAGHideTab: {
+        type: "boolean",
+        default: false
+      },
+      UAGHideMob: {
+        type: "boolean",
+        default: false
+      }
+    });
+  }
+  return settings;
+}
+if (!spectra.is_spectra_plugin) {
+  wp.hooks.addFilter("blocks.registerBlockType", "swt/responsive-attributes", ResponsiveAttributes);
+}
 
 /***/ }),
 
@@ -161,7 +253,9 @@ var __webpack_exports__ = {};
   !*** ./src/editor.js ***!
   \***********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _extensions_sticky_header_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./extensions/sticky-header/index */ "./src/extensions/sticky-header/index.js");
+/* harmony import */ var _block_extensions_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./block-extensions/header.js */ "./src/block-extensions/header.js");
+/* harmony import */ var _block_extensions_responsive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block-extensions/responsive.js */ "./src/block-extensions/responsive.js");
+
 
 }();
 /******/ })()

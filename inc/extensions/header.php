@@ -7,7 +7,7 @@ namespace Spectra\Theme;
 add_filter( 'render_block', SWT_NS . 'swt_header', 10, 2 );
 
 /**
- * Sticky header support.
+ * Header support.
  *
  * @param $block_content
  * @param $block
@@ -40,7 +40,7 @@ function swt_header( string $block_content, array $block){
  *
  * @return string
  */
-function swt_header_css():string {
+function swt_header_css($css):string {
 
     // Sticky header option.
     $css_output = array(
@@ -48,9 +48,10 @@ function swt_header_css():string {
             'position' => 'fixed',
             'top' => '0',
             'left' => '0',
+            'width' => '100%'
         ),
     );
-    $css = swt_parse_css($css_output);
+    $css .= swt_parse_css($css_output);
     return $css;
 }
 

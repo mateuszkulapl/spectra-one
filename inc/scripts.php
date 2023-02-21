@@ -31,13 +31,13 @@ add_action( 'wp_enqueue_scripts', SWT_NS . 'enqueue_frontend_scripts' );
 	}
 
 	/* Load Theme Styles*/
-	wp_enqueue_style( SWT_SLUG . '-css' , $css_uri . '/style' . $file_prefix . '.css', [], SWT_VER );
+	wp_enqueue_style( SWT_SLUG , $css_uri . '/style' . $file_prefix . '.css', [], SWT_VER );
 
 	$swt_inline_css = apply_filters( 'swt_dynamic_theme_css', '' );
 	if( $swt_inline_css ) {
-		wp_add_inline_style( SWT_SLUG . '-css', $swt_inline_css );
+		wp_add_inline_style( SWT_SLUG, $swt_inline_css );
 	}
-	
+
     /* Load Woocommerce styles */
     if( class_exists( 'WooCommerce' ) ) {
         wp_enqueue_style( SWT_SLUG . '-woocommerce' , $css_uri . '/compatibility/woocommerce' . $file_prefix . '.css', [], SWT_VER );
@@ -53,7 +53,7 @@ add_action( 'wp_enqueue_scripts', SWT_NS . 'enqueue_frontend_scripts' );
  }
 
 
- add_action( 'admin_enqueue_scripts', SWT_NS . 'enqueue_admin_scripts' );
+//add_action( 'admin_enqueue_scripts', SWT_NS . 'enqueue_admin_scripts' );
 
  /**
  * Enqueue Admin Scripts.
@@ -81,8 +81,25 @@ add_action( 'wp_enqueue_scripts', SWT_NS . 'enqueue_frontend_scripts' );
 
  }
 
- add_action( 'enqueue_block_editor_assets', SWT_NS . 'enqueue_editor_scripts' );
+ //add_action( 'enqueue_block_assets', SWT_NS . 'enqueue_block_scripts' );
 
+/**
+ * Enqueue Block Scripts.
+ *
+ * @since x.x.x
+ *
+ * @return void
+ */
+
+ function enqueue_block_scripts(): void {
+	if ( false === apply_filters( 'swt_enqueue_block_scripts', true ) ) {
+		return;
+	}
+
+ }
+
+ add_action( 'enqueue_block_editor_assets', SWT_NS . 'enqueue_editor_scripts' );
+ 
 /**
  * Enqueue Editor Scripts.
  *
@@ -104,4 +121,26 @@ add_action( 'wp_enqueue_scripts', SWT_NS . 'enqueue_frontend_scripts' );
 
 	wp_enqueue_script( SWT_SLUG . '-editor' );
 
+	wp_localize_script(
+		SWT_SLUG . '-editor',
+		SWT_SLUG,
+		localize_editor_script()
+	);
  }
+
+ /**
+ * Localize editor script.
+ *
+ * @since x.x.x
+ *
+ * @return mixed|void
+ */
+function localize_editor_script() {
+
+	return apply_filters(
+		'spectra_editor_localize',
+		[
+			'is_spectra_plugin' =>  defined( 'UAGB_VER' )
+		]
+	);
+}
