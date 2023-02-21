@@ -54,24 +54,24 @@ function swt_responsive( string $block_content, array $block){
 function swt_responsive_css($css):string {
 
     $css_desktop_output = array(
-        'body .swt-hide-desktop' => array(
-            'display' => 'none',
+        '.swt-hide-desktop' => array(
+            'display' => 'none !important',
         ),
     );
 
     $css .= swt_parse_css($css_desktop_output, '1025', '');
 
     $css_tablet_output = array(
-        'body .swt-hide-tablet' => array(
-            'display' => 'none ',
+        '.swt-hide-tablet' => array(
+            'display' => 'none !important ',
         ),
     );
 
     $css .= swt_parse_css($css_tablet_output, '769', '1024');
 
     $css_mobile_output = array(
-        'body .swt-hide-mobile' => array(
-            'display' => 'none',
+        '.swt-hide-mobile' => array(
+            'display' => 'none !important',
         ),
     );
 
