@@ -28,3 +28,9 @@ require_once SWT_DIR . 'inc/utility/all.php';
 require_once SWT_DIR . 'inc/scripts.php';
 require_once SWT_DIR . 'inc/block-styles/all.php';
 require_once SWT_DIR . 'inc/extensions/all.php';
+
+/**
+ * Admin Functions
+ */
+
+ require_once SWT_DIR . 'inc/admin/welcome-notice.php';

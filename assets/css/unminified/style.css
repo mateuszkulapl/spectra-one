@@ -1,7 +1,3 @@
-.equal-padding {
-  padding: 10em;
-}
-
 .wp-site-blocks {
   display: flex;
   flex-direction: column;

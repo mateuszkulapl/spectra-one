@@ -10,6 +10,7 @@ module.exports = env => {
 
 		entry: {
 			editor: './src/editor.js',
+			welcome_notice: './src/admin/welcome-notice.js',
 		},
 
 		plugins: [

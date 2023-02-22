@@ -35,6 +35,15 @@ module.exports = function (grunt) {
                         dest: 'assets/css/unminified/compatibility',
                         ext: '.css'
                     },
+
+                       /* Admin */
+                       {
+                        expand: true,
+                        cwd: 'sass/admin/',
+                        src: ['**.scss'],
+                        dest: 'assets/css/unminified/admin',
+                        ext: '.css'
+                    },
                 ]
             }
         },
@@ -101,6 +110,16 @@ module.exports = function (grunt) {
                             '!*-rtl.css',
                         ],
                         dest: 'assets/css/unminified/compatibility',
+                        ext: '-rtl.css'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'assets/css/unminified/admin',
+                        src: [
+                            '*.css',
+                            '!*-rtl.css',
+                        ],
+                        dest: 'assets/css/unminified/admin',
                         ext: '-rtl.css'
                     },
                     {
@@ -213,6 +232,10 @@ module.exports = function (grunt) {
                     {
                         src: 'assets/css/unminified/compatibility/woocommerce-rtl.css',
                         dest: 'assets/css/minified/compatibility/woocommerce.min-rtl.css',
+                    },
+                    {
+                        src: 'assets/css/unminified/admin/welcome-notice-rtl.css',
+                        dest: 'assets/css/minified/admin/welcome-notice.min-rtl.css',
                     },
 
                 ]
