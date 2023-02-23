@@ -7,34 +7,36 @@
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:group {"tagName":"header","style":{"spacing":{"padding":{"top":"30px","right":"18px","bottom":"30px","left":"19px"}}},"backgroundColor":"background","layout":{"type":"constrained"}} -->
-<header class="wp-block-group has-background-background-color has-background" style="padding-top:30px;padding-right:18px;padding-bottom:30px;padding-left:19px"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-    <div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-        <div class="wp-block-group"><!-- wp:site-logo {"width":32,"shouldSyncIcon":true,"className":"is-style-default"} /-->
+<!-- wp:group {"tagName":"header","layout":{"type":"constrained"}} -->
+<header class="wp-block-group"><!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
+<div class="wp-block-columns is-not-stacked-on-mobile" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","orientation":"horizontal"}} -->
+<div class="wp-block-group"><!-- wp:site-logo {"width":32,"style":{"spacing":{"padding":{"top":"0","right":"var:preset|spacing|x-small","bottom":"0","left":"0"}}}} /-->
 
-            <!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","letterSpacing":"1px"}},"fontSize":"small"} /-->
-        </div>
-        <!-- /wp:group -->
+<!-- wp:site-title {"style":{"typography":{"letterSpacing":"1px"}}} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
 
-        <!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"center"},"style":{"spacing":{"blockGap":"24px"}}} -->
-        <!-- wp:navigation-link {"label":"Home","url":"#","kind":"custom","isTopLevelLink":true} /-->
+<!-- wp:column {"verticalAlignment":"center","width":"60%","layout":{"type":"default"}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} -->
+<!-- wp:navigation-link {"label":"Home","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-        <!-- wp:navigation-link {"label":"Shop","url":"#","kind":"custom","isTopLevelLink":true} /-->
+<!-- wp:navigation-link {"label":"Shop","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-        <!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
+<!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-        <!-- wp:navigation-link {"label":"Blog","url":"#","kind":"custom","isTopLevelLink":true} /-->
+<!-- wp:navigation-link {"label":"Blog","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-        <!-- wp:navigation-link {"label":"Contact","url":"#","kind":"custom","isTopLevelLink":true} /-->
-        <!-- /wp:navigation -->
+<!-- wp:navigation-link {"label":"Contact","url":"#","kind":"custom","isTopLevelLink":true} /-->
+<!-- /wp:navigation -->
 
-        <!-- wp:buttons -->
-        <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-blue-quote"} -->
-            <div class="wp-block-button is-style-blue-quote"><a class="wp-block-button__link wp-element-button">Get Started</a></div>
-            <!-- /wp:button -->
-        </div>
-        <!-- /wp:buttons -->
-    </div>
-    <!-- /wp:group -->
-</header>
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"},"style":{"spacing":{"blockGap":"0"}},"UAGHideMob":true} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Getting Started</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></header>
 <!-- /wp:group -->
