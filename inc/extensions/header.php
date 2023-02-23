@@ -62,7 +62,6 @@ function swt_header_css($css):string {
  */
 function swt_header_js():string {
     $js = <<<JS
-
         function docReady(fn) {
             // see if DOM is already available
             if (document.readyState === "complete" || document.readyState === "interactive") {
@@ -71,14 +70,11 @@ function swt_header_js():string {
             } else {
                 document.addEventListener("DOMContentLoaded", fn);
             }
-        }  
-
+        }
         docReady(function() {
-
              // Sticky header option.
             const header = document.querySelector( '.sticky-header' );
             const body = document.querySelector( 'body' );
-
             if( header ) {
                 const height = header.offsetHeight;
                 if( height ) {

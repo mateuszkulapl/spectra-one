@@ -25,7 +25,7 @@ function get_uri( string $path = '' ): string {
  * @param  mixed $max_media  Max Media breakpoint.
  * @return string             Generated CSS.
  */
-function swt_parse_css( array $css_output = array(), mixed $min_media = '', mixed $max_media = '' ) {
+function swt_parse_css( $css_output = array(), $min_media = '', $max_media = '' ) {
 
 	$parse_css = '';
 	if ( is_array( $css_output ) && count( $css_output ) > 0 ) {
