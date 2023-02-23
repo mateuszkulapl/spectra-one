@@ -21,7 +21,7 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 						>
 							<PanelRow>
 								<ToggleControl
-									label={__("Hide Desktop", "swt-theme")}
+									label={__("Hide Desktop", "spectra")}
 									checked={UAGHideDesktop}
 									onChange={() =>
 										setAttributes({
@@ -33,7 +33,7 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 
 							<PanelRow>
 								<ToggleControl
-									label={__("Hide Tablet", "swt-theme")}
+									label={__("Hide Tablet", "spectra")}
 									checked={UAGHideTab}
 									onChange={() =>
 										setAttributes({
@@ -44,7 +44,7 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 							</PanelRow>
 							<PanelRow>
 								<ToggleControl
-									label={__("Hide Mobile", "swt-theme")}
+									label={__("Hide Mobile", "spectra")}
 									checked={UAGHideMob}
 									onChange={() =>
 										setAttributes({

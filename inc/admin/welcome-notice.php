@@ -22,7 +22,7 @@ function render_welcome_notice() {
 
 	$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
 	$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
-	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/admin';
+	$css_uri     = get_uri() . 'assets/css/' . $dir_name . '/admin';
 
 	/* Check and added rtl prefix */
 	if ( is_rtl() ) {
@@ -30,50 +30,50 @@ function render_welcome_notice() {
 	}
 
 	/* Load Theme Styles*/
-	wp_enqueue_style( SWT_SLUG . '-welcome-notice' , $css_uri . '/welcome-notice' . $file_prefix . '.css', [], SWT_VER );
+	wp_enqueue_style( SWT_SLUG . '-welcome-notice', $css_uri . '/welcome-notice' . $file_prefix . '.css', array(), SWT_VER );
 
-	$js    = SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/' ;
-	$asset = SCRIPT_DEBUG ? require SWT_DIR . 'build/welcome_notice.asset.php'  : require SWT_DIR . 'assets/js/welcome_notice.asset.php';
+	$js    = SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
+	$asset = SCRIPT_DEBUG ? require SWT_DIR . 'build/welcome_notice.asset.php' : require SWT_DIR . 'assets/js/welcome_notice.asset.php';
 	$deps  = $asset['dependencies'];
 
-	wp_register_script( SWT_SLUG . '-welcome-notice', $js . 'welcome_notice.js', $deps , SWT_VER , true );
+	wp_register_script( SWT_SLUG . '-welcome-notice', $js . 'welcome_notice.js', $deps, SWT_VER, true );
 
 	wp_enqueue_script( SWT_SLUG . '-welcome-notice' );
 
 	wp_localize_script(
 		SWT_SLUG . '-welcome-notice',
 		SWT_SLUG,
-		localize_welcome_notice_js($plugin_status)
+		localize_welcome_notice_js( $plugin_status )
 	);
 
 	ob_start();
 	?>
 <div class="notice notice-info swt-welcome-notice">
-    <button type="button" class="notice-dismiss"><span class="screen-reader-text">Close this notice.</span></button>
-    <div class="notice-content">
-        <h2 class="notice-title">
-            <?php esc_html_e( 'Install Spectra plugin.', 'spectra' ); ?>
-        </h2>
-        <p class="description">
-            <?php esc_html_e( 'This is the description.', 'spectra' ); ?>
-        </p>
-        <div class="notice-actions">
-            <button id="swt-install-spectra" class="button button-primary button-hero">
-                <span class="dashicons dashicons-update hidden"></span>
-                <span class="text">
-                    <?php
+	<button type="button" class="notice-dismiss"><span class="screen-reader-text">Close this notice.</span></button>
+	<div class="notice-content">
+		<h2 class="notice-title">
+			<?php esc_html_e( 'Install Spectra plugin.', 'spectra' ); ?>
+		</h2>
+		<p class="description">
+			<?php esc_html_e( 'This is the description.', 'spectra' ); ?>
+		</p>
+		<div class="notice-actions">
+			<button id="swt-install-spectra" class="button button-primary button-hero">
+				<span class="dashicons dashicons-update hidden"></span>
+				<span class="text">
+					<?php
 									'installed' === $plugin_status ? esc_html_e( 'Activate Spectra Plugin', 'spectra' ) : esc_html_e( 'Install & Activate Spectra Plugin', 'spectra' );
-								?>
-                </span>
-            </button>
-            <a href="https://wordpress.org/plugins/ultimate-addons-for-gutenberg/" target="_blank"
-                class="button button-secondary button-hero">
-                <?php esc_html_e( 'Learn More', 'spectra' ); ?>
-            </a>
-        </div>
-    </div>
+					?>
+				</span>
+			</button>
+			<a href="https://wordpress.org/plugins/ultimate-addons-for-gutenberg/" target="_blank"
+				class="button button-secondary button-hero">
+				<?php esc_html_e( 'Learn More', 'spectra' ); ?>
+			</a>
+		</div>
+	</div>
 </div>
-<?php
+	<?php
 	echo wp_kses_post( ob_get_clean() );
 }
 
@@ -148,7 +148,7 @@ function welcome_notice_display_condition(): bool {
 	$activated_time = get_option( 'swt_install' );
 
 	if ( ! empty( $activated_time ) && time() - intval( $activated_time ) > WEEK_IN_SECONDS ) {
-		update_option( 'close-welcome-notice' , 'yes' );
+		update_option( 'close-welcome-notice', 'yes' );
 
 		return false;
 	}
@@ -183,8 +183,8 @@ function localize_welcome_notice_js( $plugin_status ):array {
 	return array(
 		'nonce'         => wp_create_nonce( 'swt-dismiss-welcome-notice' ),
 		'ajaxUrl'       => esc_url( admin_url( 'admin-ajax.php' ) ),
-		'pluginStatus'   => $plugin_status,
-		'pluginSlug'     => 'ultimate-addons-for-gutenberg',
+		'pluginStatus'  => $plugin_status,
+		'pluginSlug'    => 'ultimate-addons-for-gutenberg',
 		'activationUrl' => esc_url(
 			add_query_arg(
 				array(

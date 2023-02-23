@@ -3,6 +3,9 @@ var __webpack_exports__ = {};
 /*!*************************************!*\
   !*** ./src/admin/welcome-notice.js ***!
   \*************************************/
+document.addEventListener('DOMContentLoaded', () => {
+  handleWelcomeNotice();
+});
 function handleWelcomeNotice() {
   const {
     activating,
@@ -67,9 +70,6 @@ function handleWelcomeNotice() {
     } catch (err) {}
   });
 }
-document.addEventListener('DOMContentLoaded', () => {
-  handleWelcomeNotice();
-});
 async function installPlugin(slug) {
   return new Promise(resolve => {
     wp.updates.ajax('install-plugin', {

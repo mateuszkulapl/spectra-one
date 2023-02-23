@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+	handleWelcomeNotice();
+});
+
 function handleWelcomeNotice() {
 	const {
 		activating,
@@ -78,10 +82,6 @@ function handleWelcomeNotice() {
 
 	});
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-	handleWelcomeNotice();
-});
 
 async function installPlugin(slug) {
 	return new Promise((resolve) => {

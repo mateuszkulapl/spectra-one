@@ -1,13 +1,3 @@
-<?php
-
-/**
- * Title: Header Default
- * Slug: header-default
- * Categories: header
- * Block Types: core/template-part/header
- */
-?>
-
 <!-- wp:group {"tagName":"header","style":{"spacing":{"padding":{"top":"30px","right":"18px","bottom":"30px","left":"19px"}}},"backgroundColor":"background","layout":{"type":"constrained"}} -->
 <header class="wp-block-group has-background-background-color has-background"
     style="padding-top:30px;padding-right:18px;padding-bottom:30px;padding-left:19px">

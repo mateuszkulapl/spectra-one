@@ -120,19 +120,19 @@ const Responsive = createHigherOrderComponent(BlockEdit => {
       title: "Responsive Settings",
       initialOpen: true
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
-      label: __("Hide Desktop", "swt-theme"),
+      label: __("Hide Desktop", "spectra"),
       checked: UAGHideDesktop,
       onChange: () => setAttributes({
         UAGHideDesktop: !UAGHideDesktop
       })
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
-      label: __("Hide Tablet", "swt-theme"),
+      label: __("Hide Tablet", "spectra"),
       checked: UAGHideTab,
       onChange: () => setAttributes({
         UAGHideTab: !UAGHideTab
       })
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
-      label: __("Hide Mobile", "swt-theme"),
+      label: __("Hide Mobile", "spectra"),
       checked: UAGHideMob,
       onChange: () => setAttributes({
         UAGHideMob: !UAGHideMob
