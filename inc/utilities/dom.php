@@ -1,8 +1,15 @@
 <?php
+/**
+ * Target DOM Elements
+ *
+ * @package Spectra
+ * @author Brainstorm Force
+ * @since x.x.x
+ */
 
 declare( strict_types=1 );
 
-namespace Spectra\Theme;
+namespace Swt;
 
 use DOMDocument;
 use DOMElement;
@@ -134,7 +141,7 @@ function change_tag_name( DOMElement $element, string $name ): DOMElement {
 		return new DOMElement( $name );
 	}
 
-	$child_nodes = [];
+	$child_nodes = array();
 
 	foreach ( $element->childNodes as $child ) {
 		$child_nodes[] = $child;
@@ -173,7 +180,7 @@ function change_tag_name( DOMElement $element, string $name ): DOMElement {
  * @return array
  */
 function get_elements_by_class_name( $dom, string $class_name, string $tag = '*' ): array {
-	$elements = [];
+	$elements = array();
 
 	foreach ( $dom->getElementsByTagName( $tag ) as $element ) {
 		if ( $element->hasAttribute( 'class' ) ) {

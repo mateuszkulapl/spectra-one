@@ -1,70 +1,77 @@
 <?php
+/**
+ * Header functions
+ *
+ * @package Spectra
+ * @author Brainstorm Force
+ * @since x.x.x
+ */
 
 declare(strict_types=1);
 
-namespace Spectra\Theme;
+namespace Swt;
 
-add_filter('render_block', SWT_NS . 'swt_header', 10, 2);
+add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
 
 /**
  * Header support.
  *
- * @param $block_content
- * @param $block
+ * @param string $block_content Entire Block Content.
+ * @param array  $block Block Properties As An Array.
  * @return string
  */
-function swt_header(string $block_content, array $block)
-{
+function render_header( string $block_content, array $block ) { 
+	if ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) {
+		$dom         = dom( $block_content );
+		$sticky_item = get_dom_element( 'header', $dom );
 
-    if (isset($block['attrs']['SWTStickyHeader']) && true === $block['attrs']['SWTStickyHeader']) {
-        $dom   = dom($block_content);
-        $sticky_item = get_dom_element('header', $dom);
+		if ( ! $sticky_item ) {
+			return $block_content;
+		}
 
-        if (!$sticky_item) {
-            return $block_content;
-        }
+		$classes = $sticky_item->getAttribute( 'class' );
+		$sticky_item->setAttribute( 'class', $classes . ' sticky-header' );
 
-        $classes = $sticky_item->getAttribute('class');
-        $sticky_item->setAttribute('class', $classes . ' sticky-header');
+		$block_content = $dom->saveHTML();
 
-        $block_content = $dom->saveHTML();
+		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'header_inline_css' );
+		add_filter( 'swt_dynamic_theme_js', SWT_NS . 'header_inline_js' );
+	}
 
-        add_filter('swt_dynamic_theme_css', SWT_NS . 'swt_header_css');
-        add_filter('swt_dynamic_theme_js', SWT_NS . 'swt_header_js');
-    }
-
-    return $block_content;
+	return $block_content;
 }
 
 /**
- * Load inline css.
+ * Load header Inline Css.
  *
+ * @since x.x.x
+ * @param string $css Inline CSS.
  * @return string
  */
-function swt_header_css($css): string
-{
+function header_inline_css( string $css ): string {
 
-    // Sticky header option.
-    $css_output = array(
-        '.sticky-header' => array(
-            'position' => 'fixed',
-            'top' => '0',
-            'left' => '0',
-            'width' => '100%'
-        ),
-    );
-    $css .= swt_parse_css($css_output);
-    return $css;
+	// Sticky header option.
+	$css_output = array(
+		'.sticky-header' => array(
+			'position' => 'fixed',
+			'top'      => '0',
+			'left'     => '0',
+			'width'    => '100%',
+		),
+	);
+	$css       .= parse_css( $css_output );
+	return $css;
 }
 
 /**
- * Load inline js.
+ * Load Header Inline Js.
  *
+ * @since x.x.x
+ * @param string $js Inline JS.
  * @return string
  */
-function swt_header_js(): string
-{
-    $js = <<<JS
+function header_inline_js( string $js ): string {
+	$js = <<<JS
         function docReady(fn) {
             // see if DOM is already available
             if (document.readyState === "complete" || document.readyState === "interactive") {
@@ -87,5 +94,5 @@ function swt_header_js(): string
         });
     JS;
 
-    return $js;
+	return $js;
 }

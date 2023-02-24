@@ -1,11 +1,18 @@
 <?php
+/**
+ * Theme Helpers
+ *
+ * @package Spectra
+ * @author Brainstorm Force
+ * @since x.x.x
+ */
 
 declare( strict_types=1 );
 
-namespace Spectra\Theme;
+namespace Swt;
 
 /**
- * Get template directory uri
+ * Get template Directory Uri
  *
  * @since x.x.x
  *
@@ -14,7 +21,7 @@ namespace Spectra\Theme;
  * @return string
  */
 function get_uri( string $path = '' ): string {
-	return trailingslashit(  esc_url( get_template_directory_uri() . SWT_DS ) . $path );
+	return trailingslashit( esc_url( get_template_directory_uri() . SWT_DS ) . $path );
 }
 
 /**
@@ -25,7 +32,7 @@ function get_uri( string $path = '' ): string {
  * @param  mixed $max_media  Max Media breakpoint.
  * @return string             Generated CSS.
  */
-function swt_parse_css( $css_output = array(), $min_media = '', $max_media = '' ) {
+function parse_css( array $css_output = array(), $min_media = '', $max_media = '' ):string {
 
 	$parse_css = '';
 	if ( is_array( $css_output ) && count( $css_output ) > 0 ) {

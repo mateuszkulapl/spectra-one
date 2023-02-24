@@ -6,7 +6,7 @@
     </rule>
 		<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
-			<property name="prefixes" type="array" value="swt_"/>
+			<property name="prefixes" type="array" value="swt"/>
 		</properties>
 	</rule>
 

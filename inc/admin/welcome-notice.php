@@ -1,8 +1,15 @@
 <?php
+/**
+ * Admin Welcome Notice
+ *
+ * @package Spectra
+ * @author Brainstorm Force
+ * @since x.x.x
+ */
 
 declare(strict_types=1);
 
-namespace Spectra\Theme;
+namespace Swt;
 
 add_action('admin_notices', SWT_NS . 'render_welcome_notice', 0);
 add_action('wp_ajax_swt_dismiss_welcome_notice', SWT_NS . 'close_welcome_notice');
@@ -13,13 +20,13 @@ add_action('wp_ajax_swt_dismiss_welcome_notice', SWT_NS . 'close_welcome_notice'
  * @since x.x.x
  * @return void
  */
-function render_welcome_notice()
+function render_welcome_notice():void
 {
-	if (!welcome_notice_display_condition()) {
+	if (!welcome_notice_display_conditions()) {
 		return;
 	}
 
-	$plugin_status = get_spectra_status();
+	$plugin_status = is_spectra_plugin_installed();
 
 	$file_prefix = (SCRIPT_DEBUG) ? '' : '.min';
 	$dir_name    = (SCRIPT_DEBUG) ? 'unminified' : 'minified';
@@ -101,7 +108,7 @@ function close_welcome_notice()
  * @since x.x.x
  * @return bool
  */
-function welcome_notice_display_condition(): bool
+function welcome_notice_display_conditions(): bool
 {
 
 	// Check if plugin is active.
@@ -164,7 +171,7 @@ function welcome_notice_display_condition(): bool
  * @since x.x.x
  * @return string
  */
-function get_spectra_status(): string
+function is_spectra_plugin_installed(): string
 {
 	$status = 'not-installed';
 

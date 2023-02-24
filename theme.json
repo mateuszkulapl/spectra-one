@@ -91,17 +91,17 @@
         {
           "name": "XX Small",
           "slug": "xx-small",
-          "size": "calc(var(--wp--preset--font-size--medium,1rem)/4)"
+          "size": "calc(var(--wp--preset--font-size--medium,1rem)/2)"
         },
         {
           "name": "X Small",
           "slug": "x-small",
-          "size": "calc(var(--wp--preset--font-size--medium,1rem)/2)"
+          "size": "calc(var(--wp--preset--font-size--medium,1rem))"
         },
         {
           "name": "Small",
           "slug": "small",
-          "size": "var(--wp--preset--font-size--medium,1rem)"
+          "size": "calc(var(--wp--preset--font-size--medium,1rem)*1.5)"
         },
         {
           "name": "Medium",
@@ -111,17 +111,17 @@
         {
           "name": "Large",
           "slug": "large",
-          "size": "calc(var(--wp--preset--font-size--medium,1rem)*4)"
+          "size": "calc(var(--wp--preset--font-size--medium,1rem)*3)"
         },
         {
           "name": "X Large",
           "slug": "x-large",
-          "size": "calc(var(--wp--preset--font-size--medium,1rem)*8)"
+          "size": "calc(var(--wp--preset--font-size--medium,1rem)*4)"
         },
         {
           "name": "XX Large",
           "slug": "xx-large",
-          "size": "calc(var(--wp--preset--font-size--medium,1rem)*16)"
+          "size": "calc(var(--wp--preset--font-size--medium,1rem)*6)"
         }
       ]
     },

@@ -1,8 +1,15 @@
 <?php
+/**
+ * Load Scripts
+ *
+ * @package Spectra
+ * @author Brainstorm Force
+ * @since x.x.x
+ */
 
 declare( strict_types=1 );
 
-namespace Spectra\Theme;
+namespace Swt;
 
 add_action( 'wp_enqueue_scripts', SWT_NS . 'enqueue_frontend_scripts' );
 
@@ -13,7 +20,6 @@ add_action( 'wp_enqueue_scripts', SWT_NS . 'enqueue_frontend_scripts' );
  *
  * @return void
  */
-
 function enqueue_frontend_scripts(): void {
 	if ( false === apply_filters( 'swt_enqueue_frontend_scripts', true ) ) {
 		return;
@@ -25,7 +31,7 @@ function enqueue_frontend_scripts(): void {
 	$js_uri  = get_uri() . 'assets/js/' . $dir_name . '/';
 	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
 
-	/* Check and added rtl prefix */
+	/* RTL */
 	if ( is_rtl() ) {
 		$file_prefix .= '-rtl';
 	}
@@ -38,7 +44,7 @@ function enqueue_frontend_scripts(): void {
 		wp_add_inline_style( SWT_SLUG, $swt_inline_css );
 	}
 
-	/* Load Woocommerce styles */
+	/* Load Woocommerce Styles */
 	if ( class_exists( 'WooCommerce' ) ) {
 		wp_enqueue_style( SWT_SLUG . '-woocommerce', $css_uri . '/compatibility/woocommerce' . $file_prefix . '.css', array(), SWT_VER );
 	}
@@ -61,7 +67,6 @@ add_action( 'enqueue_block_editor_assets', SWT_NS . 'enqueue_editor_scripts' );
  *
  * @return void
  */
-
 function enqueue_editor_scripts(): void {
 	if ( false === apply_filters( 'swt_enqueue_editor_scripts', true ) ) {
 		return;
@@ -78,18 +83,18 @@ function enqueue_editor_scripts(): void {
 	wp_localize_script(
 		SWT_SLUG . '-editor',
 		SWT_SLUG,
-		swt_localize_editor_script()
+		localize_editor_script()
 	);
 }
 
 /**
- * Localize editor script.
+ * Localize Editor Script.
  *
  * @since x.x.x
  *
  * @return mixed|void
  */
-function swt_localize_editor_script() {
+function localize_editor_script() {
 
 	return apply_filters(
 		'swt_editor_localize',
