@@ -9,16 +9,16 @@
 ?>
 
 <!-- wp:group {"tagName":"footer","style":{"spacing":{"padding":{"right":"var:preset|spacing|small","left":"var:preset|spacing|small","top":"var:preset|spacing|medium"}}},"layout":{"type":"constrained"}} -->
-<footer class="wp-block-group" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small"}}}} -->
+<footer class="wp-block-group" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small"}}}} -->
 <div class="wp-block-column" style="padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"var:preset|spacing|x-small","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--x-small);padding-left:0"><!-- wp:site-logo {"width":32,"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-small"}}}} /-->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--x-small);padding-left:0"><!-- wp:site-logo {"width":32,"style":{"spacing":{"padding":{"right":"var:preset|spacing|xx-small"}}}} /-->
 
 <!-- wp:site-title /--></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|small"}}},"fontSize":"small"} -->
-<p class="has-small-font-size" style="padding-bottom:var(--wp--preset--spacing--small)">Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium.</p>
+<p class="has-small-font-size" style="padding-bottom:var(--wp--preset--spacing--small)">Nisl libero ullamcorper id ipsum viverra mauris</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"heading","iconColorValue":"#1F2937","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|small","left":"var:preset|spacing|small"},"padding":{"bottom":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
