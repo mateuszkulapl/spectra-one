@@ -1,10 +1,10 @@
 <?php
 
-declare( strict_types=1 );
+declare(strict_types=1);
 
 namespace Spectra\Theme;
 
-add_filter( 'render_block', SWT_NS . 'swt_responsive', 10, 2 );
+add_filter('render_block', SWT_NS . 'swt_responsive', 10, 2);
 
 /**
  *  Responsive support.
@@ -13,35 +13,36 @@ add_filter( 'render_block', SWT_NS . 'swt_responsive', 10, 2 );
  * @param $block
  * @return string
  */
-function swt_responsive( string $block_content, array $block){
+function swt_responsive(string $block_content, array $block)
+{
 
     $responsive_classes = '';
 
-    if( isset( $block['attrs']['UAGHideDesktop'] ) && true === $block['attrs']['UAGHideDesktop'] ) {
+    if (isset($block['attrs']['UAGHideDesktop']) && true === $block['attrs']['UAGHideDesktop']) {
         $responsive_classes .= ' swt-hide-desktop';
     }
 
-    if( isset( $block['attrs']['UAGHideTab'] ) && true === $block['attrs']['UAGHideTab'] ) {
+    if (isset($block['attrs']['UAGHideTab']) && true === $block['attrs']['UAGHideTab']) {
         $responsive_classes .= ' swt-hide-tablet';
     }
 
-    if( isset( $block['attrs']['UAGHideMob'] ) && true === $block['attrs']['UAGHideMob'] ) {
+    if (isset($block['attrs']['UAGHideMob']) && true === $block['attrs']['UAGHideMob']) {
         $responsive_classes .= ' swt-hide-mobile';
     }
 
-    $dom   = dom( $block_content );
-    $first_item = get_dom_element( '*', $dom );
+    $dom   = dom($block_content);
+    $first_item = get_dom_element('*', $dom);
 
-    if ( ! $first_item ) {
+    if (!$first_item) {
         return $block_content;
     }
 
-    $classes = $first_item->getAttribute( 'class' );
-    $first_item->setAttribute( 'class', $classes . $responsive_classes );
+    $classes = $first_item->getAttribute('class');
+    $first_item->setAttribute('class', $classes . $responsive_classes);
 
     $block_content = $dom->saveHTML();
 
-    add_filter( 'swt_dynamic_theme_css', SWT_NS . 'swt_responsive_css' );
+    add_filter('swt_dynamic_theme_css', SWT_NS . 'swt_responsive_css');
 
     return $block_content;
 }
@@ -51,7 +52,8 @@ function swt_responsive( string $block_content, array $block){
  *
  * @return string
  */
-function swt_responsive_css($css):string {
+function swt_responsive_css($css): string
+{
 
     $css_desktop_output = array(
         '.swt-hide-desktop' => array(
@@ -79,4 +81,3 @@ function swt_responsive_css($css):string {
 
     return $css;
 }
-

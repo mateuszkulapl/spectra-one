@@ -76,7 +76,7 @@ function handleWelcomeNotice() {
 			if (200 === reqResponse.status) {
 				hideAndRemoveNotice();
 			}
-		} catch(err) {
+		} catch (err) {
 
 		}
 
