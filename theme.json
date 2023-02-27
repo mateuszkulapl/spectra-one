@@ -336,9 +336,6 @@
         },
         "color": {
           "text": "var(--wp--preset--color--heading)"
-        },
-        "spacing": {
-          "blockGap": "var(--wp--preset--spacing--small)"
         }
       },
       "h2": {
@@ -402,6 +399,12 @@
           "fontWeight": "var(--wp--custom--font-weight--semi-bold)",
           "lineHeight": "var(--wp--custom--line-height--large)",
           "letterSpacing": "0.25px"
+        },
+        "spacing": {
+          "margin": {
+            "top": "0",
+            "bottom": "0"
+          }
         }
       },
       "core/navigation": {

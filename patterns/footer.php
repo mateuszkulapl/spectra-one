@@ -20,8 +20,8 @@
 <p class="has-small-font-size">Nisl libero ullamcorper id ipsum viverra mauris</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:social-links {"iconColor":"heading","iconColorValue":"#1F2937","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|small","left":"var:preset|spacing|small"},"padding":{"bottom":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
-<ul class="wp-block-social-links has-icon-color is-style-logos-only" style="padding-bottom:0"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
+<!-- wp:social-links {"iconColor":"heading","iconColorValue":"var(--wp--preset--color--heading)","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|small","left":"var:preset|spacing|small"},"padding":{"bottom":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
+<ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only" style="padding-bottom:0"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 

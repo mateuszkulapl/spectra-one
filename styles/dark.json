@@ -16,11 +16,6 @@
           "slug": "secondary"
         },
         {
-          "name": "Secondary Alt",
-          "color": "rgba(199, 210, 254, 0.08)",
-          "slug": "secondary-alt"
-        },
-        {
           "name": "Foreground",
           "color": "#FFFFFF",
           "slug": "foreground"
@@ -44,11 +39,6 @@
           "name": "Outline",
           "color": "#4B5563",
           "slug": "outline"
-        },
-        {
-          "name": "Outline Alt",
-          "color": "rgba(199, 210, 254, 0.5)",
-          "slug": "outline-alt"
         },
         {
           "name": "Surface",
