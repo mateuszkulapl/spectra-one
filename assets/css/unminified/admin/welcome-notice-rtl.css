@@ -86,10 +86,6 @@
   }
 }
 
-#swt-install-spectra .dashicons {
-  display: inline-block;
-  vertical-align: middle;
-}
-#swt-install-spectra .dashicons.hidden {
-  display: none;
+#swt-install-spectra.updating-message:before {
+  color: #a7aaad;
 }

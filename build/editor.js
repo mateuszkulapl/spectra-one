@@ -37,7 +37,6 @@ const Header = createHigherOrderComponent(BlockEdit => {
       name,
       setAttributes
     } = props;
-    console.log(name);
     const {
       SWTStickyHeader
     } = attributes;

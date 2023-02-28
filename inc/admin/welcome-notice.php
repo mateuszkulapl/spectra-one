@@ -73,7 +73,6 @@ function render_welcome_notice(): void
 					</p>
 					<div class="notice-actions">
 						<button id="swt-install-spectra" class="button button-primary button-hero">
-							<span class="dashicons dashicons-update hidden"></span>
 							<span class="text">
 								<?php
 								'installed' === $plugin_status ? esc_html_e('Activate Spectra Plugin', 'spectra') : esc_html_e('Install & Activate Spectra', 'spectra');
@@ -100,7 +99,7 @@ function render_welcome_notice(): void
  * @since x.x.x
  * @return void
  */
-function close_welcome_notice()
+function close_welcome_notice():void
 {
 	if (!isset($_POST['nonce'])) {
 		return;
@@ -127,7 +126,7 @@ function welcome_notice_display_conditions(): bool
 	}
 
 	// Check if welcome notice was closed.
-	if (get_option('close-welcome-notice', 'no') === 'yes') {
+	if (get_option('swt-dismiss-welcome-notice', 'no') === 'yes') {
 		return false;
 	}
 
@@ -160,15 +159,6 @@ function welcome_notice_display_conditions(): bool
 
 	// Block editor context.
 	if ($screen->is_block_editor()) {
-		return false;
-	}
-
-	// Close notice automatically after a week.
-	$activated_time = get_option('swt_install');
-
-	if (!empty($activated_time) && time() - intval($activated_time) > WEEK_IN_SECONDS) {
-		update_option('close-welcome-notice', 'yes');
-
 		return false;
 	}
 

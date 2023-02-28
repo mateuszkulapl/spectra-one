@@ -15,13 +15,11 @@ function handleWelcomeNotice() {
 	} = spectra;
 
 	let installStatusText;
-	let loadingIcon;
 	const CloseButton = document.querySelector('.swt-welcome-notice .notice-dismiss');
 	const WelcomeNoticeContainer = document.querySelector('.swt-welcome-notice');
 	const InstallButton = document.querySelector('.swt-welcome-notice #swt-install-spectra');
 	if (InstallButton) {
 		installStatusText = InstallButton.querySelector('.text');
-		loadingIcon = InstallButton.querySelector('.dashicons');
 	}
 
 	const hideAndRemoveNotice = () => {
@@ -34,10 +32,8 @@ function handleWelcomeNotice() {
 		installStatusText.textContent = activating;
 		await activatePlugin(activationUrl);
 
-		if (loadingIcon) {
-			loadingIcon.classList.remove('dashicons-update');
-			loadingIcon.classList.add('dashicons-yes');
-		}
+		InstallButton.classList.remove('updating-message');
+		InstallButton.classList.add('updated-message');
 
 		installStatusText.textContent = done;
 		setTimeout(hideAndRemoveNotice, 2000);
@@ -45,8 +41,8 @@ function handleWelcomeNotice() {
 
 	if (InstallButton) {
 		InstallButton.addEventListener('click', async () => {
-			loadingIcon.classList.remove('hidden');
-			InstallButton.setAttribute('disabled', true);
+		InstallButton.classList.add('updating-message');
+		InstallButton.classList.add('disabled');
 
 			if (pluginStatus === 'installed') {
 				await activateSpectra();

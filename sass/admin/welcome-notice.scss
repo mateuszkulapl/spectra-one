@@ -1,6 +1,7 @@
 $text-color: #1F2937;
 $text-color-alt: #fff;
 $primary-color: #4F46E5;
+$disable-color: #a7aaad;
 $mobile: 786px;
 
 .swt-welcome-notice {
@@ -96,13 +97,7 @@ $mobile: 786px;
 }
 
 #swt-install-spectra {
-
-    .dashicons {
-        display: inline-block;
-        vertical-align: middle;
-
-        &.hidden {
-            display: none;
-        }
+    &.updating-message:before {
+        color: $disable-color;
     }
 }
