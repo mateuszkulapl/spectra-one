@@ -104,7 +104,6 @@ function parse_css( array $css_output = array(), $min_media = '', $max_media = '
  * @return string
  */
 function render_image_placeholder( string $html, array $block ): string {
-	
 	$dom    = dom( $html );
 	$figure = get_dom_element( 'figure', $dom );
 	$img    = get_dom_element( 'img', $figure );
@@ -112,10 +111,9 @@ function render_image_placeholder( string $html, array $block ): string {
 	if ( $img && $img->getAttribute( 'src' ) ) {
 		return $html;
 	}
-
-	$html = ! $html ? '<figure class="wp-block-image"><img src="" alt=""/></figure>' : $html;
-	$dom  = dom( $html );
-
+	
+	$html        = ! $html ? '<figure class="wp-block-image"><img src="" alt=""/></figure>' : $html;
+	$dom         = dom( $html );
 	$svg         = get_svg_icon( 'image', 30 );
 	$svg_dom     = dom( $svg );
 	$svg_element = get_dom_element( 'svg', $svg_dom );
@@ -197,7 +195,7 @@ function render_image_placeholder( string $html, array $block ): string {
  */
 function get_svg_icon( string $slug, int $size = null ): string {
 	ob_start();
-	require_once SWT_DIR . 'assets/svg/svgs.json';
+	echo file_get_contents( SWT_DIR . 'assets/svg/svgs.json' );
 	$icon_set = json_decode( ob_get_clean(), true );
 
 	$icon = isset( $icon_set[ $slug ] ) ? $icon_set[ $slug ] : '';
