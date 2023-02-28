@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Admin Welcome Notice
  *
@@ -20,7 +21,7 @@ add_action('wp_ajax_swt_dismiss_welcome_notice', SWT_NS . 'close_welcome_notice'
  * @since x.x.x
  * @return void
  */
-function render_welcome_notice():void
+function render_welcome_notice(): void
 {
 	if (!welcome_notice_display_conditions()) {
 		return;
@@ -57,26 +58,35 @@ function render_welcome_notice():void
 	ob_start();
 ?>
 	<div class="notice notice-info swt-welcome-notice">
-		<button type="button" class="notice-dismiss"><span class="screen-reader-text">Close this notice.</span></button>
-		<div class="notice-content">
-			<h2 class="notice-title">
-				<?php esc_html_e('Install Spectra plugin.', 'spectra'); ?>
-			</h2>
-			<p class="description">
-				<?php esc_html_e('This is the description.', 'spectra'); ?>
-			</p>
-			<div class="notice-actions">
-				<button id="swt-install-spectra" class="button button-primary button-hero">
-					<span class="dashicons dashicons-update hidden"></span>
-					<span class="text">
-						<?php
-						'installed' === $plugin_status ? esc_html_e('Activate Spectra Plugin', 'spectra') : esc_html_e('Install & Activate Spectra Plugin', 'spectra');
-						?>
-					</span>
-				</button>
-				<a href="https://wordpress.org/plugins/ultimate-addons-for-gutenberg/" target="_blank" class="button button-secondary button-hero">
-					<?php esc_html_e('Learn More', 'spectra'); ?>
-				</a>
+		<button type="button" class="notice-dismiss"><span class="screen-reader-text"><?php esc_html_e('Close this notice..', 'spectra'); ?></span></button>
+		<div class="swt-row">
+			<div class="swt-col">
+				<div class="notice-content">
+					<p class="sub-notice-title">
+						<?php esc_html_e('Spectra — WordPress Gutenberg Blocks', 'spectra'); ?>
+					</p>
+					<h2 class="notice-title">
+						<?php esc_html_e('Page builder that works with the default WordPress editor', 'spectra'); ?>
+					</h2>
+					<p class="description">
+						<?php esc_html_e('Whether you are a beginner, marketer, or professional, Spectra has the tools and resources you can rely on to succeed', 'spectra'); ?>
+					</p>
+					<div class="notice-actions">
+						<button id="swt-install-spectra" class="button button-primary button-hero">
+							<span class="dashicons dashicons-update hidden"></span>
+							<span class="text">
+								<?php
+								'installed' === $plugin_status ? esc_html_e('Activate Spectra Plugin', 'spectra') : esc_html_e('Install & Activate Spectra', 'spectra');
+								?>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="swt-col">
+				<div class="image-container">
+					<img src="<?php echo get_uri(); ?>assets/image/spectra-plugin-banner.jpg" alt="spectra-install-banner">
+				</div>
 			</div>
 		</div>
 	</div>
