@@ -9,7 +9,6 @@ const Header = createHigherOrderComponent((BlockEdit) => {
 
         const { attributes, name, setAttributes } = props;
 
-        console.log(name);
         const { SWTStickyHeader } = attributes;
         if ("header" === attributes.slug && "core/template-part" === name) {
             return (

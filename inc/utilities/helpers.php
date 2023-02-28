@@ -148,8 +148,6 @@ function render_image_placeholder( string $html, array $block ): string {
 	$figure->appendChild( $result );
 	$classes = explode( ' ', $figure->getAttribute( 'class' ) );
 
-	var_dump($classes);
-
 	if ( ! in_array( 'is-placeholder', $classes, true ) ) {
 		$classes[] = 'is-placeholder';
 	}
