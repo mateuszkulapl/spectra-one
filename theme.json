@@ -259,8 +259,8 @@
       ]
     },
     "layout": {
-      "contentSize": "min(calc(100dvw - var(--wp--preset--spacing--medium,2rem)), 800px)",
-      "wideSize": "min(calc(100dvw - var(--wp--preset--spacing--medium,2rem)), 1200px)"
+      "contentSize": "min(calc(100dvw - var(--wp--preset--spacing--medium,2rem)), 764px)",
+      "wideSize": "min(calc(100dvw - var(--wp--preset--spacing--medium,2rem)), 1164px)"
     },
     "custom": {
       "fontWeight": {
