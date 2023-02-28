@@ -27,8 +27,8 @@
 
 <!-- wp:post-excerpt {"moreText":""} /-->
 
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"small"} -->
-<div class="wp-block-group has-small-font-size"><!-- wp:post-author {"showAvatar":false,"showBio":false} /-->
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:post-author {"showAvatar":false,"showBio":false} /-->
 
 <!-- wp:post-date /--></div>
 <!-- /wp:group --></div>
