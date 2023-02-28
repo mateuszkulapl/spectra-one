@@ -103,17 +103,3 @@ function localize_editor_script() {
 		)
 	);
 }
-
-/**
- * Enqueue Block Styles.
- *
- * @since x.x.x
- *
- * @return void
- */
-function enqueue_block_scripts():void {
-	add_theme_support( 'editor-styles' );
-	add_editor_style( array( get_uri() . 'assets/css/minified/blocks.min.css', get_uri() . 'assets/css/minified/blocks.min.css' ) );
-}
-
-add_action( 'admin_init', SWT_NS . 'enqueue_block_scripts' );

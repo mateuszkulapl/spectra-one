@@ -195,7 +195,11 @@
         {
           "name": "X Small",
           "size": "clamp(12px, 1.5vw, 14px)",
-          "slug": "x-small"
+          "slug": "x-small",
+          "fluid": {
+            "min": "12px",
+            "max": "14px"
+          }
         },
         {
           "name": "Small",
@@ -217,8 +221,12 @@
         },
         {
           "name": "Large",
-          "size": "22px",
-          "slug": "large"
+          "size": "clamp(20px, 2.2vw, 22px)",
+          "slug": "large",
+          "fluid": {
+            "min": "20px",
+            "max": "22px"
+          }
         },
         {
           "name": "X Large",
@@ -417,6 +425,21 @@
         "spacing": {
           "blockGap": "var(--wp--preset--spacing--small)"
         }
+      },
+      "core/post-terms": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--x-small)"
+        }
+      },
+      "core/post-author": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--x-small)"
+        }
+      },
+      "core/post-date": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--x-small)"
+        }
       }
     }
   },
@@ -447,6 +470,11 @@
 			"name": "sidebar-post",
 			"title": "Post with sidebar",
 			"postTypes": [ "post" ]
+		},
+    {
+			"name": "blank",
+			"title": "Blank Page",
+			"postTypes": [ "page", "post" ]
 		}
 	]
 }

@@ -14,15 +14,21 @@ namespace Swt;
 register_block_style(
 	'core/post-terms',
 	array(
-		'name'         => SWT_TS . '-pill',
+		'name'         => SWT_PFX . '-post-terms-pill',
 		'label'        => __( 'Pill', 'spectra' ),
 		'inline_style' => '
-			.is-style-' . SWT_TS . '-pill a {
-				padding: var(--wp--preset--spacing--xx-small);
-				border-radius: 13px;
+			.is-style-' . SWT_PFX . '-post-terms-pill a {
+				padding: var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--x-small);
+				border-radius: 50px;
 				color: var(--wp--preset--color--body);
 				background-color: var(--wp--preset--color--surface);
+				margin-right: var(--wp--preset--spacing--xx-small);
 			}
+
+			.is-style-' . SWT_PFX . '-post-terms-pill .wp-block-post-terms__separator {
+				display: none;
+			}
+
 		',
 	) 
 );

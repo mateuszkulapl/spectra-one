@@ -7,8 +7,8 @@
  */
 ?>
 
-<!-- wp:group {"tagName":"footer","style":{"spacing":{"padding":{"right":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small","top":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
-<footer class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:columns {"align":"wide"} -->
+<!-- wp:group {"tagName":"footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
+<footer class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large)"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small"}}}} -->
 <div class="wp-block-column" style="padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"width":32,"style":{"spacing":{"padding":{"right":"var:preset|spacing|xx-small"}}}} /-->
@@ -20,8 +20,8 @@
 <p class="has-small-font-size">Nisl libero ullamcorper id ipsum viverra mauris</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:social-links {"iconColor":"heading","iconColorValue":"var(--wp--preset--color--heading)","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|small","left":"var:preset|spacing|small"},"padding":{"bottom":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
-<ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only" style="padding-bottom:0"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
+<!-- wp:social-links {"iconColor":"heading","iconColorValue":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002dheading)","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|small","left":"var:preset|spacing|small"},"padding":{"bottom":"0"}}},"className":"has-small-icon-size is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
+<ul class="wp-block-social-links has-icon-color has-small-icon-size is-style-logos-only" style="padding-bottom:0"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 

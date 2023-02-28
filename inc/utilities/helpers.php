@@ -104,6 +104,7 @@ function parse_css( array $css_output = array(), $min_media = '', $max_media = '
  * @return string
  */
 function render_image_placeholder( string $html, array $block ): string {
+	
 	$dom    = dom( $html );
 	$figure = get_dom_element( 'figure', $dom );
 	$img    = get_dom_element( 'img', $figure );
@@ -146,6 +147,8 @@ function render_image_placeholder( string $html, array $block ): string {
 
 	$figure->appendChild( $result );
 	$classes = explode( ' ', $figure->getAttribute( 'class' ) );
+
+	var_dump($classes);
 
 	if ( ! in_array( 'is-placeholder', $classes, true ) ) {
 		$classes[] = 'is-placeholder';
