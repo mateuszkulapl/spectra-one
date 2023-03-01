@@ -1,8 +1,8 @@
-const { createHigherOrderComponent } = wp.compose;
-const { InspectorControls } = wp.editor;
-const { addFilter } = wp.hooks;
-const { ToggleControl, Panel, PanelBody, PanelRow } = wp.components;
-const { __ } = wp.i18n;
+import { createHigherOrderComponent } from '@wordpress/compose';
+import { InspectorControls } from '@wordpress/block-editor';
+import { addFilter } from '@wordpress/hooks';
+import { ToggleControl, Panel, PanelBody, PanelRow } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 const Header = createHigherOrderComponent((BlockEdit) => {
     return (props) => {

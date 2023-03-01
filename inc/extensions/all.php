@@ -13,3 +13,6 @@ namespace Swt;
 
 require_once 'responsive.php';
 require_once 'header.php';
+require_once 'metabox.php';
+require_once 'hide-elements.php';
+

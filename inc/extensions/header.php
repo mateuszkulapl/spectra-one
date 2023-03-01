@@ -20,7 +20,7 @@ add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
  * @param array  $block Block Properties As An Array.
  * @return string
  */
-function render_header( string $block_content, array $block ) { 
+function render_header( string $block_content, array $block ):string { 
 	if ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) {
 		$dom         = dom( $block_content );
 		$sticky_item = get_dom_element( 'header', $dom );

@@ -21,7 +21,7 @@ add_filter( 'render_block', SWT_NS . 'render_responsive_blocks', 10, 2 );
  * @param array  $block Block Properties As An Array.
  * @return string
  */
-function render_responsive_blocks( string $block_content, array $block ) { 
+function render_responsive_blocks( string $block_content, array $block ):string { 
 	$responsive_classes = '';
 
 	if ( isset( $block['attrs']['UAGHideDesktop'] ) && true === $block['attrs']['UAGHideDesktop'] ) {

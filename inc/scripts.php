@@ -100,6 +100,7 @@ function localize_editor_script() {
 		'swt_editor_localize',
 		array(
 			'is_spectra_plugin' => defined( 'UAGB_VER' ),
+			'disable_sections' => get_disable_section_fields()
 		)
 	);
 }

@@ -28,7 +28,6 @@ register_block_style(
 			.is-style-' . SWT_PFX . '-post-terms-pill .wp-block-post-terms__separator {
 				display: none;
 			}
-
 		',
 	) 
 );
