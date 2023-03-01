@@ -12,7 +12,6 @@ const SwtPageSettingsPopup = (props) => {
 
 	const disableSections = Object.entries(spectra.disable_sections).map(([key, value]) => {
 		let sectionValue = props.meta[value['key']] && true === props.meta[value['key']] ? true : false;
-		console.log(sectionValue);
 		return (
 			<ToggleControl
 				key={key}

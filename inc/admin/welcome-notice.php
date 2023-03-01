@@ -97,13 +97,13 @@ function render_welcome_notice(): void
  * Close welcome notice.
  *
  * @since x.x.x
- * @return void
  */
-function close_welcome_notice():void
+function close_welcome_notice()
 {
 	if (!isset($_POST['nonce'])) {
 		return;
 	}
+
 	if (!wp_verify_nonce(sanitize_text_field($_POST['nonce']), 'swt-dismiss-welcome-notice-nonce')) {
 		return;
 	}
@@ -192,7 +192,7 @@ function localize_welcome_notice_js($plugin_status): array
 {
 
 	return array(
-		'nonce'         => wp_create_nonce('swt-dismiss-welcome-notice'),
+		'nonce'         => wp_create_nonce('swt-dismiss-welcome-notice-nonce'),
 		'ajaxUrl'       => esc_url(admin_url('admin-ajax.php')),
 		'pluginStatus'  => $plugin_status,
 		'pluginSlug'    => 'ultimate-addons-for-gutenberg',

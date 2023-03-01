@@ -56,7 +56,7 @@ function handleWelcomeNotice() {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
       },
-      body: `action=swt_dismiss_welcome_notice&security=${nonce}`
+      body: `action=swt_dismiss_welcome_notice&nonce=${nonce}`
     };
     try {
       const reqResponse = await fetch(ajaxUrl, res);
