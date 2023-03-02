@@ -68,7 +68,7 @@ function HeaderAttributes(settings) {
   }
   return settings;
 }
-wp.hooks.addFilter("blocks.registerBlockType", "swt/header-attributes", HeaderAttributes);
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("blocks.registerBlockType", "swt/header-attributes", HeaderAttributes);
 
 /***/ }),
 
@@ -157,7 +157,7 @@ function ResponsiveAttributes(settings) {
   return settings;
 }
 if (!spectra.is_spectra_plugin) {
-  wp.hooks.addFilter("blocks.registerBlockType", "swt/responsive-attributes", ResponsiveAttributes);
+  (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("blocks.registerBlockType", "swt/responsive-attributes", ResponsiveAttributes);
 }
 
 /***/ }),

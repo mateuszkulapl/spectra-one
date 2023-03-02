@@ -70,7 +70,7 @@ function HeaderAttributes(settings) {
     return settings;
 }
 
-wp.hooks.addFilter(
+addFilter(
     "blocks.registerBlockType",
     "swt/header-attributes",
     HeaderAttributes

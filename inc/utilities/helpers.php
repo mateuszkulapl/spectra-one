@@ -25,6 +25,24 @@ function get_uri( string $path = '' ): string {
 }
 
 /**
+ * RTL For Dynamic / Inline css
+ *
+ * @since x.x.x
+ *
+ * @param string $direction Left or Right Direction.
+ *
+ * @return string
+ */
+function rtl_css( string $direction = '' ): string {
+	$is_site_rtl               = is_rtl() ? true : false;
+	if( 'left' === $direction ) {
+		return $is_site_rtl ? esc_attr( 'right' ) : esc_attr( 'left' );
+	} else {
+		return $is_site_rtl ? esc_attr( 'left' ) : esc_attr( 'right' );
+	}
+}
+
+/**
  * Parse CSS
  *
  * @param  array $css_output Array of CSS.
@@ -291,3 +309,5 @@ function css_string_to_array( string $css ): array {
 
 	return $array;
 }
+
+

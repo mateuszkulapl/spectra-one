@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Template Blank
- * Slug: template-blank
+ * Slug: spectra/template-blank
  * Categories: template
  * Inserter: false
  */

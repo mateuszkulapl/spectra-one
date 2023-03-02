@@ -90,7 +90,7 @@ function ResponsiveAttributes(settings) {
 }
 
 if (!spectra.is_spectra_plugin) {
-	wp.hooks.addFilter(
+	addFilter(
 		"blocks.registerBlockType",
 		"swt/responsive-attributes",
 		ResponsiveAttributes
