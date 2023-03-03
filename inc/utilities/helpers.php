@@ -132,7 +132,7 @@ function render_image_placeholder( string $html, array $block ): string {
 	
 	$html        = ! $html ? '<figure class="wp-block-image"><img src="" alt=""/></figure>' : $html;
 	$dom         = dom( $html );
-	$svg         = get_svg_icon( 'image', 30 );
+	$svg         = get_svg_icon( 'placeholder', 30 );
 	$svg_dom     = dom( $svg );
 	$svg_element = get_dom_element( 'svg', $svg_dom );
 

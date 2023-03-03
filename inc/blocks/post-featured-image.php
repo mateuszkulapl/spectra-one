@@ -53,14 +53,6 @@ function post_featured_image_inline_css( string $css ): string {
 			'border'          => '0',
 			'aspect-ratio'    => '16/9',
 		),
-
-		'.is-placeholder svg'      => array(
-			'fill' => 'var(--wp--preset--color--heading)',
-		),
-
-		'.is-placeholder svg path' => array(
-			'stroke' => 'var(--wp--preset--color--heading)',
-		),
 	);
 
 	$css .= parse_css( $css_output );

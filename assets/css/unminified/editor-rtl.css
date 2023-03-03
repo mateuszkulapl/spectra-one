@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+# Search Block
+--------------------------------------------------------------*/
+.is-style-swt-search-minimal .wp-block-search__button {
+  background-color: var(--wp--preset--color--transparent);
+  color: var(--wp--preset--color--heading);
+  padding: var(--wp--preset--spacing--xx-small);
+  margin-right: 0;
+}
+.is-style-swt-search-minimal .wp-block-search__button:hover {
+  background-color: var(--wp--preset--color--transparent);
+}
+.is-style-swt-search-minimal .wp-block-search__inside-wrapper {
+  padding: 0;
+  border-color: var(--wp--preset--color--outline);
+  border-radius: var(--wp--custom--border-radius--small);
+}
+.is-style-swt-search-minimal .wp-block-search__input {
+  padding-right: var(--wp--preset--spacing--xx-small);
+  border-radius: var(--wp--custom--border-radius--small);
+  color: var(--wp--preset--color--body);
+}
+.is-style-swt-search-minimal .wp-block-search__input:-ms-input-placeholder {
+  color: var(--wp--preset--color--neutral);
+  opacity: 1;
+}
+.is-style-swt-search-minimal .wp-block-search__input::placeholder {
+  color: var(--wp--preset--color--neutral);
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Category Block
+--------------------------------------------------------------*/
