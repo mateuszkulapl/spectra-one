@@ -32,3 +32,13 @@
 /*--------------------------------------------------------------
 # Category Block
 --------------------------------------------------------------*/
+.is-style-swt-post-terms-pill a {
+  padding: var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--x-small);
+  border-radius: 50px;
+  color: var(--wp--preset--color--body);
+  background-color: var(--wp--preset--color--surface);
+  margin-right: var(--wp--preset--spacing--xx-small);
+}
+.is-style-swt-post-terms-pill a .wp-block-post-terms__separator {
+  display: none;
+}
