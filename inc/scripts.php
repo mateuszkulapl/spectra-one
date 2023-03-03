@@ -106,4 +106,26 @@ function localize_editor_script() {
 }
 
 
+/**
+ * Enqueue Editor Scripts.
+ *
+ * @since x.x.x
+ *
+ * @return void
+ */
+function enqueue_editor_block_styles() {
 
+    $file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
+	$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
+
+	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
+
+    // Add support for block styles.
+    add_theme_support( 'wp-block-styles' );
+ 
+    // Enqueue editor styles.
+    add_editor_style( $css_uri . 'editor' . $file_prefix . '.css' );
+ 
+ }
+ 
+ add_action('after_setup_theme', SWT_NS . 'enqueue_editor_block_styles');
