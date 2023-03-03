@@ -20,23 +20,32 @@ register_block_style(
 		'label'        => __( 'Minimal', 'spectra' ),
 		'inline_style' => '
 			'. $parent_class . ' .wp-block-search__button {
-                background-color: transparent;
+                background-color: var(--wp--preset--color--transparent);
                 color: var(--wp--preset--color--heading);
                 padding: var(--wp--preset--spacing--xx-small);
+                margin-'. rtl_css('left') .': 0;
 			}
 
             '. $parent_class . ' .wp-block-search__button:hover {
-                background-color: transparent;
+                background-color: var(--wp--preset--color--transparent);
             }
 
             '. $parent_class . ' .wp-block-search__inside-wrapper {
                 padding: 0;
-                border-color: var(--wp--preset--color--heading);
+                border-color: var(--wp--preset--color--outline);
+                border-radius: var(--wp--custom--border-radius--small);
 			}
 
             '. $parent_class . ' .wp-block-search__input {
                 padding-'. rtl_css('left') .': var(--wp--preset--spacing--xx-small);
+                border-radius: var(--wp--custom--border-radius--small);
+                color: var(--wp--preset--color--body);
             }
+
+            '. $parent_class . ' .wp-block-search__input::placeholder { 
+                color: var(--wp--preset--color--neutral);
+                opacity: 1;
+              }
 		',
 	)
 );

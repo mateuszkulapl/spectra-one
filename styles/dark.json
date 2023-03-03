@@ -7,12 +7,12 @@
       "palette": [
         {
           "name": "Primary",
-          "color": "#C7D2FE",
+          "color": "#6366F1",
           "slug": "primary"
         },
         {
           "name": "Secondary",
-          "color": "#A5B4FC",
+          "color": "#6B6EFE",
           "slug": "secondary"
         },
         {

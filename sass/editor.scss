@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+# Search Block
+--------------------------------------------------------------*/
+
+// Minimal Style.
+
+.is-style-swt-search-minimal {
+
+    .wp-block-search__button {
+        background-color: var(--wp--preset--color--transparent);
+        color: var(--wp--preset--color--heading);
+        padding: var(--wp--preset--spacing--xx-small);
+        margin-left: 0;
+    }
+
+    .wp-block-search__button {
+        &:hover{
+            background-color: var(--wp--preset--color--transparent);
+        }
+    }
+
+    .wp-block-search__inside-wrapper {
+        padding: 0;
+        border-color: var(--wp--preset--color--outline);
+        border-radius: var(--wp--custom--border-radius--small);
+    }
+
+    .wp-block-search__input {
+        padding-left: var(--wp--preset--spacing--xx-small);
+        border-radius: var(--wp--custom--border-radius--small);
+        color: var(--wp--preset--color--body);
+    }
+
+    .wp-block-search__input::placeholder {
+        color: var(--wp--preset--color--neutral);
+        opacity: 1;
+    }
+}
+
+/*--------------------------------------------------------------
+# Category Block
+--------------------------------------------------------------*/
+
+// Pill Style.

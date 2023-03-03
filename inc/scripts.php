@@ -11,8 +11,6 @@ declare( strict_types=1 );
 
 namespace Swt;
 
-add_action( 'wp_enqueue_scripts', SWT_NS . 'enqueue_frontend_scripts' );
-
 /**
  * Enqueue Frontend Scripts.
  *
@@ -58,7 +56,7 @@ function enqueue_frontend_scripts(): void {
 	}
 }
 
-add_action( 'enqueue_block_editor_assets', SWT_NS . 'enqueue_editor_scripts' );
+add_action( 'wp_enqueue_scripts', SWT_NS . 'enqueue_frontend_scripts' );
 
 /**
  * Enqueue Editor Scripts.
@@ -87,6 +85,8 @@ function enqueue_editor_scripts(): void {
 	);
 }
 
+add_action( 'enqueue_block_editor_assets', SWT_NS . 'enqueue_editor_scripts' );
+
 /**
  * Localize Editor Script.
  *
@@ -104,3 +104,29 @@ function localize_editor_script() {
 		)
 	);
 }
+
+
+
+/**
+ * Enqueue Block Scripts.
+ *
+ * @since x.x.x
+ *
+ * @return void
+ */
+function enqueue_block_scripts(): void {
+
+	if ( false === apply_filters( 'swt_enqueue_block_scripts', true ) ) {
+		return;
+	}
+
+	$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
+	$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
+
+	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
+
+	add_theme_support( 'editor-styles' );
+    add_editor_style( array( SWT_SLUG, $css_uri . '/editor' . $file_prefix . '.css', SWT_SLUG, $css_uri . '/blocks' . $file_prefix . '.css' ) );
+}
+
+add_action( 'admin_init', SWT_NS . 'enqueue_block_scripts' );

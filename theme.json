@@ -489,10 +489,12 @@
       },
       "core/search": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--medium)"
+          "fontSize": "var(--wp--preset--font-size--medium)",
+          "lineHeight": "var(--wp--custom--line-height--initial)",
+          "fontWeight": "var(--wp--custom--font-weight--regular)"
         },
         "color": {
-          "text": "var(--wp--preset--color--neutral)"
+          "text": "var(--wp--preset--color--body)"
         }
       }
     }
