@@ -357,7 +357,6 @@
         },
         "spacing":{
           "margin": {
-            "top": "0",
             "bottom":"var(--wp--preset--spacing--small)"
           }
         }
