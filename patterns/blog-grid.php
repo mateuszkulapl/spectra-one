@@ -20,7 +20,7 @@
 
 <!-- wp:post-terms {"term":"category"} /-->
 
-<!-- wp:post-title {"level":4,"isLink":true,"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} /-->
+<!-- wp:post-title {"isLink":true,"level":4,"isLink":true,"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} /-->
 
 <!-- wp:post-date {"isLink":true} /-->
 <!-- /wp:post-template -->

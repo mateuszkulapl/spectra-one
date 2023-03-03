@@ -9,7 +9,7 @@
 $get_url = trailingslashit( get_template_directory_uri());
 
 $images = array(
-    $get_url . 'assets/image/banner-wide-img.png',
+    $get_url . 'assets/image/banner-wide-img.jpg',
 );
 
 ?>
