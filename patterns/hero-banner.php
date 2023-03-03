@@ -3,15 +3,22 @@
 /**
  * Title: Hero Banner
  * Slug: spectra/hero-banner
- * Categories: Uncategorized
+ * Categories: banners
+ * Keywords: Hero Banner
  */
+
+$get_url = trailingslashit( get_template_directory_uri());
+
+ $images = array(
+	$get_url . 'assets/image/hero-img.png',
+);
 ?>
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained","justifyContent":"center","contentSize":""}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"style":{"spacing":{}}} -->
 <div class="wp-block-column"><!-- wp:heading {"level":1,"style":{"typography":{"letterSpacing":"-1px"},"spacing":{"padding":{"right":"var:preset|spacing|medium"}}},"textColor":"heading"} -->
-<h1 class="wp-block-heading has-heading-color has-text-color" style="padding-right:var(--wp--preset--spacing--medium);letter-spacing:-1px">Discover a new way to build websites</h1>
+<h1 class="wp-block-heading has-heading-color has-text-color" style="padding-right:var(--wp--preset--spacing--medium);letter-spacing:-1px">Discover a new way to build website</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-large"}}}} -->
@@ -53,7 +60,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":191,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://fsetheme.local/wp-content/uploads/2023/02/new-way-to-build-website-image.png" alt="" class="wp-image-191"/></figure>
+<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-191"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

@@ -7,22 +7,20 @@
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:group {"tagName":"header","backgroundColor":"background","layout":{"type":"constrained"}} -->
-<header class="wp-block-group has-background-background-color has-background"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:site-logo {"width":32,"shouldSyncIcon":true} /-->
+<!-- wp:group {"tagName":"header","layout":{"type":"constrained"}} -->
+<header class="wp-block-group"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:site-logo {"width":32} /-->
 
-<!-- wp:site-title {"fontSize":"medium"} /--></div>
+<!-- wp:site-title /--></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:navigation -->
-<!-- wp:page-list /-->
-<!-- /wp:navigation -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:navigation {"ref":260,"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}}} /-->
 
-<!-- wp:buttons -->
+<!-- wp:buttons {"UAGHideMob":true} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Getting Started</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Get Started</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
