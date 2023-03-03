@@ -239,28 +239,28 @@
         },
         {
           "name": "XX Large",
-          "size": "clamp(32px, 3.6vw, 36px)",
+          "size": "clamp(28px, 3.6vw, 36px)",
           "slug": "xx-large",
           "fluid": {
-            "min": "32px",
+            "min": "28px",
             "max": "36px"
           }
         },
         {
           "name": "XXX Large",
-          "size": "clamp(40px, 3.6vw, 44px)",
+          "size": "clamp(32px, 3.6vw, 44px)",
           "slug": "xxx-large",
           "fluid": {
-            "min": "40px",
+            "min": "32px",
             "max": "44px"
           }
         },
         {
           "name": "XXXX Large",
-          "size": "clamp(48px, 6.6vw, 56px)",
+          "size": "clamp(40px, 6.6vw, 56px)",
           "slug": "xxxx-large",
           "fluid": {
-            "min": "48px",
+            "min": "40px",
             "max": "56px"
           }
         }
@@ -509,24 +509,9 @@
       "name": "footer",
       "title": "Footer",
       "area": "footer"
-    },
-    {
-			"name": "sidebar",
-			"title": "Sidebar",
-			"area": "uncategorized"
-		}
+    }
   ],
   "customTemplates": [
-		{
-			"name": "sidebar-page",
-			"title": "Page with sidebar",
-			"postTypes": [ "page" ]
-		},
-		{
-			"name": "sidebar-post",
-			"title": "Post with sidebar",
-			"postTypes": [ "post" ]
-		},
     {
 			"name": "blank",
 			"title": "Blank Page",
