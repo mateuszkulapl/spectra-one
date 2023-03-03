@@ -2,8 +2,8 @@
 /**
  * Title: Post Grid
  * Slug: spectra/post-grid
- * Categories: banner
- * Keywords: Banner Wide
+ * Categories: posts
+ * Keywords: Post Grid
  */
 ?>
 

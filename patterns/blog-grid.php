@@ -2,7 +2,7 @@
 /**
  * Title: Blog Grid
  * Slug: spectra/blog-grid
- * Categories: query
+ * Categories: posts
  * Keywords: Blog Grid
  */
 ?>

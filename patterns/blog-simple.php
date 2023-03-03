@@ -2,7 +2,7 @@
 /**
  * Title: Blog Simple
  * Slug: spectra/blog-simple
- * Categories: query
+ * Categories: posts
  * Keywords: Blog Simple
  */
 ?>

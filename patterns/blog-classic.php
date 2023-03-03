@@ -2,7 +2,7 @@
 /**
  * Title: Blog Classic
  * Slug: spectra/blog-classic
- * Categories: banners
+ * Categories: posts
  * Keywords: Blog Classic
  */
 ?>
