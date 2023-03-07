@@ -23,12 +23,12 @@ function enqueue_frontend_scripts(): void {
 		return;
 	}
 
-	$file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
-	$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
+	$file_prefix = ( SWT_SCRIPT_DEBUG ) ? '' : '.min';
+	$dir_name    = ( SWT_SCRIPT_DEBUG ) ? 'unminified' : 'minified';
 
 
-	$js_uri    = SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
-	$asset = SCRIPT_DEBUG ? require SWT_DIR . 'build/script.asset.php' : require SWT_DIR . 'assets/js/script.asset.php';
+	$js_uri    = SWT_SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
+	$asset = SWT_SCRIPT_DEBUG ? require SWT_DIR . 'build/script.asset.php' : require SWT_DIR . 'assets/js/script.asset.php';
 	$deps  = $asset['dependencies'];
 
 	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
@@ -52,14 +52,14 @@ function enqueue_frontend_scripts(): void {
 	}
 
 	/* Load Theme Scripts*/
-	wp_register_script( SWT_SLUG . '-js', $js_uri . 'script.js', $deps, SWT_VER, true );
+	wp_register_script( SWT_SLUG, $js_uri . 'script.js', $deps, SWT_VER, true );
 
-	wp_enqueue_script( SWT_SLUG . '-js' );
+	wp_enqueue_script( SWT_SLUG );
 
 	$swt_inline_js = apply_filters( 'swt_dynamic_theme_js', '' );
 
 	if ( $swt_inline_js ) {
-		wp_add_inline_script( SWT_SLUG . '-js', $swt_inline_js );
+		wp_add_inline_script( SWT_SLUG , $swt_inline_js );
 	}
 }
 
@@ -77,8 +77,8 @@ function enqueue_editor_scripts(): void {
 		return;
 	}
 
-	$js    = SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
-	$asset = SCRIPT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
+	$js    = SWT_SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
+	$asset = SWT_SCRIPT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
 	$deps  = $asset['dependencies'];
 
 	wp_register_script( SWT_SLUG . '-editor', $js . 'editor.js', $deps, SWT_VER, true );
@@ -122,8 +122,8 @@ function localize_editor_script() {
  */
 function enqueue_editor_block_styles() {
 
-    $file_prefix = ( SCRIPT_DEBUG ) ? '' : '.min';
-	$dir_name    = ( SCRIPT_DEBUG ) ? 'unminified' : 'minified';
+    $file_prefix = ( SWT_SCRIPT_DEBUG ) ? '' : '.min';
+	$dir_name    = ( SWT_SCRIPT_DEBUG ) ? 'unminified' : 'minified';
 
 	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
 

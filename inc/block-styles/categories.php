@@ -18,11 +18,12 @@ register_block_style(
 		'label'        => __( 'Pill', 'spectra' ),
 		'inline_style' => '
 			.is-style-' . SWT_PFX . '-post-terms-pill a {
-				padding: var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--x-small);
-				border-radius: 50px;
+				padding: 6px 12px;
+				border-radius: var(--wp--custom--border-radius--full);
 				color: var(--wp--preset--color--body);
 				background-color: var(--wp--preset--color--surface);
 				margin-right: var(--wp--preset--spacing--xx-small);
+				line-height: var(--wp--custom--line-height--initial);
 			}
 
 			.is-style-' . SWT_PFX . '-post-terms-pill .wp-block-post-terms__separator {

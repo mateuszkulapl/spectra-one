@@ -35,17 +35,24 @@ const Header = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigherOr
       setAttributes
     } = props;
     const {
-      SWTStickyHeader
+      SWTStickyHeader,
+      SWTTransparentHeader
     } = attributes;
     if ("header" === attributes.slug && "core/template-part" === name) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
         title: "Header Settings",
         initialOpen: true
       }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Sticky Header", "swt-theme"),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Enable Sticky Header", "spectra"),
         checked: SWTStickyHeader,
         onChange: () => setAttributes({
           SWTStickyHeader: !SWTStickyHeader
+        })
+      })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Enable Transparent Header", "spectra"),
+        checked: SWTTransparentHeader,
+        onChange: () => setAttributes({
+          SWTTransparentHeader: !SWTTransparentHeader
         })
       }))))));
     } else {
@@ -56,10 +63,15 @@ const Header = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigherOr
 (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("editor.BlockEdit", "swt/header", Header);
 function HeaderAttributes(settings) {
   const includeBlock = ["core/template-part"];
+  console.log(settings);
   if (includeBlock.includes(settings.name)) {
     if (settings.attributes) {
       settings.attributes = Object.assign(settings.attributes, {
         SWTStickyHeader: {
+          type: "boolean",
+          default: false
+        },
+        SWTTransparentHeader: {
           type: "boolean",
           default: false
         }

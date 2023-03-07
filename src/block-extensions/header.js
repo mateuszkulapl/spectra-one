@@ -9,7 +9,7 @@ const Header = createHigherOrderComponent((BlockEdit) => {
 
         const { attributes, name, setAttributes } = props;
 
-        const { SWTStickyHeader } = attributes;
+        const { SWTStickyHeader, SWTTransparentHeader } = attributes;
         if ("header" === attributes.slug && "core/template-part" === name) {
             return (
                 <>
@@ -23,14 +23,29 @@ const Header = createHigherOrderComponent((BlockEdit) => {
                                 <PanelRow>
                                     <ToggleControl
                                         label={__(
-                                            "Sticky Header",
-                                            "swt-theme"
+                                            "Enable Sticky Header",
+                                            "spectra"
                                         )}
                                         checked={SWTStickyHeader}
                                         onChange={() =>
                                             setAttributes({
                                                 SWTStickyHeader:
                                                     !SWTStickyHeader,
+                                            })
+                                        }
+                                    />
+                                </PanelRow>
+                                <PanelRow>
+                                    <ToggleControl
+                                        label={__(
+                                            "Enable Transparent Header",
+                                            "spectra"
+                                        )}
+                                        checked={SWTTransparentHeader}
+                                        onChange={() =>
+                                            setAttributes({
+                                                SWTTransparentHeader:
+                                                    !SWTTransparentHeader,
                                             })
                                         }
                                     />
@@ -56,10 +71,16 @@ addFilter("editor.BlockEdit", "swt/header", Header);
 function HeaderAttributes(settings) {
     const includeBlock = ["core/template-part"];
 
+    console.log(settings);
+
     if (includeBlock.includes(settings.name)) {
         if (settings.attributes) {
             settings.attributes = Object.assign(settings.attributes, {
                 SWTStickyHeader: {
+                    type: "boolean",
+                    default: false,
+                },
+                SWTTransparentHeader: {
                     type: "boolean",
                     default: false,
                 },
