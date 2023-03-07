@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Blog Classic
+ * Title: Blog classic
  * Slug: spectra/blog-classic
  * Categories: posts
- * Keywords: Blog Classic
+ * Keywords: Blog classic
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->

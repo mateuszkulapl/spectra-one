@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Blog Left Featured Image
+ * Title: Blog left featured image
  * Slug: spectra/blog-left-featured-image
  * Categories: query
- * Keywords: Blog Left Featured Image
+ * Keywords: Blog left featured image
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->

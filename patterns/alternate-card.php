@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Alternate Card
+ * Title: Alternate card
  * Slug: spectra/alternate-card
  * Categories: text
- * Keywords: Alternate Card
+ * Keywords: Alternate card
  */
 
 $get_url = trailingslashit( get_template_directory_uri());

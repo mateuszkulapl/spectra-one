@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Template Search
+ * Title: Template search
  * Slug: spectra/template-search
  * Categories: template
  * Inserter: false

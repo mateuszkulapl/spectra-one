@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Banner Wide
+ * Title: Banner wide
  * Slug: spectra/banner-wide
  * Categories: banner
- * Keywords: Banner Wide
+ * Keywords: Banner wide
  */
 
 $get_url = trailingslashit( get_template_directory_uri());

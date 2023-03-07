@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Blog Simple
+ * Title: Blog simple
  * Slug: spectra/blog-simple
  * Categories: posts
- * Keywords: Blog Simple
+ * Keywords: Blog simple
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->

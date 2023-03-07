@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Post Grid
+ * Title: Post grid
  * Slug: spectra/post-grid
  * Categories: posts
- * Keywords: Post Grid
+ * Keywords: Post grid
  */
 ?>
 

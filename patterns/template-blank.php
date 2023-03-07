@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Template Blank
+ * Title: Template blank
  * Slug: spectra/template-blank
  * Categories: template
  * Inserter: false

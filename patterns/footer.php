@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Footer Default
+ * Title: Footer default
  * Slug: spectra/footer-default
  * Categories: footer
  * Block Types: core/template-part/footer

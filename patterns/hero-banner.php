@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Title: Hero Banner
+ * Title: Hero banner
  * Slug: spectra/hero-banner
  * Categories: banners
  * Keywords: Hero Banner

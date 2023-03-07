@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Blog Grid
+ * Title: Blog grid
  * Slug: spectra/blog-grid
  * Categories: posts
- * Keywords: Blog Grid
+ * Keywords: Blog grid
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"blockGap":"0","padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"constrained"}} -->

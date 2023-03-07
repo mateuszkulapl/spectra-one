@@ -122,6 +122,9 @@ function localize_editor_script() {
  */
 function enqueue_editor_block_styles() {
 
+	// Disable Core Block Patterns.
+	remove_theme_support('core-block-patterns');
+
     $file_prefix = ( SWT_SCRIPT_DEBUG ) ? '' : '.min';
 	$dir_name    = ( SWT_SCRIPT_DEBUG ) ? 'unminified' : 'minified';
 
