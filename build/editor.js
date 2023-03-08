@@ -336,6 +336,46 @@ const SettingsIcons = {
 
 /***/ }),
 
+/***/ "./src/extensions/page-settings/settings-list.js":
+/*!*******************************************************!*\
+  !*** ./src/extensions/page-settings/settings-list.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SwtSettingList": () => (/* binding */ SwtSettingList)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const SwtSettingList = props => {
+  const disableSections = Object.entries(spectra.disable_sections).map(_ref => {
+    let [key, value] = _ref;
+    let sectionValue = props.meta[value['key']] && true === props.meta[value['key']] ? true : false;
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToggleControl, {
+      key: key,
+      label: value['label'],
+      checked: sectionValue,
+      onChange: val => {
+        props.setMetaFieldValue(val, value['key']);
+      }
+    });
+  });
+  const panelBody = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
+    title: __('Disable Elements'),
+    initialOpen: true,
+    className: 'swt-disable-elements-panel'
+  }, disableSections);
+  return panelBody;
+};
+
+/***/ }),
+
 /***/ "./src/extensions/page-settings/settings.js":
 /*!**************************************************!*\
   !*** ./src/extensions/page-settings/settings.js ***!
@@ -358,10 +398,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _icons_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./icons.js */ "./src/extensions/page-settings/icons.js");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _wordpress_hooks_build_types_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @wordpress/hooks/build-types/index.js */ "@wordpress/hooks/build-types/index.js");
-/* harmony import */ var _wordpress_hooks_build_types_index_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks_build_types_index_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _settings_list_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./settings-list.js */ "./src/extensions/page-settings/settings-list.js");
 
 /**
  * Meta Options build.
@@ -372,36 +409,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 const SwtPageSettingsPopup = props => {
-  const disableSections = Object.entries(spectra.disable_sections).map(_ref => {
-    let [key, value] = _ref;
-    let sectionValue = props.meta[value['key']] && true === props.meta[value['key']] ? true : false;
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__.PanelBody, {
-      title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Disable Elements'),
-      initialOpen: true,
-      className: 'swt-disable-elements-panel'
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__.ToggleControl, {
-      key: key,
-      label: value['label'],
-      checked: sectionValue,
-      onChange: val => {
-        props.setMetaFieldValue(val, value['key']);
-      }
-    }));
-  });
-  if (!spectra.is_spectra_plugin) {
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebarMoreMenuItem, {
-      target: "swt-page-settings-panel",
-      icon: _icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].logo
-    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Page Settings')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebar, {
-      isPinnable: true,
-      icon: _icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].logo,
-      name: "swt-page-settings-panel",
-      title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Page Settings'),
-      className: 'swt-sidebar'
-    }, disableSections));
-  }
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebarMoreMenuItem, {
+    target: "swt-page-settings-panel",
+    icon: _icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].logo
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Page Settings')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebar, {
+    isPinnable: true,
+    icon: _icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].logo,
+    name: "swt-page-settings-panel",
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Page Settings'),
+    className: 'swt-sidebar'
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_settings_list_js__WEBPACK_IMPORTED_MODULE_6__.SwtSettingList, props)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.compose)((0,_wordpress_data__WEBPACK_IMPORTED_MODULE_3__.withSelect)(select => {
   const postMeta = select('core/editor').getEditedPostAttribute('meta');
@@ -497,17 +515,6 @@ module.exports = window["wp"]["element"];
 
 "use strict";
 module.exports = window["wp"]["hooks"];
-
-/***/ }),
-
-/***/ "@wordpress/hooks/build-types/index.js":
-/*!***************************************************!*\
-  !*** external ["wp","hooks/buildTypes/index.js"] ***!
-  \***************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = window["wp"]["hooks/buildTypes/index.js"];
 
 /***/ }),
 
@@ -618,9 +625,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-(0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)('swt-page-level-settings', {
-  render: _extensions_page_settings_settings__WEBPACK_IMPORTED_MODULE_1__["default"]
-});
+if (!spectra.is_spectra_plugin) {
+  (0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)('swt-page-level-settings', {
+    render: _extensions_page_settings_settings__WEBPACK_IMPORTED_MODULE_1__["default"]
+  });
+}
 })();
 
 /******/ })()
