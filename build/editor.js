@@ -351,6 +351,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 const SwtSettingList = props => {
@@ -367,7 +370,7 @@ const SwtSettingList = props => {
     });
   });
   const panelBody = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
-    title: __('Disable Elements'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Disable Elements'),
     initialOpen: true,
     className: 'swt-disable-elements-panel'
   }, disableSections);
@@ -616,18 +619,26 @@ var __webpack_exports__ = {};
   !*** ./src/editor.js ***!
   \***********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/plugins */ "@wordpress/plugins");
-/* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _extensions_page_settings_settings__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./extensions/page-settings/settings */ "./src/extensions/page-settings/settings.js");
-/* harmony import */ var _extensions_editor_all_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./extensions/editor/all.js */ "./src/extensions/editor/all.js");
-/* harmony import */ var _block_extensions_all_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block-extensions/all.js */ "./src/block-extensions/all.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/plugins */ "@wordpress/plugins");
+/* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_plugins__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _extensions_page_settings_settings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./extensions/page-settings/settings */ "./src/extensions/page-settings/settings.js");
+/* harmony import */ var _extensions_editor_all_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./extensions/editor/all.js */ "./src/extensions/editor/all.js");
+/* harmony import */ var _block_extensions_all_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block-extensions/all.js */ "./src/block-extensions/all.js");
+/* harmony import */ var _extensions_page_settings_settings_list_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./extensions/page-settings/settings-list.js */ "./src/extensions/page-settings/settings-list.js");
 
 
 
 
+
+
+wp.hooks.addFilter('uagb.pluginSidebar', 'swt/dashboard_app', function (markup, props) {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_extensions_page_settings_settings_list_js__WEBPACK_IMPORTED_MODULE_5__.SwtSettingList, props);
+});
 if (!spectra.is_spectra_plugin) {
-  (0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)('swt-page-level-settings', {
-    render: _extensions_page_settings_settings__WEBPACK_IMPORTED_MODULE_1__["default"]
+  (0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_1__.registerPlugin)('swt-page-level-settings', {
+    render: _extensions_page_settings_settings__WEBPACK_IMPORTED_MODULE_2__["default"]
   });
 }
 })();

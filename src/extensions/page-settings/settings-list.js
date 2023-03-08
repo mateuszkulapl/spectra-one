@@ -1,5 +1,6 @@
 
 import { PanelBody, ToggleControl } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 export const SwtSettingList = (props) => {
     const disableSections = Object.entries(spectra.disable_sections).map(([key, value]) => {

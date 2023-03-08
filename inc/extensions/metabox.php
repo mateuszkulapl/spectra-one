@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace Swt;
 
-add_action( 'init',  SWT_NS . 'register_meta_settings' );
+add_action( 'init', SWT_NS . 'register_meta_settings' );
 
 /**
  * Register Post Meta options for react based fields.
@@ -20,39 +20,39 @@ add_action( 'init',  SWT_NS . 'register_meta_settings' );
  * @return void
  */
 function register_meta_settings():void {
-    register_post_meta(
-        '',
-        'swt_meta_header_display',
-        array(
-            'show_in_rest'  => true,
-            'single'        => true,
-            'default'       => false,
-            'type'          => 'boolean',
-            'auth_callback' => '__return_true',
-        )
-    );
+	register_post_meta(
+		'',
+		'swt_meta_header_display',
+		array(
+			'show_in_rest'  => true,
+			'single'        => true,
+			'default'       => false,
+			'type'          => 'boolean',
+			'auth_callback' => '__return_true',
+		)
+	);
 
-    register_post_meta(
-        '',
-        'swt_meta_footer_display',
-        array(
-            'show_in_rest'  => true,
-            'single'        => true,
-            'default'       => false,
-            'type'          => 'boolean',
-            'auth_callback' => '__return_true',
-        )
-    );
+	register_post_meta(
+		'',
+		'swt_meta_footer_display',
+		array(
+			'show_in_rest'  => true,
+			'single'        => true,
+			'default'       => false,
+			'type'          => 'boolean',
+			'auth_callback' => '__return_true',
+		)
+	);
 
-    register_post_meta(
-        '',
-        'swt_meta_site_title_display',
-        array(
-            'show_in_rest'  => true,
-            'single'        => true,
-            'default'       => true,
-            'type'          => 'boolean',
-            'auth_callback' => '__return_true',
-        )
-    );
+	register_post_meta(
+		'',
+		'swt_meta_site_title_display',
+		array(
+			'show_in_rest'  => true,
+			'single'        => true,
+			'default'       => true,
+			'type'          => 'boolean',
+			'auth_callback' => '__return_true',
+		)
+	);
 }

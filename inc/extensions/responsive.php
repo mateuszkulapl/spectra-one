@@ -45,7 +45,7 @@ function render_responsive_blocks( string $block_content, array $block ):string 
 
 	$classes = $first_item->getAttribute( 'class' );
 
-	if( $responsive_classes ) {
+	if ( $responsive_classes ) {
 		$first_item->setAttribute( 'class', $classes . $responsive_classes );
 		$block_content = $dom->saveHTML();
 	}

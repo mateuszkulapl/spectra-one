@@ -22,7 +22,7 @@ add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
  */
 function render_header( string $block_content, array $block ):string { 
 	if ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) {
-		$dom         = dom( $block_content );
+		$dom    = dom( $block_content );
 		$header = get_dom_element( 'header', $dom );
 
 		if ( ! $header ) {
@@ -92,7 +92,7 @@ function header_inline_css( string $css ): string {
  * @return string
  */
 function header_inline_js( string $js ): string {
-$inline_js = <<<JS
+	$inline_js = <<<JS
 	function docReady(fn) {
 		// see if DOM is already available
 		if (document.readyState === "complete" || document.readyState === "interactive") {
@@ -114,8 +114,8 @@ $inline_js = <<<JS
 		}
 	});
 JS;
-$js .= $inline_js;
-return $js;
+	$js       .= $inline_js;
+	return $js;
 }
 
 
@@ -127,7 +127,7 @@ return $js;
  * @return string
  */
 function header_inline_transparent_js( string $js ): string {
-$inline_js = <<< JS
+	$inline_js = <<< JS
 	function docReady(fn) {
 		// see if DOM is already available
 		if (document.readyState === "complete" || document.readyState === "interactive") {
@@ -152,8 +152,8 @@ $inline_js = <<< JS
 		});
 	});
 JS;
-$js .= $inline_js;
-return $js;
+	$js       .= $inline_js;
+	return $js;
 }
 
 /**
@@ -167,7 +167,7 @@ function header_inline_transparent_css( string $css ): string {
 
 	// Sticky header option.
 	$css_output = array(
-		'.swt-transparent-header .has-foreground-background-color'=> array(
+		'.swt-transparent-header .has-foreground-background-color' => array(
 			'transition' => '.2s',
 		),
 
@@ -175,6 +175,6 @@ function header_inline_transparent_css( string $css ): string {
 			'background' => 'transparent !important',
 		),
 	);
-	$css       .= parse_css( $css_output );
+	$css .= parse_css( $css_output );
 	return $css;
 }

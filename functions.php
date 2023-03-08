@@ -14,7 +14,7 @@ namespace Swt;
 const SWT_VER  = '1.0.0';
 const SWT_SLUG = 'spectra';
 const SWT_NAME = 'Spectra';
-const SWT_PFX = 'swt';
+const SWT_PFX  = 'swt';
 const SWT_NS   = __NAMESPACE__ . '\\';
 const SWT_DS   = DIRECTORY_SEPARATOR;
 const SWT_DIR  = __DIR__ . SWT_DS;

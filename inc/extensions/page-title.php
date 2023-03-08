@@ -13,18 +13,18 @@ namespace Swt;
 
 function remove_page_title( $title, $post_id = 0 ) {
 
-    if ( ! $post_id ) {
-        return $title;
-    }
+	if ( ! $post_id ) {
+		return $title;
+	}
 
-    $get_check_title = get_post_meta( $post_id, 'swt_meta_site_title_display', true );
-    $check_meta =  $get_check_title ? false : true;
+	$get_check_title = get_post_meta( $post_id, 'swt_meta_site_title_display', true );
+	$check_meta      = $get_check_title ? false : true;
 
-    if ( ! is_admin() && is_singular() && boolval( $check_meta ) && ! in_the_loop() ) {
-        return '';
-    }
+	if ( ! is_admin() && is_singular() && boolval( $check_meta ) && ! in_the_loop() ) {
+		return '';
+	}
 
-    return $title;
+	return $title;
 }
 
 add_filter( 'the_title', SWT_NS . 'remove_page_title', 10, 2 );

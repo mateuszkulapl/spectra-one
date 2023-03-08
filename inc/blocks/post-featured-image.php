@@ -42,7 +42,7 @@ function render_featured_image_block( string $html, array $block ): string {
 function post_featured_image_inline_css( string $css ): string {
 
 	$css_output = array(
-		'.is-placeholder'          => array(
+		'.is-placeholder' => array(
 			'position'        => 'relative',
 			'width'           => '100%',
 			'height'          => 'auto',

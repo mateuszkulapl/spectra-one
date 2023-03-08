@@ -28,7 +28,7 @@ function enqueue_frontend_scripts(): void {
 	$dir_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'unminified' : 'minified';
 
 
-	$js_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_uri() . 'assets/js/' :  get_uri() . 'build/';
+	$js_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_uri() . 'assets/js/' : get_uri() . 'build/';
 	$asset  = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? require SWT_DIR . 'assets/js/script.asset.php' : require SWT_DIR . 'build/script.asset.php';
 	$deps   = $asset['dependencies'];
 
@@ -60,7 +60,7 @@ function enqueue_frontend_scripts(): void {
 	$swt_inline_js = apply_filters( 'swt_dynamic_theme_js', '' );
 
 	if ( $swt_inline_js ) {
-		wp_add_inline_script( SWT_SLUG , $swt_inline_js );
+		wp_add_inline_script( SWT_SLUG, $swt_inline_js );
 	}
 }
 
@@ -108,7 +108,7 @@ function localize_editor_script() {
 		'swt_editor_localize',
 		array(
 			'is_spectra_plugin' => defined( 'UAGB_VER' ),
-			'disable_sections' => get_disable_section_fields()
+			'disable_sections'  => get_disable_section_fields(),
 		)
 	);
 }
@@ -124,19 +124,19 @@ function localize_editor_script() {
 function enqueue_editor_block_styles() {
 
 	// Disable Core Block Patterns.
-	remove_theme_support('core-block-patterns');
+	remove_theme_support( 'core-block-patterns' );
 
-    $file_prefix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	$file_prefix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 	$dir_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'unminified' : 'minified';
 
 	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
 
-    // Add support for block styles.
-    add_theme_support( 'wp-block-styles' );
+	// Add support for block styles.
+	add_theme_support( 'wp-block-styles' );
 
-    // Enqueue editor styles.
-    add_editor_style( $css_uri . 'editor' . $file_prefix . '.css' );
+	// Enqueue editor styles.
+	add_editor_style( $css_uri . 'editor' . $file_prefix . '.css' );
 
 }
 
-add_action('after_setup_theme', SWT_NS . 'enqueue_editor_block_styles');
+add_action( 'after_setup_theme', SWT_NS . 'enqueue_editor_block_styles' );
