@@ -1,6 +1,7 @@
 import { registerPlugin } from '@wordpress/plugins';
 import SwtPageSettingsPopup from './extensions/page-settings/settings';
-import './block-extensions/header.js';
-import './block-extensions/responsive.js';
+import './extensions/editor/all.js';
+import './block-extensions/all.js';
+
 
 registerPlugin( 'swt-page-level-settings', { render: SwtPageSettingsPopup } );

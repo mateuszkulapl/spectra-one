@@ -71,8 +71,6 @@ addFilter("editor.BlockEdit", "swt/header", Header);
 function HeaderAttributes(settings) {
     const includeBlock = ["core/template-part"];
 
-    console.log(settings);
-
     if (includeBlock.includes(settings.name)) {
         if (settings.attributes) {
             settings.attributes = Object.assign(settings.attributes, {

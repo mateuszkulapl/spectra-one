@@ -1,6 +1,20 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/block-extensions/all.js":
+/*!*************************************!*\
+  !*** ./src/block-extensions/all.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.js */ "./src/block-extensions/header.js");
+/* harmony import */ var _responsive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./responsive.js */ "./src/block-extensions/responsive.js");
+
+
+
+/***/ }),
 
 /***/ "./src/block-extensions/header.js":
 /*!****************************************!*\
@@ -8,6 +22,7 @@
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -63,7 +78,6 @@ const Header = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigherOr
 (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("editor.BlockEdit", "swt/header", Header);
 function HeaderAttributes(settings) {
   const includeBlock = ["core/template-part"];
-  console.log(settings);
   if (includeBlock.includes(settings.name)) {
     if (settings.attributes) {
       settings.attributes = Object.assign(settings.attributes, {
@@ -90,6 +104,7 @@ function HeaderAttributes(settings) {
   \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -174,12 +189,129 @@ if (!spectra.is_spectra_plugin) {
 
 /***/ }),
 
+/***/ "./src/extensions/editor/all.js":
+/*!**************************************!*\
+  !*** ./src/extensions/editor/all.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _editor_title_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./editor-title.js */ "./src/extensions/editor/editor-title.js");
+/* harmony import */ var _editor_title_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_editor_title_js__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/***/ }),
+
+/***/ "./src/extensions/editor/editor-title.js":
+/*!***********************************************!*\
+  !*** ./src/extensions/editor/editor-title.js ***!
+  \***********************************************/
+/***/ (() => {
+
+window.addEventListener('load', function (e) {
+  swt_onload_function();
+});
+function swt_onload_function() {
+  /* Do things after DOM has fully loaded */
+
+  wp.data.subscribe(function () {
+    setTimeout(function () {
+      const editorStylesWrapper = document.querySelector('.editor-styles-wrapper');
+      if (null !== editorStylesWrapper) {
+        const editorStylesWrapperWidth = parseInt(editorStylesWrapper.offsetWidth);
+        if (editorStylesWrapperWidth < 1350) {
+          editorStylesWrapper.classList.remove('swt-stacked-title-visibility');
+          editorStylesWrapper.classList.add('swt-stacked-title-visibility');
+        } else {
+          editorStylesWrapper.classList.remove('swt-stacked-title-visibility');
+        }
+      }
+      console.log(wp.data.select('core/editor').getEditedPostAttribute('meta')['swt_meta_site_title_display']);
+
+      // Title visibility with new editor compatibility update.
+      const titleVisibility = document.querySelector('.title-visibility'),
+        titleBlock = document.querySelector('.edit-post-visual-editor__post-title-wrapper');
+      if (null === titleVisibility && null !== titleBlock) {
+        var titleVisibilityTrigger = '';
+        if (false === wp.data.select('core/editor').getEditedPostAttribute('meta')['swt_meta_site_title_display']) {
+          titleVisibilityTrigger = '<span class="dashicons dashicons-hidden title-visibility" data-tooltip="Enable Title"></span>';
+          titleBlock.classList.toggle('invisible');
+        } else {
+          titleVisibilityTrigger = '<span class="dashicons dashicons-visibility title-visibility" data-tooltip="Disable Title"></span>';
+        }
+        titleBlock.insertAdjacentHTML('beforeend', titleVisibilityTrigger);
+        document.querySelector('.title-visibility').addEventListener('click', function () {
+          const titleBlock = document.querySelector('.edit-post-visual-editor__post-title-wrapper');
+          titleBlock.classList.toggle('invisible');
+          if (this.classList.contains('dashicons-hidden')) {
+            this.classList.add('dashicons-visibility');
+            this.classList.remove('dashicons-hidden');
+            this.dataset.tooltip = 'Disable Title';
+            wp.data.dispatch('core/editor').editPost({
+              meta: {
+                'swt_meta_site_title_display': true
+              }
+            });
+          } else {
+            this.classList.add('dashicons-hidden');
+            this.classList.remove('dashicons-visibility');
+            this.dataset.tooltip = 'Enable Title';
+            wp.data.dispatch('core/editor').editPost({
+              meta: {
+                'swt_meta_site_title_display': false
+              }
+            });
+          }
+        });
+      }
+
+      // Show post/page title wrapper outline & eye icon only when clicked.
+      const titleInput = document.querySelector('.editor-post-title__input');
+      const visibilityIcon = document.querySelector('.title-visibility');
+      if (null != titleInput && null != visibilityIcon) {
+        document.addEventListener('click', function (event) {
+          if (!titleBlock.contains(event.target)) {
+            visibilityIcon.classList.remove('swt-show-visibility-icon');
+            titleInput.classList.remove('swt-show-editor-title-outline');
+          }
+        });
+        document.addEventListener('visibilitychange', function () {
+          visibilityIcon.classList.remove('swt-show-visibility-icon');
+          titleInput.classList.remove('swt-show-editor-title-outline');
+        });
+        titleBlock.addEventListener('focusout', function () {
+          visibilityIcon.classList.remove('swt-show-visibility-icon');
+          titleInput.classList.remove('swt-show-editor-title-outline');
+        });
+        titleBlock.addEventListener('click', function () {
+          visibilityIcon.classList.add('swt-show-visibility-icon');
+          titleInput.classList.add('swt-show-editor-title-outline');
+        });
+        titleInput.addEventListener('input', function () {
+          visibilityIcon.classList.add('swt-show-visibility-icon');
+          this.classList.add('swt-show-editor-title-outline');
+        });
+      }
+      const responsivePreview = document.querySelectorAll('.is-tablet-preview, .is-mobile-preview');
+      if (responsivePreview.length) {
+        document.body.classList.add('responsive-enabled');
+      } else {
+        document.body.classList.remove('responsive-enabled');
+      }
+    }, 1);
+  });
+}
+
+/***/ }),
+
 /***/ "./src/extensions/page-settings/icons.js":
 /*!***********************************************!*\
   !*** ./src/extensions/page-settings/icons.js ***!
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -211,6 +343,7 @@ const SettingsIcons = {
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -292,6 +425,7 @@ const SwtPageSettingsPopup = props => {
   \*************************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["blockEditor"];
 
 /***/ }),
@@ -302,6 +436,7 @@ module.exports = window["wp"]["blockEditor"];
   \************************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["components"];
 
 /***/ }),
@@ -312,6 +447,7 @@ module.exports = window["wp"]["components"];
   \*********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["compose"];
 
 /***/ }),
@@ -322,6 +458,7 @@ module.exports = window["wp"]["compose"];
   \******************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["data"];
 
 /***/ }),
@@ -332,6 +469,7 @@ module.exports = window["wp"]["data"];
   \**********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["editPost"];
 
 /***/ }),
@@ -342,6 +480,7 @@ module.exports = window["wp"]["editPost"];
   \*********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["element"];
 
 /***/ }),
@@ -352,6 +491,7 @@ module.exports = window["wp"]["element"];
   \*******************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["hooks"];
 
 /***/ }),
@@ -362,6 +502,7 @@ module.exports = window["wp"]["hooks"];
   \******************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["i18n"];
 
 /***/ }),
@@ -372,6 +513,7 @@ module.exports = window["wp"]["i18n"];
   \*********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["plugins"];
 
 /***/ })
@@ -445,8 +587,9 @@ module.exports = window["wp"]["plugins"];
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!***********************!*\
   !*** ./src/editor.js ***!
   \***********************/
@@ -454,8 +597,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/plugins */ "@wordpress/plugins");
 /* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _extensions_page_settings_settings__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./extensions/page-settings/settings */ "./src/extensions/page-settings/settings.js");
-/* harmony import */ var _block_extensions_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./block-extensions/header.js */ "./src/block-extensions/header.js");
-/* harmony import */ var _block_extensions_responsive_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block-extensions/responsive.js */ "./src/block-extensions/responsive.js");
+/* harmony import */ var _extensions_editor_all_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./extensions/editor/all.js */ "./src/extensions/editor/all.js");
+/* harmony import */ var _block_extensions_all_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block-extensions/all.js */ "./src/block-extensions/all.js");
 
 
 

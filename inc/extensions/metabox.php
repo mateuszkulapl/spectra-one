@@ -43,4 +43,16 @@ function register_meta_settings():void {
             'auth_callback' => '__return_true',
         )
     );
+
+    register_post_meta(
+        '',
+        'swt_meta_site_title_display',
+        array(
+            'show_in_rest'  => true,
+            'single'        => true,
+            'default'       => true,
+            'type'          => 'boolean',
+            'auth_callback' => '__return_true',
+        )
+    );
 }
