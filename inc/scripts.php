@@ -18,18 +18,19 @@ namespace Swt;
  *
  * @return void
  */
+
 function enqueue_frontend_scripts(): void {
 	if ( false === apply_filters( 'swt_enqueue_frontend_scripts', true ) ) {
 		return;
 	}
 
-	$file_prefix = ( SWT_SCRIPT_DEBUG ) ? '' : '.min';
-	$dir_name    = ( SWT_SCRIPT_DEBUG ) ? 'unminified' : 'minified';
+	$file_prefix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	$dir_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'unminified' : 'minified';
 
 
-	$js_uri    = SWT_SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
-	$asset = SWT_SCRIPT_DEBUG ? require SWT_DIR . 'build/script.asset.php' : require SWT_DIR . 'assets/js/script.asset.php';
-	$deps  = $asset['dependencies'];
+	$js_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_uri() . 'assets/js/' :  get_uri() . 'build/';
+	$asset  = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? require SWT_DIR . 'assets/js/script.asset.php' : require SWT_DIR . 'build/script.asset.php';
+	$deps   = $asset['dependencies'];
 
 	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
 
@@ -77,8 +78,8 @@ function enqueue_editor_scripts(): void {
 		return;
 	}
 
-	$js    = SWT_SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
-	$asset = SWT_SCRIPT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
+	$js    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
+	$asset = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
 	$deps  = $asset['dependencies'];
 
 	wp_register_script( SWT_SLUG . '-editor', $js . 'editor.js', $deps, SWT_VER, true );
@@ -125,17 +126,17 @@ function enqueue_editor_block_styles() {
 	// Disable Core Block Patterns.
 	remove_theme_support('core-block-patterns');
 
-    $file_prefix = ( SWT_SCRIPT_DEBUG ) ? '' : '.min';
-	$dir_name    = ( SWT_SCRIPT_DEBUG ) ? 'unminified' : 'minified';
+    $file_prefix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	$dir_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'unminified' : 'minified';
 
 	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
 
     // Add support for block styles.
     add_theme_support( 'wp-block-styles' );
- 
+
     // Enqueue editor styles.
     add_editor_style( $css_uri . 'editor' . $file_prefix . '.css' );
- 
- }
- 
- add_action('after_setup_theme', SWT_NS . 'enqueue_editor_block_styles');
+
+}
+
+add_action('after_setup_theme', SWT_NS . 'enqueue_editor_block_styles');

@@ -227,7 +227,6 @@ function swt_onload_function() {
           editorStylesWrapper.classList.remove('swt-stacked-title-visibility');
         }
       }
-      console.log(wp.data.select('core/editor').getEditedPostAttribute('meta')['swt_meta_site_title_display']);
 
       // Title visibility with new editor compatibility update.
       const titleVisibility = document.querySelector('.title-visibility'),
@@ -361,6 +360,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _icons_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./icons.js */ "./src/extensions/page-settings/icons.js");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _wordpress_hooks_build_types_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @wordpress/hooks/build-types/index.js */ "@wordpress/hooks/build-types/index.js");
+/* harmony import */ var _wordpress_hooks_build_types_index_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks_build_types_index_js__WEBPACK_IMPORTED_MODULE_7__);
 
 /**
  * Meta Options build.
@@ -371,33 +372,36 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 const SwtPageSettingsPopup = props => {
   const disableSections = Object.entries(spectra.disable_sections).map(_ref => {
     let [key, value] = _ref;
     let sectionValue = props.meta[value['key']] && true === props.meta[value['key']] ? true : false;
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__.ToggleControl, {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__.PanelBody, {
+      title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Disable Elements'),
+      initialOpen: true,
+      className: 'swt-disable-elements-panel'
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__.ToggleControl, {
       key: key,
       label: value['label'],
       checked: sectionValue,
       onChange: val => {
         props.setMetaFieldValue(val, value['key']);
       }
-    });
+    }));
   });
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebarMoreMenuItem, {
-    target: "swt-page-settings-panel",
-    icon: _icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].logo
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Page Settings')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebar, {
-    isPinnable: true,
-    icon: _icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].logo,
-    name: "swt-page-settings-panel",
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Page Settings'),
-    className: 'swt-sidebar'
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Disable Elements'),
-    initialOpen: true,
-    className: 'swt-disable-elements-panel'
-  }, disableSections)));
+  if (!spectra.is_spectra_plugin) {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebarMoreMenuItem, {
+      target: "swt-page-settings-panel",
+      icon: _icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].logo
+    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Page Settings')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebar, {
+      isPinnable: true,
+      icon: _icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].logo,
+      name: "swt-page-settings-panel",
+      title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Page Settings'),
+      className: 'swt-sidebar'
+    }, disableSections));
+  }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.compose)((0,_wordpress_data__WEBPACK_IMPORTED_MODULE_3__.withSelect)(select => {
   const postMeta = select('core/editor').getEditedPostAttribute('meta');
@@ -493,6 +497,17 @@ module.exports = window["wp"]["element"];
 
 "use strict";
 module.exports = window["wp"]["hooks"];
+
+/***/ }),
+
+/***/ "@wordpress/hooks/build-types/index.js":
+/*!***************************************************!*\
+  !*** external ["wp","hooks/buildTypes/index.js"] ***!
+  \***************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = window["wp"]["hooks/buildTypes/index.js"];
 
 /***/ }),
 

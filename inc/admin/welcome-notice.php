@@ -29,8 +29,8 @@ function render_welcome_notice(): void
 
 	$plugin_status = is_spectra_plugin_installed();
 
-	$file_prefix = (SWT_SCRIPT_DEBUG) ? '' : '.min';
-	$dir_name    = (SWT_SCRIPT_DEBUG) ? 'unminified' : 'minified';
+	$file_prefix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	$dir_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'unminified' : 'minified';
 	$css_uri     = get_uri() . 'assets/css/' . $dir_name . '/admin';
 
 	/* Check and added rtl prefix */
@@ -41,8 +41,8 @@ function render_welcome_notice(): void
 	/* Load Theme Styles*/
 	wp_enqueue_style(SWT_SLUG . '-welcome-notice', $css_uri . '/welcome-notice' . $file_prefix . '.css', array(), SWT_VER);
 
-	$js    = SWT_SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
-	$asset = SWT_SCRIPT_DEBUG ? require SWT_DIR . 'build/welcome_notice.asset.php' : require SWT_DIR . 'assets/js/welcome_notice.asset.php';
+	$js    =  defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_uri() . 'assets/js/' :  get_uri() . 'build/';
+	$asset = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? require SWT_DIR . 'assets/js/welcome_notice.asset.php' : require SWT_DIR . 'build/welcome_notice.asset.php';
 	$deps  = $asset['dependencies'];
 
 	wp_register_script(SWT_SLUG . '-welcome-notice', $js . 'welcome_notice.js', $deps, SWT_VER, true);
