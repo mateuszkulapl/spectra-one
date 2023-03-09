@@ -19,32 +19,35 @@ register_block_style(
 		'name'         => SWT_PFX . '-search-minimal',
 		'label'        => __( 'Minimal', 'spectra' ),
 		'inline_style' => '
-            ' . $swt_parent_class . ' .wp-block-search__button {
-                background-color: var(--wp--preset--color--transparent);
+            ' . $swt_parent_class . '.wp-block-search__button-inside .wp-block-search__button {
                 color: var(--wp--preset--color--heading);
-                padding: var(--wp--preset--spacing--xx-small);
-                margin-' . rtl_css( 'left' ) . ': 0;
+                background-color: var(--wp--preset--color--background);
+                border-radius: 0px;
+                margin: 0;
+                padding: var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--x-small);
             }
 
-            ' . $swt_parent_class . ' .wp-block-search__button:hover {
-                background-color: var(--wp--preset--color--transparent);
+            ' . $swt_parent_class . '.wp-block-search__button-inside .wp-block-search__button:hover {
+                color: var(--wp--preset--color--heading);
+                background-color: var(--wp--preset--color--background);
             }
 
-            ' . $swt_parent_class . ' .wp-block-search__inside-wrapper {
-                padding: 0;
-                border-color: var(--wp--preset--color--outline);
+            ' . $swt_parent_class . '.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+                padding: 4px;
+                border: 1px solid var(--wp--preset--color--outline);
                 border-radius: var(--wp--custom--border-radius--small);
             }
 
             ' . $swt_parent_class . ' .wp-block-search__input {
-                padding-' . rtl_css( 'left' ) . ': var(--wp--preset--spacing--xx-small);
-                border-radius: var(--wp--custom--border-radius--small);
-                color: var(--wp--preset--color--body);
+                color: var(--wp--preset--color--heading);
+                background-color: var(--wp--preset--color--background);
+                border-radius: 0px;
+                border: 0;
             }
 
-            ' . $swt_parent_class . ' .wp-block-search__input::placeholder { 
-                color: var(--wp--preset--color--neutral);
-                opacity: 1;
+            ' . $swt_parent_class . '.wp-block-search__button-outside .wp-block-search__input, .wp-block-search__no-button .wp-block-search__input{
+                border: 1px solid var(--wp--preset--color--outline);
+                border-radius: var(--wp--custom--border-radius--small);
             }
         ',
 	)

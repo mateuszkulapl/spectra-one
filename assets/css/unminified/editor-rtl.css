@@ -1,32 +1,31 @@
 /*--------------------------------------------------------------
 # Search Block
 --------------------------------------------------------------*/
-.is-style-swt-search-minimal .wp-block-search__button {
-  background-color: var(--wp--preset--color--transparent);
+.is-style-swt-search-minimal.wp-block-search__button-inside .wp-block-search__button {
   color: var(--wp--preset--color--heading);
-  padding: var(--wp--preset--spacing--xx-small);
-  margin-right: 0;
+  background-color: var(--wp--preset--color--background);
+  border-radius: 0px;
+  margin: 0;
+  padding: var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--x-small);
 }
-.is-style-swt-search-minimal .wp-block-search__button:hover {
-  background-color: var(--wp--preset--color--transparent);
+.is-style-swt-search-minimal.wp-block-search__button-inside .wp-block-search__button:hover {
+  color: var(--wp--preset--color--heading);
+  background-color: var(--wp--preset--color--background);
 }
-.is-style-swt-search-minimal .wp-block-search__inside-wrapper {
-  padding: 0;
-  border-color: var(--wp--preset--color--outline);
+.is-style-swt-search-minimal.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+  padding: 4px;
+  border: 1px solid var(--wp--preset--color--outline);
   border-radius: var(--wp--custom--border-radius--small);
 }
 .is-style-swt-search-minimal .wp-block-search__input {
-  padding-right: var(--wp--preset--spacing--xx-small);
+  color: var(--wp--preset--color--heading);
+  background-color: var(--wp--preset--color--background);
+  border-radius: 0px;
+  border: 0;
+}
+.is-style-swt-search-minimal.wp-block-search__button-outside .wp-block-search__input, .is-style-swt-search-minimal.wp-block-search__no-button .wp-block-search__input {
+  border: 1px solid var(--wp--preset--color--outline);
   border-radius: var(--wp--custom--border-radius--small);
-  color: var(--wp--preset--color--body);
-}
-.is-style-swt-search-minimal .wp-block-search__input:-ms-input-placeholder {
-  color: var(--wp--preset--color--neutral);
-  opacity: 1;
-}
-.is-style-swt-search-minimal .wp-block-search__input::placeholder {
-  color: var(--wp--preset--color--neutral);
-  opacity: 1;
 }
 
 /*--------------------------------------------------------------
