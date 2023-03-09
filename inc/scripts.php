@@ -15,10 +15,8 @@ namespace Swt;
  * Enqueue Frontend Scripts.
  *
  * @since x.x.x
- *
  * @return void
  */
-
 function enqueue_frontend_scripts(): void {
 	if ( false === apply_filters( 'swt_enqueue_frontend_scripts', true ) ) {
 		return;

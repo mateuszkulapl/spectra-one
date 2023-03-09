@@ -19,21 +19,21 @@ add_filter( 'render_block', SWT_NS . 'hide_elements', 10, 2 );
  * @since x.x.x
  * @param string $block_content Entire Block Content.
  * @param array  $block Block Properties As An Array.
- * @return void
+ * @return string
  */
 function hide_elements( string $block_content, array $block ): string {
 	$post_id = get_the_ID();
 
 	if ( get_post_meta( $post_id, 'swt_meta_header_display', true ) ) {
 
-		if ( isset( $block['attrs']['slug'] ) && $block['attrs']['slug'] === 'header' ) {
+		if ( isset( $block['attrs']['slug'] ) && 'header' === $block['attrs']['slug'] ) {
 			return '';
 		}
 	}
 
 	if ( get_post_meta( $post_id, 'swt_meta_footer_display', true ) ) {
 
-		if ( isset( $block['attrs']['slug'] ) && $block['attrs']['slug'] === 'footer' ) {
+		if ( isset( $block['attrs']['slug'] ) && 'footer' === $block['attrs']['slug'] ) {
 			return '';
 		}
 	}

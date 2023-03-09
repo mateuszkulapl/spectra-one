@@ -11,7 +11,15 @@ declare(strict_types=1);
 
 namespace Swt;
 
-function remove_page_title( $title, $post_id = 0 ) {
+/**
+ * Hide Elements.
+ *
+ * @since x.x.x
+ * @param string $title Page title.
+ * @param int    $post_id Post id.
+ * @return string
+ */
+function remove_page_title( string $title, int $post_id = 0 ):string {
 
 	if ( ! $post_id ) {
 		return $title;

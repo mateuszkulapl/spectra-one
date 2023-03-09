@@ -11,7 +11,7 @@ declare( strict_types=1 );
 
 namespace Swt;
 
-$parent_class = '.is-style-' . SWT_PFX . '-search-minimal';
+$swt_parent_class = '.is-style-' . SWT_PFX . '-search-minimal';
 
 register_block_style(
 	'core/search',
@@ -19,12 +19,12 @@ register_block_style(
 		'name'         => SWT_PFX . '-search-minimal',
 		'label'        => __( 'Minimal', 'spectra' ),
 		'inline_style' => '
-			' . $parent_class . ' .wp-block-search__button {
+            ' . $parent_class . ' .wp-block-search__button {
                 background-color: var(--wp--preset--color--transparent);
                 color: var(--wp--preset--color--heading);
                 padding: var(--wp--preset--spacing--xx-small);
                 margin-' . rtl_css( 'left' ) . ': 0;
-			}
+            }
 
             ' . $parent_class . ' .wp-block-search__button:hover {
                 background-color: var(--wp--preset--color--transparent);
@@ -34,7 +34,7 @@ register_block_style(
                 padding: 0;
                 border-color: var(--wp--preset--color--outline);
                 border-radius: var(--wp--custom--border-radius--small);
-			}
+            }
 
             ' . $parent_class . ' .wp-block-search__input {
                 padding-' . rtl_css( 'left' ) . ': var(--wp--preset--spacing--xx-small);
@@ -45,7 +45,7 @@ register_block_style(
             ' . $parent_class . ' .wp-block-search__input::placeholder { 
                 color: var(--wp--preset--color--neutral);
                 opacity: 1;
-              }
-		',
+            }
+        ',
 	)
 );

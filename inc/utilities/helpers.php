@@ -34,8 +34,8 @@ function get_uri( string $path = '' ): string {
  * @return string
  */
 function rtl_css( string $direction = '' ): string {
-	$is_site_rtl               = is_rtl() ? true : false;
-	if( 'left' === $direction ) {
+	$is_site_rtl = is_rtl() ? true : false;
+	if ( 'left' === $direction ) {
 		return $is_site_rtl ? esc_attr( 'right' ) : esc_attr( 'left' );
 	} else {
 		return $is_site_rtl ? esc_attr( 'left' ) : esc_attr( 'right' );

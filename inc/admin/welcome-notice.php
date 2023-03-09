@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Admin Welcome Notice
  *
@@ -55,7 +54,12 @@ function render_welcome_notice(): void {
 	);
 
 	ob_start();
+
+	$banner_image = get_uri() . 'assets/image/spectra-plugin-banner.jpg';
 	?>
+
+
+
 	<div class="notice notice-info swt-welcome-notice">
 		<button type="button" class="notice-dismiss"><span class="screen-reader-text"><?php esc_html_e( 'Close this notice..', 'spectra' ); ?></span></button>
 		<div class="swt-row">
@@ -83,7 +87,7 @@ function render_welcome_notice(): void {
 			</div>
 			<div class="swt-col">
 				<div class="image-container">
-					<img src="<?php echo get_uri(); ?>assets/image/spectra-plugin-banner.jpg" alt="spectra-install-banner">
+					<img src="<?php echo esc_url( $banner_image ); ?>" alt="spectra-install-banner">
 				</div>
 			</div>
 		</div>
@@ -182,6 +186,7 @@ function is_spectra_plugin_installed(): string {
  * Localize js.
  *
  * @since x.x.x
+ * @param string $plugin_status plugin current status.
  * @return array
  */
 function localize_welcome_notice_js( $plugin_status ): array {
