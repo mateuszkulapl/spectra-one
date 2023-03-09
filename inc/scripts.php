@@ -26,8 +26,8 @@ function enqueue_frontend_scripts(): void {
 	$dir_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'unminified' : 'minified';
 
 
-	$js_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_uri() . 'assets/js/' : get_uri() . 'build/';
-	$asset  = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? require SWT_DIR . 'assets/js/script.asset.php' : require SWT_DIR . 'build/script.asset.php';
+	$js_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
+	$asset  = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ?  require SWT_DIR . 'build/script.asset.php' : require SWT_DIR . 'assets/js/script.asset.php';
 	$deps   = $asset['dependencies'];
 
 	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';

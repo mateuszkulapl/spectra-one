@@ -181,7 +181,8 @@ module.exports = function (grunt) {
                     '!package-lock.json',
                     '!phpcs.xml.dist',
                     '!assets/css/unminified/**',
-                    '!webpack.config.js'
+                    '!webpack.config.js',
+                    '!src/**'
                 ],
                 dest: 'spectra/'
             }

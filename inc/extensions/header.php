@@ -167,11 +167,11 @@ function header_inline_transparent_css( string $css ): string {
 
 	// Sticky header option.
 	$css_output = array(
-		'.swt-transparent-header .has-foreground-background-color' => array(
+		'.swt-transparent-header > .has-background' => array(
 			'transition' => '.2s',
 		),
 
-		'.swt-on-top .swt-transparent-header .has-foreground-background-color' => array(
+		'.swt-on-top .swt-transparent-header > .has-background' => array(
 			'background' => 'transparent !important',
 		),
 	);
