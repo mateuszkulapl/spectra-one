@@ -40,7 +40,7 @@ function render_welcome_notice(): void {
 	wp_enqueue_style( SWT_SLUG . '-welcome-notice', $css_uri . '/welcome-notice' . $file_prefix . '.css', array(), SWT_VER );
 
 	$js    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
-	$asset = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ?  require SWT_DIR . 'build/welcome_notice.asset.php' : require SWT_DIR . 'assets/js/welcome_notice.asset.php';
+	$asset = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? require SWT_DIR . 'build/welcome_notice.asset.php' : require SWT_DIR . 'assets/js/welcome_notice.asset.php';
 	$deps  = $asset['dependencies'];
 
 	wp_register_script( SWT_SLUG . '-welcome-notice', $js . 'welcome_notice.js', $deps, SWT_VER, true );

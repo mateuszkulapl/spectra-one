@@ -11,21 +11,21 @@ declare( strict_types=1 );
 
 namespace Swt;
 
+use function bin2hex;
+use function iconv;
+use function libxml_clear_errors;
 use DOMDocument;
 use DOMElement;
-use function bin2hex;
-use function current;
-use function iconv;
 use function is_a;
-use function libxml_clear_errors;
 use function libxml_use_internal_errors;
-use function ltrim;
+use function current;
 use function preg_replace_callback;
-use function sprintf;
+use function ltrim;
 use function strtoupper;
+use function sprintf;
 
 /**
- * Returns a formatted DOMDocument object from a given string.
+ * Formatted DOMDocument object from string.
  *
  * @since x.x.x
  *
@@ -53,7 +53,6 @@ function dom( string $html ): DOMDocument {
 		$options = 0;
 	}
 
-	// @see https://stackoverflow.com/questions/13280200/convert-unicode-to-html-entities-hex.
 	$html = preg_replace_callback(
 		'/[\x{80}-\x{10FFFF}]/u',
 		static fn( array $matches ): string => sprintf(
@@ -84,12 +83,12 @@ function dom( string $html ): DOMDocument {
 }
 
 /**
- * Returns a formatted DOMElement object from a DOMDocument object.
+ *  Formatted DOMElement object from a DOMDocument object.
  *
  * @since x.x.x
  *
  * @param string $tag            HTML tag.
- * @param mixed  $dom_or_element DOMDocument or DOMElement.
+ * @param mixed  $dom_or_element DOMDocument.
  * @param int    $index          Index of element to return.
  *
  * @return \DOMElement|null
@@ -109,17 +108,16 @@ function get_dom_element( string $tag, $dom_or_element, int $index = 0 ) {
 }
 
 /**
- * Casts a DOMNode to a DOMElement.
+ * DOMNode to a DOMElement.
  *
  * @since x.x.x
  *
- * @param mixed $node DOMNode to cast to DOMElement.
+ * @param mixed $node DOMNode.
  *
  * @return \DOMElement|null
  */
 function dom_element( $node ) {
 	if ( $node->nodeType === XML_ELEMENT_NODE ) {
-		/* @var \DOMElement $node DOM Element node */
 		return $node;
 	}
 
@@ -127,12 +125,12 @@ function dom_element( $node ) {
 }
 
 /**
- * Returns an HTML element with a replaced tag.
+ * Change html tag name.
  *
  * @since x.x.x
  *
- * @param DOMElement $element DOM Element to change.
- * @param string     $name    Tag name, e.g: 'div'.
+ * @param DOMElement $element DOM Element.
+ * @param string     $name    Tag name.
  *
  * @return DOMElement
  */
@@ -169,13 +167,13 @@ function change_tag_name( DOMElement $element, string $name ): DOMElement {
 }
 
 /**
- * Returns array of dom elements by class name.
+ * Returns dom elements by class name as array.
  *
  * @since x.x.x
  *
- * @param DOMDocument|DOMElement $dom        DOM document or element.
- * @param string                 $class_name Element class name.
- * @param string                 $tag        Element tag name (optional).
+ * @param DOMDocument|DOMElement $dom        DOM document.
+ * @param string                 $class_name class name.
+ * @param string                 $tag        tag name.
  *
  * @return array
  */

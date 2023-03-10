@@ -41,4 +41,5 @@
     <exclude-pattern>dist/*</exclude-pattern>
     <exclude-pattern>assets/*</exclude-pattern>
     <exclude-pattern>patterns/*</exclude-pattern>
+     <exclude-pattern>inc/utilities/dom.php</exclude-pattern>
 </ruleset>

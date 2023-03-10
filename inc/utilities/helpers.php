@@ -208,12 +208,12 @@ function render_image_placeholder( string $html, array $block ): string {
  * @param string   $slug Icon name.
  * @param int|null $size Icon size.
  *
- * @throws DOMException If DOM can't create element.
+ * @throws DOMException Throw error.
  * @return string
  */
 function get_svg_icon( string $slug, int $size = null ): string {
 	ob_start();
-	echo file_get_contents( SWT_DIR . 'assets/svg/svgs.json' );
+	echo file_get_contents( SWT_DIR . 'assets/svg/svgs.json' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Required to get svg.json.
 	$icon_set = json_decode( ob_get_clean(), true );
 
 	$icon = isset( $icon_set[ $slug ] ) ? $icon_set[ $slug ] : '';
@@ -241,7 +241,7 @@ function get_svg_icon( string $slug, int $size = null ): string {
 	$title->appendChild( $dom->createTextNode( $label ) );
 	$title->setAttribute( 'id', $unique_id );
 
-	$svg->insertBefore( $title, $svg->firstChild );
+	$svg->insertBefore( $title, $svg->firstChild ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase -- Required to access dom element.
 
 	if ( $size ) {
 		$svg->setAttribute( 'width', (string) $size );
@@ -253,12 +253,12 @@ function get_svg_icon( string $slug, int $size = null ): string {
 
 
 /**
- * Converts array of CSS rules to string.
+ * Converts css array to string.
  *
  * @since x.x.x
  *
- * @param array $styles Styles as array.
- * @param bool  $trim   Whether to trim the trailing semicolon.
+ * @param array $styles Styles array.
+ * @param bool  $trim  trim trailing semicolon.
  *
  * @return string
  */
@@ -289,7 +289,6 @@ function css_array_to_string( array $styles, bool $trim = false ): string {
 function css_string_to_array( string $css ): array {
 	$array = array();
 
-	// Prevent svg url strings from being split.
 	$css = str_replace( 'xml;', 'xml$', $css );
 
 	$elements = explode( ';', $css );

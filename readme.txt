@@ -1,26 +1,58 @@
 === Spectra ===
 Contributors: brainstormforce
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Tags: full-site-editing, block-patterns, block-styles
+Requires at least: 6.1
 Tested up to: 6.1.1
+Stable tag: 0.0.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+License: GPL-2.0-or-later
+Tags: fse-theme, full-site-editing, blog, theme-options, rtl-language-support, full-width-template
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Spectra is fast, fully customizable & beautiful WordPress theme.
 
 == Description ==
 
-Spectra is fast, fully customizable & beautiful WordPress theme.
+Spectra is a beautiful and modern WordPress theme built with the Full Site Editing (FSE) feature. It's a versatile theme that can be used for blogs, portfolios, businesses, and more. Spectra comes with a sleek and professional design that will make your website stand out from the crowd.
+
 
 == Installation ==
 
-= From within WordPress =
-1. Visit "Appearance > Themes > Add New"
-2. Search for "Spectra"
-3. Install and activate
+1. In your site's admin panel, go to Appearance > Themes and click `Add New`.
+2. Type "Spectra" in the search field.
+3. Click `Install` and then `Activate` to start using the theme.
+4. Navigate to Appearance > Editor.
+5. Edit the page content as you wish, you can add, remove or customize any of the blocks.
+6. Enjoy
 
-== License ==
 
-Spectra WordPress Theme, Copyright 2020 Brainstormforce.
-Spectra is distributed under the terms of the GNU GPL.
+== Copyright ==
+
+Copyright © 2023, Spectra.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
+
+Composer
+License: MIT
+License URL: https://github.com/composer/composer/blob/main/LICENSE
+
+WordPress & Social Icons
+License: GPL-2.0-or-later
+License URL: https://github.com/WordPress/WordPress/blob/master/license.txt
+
+Google Fonts
+License: SIL Open Font License, 1.1
+License URL: https://fonts.google.com/specimen/Inter 
+
+© Copyright Spectra 2023, Spectra.
+
+
+== Changelog ==
+
+= 0.0.1 - March 10, 2023 =
+* Initial release
