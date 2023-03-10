@@ -4,7 +4,7 @@
  *
  * @package Spectra
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 0.0.1
  */
 
 declare(strict_types=1);
@@ -16,7 +16,7 @@ add_action( 'init', SWT_NS . 'register_meta_settings' );
 /**
  * Register Post Meta options for react based fields.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @return void
  */
 function register_meta_settings():void {

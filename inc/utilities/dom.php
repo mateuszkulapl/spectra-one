@@ -4,7 +4,7 @@
  *
  * @package Spectra
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 0.0.1
  */
 
 declare( strict_types=1 );
@@ -27,7 +27,7 @@ use function sprintf;
 /**
  * Formatted DOMDocument object from string.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param string $html HTML string to convert to DOM.
  *
@@ -85,7 +85,7 @@ function dom( string $html ): DOMDocument {
 /**
  *  Formatted DOMElement object from a DOMDocument object.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param string $tag            HTML tag.
  * @param mixed  $dom_or_element DOMDocument.
@@ -110,7 +110,7 @@ function get_dom_element( string $tag, $dom_or_element, int $index = 0 ) {
 /**
  * DOMNode to a DOMElement.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param mixed $node DOMNode.
  *
@@ -127,7 +127,7 @@ function dom_element( $node ) {
 /**
  * Change html tag name.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param DOMElement $element DOM Element.
  * @param string     $name    Tag name.
@@ -169,7 +169,7 @@ function change_tag_name( DOMElement $element, string $name ): DOMElement {
 /**
  * Returns dom elements by class name as array.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param DOMDocument|DOMElement $dom        DOM document.
  * @param string                 $class_name class name.

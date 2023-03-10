@@ -9,7 +9,7 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Spectra
- * @since x.x.x
+ * @since 0.0.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

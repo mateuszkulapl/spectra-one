@@ -4,7 +4,7 @@
  *
  * @package Spectra
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 0.0.1
  */
 
 declare(strict_types=1);
@@ -17,7 +17,7 @@ add_action( 'wp_ajax_swt_dismiss_welcome_notice', SWT_NS . 'close_welcome_notice
 /**
  * Render the welcome notice.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @return void
  */
 function render_welcome_notice(): void {
@@ -99,7 +99,7 @@ function render_welcome_notice(): void {
 /**
  * Close welcome notice.
  *
- * @since x.x.x
+ * @since 0.0.1
  */
 function close_welcome_notice() {
 	if ( ! isset( $_POST['nonce'] ) ) {
@@ -116,7 +116,7 @@ function close_welcome_notice() {
 /**
  * Welcome notice condition.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @return bool
  */
 function welcome_notice_display_conditions(): bool {
@@ -169,7 +169,7 @@ function welcome_notice_display_conditions(): bool {
 /**
  * Spectra plugin status.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @return string
  */
 function is_spectra_plugin_installed(): string {
@@ -185,7 +185,7 @@ function is_spectra_plugin_installed(): string {
 /**
  * Localize js.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @param string $plugin_status plugin current status.
  * @return array
  */

@@ -4,7 +4,7 @@
  *
  * @package Spectra
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 0.0.1
  */
 
 declare( strict_types=1 );
@@ -16,7 +16,7 @@ add_filter( 'render_block_core/post-template', SWT_NS . 'render_post_template', 
 /**
  * Modifies front end HTML output of block.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param string $html  Block HTML.
  * @param array  $block Block data.
@@ -32,7 +32,7 @@ function render_post_template( string $html, array $block ): string {
 /**
  * Load Inline Css.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @param string $css Inline CSS.
  * @return string
  */

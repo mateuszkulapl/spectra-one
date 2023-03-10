@@ -4,7 +4,7 @@
  *
  * @package Spectra
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 0.0.1
  */
 
 declare(strict_types=1);
@@ -14,7 +14,7 @@ namespace Swt;
 /**
  * Hide Elements.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @param string $title Page title.
  * @param int    $post_id Post id.
  * @return string

@@ -4,7 +4,7 @@
  *
  * @package Spectra
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 0.0.1
  */
 
 declare(strict_types=1);
@@ -14,7 +14,7 @@ namespace Swt;
 /**
  * Get template Directory Uri
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param string $path Optional path.
  *
@@ -27,7 +27,7 @@ function get_uri( string $path = '' ): string {
 /**
  * RTL For Dynamic / Inline css
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param string $direction Left or Right Direction.
  *
@@ -114,7 +114,7 @@ function parse_css( array $css_output = array(), $min_media = '', $max_media = '
 /**
  * Render Image Placeholder
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param string $html Html.
  * @param array  $block Block array.
@@ -203,7 +203,7 @@ function render_image_placeholder( string $html, array $block ): string {
 /**
  * Get SVG icon
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param string   $slug Icon name.
  * @param int|null $size Icon size.
@@ -255,7 +255,7 @@ function get_svg_icon( string $slug, int $size = null ): string {
 /**
  * Converts css array to string.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param array $styles Styles array.
  * @param bool  $trim  trim trailing semicolon.
@@ -280,7 +280,7 @@ function css_array_to_string( array $styles, bool $trim = false ): string {
 /**
  * Converts string of CSS rules to an array.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @param string $css CSS string.
  *

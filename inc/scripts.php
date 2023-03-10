@@ -4,7 +4,7 @@
  *
  * @package Spectra
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 0.0.1
  */
 
 declare( strict_types=1 );
@@ -14,7 +14,7 @@ namespace Swt;
 /**
  * Enqueue Frontend Scripts.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @return void
  */
 function enqueue_frontend_scripts(): void {
@@ -67,7 +67,7 @@ add_action( 'wp_enqueue_scripts', SWT_NS . 'enqueue_frontend_scripts' );
 /**
  * Enqueue Editor Scripts.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @return void
  */
@@ -96,7 +96,7 @@ add_action( 'enqueue_block_editor_assets', SWT_NS . 'enqueue_editor_scripts' );
 /**
  * Localize Editor Script.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @return mixed|void
  */
@@ -115,7 +115,7 @@ function localize_editor_script() {
 /**
  * Enqueue Editor Scripts.
  *
- * @since x.x.x
+ * @since 0.0.1
  *
  * @return void
  */

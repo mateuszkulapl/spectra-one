@@ -4,7 +4,7 @@
  *
  * @package Spectra
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 0.0.1
  */
 
 declare(strict_types=1);
@@ -64,7 +64,7 @@ function render_header( string $block_content, array $block ):string {
 /**
  * Load header Inline Css.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @param string $css Inline CSS.
  * @return string
  */
@@ -87,7 +87,7 @@ function header_inline_css( string $css ): string {
 /**
  * Load Header Inline Js.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @param string $js Inline JS.
  * @return string
  */
@@ -122,7 +122,7 @@ JS;
 /**
  * Load Transparent Header Inline Js.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @param string $js Inline JS.
  * @return string
  */
@@ -159,7 +159,7 @@ JS;
 /**
  * Load Transparent Header Inline Css.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @param string $css Inline CSS.
  * @return string
  */

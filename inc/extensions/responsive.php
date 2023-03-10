@@ -4,7 +4,7 @@
  *
  * @package Spectra
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 0.0.1
  */
 
 declare(strict_types=1);
@@ -16,7 +16,7 @@ add_filter( 'render_block', SWT_NS . 'render_responsive_blocks', 10, 2 );
 /**
  *  Render Responsive Blocks.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @param string $block_content Entire Block Content.
  * @param array  $block Block Properties As An Array.
  * @return string
@@ -58,7 +58,7 @@ function render_responsive_blocks( string $block_content, array $block ):string 
 /**
  * Responsive Blocks Inline CSS.
  *
- * @since x.x.x
+ * @since 0.0.1
  * @param string $css Inline CSS.
  * @return string
  */
