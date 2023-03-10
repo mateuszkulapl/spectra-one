@@ -3,7 +3,7 @@
     "description": "Spectra theme.",
     "author": "Brainstorm Force",
     "license": "GPL-2.0-or-later",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "scripts": {
         "start": "wp-scripts start",
         "build": "wp-scripts build --output-path=assets/js",
