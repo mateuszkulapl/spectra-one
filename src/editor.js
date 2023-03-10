@@ -7,7 +7,7 @@ import './block-extensions/all.js';
 
 if (spectra.is_spectra_plugin) {
 	addFilter(
-		'uagb.pluginSidebar',
+		'spectra.page-sidebar.before',
 		'swt/setting-list',
 		function ( markup, props ) {
 			return <SwtSettingList {...props}/>
