@@ -24,6 +24,7 @@ const SWT_DIR  = __DIR__ . SWT_DS;
  */
 require_once SWT_DIR . 'inc/utilities/all.php';
 require_once SWT_DIR . 'inc/scripts.php';
+require_once SWT_DIR . 'inc/fonts.php';
 require_once SWT_DIR . 'inc/blocks/all.php';
 require_once SWT_DIR . 'inc/extensions/all.php';
 require_once SWT_DIR . 'inc/block-styles/all.php';
