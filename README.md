@@ -13,6 +13,7 @@ Spectra is a beautiful and modern WordPress theme built with the Full Site Editi
 
 
 ## Installation ##
+
 1. In your site's admin panel, go to Appearance > Themes and click `Add New`.
 2. Type "Spectra" in the search field.
 3. Click `Install` and then `Activate` to start using the theme.
