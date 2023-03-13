@@ -57,14 +57,16 @@ const Header = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigherOr
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
         title: "Header Settings",
         initialOpen: true
-      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
+      }, !SWTTransparentHeader && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Enable Sticky Header", "spectra"),
+        help: SWTStickyHeader ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Transparent header option will be disabled on enabling this option.", "spectra") : '',
         checked: SWTStickyHeader,
         onChange: () => setAttributes({
           SWTStickyHeader: !SWTStickyHeader
         })
-      })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
+      })), !SWTStickyHeader && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Enable Transparent Header", "spectra"),
+        help: SWTTransparentHeader ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Sticky header option will be disabled on enabling this option.", "spectra") : '',
         checked: SWTTransparentHeader,
         onChange: () => setAttributes({
           SWTTransparentHeader: !SWTTransparentHeader
@@ -624,18 +626,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/plugins */ "@wordpress/plugins");
 /* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_plugins__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _extensions_page_settings_settings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./extensions/page-settings/settings */ "./src/extensions/page-settings/settings.js");
-/* harmony import */ var _extensions_editor_all_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./extensions/editor/all.js */ "./src/extensions/editor/all.js");
-/* harmony import */ var _block_extensions_all_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block-extensions/all.js */ "./src/block-extensions/all.js");
-/* harmony import */ var _extensions_page_settings_settings_list_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./extensions/page-settings/settings-list.js */ "./src/extensions/page-settings/settings-list.js");
+/* harmony import */ var _extensions_page_settings_settings_list_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./extensions/page-settings/settings-list.js */ "./src/extensions/page-settings/settings-list.js");
+/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/hooks */ "@wordpress/hooks");
+/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _extensions_editor_all_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./extensions/editor/all.js */ "./src/extensions/editor/all.js");
+/* harmony import */ var _block_extensions_all_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./block-extensions/all.js */ "./src/block-extensions/all.js");
 
 
 
 
 
 
-wp.hooks.addFilter('uagb.pluginSidebar', 'swt/dashboard_app', function (markup, props) {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_extensions_page_settings_settings_list_js__WEBPACK_IMPORTED_MODULE_5__.SwtSettingList, props);
-});
+
+if (spectra.is_spectra_plugin) {
+  (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_4__.addFilter)('spectra.page-sidebar.before', 'swt/setting-list', function (markup, props) {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_extensions_page_settings_settings_list_js__WEBPACK_IMPORTED_MODULE_3__.SwtSettingList, props);
+  });
+}
 if (!spectra.is_spectra_plugin) {
   (0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_1__.registerPlugin)('swt-page-level-settings', {
     render: _extensions_page_settings_settings__WEBPACK_IMPORTED_MODULE_2__["default"]

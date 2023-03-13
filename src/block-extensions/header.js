@@ -20,12 +20,17 @@ const Header = createHigherOrderComponent((BlockEdit) => {
                                 title="Header Settings"
                                 initialOpen={true}
                             >
-                                <PanelRow>
+                                { !SWTTransparentHeader && <PanelRow>
                                     <ToggleControl
                                         label={__(
                                             "Enable Sticky Header",
                                             "spectra"
                                         )}
+                                        help={
+                                            SWTStickyHeader
+                                                ? __("Transparent header option will be disabled on enabling this option.", "spectra")
+                                                : ''
+                                        }
                                         checked={SWTStickyHeader}
                                         onChange={() =>
                                             setAttributes({
@@ -34,13 +39,18 @@ const Header = createHigherOrderComponent((BlockEdit) => {
                                             })
                                         }
                                     />
-                                </PanelRow>
-                                <PanelRow>
+                                </PanelRow> }
+                                { !SWTStickyHeader && <PanelRow>
                                     <ToggleControl
                                         label={__(
                                             "Enable Transparent Header",
                                             "spectra"
                                         )}
+                                        help={
+                                            SWTTransparentHeader
+                                                ? __("Sticky header option will be disabled on enabling this option.", "spectra")
+                                                : ''
+                                        }
                                         checked={SWTTransparentHeader}
                                         onChange={() =>
                                             setAttributes({
@@ -49,7 +59,7 @@ const Header = createHigherOrderComponent((BlockEdit) => {
                                             })
                                         }
                                     />
-                                </PanelRow>
+                                </PanelRow> }
                             </PanelBody>
                         </Panel>
                     </InspectorControls>

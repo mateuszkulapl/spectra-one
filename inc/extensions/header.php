@@ -21,7 +21,10 @@ add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
  * @return string
  */
 function render_header( string $block_content, array $block ):string { 
-	if ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) {
+	$sticky_header_condition =  isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'];
+	$transparent_header_condition =  isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'];
+
+	if ( $sticky_header_condition ) {
 		$dom    = dom( $block_content );
 		$header = get_dom_element( 'header', $dom );
 
@@ -41,7 +44,7 @@ function render_header( string $block_content, array $block ):string {
 		}
 	}
 
-	if ( isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'] ) {
+	if ( $transparent_header_condition ) {
 		$dom    = dom( $block_content );
 		$header = get_dom_element( 'header', $dom );
 
@@ -55,7 +58,6 @@ function render_header( string $block_content, array $block ):string {
 		$block_content = $dom->saveHTML();
 
 		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'header_inline_transparent_css' );
-		add_filter( 'swt_dynamic_theme_js', SWT_NS . 'header_inline_transparent_js' );
 	}
 
 	return $block_content;
@@ -106,50 +108,18 @@ function header_inline_js( string $js ): string {
 		// Sticky header option.
 		const header = document.querySelector( '.swt-sticky-header' );
 		const body = document.querySelector( 'body' );
+		const wpAdminBar = document.querySelector('#wpadminbar');
+		let wpAdminBarHeight = 0;
 		if( header ) {
+			if( wpAdminBar ) {
+				wpAdminBarHeight = wpAdminBar.offsetHeight;
+			}
 			const height = header.offsetHeight;
+
 			if( height ) {
-				body.style.paddingTop = height + 'px';
+				body.style.paddingTop = parseFloat( height - wpAdminBarHeight ) + 'px';
 			}
 		}
-	});
-JS;
-	$js       .= $inline_js;
-	return $js;
-}
-
-
-/**
- * Load Transparent Header Inline Js.
- *
- * @since 0.0.1
- * @param string $js Inline JS.
- * @return string
- */
-function header_inline_transparent_js( string $js ): string {
-	$inline_js = <<< JS
-	function docReady(fn) {
-		// see if DOM is already available
-		if (document.readyState === "complete" || document.readyState === "interactive") {
-			// call on next available tick
-			setTimeout(fn, 1);
-		} else {
-			document.addEventListener("DOMContentLoaded", fn);
-		}
-	}
-	docReady(function(){
-		// Transparent Header
-		const scroll = document.querySelector( '.swt-transparent-header' );
-		const body = document.querySelector( 'body' );
-		body.classList.add("swt-on-top");
-		window.addEventListener('scroll', function() {
-			const scroll = document.documentElement.scrollTop
-			if (scroll > 5) {
-				body.classList.remove("swt-on-top");
-			} else {
-				body.classList.add("swt-on-top")
-			}
-		});
 	});
 JS;
 	$js       .= $inline_js;
@@ -167,11 +137,15 @@ function header_inline_transparent_css( string $css ): string {
 
 	// Sticky header option.
 	$css_output = array(
-		'.swt-transparent-header > .has-background' => array(
-			'transition' => '.2s',
+		'.swt-transparent-header' => array(
+			'position' => 'absolute',
+			'top'      => '0',
+			'left'     => '0',
+			'width'    => '100%',
+			'z-index'  => '999',
 		),
 
-		'.swt-on-top .swt-transparent-header > .has-background' => array(
+		'.swt-transparent-header > .has-background' => array(
 			'background' => 'transparent !important',
 		),
 	);
