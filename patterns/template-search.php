@@ -18,16 +18,28 @@
 <div class="wp-block-query alignwide"><!-- wp:post-template {"align":"wide"} -->
 <!-- wp:post-featured-image {"isLink":true,"width":"100%","height":"253px","align":"wide"} /-->
 
-<!-- wp:post-terms {"term":"category"} /-->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small","padding":{"top":"var:preset|spacing|xx-small"},"margin":{"bottom":"var:preset|spacing|small"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--small);padding-top:var(--wp--preset--spacing--xx-small)"><!-- wp:post-terms {"term":"category","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"className":"is-style-swt-post-terms-pill","fontSize":"x-small"} /-->
 
-<!-- wp:post-title {"level":4,"isLink":true,"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}}} /-->
+<!-- wp:post-title {"level":4,"isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|xx-small","bottom":"var:preset|spacing|xx-small"}}},"textColor":"heading"} /-->
 
-<!-- wp:post-date {"isLink":true,"textColor":"body"} /-->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:post-author {"avatarSize":24,"showAvatar":false,"fontSize":"x-small"} /-->
+
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size">·</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-date {"format":"M j, Y","fontSize":"x-small"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 <!-- /wp:post-template -->
 
-<!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
-<!-- wp:query-pagination-previous {"label":"Newer Posts"} /-->
+<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /-->
 
-<!-- wp:query-pagination-next {"label":"Older Posts"} /-->
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
 <!-- /wp:query-pagination --></div>
 <!-- /wp:query -->

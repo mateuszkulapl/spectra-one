@@ -8,10 +8,10 @@
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","right":"0","bottom":"var:preset|spacing|large","left":"0"}}}} -->
-<h2 class="alignwide has-text-align-center" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:0;padding-bottom:var(--wp--preset--spacing--large);padding-left:0">Latest Posts</h2>
+<h2 class="wp-block-heading alignwide has-text-align-center" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:0;padding-bottom:var(--wp--preset--spacing--large);padding-left:0">Latest Posts</h2>
 <!-- /wp:heading -->
 
-<!-- wp:query {"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list","columns":3},"layout":{"type":"constrained"}} -->
+<!-- wp:query {"queryId":5,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list","columns":3},"layout":{"type":"constrained"}} -->
 <div class="wp-block-query"><!-- wp:post-template -->
 <!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:post-featured-image {"isLink":true} /-->
@@ -32,18 +32,12 @@
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
-<!-- wp:query-pagination -->
+<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"}} -->
 <!-- wp:query-pagination-previous /-->
 
 <!-- wp:query-pagination-numbers /-->
 
 <!-- wp:query-pagination-next /-->
-<!-- /wp:query-pagination -->
-
-<!-- wp:query-no-results -->
-<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
-<p></p>
-<!-- /wp:paragraph -->
-<!-- /wp:query-no-results --></div>
+<!-- /wp:query-pagination --></div>
 <!-- /wp:query --></div>
 <!-- /wp:group -->
