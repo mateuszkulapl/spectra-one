@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Alternate card
- * Slug: spectra/alternate-card
+ * Slug: spectra-one/alternate-card
  * Categories: text
  * Keywords: Alternate card
  */

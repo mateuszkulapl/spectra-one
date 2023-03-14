@@ -2,7 +2,7 @@
 /**
  * Theme Helpers
  *
- * @package Spectra
+ * @package Spectra One
  * @author Brainstorm Force
  * @since 0.0.1
  */
@@ -10,6 +10,10 @@
 declare(strict_types=1);
 
 namespace Swt;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 /**
  * Get template Directory Uri
@@ -235,7 +239,7 @@ function get_svg_icon( string $slug, int $size = null ): string {
 	$svg->setAttribute( 'aria-labelledby', $unique_id );
 	$svg->setAttribute( 'data-icon', $slug );
 
-	$label = ucwords( str_replace( '-', ' ', $slug ) ) . __( ' Icon', 'spectra' );
+	$label = ucwords( str_replace( '-', ' ', $slug ) ) . __( ' Icon', 'spectra-one' );
 	$title = $dom->createElement( 'title' );
 
 	$title->appendChild( $dom->createTextNode( $label ) );

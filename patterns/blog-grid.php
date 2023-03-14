@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Blog grid
- * Slug: spectra/blog-grid
+ * Slug: spectra-one/blog-grid
  * Categories: posts
  * Keywords: Blog grid
  */

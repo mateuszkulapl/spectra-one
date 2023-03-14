@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Three columns listing
- * Slug: spectra/three-columns-listing
+ * Slug: spectra-one/three-columns-listing
  * Categories: featured
  * Keywords: Three columns listing
  */

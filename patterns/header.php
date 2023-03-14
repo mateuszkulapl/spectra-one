@@ -2,7 +2,7 @@
 
 /**
  * Title: Header default
- * Slug: spectra/header-default
+ * Slug: spectra-one/header-default
  * Categories: header
  * Block Types: core/template-part/header
  */

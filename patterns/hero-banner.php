@@ -2,7 +2,7 @@
 
 /**
  * Title: Hero banner
- * Slug: spectra/hero-banner
+ * Slug: spectra-one/hero-banner
  * Categories: banners
  * Keywords: Hero Banner
  */

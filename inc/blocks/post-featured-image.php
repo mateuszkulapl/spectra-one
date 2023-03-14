@@ -2,7 +2,7 @@
 /**
  * Post Feature image Block.
  *
- * @package Spectra
+ * @package Spectra One
  * @author Brainstorm Force
  * @since 0.0.1
  */
@@ -10,6 +10,10 @@
 declare( strict_types=1 );
 
 namespace Swt;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 add_filter( 'render_block_core/post-featured-image', SWT_NS . 'render_featured_image_block', 10, 2 );
 

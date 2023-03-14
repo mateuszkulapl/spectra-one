@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Blog left featured image
- * Slug: spectra/blog-left-featured-image
+ * Slug: spectra-one/blog-left-featured-image
  * Categories: query
  * Keywords: Blog left featured image
  */

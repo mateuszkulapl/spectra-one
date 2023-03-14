@@ -2,7 +2,7 @@
 /**
  * Admin Welcome Notice
  *
- * @package Spectra
+ * @package Spectra One
  * @author Brainstorm Force
  * @since 0.0.1
  */
@@ -10,6 +10,10 @@
 declare(strict_types=1);
 
 namespace Swt;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 add_action( 'admin_notices', SWT_NS . 'render_welcome_notice', 0 );
 add_action( 'wp_ajax_swt_dismiss_welcome_notice', SWT_NS . 'close_welcome_notice' );
@@ -61,24 +65,24 @@ function render_welcome_notice(): void {
 
 
 	<div class="notice notice-info swt-welcome-notice">
-		<button type="button" class="notice-dismiss"><span class="screen-reader-text"><?php esc_html_e( 'Close this notice..', 'spectra' ); ?></span></button>
+		<button type="button" class="notice-dismiss"><span class="screen-reader-text"><?php esc_html_e( 'Close this notice..', 'spectra-one' ); ?></span></button>
 		<div class="swt-row">
 			<div class="swt-col">
 				<div class="notice-content">
 					<p class="sub-notice-title">
-						<?php esc_html_e( 'Spectra — WordPress Gutenberg Blocks', 'spectra' ); ?>
+						<?php esc_html_e( 'Spectra — WordPress Gutenberg Blocks', 'spectra-one' ); ?>
 					</p>
 					<h2 class="notice-title">
-						<?php esc_html_e( 'Page builder that works with the default WordPress editor', 'spectra' ); ?>
+						<?php esc_html_e( 'Page builder that works with the default WordPress editor', 'spectra-one' ); ?>
 					</h2>
 					<p class="description">
-						<?php esc_html_e( 'Whether you are a beginner, marketer, or professional, Spectra has the tools and resources you can rely on to succeed', 'spectra' ); ?>
+						<?php esc_html_e( 'Whether you are a beginner, marketer, or professional, Spectra has the tools and resources you can rely on to succeed', 'spectra-one' ); ?>
 					</p>
 					<div class="notice-actions">
 						<button id="swt-install-spectra" class="button button-primary button-hero">
 							<span class="text">
 								<?php
-								'installed' === $plugin_status ? esc_html_e( 'Activate Spectra Plugin', 'spectra' ) : esc_html_e( 'Install & Activate Spectra', 'spectra' );
+								'installed' === $plugin_status ? esc_html_e( 'Activate Spectra Plugin', 'spectra-one' ) : esc_html_e( 'Install & Activate Spectra', 'spectra-one' );
 								?>
 							</span>
 						</button>
@@ -208,8 +212,8 @@ function localize_welcome_notice_js( $plugin_status ): array {
 				admin_url( 'plugins.php' )
 			)
 		),
-		'activating'    => __( 'Activating', 'spectra' ) . '&hellip;',
-		'installing'    => __( 'Installing', 'spectra' ) . '&hellip;',
-		'done'          => __( 'Done', 'spectra' ),
+		'activating'    => __( 'Activating', 'spectra-one' ) . '&hellip;',
+		'installing'    => __( 'Installing', 'spectra-one' ) . '&hellip;',
+		'done'          => __( 'Done', 'spectra-one' ),
 	);
 }

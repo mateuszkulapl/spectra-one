@@ -2,7 +2,7 @@
 /**
  * Register Block Styles.
  *
- * @package Spectra
+ * @package Spectra One
  * @author Brainstorm Force
  * @since 0.0.1
  */
@@ -11,13 +11,17 @@ declare( strict_types=1 );
 
 namespace Swt;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 $swt_parent_class = '.is-style-' . SWT_PFX . '-search-minimal';
 
 register_block_style(
 	'core/search',
 	array(
 		'name'         => SWT_PFX . '-search-minimal',
-		'label'        => __( 'Minimal', 'spectra' ),
+		'label'        => __( 'Minimal', 'spectra-one' ),
 		'inline_style' => '
             ' . $swt_parent_class . '.wp-block-search__button-inside .wp-block-search__button {
                 color: var(--wp--preset--color--heading);

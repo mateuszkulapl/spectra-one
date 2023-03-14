@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Call to action.
- * Slug: spectra/call-to-action
+ * Slug: spectra-one/call-to-action
  * Categories: call to action
  * Keywords: Call to action
  */

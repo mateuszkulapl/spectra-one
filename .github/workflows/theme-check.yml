@@ -47,7 +47,7 @@ jobs:
             - name: Setup custom wp-env for theme-check
               run: cp .github/.wp-env-themecheck.json .wp-env.json
 
-            - name: Build the Spectra theme
+            - name: Build the Spectra One theme
               run: grunt release-no-clean
 
             - name: Start Local Environment
@@ -75,7 +75,7 @@ jobs:
               run: docker-compose -f $HOME/wp-env/$CONFIG_MD5/docker-compose.yml run --rm cli wp plugin install theme-check --activate
 
             - name: Theme Check
-              run: docker-compose -f $HOME/wp-env/$CONFIG_MD5/docker-compose.yml run -e WP_CLI_PACKAGES_DIR=.wp-cli --rm cli wp themecheck --theme=spectra --no-interactive
+              run: docker-compose -f $HOME/wp-env/$CONFIG_MD5/docker-compose.yml run -e WP_CLI_PACKAGES_DIR=.wp-cli --rm cli wp themecheck --theme=spectra-one --no-interactive
 
             - name: Stop Docker environment
               run: npm run env:stop

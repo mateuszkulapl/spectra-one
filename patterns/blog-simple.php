@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Blog simple
- * Slug: spectra/blog-simple
+ * Slug: spectra-one/blog-simple
  * Categories: posts
  * Keywords: Blog simple
  */
