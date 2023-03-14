@@ -3,7 +3,7 @@ import { PanelBody, ToggleControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
 export const SwtSettingList = (props) => {
-    const disableSections = Object.entries(spectra.disable_sections).map(([key, value]) => {
+    const disableSections = Object.entries(spectraOne.disable_sections).map(([key, value]) => {
         let sectionValue = props.meta[value['key']] && true === props.meta[value['key']] ? true : false;
         return (
             <ToggleControl
@@ -17,7 +17,7 @@ export const SwtSettingList = (props) => {
     });
 
     const panelBody = <PanelBody
-        title={__('Disable Elements')}
+        title={__('Disable Elements', 'spectra-one')}
         initialOpen={true}
         className={'swt-disable-elements-panel'}
     >

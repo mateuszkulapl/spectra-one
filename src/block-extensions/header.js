@@ -24,11 +24,11 @@ const Header = createHigherOrderComponent((BlockEdit) => {
                                     <ToggleControl
                                         label={__(
                                             "Enable Sticky Header",
-                                            "spectra"
+                                            "spectra-one"
                                         )}
                                         help={
                                             SWTStickyHeader
-                                                ? __("Transparent header option will be disabled on enabling this option.", "spectra")
+                                                ? __("Transparent header option will be disabled on enabling this option.", "spectra-one")
                                                 : ''
                                         }
                                         checked={SWTStickyHeader}
@@ -44,11 +44,11 @@ const Header = createHigherOrderComponent((BlockEdit) => {
                                     <ToggleControl
                                         label={__(
                                             "Enable Transparent Header",
-                                            "spectra"
+                                            "spectra-one"
                                         )}
                                         help={
                                             SWTTransparentHeader
-                                                ? __("Sticky header option will be disabled on enabling this option.", "spectra")
+                                                ? __("Sticky header option will be disabled on enabling this option.", "spectra-one")
                                                 : ''
                                         }
                                         checked={SWTTransparentHeader}

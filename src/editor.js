@@ -5,7 +5,7 @@ import { addFilter } from '@wordpress/hooks';
 import './extensions/editor/all.js';
 import './block-extensions/all.js';
 
-if (spectra.is_spectra_plugin) {
+if (spectraOne.is_spectra_plugin) {
 	addFilter(
 		'spectra.page-sidebar.before',
 		'swt/setting-list',
@@ -15,6 +15,6 @@ if (spectra.is_spectra_plugin) {
 	);
 }
 
-if (!spectra.is_spectra_plugin) {
+if (!spectraOne.is_spectra_plugin) {
     registerPlugin('swt-page-level-settings', { render: SwtPageSettingsPopup });
 }

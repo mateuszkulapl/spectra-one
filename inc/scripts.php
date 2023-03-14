@@ -90,7 +90,7 @@ function enqueue_editor_scripts(): void {
 
 	wp_localize_script(
 		SWT_SLUG . '-editor',
-		SWT_SLUG,
+		SWT_LOC,
 		localize_editor_script()
 	);
 }

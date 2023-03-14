@@ -19,6 +19,7 @@ const SWT_VER  = '0.0.1';
 const SWT_SLUG = 'spectra-one';
 const SWT_NAME = 'Spectra One';
 const SWT_PFX  = 'swt';
+const SWT_LOC  = 'spectraOne';
 const SWT_NS   = __NAMESPACE__ . '\\';
 const SWT_DS   = DIRECTORY_SEPARATOR;
 const SWT_DIR  = __DIR__ . SWT_DS;
