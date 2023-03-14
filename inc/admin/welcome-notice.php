@@ -53,7 +53,7 @@ function render_welcome_notice(): void {
 
 	wp_localize_script(
 		SWT_SLUG . '-welcome-notice',
-		SWT_SLUG,
+		SWT_LOC,
 		localize_welcome_notice_js( $plugin_status )
 	);
 

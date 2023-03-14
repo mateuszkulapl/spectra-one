@@ -12,7 +12,7 @@ function handleWelcomeNotice() {
 		pluginSlug,
 		nonce,
 		pluginStatus,
-	} = spectra;
+	} = spectraOne;
 
 	let installStatusText;
 	const CloseButton = document.querySelector('.swt-welcome-notice .notice-dismiss');
