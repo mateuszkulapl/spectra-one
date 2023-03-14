@@ -15,11 +15,6 @@
           "slug": "secondary"
         },
         {
-          "name": "Foreground",
-          "color": "#111827",
-          "slug": "foreground"
-        },
-        {
           "name": "Heading",
           "color": "#1F2937",
           "slug": "heading"
@@ -30,16 +25,6 @@
           "slug": "body"
         },
         {
-          "name": "Neutral",
-          "color": "#9CA3AF",
-          "slug": "neutral"
-        },
-        {
-          "name": "Outline",
-          "color": "#E5E7EB",
-          "slug": "outline"
-        },
-        {
           "name": "Surface",
           "color": "#F5F7FA",
           "slug": "surface"
@@ -48,6 +33,21 @@
           "name": "Background",
           "color": "#FFFFFF",
           "slug": "background"
+        },
+        {
+          "name": "Outline",
+          "color": "#E5E7EB",
+          "slug": "outline"
+        },
+        {
+          "name": "Neutral",
+          "color": "#9CA3AF",
+          "slug": "neutral"
+        },
+        {
+          "name": "Foreground",
+          "color": "#111827",
+          "slug": "foreground"
         },
         {
           "name": "Transparent",
