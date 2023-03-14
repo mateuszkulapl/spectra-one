@@ -230,7 +230,10 @@ module.exports = function (grunt) {
                         src: 'assets/css/unminified/style-rtl.css',
                         dest: 'assets/css/minified/style.min-rtl.css',
                     },
-
+                    {
+                        src: 'assets/css/unminified/editor-rtl.css',
+                        dest: 'assets/css/minified/editor.min-rtl.css',
+                    },
                     {
                         src: 'assets/css/unminified/compatibility/woocommerce-rtl.css',
                         dest: 'assets/css/minified/compatibility/woocommerce.min-rtl.css',
