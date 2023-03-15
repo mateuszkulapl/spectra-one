@@ -6,16 +6,16 @@
  * Inserter: false
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:group {"tagName":"main","align":"wide","layout":{"type":"default"}} -->
-<main class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"left","level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}},"className":"wp-block-heading"} -->
-<h1 class="wp-block-heading has-text-align-left" style="margin-bottom:var(--wp--preset--spacing--medium)">Error 404</h1>
+<!-- wp:group {"tagName":"main","align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large","padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:heading {"textAlign":"left","level":1,"align":"wide","className":"wp-block-heading"} -->
+<h1 class="alignwide has-text-align-left wp-block-heading">Error 404</h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"left","className":"aligncenter"} -->
-<p class="has-text-align-left aligncenter">Unfortunately, this page doesn't exist.<br>Maybe try a search?</p>
+<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"align":"left","className":"aligncenter","fontSize":"large"} -->
+<p class="has-text-align-left aligncenter has-large-font-size">Unfortunately, this page doesn't exist.<br>Maybe try a search?</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search...","width":300,"widthUnit":"px","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}},"className":"is-style-swt-search-minimal"} /--></main>
-<!-- /wp:group --></div>
+<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search...","width":300,"widthUnit":"px","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}},"className":"is-style-swt-search-minimal"} /--></div>
+<!-- /wp:group --></main>
 <!-- /wp:group -->
