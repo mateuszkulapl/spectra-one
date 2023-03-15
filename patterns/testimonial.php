@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Testimonial
- * Slug: spectra/testimonial
+ * Slug: spectra-one/testimonial
  * Categories: featured
  * Keywords: Testimonial
  */

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer five columns menu inline
- * Slug: spectra/footer-five-columns-menu-inline
+ * Slug: spectra-one/footer-five-columns-menu-inline
  * Categories: footer
  * Block Types: core/template-part/footer
  */

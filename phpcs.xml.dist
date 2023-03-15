@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="">
-    <description>Spectra ruleset</description>
+    <description>Spectra One ruleset</description>
     <rule ref="WordPress-VIP-Go">
         <exclude name="WordPressVIPMinimum.Security.Mustache.OutputNotation"/>
     </rule>
@@ -24,7 +24,7 @@
     <rule ref="PHPCompatibility"/>
     <rule ref="WordPress.WP.I18n">
         <properties>
-            <property name="text_domain" value="spectra"/>
+            <property name="text_domain" value="spectra-one"/>
         </properties>
 
     </rule>
@@ -41,5 +41,5 @@
     <exclude-pattern>dist/*</exclude-pattern>
     <exclude-pattern>assets/*</exclude-pattern>
     <exclude-pattern>patterns/*</exclude-pattern>
-     <exclude-pattern>inc/utilities/dom.php</exclude-pattern>
+    <exclude-pattern>inc/utilities/dom.php</exclude-pattern>
 </ruleset>

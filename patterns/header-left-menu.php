@@ -2,7 +2,7 @@
 
 /**
  * Title: Header left menu
- * Slug: spectra/header-left-menu
+ * Slug: spectra-one/header-left-menu
  * Categories: header
  * Block Types: core/template-part/header
  */

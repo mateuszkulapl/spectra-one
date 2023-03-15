@@ -2,7 +2,7 @@
 /**
  * Header functions
  *
- * @package Spectra
+ * @package Spectra One
  * @author Brainstorm Force
  * @since 0.0.1
  */
@@ -10,6 +10,10 @@
 declare(strict_types=1);
 
 namespace Swt;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
 
@@ -21,8 +25,8 @@ add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
  * @return string
  */
 function render_header( string $block_content, array $block ):string { 
-	$sticky_header_condition =  isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'];
-	$transparent_header_condition =  isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'];
+	$sticky_header_condition      = isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'];
+	$transparent_header_condition = isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'];
 
 	if ( $sticky_header_condition ) {
 		$dom    = dom( $block_content );
@@ -137,7 +141,7 @@ function header_inline_transparent_css( string $css ): string {
 
 	// Sticky header option.
 	$css_output = array(
-		'.swt-transparent-header' => array(
+		'.swt-transparent-header'                   => array(
 			'position' => 'absolute',
 			'top'      => '0',
 			'left'     => '0',

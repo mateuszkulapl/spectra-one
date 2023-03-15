@@ -2,7 +2,7 @@
 /**
  * Load Scripts
  *
- * @package Spectra
+ * @package Spectra One
  * @author Brainstorm Force
  * @since 0.0.1
  */
@@ -10,6 +10,10 @@
 declare( strict_types=1 );
 
 namespace Swt;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 /**
  * Enqueue Frontend Scripts.
@@ -86,7 +90,7 @@ function enqueue_editor_scripts(): void {
 
 	wp_localize_script(
 		SWT_SLUG . '-editor',
-		SWT_SLUG,
+		SWT_LOC,
 		localize_editor_script()
 	);
 }

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Banner wide
- * Slug: spectra/banner-wide
+ * Slug: spectra-one/banner-wide
  * Categories: banner
  * Keywords: Banner wide
  */

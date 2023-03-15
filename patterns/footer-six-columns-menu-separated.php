@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer six columns menu separated
- * Slug: spectra/footer-six-columns-menu-separated
+ * Slug: spectra-one/footer-six-columns-menu-separated
  * Categories: footer
  * Block Types: core/template-part/footer
  */

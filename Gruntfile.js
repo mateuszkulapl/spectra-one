@@ -138,7 +138,7 @@ module.exports = function (grunt) {
         },
 
         clean: {
-            main: ["spectra"],
+            main: ["spectra-one"],
             zip: ["*.zip"]
 
         },
@@ -184,20 +184,20 @@ module.exports = function (grunt) {
                     '!webpack.config.js',
                     '!src/**'
                 ],
-                dest: 'spectra/'
+                dest: 'spectra-one/'
             }
         },
         
         compress: {
             main: {
                 options: {
-                    archive: 'spectra-' + pkgInfo.version + '.zip',
+                    archive: 'spectra-one-' + pkgInfo.version + '.zip',
                     mode: 'zip'
                 },
                 files: [
                     {
                         src: [
-                            './spectra/**'
+                            './spectra-one/**'
                         ]
 
                     }
@@ -230,7 +230,10 @@ module.exports = function (grunt) {
                         src: 'assets/css/unminified/style-rtl.css',
                         dest: 'assets/css/minified/style.min-rtl.css',
                     },
-
+                    {
+                        src: 'assets/css/unminified/editor-rtl.css',
+                        dest: 'assets/css/minified/editor.min-rtl.css',
+                    },
                     {
                         src: 'assets/css/unminified/compatibility/woocommerce-rtl.css',
                         dest: 'assets/css/minified/compatibility/woocommerce.min-rtl.css',

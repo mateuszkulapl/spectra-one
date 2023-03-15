@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Template search
- * Slug: spectra/template-search
+ * Slug: spectra-one/template-search
  * Categories: template
  * Inserter: false
  */

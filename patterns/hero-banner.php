@@ -2,7 +2,7 @@
 
 /**
  * Title: Hero banner
- * Slug: spectra/hero-banner
+ * Slug: spectra-one/hero-banner
  * Categories: banners
  * Keywords: Hero Banner
  */
@@ -14,7 +14,7 @@ $get_url = trailingslashit( get_template_directory_uri());
 );
 ?>
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained","justifyContent":"center","contentSize":""}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"style":{"spacing":{}}} -->
 <div class="wp-block-column"><!-- wp:heading {"level":1,"style":{"typography":{"letterSpacing":"-1px"},"spacing":{"padding":{"right":"var:preset|spacing|medium"}}},"textColor":"heading"} -->

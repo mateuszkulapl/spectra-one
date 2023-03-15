@@ -21,7 +21,7 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 						>
 							<PanelRow>
 								<ToggleControl
-									label={__("Hide Desktop", "spectra")}
+									label={__("Hide Desktop", "spectra-one")}
 									checked={UAGHideDesktop}
 									onChange={() =>
 										setAttributes({
@@ -33,7 +33,7 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 
 							<PanelRow>
 								<ToggleControl
-									label={__("Hide Tablet", "spectra")}
+									label={__("Hide Tablet", "spectra-one")}
 									checked={UAGHideTab}
 									onChange={() =>
 										setAttributes({
@@ -44,7 +44,7 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 							</PanelRow>
 							<PanelRow>
 								<ToggleControl
-									label={__("Hide Mobile", "spectra")}
+									label={__("Hide Mobile", "spectra-one")}
 									checked={UAGHideMob}
 									onChange={() =>
 										setAttributes({
@@ -62,7 +62,7 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 	};
 }, "Responsive");
 
-if (!spectra.is_spectra_plugin) {
+if (!spectraOne.is_spectra_plugin) {
 	addFilter("editor.BlockEdit", "swt/responsive", Responsive);
 }
 
@@ -89,7 +89,7 @@ function ResponsiveAttributes(settings) {
 	return settings;
 }
 
-if (!spectra.is_spectra_plugin) {
+if (!spectraOne.is_spectra_plugin) {
 	addFilter(
 		"blocks.registerBlockType",
 		"swt/responsive-attributes",

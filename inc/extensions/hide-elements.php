@@ -2,7 +2,7 @@
 /**
  * Hide Elements
  *
- * @package Spectra
+ * @package Spectra One
  * @author Brainstorm Force
  * @since 0.0.1
  */
@@ -10,6 +10,10 @@
 declare(strict_types=1);
 
 namespace Swt;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 add_filter( 'render_block', SWT_NS . 'hide_elements', 10, 2 );
 
@@ -51,11 +55,11 @@ function get_disable_section_fields():array {
 	$swt_page_meta_elements = array(
 		array(
 			'key'   => 'swt_meta_header_display',
-			'label' => __( 'Disable Header', 'spectra' ),
+			'label' => __( 'Disable Header', 'spectra-one' ),
 		),
 		array(
 			'key'   => 'swt_meta_footer_display',
-			'label' => __( 'Disable Footer', 'spectra' ),
+			'label' => __( 'Disable Footer', 'spectra-one' ),
 		),
 	);
 

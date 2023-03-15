@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer default
- * Slug: spectra/footer-default
+ * Slug: spectra-one/footer-default
  * Categories: footer
  * Block Types: core/template-part/footer
  */
