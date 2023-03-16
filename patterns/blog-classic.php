@@ -6,37 +6,32 @@
  * Keywords: Blog classic
  */
 ?>
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","right":"0","bottom":"var:preset|spacing|large","left":"0"}}}} -->
-<h2 class="wp-block-heading alignwide has-text-align-center" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:0;padding-bottom:var(--wp--preset--spacing--large);padding-left:0">Latest Posts</h2>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:heading {"textAlign":"center","level":1,"className":"wp-block-heading"} -->
+<h1 class="has-text-align-center wp-block-heading">Latest Posts</h1>
 <!-- /wp:heading -->
-
 <!-- wp:query {"queryId":5,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list","columns":3},"layout":{"type":"constrained"}} -->
 <div class="wp-block-query"><!-- wp:post-template -->
-<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:post-featured-image {"isLink":true} /-->
-
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--small)"><!-- wp:post-terms {"term":"category","className":"is-style-swt-post-terms-pill"} /-->
-
-<!-- wp:post-title {"isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small","right":"0","bottom":"0","left":"0"}}}} /--></div>
+<!-- wp:post-featured-image {"isLink":true,"style":{"border":{"radius":"8px"}}} /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|large","top":"var:preset|spacing|xx-small"},"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--xx-small);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:post-terms {"term":"category","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"className":"is-style-swt-post-terms-pill"} /-->
+<!-- wp:post-title {"level":3,"isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small"}}}} /-->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"textColor":"neutral","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group has-neutral-color has-text-color"><!-- wp:post-author {"showAvatar":false,"showBio":false} /-->
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size">·</p>
+<!-- /wp:paragraph -->
+<!-- wp:post-date {"format":"M j, Y"} /--></div>
 <!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:post-author {"showAvatar":false,"showBio":false} /-->
-
-<!-- wp:post-date /--></div>
-<!-- /wp:group -->
-
-<!-- wp:post-excerpt {"moreText":"Read More"} /--></div>
+<!-- wp:post-excerpt {"moreText":"Read More"} /-->
+<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large"}}},"backgroundColor":"outline","className":"is-style-wide"} -->
+<hr class="wp-block-separator has-text-color has-outline-color has-alpha-channel-opacity has-outline-background-color has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--large)"/>
+<!-- /wp:separator --></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
-
 <!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"}} -->
 <!-- wp:query-pagination-previous /-->
-
 <!-- wp:query-pagination-numbers /-->
-
 <!-- wp:query-pagination-next /-->
 <!-- /wp:query-pagination --></div>
 <!-- /wp:query --></div>
