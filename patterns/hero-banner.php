@@ -7,11 +7,9 @@
  * Keywords: Hero Banner
  */
 
-$get_url = trailingslashit( get_template_directory_uri());
+$get_url = trailingslashit(get_template_directory_uri());
 
- $images = array(
-	$get_url . 'assets/image/hero-img.png',
-);
+$images = [$get_url . "assets/image/hero-img.png"];
 ?>
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"gradient":"main-gradient","layout":{"type":"constrained"}} -->
@@ -23,13 +21,11 @@ $get_url = trailingslashit( get_template_directory_uri());
         <div class="wp-block-column">
             <!-- wp:heading {"level":1,"style":{"typography":{"letterSpacing":"-1px"},"spacing":{"padding":{"right":"var:preset|spacing|medium"}}},"textColor":"heading","className":"wp-block-heading"} -->
             <h1 class="wp-block-heading has-heading-color has-text-color"
-                style="padding-right:var(--wp--preset--spacing--medium);letter-spacing:-1px">Discover a new way to build
-                website</h1>
+                style="padding-right:var(--wp--preset--spacing--medium);letter-spacing:-1px">Discover a new way to build website</h1>
             <!-- /wp:heading -->
 
             <!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-large"}}}} -->
-            <p style="padding-right:var(--wp--preset--spacing--x-large)">Create a functional and visually appealing
-                website without having to write code.</p>
+            <p style="padding-right:var(--wp--preset--spacing--x-large)">Create a functional and visually appealing website without having to write code.</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} -->
@@ -50,7 +46,9 @@ $get_url = trailingslashit( get_template_directory_uri());
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":809,"sizeSlug":"full","linkDestination":"none"} -->
-            <figure class="wp-block-image size-full"><img src="<?php echo esc_url( $images[0] ); ?>" alt=""
+            <figure class="wp-block-image size-full"><img src="<?php echo esc_url(
+                $images[0]
+            ); ?>" alt=""
                     class="wp-image-809" /></figure>
             <!-- /wp:image -->
         </div>

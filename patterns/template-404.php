@@ -16,8 +16,7 @@
     <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
     <div class="wp-block-group alignwide">
         <!-- wp:paragraph {"align":"left","className":"aligncenter","fontSize":"large"} -->
-        <p class="has-text-align-left aligncenter has-large-font-size">Unfortunately, this page doesn't exist.<br>Maybe
-            try a search?</p>
+        <p class="has-text-align-left aligncenter has-large-font-size">Unfortunately, this page doesn't exist.<br>Maybe try a search?</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search...","width":300,"widthUnit":"px","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}},"className":"is-style-swt-search-minimal"} /-->

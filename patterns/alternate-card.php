@@ -6,12 +6,9 @@
  * Keywords: Alternate card
  */
 
-$get_url = trailingslashit( get_template_directory_uri());
+$get_url = trailingslashit(get_template_directory_uri());
 
-$images = array(
-    $get_url . 'assets/image/card-img.png',
-);
-
+$images = [$get_url . "assets/image/card-img.png"];
 ?>
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"0","left":"0"},"blockGap":"var:preset|spacing|large"}},"layout":{"type":"constrained"}} -->
@@ -20,13 +17,11 @@ $images = array(
     <!-- wp:group {"align":"wide","layout":{"type":"constrained","contentSize":"560px","justifyContent":"left"}} -->
     <div class="wp-block-group alignwide">
         <!-- wp:heading {"textAlign":"left","textColor":"heading","className":"wp-block-heading"} -->
-        <h2 class="wp-block-heading has-text-align-left has-heading-color has-text-color">Everything you need to create
-            amazing websites</h2>
+        <h2 class="wp-block-heading has-text-align-left has-heading-color has-text-color">Everything you need to create amazing websites</h2>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"align":"left"} -->
-        <p class="has-text-align-left">Interactive design tools and its many customization options to customize anything
-            and everything needed to build the fully-functional website of your dreams.</p>
+        <p class="has-text-align-left">Interactive design tools and its many customization options to customize anything and everything needed to build the fully-functional website of your dreams.</p>
         <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
@@ -40,7 +35,9 @@ $images = array(
                 style="border-radius:16px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
                 <!-- wp:image {"id":148,"width":512,"height":320,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
                 <figure class="wp-block-image size-full is-resized has-custom-border"><img
-                        src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-148" style="border-radius:8px"
+                        src="<?php echo esc_url(
+                            $images[0]
+                        ); ?>" alt="" class="wp-image-148" style="border-radius:8px"
                         width="512" height="320" /></figure>
                 <!-- /wp:image -->
 
@@ -51,9 +48,7 @@ $images = array(
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"var:preset|spacing|small"}}}} -->
-                    <p style="padding-right:var(--wp--preset--spacing--small)">Imperdiet etiam scelerisque convallis
-                        pulvinar laoreet. Enim imperdiet nullam ullamcorper tempus vivamus eget leo elementum. Sed
-                        platea pellentesque nulla egestas porttitor.</p>
+                    <p style="padding-right:var(--wp--preset--spacing--small)">Imperdiet etiam scelerisque convallis pulvinar laoreet. Enim imperdiet nullam ullamcorper tempus vivamus eget leo elementum. Sed platea pellentesque nulla egestas porttitor.</p>
                     <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
@@ -83,8 +78,7 @@ $images = array(
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"var:preset|spacing|small"}}}} -->
-                    <p style="padding-right:var(--wp--preset--spacing--small)">In nisl enim vulputate varius. Nec
-                        sodales elit duis ornare. Non lectus elementum maecenas sit eu orci proin mauris netus.</p>
+                    <p style="padding-right:var(--wp--preset--spacing--small)">In nisl enim vulputate varius. Nec sodales elit duis ornare. Non lectus elementum maecenas sit eu orci proin mauris netus.</p>
                     <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
@@ -118,8 +112,7 @@ $images = array(
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"var:preset|spacing|small"}}}} -->
-                    <p style="padding-right:var(--wp--preset--spacing--small)">In nisl enim vulputate varius. Nec
-                        sodales elit duis ornare. Non lectus elementum maecenas sit eu orci proin mauris netus.</p>
+                    <p style="padding-right:var(--wp--preset--spacing--small)">In nisl enim vulputate varius. Nec sodales elit duis ornare. Non lectus elementum maecenas sit eu orci proin mauris netus.</p>
                     <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
@@ -136,16 +129,16 @@ $images = array(
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"var:preset|spacing|small"}}}} -->
-                    <p style="padding-right:var(--wp--preset--spacing--small)">Imperdiet etiam scelerisque convallis
-                        pulvinar laoreet. Enim imperdiet nullam ullamcorper tempus vivamus eget leo elementum. Sed
-                        platea pellentesque nulla egestas porttitor.</p>
+                    <p style="padding-right:var(--wp--preset--spacing--small)">Imperdiet etiam scelerisque convallis pulvinar laoreet. Enim imperdiet nullam ullamcorper tempus vivamus eget leo elementum. Sed platea pellentesque nulla egestas porttitor.</p>
                     <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
 
                 <!-- wp:image {"id":148,"width":512,"height":320,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
                 <figure class="wp-block-image size-full is-resized has-custom-border"><img
-                        src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-148" style="border-radius:8px"
+                        src="<?php echo esc_url(
+                            $images[0]
+                        ); ?>" alt="" class="wp-image-148" style="border-radius:8px"
                         width="512" height="320" /></figure>
                 <!-- /wp:image -->
             </div>

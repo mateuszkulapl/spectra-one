@@ -6,12 +6,9 @@
  * Keywords: Banner wide
  */
 
-$get_url = trailingslashit( get_template_directory_uri());
+$get_url = trailingslashit(get_template_directory_uri());
 
-$images = array(
-    $get_url . 'assets/image/banner-wide-img.jpg',
-);
-
+$images = [$get_url . "assets/image/banner-wide-img.jpg"];
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"
@@ -22,7 +19,9 @@ $images = array(
         <!-- wp:column {"verticalAlignment":"bottom"} -->
         <div class="wp-block-column is-vertically-aligned-bottom">
             <!-- wp:image {"id":110,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":{"topRight":"20px","bottomLeft":"24px","bottomRight":"0px"}}}} -->
-            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[0] ); ?>"
+            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url(
+                $images[0]
+            ); ?>"
                     alt="" class="wp-image-110"
                     style="border-top-right-radius:20px;border-bottom-left-radius:24px;border-bottom-right-radius:0px" />
             </figure>
@@ -33,8 +32,7 @@ $images = array(
         <div class="wp-block-column is-vertically-aligned-top"
             style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--small)">
             <!-- wp:heading {"style":{"typography":{"letterSpacing":"-1px"}},"textColor":"background","className":"wp-block-heading"} -->
-            <h2 class="wp-block-heading has-background-color has-text-color" style="letter-spacing:-1px">Customize your
-                website visually and see the changes instantly!</h2>
+            <h2 class="wp-block-heading has-background-color has-text-color" style="letter-spacing:-1px">Customize your website visually and see the changes instantly!</h2>
             <!-- /wp:heading -->
             <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
             <div class="wp-block-group">

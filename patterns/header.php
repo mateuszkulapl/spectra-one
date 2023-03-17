@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Title: Header default
  * Slug: spectra-one/header-default

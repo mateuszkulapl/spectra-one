@@ -1,12 +1,10 @@
 <?php
-
 /**
  * Title: Header center menu
  * Slug: spectra-one/header-center-menu
  * Categories: header
  * Block Types: core/template-part/header
  */
-
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"background","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background-background-color has-background"

@@ -6,20 +6,20 @@
  * Keywords: Three columns listing
  */
 
-$get_url = trailingslashit( get_template_directory_uri());
+$get_url = trailingslashit(get_template_directory_uri());
 
-$images = array(
-    $get_url . 'assets/image/check.svg',
-    $get_url . 'assets/image/thumbnail-1.jpg',
-    $get_url . 'assets/image/thumbnail-2.jpg',
-    $get_url . 'assets/image/thumbnail-3.jpg',
-    $get_url . 'assets/image/thumbnail-4.jpg',
-    $get_url . 'assets/image/thumbnail-5.jpg',
-    $get_url . 'assets/image/thumbnail-6.jpg',
-    $get_url . 'assets/image/thumbnail-7.jpg',
-    $get_url . 'assets/image/thumbnail-8.jpg',
-    $get_url . 'assets/image/thumbnail-9.jpg',
-);
+$images = [
+    $get_url . "assets/image/check.svg",
+    $get_url . "assets/image/thumbnail-1.jpg",
+    $get_url . "assets/image/thumbnail-2.jpg",
+    $get_url . "assets/image/thumbnail-3.jpg",
+    $get_url . "assets/image/thumbnail-4.jpg",
+    $get_url . "assets/image/thumbnail-5.jpg",
+    $get_url . "assets/image/thumbnail-6.jpg",
+    $get_url . "assets/image/thumbnail-7.jpg",
+    $get_url . "assets/image/thumbnail-8.jpg",
+    $get_url . "assets/image/thumbnail-9.jpg",
+];
 ?>
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|large"}},"layout":{"type":"constrained"}} -->
@@ -46,12 +46,10 @@ $images = array(
         </div>
         <!-- /wp:group -->
         <!-- wp:heading {"textAlign":"center","textColor":"heading","className":"wp-block-heading"} -->
-        <h2 class="has-text-align-center wp-block-heading has-heading-color has-text-color">Carefully crafted design. No
-            coding required.</h2>
+        <h2 class="has-text-align-center wp-block-heading has-heading-color has-text-color">Carefully crafted design. No coding required.</h2>
         <!-- /wp:heading -->
         <!-- wp:paragraph {"align":"center"} -->
-        <p class="has-text-align-center">Install any demo and template with a single click. Choose and mix up patterns
-            and blocks.</p>
+        <p class="has-text-align-center">Install any demo and template with a single click. Choose and mix up patterns and blocks.</p>
         <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
@@ -60,7 +58,9 @@ $images = array(
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":141,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[1] ); ?>"
+            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url(
+                $images[1]
+            ); ?>"
                     alt="" class="wp-image-141" style="border-radius:8px" /></figure>
             <!-- /wp:image -->
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -78,7 +78,9 @@ $images = array(
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":142,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[2] ); ?>"
+            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url(
+                $images[2]
+            ); ?>"
                     alt="" class="wp-image-142" style="border-radius:8px" /></figure>
             <!-- /wp:image -->
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -96,7 +98,9 @@ $images = array(
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":143,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[3] ); ?>"
+            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url(
+                $images[3]
+            ); ?>"
                     alt="" class="wp-image-143" style="border-radius:8px" /></figure>
             <!-- /wp:image -->
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -118,7 +122,9 @@ $images = array(
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":141,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[4] ); ?>"
+            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url(
+                $images[4]
+            ); ?>"
                     alt="" class="wp-image-141" style="border-radius:8px" /></figure>
             <!-- /wp:image -->
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -136,7 +142,9 @@ $images = array(
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":142,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[5] ); ?>"
+            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url(
+                $images[5]
+            ); ?>"
                     alt="" class="wp-image-142" style="border-radius:8px" /></figure>
             <!-- /wp:image -->
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -154,7 +162,9 @@ $images = array(
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":143,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[6] ); ?>"
+            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url(
+                $images[6]
+            ); ?>"
                     alt="" class="wp-image-143" style="border-radius:8px" /></figure>
             <!-- /wp:image -->
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -176,7 +186,9 @@ $images = array(
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":141,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[7] ); ?>"
+            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url(
+                $images[7]
+            ); ?>"
                     alt="" class="wp-image-141" style="border-radius:8px" /></figure>
             <!-- /wp:image -->
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -194,7 +206,9 @@ $images = array(
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":142,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[8] ); ?>"
+            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url(
+                $images[8]
+            ); ?>"
                     alt="" class="wp-image-142" style="border-radius:8px" /></figure>
             <!-- /wp:image -->
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -212,7 +226,9 @@ $images = array(
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":143,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[9] ); ?>"
+            <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url(
+                $images[9]
+            ); ?>"
                     alt="" class="wp-image-143" style="border-radius:8px" /></figure>
             <!-- /wp:image -->
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->

@@ -46,8 +46,7 @@
         <!-- wp:buttons -->
         <div class="wp-block-buttons">
             <!-- wp:button -->
-            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/">Go back to
-                    homepage</a></div>
+            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/">Go back to homepage</a></div>
             <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->

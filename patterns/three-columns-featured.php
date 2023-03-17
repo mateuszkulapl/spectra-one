@@ -5,7 +5,6 @@
  * Categories: featured
  * Keywords: Three columns featured
  */
-
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"

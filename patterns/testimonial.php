@@ -26,8 +26,7 @@
         <!-- /wp:group -->
 
         <!-- wp:paragraph {"align":"center","textColor":"heading","fontSize":"x-large"} -->
-        <p class="has-text-align-center has-heading-color has-text-color has-x-large-font-size">No matter where you go,
-            It's the coolest, most happening thing around! Not able to tell you how happy I am with it.</p>
+        <p class="has-text-align-center has-heading-color has-text-color has-x-large-font-size">No matter where you go, It's the coolest, most happening thing around! Not able to tell you how happy I am with it.</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->

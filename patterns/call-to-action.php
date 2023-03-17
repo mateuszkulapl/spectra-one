@@ -26,8 +26,7 @@ $images = array(
             <div class="wp-block-group"
                 style="padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--large)">
                 <!-- wp:heading {"style":{"typography":{"letterSpacing":"-1px"}},"textColor":"background","className":"wp-block-heading"} -->
-                <h2 class="wp-block-heading has-background-color has-text-color" style="letter-spacing:-1px">Take your
-                    website to the next level!</h2>
+                <h2 class="wp-block-heading has-background-color has-text-color" style="letter-spacing:-1px">Take your website to the next level!</h2>
                 <!-- /wp:heading -->
                 <!-- wp:buttons -->
                 <div class="wp-block-buttons">
