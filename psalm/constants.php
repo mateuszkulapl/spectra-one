@@ -1,9 +1,9 @@
 <?php
 
-define( 'SWT_VER', '' );
-define( 'SWT_SLUG', '' );
-define( 'SWT_NAME', '' );
-define( 'SWT_PFX', '' );
-define( 'SWT_NS', '' );
-define( 'SWT_DS', '' );
-define( 'SWT_DIR', '' );
+const SWT_VER = '';
+const SWT_SLUG = '';
+const SWT_NAME = '';
+const SWT_PFX = '';
+const SWT_NS = '';
+const SWT_DS = '';
+const SWT_DIR = '';

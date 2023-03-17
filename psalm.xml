@@ -4,9 +4,7 @@
         <directory name="./"/>
         <ignoreFiles>
             <directory name="vendor/"/>
-            <directory name="tests/"/>
             <directory name="node_modules/"/>
-            <directory name="bin/"/>
         </ignoreFiles>
     </projectFiles>
     <stubs>

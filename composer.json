@@ -42,7 +42,7 @@
         "lint": "composer run-script phpcs",
         "phpcs-i": "phpcs -i",
         "psalm": "./vendor/bin/psalm",
-        "gen-stubs": "vendor/bin/generate-stubs / --out=psalm/spectra-stubs.php",
+        "gen-stubs": "vendor/bin/generate-stubs spectra/ --out=psalm/spectra-stubs.php",
         "update-stubs": "rm -f psalm/spectra-stubs.php && grunt release-no-clean && composer gen-stubs"
     }
 }
