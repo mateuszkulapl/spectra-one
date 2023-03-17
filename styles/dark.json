@@ -65,6 +65,13 @@
           "color": "inherit",
           "slug": "inherit"
         }
+      ],
+      "gradients": [
+				{
+					"slug": "main-gradient",
+					"gradient": "linear-gradient(160deg,rgb(27,34,44) 31%,rgb(72,39,115) 49%,rgb(154,126,240) 69%,rgb(250,237,253) 79%)",
+					"name": "Main gradient"
+				}
       ]
     }
   }

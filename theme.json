@@ -64,6 +64,13 @@
           "color": "inherit",
           "slug": "inherit"
         }
+      ],
+      "gradients": [
+				{
+					"slug": "main-gradient",
+					"gradient": "linear-gradient(160deg,rgb(250,248,255) 31%,rgb(247,229,252) 49%,rgb(154,126,240) 69%,rgb(37,13,135) 79%)",
+					"name": "Main gradient"
+				}
       ]
     },
     "appearanceTools": true,
@@ -512,8 +519,8 @@
   ],
   "customTemplates": [
     {
-			"name": "blank",
-			"title": "Blank Page",
+			"name": "full-width",
+			"title": "Full width",
 			"postTypes": [ "page", "post" ]
 		}
 	]
