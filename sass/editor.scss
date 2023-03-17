@@ -63,6 +63,19 @@
     }
 }
 
+/*--------------------------------------------------------------
+# Button Block
+--------------------------------------------------------------*/
+
+.is-style-swt-button-secondary .wp-element-button {
+    color: var(--wp--preset--color--body);
+    background-color: var(--wp--preset--color--surface);
+
+    &:hover{
+        color: var(--wp--preset--color--body);
+        background-color: var(--wp--preset--color--surface);
+    }
+}
 
 /*--------------------------------------------------------------
 # Post / Page hide and show title

@@ -1,6 +1,6 @@
 <?php
 /**
- * Register Block Styles.
+ * Register Search Block Styles.
  *
  * @package Spectra One
  * @author Brainstorm Force

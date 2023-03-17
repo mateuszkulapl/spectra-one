@@ -44,6 +44,18 @@
 }
 
 /*--------------------------------------------------------------
+# Button Block
+--------------------------------------------------------------*/
+.is-style-swt-button-secondary .wp-element-button {
+  color: var(--wp--preset--color--body);
+  background-color: var(--wp--preset--color--surface);
+}
+.is-style-swt-button-secondary .wp-element-button:hover {
+  color: var(--wp--preset--color--body);
+  background-color: var(--wp--preset--color--surface);
+}
+
+/*--------------------------------------------------------------
 # Post / Page hide and show title
 --------------------------------------------------------------*/
 .edit-post-visual-editor__post-title-wrapper {
