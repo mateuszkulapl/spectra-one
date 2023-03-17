@@ -22,8 +22,7 @@
             <!-- /wp:group -->
 
             <!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"var:preset|spacing|medium"}}},"fontSize":"small"} -->
-            <p class="has-small-font-size" style="padding-right:var(--wp--preset--spacing--medium)">Nisl libero
-                ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium.</p>
+            <p class="has-small-font-size" style="padding-right:var(--wp--preset--spacing--medium)">Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium.</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:social-links {"iconColor":"heading","iconColorValue":"var(--wp--preset--color--heading)","openInNewTab":true,"size":"has-small-icon-size","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"className":"is-style-logos-only"} -->
