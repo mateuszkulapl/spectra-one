@@ -55,9 +55,12 @@ License URL: https://fonts.google.com/specimen/Inter
 == Changelog ==
 
 = 0.0.2 - March 18, 2023 =
-* Updated - Theme screenshot.
-* Updated - Hero banner pattern.
-* Fix - Could not set front page using pages.
+* Update: Theme screenshot.
+* Update: Hero banner pattern.
+* Update: Banner wide pattern.
+* Update: Changed Front page icons from Image Block to HTML block for global style compatibility.
+* Fix: Button text color on dark mode.
+* Fix: Could not set front page using pages.
 
 
 = 0.0.1 - March 10, 2023 =
