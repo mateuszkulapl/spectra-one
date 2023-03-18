@@ -55,6 +55,7 @@ License URL: https://fonts.google.com/specimen/Inter
 == Changelog ==
 
 = 0.0.2 - March 18, 2023 =
+* New: Secondary block style for button block.
 * Update: Theme screenshot.
 * Update: Hero banner pattern.
 * Update: Banner wide pattern.
