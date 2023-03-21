@@ -11,5 +11,5 @@ declare( strict_types=1 );
 
 namespace Swt;
 
-require_once 'dom.php';
-require_once 'helpers.php';
+require_once 'inc/utilities/dom.php';
+require_once 'inc/utilities/helpers.php';

@@ -134,7 +134,7 @@ function welcome_notice_display_conditions(): bool {
 	$screen = get_current_screen();
 
 	// Show the notice on dashboard.
-	if ( ! in_array( $screen->id, array( 'dashboard', 'themes' ) ) ) {
+	if ( $screen !== null && ! in_array( $screen->id, array( 'dashboard', 'themes' ) ) ) {
 		return false;
 	}
 
@@ -159,7 +159,7 @@ function welcome_notice_display_conditions(): bool {
 	}
 
 	// Block editor context.
-	if ( $screen->is_block_editor() ) {
+	if ( $screen !== null && $screen->is_block_editor() ) {
 		return false;
 	}
 
@@ -175,7 +175,7 @@ function welcome_notice_display_conditions(): bool {
 function is_spectra_plugin_installed(): string {
 	$status = 'not-installed';
 
-	if ( file_exists( ABSPATH . 'wp-content/plugins/ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ) ) {
+	if ( is_plugin_active( 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ) ) {
 		return 'installed';
 	}
 
