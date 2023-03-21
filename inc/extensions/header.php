@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
 
 /**
- * Header support.
+ * Header render function.
  *
  * @param string $block_content Entire Block Content.
  * @param array  $block Block Properties As An Array.
@@ -45,7 +45,7 @@ function render_header( string $block_content, array $block ):string {
 
 		if ( ! ( isset( $block['attrs']['SWTTransparentHeader'] ) ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) ) {
 			add_filter( 'swt_dynamic_theme_js', SWT_NS . 'header_inline_js' );
-		}
+		}   
 	}
 
 	if ( $transparent_header_condition ) {
@@ -64,11 +64,15 @@ function render_header( string $block_content, array $block ):string {
 		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'header_inline_transparent_css' );
 	}
 
+	if ( $sticky_header_condition || $transparent_header_condition ) {
+		add_filter( 'swt_dynamic_theme_js', SWT_NS . 'header_wp_admin_bar_spacing_js' );
+	}
+
 	return $block_content;
 }
 
 /**
- * Load header Inline Css.
+ * Load header inline css.
  *
  * @since 0.0.1
  * @param string $css Inline CSS.
@@ -91,7 +95,7 @@ function header_inline_css( string $css ): string {
 }
 
 /**
- * Load Header Inline Js.
+ * Load header inline js.
  *
  * @since 0.0.1
  * @param string $js Inline JS.
@@ -112,16 +116,12 @@ function header_inline_js( string $js ): string {
 		// Sticky header option.
 		const header = document.querySelector( '.swt-sticky-header' );
 		const body = document.querySelector( 'body' );
-		const wpAdminBar = document.querySelector('#wpadminbar');
-		let wpAdminBarHeight = 0;
 		if( header ) {
-			if( wpAdminBar ) {
-				wpAdminBarHeight = wpAdminBar.offsetHeight;
-			}
+
 			const height = header.offsetHeight;
 
 			if( height ) {
-				body.style.paddingTop = parseFloat( height - wpAdminBarHeight ) + 'px';
+				body.style.paddingTop = parseFloat( height ) + 'px';
 			}
 		}
 	});
@@ -131,7 +131,7 @@ JS;
 }
 
 /**
- * Load Transparent Header Inline Css.
+ * Load transparent header inline css.
  *
  * @since 0.0.1
  * @param string $css Inline CSS.
@@ -139,7 +139,6 @@ JS;
  */
 function header_inline_transparent_css( string $css ): string {
 
-	// Sticky header option.
 	$css_output = array(
 		'.swt-transparent-header'                   => array(
 			'position' => 'absolute',
@@ -155,4 +154,38 @@ function header_inline_transparent_css( string $css ): string {
 	);
 	$css .= parse_css( $css_output );
 	return $css;
+}
+
+
+/**
+ * Load header wp_admin_bar spacing inline js.
+ *
+ * @since 0.0.1
+ * @param string $js Inline JS.
+ * @return string
+ */
+function header_wp_admin_bar_spacing_js( string $js ): string {
+	$inline_js = <<<JS
+	function docReady(fn) {
+		// see if DOM is already available
+		if (document.readyState === "complete" || document.readyState === "interactive") {
+			// call on next available tick
+			setTimeout(fn, 1);
+		} else {
+			document.addEventListener("DOMContentLoaded", fn);
+		}
+	}
+	docReady(function() {
+
+		const wpAdminBar = document.querySelector('#wpadminbar');
+		const header = document.querySelector( 'header' );
+
+		if( header && wpAdminBar ) {
+			header.style.top = wpAdminBar.offsetHeight + 'px';
+		}
+
+	});
+JS;
+	$js       .= $inline_js;
+	return $js;
 }
