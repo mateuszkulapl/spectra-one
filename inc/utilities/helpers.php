@@ -28,6 +28,17 @@ function get_uri( string $path = '' ): string {
 	return trailingslashit( esc_url( get_template_directory_uri() . SWT_DS ) . $path );
 }
 
+
+/**
+ * Is spectra plugin is enabled / available
+ *
+ * @since 0.0.3
+ * @return bool
+ */
+function is_spectra_plugin(): bool {
+	return defined( 'UAGB_VER' ) ? true : false;
+}
+
 /**
  * RTL For Dynamic / Inline css
  *
@@ -312,5 +323,6 @@ function css_string_to_array( string $css ): array {
 
 	return $array;
 }
+
 
 

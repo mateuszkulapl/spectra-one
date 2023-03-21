@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 6.1
-Stable tag: 0.0.2
+Stable tag: 0.0.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -53,6 +53,10 @@ License URL: https://fonts.google.com/specimen/Inter
 
 
 == Changelog ==
+
+= 0.0.3 - March 21, 2023 =
+* Fix: Spectra plugin compatibility with default wordpress blockgap.
+* Fix: Header cutting off when transparent and sticky header is used when user is logged in.
 
 = 0.0.2 - March 18, 2023 =
 * New: Secondary block style for button block.
