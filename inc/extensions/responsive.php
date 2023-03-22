@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+
 add_filter( 'render_block', SWT_NS . 'render_responsive_blocks', 10, 2 );
 
 /**
@@ -94,3 +95,6 @@ function responsive_blocks_inline_css( $css ): string {
 
 	return $css;
 }
+
+// Disable spectra plugin responsive controls.
+add_filter( 'enable_responsive_condition_for_core', '__return_false' );
