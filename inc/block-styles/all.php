@@ -18,3 +18,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once 'categories.php';
 require_once 'search.php';
 require_once 'button.php';
+require_once 'separator.php';

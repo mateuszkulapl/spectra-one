@@ -57,6 +57,15 @@
 }
 
 /*--------------------------------------------------------------
+# Separator Block
+--------------------------------------------------------------*/
+.is-style-swt-separator-wide-thin-line:not(.is-style-wide):not(.is-style-dots) {
+  max-width: var(--wp--style--global--content-size);
+  width: 100%;
+  border-width: 1px;
+}
+
+/*--------------------------------------------------------------
 # Post / Page hide and show title
 --------------------------------------------------------------*/
 .edit-post-visual-editor__post-title-wrapper {

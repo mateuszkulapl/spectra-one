@@ -79,6 +79,18 @@
 }
 
 /*--------------------------------------------------------------
+# Separator Block
+--------------------------------------------------------------*/
+
+.is-style-swt-separator-wide-thin-line:not(.is-style-wide):not(.is-style-dots){
+    max-width: var(--wp--style--global--content-size);
+    width: 100%;
+    border-width: 1px;
+}
+
+// Note: Need to remove all above code after wordpress fixes issues with register_block_style not applying styles in the editor.
+
+/*--------------------------------------------------------------
 # Post / Page hide and show title
 --------------------------------------------------------------*/
 .edit-post-visual-editor__post-title-wrapper {
