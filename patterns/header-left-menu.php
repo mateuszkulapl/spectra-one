@@ -13,19 +13,19 @@
 <div class="wp-block-group"><!-- wp:site-logo {"width":32} /-->
 <!-- wp:site-title /--></div>
 <!-- /wp:group -->
-<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"UAGHideMob":true} -->
+<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"SWTHideMob":true} -->
 <!-- wp:navigation-link {"label":"Home","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"Blog","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"Contact","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- /wp:navigation --></div>
 <!-- /wp:group -->
-<!-- wp:buttons {"className":"uag-hide-mob","UAGHideMob":true} -->
-<div class="wp-block-buttons uag-hide-mob"><!-- wp:button -->
+<!-- wp:buttons {"SWTHideMob":true} -->
+<div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Get Started</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
-<!-- wp:navigation {"overlayMenu":"always","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"UAGHideDesktop":true,"UAGHideTab":true} -->
+<!-- wp:navigation {"overlayMenu":"always","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"SWTHideDesktop":true,"SWTHideTab":true} -->
 <!-- wp:navigation-link {"label":"Home","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"Blog","url":"#","kind":"custom","isTopLevelLink":true} /-->

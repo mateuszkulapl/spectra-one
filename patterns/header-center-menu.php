@@ -18,7 +18,7 @@
 <!-- wp:navigation-link {"label":"Blog","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"Contact","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- /wp:navigation -->
-<!-- wp:buttons {"UAGHideMob":true} -->
+<!-- wp:buttons {"SWTHideMob":true} -->
 <div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Get Started</a></div>
 <!-- /wp:button --></div>

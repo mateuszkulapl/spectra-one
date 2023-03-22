@@ -28,15 +28,15 @@ add_filter( 'render_block', SWT_NS . 'render_responsive_blocks', 10, 2 );
 function render_responsive_blocks( string $block_content, array $block ):string { 
 	$responsive_classes = '';
 
-	if ( isset( $block['attrs']['UAGHideDesktop'] ) && true === $block['attrs']['UAGHideDesktop'] ) {
+	if ( isset( $block['attrs']['SWTHideDesktop'] ) && true === $block['attrs']['SWTHideDesktop'] ) {
 		$responsive_classes .= ' swt-hide-desktop';
 	}
 
-	if ( isset( $block['attrs']['UAGHideTab'] ) && true === $block['attrs']['UAGHideTab'] ) {
+	if ( isset( $block['attrs']['SWTHideTab'] ) && true === $block['attrs']['SWTHideTab'] ) {
 		$responsive_classes .= ' swt-hide-tablet';
 	}
 
-	if ( isset( $block['attrs']['UAGHideMob'] ) && true === $block['attrs']['UAGHideMob'] ) {
+	if ( isset( $block['attrs']['SWTHideMob'] ) && true === $block['attrs']['SWTHideMob'] ) {
 		$responsive_classes .= ' swt-hide-mobile';
 	}
 

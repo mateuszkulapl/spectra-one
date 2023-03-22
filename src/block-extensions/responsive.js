@@ -8,7 +8,7 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 	return (props) => {
 		const { attributes, name, setAttributes } = props;
 		// Adding compatibility with spectra plugin. So the slugs are same as the plugin.
-		const { UAGHideDesktop, UAGHideTab, UAGHideMob } = attributes;
+		const { SWTHideDesktop, SWTHideTab, SWTHideMob } = attributes;
 
 		return (
 			<>
@@ -22,10 +22,10 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 							<PanelRow>
 								<ToggleControl
 									label={__("Hide Desktop", "spectra-one")}
-									checked={UAGHideDesktop}
+									checked={SWTHideDesktop}
 									onChange={() =>
 										setAttributes({
-											UAGHideDesktop: !UAGHideDesktop,
+											SWTHideDesktop: !SWTHideDesktop,
 										})
 									}
 								/>
@@ -34,10 +34,10 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 							<PanelRow>
 								<ToggleControl
 									label={__("Hide Tablet", "spectra-one")}
-									checked={UAGHideTab}
+									checked={SWTHideTab}
 									onChange={() =>
 										setAttributes({
-											UAGHideTab: !UAGHideTab,
+											SWTHideTab: !SWTHideTab,
 										})
 									}
 								/>
@@ -45,10 +45,10 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 							<PanelRow>
 								<ToggleControl
 									label={__("Hide Mobile", "spectra-one")}
-									checked={UAGHideMob}
+									checked={SWTHideMob}
 									onChange={() =>
 										setAttributes({
-											UAGHideMob: !UAGHideMob,
+											SWTHideMob: !SWTHideMob,
 										})
 									}
 								/>
@@ -62,24 +62,20 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 	};
 }, "Responsive");
 
-if (!spectraOne.is_spectra_plugin) {
-	addFilter("editor.BlockEdit", "swt/responsive", Responsive);
-}
-
-
+addFilter("editor.BlockEdit", "swt/responsive", Responsive);
 
 function ResponsiveAttributes(settings) {
 	if (settings.attributes) {
 		settings.attributes = Object.assign(settings.attributes, {
-			UAGHideDesktop: {
+			SWTHideDesktop: {
 				type: "boolean",
 				default: false,
 			},
-			UAGHideTab: {
+			SWTHideTab: {
 				type: "boolean",
 				default: false,
 			},
-			UAGHideMob: {
+			SWTHideMob: {
 				type: "boolean",
 				default: false,
 			},
@@ -89,11 +85,11 @@ function ResponsiveAttributes(settings) {
 	return settings;
 }
 
-if (!spectraOne.is_spectra_plugin) {
-	addFilter(
-		"blocks.registerBlockType",
-		"swt/responsive-attributes",
-		ResponsiveAttributes
-	);
-}
+addFilter(
+	"blocks.registerBlockType",
+	"swt/responsive-attributes",
+	ResponsiveAttributes
+);
+
+
 

@@ -135,49 +135,47 @@ const Responsive = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigh
     } = props;
     // Adding compatibility with spectra plugin. So the slugs are same as the plugin.
     const {
-      UAGHideDesktop,
-      UAGHideTab,
-      UAGHideMob
+      SWTHideDesktop,
+      SWTHideTab,
+      SWTHideMob
     } = attributes;
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
       title: "Responsive Settings",
       initialOpen: true
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
       label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Hide Desktop", "spectra-one"),
-      checked: UAGHideDesktop,
+      checked: SWTHideDesktop,
       onChange: () => setAttributes({
-        UAGHideDesktop: !UAGHideDesktop
+        SWTHideDesktop: !SWTHideDesktop
       })
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
       label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Hide Tablet", "spectra-one"),
-      checked: UAGHideTab,
+      checked: SWTHideTab,
       onChange: () => setAttributes({
-        UAGHideTab: !UAGHideTab
+        SWTHideTab: !SWTHideTab
       })
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
       label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Hide Mobile", "spectra-one"),
-      checked: UAGHideMob,
+      checked: SWTHideMob,
       onChange: () => setAttributes({
-        UAGHideMob: !UAGHideMob
+        SWTHideMob: !SWTHideMob
       })
     }))))));
   };
 }, "Responsive");
-if (!spectraOne.is_spectra_plugin) {
-  (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("editor.BlockEdit", "swt/responsive", Responsive);
-}
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("editor.BlockEdit", "swt/responsive", Responsive);
 function ResponsiveAttributes(settings) {
   if (settings.attributes) {
     settings.attributes = Object.assign(settings.attributes, {
-      UAGHideDesktop: {
+      SWTHideDesktop: {
         type: "boolean",
         default: false
       },
-      UAGHideTab: {
+      SWTHideTab: {
         type: "boolean",
         default: false
       },
-      UAGHideMob: {
+      SWTHideMob: {
         type: "boolean",
         default: false
       }
@@ -185,9 +183,7 @@ function ResponsiveAttributes(settings) {
   }
   return settings;
 }
-if (!spectraOne.is_spectra_plugin) {
-  (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("blocks.registerBlockType", "swt/responsive-attributes", ResponsiveAttributes);
-}
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("blocks.registerBlockType", "swt/responsive-attributes", ResponsiveAttributes);
 
 /***/ }),
 
