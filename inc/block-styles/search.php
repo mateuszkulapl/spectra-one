@@ -26,9 +26,9 @@ register_block_style(
             ' . $swt_parent_class . '.wp-block-search__button-inside .wp-block-search__button {
                 color: var(--wp--preset--color--heading);
                 background-color: var(--wp--preset--color--background);
-                border-radius: 0px;
+                border-radius: 0;
                 margin: 0;
-                padding: var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--x-small);
+                padding: var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--xx-small);
             }
 
             ' . $swt_parent_class . '.wp-block-search__button-inside .wp-block-search__button:hover {
@@ -43,9 +43,10 @@ register_block_style(
             }
 
             ' . $swt_parent_class . ' .wp-block-search__input {
+                padding-left: var(--wp--preset--spacing--xx-small);
                 color: var(--wp--preset--color--heading);
                 background-color: var(--wp--preset--color--background);
-                border-radius: 0px;
+                border-radius: 0;
                 border: 0;
             }
 
