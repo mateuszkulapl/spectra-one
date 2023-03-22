@@ -12,7 +12,7 @@
     <!-- wp:heading {"level":1,"align":"wide"} -->
     <h1 class="alignwide">Latest Posts</h1>
     <!-- /wp:heading -->
-    <!-- wp:query {"queryId":0,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"flex","columns":3},"align":"wide","layout":{"type":"constrained"}} -->
+    <!-- wp:query {"queryId":0,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"flex","columns":3},"align":"wide","layout":{"type":"constrained"}} -->
     <div class="wp-block-query alignwide">
         <!-- wp:post-template {"align":"wide"} -->
         <!-- wp:post-featured-image {"isLink":true,"height":"400px","style":{"color":{"duotone":["#000000","#E5E7EB"]},"border":{"radius":"8px"}}} /-->
