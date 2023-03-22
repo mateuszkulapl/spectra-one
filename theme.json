@@ -2,6 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
   "settings": {
+    "useRootPaddingAwareAlignments": true,
     "color": {
       "palette": [
         {
@@ -274,8 +275,8 @@
       ]
     },
     "layout": {
-      "contentSize": "min(calc(100dvw - var(--wp--preset--spacing--large,2rem)), 764px)",
-      "wideSize": "min(calc(100dvw - var(--wp--preset--spacing--large,2rem)), 1164px)"
+      "contentSize": "764px",
+      "wideSize": "1164px"
     },
     "custom": {
       "fontWeight": {
@@ -315,7 +316,11 @@
       "text": "var(--wp--preset--color--body)"
     },
     "spacing": {
-      "blockGap": "var(--wp--preset--spacing--x-small)"
+      "blockGap": "var(--wp--preset--spacing--x-small)",
+      "padding": {
+				"right": "24px",
+				"left": "24px"
+			}
     },
     "typography": {
       "fontSize": "var(--wp--preset--font-size--medium)",
