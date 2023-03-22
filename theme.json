@@ -274,8 +274,8 @@
       ]
     },
     "layout": {
-      "contentSize": "min(calc(100dvw - var(--wp--preset--spacing--large,2rem)), 764px)",
-      "wideSize": "min(calc(100dvw - var(--wp--preset--spacing--large,2rem)), 1164px)"
+      "contentSize": "764px",
+      "wideSize": "1164px"
     },
     "custom": {
       "fontWeight": {
