@@ -56,6 +56,7 @@ License URL: https://fonts.google.com/specimen/Inter
 
 = 0.0.4 - March 23, 2023 =
 * New: Introduced new block style class "Wide thin line" for separator block.
+* New: Added pot file support.
 * Update: Search block style.
 * Update: Alternate card pattern.
 * Update: Header menu center pattern.

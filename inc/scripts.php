@@ -128,6 +128,14 @@ function enqueue_editor_block_styles() {
 	// Disable Core Block Patterns.
 	remove_theme_support( 'core-block-patterns' );
 
+	/*
+	* Make theme available for translation.
+	* Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/twentyfifteen
+	* If you're building a theme based on spectra-one, use a find and replace
+	* to change 'spectra-one' to the name of your theme in all the template files
+	*/
+	load_theme_textdomain( 'spectra-one', get_uri() . 'languages' );
+
 	$file_prefix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 	$dir_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'unminified' : 'minified';
 
