@@ -73,7 +73,9 @@ function dom( string $html ): DOMDocument {
 		$html
 	);
 
-	$dom->loadHTML( $html, $options );
+	if ( isset( $html ) && ! empty( $html ) ) {
+		$dom->loadHTML( $html, $options );
+	}
 	$dom->formatOutput = true;
 
 	libxml_clear_errors();

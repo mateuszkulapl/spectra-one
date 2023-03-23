@@ -11,5 +11,5 @@ declare( strict_types=1 );
 
 namespace Swt;
 
-require_once 'inc/block-styles/categories.php';
-require_once 'inc/block-styles/search.php';
+require_once __DIR__ . '/categories.php';
+require_once __DIR__ . '/search.php';

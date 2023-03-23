@@ -11,9 +11,9 @@ declare(strict_types=1);
 
 namespace Swt;
 
-require_once 'inc/extensions/responsive.php';
-require_once 'inc/extensions/header.php';
-require_once 'inc/extensions/metabox.php';
-require_once 'inc/extensions/hide-elements.php';
-require_once 'inc/extensions/page-title.php';
+require_once __DIR__ . '/responsive.php';
+require_once __DIR__ . '/header.php';
+require_once __DIR__ . '/metabox.php';
+require_once __DIR__ . '/hide-elements.php';
+require_once __DIR__ . '/page-title.php';
 
