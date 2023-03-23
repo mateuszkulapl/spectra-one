@@ -64,7 +64,7 @@ License URL: https://fonts.google.com/specimen/Inter
 * Update: Search template.
 * Fix: Container issue with spectra plugin.
 * Fix: Responsive controls conflicting with spectra plugin.
-
+* Fix: Made patterns translation ready.
 
 = 0.0.3 - March 21, 2023 =
 * Fix: Spectra plugin compatibility with default wordpress blockgap.
