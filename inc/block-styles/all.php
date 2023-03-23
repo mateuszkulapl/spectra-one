@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-require_once 'categories.php';
-require_once 'search.php';
-require_once 'button.php';
-require_once 'separator.php';
+require_once __DIR__ . '/categories.php';
+require_once __DIR__ . '/search.php';
+require_once __DIR__ . '/button.php';
+require_once __DIR__ . '/separator.php';

@@ -28,14 +28,14 @@ add_filter( 'render_block', SWT_NS . 'hide_elements', 10, 2 );
 function hide_elements( string $block_content, array $block ): string {
 	$post_id = get_the_ID();
 
-	if ( get_post_meta( $post_id, 'swt_meta_header_display', true ) ) {
+	if ( is_int( $post_id ) && get_post_meta( $post_id, 'swt_meta_header_display', true ) ) {
 
 		if ( isset( $block['attrs']['slug'] ) && 'header' === $block['attrs']['slug'] ) {
 			return '';
 		}
 	}
 
-	if ( get_post_meta( $post_id, 'swt_meta_footer_display', true ) ) {
+	if ( is_int( $post_id ) && get_post_meta( $post_id, 'swt_meta_footer_display', true ) ) {
 
 		if ( isset( $block['attrs']['slug'] ) && 'footer' === $block['attrs']['slug'] ) {
 			return '';

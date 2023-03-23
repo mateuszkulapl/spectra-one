@@ -110,7 +110,7 @@ function close_welcome_notice() {
 		return;
 	}
 
-	if ( ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'swt-dismiss-welcome-notice-nonce' ) ) {
+	if ( isset( $_POST['nonce'] ) && is_string( $_POST['nonce'] ) && ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'swt-dismiss-welcome-notice-nonce' ) ) {
 		return;
 	}
 	update_option( 'swt-dismiss-welcome-notice', 'yes' );
@@ -138,7 +138,7 @@ function welcome_notice_display_conditions(): bool {
 	$screen = get_current_screen();
 
 	// Show the notice on dashboard.
-	if ( ! in_array( $screen->id, array( 'dashboard', 'themes' ) ) ) {
+	if ( $screen !== null && ! in_array( $screen->id, array( 'dashboard', 'themes' ) ) ) {
 		return false;
 	}
 
@@ -163,7 +163,7 @@ function welcome_notice_display_conditions(): bool {
 	}
 
 	// Block editor context.
-	if ( $screen->is_block_editor() ) {
+	if ( $screen !== null && $screen->is_block_editor() ) {
 		return false;
 	}
 
@@ -179,7 +179,7 @@ function welcome_notice_display_conditions(): bool {
 function is_spectra_plugin_installed(): string {
 	$status = 'not-installed';
 
-	if ( file_exists( ABSPATH . 'wp-content/plugins/ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ) ) {
+	if ( is_plugin_active( 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ) ) {
 		return 'installed';
 	}
 

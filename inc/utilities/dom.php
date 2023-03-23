@@ -77,7 +77,9 @@ function dom( string $html ): DOMDocument {
 		$html
 	);
 
-	$dom->loadHTML( $html, $options );
+	if ( ! empty( $html ) ) {
+		$dom->loadHTML( $html, $options );
+	}
 	$dom->formatOutput = true;
 
 	libxml_clear_errors();
@@ -160,7 +162,9 @@ function change_tag_name( DOMElement $element, string $name ): DOMElement {
 		$attr_name  = $attr_node->nodeName;
 		$attr_value = $attr_node->nodeValue;
 
-		$new_element->setAttribute( $attr_name, $attr_value );
+		if ( $attr_value !== null ) {
+			$new_element->setAttribute( $attr_name, $attr_value );
+		}
 	}
 
 	if ( $element->parentNode ) {
