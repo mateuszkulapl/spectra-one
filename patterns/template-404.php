@@ -16,10 +16,10 @@
     <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
     <div class="wp-block-group alignwide">
         <!-- wp:paragraph {"align":"left","className":"aligncenter","fontSize":"large"} -->
-        <p class="has-text-align-left aligncenter has-large-font-size"><?php esc_html_e( "Unfortunately, this page doesn't exist.", 'spectra-one' ); ?><br><?php esc_html_e( 'Maybe try a search?', 'spectra-one' ); ?></p>
+        <p class="has-text-align-left aligncenter has-large-font-size"><?php esc_html_e( 'Unfortunately, this page doesn\'t exist.', 'spectra-one' ); ?><br><?php esc_html_e( 'Maybe try a search?', 'spectra-one' ); ?></p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search...","width":300,"widthUnit":"px","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}},"className":"is-style-swt-search-minimal"} /-->
+        <!-- wp:search {"label":"<?php esc_html_e( 'Search', 'spectra-one' ); ?>","showLabel":false,"placeholder":"<?php esc_attr_e( 'Search...', 'spectra-one' ); ?>","width":300,"widthUnit":"px","buttonText":"<?php esc_html_e( 'Search', 'spectra-one' ); ?>","buttonPosition":"button-inside","buttonUseIcon":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}},"className":"is-style-swt-search-minimal"} /-->
     </div>
     <!-- /wp:group -->
 </main>

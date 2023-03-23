@@ -52,13 +52,13 @@
                     <!-- /wp:paragraph -->
 
                     <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
-                    <!-- wp:navigation-link {"label":"Products List","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Products List', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"Plans & Pricing","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Plans & Pricing', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"Services","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Services', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"Partners","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Partners', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
                     <!-- /wp:navigation -->
                 </div>
                 <!-- /wp:column -->
@@ -72,13 +72,13 @@
                     <!-- /wp:paragraph -->
 
                     <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
-                    <!-- wp:navigation-link {"label":"About Us","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'About Us', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"News","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'News', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"Contact Us","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Contact Us', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"Meet Our Team","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Meet Our Team', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
                     <!-- /wp:navigation -->
                 </div>
                 <!-- /wp:column -->
@@ -100,13 +100,13 @@
                     <!-- /wp:paragraph -->
 
                     <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
-                    <!-- wp:navigation-link {"label":"Gallery","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Gallery', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"Blog Articles","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Blog Articles', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"Brand Assets","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Brand Assets', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"Brand Guidelines","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Brand Guidelines', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
                     <!-- /wp:navigation -->
                 </div>
                 <!-- /wp:column -->
@@ -120,13 +120,13 @@
                     <!-- /wp:paragraph -->
 
                     <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
-                    <!-- wp:navigation-link {"label":"Knowledge Base","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Knowledge Base', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"Contact Support","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Contact Support', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"Privacy Policy","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Privacy Policy', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 
-                    <!-- wp:navigation-link {"label":"TOS","url":"#","kind":"custom","isTopLevelLink":true} /-->
+                    <!-- wp:navigation-link {"label":"<?php esc_html_e( 'TOS', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
                     <!-- /wp:navigation -->
                 </div>
                 <!-- /wp:column -->
@@ -140,7 +140,7 @@
     <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
     <div class="wp-block-group alignwide">
         <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-        <p class="has-text-align-center has-x-small-font-size"><?php echo esc_html__( '©', 'spectra-one' ) . ' ' . date_i18n( _x( 'Y', 'copyright date format', 'spectra-one' ) ) . ' ' . esc_html__( '·', 'spectra-one' )  ; ?></p>
+        <p class="has-text-align-center has-x-small-font-size"><?php echo sprintf( __( '© %d ·', 'spectra-one' ), date_i18n("Y")); ?></p>
         <!-- /wp:paragraph -->
 
         <!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontSize":"x-small"} /-->

@@ -30,7 +30,7 @@
                 <!-- wp:post-date {"format":"M j, Y"} /-->
             </div>
             <!-- /wp:group -->
-            <!-- wp:post-excerpt {"moreText":"Read More"} /-->
+            <!-- wp:post-excerpt {"moreText":"<?php esc_html_e( 'Read More', 'spectra-one' ); ?>"} /-->
             <!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large"}}},"backgroundColor":"outline","className":"is-style-wide"} -->
             <hr class="wp-block-separator has-text-color has-outline-color has-alpha-channel-opacity has-outline-background-color has-background is-style-wide"
                 style="margin-top:var(--wp--preset--spacing--large)" />

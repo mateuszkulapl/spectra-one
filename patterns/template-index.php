@@ -41,7 +41,7 @@
         <!-- /wp:query-pagination -->
         <!-- wp:query-no-results {"align":"wide"} -->
         <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results.","fontSize":"large"} -->
-        <p class="has-large-font-size"><?php esc_html_e( "Sorry, there's nothing to show here.", 'spectra-one' ); ?></p>
+        <p class="has-large-font-size"><?php esc_html_e( 'Sorry, there\'s nothing to show here.', 'spectra-one' ); ?></p>
         <!-- /wp:paragraph -->
         <!-- wp:buttons -->
         <div class="wp-block-buttons">
