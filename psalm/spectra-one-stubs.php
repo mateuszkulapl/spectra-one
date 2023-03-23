@@ -1,14 +1,14 @@
 <?php
 
 namespace Swt {
-	const SWT_VER  = '0.0.3';
-	const SWT_SLUG = 'spectra-one';
-	const SWT_NAME = 'Spectra One';
-	const SWT_PFX  = 'swt';
-	const SWT_LOC  = 'spectraOne';
-	const SWT_NS   = __NAMESPACE__ . '\\';
-	const SWT_DS   = DIRECTORY_SEPARATOR;
-	const SWT_DIR  = __DIR__ . SWT_DS;
+    const SWT_VER = '0.0.3';
+    const SWT_SLUG = 'spectra-one';
+    const SWT_NAME = 'Spectra One';
+    const SWT_PFX = 'swt';
+    const SWT_LOC = 'spectraOne';
+    const SWT_NS = __NAMESPACE__ . '\\';
+    const SWT_DS = DIRECTORY_SEPARATOR;
+    const SWT_DIR = __DIR__ . SWT_DS;
 }
 namespace Swt {
     /**
@@ -84,32 +84,28 @@ namespace Swt {
 }
 namespace Swt {
     /**
-     * Modifies front end HTML output of block.
+     * Spectra compatibility
      *
-     * @since 0.0.1
-     *
-     * @param string $html  Block HTML.
-     * @param array  $block Block data.
-     *
-     * @return string
+     * @since 0.0.3
+     * @return void
      */
-    function render_post_template(string $html, array $block) : string
+    function spectra_compatibility()
     {
     }
     /**
-     * Load Inline Css.
+     * Load spectra compatibility inline css.
      *
      * @since 0.0.1
      * @param string $css Inline CSS.
      * @return string
      */
-    function post_template_inline_css(string $css) : string
+    function spectra_compatibility_inline_css(string $css) : string
     {
     }
 }
 namespace Swt {
     /**
-     * Header support.
+     * Header render function.
      *
      * @param string $block_content Entire Block Content.
      * @param array  $block Block Properties As An Array.
@@ -119,7 +115,7 @@ namespace Swt {
     {
     }
     /**
-     * Load header Inline Css.
+     * Load header inline css.
      *
      * @since 0.0.1
      * @param string $css Inline CSS.
@@ -129,7 +125,7 @@ namespace Swt {
     {
     }
     /**
-     * Load Header Inline Js.
+     * Load header inline js.
      *
      * @since 0.0.1
      * @param string $js Inline JS.
@@ -139,23 +135,23 @@ namespace Swt {
     {
     }
     /**
-     * Load Transparent Header Inline Js.
-     *
-     * @since 0.0.1
-     * @param string $js Inline JS.
-     * @return string
-     */
-    function header_inline_transparent_js(string $js) : string
-    {
-    }
-    /**
-     * Load Transparent Header Inline Css.
+     * Load transparent header inline css.
      *
      * @since 0.0.1
      * @param string $css Inline CSS.
      * @return string
      */
     function header_inline_transparent_css(string $css) : string
+    {
+    }
+    /**
+     * Load header wp_admin_bar spacing inline js.
+     *
+     * @since 0.0.1
+     * @param string $js Inline JS.
+     * @return string
+     */
+    function header_wp_admin_bar_spacing_js(string $js) : string
     {
     }
 }
@@ -270,6 +266,26 @@ namespace Swt {
 }
 namespace Swt {
     /**
+     * Get theme.json
+     *
+     * @since 0.0.1
+     * @return array
+     */
+    function get_theme_json() : array
+    {
+    }
+    /**
+     * Get custom styles
+     *
+     * @since 0.0.1
+     * @return array
+     */
+    function get_theme_custom_styles() : array
+    {
+    }
+}
+namespace Swt {
+    /**
      * Formatted DOMDocument object from string.
      *
      * @since 0.0.1
@@ -346,6 +362,15 @@ namespace Swt {
      * @return string
      */
     function get_uri(string $path = '') : string
+    {
+    }
+    /**
+     * Is spectra plugin is enabled / available
+     *
+     * @since 0.0.3
+     * @return bool
+     */
+    function is_spectra_plugin() : bool
     {
     }
     /**
@@ -441,29 +466,15 @@ namespace {
     /**
      * Title: Call to action.
      * Slug: spectra-one/call-to-action
-     * Categories: call to action
+     * Categories: banner
      * Keywords: Call to action
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
      * Title: Hero banner
      * Slug: spectra-one/hero-banner
-     * Categories: banners
+     * Categories: banner
      * Keywords: Hero Banner
-     */
-    $get_url = \trailingslashit(\get_template_directory_uri());
-    /**
-     * Title: Testimonial
-     * Slug: spectra-one/testimonial
-     * Categories: featured
-     * Keywords: Testimonial
-     */
-    $get_url = \trailingslashit(\get_template_directory_uri());
-    /**
-     * Title: Three columns featured
-     * Slug: spectra-one/three-columns-featured
-     * Categories: featured
-     * Keywords: Three columns featured
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**

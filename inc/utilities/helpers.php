@@ -223,7 +223,6 @@ function render_image_placeholder( string $html, array $block ): string {
  * @param string   $slug Icon name.
  * @param int|null $size Icon size.
  *
- * @throws DOMException Throw error.
  * @return string
  */
 function get_svg_icon( string $slug, int $size = null ): string {
