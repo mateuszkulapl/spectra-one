@@ -22,7 +22,7 @@
             <!-- /wp:group -->
 
             <!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"var:preset|spacing|medium"}}},"fontSize":"small"} -->
-            <p class="has-small-font-size" style="padding-right:var(--wp--preset--spacing--medium)">Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium.</p>
+            <p class="has-small-font-size" style="padding-right:var(--wp--preset--spacing--medium)"><?php esc_html_e( 'Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium.', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:social-links {"iconColor":"heading","iconColorValue":"var(--wp--preset--color--heading)","openInNewTab":true,"size":"has-small-icon-size","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"}}},"className":"is-style-logos-only"} -->
@@ -47,7 +47,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Products
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Products', 'spectra-one' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
@@ -67,7 +67,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Company
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Company', 'spectra-one' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
@@ -95,7 +95,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Resources
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Resources', 'spectra-one' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
@@ -115,7 +115,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Support
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Support', 'spectra-one' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
@@ -140,13 +140,13 @@
     <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
     <div class="wp-block-group alignwide">
         <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-        <p class="has-text-align-center has-x-small-font-size">© 2023 ·</p>
+        <p class="has-text-align-center has-x-small-font-size"><?php echo esc_html__( '©', 'spectra-one' ) . ' ' . date_i18n( _x( 'Y', 'copyright date format', 'spectra-one' ) ) . ' ' . esc_html__( '·', 'spectra-one' )  ; ?></p>
         <!-- /wp:paragraph -->
 
         <!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontSize":"x-small"} /-->
 
         <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-        <p class="has-text-align-center has-x-small-font-size">· All rights reserved</p>
+        <p class="has-text-align-center has-x-small-font-size"><?php esc_html_e( '· All rights reserved', 'spectra-one' ); ?></p>
         <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->

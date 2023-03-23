@@ -37,11 +37,11 @@
 
             <!-- wp:heading {"level":5,"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading","className":"wp-block-heading"} -->
             <h5 class="wp-block-heading has-heading-color has-text-color"
-                style="margin-top:var(--wp--preset--spacing--small)">Core WP Blocks</h5>
+                style="margin-top:var(--wp--preset--spacing--small)"><?php esc_html_e( 'Core WP Blocks', 'spectra-one' ); ?></h5>
             <!-- /wp:heading -->
 
             <!-- wp:paragraph -->
-            <p>Endless use-cases that make it highly flexible, adaptable, and scalable for everyone.</p>
+            <p><?php esc_html_e( 'Endless use-cases that make it highly flexible, adaptable, and scalable for everyone.', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:column -->
@@ -64,11 +64,11 @@
 
             <!-- wp:heading {"level":5,"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading","className":"wp-block-heading"} -->
             <h5 class="wp-block-heading has-heading-color has-text-color"
-                style="margin-top:var(--wp--preset--spacing--small)">Easy Customizable</h5>
+                style="margin-top:var(--wp--preset--spacing--small)"><?php esc_html_e( 'Easy Customizable', 'spectra-one' ); ?></h5>
             <!-- /wp:heading -->
 
             <!-- wp:paragraph -->
-            <p>Endless use-cases that make it highly flexible, adaptable, and scalable for everyone.</p>
+            <p><?php esc_html_e( 'Endless use-cases that make it highly flexible, adaptable, and scalable for everyone.', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:column -->
@@ -91,11 +91,11 @@
 
             <!-- wp:heading {"level":5,"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading","className":"wp-block-heading"} -->
             <h5 class="wp-block-heading has-heading-color has-text-color"
-                style="margin-top:var(--wp--preset--spacing--small)">Growing Library</h5>
+                style="margin-top:var(--wp--preset--spacing--small)"><?php esc_html_e( 'Growing Library', 'spectra-one' ); ?></h5>
             <!-- /wp:heading -->
 
             <!-- wp:paragraph -->
-            <p>Endless use-cases that make it highly flexible, adaptable, and scalable for everyone.</p>
+            <p><?php esc_html_e( 'Endless use-cases that make it highly flexible, adaptable, and scalable for everyone.', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:column -->

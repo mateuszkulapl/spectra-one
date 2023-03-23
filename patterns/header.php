@@ -21,7 +21,7 @@
 <!-- /wp:navigation -->
 <!-- wp:buttons {"SWTHideMob":true} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Get Started</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'spectra-one' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>

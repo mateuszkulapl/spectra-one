@@ -21,22 +21,22 @@ $images = [$get_url . "assets/image/hero-img.png"];
         <div class="wp-block-column">
             <!-- wp:heading {"level":1,"style":{"typography":{"letterSpacing":"-1px"},"spacing":{"padding":{"right":"var:preset|spacing|medium"}}},"textColor":"heading","className":"wp-block-heading"} -->
             <h1 class="wp-block-heading has-heading-color has-text-color"
-                style="padding-right:var(--wp--preset--spacing--medium);letter-spacing:-1px">Discover a new way to build website</h1>
+                style="padding-right:var(--wp--preset--spacing--medium);letter-spacing:-1px"><?php esc_html_e( 'Discover a new way to build website', 'spectra-one' ); ?></h1>
             <!-- /wp:heading -->
 
             <!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"var:preset|spacing|x-large"}}}} -->
-            <p style="padding-right:var(--wp--preset--spacing--x-large)">Create a functional and visually appealing website without having to write code.</p>
+            <p style="padding-right:var(--wp--preset--spacing--x-large)"><?php esc_html_e( 'Create a functional and visually appealing website without having to write code.', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} -->
             <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--small)">
                 <!-- wp:button -->
-                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Get Started</a></div>
+                <div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'spectra-one' ); ?></a></div>
                 <!-- /wp:button -->
 
                 <!-- wp:button {"className":"is-style-swt-button-secondary"} -->
                 <div class="wp-block-button is-style-swt-button-secondary"><a
-                        class="wp-block-button__link wp-element-button">Learn More</a></div>
+                        class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn More', 'spectra-one' ); ?></a></div>
                 <!-- /wp:button -->
             </div>
             <!-- /wp:buttons -->

@@ -21,37 +21,37 @@ $images = [$get_url . "assets/image/card-img.png"];
 
 <!-- wp:column {"verticalAlignment":"top","style":{"spacing":{"blockGap":"var:preset|spacing|xx-large","padding":{"right":"var:preset|spacing|small","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|small","top":"var:preset|spacing|medium"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-top" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--small)"><!-- wp:heading {"style":{"typography":{"letterSpacing":"-1px"}},"textColor":"white","className":"wp-block-heading"} -->
-<h2 class="wp-block-heading has-white-color has-text-color" style="letter-spacing:-1px">Customize your website visually and see the changes instantly!</h2>
+<h2 class="wp-block-heading has-white-color has-text-color" style="letter-spacing:-1px"><?php esc_html_e( 'Customize your website visually and see the changes instantly!', 'spectra-one' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":4,"textColor":"white","className":"wp-block-heading"} -->
-<h4 class="wp-block-heading has-white-color has-text-color">100+</h4>
+<h4 class="wp-block-heading has-white-color has-text-color"><?php esc_html_e( '100+', 'spectra-one' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-text-color has-small-font-size">Block patterns</p>
+<p class="has-white-color has-text-color has-small-font-size"><?php esc_html_e( 'Block patterns', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":4,"textColor":"white","className":"wp-block-heading"} -->
-<h4 class="wp-block-heading has-white-color has-text-color">20+</h4>
+<h4 class="wp-block-heading has-white-color has-text-color"><?php esc_html_e( '20+', 'spectra-one' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-text-color has-small-font-size">Style variations</p>
+<p class="has-white-color has-text-color has-small-font-size"><?php esc_html_e( 'Style variations', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":4,"textColor":"white","className":"wp-block-heading"} -->
-<h4 class="wp-block-heading has-white-color has-text-color">48</h4>
+<h4 class="wp-block-heading has-white-color has-text-color"><?php esc_html_e( '48', 'spectra-one' ); ?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"white","fontSize":"small"} -->
-<p class="has-white-color has-text-color has-small-font-size">Pre-built templates</p>
+<p class="has-white-color has-text-color has-small-font-size"><?php esc_html_e( 'Pre-built templates', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

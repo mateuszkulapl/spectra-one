@@ -11,7 +11,7 @@
 <div class="wp-block-group alignwide"
     style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)">
     <!-- wp:heading {"textAlign":"left","align":"wide","textColor":"heading","className":"wp-block-heading"} -->
-    <h2 class="alignwide has-text-align-left wp-block-heading has-heading-color has-text-color">Latest from The Blog
+    <h2 class="alignwide has-text-align-left wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Latest from The Blog', 'spectra-one' ); ?>
     </h2>
     <!-- /wp:heading -->
     <!-- wp:query {"queryId":42,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"flex","columns":3},"align":"wide"} -->

@@ -39,17 +39,17 @@ $images = [
                 </svg>
                 <!-- /wp:html -->
                 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"14px"}}} -->
-                <p class="has-text-align-center" style="font-size:14px">Easy installation</p>
+                <p class="has-text-align-center" style="font-size:14px"><?php esc_html_e( 'Easy installation', 'spectra-one' ); ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
         <!-- wp:heading {"textAlign":"center","textColor":"heading","className":"wp-block-heading"} -->
-        <h2 class="has-text-align-center wp-block-heading has-heading-color has-text-color">Carefully crafted design. No coding required.</h2>
+        <h2 class="has-text-align-center wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Carefully crafted design. No coding required.', 'spectra-one' ); ?></h2>
         <!-- /wp:heading -->
         <!-- wp:paragraph {"align":"center"} -->
-        <p class="has-text-align-center">Install any demo and template with a single click. Choose and mix up patterns and blocks.</p>
+        <p class="has-text-align-center"><?php esc_html_e( 'Install any demo and template with a single click. Choose and mix up patterns and blocks.', 'spectra-one' ); ?></p>
         <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
@@ -66,10 +66,10 @@ $images = [
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":6,"textColor":"heading","className":"wp-block-heading"} -->
-                <h6 class="wp-block-heading has-heading-color has-text-color">Template name</h6>
+                <h6 class="wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Template name', 'spectra-one' ); ?></h6>
                 <!-- /wp:heading -->
                 <!-- wp:paragraph {"fontSize":"small"} -->
-                <p class="has-small-font-size">Category</p>
+                <p class="has-small-font-size"><?php esc_html_e( 'Category', 'spectra-one' ); ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
@@ -86,10 +86,10 @@ $images = [
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":6,"textColor":"heading","className":"wp-block-heading"} -->
-                <h6 class="wp-block-heading has-heading-color has-text-color">Template name</h6>
+                <h6 class="wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Template name', 'spectra-one' ); ?></h6>
                 <!-- /wp:heading -->
                 <!-- wp:paragraph {"fontSize":"small"} -->
-                <p class="has-small-font-size">Category</p>
+                <p class="has-small-font-size"><?php esc_html_e( 'Category', 'spectra-one' ); ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
@@ -106,10 +106,10 @@ $images = [
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":6,"textColor":"heading","className":"wp-block-heading"} -->
-                <h6 class="wp-block-heading has-heading-color has-text-color">Template name</h6>
+                <h6 class="wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Template name', 'spectra-one' ); ?></h6>
                 <!-- /wp:heading -->
                 <!-- wp:paragraph {"fontSize":"small"} -->
-                <p class="has-small-font-size">Category</p>
+                <p class="has-small-font-size"><?php esc_html_e( 'Category', 'spectra-one' ); ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
@@ -130,10 +130,10 @@ $images = [
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":6,"textColor":"heading","className":"wp-block-heading"} -->
-                <h6 class="wp-block-heading has-heading-color has-text-color">Template name</h6>
+                <h6 class="wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Template name', 'spectra-one' ); ?></h6>
                 <!-- /wp:heading -->
                 <!-- wp:paragraph {"fontSize":"small"} -->
-                <p class="has-small-font-size">Category</p>
+                <p class="has-small-font-size"><?php esc_html_e( 'Category', 'spectra-one' ); ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
@@ -150,10 +150,10 @@ $images = [
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":6,"textColor":"heading","className":"wp-block-heading"} -->
-                <h6 class="wp-block-heading has-heading-color has-text-color">Template name</h6>
+                <h6 class="wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Template name', 'spectra-one' ); ?></h6>
                 <!-- /wp:heading -->
                 <!-- wp:paragraph {"fontSize":"small"} -->
-                <p class="has-small-font-size">Category</p>
+                <p class="has-small-font-size"><?php esc_html_e( 'Category', 'spectra-one' ); ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
@@ -170,10 +170,10 @@ $images = [
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":6,"textColor":"heading","className":"wp-block-heading"} -->
-                <h6 class="wp-block-heading has-heading-color has-text-color">Template name</h6>
+                <h6 class="wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Template name', 'spectra-one' ); ?></h6>
                 <!-- /wp:heading -->
                 <!-- wp:paragraph {"fontSize":"small"} -->
-                <p class="has-small-font-size">Category</p>
+                <p class="has-small-font-size"><?php esc_html_e( 'Category', 'spectra-one' ); ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
@@ -194,10 +194,10 @@ $images = [
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":6,"textColor":"heading","className":"wp-block-heading"} -->
-                <h6 class="wp-block-heading has-heading-color has-text-color">Template name</h6>
+                <h6 class="wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Template name', 'spectra-one' ); ?></h6>
                 <!-- /wp:heading -->
                 <!-- wp:paragraph {"fontSize":"small"} -->
-                <p class="has-small-font-size">Category</p>
+                <p class="has-small-font-size"><?php esc_html_e( 'Category', 'spectra-one' ); ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
@@ -214,10 +214,10 @@ $images = [
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":6,"textColor":"heading","className":"wp-block-heading"} -->
-                <h6 class="wp-block-heading has-heading-color has-text-color">Template name</h6>
+                <h6 class="wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Template name', 'spectra-one' ); ?></h6>
                 <!-- /wp:heading -->
                 <!-- wp:paragraph {"fontSize":"small"} -->
-                <p class="has-small-font-size">Category</p>
+                <p class="has-small-font-size"><?php esc_html_e( 'Category', 'spectra-one' ); ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
@@ -234,10 +234,10 @@ $images = [
             <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":6,"textColor":"heading","className":"wp-block-heading"} -->
-                <h6 class="wp-block-heading has-heading-color has-text-color">Template name</h6>
+                <h6 class="wp-block-heading has-heading-color has-text-color"><?php esc_html_e( 'Template name', 'spectra-one' ); ?></h6>
                 <!-- /wp:heading -->
                 <!-- wp:paragraph {"fontSize":"small"} -->
-                <p class="has-small-font-size">Category</p>
+                <p class="has-small-font-size"><?php esc_html_e( 'Category', 'spectra-one' ); ?></p>
                 <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->

@@ -49,7 +49,7 @@
         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
         <div class="wp-block-group">
             <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-            <p class="has-text-align-center has-x-small-font-size">© 2023 ·</p>
+            <p class="has-text-align-center has-x-small-font-size"><?php echo esc_html__( '©', 'spectra-one' ) . ' ' . date_i18n( _x( 'Y', 'copyright date format', 'spectra-one' ) ) . ' ' . esc_html__( '·', 'spectra-one' )  ; ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontSize":"x-small"} /-->
@@ -59,15 +59,15 @@
         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
         <div class="wp-block-group">
             <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-            <p class="has-text-align-center has-x-small-font-size">Privacy</p>
+            <p class="has-text-align-center has-x-small-font-size"><?php esc_html_e( 'Privacy', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-            <p class="has-text-align-center has-x-small-font-size">·</p>
+            <p class="has-text-align-center has-x-small-font-size"><?php esc_html_e( '·', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-            <p class="has-text-align-center has-x-small-font-size">Terms</p>
+            <p class="has-text-align-center has-x-small-font-size"><?php esc_html_e( 'Terms', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->

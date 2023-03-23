@@ -63,7 +63,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Products
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Products', 'spectra-one' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
@@ -83,7 +83,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Company
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Company', 'spectra-one' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
@@ -111,7 +111,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Support
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Support', 'spectra-one' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
@@ -131,7 +131,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Resources
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Resources', 'spectra-one' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
@@ -159,7 +159,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Need Help?
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Need Help?', 'spectra-one' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
@@ -179,7 +179,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Get in
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Get in', 'spectra-one' ); ?>
                         touch</p>
                     <!-- /wp:paragraph -->
 
@@ -206,13 +206,13 @@
         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
         <div class="wp-block-group">
             <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-            <p class="has-text-align-center has-x-small-font-size">© 2023 ·</p>
+            <p class="has-text-align-center has-x-small-font-size"><?php echo esc_html__( '©', 'spectra-one' ) . ' ' . date_i18n( _x( 'Y', 'copyright date format', 'spectra-one' ) ) . ' ' . esc_html__( '·', 'spectra-one' )  ; ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontSize":"x-small"} /-->
 
             <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-            <p class="has-text-align-center has-x-small-font-size">· All rights reserved</p>
+            <p class="has-text-align-center has-x-small-font-size"><?php esc_html_e( '· All rights reserved', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -220,15 +220,15 @@
         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
         <div class="wp-block-group">
             <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-            <p class="has-text-align-center has-x-small-font-size">Privacy Policy</p>
+            <p class="has-text-align-center has-x-small-font-size"><?php esc_html_e( 'Privacy Policy', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-            <p class="has-text-align-center has-x-small-font-size">·</p>
+            <p class="has-text-align-center has-x-small-font-size"><?php esc_html_e( '·', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-            <p class="has-text-align-center has-x-small-font-size">Terms and Conditions</p>
+            <p class="has-text-align-center has-x-small-font-size"><?php esc_html_e( 'Terms and Conditions', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->

@@ -26,17 +26,17 @@
         <!-- /wp:group -->
 
         <!-- wp:paragraph {"align":"center","textColor":"heading","fontSize":"x-large"} -->
-        <p class="has-text-align-center has-heading-color has-text-color has-x-large-font-size">No matter where you go, It's the coolest, most happening thing around! Not able to tell you how happy I am with it.</p>
+        <p class="has-text-align-center has-heading-color has-text-color has-x-large-font-size"><?php esc_html_e( "No matter where you go, It's the coolest, most happening thing around! Not able to tell you how happy I am with it.", 'spectra-one' ); ?></p>
         <!-- /wp:paragraph -->
 
         <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
         <div class="wp-block-group">
             <!-- wp:paragraph {"align":"center","textColor":"heading"} -->
-            <p class="has-text-align-center has-heading-color has-text-color">Cameron Williamson</p>
+            <p class="has-text-align-center has-heading-color has-text-color"><?php esc_html_e( 'Cameron Williamson', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
-            <p class="has-text-align-center has-small-font-size">Director of Ucla</p>
+            <p class="has-text-align-center has-small-font-size"><?php esc_html_e( 'Director of Ucla', 'spectra-one' ); ?></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
