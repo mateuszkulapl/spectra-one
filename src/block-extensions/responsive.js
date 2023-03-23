@@ -10,6 +10,14 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 		// Adding compatibility with spectra plugin. So the slugs are same as the plugin.
 		const { SWTHideDesktop, SWTHideTab, SWTHideMob } = attributes;
 
+		if( name && name.includes( 'uagb/') ) {
+			return (
+				<>
+					<BlockEdit {...props} />
+				</>
+			);
+		}
+
 		return (
 			<>
 				<BlockEdit {...props} />
@@ -58,7 +66,7 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 				</InspectorControls>
 			</>
 		);
-
+	
 	};
 }, "Responsive");
 

@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 6.1
-Stable tag: 0.0.3
+Stable tag: 0.0.4
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -53,6 +53,18 @@ License URL: https://fonts.google.com/specimen/Inter
 
 
 == Changelog ==
+
+= 0.0.4 - March 23, 2023 =
+* New: Introduced new block style class "Wide thin line" for separator block.
+* Update: Search block style.
+* Update: Alternate card pattern.
+* Update: Header menu center pattern.
+* Update: Header menu left pattern.
+* Update: Header default pattern.
+* Update: Search template.
+* Fix: Container issue with spectra plugin.
+* Fix: Responsive controls conflicting with spectra plugin.
+
 
 = 0.0.3 - March 21, 2023 =
 * Fix: Spectra plugin compatibility with default wordpress blockgap.
