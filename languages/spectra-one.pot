@@ -1,0 +1,478 @@
+# Copyright (C) 2023 Brainstorm Force
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Spectra One 0.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/spectra-one\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-03-23T03:23:47+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: spectra-one\n"
+
+#. Theme Name of the theme
+msgid "Spectra One"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://wpspectra.com/"
+msgstr ""
+
+#. Description of the theme
+msgid "Spectra One is a beautiful and modern WordPress theme built with the Full Site Editing (FSE) feature. It's a versatile theme that can be used for blogs, portfolios, businesses, and more. Spectra One comes with a sleek and professional design that will make your website stand out from the crowd."
+msgstr ""
+
+#. Author of the theme
+msgid "Brainstorm Force"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://brainstormforce.com/"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:68
+msgid "Close this notice.."
+msgstr ""
+
+#: inc/admin/welcome-notice.php:73
+msgid "Spectra — WordPress Gutenberg Blocks"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:76
+msgid "Page builder that works with the default WordPress editor"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:79
+msgid "Whether you are a beginner, marketer, or professional, Spectra has the tools and resources you can rely on to succeed"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:85
+msgid "Activate Spectra Plugin"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:85
+msgid "Install & Activate Spectra"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:215
+msgid "Activating"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:216
+msgid "Installing"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:217
+msgid "Done"
+msgstr ""
+
+#: inc/block-styles/button.php:22
+msgid "Secondary"
+msgstr ""
+
+#: inc/block-styles/categories.php:22
+msgid "Pill"
+msgstr ""
+
+#: inc/block-styles/search.php:24
+msgid "Minimal"
+msgstr ""
+
+#: inc/block-styles/separator.php:22
+msgid "Wide Thin Line"
+msgstr ""
+
+#: inc/extensions/hide-elements.php:58
+msgid "Disable Header"
+msgstr ""
+
+#: inc/extensions/hide-elements.php:62
+msgid "Disable Footer"
+msgstr ""
+
+#: inc/utilities/helpers.php:253
+msgid " Icon"
+msgstr ""
+
+#: patterns/alternate-card.php
+msgctxt "Pattern title"
+msgid "Alternate card"
+msgstr ""
+
+#: patterns/banner-wide.php
+msgctxt "Pattern title"
+msgid "Banner wide"
+msgstr ""
+
+#: patterns/blog-classic.php
+msgctxt "Pattern title"
+msgid "Blog classic"
+msgstr ""
+
+#: patterns/blog-grid.php
+msgctxt "Pattern title"
+msgid "Blog grid"
+msgstr ""
+
+#: patterns/blog-left-featured-image.php
+msgctxt "Pattern title"
+msgid "Blog left featured image"
+msgstr ""
+
+#: patterns/blog-simple.php
+msgctxt "Pattern title"
+msgid "Blog simple"
+msgstr ""
+
+#: patterns/call-to-action.php
+msgctxt "Pattern title"
+msgid "Call to action."
+msgstr ""
+
+#: patterns/footer-five-columns-menu-inline.php
+msgctxt "Pattern title"
+msgid "Footer five columns menu inline"
+msgstr ""
+
+#: patterns/footer-minimal-menu-center.php
+msgctxt "Pattern title"
+msgid "Footer minimal menu center"
+msgstr ""
+
+#: patterns/footer-minimal-menu-right.php
+msgctxt "Pattern title"
+msgid "Footer minimal menu right"
+msgstr ""
+
+#: patterns/footer-six-columns-menu-separated.php
+msgctxt "Pattern title"
+msgid "Footer six columns menu separated"
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer default"
+msgstr ""
+
+#: patterns/header-center-menu.php
+msgctxt "Pattern title"
+msgid "Header center menu"
+msgstr ""
+
+#: patterns/header-left-menu.php
+msgctxt "Pattern title"
+msgid "Header left menu"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header default"
+msgstr ""
+
+#: patterns/hero-banner.php
+msgctxt "Pattern title"
+msgid "Hero banner"
+msgstr ""
+
+#: patterns/post-grid.php
+msgctxt "Pattern title"
+msgid "Post grid"
+msgstr ""
+
+#: patterns/template-404.php
+msgctxt "Pattern title"
+msgid "Template 404"
+msgstr ""
+
+#: patterns/template-archive.php
+msgctxt "Pattern title"
+msgid "Template Archive"
+msgstr ""
+
+#: patterns/template-full-width.php
+msgctxt "Pattern title"
+msgid "Template full width"
+msgstr ""
+
+#: patterns/template-index.php
+msgctxt "Pattern title"
+msgid "Template index"
+msgstr ""
+
+#: patterns/template-page.php
+msgctxt "Pattern title"
+msgid "Template page"
+msgstr ""
+
+#: patterns/template-search.php
+msgctxt "Pattern title"
+msgid "Template search"
+msgstr ""
+
+#: patterns/template-single.php
+msgctxt "Pattern title"
+msgid "Template single"
+msgstr ""
+
+#: patterns/testimonial.php
+msgctxt "Pattern title"
+msgid "Testimonial"
+msgstr ""
+
+#: patterns/three-columns-featured.php
+msgctxt "Pattern title"
+msgid "Three columns featured"
+msgstr ""
+
+#: patterns/three-columns-listing.php
+msgctxt "Pattern title"
+msgid "Three columns listing"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:371
+#: src/extensions/page-settings/settings-list.js:20
+#: build/editor.js:336
+msgid "Disable Elements"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:417
+#: build/editor.js:421
+#: src/extensions/page-settings/settings.js:21
+#: src/extensions/page-settings/settings.js:29
+#: build/editor.js:365
+#: build/editor.js:373
+msgid "Page Settings"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:61
+#: src/block-extensions/header.js:25
+#: build/editor.js:27
+msgid "Enable Sticky Header"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:62
+#: src/block-extensions/header.js:31
+#: build/editor.js:33
+msgid "Transparent header option will be disabled on enabling this option."
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:68
+#: src/block-extensions/header.js:45
+#: build/editor.js:47
+msgid "Enable Transparent Header"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:69
+#: src/block-extensions/header.js:51
+#: build/editor.js:53
+msgid "Sticky header option will be disabled on enabling this option."
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:146
+#: src/block-extensions/responsive.js:24
+#: build/editor.js:132
+msgid "Hide Desktop"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:152
+#: src/block-extensions/responsive.js:36
+#: build/editor.js:144
+msgid "Hide Tablet"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:158
+#: src/block-extensions/responsive.js:47
+#: build/editor.js:155
+msgid "Hide Mobile"
+msgstr ""
+
+#: styles/dark.json
+msgctxt "Style variation name"
+msgid "Dark"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Heading"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Body"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Surface"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Outline"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Foreground"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Transparent"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Current Color"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Inherit"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Gradient name"
+msgid "Main gradient"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XX Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XX Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XX Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XXX Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XXXX Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Full width"
+msgstr ""
