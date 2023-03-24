@@ -1,6 +1,6 @@
 <?php
 /**
- * Spectra compatibility
+ * Spectra Plugin compatibility
  *
  * @package Spectra One
  * @author Brainstorm Force
@@ -36,7 +36,7 @@ function spectra_compatibility() {
 /**
  * Load spectra compatibility inline css.
  *
- * @since 0.0.1
+ * @since 0.0.3
  * @param string $css Inline CSS.
  * @return string
  */

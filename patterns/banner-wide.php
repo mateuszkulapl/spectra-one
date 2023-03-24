@@ -8,7 +8,7 @@
 
  $get_url = trailingslashit(get_template_directory_uri());
 
- $images = [$get_url . "assets/image/card-img.png"];
+ $images = [$get_url . "assets/image/banner-wide-img.jpg"];
  ?>
  
  <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
