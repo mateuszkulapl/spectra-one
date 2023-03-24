@@ -46,4 +46,22 @@ Google Fonts
 License: SIL Open Font License, 1.1
 License URL: https://fonts.google.com/specimen/Inter 
 
+Icons
+License : Massachusetts Institute of Technology ( MIT ) License 
+License URI : https://heroicons.com
+
+Images
+
+Hero
+License : Unsplash License
+License URI : https://unsplash.com/license,
+https://unsplash.com/photos/jOF2TFSNxQI
+
+Blog
+License : Unsplash License
+License URI : https://unsplash.com/license,
+https://unsplash.com/photos/_S52nTOg7xI
+https://unsplash.com/photos/mTIer0UVf2k
+https://unsplash.com/photos/5UXeieG7YI4
+
 © Copyright Spectra One 2023, Spectra.
