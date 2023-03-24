@@ -58,8 +58,8 @@ License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://pxhere.com/en/license,
 https://pxhere.com/en/photo/13688
 
-Hand-drawn illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.
-https://wpspectra.com/wp-content/uploads/2023/03/hero-img.png
+Illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.
+https://wpspectra.com/wp-content/uploads/2023/03/hero-img.png 
 https://wpspectra.com/wp-content/uploads/2023/03/banner-wide-img.jpg
 https://wpspectra.com/wp-content/uploads/2023/03/card-img.png
 https://wpspectra.com/wp-content/uploads/2023/03/spectra-plugin-banner.jpg
