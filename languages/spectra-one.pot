@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-03-23T12:07:29+01:00\n"
+"POT-Creation-Date: 2023-03-24T07:19:12+01:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -99,44 +99,65 @@ msgctxt "Pattern title"
 msgid "Alternate card"
 msgstr ""
 
-#: patterns/alternate-card.php:24
-#: patterns/banner-wide.php:24
-msgid "Customize your website visually and see the changes instantly!"
+#: patterns/alternate-card.php:21
+msgid "Everything you need to create amazing websites"
 msgstr ""
 
-#: patterns/alternate-card.php:30
-#: patterns/banner-wide.php:30
-msgid "100+"
+#: patterns/alternate-card.php:25
+msgid "Interactive design tools and its many customization options to customize anything and everything needed to build the fully-functional website of your dreams."
 msgstr ""
 
-#: patterns/alternate-card.php:34
-#: patterns/banner-wide.php:34
-msgid "Block patterns"
+#: patterns/alternate-card.php:38
+#: patterns/alternate-card.php:84
+msgid "Huge Design Collection"
 msgstr ""
 
-#: patterns/alternate-card.php:40
-#: patterns/banner-wide.php:40
-msgid "20+"
-msgstr ""
-
-#: patterns/alternate-card.php:44
-#: patterns/banner-wide.php:44
-msgid "Style variations"
-msgstr ""
-
-#: patterns/alternate-card.php:50
-#: patterns/banner-wide.php:50
-msgid "48"
+#: patterns/alternate-card.php:42
+#: patterns/alternate-card.php:88
+msgid "Imperdiet etiam scelerisque convallis pulvinar laoreet. Enim imperdiet nullam ullamcorper tempus vivamus eget leo elementum. Sed platea pellentesque nulla egestas porttitor."
 msgstr ""
 
 #: patterns/alternate-card.php:54
-#: patterns/banner-wide.php:54
-msgid "Pre-built templates"
+#: patterns/alternate-card.php:72
+msgid "Outstanding Performance"
+msgstr ""
+
+#: patterns/alternate-card.php:58
+#: patterns/alternate-card.php:76
+msgid "In nisl enim vulputate varius. Nec sodales elit duis ornare. Non lectus elementum maecenas sit eu orci proin mauris netus."
 msgstr ""
 
 #: patterns/banner-wide.php
 msgctxt "Pattern title"
 msgid "Banner wide"
+msgstr ""
+
+#: patterns/banner-wide.php:24
+msgid "Customize your website visually and see the changes instantly!"
+msgstr ""
+
+#: patterns/banner-wide.php:30
+msgid "100+"
+msgstr ""
+
+#: patterns/banner-wide.php:34
+msgid "Block patterns"
+msgstr ""
+
+#: patterns/banner-wide.php:40
+msgid "20+"
+msgstr ""
+
+#: patterns/banner-wide.php:44
+msgid "Style variations"
+msgstr ""
+
+#: patterns/banner-wide.php:50
+msgid "48"
+msgstr ""
+
+#: patterns/banner-wide.php:54
+msgid "Pre-built templates"
 msgstr ""
 
 #: patterns/blog-classic.php
@@ -570,15 +591,15 @@ msgctxt "Pattern title"
 msgid "Testimonial"
 msgstr ""
 
-#: patterns/testimonial.php:29
+#: patterns/testimonial.php:23
 msgid "No matter where you go, It's the coolest, most happening thing around! Not able to tell you how happy I am with it."
 msgstr ""
 
-#: patterns/testimonial.php:35
+#: patterns/testimonial.php:28
 msgid "Cameron Williamson"
 msgstr ""
 
-#: patterns/testimonial.php:39
+#: patterns/testimonial.php:32
 msgid "Director of Ucla"
 msgstr ""
 
@@ -587,21 +608,21 @@ msgctxt "Pattern title"
 msgid "Three columns featured"
 msgstr ""
 
-#: patterns/three-columns-featured.php:40
+#: patterns/three-columns-featured.php:26
 msgid "Core WP Blocks"
 msgstr ""
 
+#: patterns/three-columns-featured.php:30
 #: patterns/three-columns-featured.php:44
-#: patterns/three-columns-featured.php:71
-#: patterns/three-columns-featured.php:98
+#: patterns/three-columns-featured.php:58
 msgid "Endless use-cases that make it highly flexible, adaptable, and scalable for everyone."
 msgstr ""
 
-#: patterns/three-columns-featured.php:67
+#: patterns/three-columns-featured.php:40
 msgid "Easy Customizable"
 msgstr ""
 
-#: patterns/three-columns-featured.php:94
+#: patterns/three-columns-featured.php:54
 msgid "Growing Library"
 msgstr ""
 
@@ -610,39 +631,39 @@ msgctxt "Pattern title"
 msgid "Three columns listing"
 msgstr ""
 
-#: patterns/three-columns-listing.php:42
+#: patterns/three-columns-listing.php:36
 msgid "Easy installation"
 msgstr ""
 
-#: patterns/three-columns-listing.php:49
+#: patterns/three-columns-listing.php:42
 msgid "Carefully crafted design. No coding required."
 msgstr ""
 
-#: patterns/three-columns-listing.php:52
+#: patterns/three-columns-listing.php:46
 msgid "Install any demo and template with a single click. Choose and mix up patterns and blocks."
 msgstr ""
 
-#: patterns/three-columns-listing.php:69
-#: patterns/three-columns-listing.php:89
-#: patterns/three-columns-listing.php:109
-#: patterns/three-columns-listing.php:133
-#: patterns/three-columns-listing.php:153
+#: patterns/three-columns-listing.php:59
+#: patterns/three-columns-listing.php:76
+#: patterns/three-columns-listing.php:94
+#: patterns/three-columns-listing.php:116
+#: patterns/three-columns-listing.php:134
+#: patterns/three-columns-listing.php:152
 #: patterns/three-columns-listing.php:173
-#: patterns/three-columns-listing.php:197
-#: patterns/three-columns-listing.php:217
-#: patterns/three-columns-listing.php:237
+#: patterns/three-columns-listing.php:190
+#: patterns/three-columns-listing.php:208
 msgid "Template name"
 msgstr ""
 
-#: patterns/three-columns-listing.php:72
-#: patterns/three-columns-listing.php:92
-#: patterns/three-columns-listing.php:112
-#: patterns/three-columns-listing.php:136
-#: patterns/three-columns-listing.php:156
+#: patterns/three-columns-listing.php:62
+#: patterns/three-columns-listing.php:79
+#: patterns/three-columns-listing.php:97
+#: patterns/three-columns-listing.php:119
+#: patterns/three-columns-listing.php:137
+#: patterns/three-columns-listing.php:155
 #: patterns/three-columns-listing.php:176
-#: patterns/three-columns-listing.php:200
-#: patterns/three-columns-listing.php:220
-#: patterns/three-columns-listing.php:240
+#: patterns/three-columns-listing.php:193
+#: patterns/three-columns-listing.php:211
 msgid "Category"
 msgstr ""
 
@@ -792,7 +813,19 @@ msgstr ""
 #: styles/dark.json
 #: theme.json
 msgctxt "Gradient name"
-msgid "Main gradient"
+msgid "Primary"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Secondary"
 msgstr ""
 
 #: theme.json
