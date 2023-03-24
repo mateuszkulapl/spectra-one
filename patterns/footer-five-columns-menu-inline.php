@@ -32,7 +32,7 @@
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","letterSpacing":"1px","fontStyle":"normal","fontWeight":"500"}},"textColor":"heading","fontSize":"x-small"} -->
                     <p class="has-heading-color has-text-color has-x-small-font-size"
-                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase">Products
+                        style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Products', 'spectra-one' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
