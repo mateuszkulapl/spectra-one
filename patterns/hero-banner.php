@@ -12,8 +12,8 @@ $get_url = trailingslashit(get_template_directory_uri());
 $images = [$get_url . "assets/image/hero-img.png"];
 ?>
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"gradient":"main-gradient","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-main-gradient-gradient-background has-background"
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"gradient":"primary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-primary-gradient-background has-background"
     style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)">
     <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"},"padding":{"top":"var:preset|spacing|large"}}}} -->
     <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--large)">
@@ -46,10 +46,7 @@ $images = [$get_url . "assets/image/hero-img.png"];
         <!-- wp:column -->
         <div class="wp-block-column">
             <!-- wp:image {"id":809,"sizeSlug":"full","linkDestination":"none"} -->
-            <figure class="wp-block-image size-full"><img src="<?php echo esc_url(
-                $images[0]
-            ); ?>" alt=""
-                    class="wp-image-809" /></figure>
+            <figure class="wp-block-image size-full"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-809" /></figure>
             <!-- /wp:image -->
         </div>
         <!-- /wp:column -->

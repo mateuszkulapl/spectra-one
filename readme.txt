@@ -84,6 +84,7 @@ https://unsplash.com/photos/5UXeieG7YI4
 * Fix: Container issue with spectra plugin.
 * Fix: Responsive controls conflicting with spectra plugin.
 * Fix: Made patterns translation ready.
+* Fix: Removed html block and added image block for svg icons on front page.
 
 = 0.0.3 - March 21, 2023 =
 * Fix: Spectra plugin compatibility with default wordpress blockgap.

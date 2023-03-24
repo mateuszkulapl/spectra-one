@@ -1,0 +1,11 @@
+/*--------------------------------------------------------------
+# Frontend dynamic duotone support
+--------------------------------------------------------------*/
+
+.swt-duotone-primary {
+    filter: var(--wp--preset--duotone--primary);
+}
+
+.swt-duotone-secondary {
+    filter: var(--wp--preset--duotone--secondary);
+}

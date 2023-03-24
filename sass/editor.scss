@@ -90,6 +90,20 @@
 
 // Note: Need to remove all above code after wordpress fixes issues with register_block_style not applying styles in the editor.
 
+
+/*--------------------------------------------------------------
+# Editor dynamic duotone support
+--------------------------------------------------------------*/
+
+.swt-duotone-primary {
+    filter: var(--wp--preset--duotone--primary);
+}
+
+.swt-duotone-secondary {
+    filter: var(--wp--preset--duotone--secondary);
+}
+
+
 /*--------------------------------------------------------------
 # Post / Page hide and show title
 --------------------------------------------------------------*/
@@ -169,3 +183,6 @@
 .edit-post-visual-editor__post-title-wrapper.invisible {
 	opacity: 0.5;
 }
+
+
+

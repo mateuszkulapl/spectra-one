@@ -66,6 +66,17 @@
 }
 
 /*--------------------------------------------------------------
+# Editor dynamic duotone support
+--------------------------------------------------------------*/
+.swt-duotone-primary {
+  filter: var(--wp--preset--duotone--primary);
+}
+
+.swt-duotone-secondary {
+  filter: var(--wp--preset--duotone--secondary);
+}
+
+/*--------------------------------------------------------------
 # Post / Page hide and show title
 --------------------------------------------------------------*/
 .edit-post-visual-editor__post-title-wrapper {
