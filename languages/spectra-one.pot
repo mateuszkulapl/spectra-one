@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-03-24T07:19:12+01:00\n"
+"POT-Creation-Date: 2023-03-24T10:01:40+01:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -670,7 +670,7 @@ msgstr ""
 #: assets/js/editor.js:1
 #: build/editor.js:374
 #: src/extensions/page-settings/settings-list.js:20
-#: build/editor.js:344
+#: build/editor.js:345
 msgid "Disable Elements"
 msgstr ""
 
@@ -679,8 +679,8 @@ msgstr ""
 #: build/editor.js:424
 #: src/extensions/page-settings/settings.js:21
 #: src/extensions/page-settings/settings.js:29
-#: build/editor.js:373
-#: build/editor.js:381
+#: build/editor.js:374
+#: build/editor.js:382
 msgid "Page Settings"
 msgstr ""
 
