@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since 0.0.4
+ * @since 0.0.3
  */
 
 declare( strict_types=1 );

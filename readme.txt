@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 6.1
-Stable tag: 0.0.4
+Stable tag: 0.0.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -82,7 +82,7 @@ https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-9.jpg
 
 == Changelog ==
 
-= 0.0.4 - March 23, 2023 =
+= 0.0.3 - March 24, 2023 =
 * New: Introduced new block style class "Wide thin line" for separator block.
 * New: Added pot file support.
 * Update: Search block style.
@@ -95,8 +95,6 @@ https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-9.jpg
 * Fix: Responsive controls conflicting with spectra plugin.
 * Fix: Made patterns translation ready.
 * Fix: Removed html block and added image block for svg icons on front page.
-
-= 0.0.3 - March 21, 2023 =
 * Fix: Spectra plugin compatibility with default wordpress blockgap.
 * Fix: Header cutting off when transparent and sticky header is used when user is logged in.
 * Fix: Spectra plugin blocks not inherit width from contentSize.

@@ -5,7 +5,7 @@
 **Tags:** full-site-editing, blog, theme-options, rtl-language-support, full-width-template
 **Tested up to:** 6.1
 **Requires PHP:** 7.4
-**Stable tag:** 0.0.4
+**Stable tag:** 0.0.3
 
 ## Description ##
 
