@@ -1,18 +1,20 @@
-# Spectra One #
-**Contributors:** [brainstormforce](https://profiles.wordpress.org/brainstormforce/)
-**License:** GPLv2 or later
-**License URI:** https://www.gnu.org/licenses/gpl-2.0.html
-**Tags:** full-site-editing, blog, theme-options, rtl-language-support, full-width-template
-**Tested up to:** 6.1
-**Requires PHP:** 7.4
-**Stable tag:** 0.0.3
+=== Spectra One ===
+Contributors: brainstormforce
+Requires at least: 6.1
+Tested up to: 6.1
+Stable tag: 0.0.3
+Requires PHP: 7.4
+License: GPL-2.0-or-later
+Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-## Description ##
+
+== Description ==
 
 Spectra One is a beautiful and modern WordPress theme built with the Full Site Editing (FSE) feature. It's a versatile theme that can be used for blogs, portfolios, businesses, and more. Spectra One comes with a sleek and professional design that will make your website stand out from the crowd.
 
 
-## Installation ##
+== Installation ==
 
 1. In your site's admin panel, go to Appearance > Themes and click `Add New`.
 2. Type "Spectra One" in the search field.
@@ -21,7 +23,8 @@ Spectra One is a beautiful and modern WordPress theme built with the Full Site E
 5. Edit the page content as you wish, you can add, remove or customize any of the blocks.
 6. Enjoy
 
-## Copyright ##
+
+== Copyright ==
 
 Copyright © 2023, Spectra One.
 
@@ -75,3 +78,37 @@ https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-8.jpg
 https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-9.jpg
 
 © Copyright Spectra One 2023, Spectra.
+
+
+== Changelog ==
+
+= 0.0.3 - March 24, 2023 =
+* New: Introduced new block style class "Wide thin line" for separator block.
+* New: Added pot file support.
+* Update: Search block style.
+* Update: Alternate card pattern.
+* Update: Header menu center pattern.
+* Update: Header menu left pattern.
+* Update: Header default pattern.
+* Update: Search template.
+* Fix: Container issue with spectra plugin.
+* Fix: Responsive controls conflicting with spectra plugin.
+* Fix: Made patterns translation ready.
+* Fix: Removed html block and added image block for svg icons on front page.
+* Fix: Spectra plugin compatibility with default wordpress blockgap.
+* Fix: Header cutting off when transparent and sticky header is used when user is logged in.
+* Fix: Spectra plugin blocks not inherit width from contentSize.
+
+= 0.0.2 - March 18, 2023 =
+* New: Secondary block style for button block.
+* Update: Theme screenshot.
+* Update: Hero banner pattern.
+* Update: Banner wide pattern.
+* Update: Footer pattern.
+* Update: Changed Front page icons from Image Block to HTML block for global style compatibility.
+* Fix: Button text color on dark mode.
+* Fix: Could not set front page using pages.
+
+
+= 0.0.1 - March 10, 2023 =
+* Initial release.
