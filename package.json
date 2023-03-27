@@ -1,0 +1,39 @@
+{
+    "name": "spectra-one",
+    "description": "Spectra One is a beautiful and modern WordPress theme built with the Full Site Editing (FSE) feature. It's a versatile theme that can be used for blogs, portfolios, businesses, and more. Spectra One comes with a sleek and professional design that will make your website stand out from the crowd",
+    "author": "Brainstorm Force",
+    "license": "GPL-2.0-or-later",
+    "version": "0.0.3",
+    "scripts": {
+        "start": "wp-scripts start",
+        "build": "wp-scripts build --output-path=assets/js",
+        "minify": "grunt minify",
+        "release": "grunt release",
+        "pot": "wp i18n make-pot ./ ./languages/spectra-one.pot"
+    },
+    "devDependencies": {
+        "@lodder/grunt-postcss": "^3.1.1",
+        "@wordpress/block-editor": "^11.4.0",
+        "@wordpress/components": "^23.4.0",
+        "@wordpress/compose": "^6.4.0",
+        "@wordpress/data": "^8.4.0",
+        "@wordpress/edit-post": "^7.4.0",
+        "@wordpress/hooks": "^3.27.0",
+        "@wordpress/i18n": "^4.27.0",
+        "@wordpress/plugins": "^5.4.0",
+        "@wordpress/scripts": "^25.3.0",
+        "grunt": "^1.6.1",
+        "grunt-contrib-clean": "^2.0.1",
+        "grunt-contrib-compress": "^2.0.0",
+        "grunt-contrib-concat": "^2.1.0",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-cssmin": "^4.0.0",
+        "grunt-contrib-sass": "^2.0.0",
+        "grunt-contrib-uglify": "^5.2.2",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-rtlcss": "^2.0.2",
+        "grunt-sass": "^3.1.0",
+        "grunt-wp-i18n": "^1.0.3",
+        "sass": "^1.58.3"
+    }
+}
