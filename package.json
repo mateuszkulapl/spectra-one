@@ -23,6 +23,7 @@
         "@wordpress/compose": "^6.4.0",
         "@wordpress/data": "^8.4.0",
         "@wordpress/edit-post": "^7.4.0",
+        "@wordpress/env": "^5.14.0",
         "@wordpress/hooks": "^3.27.0",
         "@wordpress/i18n": "^4.27.0",
         "@wordpress/plugins": "^5.4.0",
