@@ -6,6 +6,7 @@ on:
        - next-release
        - release-candidate
        - master
+       - dev
 
 # Cancels all previous workflow runs for pull requests that have not completed.
 concurrency:

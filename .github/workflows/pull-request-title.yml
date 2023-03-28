@@ -5,6 +5,7 @@ on:
       - master
       - next-release
       - release-candidate
+      - dev
     types:
       - opened
       - edited
