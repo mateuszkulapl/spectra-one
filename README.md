@@ -46,4 +46,32 @@ Google Fonts
 License: SIL Open Font License, 1.1
 License URL: https://fonts.google.com/specimen/Inter 
 
+Icons
+License : Massachusetts Institute of Technology (MIT) 
+License URI : https://heroicons.com
+
+
+Images
+
+Hero
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://pxhere.com/en/license,
+https://pxhere.com/en/photo/13688
+
+Illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.
+https://wpspectra.com/wp-content/uploads/2023/03/hero-img.png 
+https://wpspectra.com/wp-content/uploads/2023/03/banner-wide-img.jpg
+https://wpspectra.com/wp-content/uploads/2023/03/card-img.png
+https://wpspectra.com/wp-content/uploads/2023/03/spectra-plugin-banner.jpg
+https://wpspectra.com/wp-content/uploads/2023/03/cta-bg-img.png
+https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-1.jpg
+https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-2.jpg
+https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-3.jpg
+https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-4.jpg
+https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-5.jpg
+https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-6.jpg
+https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-7.jpg
+https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-8.jpg
+https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-9.jpg
+
 © Copyright Spectra One 2023, Spectra.

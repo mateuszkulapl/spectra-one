@@ -26,12 +26,12 @@ function enqueue_frontend_scripts(): void {
 		return;
 	}
 
-	$file_prefix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-	$dir_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'unminified' : 'minified';
+	$file_prefix = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? '' : '.min';
+	$dir_name    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? 'unminified' : 'minified';
 
 
-	$js_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
-	$asset  = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? require SWT_DIR . 'build/script.asset.php' : require SWT_DIR . 'assets/js/script.asset.php';
+	$js_uri = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
+	$asset  = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? require SWT_DIR . 'build/script.asset.php' : require SWT_DIR . 'assets/js/script.asset.php';
 	$deps   = $asset['dependencies'];
 
 	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
@@ -80,8 +80,8 @@ function enqueue_editor_scripts(): void {
 		return;
 	}
 
-	$js    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
-	$asset = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
+	$js    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
+	$asset = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
 	$deps  = $asset['dependencies'];
 
 	wp_register_script( SWT_SLUG . '-editor', $js . 'editor.js', $deps, SWT_VER, true );
@@ -118,7 +118,6 @@ function localize_editor_script() {
 	);
 }
 
-
 /**
  * Enqueue Editor Scripts.
  *
@@ -131,8 +130,8 @@ function enqueue_editor_block_styles() {
 	// Disable Core Block Patterns.
 	remove_theme_support( 'core-block-patterns' );
 
-	$file_prefix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-	$dir_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'unminified' : 'minified';
+	$file_prefix = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? '' : '.min';
+	$dir_name    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? 'unminified' : 'minified';
 
 	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
 
@@ -145,3 +144,22 @@ function enqueue_editor_block_styles() {
 }
 
 add_action( 'after_setup_theme', SWT_NS . 'enqueue_editor_block_styles' );
+
+/**
+ * Enqueue Editor Scripts.
+ *
+ * @since 0.0.3
+ *
+ * @return void
+ */
+function spectra_one_setup() {
+	/*
+	* Make theme available for translation.
+	* Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/twentyfifteen
+	* If you're building a theme based on spectra-one, use a find and replace
+	* to change 'spectra-one' to the name of your theme in all the template files
+	*/
+	load_theme_textdomain( 'spectra-one', get_uri() . 'languages' );
+}
+
+add_action( 'after_setup_theme', SWT_NS . 'spectra_one_setup' );

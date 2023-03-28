@@ -20,6 +20,17 @@ input[type=search]::-webkit-search-results-decoration {
   display: none;
 }
 
+/*--------------------------------------------------------------
+# Frontend dynamic duotone support
+--------------------------------------------------------------*/
+.swt-duotone-primary {
+  filter: var(--wp--preset--duotone--primary);
+}
+
+.swt-duotone-secondary {
+  filter: var(--wp--preset--duotone--secondary);
+}
+
 .wp-site-blocks {
   display: flex;
   flex-direction: column;

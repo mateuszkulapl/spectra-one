@@ -10,7 +10,7 @@ const Header = createHigherOrderComponent((BlockEdit) => {
         const { attributes, name, setAttributes } = props;
 
         const { SWTStickyHeader, SWTTransparentHeader } = attributes;
-        if ("header" === attributes.slug && "core/template-part" === name) {
+        if ( attributes?.tagName &&  "header" === attributes.tagName && "core/template-part" === name) {
             return (
                 <>
                     <BlockEdit {...props} />

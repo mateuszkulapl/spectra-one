@@ -11,7 +11,7 @@
 <div class="wp-block-group alignwide"
     style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)">
     <!-- wp:heading {"level":1,"align":"wide"} -->
-    <h1 class="alignwide">Latest Posts</h1>
+    <h1 class="alignwide"><?php esc_html_e( 'Latest Posts', 'spectra-one' ); ?></h1>
     <!-- /wp:heading -->
     <!-- wp:query {"queryId":0,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"flex","columns":3},"align":"wide","layout":{"type":"constrained"}} -->
     <div class="wp-block-query alignwide">
@@ -41,12 +41,12 @@
         <!-- /wp:query-pagination -->
         <!-- wp:query-no-results {"align":"wide"} -->
         <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results.","fontSize":"large"} -->
-        <p class="has-large-font-size">Sorry, there's nothing to show here.</p>
+        <p class="has-large-font-size"><?php esc_html_e( 'Sorry, there\'s nothing to show here.', 'spectra-one' ); ?></p>
         <!-- /wp:paragraph -->
         <!-- wp:buttons -->
         <div class="wp-block-buttons">
             <!-- wp:button -->
-            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/">Go back to homepage</a></div>
+            <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/"><?php esc_html_e( 'Go back to homepage', 'spectra-one' ); ?></a></div>
             <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->

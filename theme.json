@@ -68,9 +68,21 @@
       ],
       "gradients": [
 				{
-					"slug": "main-gradient",
+					"slug": "primary",
 					"gradient": "linear-gradient(160deg,rgb(250,248,255) 31%,rgb(247,229,252) 49%,rgb(154,126,240) 69%,rgb(37,13,135) 79%)",
-					"name": "Main gradient"
+					"name": "Primary"
+				}
+      ],
+      "duotone": [
+        {
+					"colors": [ "#6366F1", "#6366F1" ],
+					"slug": "primary",
+					"name": "Primary"
+				},
+        {
+					"colors": [ "#1F2937", "#1F2937" ],
+					"slug": "secondary",
+					"name": "Secondary"
 				}
       ]
     },
