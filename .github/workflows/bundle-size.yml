@@ -72,7 +72,6 @@ jobs:
 
                   # Always ignore SourceMaps and node_modules:
                   exclude: "{**/*.map,**/node_modules/**}"
-                  build-script: "dynamic-css"
 
             - name: Stop Docker environment
               run: npm run env:stop
