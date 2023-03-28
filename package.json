@@ -9,7 +9,12 @@
         "build": "wp-scripts build --output-path=assets/js",
         "minify": "grunt minify",
         "release": "grunt release",
-        "pot": "wp i18n make-pot ./ ./languages/spectra-one.pot"
+        "pot": "wp i18n make-pot ./ ./languages/spectra-one.pot",
+        "env:activate-spectra-one": "wp-env run cli wp theme activate spectra-one",
+        "env:start": "wp-env start && npm run env:activate-spectra-one",
+        "env:stop": "wp-env stop",
+        "env:destroy": "wp-env destroy",
+        "env": "wp-env"
     },
     "devDependencies": {
         "@lodder/grunt-postcss": "^3.1.1",
