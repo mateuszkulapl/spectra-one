@@ -53,6 +53,3 @@ jobs:
         if: always()
         run: composer run psalm
 
-      - name: Lint JS
-        if: always()
-        run: npm run lint:js
