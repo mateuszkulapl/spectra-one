@@ -235,6 +235,10 @@ module.exports = function (grunt) {
                         dest: 'assets/css/minified/editor.min-rtl.css',
                     },
                     {
+                        src: 'assets/css/unminified/gutenberg-rtl.css',
+                        dest: 'assets/css/minified/gutenberg.min-rtl.css',
+                    },
+                    {
                         src: 'assets/css/unminified/compatibility/woocommerce-rtl.css',
                         dest: 'assets/css/minified/compatibility/woocommerce.min-rtl.css',
                     },
