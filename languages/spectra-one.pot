@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Spectra One 0.0.3\n"
+"Project-Id-Version: Spectra One 0.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/spectra-one\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-03-24T12:03:23+01:00\n"
+"POT-Creation-Date: 2023-03-30T08:24:03+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -671,7 +671,7 @@ msgstr ""
 #: assets/js/editor.js:1
 #: build/editor.js:374
 #: src/extensions/page-settings/settings-list.js:20
-#: build/editor.js:345
+#: build/editor.js:344
 msgid "Disable Elements"
 msgstr ""
 
@@ -680,8 +680,8 @@ msgstr ""
 #: build/editor.js:424
 #: src/extensions/page-settings/settings.js:21
 #: src/extensions/page-settings/settings.js:29
-#: build/editor.js:374
-#: build/editor.js:382
+#: build/editor.js:373
+#: build/editor.js:381
 msgid "Page Settings"
 msgstr ""
 

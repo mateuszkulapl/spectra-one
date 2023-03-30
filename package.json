@@ -3,7 +3,7 @@
     "description": "Spectra One is a beautiful and modern WordPress theme built with the Full Site Editing (FSE) feature. It's a versatile theme that can be used for blogs, portfolios, businesses, and more. Spectra One comes with a sleek and professional design that will make your website stand out from the crowd",
     "author": "Brainstorm Force",
     "license": "GPL-2.0-or-later",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "scripts": {
         "start": "wp-scripts start",
         "build": "wp-scripts build --output-path=assets/js",
