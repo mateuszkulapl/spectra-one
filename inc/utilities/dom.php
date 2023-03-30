@@ -179,7 +179,7 @@ function change_tag_name( DOMElement $element, string $name ): DOMElement {
  *
  * @since 0.0.1
  *
- * @param DOMDocument|DOMElement $dom        DOM document.
+ * @param \DOMDocument|\DOMElement $dom        DOM document.
  * @param string                 $class_name class name.
  * @param string                 $tag        tag name.
  *

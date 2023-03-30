@@ -328,10 +328,10 @@ namespace Swt {
      *
      * @since 0.0.1
      *
-     * @param DOMElement $element DOM Element.
+     * @param \DOMElement $element DOM Element.
      * @param string     $name    Tag name.
      *
-     * @return DOMElement
+     * @return \DOMElement
      */
     function change_tag_name(\DOMElement $element, string $name) : \DOMElement
     {
@@ -341,13 +341,13 @@ namespace Swt {
      *
      * @since 0.0.1
      *
-     * @param DOMDocument|DOMElement $dom        DOM document.
+     * @param \DOMDocument|\DOMElement $dom        DOM document.
      * @param string                 $class_name class name.
      * @param string                 $tag        tag name.
      *
      * @return array
      */
-    function get_elements_by_class_name($dom, string $class_name, string $tag = '*') : array
+    function get_elements_by_class_name( $dom, string $class_name, string $tag = '*') : array
     {
     }
 }
