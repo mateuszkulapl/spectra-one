@@ -83,10 +83,10 @@ https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-9.jpg
 == Changelog ==
 
 = 0.0.4 - March 30, 2023 =
-* Update: Post and page templates to support container width option for root group blocks.
+* Update: Support for container width option for page and post templates on root group blocks.
 * Fix: Compatibility with spectra plugin container.
 * Fix: Fatal error when script debug is turned on
-* Fix: Custom Header options not supporting on other header patterns.
+* Fix: Custom Header options not showing up on other header patterns.
 
 = 0.0.3 - March 24, 2023 =
 * New: Introduced new block style class "Wide thin line" for separator block.
