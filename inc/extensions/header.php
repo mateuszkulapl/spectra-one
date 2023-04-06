@@ -25,8 +25,11 @@ add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
  * @return string
  */
 function render_header( string $block_content, array $block ):string { 
-	$sticky_header_condition      = isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'];
-	$transparent_header_condition = isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'];
+	$post_id = get_the_ID();
+
+	$sticky_header_condition      = ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) || get_post_meta( $post_id, 'swt_meta_sticky_header', true );
+	$transparent_header_condition = ( isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'] ) || get_post_meta( $post_id, 'swt_meta_transparent_header', true );
+	$not_transparent_header_condition =  ! ( isset( $block['attrs']['SWTTransparentHeader'] ) ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) || ( get_post_meta( $post_id, 'swt_meta_transparent_header', true ) );
 
 	if ( $sticky_header_condition ) {
 		$dom    = dom( $block_content );
@@ -43,7 +46,7 @@ function render_header( string $block_content, array $block ):string {
 
 		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'header_inline_css' );
 
-		if ( ! ( isset( $block['attrs']['SWTTransparentHeader'] ) ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) ) {
+		if ( $not_transparent_header_condition ) {
 			add_filter( 'swt_dynamic_theme_js', SWT_NS . 'header_inline_js' );
 		}   
 	}

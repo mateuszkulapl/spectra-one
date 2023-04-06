@@ -7,13 +7,23 @@
       "palette": [
         {
           "name": "Primary",
-          "color": "#6366F1",
+          "color": "#9AE6FE",
           "slug": "primary"
         },
         {
           "name": "Secondary",
-          "color": "#6B6EFE",
+          "color": "#ADEBFF",
           "slug": "secondary"
+        },
+        {
+          "name": "Tertiary",
+          "color": "#1F2937",
+          "slug": "tertiary"
+        },
+        {
+          "name": "Quaternary",
+          "color": "#1F2937",
+          "slug": "quaternary"
         },
         {
           "name": "Heading",
@@ -75,7 +85,7 @@
       ],
       "duotone": [
         {
-					"colors": [ "#6366F1", "#6366F1" ],
+					"colors": [ "#9AE6FE", "#9AE6FE" ],
 					"slug": "primary",
 					"name": "Primary"
 				},

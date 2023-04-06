@@ -16,6 +16,16 @@
           "slug": "secondary"
         },
         {
+          "name": "Tertiary",
+          "color": "#F1FBFE",
+          "slug": "tertiary"
+        },
+        {
+          "name": "Quaternary",
+          "color": "#FCFAF2",
+          "slug": "quaternary"
+        },
+        {
           "name": "Heading",
           "color": "#1F2937",
           "slug": "heading"
@@ -357,7 +367,7 @@
 				},
 				"color": {
 					"background": "var(--wp--preset--color--primary)",
-					"text": "#fff"
+					"text": "var(--wp--preset--color--background)"
 				},
         "border": {
           "radius": "0.375em",
@@ -533,12 +543,5 @@
       "title": "Footer",
       "area": "footer"
     }
-  ],
-  "customTemplates": [
-    {
-			"name": "full-width",
-			"title": "Full width",
-			"postTypes": [ "page", "post" ]
-		}
-	]
+  ]
 }

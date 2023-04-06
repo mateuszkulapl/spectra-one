@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-03-30T08:24:03+02:00\n"
+"POT-Creation-Date: 2023-04-06T07:12:04+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -94,72 +94,6 @@ msgstr ""
 msgid " Icon"
 msgstr ""
 
-#: patterns/alternate-card.php
-msgctxt "Pattern title"
-msgid "Alternate card"
-msgstr ""
-
-#: patterns/alternate-card.php:21
-msgid "Everything you need to create amazing websites"
-msgstr ""
-
-#: patterns/alternate-card.php:25
-msgid "Interactive design tools and its many customization options to customize anything and everything needed to build the fully-functional website of your dreams."
-msgstr ""
-
-#: patterns/alternate-card.php:38
-#: patterns/alternate-card.php:84
-msgid "Huge Design Collection"
-msgstr ""
-
-#: patterns/alternate-card.php:42
-#: patterns/alternate-card.php:88
-msgid "Imperdiet etiam scelerisque convallis pulvinar laoreet. Enim imperdiet nullam ullamcorper tempus vivamus eget leo elementum. Sed platea pellentesque nulla egestas porttitor."
-msgstr ""
-
-#: patterns/alternate-card.php:54
-#: patterns/alternate-card.php:72
-msgid "Outstanding Performance"
-msgstr ""
-
-#: patterns/alternate-card.php:58
-#: patterns/alternate-card.php:76
-msgid "In nisl enim vulputate varius. Nec sodales elit duis ornare. Non lectus elementum maecenas sit eu orci proin mauris netus."
-msgstr ""
-
-#: patterns/banner-wide.php
-msgctxt "Pattern title"
-msgid "Banner wide"
-msgstr ""
-
-#: patterns/banner-wide.php:24
-msgid "Customize your website visually and see the changes instantly!"
-msgstr ""
-
-#: patterns/banner-wide.php:30
-msgid "100+"
-msgstr ""
-
-#: patterns/banner-wide.php:34
-msgid "Block patterns"
-msgstr ""
-
-#: patterns/banner-wide.php:40
-msgid "20+"
-msgstr ""
-
-#: patterns/banner-wide.php:44
-msgid "Style variations"
-msgstr ""
-
-#: patterns/banner-wide.php:50
-msgid "48"
-msgstr ""
-
-#: patterns/banner-wide.php:54
-msgid "Pre-built templates"
-msgstr ""
-
 #: patterns/blog-classic.php
 msgctxt "Pattern title"
 msgid "Blog classic"
@@ -197,16 +131,70 @@ msgctxt "Pattern title"
 msgid "Call to action."
 msgstr ""
 
-#: patterns/call-to-action.php:29
+#: patterns/call-to-action.php:12
+msgid "Build your own website"
+msgstr ""
+
+#: patterns/call-to-action.php:16
 msgid "Take your website to the next level!"
 msgstr ""
 
-#: patterns/call-to-action.php:34
+#: patterns/call-to-action.php:21
 #: patterns/header-center-menu.php:23
 #: patterns/header-left-menu.php:25
 #: patterns/header.php:24
-#: patterns/hero-banner.php:34
+#: patterns/hero-banner.php:36
 msgid "Get Started"
+msgstr ""
+
+#: patterns/faq.php
+msgctxt "Pattern title"
+msgid "FAQ"
+msgstr ""
+
+#: patterns/faq.php:12
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: patterns/faq.php:17
+msgid "What is Full Site Editing?"
+msgstr ""
+
+#: patterns/faq.php:21
+msgid "Full Site Editing (FSE) is a feature in WordPress that allows users to visually design and customize their entire website, including the header, footer, and other template parts."
+msgstr ""
+
+#: patterns/faq.php:31
+msgid "What are some benefits of using Full Site Editing?"
+msgstr ""
+
+#: patterns/faq.php:35
+msgid "Full Site Editing provides a more user-friendly, streamlined approach to website design and customization. It allows users to see changes in real-time, provides more control over design elements, and enables developers to create more custom blocks and templates."
+msgstr ""
+
+#: patterns/faq.php:45
+msgid "Can I use Full Site Editing on my existing WordPress website?"
+msgstr ""
+
+#: patterns/faq.php:49
+msgid "Yes, you can use Full Site Editing on an existing WordPress website by installing a compatible theme that supports the feature."
+msgstr ""
+
+#: patterns/faq.php:59
+msgid "Do I need to know how to code to use Full Site Editing?"
+msgstr ""
+
+#: patterns/faq.php:63
+msgid "No, Full Site Editing does not require knowledge of coding or web development. The drag-and-drop interface and pre-designed templates make it easy for users to create a professional-looking website without any coding experience."
+msgstr ""
+
+#: patterns/featured-logos.php
+msgctxt "Pattern title"
+msgid "Featured logos"
+msgstr ""
+
+#: patterns/featured-logos.php:24
+msgid "Brought to you by the creators of"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php
@@ -214,158 +202,165 @@ msgctxt "Pattern title"
 msgid "Footer five columns menu inline"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:35
+#: patterns/footer-five-columns-menu-inline.php:24
 #: patterns/footer-six-columns-menu-separated.php:66
-#: patterns/footer.php:50
+#: patterns/footer.php:38
 msgid "Products"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:40
+#: patterns/footer-five-columns-menu-inline.php:28
 #: patterns/footer-six-columns-menu-separated.php:71
-#: patterns/footer.php:55
+#: patterns/footer.php:42
 msgid "Products List"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:42
-#: patterns/footer-six-columns-menu-separated.php:73
-#: patterns/footer.php:57
-msgid "Plans & Pricing"
+#: patterns/footer-five-columns-menu-inline.php:30
+#: patterns/footer.php:44
+msgid "Plans \\u0026amp; Pricing"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:44
+#: patterns/footer-five-columns-menu-inline.php:32
 #: patterns/footer-six-columns-menu-separated.php:75
-#: patterns/footer.php:59
+#: patterns/footer.php:46
 msgid "Services"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:46
+#: patterns/footer-five-columns-menu-inline.php:34
 #: patterns/footer-six-columns-menu-separated.php:77
-#: patterns/footer.php:61
+#: patterns/footer.php:48
 msgid "Partners"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:63
+#: patterns/footer-five-columns-menu-inline.php:44
 #: patterns/footer-six-columns-menu-separated.php:86
-#: patterns/footer.php:70
 msgid "Company"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:68
+#: patterns/footer-five-columns-menu-inline.php:48
 #: patterns/footer-six-columns-menu-separated.php:91
-#: patterns/footer.php:75
+#: patterns/footer.php:58
 msgid "About Us"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:70
+#: patterns/footer-five-columns-menu-inline.php:50
 #: patterns/footer-six-columns-menu-separated.php:93
-#: patterns/footer.php:77
+#: patterns/footer.php:60
 msgid "News"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:72
+#: patterns/footer-five-columns-menu-inline.php:52
 #: patterns/footer-six-columns-menu-separated.php:95
-#: patterns/footer.php:79
+#: patterns/footer.php:62
 msgid "Contact Us"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:74
+#: patterns/footer-five-columns-menu-inline.php:54
 #: patterns/footer-six-columns-menu-separated.php:97
-#: patterns/footer.php:81
+#: patterns/footer.php:64
 msgid "Meet Our Team"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:83
+#: patterns/footer-five-columns-menu-inline.php:60
 #: patterns/footer-six-columns-menu-separated.php:134
-#: patterns/footer.php:98
+#: patterns/footer.php:74
 msgid "Resources"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:88
+#: patterns/footer-five-columns-menu-inline.php:64
 #: patterns/footer-six-columns-menu-separated.php:119
-#: patterns/footer.php:103
+#: patterns/footer.php:78
 msgid "Gallery"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:90
+#: patterns/footer-five-columns-menu-inline.php:66
 #: patterns/footer-six-columns-menu-separated.php:121
-#: patterns/footer.php:105
+#: patterns/footer.php:80
 msgid "Blog Articles"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:92
+#: patterns/footer-five-columns-menu-inline.php:68
 #: patterns/footer-six-columns-menu-separated.php:123
-#: patterns/footer.php:107
+#: patterns/footer.php:82
 msgid "Brand Assets"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:94
+#: patterns/footer-five-columns-menu-inline.php:70
 #: patterns/footer-six-columns-menu-separated.php:125
-#: patterns/footer.php:109
+#: patterns/footer.php:84
 msgid "Brand Guidelines"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:111
+#: patterns/footer-five-columns-menu-inline.php:80
 #: patterns/footer-six-columns-menu-separated.php:114
-#: patterns/footer.php:118
+#: patterns/footer.php:90
 msgid "Support"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:116
+#: patterns/footer-five-columns-menu-inline.php:84
 #: patterns/footer-six-columns-menu-separated.php:139
-#: patterns/footer.php:123
+#: patterns/footer.php:94
 msgid "Knowledge Base"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:118
+#: patterns/footer-five-columns-menu-inline.php:86
 #: patterns/footer-six-columns-menu-separated.php:141
-#: patterns/footer.php:125
+#: patterns/footer.php:96
 msgid "Contact Support"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:120
+#: patterns/footer-five-columns-menu-inline.php:88
 #: patterns/footer-six-columns-menu-separated.php:143
 #: patterns/footer-six-columns-menu-separated.php:223
-#: patterns/footer.php:127
+#: patterns/footer.php:98
 msgid "Privacy Policy"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:122
+#: patterns/footer-five-columns-menu-inline.php:90
 #: patterns/footer-six-columns-menu-separated.php:145
-#: patterns/footer.php:129
+#: patterns/footer.php:100
 msgid "TOS"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:131
+#: patterns/footer-five-columns-menu-inline.php:96
 msgid "Need help?"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:138
+#: patterns/footer-five-columns-menu-inline.php:100
+#: patterns/footer-six-columns-menu-separated.php:167
+msgid "What’s New"
+msgstr ""
+
+#: patterns/footer-five-columns-menu-inline.php:102
 #: patterns/footer-six-columns-menu-separated.php:169
 msgid "How to Videos"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:140
+#: patterns/footer-five-columns-menu-inline.php:104
 #: patterns/footer-six-columns-menu-separated.php:171
 msgid "Ask the Community"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:142
+#: patterns/footer-five-columns-menu-inline.php:106
 #: patterns/footer-six-columns-menu-separated.php:173
-#: patterns/hero-banner.php:39
+#: patterns/hero-banner.php:40
+#: patterns/split-content.php:29
+#: patterns/zigzag-content.php:45
+#: patterns/zigzag-content.php:63
+#: patterns/zigzag-content.php:91
 msgid "Learn More"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:163
+#: patterns/footer-five-columns-menu-inline.php:120
 #: patterns/footer-minimal-menu-center.php:52
 #: patterns/footer-minimal-menu-right.php:39
 #: patterns/footer-six-columns-menu-separated.php:209
-#: patterns/footer.php:143
+#: patterns/footer.php:109
 msgid "© %d ·"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php:169
+#: patterns/footer-five-columns-menu-inline.php:126
 #: patterns/footer-six-columns-menu-separated.php:215
-#: patterns/footer.php:149
+#: patterns/footer.php:115
 msgid "· All rights reserved"
 msgstr ""
 
@@ -437,12 +432,12 @@ msgctxt "Pattern title"
 msgid "Footer six columns menu separated"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:162
-msgid "Need Help?"
+#: patterns/footer-six-columns-menu-separated.php:73
+msgid "Plans & Pricing"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:167
-msgid "What’s New"
+#: patterns/footer-six-columns-menu-separated.php:162
+msgid "Need Help?"
 msgstr ""
 
 #: patterns/footer-six-columns-menu-separated.php:182
@@ -474,7 +469,7 @@ msgctxt "Pattern title"
 msgid "Footer default"
 msgstr ""
 
-#: patterns/footer.php:25
+#: patterns/footer.php:20
 msgid "Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium."
 msgstr ""
 
@@ -498,11 +493,15 @@ msgctxt "Pattern title"
 msgid "Hero banner"
 msgstr ""
 
-#: patterns/hero-banner.php:24
-msgid "Discover a new way to build website"
+#: patterns/hero-banner.php:23
+msgid "New experience"
 msgstr ""
 
-#: patterns/hero-banner.php:28
+#: patterns/hero-banner.php:27
+msgid "Build your website"
+msgstr ""
+
+#: patterns/hero-banner.php:31
 msgid "Create a functional and visually appealing website without having to write code."
 msgstr ""
 
@@ -511,8 +510,21 @@ msgctxt "Pattern title"
 msgid "Post grid"
 msgstr ""
 
-#: patterns/post-grid.php:14
+#: patterns/post-grid.php:12
 msgid "Latest from The Blog"
+msgstr ""
+
+#: patterns/split-content.php
+msgctxt "Pattern title"
+msgid "Split content."
+msgstr ""
+
+#: patterns/split-content.php:21
+msgid "Everything you need to create amazing websites"
+msgstr ""
+
+#: patterns/split-content.php:24
+msgid "Interactive design tools and its many customization options to customize anything and everything needed to build the fully-functional website of your dreams."
 msgstr ""
 
 #: patterns/template-404.php
@@ -544,11 +556,6 @@ msgstr ""
 #: patterns/template-archive.php
 msgctxt "Pattern title"
 msgid "Template Archive"
-msgstr ""
-
-#: patterns/template-full-width.php
-msgctxt "Pattern title"
-msgid "Template full width"
 msgstr ""
 
 #: patterns/template-index.php
@@ -587,21 +594,61 @@ msgctxt "Pattern title"
 msgid "Template single"
 msgstr ""
 
-#: patterns/testimonial.php
+#: patterns/testimonials.php
 msgctxt "Pattern title"
 msgid "Testimonial"
 msgstr ""
 
-#: patterns/testimonial.php:23
-msgid "No matter where you go, It's the coolest, most happening thing around! Not able to tell you how happy I am with it."
+#: patterns/testimonials.php:20
+msgid "See what people have to say about us"
 msgstr ""
 
-#: patterns/testimonial.php:28
-msgid "Cameron Williamson"
+#: patterns/testimonials.php:31
+msgid "Leslie Alexander"
 msgstr ""
 
-#: patterns/testimonial.php:32
-msgid "Director of Ucla"
+#: patterns/testimonials.php:34
+msgid "Web designer"
+msgstr ""
+
+#: patterns/testimonials.php:39
+msgid "Highly recommended!"
+msgstr ""
+
+#: patterns/testimonials.php:42
+msgid "This theme made the process of building my website a breeze. The drag-and-drop interface was easy to use and the templates were customizable."
+msgstr ""
+
+#: patterns/testimonials.php:54
+msgid "Jacob Jones"
+msgstr ""
+
+#: patterns/testimonials.php:57
+msgid "Freelancer"
+msgstr ""
+
+#: patterns/testimonials.php:62
+msgid "Endless customization"
+msgstr ""
+
+#: patterns/testimonials.php:65
+msgid "Endless customization options and responsive design, plus great customer support. Highly recommend!"
+msgstr ""
+
+#: patterns/testimonials.php:77
+msgid "Darlene Robertson"
+msgstr ""
+
+#: patterns/testimonials.php:80
+msgid "Business owner"
+msgstr ""
+
+#: patterns/testimonials.php:85
+msgid "Easy to use"
+msgstr ""
+
+#: patterns/testimonials.php:88
+msgid "As a small business owner, I needed a website that was affordable. I was able to create a beautiful website that represented my brand."
 msgstr ""
 
 #: patterns/three-columns-featured.php
@@ -609,128 +656,149 @@ msgctxt "Pattern title"
 msgid "Three columns featured"
 msgstr ""
 
-#: patterns/three-columns-featured.php:26
-msgid "Core WP Blocks"
+#: patterns/three-columns-featured.php:27
+msgid "Easily Customizable"
 msgstr ""
 
-#: patterns/three-columns-featured.php:30
-#: patterns/three-columns-featured.php:44
-#: patterns/three-columns-featured.php:58
-msgid "Endless use-cases that make it highly flexible, adaptable, and scalable for everyone."
+#: patterns/three-columns-featured.php:31
+msgid "Tailor your website to your liking with endless options to personalize the design and functionality."
 msgstr ""
 
-#: patterns/three-columns-featured.php:40
-msgid "Easy Customizable"
+#: patterns/three-columns-featured.php:41
+msgid "Blazing Fast"
 msgstr ""
 
-#: patterns/three-columns-featured.php:54
-msgid "Growing Library"
+#: patterns/three-columns-featured.php:45
+msgid "Experience lightning-fast page load speeds for optimal user experience and SEO ranking."
 msgstr ""
 
-#: patterns/three-columns-listing.php
+#: patterns/three-columns-featured.php:55
+msgid "SEO Optimized"
+msgstr ""
+
+#: patterns/three-columns-featured.php:59
+msgid "Built with search engines in mind, achieve higher rankings and more traffic with optimized code."
+msgstr ""
+
+#: patterns/zigzag-content.php
 msgctxt "Pattern title"
-msgid "Three columns listing"
+msgid "Zigzag content"
 msgstr ""
 
-#: patterns/three-columns-listing.php:36
-msgid "Easy installation"
+#: patterns/zigzag-content.php:21
+msgid "Discover a new way to build website"
 msgstr ""
 
-#: patterns/three-columns-listing.php:42
-msgid "Carefully crafted design. No coding required."
+#: patterns/zigzag-content.php:24
+msgid "Get online quickly with easy-to-use Full Site Editor builder"
 msgstr ""
 
-#: patterns/three-columns-listing.php:46
-msgid "Install any demo and template with a single click. Choose and mix up patterns and blocks."
+#: patterns/zigzag-content.php:36
+msgid "01"
 msgstr ""
 
-#: patterns/three-columns-listing.php:59
-#: patterns/three-columns-listing.php:76
-#: patterns/three-columns-listing.php:94
-#: patterns/three-columns-listing.php:116
-#: patterns/three-columns-listing.php:134
-#: patterns/three-columns-listing.php:152
-#: patterns/three-columns-listing.php:173
-#: patterns/three-columns-listing.php:190
-#: patterns/three-columns-listing.php:208
-msgid "Template name"
+#: patterns/zigzag-content.php:39
+msgid "Visual editing experience"
 msgstr ""
 
-#: patterns/three-columns-listing.php:62
-#: patterns/three-columns-listing.php:79
-#: patterns/three-columns-listing.php:97
-#: patterns/three-columns-listing.php:119
-#: patterns/three-columns-listing.php:137
-#: patterns/three-columns-listing.php:155
-#: patterns/three-columns-listing.php:176
-#: patterns/three-columns-listing.php:193
-#: patterns/three-columns-listing.php:211
-msgid "Category"
+#: patterns/zigzag-content.php:42
+msgid "Customize the entire website layout, including the header, footer, and all other template parts. With FSE, we can create and edit templates for their entire website, including single posts, archive pages, and custom post types."
 msgstr ""
 
-#: assets/js/editor.js:1
-#: build/editor.js:374
-#: src/extensions/page-settings/settings-list.js:20
-#: build/editor.js:344
-msgid "Disable Elements"
+#: patterns/zigzag-content.php:54
+msgid "02"
 msgstr ""
 
-#: assets/js/editor.js:1
-#: build/editor.js:420
-#: build/editor.js:424
-#: src/extensions/page-settings/settings.js:21
-#: src/extensions/page-settings/settings.js:29
-#: build/editor.js:373
-#: build/editor.js:381
-msgid "Page Settings"
+#: patterns/zigzag-content.php:57
+msgid "Innovative block patterns"
+msgstr ""
+
+#: patterns/zigzag-content.php:60
+msgid "Block patterns are pre-designed block layouts that we can easily insert into their content. These patterns can help to save time and create visually appealing designs. Allows us to create custom themes using the block-based template."
+msgstr ""
+
+#: patterns/zigzag-content.php:82
+msgid "03"
+msgstr ""
+
+#: patterns/zigzag-content.php:85
+msgid "Beautiful global styles"
+msgstr ""
+
+#: patterns/zigzag-content.php:88
+msgid "Global styles enable us to create and apply consistent design elements across the entire website, including typography, colors, and spacing. Providing us with more control over our website's look and feel."
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:61
-#: src/block-extensions/header.js:25
-#: build/editor.js:27
+#: build/editor.js:59
+#: src/block-extensions/header.js:37
+#: build/editor.js:39
 msgid "Enable Sticky Header"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:62
-#: src/block-extensions/header.js:31
-#: build/editor.js:33
+#: build/editor.js:60
+#: src/block-extensions/header.js:40
+#: build/editor.js:42
 msgid "Transparent header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:68
-#: src/block-extensions/header.js:45
-#: build/editor.js:47
+#: src/block-extensions/header.js:63
+#: build/editor.js:65
 msgid "Enable Transparent Header"
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:69
-#: src/block-extensions/header.js:51
-#: build/editor.js:53
+#: src/block-extensions/header.js:66
+#: build/editor.js:68
 msgid "Sticky header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:149
+#: build/editor.js:392
+#: src/extensions/page-settings/settings-list.js:22
+#: build/editor.js:393
+msgid "Disable Elements"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:396
+#: src/extensions/page-settings/settings-list.js:29
+#: build/editor.js:400
+msgid "Header Settings"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:442
+#: build/editor.js:446
+#: src/extensions/page-settings/settings.js:21
+#: src/extensions/page-settings/settings.js:29
+#: build/editor.js:430
+#: build/editor.js:438
+msgid "Page Settings"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:163
 #: src/block-extensions/responsive.js:32
-#: build/editor.js:140
+#: build/editor.js:187
 msgid "Hide Desktop"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:155
+#: build/editor.js:169
 #: src/block-extensions/responsive.js:44
-#: build/editor.js:152
+#: build/editor.js:199
 msgid "Hide Tablet"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:161
+#: build/editor.js:175
 #: src/block-extensions/responsive.js:55
-#: build/editor.js:163
+#: build/editor.js:210
 msgid "Hide Mobile"
 msgstr ""
 
@@ -749,6 +817,18 @@ msgstr ""
 #: theme.json
 msgctxt "Color name"
 msgid "Secondary"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr ""
+
+#: styles/dark.json
+#: theme.json
+msgctxt "Color name"
+msgid "Quaternary"
 msgstr ""
 
 #: styles/dark.json
@@ -917,9 +997,4 @@ msgstr ""
 #: theme.json
 msgctxt "Template part name"
 msgid "Footer"
-msgstr ""
-
-#: theme.json
-msgctxt "Custom template name"
-msgid "Full width"
 msgstr ""
