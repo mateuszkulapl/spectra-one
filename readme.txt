@@ -61,21 +61,31 @@ License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://pxhere.com/en/license,
 https://pxhere.com/en/photo/13688
 
+Zigzag Content
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://pxhere.com/en/license,
+https://pxhere.com/en/photo/1629588
+https://pxhere.com/en/photo/1434697
+https://pxhere.com/en/photo/1446749
+https://pxhere.com/en/photo/1450327
+
+Testimonial
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://pxhere.com/en/license,
+https://pxhere.com/en/photo/1573331
+https://pxhere.com/en/photo/625568
+https://pxhere.com/en/photo/764654
+
 Illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.
-https://wpspectra.com/wp-content/uploads/2023/03/hero-img.png 
-https://wpspectra.com/wp-content/uploads/2023/03/banner-wide-img.jpg
-https://wpspectra.com/wp-content/uploads/2023/03/card-img.png
 https://wpspectra.com/wp-content/uploads/2023/03/spectra-plugin-banner.jpg
-https://wpspectra.com/wp-content/uploads/2023/03/cta-bg-img.png
-https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-1.jpg
-https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-2.jpg
-https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-3.jpg
-https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-4.jpg
-https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-5.jpg
-https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-6.jpg
-https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-7.jpg
-https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-8.jpg
-https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-9.jpg
+https://wpspectra.com/wp-content/uploads/2023/04/hero-gradient.png
+https://wpspectra.com/wp-content/uploads/2023/04/content-1.png
+https://wpspectra.com/wp-content/uploads/2023/04/content-2.png
+https://wpspectra.com/wp-content/uploads/2023/04/content-3.png
+https://wpspectra.com/wp-content/uploads/2023/04/hero-image.png
+https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
+
+
 
 © Copyright Spectra One 2023, Spectra.
 
