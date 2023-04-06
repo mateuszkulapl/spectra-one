@@ -82,11 +82,16 @@ https://wpspectra.com/wp-content/uploads/2023/03/thumbnail-9.jpg
 
 == Changelog ==
 
-= 0.0.4 - March 30, 2023 =
+= 0.0.4 - April 10, 2023 =
+* New: Support for transparent and sticky header at meta level for post and page.
 * Update: Support for container width option for page and post templates on root group blocks.
+* Update: Front page and related patterns.
+* Update: Global styles.
+* Remove: Full width template.
 * Fix: Compatibility with spectra plugin container.
 * Fix: Fatal error when script debug is turned on
 * Fix: Custom Header options not showing up on other header patterns.
+
 
 = 0.0.3 - March 24, 2023 =
 * New: Introduced new block style class "Wide thin line" for separator block.
