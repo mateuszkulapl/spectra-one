@@ -10,6 +10,8 @@
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:post-title {"textAlign":"center","level":1} /-->
 
+<!-- wp:post-featured-image {"height":"200px"} /-->
+
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"textColor":"neutral","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group has-neutral-color has-text-color"><!-- wp:post-author {"showAvatar":false} /-->
 
