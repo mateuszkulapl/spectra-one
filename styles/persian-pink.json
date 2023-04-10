@@ -1,28 +1,28 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
-  "title": "Dark",
+  "title": "Persian Pink",
   "settings": {
     "color": {
       "palette": [
         {
           "name": "Primary",
-          "color": "#6366F1",
+          "color": "#FF85CA",
           "slug": "primary"
         },
         {
           "name": "Secondary",
-          "color": "#6B6EFE",
+          "color": "#FF8FCF",
           "slug": "secondary"
         },
         {
           "name": "Tertiary",
-          "color": "#1F2937",
+          "color": "#1C1834",
           "slug": "tertiary"
         },
         {
           "name": "Quaternary",
-          "color": "#1F2937",
+          "color": "#1C1834",
           "slug": "quaternary"
         },
         {
@@ -37,17 +37,17 @@
         },
         {
           "name": "Surface",
-          "color": "#1F2937",
+          "color": "#1C1834",
           "slug": "surface"
         },
         {
           "name": "Background",
-          "color": "#111827",
+          "color": "#14102D",
           "slug": "background"
         },
         {
           "name": "Outline",
-          "color": "#4B5563",
+          "color": "#312C4E",
           "slug": "outline"
         },
         {
@@ -76,24 +76,23 @@
           "slug": "inherit"
         }
       ],
-      "gradients": [
-				{
-					"slug": "primary",
-					"gradient": "linear-gradient(160deg,rgb(27,34,44) 31%,rgb(72,39,115) 49%,rgb(154,126,240) 69%,rgb(250,237,253) 79%)",
-					"name": "Primary"
-				}
-      ],
       "duotone": [
         {
-					"colors": [ "#6366F1", "#6366F1" ],
-					"slug": "primary",
-					"name": "Primary"
-				},
+          "colors": [
+            "#FF85CA",
+            "#FF85CA"
+          ],
+          "slug": "primary",
+          "name": "Primary"
+        },
         {
-					"colors": [ "#FFFFFF", "#FFFFFF" ],
-					"slug": "secondary",
-					"name": "Secondary"
-				}
+          "colors": [
+            "#FFFFFF",
+            "#FFFFFF"
+          ],
+          "slug": "secondary",
+          "name": "Secondary"
+        }
       ]
     }
   }

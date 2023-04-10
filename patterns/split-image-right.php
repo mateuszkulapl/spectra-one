@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Split content.
- * Slug: spectra-one/split-content
+ * Title: Split image right
+ * Slug: spectra-one/split-image-right
  * Categories: banner
- * Keywords: Split content
+ * Keywords: split image right
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

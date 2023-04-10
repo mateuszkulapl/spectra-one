@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Zigzag content
- * Slug: spectra-one/zigzag-content
+ * Title: Alternate image text
+ * Slug: spectra-one/alternate-image-text
  * Categories: featured
- * Keywords: zigzag content
+ * Keywords: alternate image text
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

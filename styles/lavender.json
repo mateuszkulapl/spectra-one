@@ -1,53 +1,53 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
-  "title": "Dark",
+  "title": "Lavender",
   "settings": {
     "color": {
       "palette": [
         {
           "name": "Primary",
-          "color": "#6366F1",
+          "color": "#8A4BE9",
           "slug": "primary"
         },
         {
           "name": "Secondary",
-          "color": "#6B6EFE",
+          "color": "#9F66F5",
           "slug": "secondary"
         },
         {
           "name": "Tertiary",
-          "color": "#1F2937",
+          "color": "#F1FBFE",
           "slug": "tertiary"
         },
         {
           "name": "Quaternary",
-          "color": "#1F2937",
+          "color": "#FCFAF2",
           "slug": "quaternary"
         },
         {
           "name": "Heading",
-          "color": "#FFFFFF",
+          "color": "#1F2937",
           "slug": "heading"
         },
         {
           "name": "Body",
-          "color": "#E5E7EB",
+          "color": "#4B5563",
           "slug": "body"
         },
         {
           "name": "Surface",
-          "color": "#1F2937",
+          "color": "#FAF8FC",
           "slug": "surface"
         },
         {
           "name": "Background",
-          "color": "#111827",
+          "color": "#FFFFFF",
           "slug": "background"
         },
         {
           "name": "Outline",
-          "color": "#4B5563",
+          "color": "#EFECF3",
           "slug": "outline"
         },
         {
@@ -76,24 +76,23 @@
           "slug": "inherit"
         }
       ],
-      "gradients": [
-				{
-					"slug": "primary",
-					"gradient": "linear-gradient(160deg,rgb(27,34,44) 31%,rgb(72,39,115) 49%,rgb(154,126,240) 69%,rgb(250,237,253) 79%)",
-					"name": "Primary"
-				}
-      ],
       "duotone": [
         {
-					"colors": [ "#6366F1", "#6366F1" ],
-					"slug": "primary",
-					"name": "Primary"
-				},
+          "colors": [
+            "#8A4BE9",
+            "#8A4BE9"
+          ],
+          "slug": "primary",
+          "name": "Primary"
+        },
         {
-					"colors": [ "#FFFFFF", "#FFFFFF" ],
-					"slug": "secondary",
-					"name": "Secondary"
-				}
+          "colors": [
+            "#1F2937",
+            "#1F2937"
+          ],
+          "slug": "secondary",
+          "name": "Secondary"
+        }
       ]
     }
   }

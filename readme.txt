@@ -103,9 +103,10 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 = 0.0.4 - April 10, 2023 =
 * New: Support for transparent and sticky header at meta level for post and page.
+* New: Added new global style variations.
 * Update: Support for container width option for page and post templates on root group blocks.
 * Update: Front page and related patterns.
-* Update: Global styles.
+* Update: Existing global style variations.
 * Remove: Full width template.
 * Fix: Compatibility with spectra plugin container.
 * Fix: Fatal error when script debug is turned on
