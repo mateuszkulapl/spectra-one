@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-04-06T07:12:04+02:00\n"
+"POT-Creation-Date: 2023-04-10T08:59:20+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -92,6 +92,65 @@ msgstr ""
 
 #: inc/utilities/helpers.php:253
 msgid " Icon"
+msgstr ""
+
+#: patterns/alternate-image-text.php
+msgctxt "Pattern title"
+msgid "Alternate image text"
+msgstr ""
+
+#: patterns/alternate-image-text.php:21
+msgid "Discover a new way to build website"
+msgstr ""
+
+#: patterns/alternate-image-text.php:24
+msgid "Get online quickly with easy-to-use Full Site Editor builder"
+msgstr ""
+
+#: patterns/alternate-image-text.php:36
+msgid "01"
+msgstr ""
+
+#: patterns/alternate-image-text.php:39
+msgid "Visual editing experience"
+msgstr ""
+
+#: patterns/alternate-image-text.php:42
+msgid "Customize the entire website layout, including the header, footer, and all other template parts. With FSE, we can create and edit templates for their entire website, including single posts, archive pages, and custom post types."
+msgstr ""
+
+#: patterns/alternate-image-text.php:45
+#: patterns/alternate-image-text.php:63
+#: patterns/alternate-image-text.php:91
+#: patterns/footer-five-columns-menu-inline.php:106
+#: patterns/footer-six-columns-menu-separated.php:96
+#: patterns/hero-banner.php:40
+#: patterns/split-image-right.php:29
+msgid "Learn More"
+msgstr ""
+
+#: patterns/alternate-image-text.php:54
+msgid "02"
+msgstr ""
+
+#: patterns/alternate-image-text.php:57
+msgid "Innovative block patterns"
+msgstr ""
+
+#: patterns/alternate-image-text.php:60
+msgid "Block patterns are pre-designed block layouts that we can easily insert into their content. These patterns can help to save time and create visually appealing designs. Allows us to create custom themes using the block-based template."
+msgstr ""
+
+#: patterns/alternate-image-text.php:82
+msgid "03"
+msgstr ""
+
+#: patterns/alternate-image-text.php:85
+msgid "Beautiful global styles"
+msgstr ""
+
+#: patterns/alternate-image-text.php:88
+msgid "Global styles enable us to create and apply consistent design elements across the entire website, including typography, colors, and spacing. Providing us with more control over our website's look and feel."
 msgstr ""
 
 #: patterns/blog-classic.php
@@ -203,13 +262,13 @@ msgid "Footer five columns menu inline"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:24
-#: patterns/footer-six-columns-menu-separated.php:66
+#: patterns/footer-six-columns-menu-separated.php:38
 #: patterns/footer.php:38
 msgid "Products"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:28
-#: patterns/footer-six-columns-menu-separated.php:71
+#: patterns/footer-six-columns-menu-separated.php:41
 #: patterns/footer.php:42
 msgid "Products List"
 msgstr ""
@@ -220,103 +279,103 @@ msgid "Plans \\u0026amp; Pricing"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:32
-#: patterns/footer-six-columns-menu-separated.php:75
+#: patterns/footer-six-columns-menu-separated.php:43
 #: patterns/footer.php:46
 msgid "Services"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:34
-#: patterns/footer-six-columns-menu-separated.php:77
+#: patterns/footer-six-columns-menu-separated.php:44
 #: patterns/footer.php:48
 msgid "Partners"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:44
-#: patterns/footer-six-columns-menu-separated.php:86
+#: patterns/footer-six-columns-menu-separated.php:49
 msgid "Company"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:48
-#: patterns/footer-six-columns-menu-separated.php:91
+#: patterns/footer-six-columns-menu-separated.php:52
 #: patterns/footer.php:58
 msgid "About Us"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:50
-#: patterns/footer-six-columns-menu-separated.php:93
+#: patterns/footer-six-columns-menu-separated.php:53
 #: patterns/footer.php:60
 msgid "News"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:52
-#: patterns/footer-six-columns-menu-separated.php:95
+#: patterns/footer-six-columns-menu-separated.php:54
 #: patterns/footer.php:62
 msgid "Contact Us"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:54
-#: patterns/footer-six-columns-menu-separated.php:97
+#: patterns/footer-six-columns-menu-separated.php:55
 #: patterns/footer.php:64
 msgid "Meet Our Team"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:60
-#: patterns/footer-six-columns-menu-separated.php:134
+#: patterns/footer-six-columns-menu-separated.php:75
 #: patterns/footer.php:74
 msgid "Resources"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:64
-#: patterns/footer-six-columns-menu-separated.php:119
+#: patterns/footer-six-columns-menu-separated.php:67
 #: patterns/footer.php:78
 msgid "Gallery"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:66
-#: patterns/footer-six-columns-menu-separated.php:121
+#: patterns/footer-six-columns-menu-separated.php:68
 #: patterns/footer.php:80
 msgid "Blog Articles"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:68
-#: patterns/footer-six-columns-menu-separated.php:123
+#: patterns/footer-six-columns-menu-separated.php:69
 #: patterns/footer.php:82
 msgid "Brand Assets"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:70
-#: patterns/footer-six-columns-menu-separated.php:125
+#: patterns/footer-six-columns-menu-separated.php:70
 #: patterns/footer.php:84
 msgid "Brand Guidelines"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:80
-#: patterns/footer-six-columns-menu-separated.php:114
+#: patterns/footer-six-columns-menu-separated.php:64
 #: patterns/footer.php:90
 msgid "Support"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:84
-#: patterns/footer-six-columns-menu-separated.php:139
+#: patterns/footer-six-columns-menu-separated.php:78
 #: patterns/footer.php:94
 msgid "Knowledge Base"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:86
-#: patterns/footer-six-columns-menu-separated.php:141
+#: patterns/footer-six-columns-menu-separated.php:79
 #: patterns/footer.php:96
 msgid "Contact Support"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:88
-#: patterns/footer-six-columns-menu-separated.php:143
-#: patterns/footer-six-columns-menu-separated.php:223
+#: patterns/footer-six-columns-menu-separated.php:80
+#: patterns/footer-six-columns-menu-separated.php:125
 #: patterns/footer.php:98
 msgid "Privacy Policy"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:90
-#: patterns/footer-six-columns-menu-separated.php:145
+#: patterns/footer-six-columns-menu-separated.php:81
 #: patterns/footer.php:100
 msgid "TOS"
 msgstr ""
@@ -326,40 +385,30 @@ msgid "Need help?"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:100
-#: patterns/footer-six-columns-menu-separated.php:167
+#: patterns/footer-six-columns-menu-separated.php:93
 msgid "What’s New"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:102
-#: patterns/footer-six-columns-menu-separated.php:169
+#: patterns/footer-six-columns-menu-separated.php:94
 msgid "How to Videos"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:104
-#: patterns/footer-six-columns-menu-separated.php:171
+#: patterns/footer-six-columns-menu-separated.php:95
 msgid "Ask the Community"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:106
-#: patterns/footer-six-columns-menu-separated.php:173
-#: patterns/hero-banner.php:40
-#: patterns/split-content.php:29
-#: patterns/zigzag-content.php:45
-#: patterns/zigzag-content.php:63
-#: patterns/zigzag-content.php:91
-msgid "Learn More"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:120
 #: patterns/footer-minimal-menu-center.php:52
 #: patterns/footer-minimal-menu-right.php:39
-#: patterns/footer-six-columns-menu-separated.php:209
+#: patterns/footer-six-columns-menu-separated.php:116
 #: patterns/footer.php:109
 msgid "© %d ·"
 msgstr ""
 
 #: patterns/footer-five-columns-menu-inline.php:126
-#: patterns/footer-six-columns-menu-separated.php:215
+#: patterns/footer-six-columns-menu-separated.php:120
 #: patterns/footer.php:115
 msgid "· All rights reserved"
 msgstr ""
@@ -371,7 +420,7 @@ msgstr ""
 
 #: patterns/footer-minimal-menu-center.php:24
 #: patterns/footer-minimal-menu-right.php:23
-#: patterns/footer-six-columns-menu-separated.php:25
+#: patterns/footer-six-columns-menu-separated.php:17
 #: patterns/header-center-menu.php:16
 #: patterns/header-left-menu.php:17
 #: patterns/header-left-menu.php:29
@@ -381,7 +430,7 @@ msgstr ""
 
 #: patterns/footer-minimal-menu-center.php:26
 #: patterns/footer-minimal-menu-right.php:25
-#: patterns/footer-six-columns-menu-separated.php:27
+#: patterns/footer-six-columns-menu-separated.php:18
 #: patterns/header-center-menu.php:17
 #: patterns/header-left-menu.php:18
 #: patterns/header-left-menu.php:30
@@ -391,7 +440,7 @@ msgstr ""
 
 #: patterns/footer-minimal-menu-center.php:28
 #: patterns/footer-minimal-menu-right.php:27
-#: patterns/footer-six-columns-menu-separated.php:29
+#: patterns/footer-six-columns-menu-separated.php:19
 #: patterns/header-center-menu.php:18
 #: patterns/header-left-menu.php:19
 #: patterns/header-left-menu.php:31
@@ -401,7 +450,7 @@ msgstr ""
 
 #: patterns/footer-minimal-menu-center.php:30
 #: patterns/footer-minimal-menu-right.php:29
-#: patterns/footer-six-columns-menu-separated.php:31
+#: patterns/footer-six-columns-menu-separated.php:20
 #: patterns/header-center-menu.php:19
 #: patterns/header-left-menu.php:20
 #: patterns/header-left-menu.php:32
@@ -414,7 +463,7 @@ msgid "Privacy"
 msgstr ""
 
 #: patterns/footer-minimal-menu-center.php:66
-#: patterns/footer-six-columns-menu-separated.php:227
+#: patterns/footer-six-columns-menu-separated.php:128
 msgid "·"
 msgstr ""
 
@@ -432,35 +481,35 @@ msgctxt "Pattern title"
 msgid "Footer six columns menu separated"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:73
-msgid "Plans & Pricing"
+#: patterns/footer-six-columns-menu-separated.php:42
+msgid "Plans \\u0026amp"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:162
+#: patterns/footer-six-columns-menu-separated.php:90
 msgid "Need Help?"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:182
-msgid "Get in"
+#: patterns/footer-six-columns-menu-separated.php:101
+msgid "Get in touch"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:187
+#: patterns/footer-six-columns-menu-separated.php:104
 msgid "Book A Meeting"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:189
+#: patterns/footer-six-columns-menu-separated.php:105
 msgid "Get Quote"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:191
+#: patterns/footer-six-columns-menu-separated.php:106
 msgid "Ask Product Details"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:193
+#: patterns/footer-six-columns-menu-separated.php:107
 msgid "Service Inquiry"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:231
+#: patterns/footer-six-columns-menu-separated.php:131
 msgid "Terms and Conditions"
 msgstr ""
 
@@ -514,16 +563,16 @@ msgstr ""
 msgid "Latest from The Blog"
 msgstr ""
 
-#: patterns/split-content.php
+#: patterns/split-image-right.php
 msgctxt "Pattern title"
-msgid "Split content."
+msgid "Split image right"
 msgstr ""
 
-#: patterns/split-content.php:21
+#: patterns/split-image-right.php:21
 msgid "Everything you need to create amazing websites"
 msgstr ""
 
-#: patterns/split-content.php:24
+#: patterns/split-image-right.php:24
 msgid "Interactive design tools and its many customization options to customize anything and everything needed to build the fully-functional website of your dreams."
 msgstr ""
 
@@ -680,55 +729,6 @@ msgstr ""
 msgid "Built with search engines in mind, achieve higher rankings and more traffic with optimized code."
 msgstr ""
 
-#: patterns/zigzag-content.php
-msgctxt "Pattern title"
-msgid "Zigzag content"
-msgstr ""
-
-#: patterns/zigzag-content.php:21
-msgid "Discover a new way to build website"
-msgstr ""
-
-#: patterns/zigzag-content.php:24
-msgid "Get online quickly with easy-to-use Full Site Editor builder"
-msgstr ""
-
-#: patterns/zigzag-content.php:36
-msgid "01"
-msgstr ""
-
-#: patterns/zigzag-content.php:39
-msgid "Visual editing experience"
-msgstr ""
-
-#: patterns/zigzag-content.php:42
-msgid "Customize the entire website layout, including the header, footer, and all other template parts. With FSE, we can create and edit templates for their entire website, including single posts, archive pages, and custom post types."
-msgstr ""
-
-#: patterns/zigzag-content.php:54
-msgid "02"
-msgstr ""
-
-#: patterns/zigzag-content.php:57
-msgid "Innovative block patterns"
-msgstr ""
-
-#: patterns/zigzag-content.php:60
-msgid "Block patterns are pre-designed block layouts that we can easily insert into their content. These patterns can help to save time and create visually appealing designs. Allows us to create custom themes using the block-based template."
-msgstr ""
-
-#: patterns/zigzag-content.php:82
-msgid "03"
-msgstr ""
-
-#: patterns/zigzag-content.php:85
-msgid "Beautiful global styles"
-msgstr ""
-
-#: patterns/zigzag-content.php:88
-msgid "Global styles enable us to create and apply consistent design elements across the entire website, including typography, colors, and spacing. Providing us with more control over our website's look and feel."
-msgstr ""
-
 #: assets/js/editor.js:1
 #: build/editor.js:59
 #: src/block-extensions/header.js:37
@@ -758,26 +758,26 @@ msgid "Sticky header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:392
-#: src/extensions/page-settings/settings-list.js:22
 #: build/editor.js:393
+#: src/extensions/page-settings/settings-list.js:28
+#: build/editor.js:406
 msgid "Disable Elements"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:396
-#: src/extensions/page-settings/settings-list.js:29
-#: build/editor.js:400
+#: build/editor.js:397
+#: src/extensions/page-settings/settings-list.js:35
+#: build/editor.js:413
 msgid "Header Settings"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:442
-#: build/editor.js:446
+#: build/editor.js:440
+#: build/editor.js:444
 #: src/extensions/page-settings/settings.js:21
 #: src/extensions/page-settings/settings.js:29
-#: build/editor.js:430
-#: build/editor.js:438
+#: build/editor.js:445
+#: build/editor.js:453
 msgid "Page Settings"
 msgstr ""
 
@@ -802,93 +802,344 @@ msgstr ""
 msgid "Hide Mobile"
 msgstr ""
 
-#: styles/dark.json
+#: styles/aquamarine.json
 msgctxt "Style variation name"
-msgid "Dark"
+msgid "Aquamarine"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Primary"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Secondary"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Tertiary"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Quaternary"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Heading"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Body"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Surface"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Background"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Outline"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Neutral"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Foreground"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Transparent"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Current Color"
 msgstr ""
 
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
 #: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
 #: theme.json
 msgctxt "Color name"
 msgid "Inherit"
+msgstr ""
+
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary"
+msgstr ""
+
+#: styles/aquamarine.json
+#: styles/baby-blue.json
+#: styles/coral-red.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/french-beige.json
+#: styles/lavender.json
+#: styles/light-violet.json
+#: styles/lime-yellow.json
+#: styles/mango.json
+#: styles/persian-pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: styles/viridian.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Secondary"
+msgstr ""
+
+#: styles/baby-blue.json
+msgctxt "Style variation name"
+msgid "Baby blue"
+msgstr ""
+
+#: styles/coral-red.json
+msgctxt "Style variation name"
+msgid "Coral Red"
+msgstr ""
+
+#: styles/dark.json
+msgctxt "Style variation name"
+msgid "Dark"
 msgstr ""
 
 #: styles/dark.json
@@ -897,16 +1148,59 @@ msgctxt "Gradient name"
 msgid "Primary"
 msgstr ""
 
-#: styles/dark.json
-#: theme.json
-msgctxt "Duotone name"
-msgid "Primary"
+#: styles/easter-green.json
+msgctxt "Style variation name"
+msgid "Easter Green"
 msgstr ""
 
-#: styles/dark.json
-#: theme.json
-msgctxt "Duotone name"
-msgid "Secondary"
+#: styles/french-beige.json
+msgctxt "Style variation name"
+msgid "French Beige"
+msgstr ""
+
+#: styles/lavender.json
+msgctxt "Style variation name"
+msgid "Lavender"
+msgstr ""
+
+#: styles/light-violet.json
+msgctxt "Style variation name"
+msgid "Light violet"
+msgstr ""
+
+#: styles/lime-yellow.json
+msgctxt "Style variation name"
+msgid "Lime Yellow"
+msgstr ""
+
+#: styles/mango.json
+msgctxt "Style variation name"
+msgid "Mango"
+msgstr ""
+
+#: styles/persian-pink.json
+msgctxt "Style variation name"
+msgid "Persian Pink"
+msgstr ""
+
+#: styles/rain-forest.json
+msgctxt "Style variation name"
+msgid "Rain Forest"
+msgstr ""
+
+#: styles/sweet-corn.json
+msgctxt "Style variation name"
+msgid "Sweet Corn"
+msgstr ""
+
+#: styles/ultra-marine.json
+msgctxt "Style variation name"
+msgid "Ultra Marine"
+msgstr ""
+
+#: styles/viridian.json
+msgctxt "Style variation name"
+msgid "Viridian"
 msgstr ""
 
 #: theme.json
