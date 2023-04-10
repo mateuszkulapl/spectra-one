@@ -76,6 +76,15 @@ https://pxhere.com/en/photo/1573331
 https://pxhere.com/en/photo/625568
 https://pxhere.com/en/photo/764654
 
+Featured Logo
+License : Fair Use License
+License URI : https://logoipsum.com/license/,
+https://logoipsum.com/artwork/265
+https://logoipsum.com/artwork/263
+https://logoipsum.com/artwork/239
+https://logoipsum.com/artwork/238
+https://logoipsum.com/artwork/236
+
 Illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.
 https://wpspectra.com/wp-content/uploads/2023/03/spectra-plugin-banner.jpg
 https://wpspectra.com/wp-content/uploads/2023/04/hero-gradient.png
@@ -101,6 +110,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Fix: Compatibility with spectra plugin container.
 * Fix: Fatal error when script debug is turned on
 * Fix: Custom Header options not showing up on other header patterns.
+* Fix: Issue with some native blocks rendering.
 
 
 = 0.0.3 - March 24, 2023 =
