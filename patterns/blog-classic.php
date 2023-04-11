@@ -3,7 +3,7 @@
  * Title: Blog classic
  * Slug: spectra-one/blog-classic
  * Categories: posts
- * Keywords: Blog classic
+ * Keywords: blog classic
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"}},"layout":{"type":"constrained"}} -->

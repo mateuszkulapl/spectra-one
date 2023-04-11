@@ -2,7 +2,7 @@
 /**
  * Title: FAQ
  * Slug: spectra-one/faq
- * Categories: featured
+ * Categories: text
  * Keywords: faq
  */
 ?>

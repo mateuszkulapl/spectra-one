@@ -113,6 +113,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Fix: Fatal error when script debug is turned on
 * Fix: Custom Header options not showing up on other header patterns.
 * Fix: Issue with some native blocks rendering.
+* Fix : Pattern's sorted according to categories.
 
 
 = 0.0.3 - March 24, 2023 =

@@ -191,7 +191,7 @@ module.exports = function (grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'spectra-one-' + pkgInfo.version + '.zip',
+                    archive: 'spectra-one.' + pkgInfo.version + '.zip',
                     mode: 'zip'
                 },
                 files: [

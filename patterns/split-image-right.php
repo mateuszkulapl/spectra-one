@@ -2,7 +2,7 @@
 /**
  * Title: Split image right
  * Slug: spectra-one/split-image-right
- * Categories: banner
+ * Categories: media
  * Keywords: split image right
  */
 

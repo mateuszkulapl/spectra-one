@@ -3,7 +3,7 @@
  * Title: Blog left featured image
  * Slug: spectra-one/blog-left-featured-image
  * Categories: query
- * Keywords: Blog left featured image
+ * Keywords: blog left featured image
  */
 ?>
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"}},"layout":{"type":"constrained"}} -->

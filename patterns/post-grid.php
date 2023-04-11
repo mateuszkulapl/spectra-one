@@ -3,7 +3,7 @@
  * Title: Post grid
  * Slug: spectra-one/post-grid
  * Categories: posts
- * Keywords: Post grid
+ * Keywords: post grid
  */
 ?>
 

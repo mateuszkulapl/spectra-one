@@ -2,8 +2,8 @@
 /**
  * Title: Call to action alternate
  * Slug: spectra-one/call-to-action-alternate
- * Categories: banner
- * Keywords: Call to action alternate
+ * Categories: call-to-action
+ * Keywords: call to action alternate
  */
 ?>
 

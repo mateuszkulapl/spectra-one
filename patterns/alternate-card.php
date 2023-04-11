@@ -2,7 +2,7 @@
 /**
  * Title: Alternate card
  * Slug: spectra-one/alternate-card
- * Categories: text
+ * Categories: columns
  * Keywords: Alternate card
  */
 

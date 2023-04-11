@@ -3,8 +3,8 @@
 /**
  * Title: Hero banner
  * Slug: spectra-one/hero-banner
- * Categories: banner
- * Keywords: Hero Banner
+ * Categories: featured
+ * Keywords: hero Banner
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

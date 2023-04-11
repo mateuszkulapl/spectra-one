@@ -2,8 +2,8 @@
 /**
  * Title: Call to action.
  * Slug: spectra-one/call-to-action
- * Categories: banner
- * Keywords: Call to action
+ * Categories: call-to-action
+ * Keywords: call to action
  */
 
 $get_url = trailingslashit( get_template_directory_uri());

@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Three columns featured
- * Slug: spectra-one/three-columns-featured
- * Categories: featured
- * Keywords: Three columns featured
+ * Title: Three column featured
+ * Slug: spectra-one/three-column-featured
+ * Categories: services
+ * Keywords: three column featured
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

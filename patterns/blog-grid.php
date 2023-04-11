@@ -3,7 +3,7 @@
  * Title: Blog grid
  * Slug: spectra-one/blog-grid
  * Categories: posts
- * Keywords: Blog grid
+ * Keywords: blog grid
  */
 ?>
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"}},"layout":{"type":"constrained"}} -->

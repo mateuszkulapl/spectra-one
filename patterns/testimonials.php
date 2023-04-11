@@ -1,9 +1,9 @@
 <?php
 /**
  * Title: Testimonial
- * Slug: spectra-one/testimonial
+ * Slug: spectra-one/testimonials
  * Categories: featured
- * Keywords: Testimonial
+ * Keywords: testimonials
  */
 
  $get_url = trailingslashit(get_template_directory_uri());
