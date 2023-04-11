@@ -56,11 +56,6 @@
                     "slug": "neutral"
                 },
                 {
-                    "name": "Foreground",
-                    "color": "#FFFFFF",
-                    "slug": "foreground"
-                },
-                {
                     "name": "Transparent",
                     "color": "transparent",
                     "slug": "transparent"

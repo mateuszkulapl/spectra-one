@@ -56,11 +56,6 @@
           "slug": "neutral"
         },
         {
-          "name": "Foreground",
-          "color": "#111827",
-          "slug": "foreground"
-        },
-        {
           "name": "Transparent",
           "color": "transparent",
           "slug": "transparent"
@@ -75,13 +70,6 @@
           "color": "inherit",
           "slug": "inherit"
         }
-      ],
-      "gradients": [
-				{
-					"slug": "primary",
-					"gradient": "linear-gradient(160deg,rgb(250,248,255) 31%,rgb(247,229,252) 49%,rgb(154,126,240) 69%,rgb(37,13,135) 79%)",
-					"name": "Primary"
-				}
       ],
       "duotone": [
         {
@@ -353,7 +341,7 @@
     "elements": {
       "link": {
         "color": {
-          "text": "var(--wp--preset--color--foreground)"
+          "text": "var(--wp--preset--color--heading)"
         },
         "typography": {
           "textDecoration": "none"

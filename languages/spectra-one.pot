@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-04-10T08:59:20+02:00\n"
+"POT-Creation-Date: 2023-04-11T12:19:18+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -183,27 +183,6 @@ msgstr ""
 #: patterns/blog-simple.php
 msgctxt "Pattern title"
 msgid "Blog simple"
-msgstr ""
-
-#: patterns/call-to-action.php
-msgctxt "Pattern title"
-msgid "Call to action."
-msgstr ""
-
-#: patterns/call-to-action.php:12
-msgid "Build your own website"
-msgstr ""
-
-#: patterns/call-to-action.php:16
-msgid "Take your website to the next level!"
-msgstr ""
-
-#: patterns/call-to-action.php:21
-#: patterns/header-center-menu.php:23
-#: patterns/header-left-menu.php:25
-#: patterns/header.php:24
-#: patterns/hero-banner.php:36
-msgid "Get Started"
 msgstr ""
 
 #: patterns/faq.php
@@ -527,6 +506,14 @@ msgctxt "Pattern title"
 msgid "Header center menu"
 msgstr ""
 
+#: patterns/header-center-menu.php:23
+#: patterns/header-left-menu.php:25
+#: patterns/header.php:24
+#: patterns/hero-banner.php:36
+#: patterns/wide-banner-with-button.php:21
+msgid "Get Started"
+msgstr ""
+
 #: patterns/header-left-menu.php
 msgctxt "Pattern title"
 msgid "Header left menu"
@@ -700,33 +687,46 @@ msgstr ""
 msgid "As a small business owner, I needed a website that was affordable. I was able to create a beautiful website that represented my brand."
 msgstr ""
 
-#: patterns/three-columns-featured.php
+#: patterns/three-column-featured.php
 msgctxt "Pattern title"
-msgid "Three columns featured"
+msgid "Three column featured"
 msgstr ""
 
-#: patterns/three-columns-featured.php:27
+#: patterns/three-column-featured.php:27
 msgid "Easily Customizable"
 msgstr ""
 
-#: patterns/three-columns-featured.php:31
+#: patterns/three-column-featured.php:31
 msgid "Tailor your website to your liking with endless options to personalize the design and functionality."
 msgstr ""
 
-#: patterns/three-columns-featured.php:41
+#: patterns/three-column-featured.php:41
 msgid "Blazing Fast"
 msgstr ""
 
-#: patterns/three-columns-featured.php:45
+#: patterns/three-column-featured.php:45
 msgid "Experience lightning-fast page load speeds for optimal user experience and SEO ranking."
 msgstr ""
 
-#: patterns/three-columns-featured.php:55
+#: patterns/three-column-featured.php:55
 msgid "SEO Optimized"
 msgstr ""
 
-#: patterns/three-columns-featured.php:59
+#: patterns/three-column-featured.php:59
 msgid "Built with search engines in mind, achieve higher rankings and more traffic with optimized code."
+msgstr ""
+
+#: patterns/wide-banner-with-button.php
+msgctxt "Pattern title"
+msgid "Wide banner with button"
+msgstr ""
+
+#: patterns/wide-banner-with-button.php:12
+msgid "Build your own website"
+msgstr ""
+
+#: patterns/wide-banner-with-button.php:16
+msgid "Take your website to the next level!"
 msgstr ""
 
 #: assets/js/editor.js:1
@@ -808,7 +808,6 @@ msgid "Aquamarine"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -828,7 +827,6 @@ msgid "Primary"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -848,7 +846,6 @@ msgid "Secondary"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -868,7 +865,6 @@ msgid "Tertiary"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -888,7 +884,6 @@ msgid "Quaternary"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -908,7 +903,6 @@ msgid "Heading"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -928,7 +922,6 @@ msgid "Body"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -948,7 +941,6 @@ msgid "Surface"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -968,7 +960,6 @@ msgid "Background"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -988,7 +979,6 @@ msgid "Outline"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1008,27 +998,6 @@ msgid "Neutral"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
-#: styles/coral-red.json
-#: styles/dark.json
-#: styles/easter-green.json
-#: styles/french-beige.json
-#: styles/lavender.json
-#: styles/light-violet.json
-#: styles/lime-yellow.json
-#: styles/mango.json
-#: styles/persian-pink.json
-#: styles/rain-forest.json
-#: styles/sweet-corn.json
-#: styles/ultra-marine.json
-#: styles/viridian.json
-#: theme.json
-msgctxt "Color name"
-msgid "Foreground"
-msgstr ""
-
-#: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1048,7 +1017,6 @@ msgid "Transparent"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1068,7 +1036,6 @@ msgid "Current Color"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1088,7 +1055,6 @@ msgid "Inherit"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1108,7 +1074,6 @@ msgid "Primary"
 msgstr ""
 
 #: styles/aquamarine.json
-#: styles/baby-blue.json
 #: styles/coral-red.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1127,11 +1092,6 @@ msgctxt "Duotone name"
 msgid "Secondary"
 msgstr ""
 
-#: styles/baby-blue.json
-msgctxt "Style variation name"
-msgid "Baby blue"
-msgstr ""
-
 #: styles/coral-red.json
 msgctxt "Style variation name"
 msgid "Coral Red"
@@ -1140,12 +1100,6 @@ msgstr ""
 #: styles/dark.json
 msgctxt "Style variation name"
 msgid "Dark"
-msgstr ""
-
-#: styles/dark.json
-#: theme.json
-msgctxt "Gradient name"
-msgid "Primary"
 msgstr ""
 
 #: styles/easter-green.json

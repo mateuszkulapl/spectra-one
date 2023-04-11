@@ -109,12 +109,13 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Update: Front page and related patterns.
 * Update: Existing global style variations.
 * Remove: Full width template.
+* Remove: Old pattern's used on front page.
 * Fix: Compatibility with spectra plugin container.
 * Fix: Fatal error when script debug is turned on
 * Fix: Custom Header options not showing up on other header patterns.
 * Fix: Issue with some native blocks rendering.
-* Fix : Pattern's sorted according to categories.
-
+* Fix: Pattern's sorted according to categories.
+* Fix: Change blog featured image color from grayscale to color.
 
 = 0.0.3 - March 24, 2023 =
 * New: Introduced new block style class "Wide thin line" for separator block.
