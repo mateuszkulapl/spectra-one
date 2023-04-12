@@ -28,10 +28,10 @@ function render_header( string $block_content, array $block ):string {
 	$post_id = get_the_ID();
 
 	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument warning for get_post_meta
-	$sticky_header_condition          = ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) || get_post_meta( $post_id, 'swt_meta_sticky_header', true );
+	$sticky_header_condition = ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) || get_post_meta( $post_id, 'swt_meta_sticky_header', true );
 
 	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument warning for get_post_meta
-	$transparent_header_condition     = ( isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'] ) || get_post_meta( $post_id, 'swt_meta_transparent_header', true );
+	$transparent_header_condition = ( isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'] ) || get_post_meta( $post_id, 'swt_meta_transparent_header', true );
 
 	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument warning for get_post_meta
 	$not_transparent_header_condition = ! ( isset( $block['attrs']['SWTTransparentHeader'] ) ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) || ( get_post_meta( $post_id, 'swt_meta_transparent_header', true ) );
