@@ -1,7 +1,5 @@
 <?php
-/**
- * Constants
- */
+
 const SWT_VER  = '';
 const SWT_SLUG = '';
 const SWT_NAME = '';
