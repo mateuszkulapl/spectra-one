@@ -193,13 +193,13 @@ function render_image_placeholder( string $html, array $block ): string {
 		'width'                      => $block['width'] ?? null,
 		'height'                     => $block['height'] ?? null,
 		'margin-top'                 => $block['style']['spacing']['margin']['top'] ?? null,
-		'margin-right'               => isset( $block['style']) ? ( $block['style']['spacing']['margin']['right'] ?? null ) : null,
-		'margin-bottom'              => isset( $block['style']) ? ( $block['style']['spacing']['margin']['bottom'] ?? null ) : null,
-		'margin-left'                => isset( $block['style']) ? ( $block['style']['spacing']['margin']['left'] ?? null ) : null,
-		'border-top-left-radius'     => isset( $block['style']) ? ( $block['style']['border']['radius']['topLeft'] ?? null ) : null,
-		'border-top-right-radius'    => isset( $block['style']) ? ( $block['style']['border']['radius']['topRight'] ?? null ) : null,
-		'border-bottom-left-radius'  => isset( $block['style']) ? ( $block['style']['border']['radius']['bottomLeft'] ?? null ) : null,
-		'border-bottom-right-radius' => isset( $block['style']) ? ( $block['style']['border']['radius']['bottomRight'] ?? null ) : null,
+		'margin-right'               => isset( $block['style'] ) ? ( $block['style']['spacing']['margin']['right'] ?? null ) : null,
+		'margin-bottom'              => isset( $block['style'] ) ? ( $block['style']['spacing']['margin']['bottom'] ?? null ) : null,
+		'margin-left'                => isset( $block['style'] ) ? ( $block['style']['spacing']['margin']['left'] ?? null ) : null,
+		'border-top-left-radius'     => isset( $block['style'] ) ? ( $block['style']['border']['radius']['topLeft'] ?? null ) : null,
+		'border-top-right-radius'    => isset( $block['style'] ) ? ( $block['style']['border']['radius']['topRight'] ?? null ) : null,
+		'border-bottom-left-radius'  => isset( $block['style'] ) ? ( $block['style']['border']['radius']['bottomLeft'] ?? null ) : null,
+		'border-bottom-right-radius' => isset( $block['style'] ) ? ( $block['style']['border']['radius']['bottomRight'] ?? null ) : null,
 	);
 
 	$figure->setAttribute(
