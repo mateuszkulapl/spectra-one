@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace Swt;
 
-use UAGB_Admin_Helper;
+use function UAGB_Admin_Helper;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -26,7 +26,7 @@ add_filter( 'wp', SWT_NS . 'spectra_compatibility', 10, 2 );
  *
  * @since 0.0.3
  * @return void
- */
+ */ 
 function spectra_compatibility() {
 	if ( is_spectra_plugin() ) {
 		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'spectra_compatibility_inline_css' );
@@ -41,8 +41,8 @@ function spectra_compatibility() {
  * @return string
  */
 function spectra_compatibility_inline_css( string $css ): string {
-
-	$spectra_block_spacing = UAGB_Admin_Helper::get_admin_settings_option( 'uag_blocks_editor_spacing' );
+	/** @psalm-suppress UndefinedClass */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort
+	$spectra_block_spacing = \UAGB_Admin_Helper::get_admin_settings_option( 'uag_blocks_editor_spacing' );
 	$margin                = $spectra_block_spacing ? $spectra_block_spacing : 0;
 
 		$css_output = array(
@@ -53,6 +53,6 @@ function spectra_compatibility_inline_css( string $css ): string {
 		);
 
 		$css .= parse_css( $css_output );
-
+		
 		return $css;
 }
