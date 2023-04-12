@@ -87,12 +87,12 @@ https://logoipsum.com/artwork/236
 
 Illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.
 https://wpspectra.com/wp-content/uploads/2023/03/spectra-plugin-banner.jpg
-https://wpspectra.com/wp-content/uploads/2023/04/hero-gradient.png
+https://wpspectra.com/wp-content/uploads/2023/04/spectra-one-hero-gradient.png
 https://wpspectra.com/wp-content/uploads/2023/04/spectra-one-banner-gradient.png
 https://wpspectra.com/wp-content/uploads/2023/04/content-1.png
 https://wpspectra.com/wp-content/uploads/2023/04/content-2.png
 https://wpspectra.com/wp-content/uploads/2023/04/content-3.png
-https://wpspectra.com/wp-content/uploads/2023/04/hero-image.png
+https://wpspectra.com/wp-content/uploads/2023/04/spectra-one-hero-image.png
 https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 
