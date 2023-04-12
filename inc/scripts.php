@@ -44,6 +44,8 @@ function enqueue_frontend_scripts(): void {
 	/* Load Theme Styles*/
 	wp_enqueue_style( SWT_SLUG, $css_uri . '/style' . $file_prefix . '.css', array(), SWT_VER );
 
+	wp_enqueue_style( SWT_SLUG . '-gutenberg', $css_uri . '/gutenberg' . $file_prefix . '.css', array(), SWT_VER );
+
 	$swt_inline_css = apply_filters( 'swt_dynamic_theme_css', '' );
 	if ( $swt_inline_css ) {
 		wp_add_inline_style( SWT_SLUG, $swt_inline_css );
@@ -141,6 +143,7 @@ function enqueue_editor_block_styles() {
 	// Enqueue editor styles.
 	add_editor_style( $css_uri . 'editor' . $file_prefix . '.css' );
 
+	add_editor_style( $css_uri . 'gutenberg' . $file_prefix . '.css' );
 }
 
 add_action( 'after_setup_theme', SWT_NS . 'enqueue_editor_block_styles' );

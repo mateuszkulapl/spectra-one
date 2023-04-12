@@ -59,4 +59,28 @@ function register_meta_settings():void {
 			'auth_callback' => '__return_true',
 		)
 	);
+
+	register_post_meta(
+		'',
+		'swt_meta_sticky_header',
+		array(
+			'show_in_rest'  => true,
+			'single'        => true,
+			'default'       => false,
+			'type'          => 'boolean',
+			'auth_callback' => '__return_true',
+		)
+	);
+
+	register_post_meta(
+		'',
+		'swt_meta_transparent_header',
+		array(
+			'show_in_rest'  => true,
+			'single'        => true,
+			'default'       => false,
+			'type'          => 'boolean',
+			'auth_callback' => '__return_true',
+		)
+	);
 }
