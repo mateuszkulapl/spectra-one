@@ -11,8 +11,6 @@ declare(strict_types=1);
 
 namespace Swt;
 
-use UAGB_Admin_Helper;
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
@@ -42,17 +40,20 @@ function spectra_compatibility() {
  */
 function spectra_compatibility_inline_css( string $css ): string {
 
-	$spectra_block_spacing = UAGB_Admin_Helper::get_admin_settings_option( 'uag_blocks_editor_spacing' );
+	$spectra_block_spacing = '';
+	if ( is_plugin_active( 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ) && class_exists( '\Ultimate\Blocks\Admin\Admin_Helper' ) ) {
+		$spectra_block_spacing = \Ultimate\Blocks\Admin\Admin_Helper::get_admin_settings_option( 'uag_blocks_editor_spacing' );
+	}
 	$margin                = $spectra_block_spacing ? $spectra_block_spacing : 0;
 
-		$css_output = array(
-			"body [class*='uagb-block-']" => array(
-				'margin-top'         => $margin . 'px',
-				'margin-block-start' => $margin . 'px',
-			),
-		);
+	$css_output = array(
+		"body [class*='uagb-block-']" => array(
+			'margin-top'         => $margin . 'px',
+			'margin-block-start' => $margin . 'px',
+		),
+	);
 
-		$css .= parse_css( $css_output );
+	$css .= parse_css( $css_output );
 
-		return $css;
+	return $css;
 }
