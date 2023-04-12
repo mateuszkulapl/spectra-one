@@ -27,9 +27,14 @@ add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
 function render_header( string $block_content, array $block ):string {
 	$post_id = get_the_ID();
 
-	$sticky_header_condition          = ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) || (int) get_post_meta( $post_id, 'swt_meta_sticky_header', true ) === 1;
-	$transparent_header_condition     = ( isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'] ) || (int) get_post_meta( $post_id, 'swt_meta_transparent_header', true ) === 1;
-	$not_transparent_header_condition = ! ( isset( $block['attrs']['SWTTransparentHeader'] ) ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) || (int) get_post_meta( $post_id, 'swt_meta_transparent_header', true ) !== 1;
+	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument warning for get_post_meta
+	$sticky_header_condition          = ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) || get_post_meta( $post_id, 'swt_meta_sticky_header', true );
+
+	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument warning for get_post_meta
+	$transparent_header_condition     = ( isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'] ) || get_post_meta( $post_id, 'swt_meta_transparent_header', true );
+
+	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument warning for get_post_meta
+	$not_transparent_header_condition = ! ( isset( $block['attrs']['SWTTransparentHeader'] ) ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) || ( get_post_meta( $post_id, 'swt_meta_transparent_header', true ) );
 
 	if ( $sticky_header_condition ) {
 		$dom    = dom( $block_content );
