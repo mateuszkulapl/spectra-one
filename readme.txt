@@ -101,7 +101,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 == Changelog ==
 
-= 0.0.4 - April 10, 2023 =
+= 0.0.4 - April 12, 2023 =
 * New: Support for transparent and sticky header at meta level for post and page.
 * New: Added new global style variations.
 * New: Support for featured image on single post.
