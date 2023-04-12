@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<ruleset name="">
+<ruleset name="WordPress Coding Standards for Plugins">
     <description>Spectra One ruleset</description>
     <rule ref="WordPress-VIP-Go">
         <exclude name="WordPressVIPMinimum.Security.Mustache.OutputNotation"/>
     </rule>
-		<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array" value="swt"/>
 		</properties>
@@ -42,4 +42,8 @@
     <exclude-pattern>assets/*</exclude-pattern>
     <exclude-pattern>patterns/*</exclude-pattern>
     <exclude-pattern>inc/utilities/dom.php</exclude-pattern>
+
+	<rule ref="Internal.Exception">
+		<severity>0</severity>
+	</rule>
 </ruleset>
