@@ -18,7 +18,7 @@ const SwtPageSettingsPopup = (props) => {
 				target="swt-page-settings-panel"
 				icon={SettingsIcons.logo}
 			>
-				{__('Page Settings', 'spectra-one')}
+				{__('Spectra Page Settings', 'spectra-one')}
 			</PluginSidebarMoreMenuItem>
 
 			{/* Page Settings Area. */}
@@ -26,7 +26,7 @@ const SwtPageSettingsPopup = (props) => {
 				isPinnable={true}
 				icon={SettingsIcons.logo}
 				name="swt-page-settings-panel"
-				title={__('Page Settings', 'spectra-one')}
+				title={__('Spectra Page Settings', 'spectra-one')}
 				className={'swt-sidebar'}
 			>
 				<SwtSettingList {...props} />

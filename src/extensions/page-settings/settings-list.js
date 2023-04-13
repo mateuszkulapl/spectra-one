@@ -18,7 +18,6 @@ export const SwtSettingList = (props) => {
 						label={value["label"]}
 						checked={sectionValue}
 						onChange={(val) => {
-							console.log(val);
 							props.setMetaFieldValue(val, value["key"]);
 						}}
 					/>
@@ -36,13 +35,14 @@ export const SwtSettingList = (props) => {
 			>
 				{disableSections}
 			</PanelBody>
-			<PanelBody
+
+			{ ( ! props?.meta?.swt_meta_header_display ) && <PanelBody
 				title={__("Header Settings", "spectra-one")}
 				initialOpen={true}
 				className={"swt-header-settings-panel"}
 			>
 				<HeaderSettings {...props} {...spectraOne.header_settings} />
-			</PanelBody>
+			</PanelBody>}
 		</>
 	);
 

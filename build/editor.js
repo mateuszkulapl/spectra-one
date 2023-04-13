@@ -385,7 +385,6 @@ const SwtSettingList = props => {
       label: value["label"],
       checked: sectionValue,
       onChange: val => {
-        console.log(val);
         props.setMetaFieldValue(val, value["key"]);
       }
     }));
@@ -394,7 +393,7 @@ const SwtSettingList = props => {
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Disable Elements", "spectra-one"),
     initialOpen: true,
     className: "swt-disable-elements-panel"
-  }, disableSections), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
+  }, disableSections), !props?.meta?.swt_meta_header_display && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Header Settings", "spectra-one"),
     initialOpen: true,
     className: "swt-header-settings-panel"
@@ -438,11 +437,11 @@ const SwtPageSettingsPopup = props => {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebarMoreMenuItem, {
     target: "swt-page-settings-panel",
     icon: _icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].logo
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Page Settings', 'spectra-one')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebar, {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Spectra Page Settings', 'spectra-one')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_1__.PluginSidebar, {
     isPinnable: true,
     icon: _icons_js__WEBPACK_IMPORTED_MODULE_5__["default"].logo,
     name: "swt-page-settings-panel",
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Page Settings', 'spectra-one'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Spectra Page Settings', 'spectra-one'),
     className: 'swt-sidebar'
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_settings_list_js__WEBPACK_IMPORTED_MODULE_6__.SwtSettingList, props)));
 };
