@@ -49,11 +49,11 @@ const HeaderSettings = props => {
   let SWTStickyHeader;
   let SWTTransparentHeader;
   if (props.hasOwnProperty("setAttributes")) {
-    SWTStickyHeader = props?.attributes?.SWTStickyHeader ? props.attributes.SWTStickyHeader : false;
-    SWTTransparentHeader = props?.attributes?.SWTTransparentHeader ? props.attributes.SWTTransparentHeader : false;
+    SWTStickyHeader = props?.attributes?.SWTStickyHeader && props.attributes.SWTStickyHeader ? true : false;
+    SWTTransparentHeader = props?.attributes?.SWTTransparentHeader && props.attributes.SWTTransparentHeader ? true : false;
   } else {
-    SWTStickyHeader = props?.meta["swt_meta_sticky_header"] ? props.meta["swt_meta_sticky_header"] : false;
-    SWTTransparentHeader = props?.meta["swt_meta_transparent_header"] ? props.meta["swt_meta_transparent_header"] : false;
+    SWTStickyHeader = props?.meta["swt_meta_sticky_header"] && props.meta["swt_meta_sticky_header"] ? true : false;
+    SWTTransparentHeader = props?.meta["swt_meta_transparent_header"] && props.meta["swt_meta_transparent_header"] ? true : false;
   }
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, !SWTTransparentHeader && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Enable Sticky Header", "spectra-one"),
@@ -379,15 +379,16 @@ __webpack_require__.r(__webpack_exports__);
 const SwtSettingList = props => {
   const disableSections = Object.entries(spectraOne.disable_sections).map(_ref => {
     let [key, value] = _ref;
-    let sectionValue = props.meta[value["key"]] && true === props.meta[value["key"]] ? true : false;
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
+    let sectionValue = props?.meta[value["key"]] && props.meta[value["key"]] ? true : false;
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
       key: key,
       label: value["label"],
       checked: sectionValue,
       onChange: val => {
+        console.log(val);
         props.setMetaFieldValue(val, value["key"]);
       }
-    });
+    }));
   });
   const panelBody = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Disable Elements", "spectra-one"),

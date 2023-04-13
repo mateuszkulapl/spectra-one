@@ -14,18 +14,18 @@ export const HeaderSettings = (props) => {
 	let SWTTransparentHeader;
 
 	if (props.hasOwnProperty("setAttributes")) {
-		SWTStickyHeader = props?.attributes?.SWTStickyHeader
-			? props.attributes.SWTStickyHeader
+		SWTStickyHeader = props?.attributes?.SWTStickyHeader && props.attributes.SWTStickyHeader
+			? true
 			: false;
-		SWTTransparentHeader = props?.attributes?.SWTTransparentHeader
-			? props.attributes.SWTTransparentHeader
+		SWTTransparentHeader = props?.attributes?.SWTTransparentHeader && props.attributes.SWTTransparentHeader
+			? true
 			: false;
 	} else {
-		SWTStickyHeader = props?.meta["swt_meta_sticky_header"]
-			? props.meta["swt_meta_sticky_header"]
+		SWTStickyHeader = props?.meta["swt_meta_sticky_header"] && props.meta["swt_meta_sticky_header"]
+			? true
 			: false;
-		SWTTransparentHeader = props?.meta["swt_meta_transparent_header"]
-			? props.meta["swt_meta_transparent_header"]
+		SWTTransparentHeader = props?.meta["swt_meta_transparent_header"] && props.meta["swt_meta_transparent_header"]
+			? true
 			: false;
 	}
 
