@@ -44,6 +44,8 @@ function enqueue_frontend_scripts(): void {
 	/* Load Theme Styles*/
 	wp_enqueue_style( SWT_SLUG, $css_uri . '/style' . $file_prefix . '.css', array(), SWT_VER );
 
+	wp_enqueue_style( SWT_SLUG . '-gutenberg', $css_uri . '/gutenberg' . $file_prefix . '.css', array(), SWT_VER );
+
 	$swt_inline_css = apply_filters( 'swt_dynamic_theme_css', '' );
 	if ( $swt_inline_css ) {
 		wp_add_inline_style( SWT_SLUG, $swt_inline_css );
@@ -80,9 +82,21 @@ function enqueue_editor_scripts(): void {
 		return;
 	}
 
+	$file_prefix = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? '' : '.min';
+	$dir_name    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? 'unminified' : 'minified';
+
+	$css_uri = get_uri() . 'assets/css/' . $dir_name . '/';
+
+	/* RTL */
+	if ( is_rtl() ) {
+		$file_prefix .= '-rtl';
+	}
+
 	$js    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
 	$asset = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
-	$deps  = $asset['dependencies'];
+	$deps  = $asset['dependencies'];	
+
+	wp_enqueue_style( SWT_SLUG . '-gutenberg-editor', $css_uri . '/gutenberg-editor' . $file_prefix . '.css', array(), SWT_VER );
 
 	wp_register_script( SWT_SLUG . '-editor', $js . 'editor.js', $deps, SWT_VER, true );
 
@@ -138,6 +152,7 @@ function enqueue_editor_block_styles() {
 	// Enqueue editor styles.
 	add_editor_style( $css_uri . 'editor' . $file_prefix . '.css' );
 
+	add_editor_style( $css_uri . 'gutenberg' . $file_prefix . '.css' );
 }
 
 add_action( 'after_setup_theme', SWT_NS . 'enqueue_editor_block_styles' );

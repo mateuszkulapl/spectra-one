@@ -191,7 +191,7 @@ module.exports = function (grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'spectra-one-' + pkgInfo.version + '.zip',
+                    archive: 'spectra-one.' + pkgInfo.version + '.zip',
                     mode: 'zip'
                 },
                 files: [
@@ -233,6 +233,14 @@ module.exports = function (grunt) {
                     {
                         src: 'assets/css/unminified/editor-rtl.css',
                         dest: 'assets/css/minified/editor.min-rtl.css',
+                    },
+                    {
+                        src: 'assets/css/unminified/gutenberg-rtl.css',
+                        dest: 'assets/css/minified/gutenberg.min-rtl.css',
+                    },
+                    {
+                        src: 'assets/css/unminified/gutenberg-editor-rtl.css',
+                        dest: 'assets/css/minified/gutenberg-editor.min-rtl.css',
                     },
                     {
                         src: 'assets/css/unminified/compatibility/woocommerce-rtl.css',

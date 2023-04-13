@@ -83,7 +83,7 @@ function responsive_blocks_inline_css( $css ): string {
 		),
 	);
 
-	$css .= parse_css( $css_tablet_output, '783', '1024' );
+	$css .= parse_css( $css_tablet_output, '768', '1024' );
 
 	$css_mobile_output = array(
 		'.swt-hide-mobile' => array(
@@ -91,7 +91,7 @@ function responsive_blocks_inline_css( $css ): string {
 		),
 	);
 
-	$css .= parse_css( $css_mobile_output, '', '782' );
+	$css .= parse_css( $css_mobile_output, '', '767' );
 
 	return $css;
 }

@@ -3,7 +3,7 @@
  * Title: Blog simple
  * Slug: spectra-one/blog-simple
  * Categories: posts
- * Keywords: Blog simple
+ * Keywords: blog simple
  */
 ?>
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|x-large"}},"layout":{"type":"constrained"}} -->
