@@ -24,18 +24,8 @@ Spectra One is a beautiful and modern WordPress theme built with the Full Site E
 6. Enjoy
 
 
-== Copyright ==
-
-Copyright © 2023, Spectra One.
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
+== License ==
+Spectra One Theme, Copyright 2023 Spectra. Spectra One is distributed under the terms of the GNU GPL.
 
 Composer
 License: MIT
@@ -95,14 +85,11 @@ https://wpspectra.com/wp-content/uploads/2023/04/content-3.png
 https://wpspectra.com/wp-content/uploads/2023/04/spectra-one-hero-image.png
 https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
-
-
 © Copyright Spectra One 2023, Spectra.
-
 
 == Changelog ==
 
-= 0.0.4 - April 12, 2023 =
+= 0.0.4 - April 14, 2023 =
 * New: Support for transparent and sticky header at meta level for post and page.
 * New: Added new global style variations.
 * New: Support for featured image on single post.
@@ -144,7 +131,6 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Update: Changed Front page icons from Image Block to HTML block for global style compatibility.
 * Fix: Button text color on dark mode.
 * Fix: Could not set front page using pages.
-
 
 = 0.0.1 - March 10, 2023 =
 * Initial release.
