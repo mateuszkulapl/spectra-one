@@ -73,21 +73,28 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 addFilter("editor.BlockEdit", "swt/responsive", Responsive);
 
 function ResponsiveAttributes(settings) {
-	if (settings.attributes) {
-		settings.attributes = Object.assign(settings.attributes, {
-			SWTHideDesktop: {
-				type: "boolean",
-				default: false,
-			},
-			SWTHideTab: {
-				type: "boolean",
-				default: false,
-			},
-			SWTHideMob: {
-				type: "boolean",
-				default: false,
-			},
-		});
+	// if not excluded then it causes render error as adding custom attributes to these blocks are prohibited.
+	const excludeBlock = [ 'core/archives', 'core/calendar', 'core/latest-comments', 'core/tag-cloud', 'core/rss' ];
+
+	if ( ! excludeBlock.includes( settings.name ) ) { 
+
+		if (settings.attributes) {
+			settings.attributes = Object.assign(settings.attributes, {
+				SWTHideDesktop: {
+					type: "boolean",
+					default: false,
+				},
+				SWTHideTab: {
+					type: "boolean",
+					default: false,
+				},
+				SWTHideMob: {
+					type: "boolean",
+					default: false,
+				},
+			});
+		}
+
 	}
 
 	return settings;

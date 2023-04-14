@@ -3,7 +3,7 @@
  * Title: Blog classic
  * Slug: spectra-one/blog-classic
  * Categories: posts
- * Keywords: Blog classic
+ * Keywords: blog classic
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"}},"layout":{"type":"constrained"}} -->
@@ -15,7 +15,7 @@
     <!-- wp:query {"queryId":5,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list","columns":3},"layout":{"type":"constrained"}} -->
     <div class="wp-block-query">
         <!-- wp:post-template -->
-        <!-- wp:post-featured-image {"isLink":true,"style":{"border":{"radius":"8px"}}} /-->
+        <!-- wp:post-featured-image {"isLink":true,"height":"400px","style":{"border":{"radius":"8px"}}} /-->
         <!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|large","top":"var:preset|spacing|xx-small"},"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
         <div class="wp-block-group"
             style="padding-top:var(--wp--preset--spacing--xx-small);padding-bottom:var(--wp--preset--spacing--large)">
