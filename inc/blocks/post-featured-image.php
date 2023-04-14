@@ -28,7 +28,7 @@ add_filter( 'render_block_core/post-featured-image', SWT_NS . 'render_featured_i
  * @return string
  */
 function render_featured_image_block( string $html, array $block ): string {
-	if ( ! $html ) {
+	if ( ! $html && ! is_single() ) {
 		$html = render_image_placeholder( $html, $block['attrs'] );
 		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'post_featured_image_inline_css' );
 	}
