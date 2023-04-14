@@ -4,13 +4,17 @@ import { addFilter } from '@wordpress/hooks';
 import { ToggleControl, Panel, PanelBody, PanelRow } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
+// if not excluded then it causes render error as adding custom attributes to these blocks are prohibited.
+const excludeBlock = [ 'core/archives', 'core/calendar', 'core/latest-comments', 'core/tag-cloud', 'core/rss' ];
+
 const Responsive = createHigherOrderComponent((BlockEdit) => {
+	
 	return (props) => {
 		const { attributes, name, setAttributes } = props;
 		// Adding compatibility with spectra plugin. So the slugs are same as the plugin.
 		const { SWTHideDesktop, SWTHideTab, SWTHideMob } = attributes;
 
-		if( name && name.includes( 'uagb/') ) {
+		if( name && ( name.includes( 'uagb/') || excludeBlock.includes( name ) ) ) {
 			return (
 				<>
 					<BlockEdit {...props} />
@@ -73,8 +77,6 @@ const Responsive = createHigherOrderComponent((BlockEdit) => {
 addFilter("editor.BlockEdit", "swt/responsive", Responsive);
 
 function ResponsiveAttributes(settings) {
-	// if not excluded then it causes render error as adding custom attributes to these blocks are prohibited.
-	const excludeBlock = [ 'core/archives', 'core/calendar', 'core/latest-comments', 'core/tag-cloud', 'core/rss' ];
 
 	if ( ! excludeBlock.includes( settings.name ) ) { 
 
