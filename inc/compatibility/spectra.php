@@ -42,8 +42,7 @@ function spectra_compatibility() {
  */
 function spectra_compatibility_inline_css( string $css ): string {
 	
-	$spectra_block_spacing = \UAGB_Admin_Helper::get_admin_settings_option( 'uag_blocks_editor_spacing' );
-	$margin                = $spectra_block_spacing ? $spectra_block_spacing : 0;
+	$margin = 0;
 
 		$css_output = array(
 			"body [class*='uagb-block-']" => array(
