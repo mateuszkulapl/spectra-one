@@ -1,11 +1,11 @@
 # Spectra One #
-**Contributors:** [brainstormforce](https://profiles.wordpress.org/brainstormforce/)
-**License:** GPLv2 or later
-**License URI:** https://www.gnu.org/licenses/gpl-2.0.html
-**Tags:** full-site-editing, blog, theme-options, rtl-language-support, full-width-template
-**Tested up to:** 6.1
-**Requires PHP:** 7.4
-**Stable tag:** 0.0.4
+**Contributors:** [brainstormforce](https://profiles.wordpress.org/brainstormforce/)  
+**License:** GPLv2 or later  
+**License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
+**Tags:** full-site-editing, blog, theme-options, rtl-language-support, full-width-template  
+**Tested up to:** 6.1  
+**Requires PHP:** 7.4  
+**Stable tag:** 0.0.4  
 
 ## Description ##
 
@@ -58,7 +58,7 @@ License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://pxhere.com/en/license,
 https://pxhere.com/en/photo/13688
 
-Zigzag Content
+Alternate image text
 License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://pxhere.com/en/license,
 https://pxhere.com/en/photo/1629588
