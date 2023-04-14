@@ -140,6 +140,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const excludeBlock = ['core/archives', 'core/calendar', 'core/latest-comments', 'core/tag-cloud', 'core/rss'];
 const Responsive = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigherOrderComponent)(BlockEdit => {
   return props => {
     const {
@@ -153,7 +154,7 @@ const Responsive = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigh
       SWTHideTab,
       SWTHideMob
     } = attributes;
-    if (name && name.includes('uagb/')) {
+    if (name && (name.includes('uagb/') || excludeBlock.includes(name))) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props));
     }
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
@@ -183,7 +184,7 @@ const Responsive = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigh
 (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("editor.BlockEdit", "swt/responsive", Responsive);
 function ResponsiveAttributes(settings) {
   // if not excluded then it causes render error as adding custom attributes to these blocks are prohibited.
-  const excludeBlock = ['core/archives', 'core/calendar', 'core/latest-comments', 'core/tag-cloud', 'core/rss'];
+
   if (!excludeBlock.includes(settings.name)) {
     if (settings.attributes) {
       settings.attributes = Object.assign(settings.attributes, {

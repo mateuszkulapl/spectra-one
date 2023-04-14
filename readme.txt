@@ -103,6 +103,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Fix: Patterns sorted according to categories.
 * Fix: Change blog featured image color from grayscale to color.
 * Fix: Spectra container issue when block spacing is added from spectra settings.
+* Fix: Hide responsive options for blocks which are prohibited.
 * Remove: Full width template.
 * Remove: Old patterns used on front page.
 
