@@ -94,7 +94,7 @@ function enqueue_editor_scripts(): void {
 
 	$js    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
 	$asset = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
-	$deps  = $asset['dependencies'];	
+	$deps  = $asset['dependencies'];    
 
 	wp_enqueue_style( SWT_SLUG . '-gutenberg-editor', $css_uri . '/gutenberg-editor' . $file_prefix . '.css', array(), SWT_VER );
 
