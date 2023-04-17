@@ -84,7 +84,6 @@ async function installPlugin(slug) {
     });
   });
 }
-;
 async function activatePlugin(url) {
   try {
     const reqResponse = await fetch(url);
@@ -99,7 +98,6 @@ async function activatePlugin(url) {
     };
   }
 }
-;
 /******/ })()
 ;
 //# sourceMappingURL=welcome_notice.js.map

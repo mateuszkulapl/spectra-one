@@ -9,7 +9,10 @@
         "build": "wp-scripts build --output-path=assets/js",
         "minify": "grunt minify",
         "release": "grunt release",
-        "pot": "wp i18n make-pot ./ ./languages/spectra-one.pot"
+        "pot": "wp i18n make-pot ./ ./languages/spectra-one.pot",
+        "lint:css": "wp-scripts lint-style src/",
+        "lint:js": "wp-scripts lint-js src/",
+        "lint:js-fix": "wp-scripts lint-js src/ --fix"
     },
     "devDependencies": {
         "@lodder/grunt-postcss": "^3.1.1",
