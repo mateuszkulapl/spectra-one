@@ -107,7 +107,6 @@ const SwtPluginInstallNotice = () => {
 		<PanelBody
 			title={ __( 'Spectra plugin', 'spectra-one' ) }
 			initialOpen={ true }
-			icon={ SwtIcons.logo_color }
 		>
 			<p>
 				{ __(
