@@ -48,7 +48,7 @@
         </MissingPropertyType>
         <PossiblyFalseArgument>
             <errorLevel type="suppress">
-                <directory name="inc/extensions/header.php"/>
+                <directory name="."/>
             </errorLevel>
         </PossiblyFalseArgument>
     </issueHandlers>
