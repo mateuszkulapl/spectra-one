@@ -9,8 +9,8 @@
     </projectFiles>
     <stubs>
         <file name="vendor/php-stubs/wordpress-stubs/wordpress-stubs.php"/>
-        <file name="./psalm/constants.php"/>
-        <file name="./psalm/spectra-one-stubs.php"/>
+        <file name="psalm/constants.php"/>
+        <file name="psalm/spectra-one-stubs.php"/>
     </stubs>
     <globals>
         <var name="wp_version" type="string"/>
@@ -46,5 +46,10 @@
                 <directory name="."/>
             </errorLevel>
         </MissingPropertyType>
+        <PossiblyFalseArgument>
+            <errorLevel type="suppress">
+                <directory name="inc/extensions/header.php"/>
+            </errorLevel>
+        </PossiblyFalseArgument>
     </issueHandlers>
 </psalm>
