@@ -5,16 +5,16 @@ import { PluginSidebar, PluginSidebarMoreMenuItem } from '@wordpress/edit-post';
 import { compose } from '@wordpress/compose';
 import { withSelect, withDispatch } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
-import SettingsIcons from './icons.js';
-import { SwtSettingList } from './settings-list.js';
+import SwtIcons from '../../components/icons.js';
+import { SwtComponents } from './components.js';
 
-const SwtPageSettingsPopup = ( props ) => {
+const SwtSidebar = ( props ) => {
 	return (
 		<>
 			{ /* Page Settings Icon. */ }
 			<PluginSidebarMoreMenuItem
 				target="swt-page-settings-panel"
-				icon={ SettingsIcons.logo }
+				icon={ SwtIcons.logo }
 			>
 				{ __( 'Spectra Page Settings', 'spectra-one' ) }
 			</PluginSidebarMoreMenuItem>
@@ -22,12 +22,12 @@ const SwtPageSettingsPopup = ( props ) => {
 			{ /* Page Settings Area. */ }
 			<PluginSidebar
 				isPinnable={ true }
-				icon={ SettingsIcons.logo }
+				icon={ SwtIcons.logo }
 				name="swt-page-settings-panel"
 				title={ __( 'Spectra Page Settings', 'spectra-one' ) }
 				className={ 'swt-sidebar' }
 			>
-				<SwtSettingList { ...props } />
+				<SwtComponents { ...props } />
 			</PluginSidebar>
 		</>
 	);
@@ -50,4 +50,4 @@ export default compose(
 				meta: { [ field ]: value },
 			} ),
 	} ) )
-)( SwtPageSettingsPopup );
+)( SwtSidebar );

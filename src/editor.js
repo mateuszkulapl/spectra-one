@@ -1,6 +1,6 @@
 import { registerPlugin } from '@wordpress/plugins';
-import SwtPageSettingsPopup from './extensions/page-settings/settings';
-import { SwtSettingList } from './extensions/page-settings/settings-list.js';
+import SwtSidebar from './extensions/panel/sidebar';
+import { SwtComponents } from './extensions/panel/components.js';
 import { addFilter } from '@wordpress/hooks';
 import './extensions/editor/index.js';
 import './block-extensions/index.js';
@@ -13,7 +13,7 @@ if ( spectraOne.is_spectra_plugin ) {
 			return (
 				<>
 					{ markup }
-					<SwtSettingList { ...props } />
+					<SwtComponents { ...props } />
 				</>
 			);
 		},
@@ -23,6 +23,6 @@ if ( spectraOne.is_spectra_plugin ) {
 
 if ( ! spectraOne.is_spectra_plugin ) {
 	registerPlugin( 'swt-page-level-settings', {
-		render: SwtPageSettingsPopup,
+		render: SwtSidebar,
 	} );
 }

@@ -1,10 +1,10 @@
 import { subscribe, dispatch, select } from '@wordpress/data';
 
 window.addEventListener( 'load', function () {
-	swtOnLoadFunction();
+	swtSiteTitle();
 } );
 
-function swtOnLoadFunction() {
+function swtSiteTitle() {
 	/* Do things after DOM has fully loaded */
 
 	subscribe( function () {

@@ -1,1 +1,1 @@
-import './editor-title.js';
+import './title.js';
