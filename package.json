@@ -11,7 +11,9 @@
         "release": "grunt release",
         "pot": "wp i18n make-pot ./ ./languages/spectra-one.pot",
         "env:activate-spectra-one": "wp-env run cli wp theme activate spectra-one",
-        "env:start": "wp-env start && npm run env:activate-spectra-one",
+        "env:rewrite-flush": "wp-env run cli wp rewrite flush",
+        "env:clean": "wp-env clean all",
+        "env:start": "wp-env start && npm run env:activate-spectra-one && npm run env:rewrite-flush",
         "env:stop": "wp-env stop",
         "env:destroy": "wp-env destroy",
         "env": "wp-env"
