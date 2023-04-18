@@ -1,8 +1,118 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/components/plugin-helpers.js":
+/*!******************************************!*\
+  !*** ./src/components/plugin-helpers.js ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "activatePluginUrl": function() { return /* binding */ activatePluginUrl; },
+/* harmony export */   "installPlugin": function() { return /* binding */ installPlugin; }
+/* harmony export */ });
+async function installPlugin(slug) {
+  return new Promise(resolve => {
+    wp.updates.ajax('install-plugin', {
+      slug,
+      success: () => {
+        resolve({
+          success: true
+        });
+      },
+      error: err => {
+        resolve({
+          success: false,
+          code: err.errorCode
+        });
+      }
+    });
+  });
+}
+async function activatePluginUrl(url) {
+  try {
+    const reqResponse = await fetch(url);
+    if (200 === reqResponse.status) {
+      return {
+        success: true
+      };
+    }
+  } catch (err) {
+    return {
+      success: false
+    };
+  }
+}
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
 var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+!function() {
 /*!*************************************!*\
   !*** ./src/admin/welcome-notice.js ***!
   \*************************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/plugin-helpers.js */ "./src/components/plugin-helpers.js");
+
 document.addEventListener('DOMContentLoaded', () => {
   handleWelcomeNotice();
 });
@@ -31,7 +141,7 @@ function handleWelcomeNotice() {
   };
   const activateSpectra = async () => {
     installStatusText.textContent = activating;
-    await activatePlugin(activationUrl);
+    await (0,_components_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_0__.activatePluginUrl)(activationUrl);
     InstallButton.classList.remove('updating-message');
     InstallButton.classList.add('updated-message');
     installStatusText.textContent = done;
@@ -46,7 +156,7 @@ function handleWelcomeNotice() {
         return;
       }
       installStatusText.textContent = installing;
-      await installPlugin(pluginSlug);
+      await (0,_components_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_0__.installPlugin)(pluginSlug);
       await activateSpectra();
     });
   }
@@ -66,38 +176,7 @@ function handleWelcomeNotice() {
     } catch (err) {}
   });
 }
-async function installPlugin(slug) {
-  return new Promise(resolve => {
-    wp.updates.ajax('install-plugin', {
-      slug,
-      success: () => {
-        resolve({
-          success: true
-        });
-      },
-      error: err => {
-        resolve({
-          success: false,
-          code: err.errorCode
-        });
-      }
-    });
-  });
-}
-async function activatePlugin(url) {
-  try {
-    const reqResponse = await fetch(url);
-    if (200 === reqResponse.status) {
-      return {
-        success: true
-      };
-    }
-  } catch (err) {
-    return {
-      success: false
-    };
-  }
-}
+}();
 /******/ })()
 ;
 //# sourceMappingURL=welcome_notice.js.map

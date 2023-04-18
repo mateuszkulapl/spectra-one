@@ -1,3 +1,8 @@
+import {
+	activatePluginUrl,
+	installPlugin,
+} from '../components/plugin-helpers.js';
+
 document.addEventListener( 'DOMContentLoaded', () => {
 	handleWelcomeNotice();
 } );
@@ -36,7 +41,7 @@ function handleWelcomeNotice() {
 
 	const activateSpectra = async () => {
 		installStatusText.textContent = activating;
-		await activatePlugin( activationUrl );
+		await activatePluginUrl( activationUrl );
 
 		InstallButton.classList.remove( 'updating-message' );
 		InstallButton.classList.add( 'updated-message' );
@@ -79,30 +84,4 @@ function handleWelcomeNotice() {
 			}
 		} catch ( err ) {}
 	} );
-}
-
-async function installPlugin( slug ) {
-	return new Promise( ( resolve ) => {
-		wp.updates.ajax( 'install-plugin', {
-			slug,
-			success: () => {
-				resolve( { success: true } );
-			},
-			error: ( err ) => {
-				resolve( { success: false, code: err.errorCode } );
-			},
-		} );
-	} );
-}
-
-async function activatePlugin( url ) {
-	try {
-		const reqResponse = await fetch( url );
-
-		if ( 200 === reqResponse.status ) {
-			return { success: true };
-		}
-	} catch ( err ) {
-		return { success: false };
-	}
 }

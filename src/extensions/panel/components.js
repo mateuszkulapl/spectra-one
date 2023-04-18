@@ -1,8 +1,9 @@
 import { PanelBody, PanelRow, ToggleControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { HeaderSettings } from '../../block-extensions/header';
+import SwtPluginInstallNotice from '../../components/install-plugin-notice.js';
 
-export const SwtSettingList = ( props ) => {
+export const SwtComponents = ( props ) => {
 	const disableSections = Object.entries( spectraOne.disable_sections ).map(
 		( [ key, value ] ) => {
 			const sectionValue =
@@ -45,6 +46,10 @@ export const SwtSettingList = ( props ) => {
 						{ ...spectraOne.header_settings }
 					/>
 				</PanelBody>
+			) }
+
+			{ spectraOne.pluginStatus !== 'activated' && (
+				<SwtPluginInstallNotice { ...props } />
 			) }
 		</>
 	);
