@@ -15,9 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-require_once 'responsive.php';
-require_once 'header.php';
-require_once 'metabox.php';
-require_once 'hide-elements.php';
-require_once 'page-title.php';
+require_once __DIR__ . '/responsive.php';
+require_once __DIR__ . '/header.php';
+require_once __DIR__ . '/metabox.php';
+require_once __DIR__ . '/hide-elements.php';
+require_once __DIR__ . '/page-title.php';
 

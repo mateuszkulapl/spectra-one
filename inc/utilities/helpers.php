@@ -68,7 +68,7 @@ function rtl_css( string $direction = '' ): string {
 function parse_css( array $css_output = array(), $min_media = '', $max_media = '' ): string {
 
 	$parse_css = '';
-	if ( is_array( $css_output ) && count( $css_output ) > 0 ) {
+	if ( count( $css_output ) > 0 ) {
 
 		foreach ( $css_output as $selector => $properties ) {
 
@@ -144,7 +144,7 @@ function render_image_placeholder( string $html, array $block ): string {
 	if ( $img && $img->getAttribute( 'src' ) ) {
 		return $html;
 	}
-	
+
 	$html        = ! $html ? '<figure class="wp-block-image"><img src="" alt=""/></figure>' : $html;
 	$dom         = dom( $html );
 	$svg         = get_svg_icon( 'placeholder', 30 );
@@ -183,7 +183,7 @@ function render_image_placeholder( string $html, array $block ): string {
 		$classes[] = 'is-placeholder';
 	}
 
-	if ( $block['align'] ?? null ) {
+	if ( isset( $block['align'] ) && $block['align'] ) {
 		$classes[] = 'align' . $block['align'];
 	}
 
@@ -193,13 +193,13 @@ function render_image_placeholder( string $html, array $block ): string {
 		'width'                      => $block['width'] ?? null,
 		'height'                     => $block['height'] ?? null,
 		'margin-top'                 => $block['style']['spacing']['margin']['top'] ?? null,
-		'margin-right'               => $block['style']['spacing']['margin']['right'] ?? null,
-		'margin-bottom'              => $block['style']['spacing']['margin']['bottom'] ?? null,
-		'margin-left'                => $block['style']['spacing']['margin']['left'] ?? null,
-		'border-top-left-radius'     => $block['style']['border']['radius']['topLeft'] ?? null,
-		'border-top-right-radius'    => $block['style']['border']['radius']['topRight'] ?? null,
-		'border-bottom-left-radius'  => $block['style']['border']['radius']['bottomLeft'] ?? null,
-		'border-bottom-right-radius' => $block['style']['border']['radius']['bottomRight'] ?? null,
+		'margin-right'               => isset( $block['style'] ) ? ( $block['style']['spacing']['margin']['right'] ?? null ) : null,
+		'margin-bottom'              => isset( $block['style'] ) ? ( $block['style']['spacing']['margin']['bottom'] ?? null ) : null,
+		'margin-left'                => isset( $block['style'] ) ? ( $block['style']['spacing']['margin']['left'] ?? null ) : null,
+		'border-top-left-radius'     => isset( $block['style'] ) ? ( $block['style']['border']['radius']['topLeft'] ?? null ) : null,
+		'border-top-right-radius'    => isset( $block['style'] ) ? ( $block['style']['border']['radius']['topRight'] ?? null ) : null,
+		'border-bottom-left-radius'  => isset( $block['style'] ) ? ( $block['style']['border']['radius']['bottomLeft'] ?? null ) : null,
+		'border-bottom-right-radius' => isset( $block['style'] ) ? ( $block['style']['border']['radius']['bottomRight'] ?? null ) : null,
 	);
 
 	$figure->setAttribute(
@@ -223,7 +223,6 @@ function render_image_placeholder( string $html, array $block ): string {
  * @param string   $slug Icon name.
  * @param int|null $size Icon size.
  *
- * @throws DOMException Throw error.
  * @return string
  */
 function get_svg_icon( string $slug, int $size = null ): string {
