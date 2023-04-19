@@ -35,7 +35,6 @@ jobs:
             - [ ] Run to produce minified files : `grunt minify`
             - [ ] PHPCS - vendor/bin/phpcs
             - [ ] Run to update version number  : `grunt version-bump --ver=<version-number>`
-            - [ ] Check the Background Process function version
             - [ ] Update - Tested Upto - style.css & readme.txt
             - [ ] Update Readme.txt file and then run: `grunt readme`
             - [ ] Generate POT file             : `wp i18n make-pot wp-content/themes/spectra-one wp-content/themes/spectra-one/languages/spectra-one.pot`
