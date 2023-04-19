@@ -29,7 +29,7 @@ function render_welcome_notice(): void {
 		return;
 	}
 
-	$plugin_status = is_spectra_plugin_installed();
+	$plugin_status = is_spectra_plugin_status();
 
 	$file_prefix = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? '' : '.min';
 	$dir_name    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? 'unminified' : 'minified';
@@ -176,10 +176,15 @@ function welcome_notice_display_conditions(): bool {
  * @since 0.0.1
  * @return string
  */
-function is_spectra_plugin_installed(): string {
+function is_spectra_plugin_status(): string {
+	$plugin_slug = 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php';
 	$status = 'not-installed';
 
-	if ( is_plugin_active( 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ) ) {
+	if ( is_plugin_active( $plugin_slug ) ) {
+		return 'activated';
+	}
+
+	if ( file_exists( WP_PLUGIN_DIR . '/' . $plugin_slug ) ) {
 		return 'installed';
 	}
 

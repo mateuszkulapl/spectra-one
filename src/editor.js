@@ -1,19 +1,19 @@
-import { registerPlugin } from "@wordpress/plugins";
-import SwtPageSettingsPopup from "./extensions/page-settings/settings";
-import { SwtSettingList } from "./extensions/page-settings/settings-list.js";
-import { addFilter } from "@wordpress/hooks";
-import "./extensions/editor/all.js";
-import "./block-extensions/all.js";
+import { registerPlugin } from '@wordpress/plugins';
+import SwtSidebar from './extensions/panel/sidebar';
+import { SwtComponents } from './extensions/panel/components.js';
+import { addFilter } from '@wordpress/hooks';
+import './extensions/editor/index.js';
+import './block-extensions/index.js';
 
-if (spectraOne.is_spectra_plugin) {
+if ( spectraOne.is_spectra_plugin ) {
 	addFilter(
-		"spectra.page-sidebar.before",
-		"swt/setting-list",
-		function (markup, props) {
+		'spectra.page-sidebar.before',
+		'swt/setting-list',
+		function ( markup, props ) {
 			return (
 				<>
-					{markup}
-					<SwtSettingList {...props} />
+					{ markup }
+					<SwtComponents { ...props } />
 				</>
 			);
 		},
@@ -21,6 +21,8 @@ if (spectraOne.is_spectra_plugin) {
 	);
 }
 
-if (!spectraOne.is_spectra_plugin) {
-	registerPlugin("swt-page-level-settings", { render: SwtPageSettingsPopup });
+if ( ! spectraOne.is_spectra_plugin ) {
+	registerPlugin( 'swt-page-level-settings', {
+		render: SwtSidebar,
+	} );
 }

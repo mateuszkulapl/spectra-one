@@ -36,7 +36,8 @@ function render_header( string $block_content, array $block ):string {
 	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort
 	$not_transparent_header_condition = ! ( isset( $block['attrs']['SWTTransparentHeader'] ) ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) || ( get_post_meta( $post_id, 'swt_meta_transparent_header', true ) );
 
-	if ( $sticky_header_condition ) {
+	if ( $sticky_header_condition && ! get_post_meta( $post_id, 'swt_meta_transparent_header', true ) ) {
+
 		$dom    = dom( $block_content );
 		$header = get_dom_element( 'header', $dom );
 
@@ -56,7 +57,8 @@ function render_header( string $block_content, array $block ):string {
 		}
 	}
 
-	if ( $transparent_header_condition ) {
+	if ( $transparent_header_condition && ! get_post_meta( $post_id, 'swt_meta_sticky_header', true ) ) {
+		
 		$dom    = dom( $block_content );
 		$header = get_dom_element( 'header', $dom );
 

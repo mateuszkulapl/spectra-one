@@ -16,7 +16,10 @@
         "env:start": "wp-env start && npm run env:activate-spectra-one && npm run env:rewrite-flush",
         "env:stop": "wp-env stop",
         "env:destroy": "wp-env destroy",
-        "env": "wp-env"
+        "env": "wp-env",
+        "lint:css": "wp-scripts lint-style src/",
+        "lint:js": "wp-scripts lint-js src/",
+        "lint:js-fix": "wp-scripts lint-js src/ --fix"
     },
     "devDependencies": {
         "@lodder/grunt-postcss": "^3.1.1",
@@ -45,5 +48,8 @@
         "grunt-sass": "^3.0.2",
         "grunt-wp-i18n": "^1.0.3",
         "sass": "^1.58.3"
+    },
+    "dependencies": {
+        "react": "^18.2.0"
     }
 }

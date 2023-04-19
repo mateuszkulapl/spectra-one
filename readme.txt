@@ -1,7 +1,7 @@
 === Spectra One ===
 Contributors: brainstormforce
 Requires at least: 6.1
-Tested up to: 6.1
+Tested up to: 6.2
 Stable tag: 0.0.4
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -24,18 +24,8 @@ Spectra One is a beautiful and modern WordPress theme built with the Full Site E
 6. Enjoy
 
 
-== Copyright ==
-
-Copyright © 2023, Spectra One.
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
+== License ==
+Spectra One Theme, Copyright 2023 Spectra. Spectra One is distributed under the terms of the GNU GPL.
 
 Composer
 License: MIT
@@ -61,7 +51,7 @@ License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://pxhere.com/en/license,
 https://pxhere.com/en/photo/13688
 
-Zigzag Content
+Alternate image text
 License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://pxhere.com/en/license,
 https://pxhere.com/en/photo/1629588
@@ -87,35 +77,39 @@ https://logoipsum.com/artwork/236
 
 Illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.
 https://wpspectra.com/wp-content/uploads/2023/03/spectra-plugin-banner.jpg
-https://wpspectra.com/wp-content/uploads/2023/04/hero-gradient.png
+https://wpspectra.com/wp-content/uploads/2023/04/spectra-one-hero-gradient.png
+https://wpspectra.com/wp-content/uploads/2023/04/spectra-one-banner-gradient.png
 https://wpspectra.com/wp-content/uploads/2023/04/content-1.png
 https://wpspectra.com/wp-content/uploads/2023/04/content-2.png
 https://wpspectra.com/wp-content/uploads/2023/04/content-3.png
-https://wpspectra.com/wp-content/uploads/2023/04/hero-image.png
+https://wpspectra.com/wp-content/uploads/2023/04/spectra-one-hero-image.png
 https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
-
-
 
 © Copyright Spectra One 2023, Spectra.
 
-
 == Changelog ==
 
-= 0.0.4 - April 10, 2023 =
+= 0.0.5  
+* Update: Theme setup ( .nvmrc, lint:css and list:js ) 
+
+
+= 0.0.4 - April 14, 2023 =
 * New: Support for transparent and sticky header at meta level for post and page.
 * New: Added new global style variations.
 * New: Support for featured image on single post.
 * Update: Support for container width option for page and post templates on root group blocks.
 * Update: Front page and related patterns.
 * Update: Existing global style variations.
-* Remove: Full width template.
-* Remove: Old pattern's used on front page.
 * Fix: Compatibility with spectra plugin container.
 * Fix: Fatal error when script debug is turned on
 * Fix: Custom Header options not showing up on other header patterns.
 * Fix: Issue with some native blocks rendering.
-* Fix: Pattern's sorted according to categories.
+* Fix: Patterns sorted according to categories.
 * Fix: Change blog featured image color from grayscale to color.
+* Fix: Spectra container issue when block spacing is added from spectra settings.
+* Fix: Hide responsive options for blocks which are prohibited.
+* Remove: Full width template.
+* Remove: Old patterns used on front page.
 
 = 0.0.3 - March 24, 2023 =
 * New: Introduced new block style class "Wide thin line" for separator block.
@@ -143,7 +137,6 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Update: Changed Front page icons from Image Block to HTML block for global style compatibility.
 * Fix: Button text color on dark mode.
 * Fix: Could not set front page using pages.
-
 
 = 0.0.1 - March 10, 2023 =
 * Initial release.

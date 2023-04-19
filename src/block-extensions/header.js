@@ -1,144 +1,154 @@
-import { createHigherOrderComponent } from "@wordpress/compose";
-import { InspectorControls } from "@wordpress/block-editor";
-import { addFilter } from "@wordpress/hooks";
+import { createHigherOrderComponent } from '@wordpress/compose';
+import { InspectorControls } from '@wordpress/block-editor';
+import { addFilter } from '@wordpress/hooks';
 import {
 	ToggleControl,
 	Panel,
 	PanelBody,
 	PanelRow,
-} from "@wordpress/components";
-import { __ } from "@wordpress/i18n";
+} from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
-export const HeaderSettings = (props) => {
+export const HeaderSettings = ( props ) => {
 	let SWTStickyHeader;
 	let SWTTransparentHeader;
 
-	if (props.hasOwnProperty("setAttributes")) {
-		SWTStickyHeader = props?.attributes?.SWTStickyHeader
-			? props.attributes.SWTStickyHeader
-			: false;
-		SWTTransparentHeader = props?.attributes?.SWTTransparentHeader
-			? props.attributes.SWTTransparentHeader
-			: false;
+	if ( props.hasOwnProperty( 'setAttributes' ) ) {
+		SWTStickyHeader =
+			props?.attributes?.SWTStickyHeader &&
+			props.attributes.SWTStickyHeader
+				? true
+				: false;
+		SWTTransparentHeader =
+			props?.attributes?.SWTTransparentHeader &&
+			props.attributes.SWTTransparentHeader
+				? true
+				: false;
 	} else {
-		SWTStickyHeader = props?.meta["swt_meta_sticky_header"]
-			? props.meta["swt_meta_sticky_header"]
-			: false;
-		SWTTransparentHeader = props?.meta["swt_meta_transparent_header"]
-			? props.meta["swt_meta_transparent_header"]
-			: false;
+		SWTStickyHeader =
+			props?.meta.swt_meta_sticky_header &&
+			props.meta.swt_meta_sticky_header
+				? true
+				: false;
+		SWTTransparentHeader =
+			props?.meta.swt_meta_transparent_header &&
+			props.meta.swt_meta_transparent_header
+				? true
+				: false;
 	}
 
 	return (
 		<>
-			{!SWTTransparentHeader && (
+			{ ! SWTTransparentHeader && (
 				<PanelRow>
 					<ToggleControl
-						label={__("Enable Sticky Header", "spectra-one")}
+						label={ __( 'Enable Sticky Header', 'spectra-one' ) }
 						help={
 							SWTStickyHeader
 								? __(
-										"Transparent header option will be disabled on enabling this option.",
-										"spectra-one"
+										'Transparent header option will be disabled on enabling this option.',
+										'spectra-one'
 								  )
-								: ""
+								: ''
 						}
-						checked={SWTStickyHeader}
-						onChange={(val) => {
-							props.hasOwnProperty("setAttributes")
-								? props.setAttributes({
-										SWTStickyHeader: !SWTStickyHeader,
-								  })
+						checked={ SWTStickyHeader }
+						onChange={ ( val ) => {
+							props.hasOwnProperty( 'setAttributes' )
+								? props.setAttributes( {
+										SWTStickyHeader: ! SWTStickyHeader,
+								  } )
 								: props.setMetaFieldValue(
 										val,
-										"swt_meta_sticky_header"
+										'swt_meta_sticky_header'
 								  );
-						}}
+						} }
 					/>
 				</PanelRow>
-			)}
-			{!SWTStickyHeader && (
+			) }
+			{ ! SWTStickyHeader && (
 				<PanelRow>
 					<ToggleControl
-						label={__("Enable Transparent Header", "spectra-one")}
+						label={ __(
+							'Enable Transparent Header',
+							'spectra-one'
+						) }
 						help={
 							SWTTransparentHeader
 								? __(
-										"Sticky header option will be disabled on enabling this option.",
-										"spectra-one"
+										'Sticky header option will be disabled on enabling this option.',
+										'spectra-one'
 								  )
-								: ""
+								: ''
 						}
-						checked={SWTTransparentHeader}
-						onChange={(val) => {
-							props.hasOwnProperty("setAttributes")
-								? props.setAttributes({
+						checked={ SWTTransparentHeader }
+						onChange={ ( val ) => {
+							props.hasOwnProperty( 'setAttributes' )
+								? props.setAttributes( {
 										SWTTransparentHeader:
-											!SWTTransparentHeader,
-								  })
+											! SWTTransparentHeader,
+								  } )
 								: props.setMetaFieldValue(
 										val,
-										"swt_meta_transparent_header"
+										'swt_meta_transparent_header'
 								  );
-						}}
+						} }
 					/>
 				</PanelRow>
-			)}
+			) }
 		</>
 	);
 };
 
-const Header = createHigherOrderComponent((BlockEdit) => {
-	return (props) => {
+const Header = createHigherOrderComponent( ( BlockEdit ) => {
+	return ( props ) => {
 		const { attributes, name } = props;
 
 		if (
 			attributes?.tagName &&
-			"header" === attributes.tagName &&
-			"core/template-part" === name
+			'header' === attributes.tagName &&
+			'core/template-part' === name
 		) {
 			return (
 				<>
-					<BlockEdit {...props} />
+					<BlockEdit { ...props } />
 					<InspectorControls>
 						<Panel>
 							<PanelBody
 								title="Header Settings"
-								initialOpen={true}
+								initialOpen={ true }
 							>
-								<HeaderSettings {...props} />
+								<HeaderSettings { ...props } />
 							</PanelBody>
 						</Panel>
 					</InspectorControls>
 				</>
 			);
-		} else {
-			return (
-				<>
-					<BlockEdit {...props} />
-				</>
-			);
 		}
+		return (
+			<>
+				<BlockEdit { ...props } />
+			</>
+		);
 	};
-}, "Header");
+}, 'Header' );
 
-addFilter("editor.BlockEdit", "swt/header", Header);
+addFilter( 'editor.BlockEdit', 'swt/header', Header );
 
-function HeaderAttributes(settings) {
-	const includeBlock = ["core/template-part"];
+function HeaderAttributes( settings ) {
+	const includeBlock = [ 'core/template-part' ];
 
-	if (includeBlock.includes(settings.name)) {
-		if (settings.attributes) {
-			settings.attributes = Object.assign(settings.attributes, {
+	if ( includeBlock.includes( settings.name ) ) {
+		if ( settings.attributes ) {
+			settings.attributes = Object.assign( settings.attributes, {
 				SWTStickyHeader: {
-					type: "boolean",
+					type: 'boolean',
 					default: false,
 				},
 				SWTTransparentHeader: {
-					type: "boolean",
+					type: 'boolean',
 					default: false,
 				},
-			});
+			} );
 		}
 	}
 
@@ -146,7 +156,7 @@ function HeaderAttributes(settings) {
 }
 
 addFilter(
-	"blocks.registerBlockType",
-	"swt/header-attributes",
+	'blocks.registerBlockType',
+	'swt/header-attributes',
 	HeaderAttributes
 );
