@@ -29,15 +29,14 @@ jobs:
             ---
 
             ### Checklist:
-            - [ ] Finalize changelog.txt
-            - [ ] Add doc links in the changelog.txt
-            - [ ] Run to update packages        : `npm audit fix`
-            - [ ] Run to produce minified files : `grunt minify`
+            - [ ] Finalize readme.txt
+            - [ ] Add doc links in the readme.txt
+            - [ ] Run to update packages: `npm audit fix`
+            - [ ] Run to update editor js: `npm run build`
+            - [ ] Run to produce minified files: `grunt minify`
             - [ ] PHPCS - vendor/bin/phpcs
-            - [ ] Run to update version number  : `grunt version-bump --ver=<version-number>`
             - [ ] Update - Tested Upto - style.css & readme.txt
-            - [ ] Update Readme.txt file and then run: `grunt readme`
-            - [ ] Generate POT file             : `wp i18n make-pot wp-content/themes/spectra-one wp-content/themes/spectra-one/languages/spectra-one.pot`
+            - [ ] Generate POT file: npm run pot
             - [ ] Add draft Release notes on github
             - [ ] Open PR to backport branch to `next-release`
             ---
