@@ -15,7 +15,7 @@ const SwtPluginInstallNotice = () => {
 	// Text object if plugin is only installed and not activated
 	if ( pluginStatus !== 'activated' && pluginStatus === 'installed' ) {
 		currentTextObject = {
-			initialText: 'Install & Activate Spectra',
+			initialText: 'Activate Spectra',
 			progressText: 'Activating Spectra...',
 			errorText: 'Error activating Spectra',
 			SuccessText: 'Spectra Activated',
@@ -26,9 +26,9 @@ const SwtPluginInstallNotice = () => {
 	if ( pluginStatus !== 'installed' && pluginStatus !== 'activated' ) {
 		currentTextObject = {
 			initialText: 'Install & Activate Spectra',
-			progressText: 'Installing Spectra...',
+			progressText: 'Installing & Activating Spectra...',
 			errorText: 'Error installing Spectra',
-			SuccessText: 'Spectra Installed',
+			SuccessText: 'Spectra Installed & Activated',
 		};
 	}
 
