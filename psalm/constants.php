@@ -8,3 +8,4 @@ const SWT_LOC  = '';
 const SWT_NS   = '';
 const SWT_DS   = '';
 const SWT_DIR  = '';
+const WP_PLUGIN_DIR = '';

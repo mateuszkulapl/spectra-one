@@ -43,7 +43,7 @@ namespace Swt {
      * @since 0.0.1
      * @return string
      */
-    function is_spectra_plugin_installed() : string
+    function is_spectra_plugin_status() : string
     {
     }
     /**
@@ -501,4 +501,12 @@ namespace {
      * Keywords: three column featured
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Wide banner with button
+     * Slug: spectra-one/wide-banner-with-button
+     * Categories: call-to-action
+     * Keywords: wide banner with button
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    const WP_PLUGIN_DIR = '';
 }
