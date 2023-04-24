@@ -29,13 +29,13 @@ register_block_style(
             }
 
              ' . $swt_parent_class . '.swt-has-featured-image > li {
-                padding-right: 75px;
+                padding-' . rtl_css( 'right' ) . ': 75px;
                 position: relative;
 			}
 
             ' . $swt_parent_class . ' .wp-block-latest-posts__featured-image {
                 position: absolute;
-                right: 0;
+                ' . rtl_css( 'right' ) . ': 0;
             }
 
             ' . $swt_parent_class . ' .wp-block-latest-posts__featured-image img {
@@ -45,22 +45,31 @@ register_block_style(
             }
 
             ' . $swt_parent_class . ' .wp-block-latest-posts__post-title {
+                display: block;
+                color: var(--wp--preset--color--heading);
                 font-size: var(--wp--preset--font-size--small);
                 font-weight: var(--wp--custom--font-weight--medium);
-                display: block;
             }
 
             ' . $swt_parent_class . ' .wp-block-latest-posts__post-author,' . $swt_parent_class . ' .wp-block-latest-posts__post-date {
                 display: inline-block;
-                font-size: var(--wp--preset--font-size--x-small); 
+                color: var(--wp--preset--color--neutral);
+                font-size: var(--wp--preset--font-size--x-small);
+                font-weight: var(--wp--custom--font-weight--regular);
             }
 
             ' . $swt_parent_class . ' .wp-block-latest-posts__post-author + time:before {
                 content:"·";
-                padding-right: 5px;
-                padding-left: 0;
+                padding-' . rtl_css( 'right' ) . ': 5px;
+                padding-' . rtl_css( 'left' ) . ': 5px;
+                color: var(--wp--preset--color--neutral);
             }
 
+            ' . $swt_parent_class . ' .wp-block-latest-posts__post-excerpt {
+                font-size: var(--wp--preset--font-size--x-small);
+                font-weight: var(--wp--custom--font-weight--regular);
+                margin-top: 0.2em;
+            }
 		',
 	) 
 );

@@ -24,29 +24,31 @@ register_block_style(
 		'label'        => __( 'Minimal', 'spectra-one' ),
 		'inline_style' => '
 
-            ' . $swt_parent_class . ' {
+			' . $swt_parent_class . ' {
 				padding: 0;
 				list-style: none;
-            }
+			}
 
 			' . $swt_parent_class . ' .cat-item {
 				font-size: var(--wp--preset--font-size--small);
 				margin-bottom: var(--wp--preset--spacing--xx-small);
-            }
-
+			}
 			
-			' . $swt_parent_class . '.wp-block-categories-dropdown select{
-				padding: 0px 0px 0px 18px;
-				border: 1px solid #E6E9EF;
-				border-radius: 8px;
+			' . $swt_parent_class . '.wp-block-categories-dropdown select {
+				padding-' . rtl_css( 'left' ) . ': var(--wp--preset--spacing--x-small);
+				padding-' . rtl_css( 'right' ) . ': var(--wp--preset--spacing--large);
+				padding-top: var(--wp--preset--spacing--x-small);
+				padding-bottom: var(--wp--preset--spacing--x-small);
+				border: 1px solid var(--wp--preset--color--outline);
+				border-radius: var(--wp--custom--border-radius--small);
+				font-weight: var(--wp--custom--font-weight--regular);
+				font-size: var(--wp--preset--font-size--small);
+				color: var(--wp--preset--color--heading);
+				background-color: var(--wp--preset--color--background);
 				width: 100%;
 				height: 60px;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 26px;
-				color: #1F2937;
-            }
+				appearance: none;
+			}
 
 			' . $swt_parent_class . '.wp-block-categories-dropdown {
 				position: relative;
@@ -56,22 +58,13 @@ register_block_style(
 				content: "\e900";
 				position: absolute;
 				font-family: "icomoon" !important;
-				font-size: 18px;
-				right: 25px;
+				font-size: var(--wp--preset--font-size--medium);
+				' . rtl_css( 'right' ) . ': 25px;
 				top: 50%;
 				transform: translateY(-50%);
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
+				pointer-events: none;
 				-webkit-font-smoothing: antialiased;
 				-moz-osx-font-smoothing: grayscale;
-				pointer-events: none;
-			}
-
-			' . $swt_parent_class . ' select {
-				appearance: none;
 			}
 		',
 	) 
