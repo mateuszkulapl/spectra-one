@@ -131,14 +131,14 @@ function welcome_notice_display_conditions(): bool {
 	}
 
 	// Check if welcome notice was closed.
-	if ( get_option( 'swt-dismiss-welcome-notice', 'no' ) === 'yes' ) {
+	if ( 'yes' === get_option( 'swt-dismiss-welcome-notice', 'no' ) ) {
 		return false;
 	}
 
 	$screen = get_current_screen();
 
 	// Show the notice on dashboard.
-	if ( $screen !== null && ! in_array( $screen->id, array( 'dashboard', 'themes' ) ) ) {
+	if ( null !== $screen && ! in_array( $screen->id, array( 'dashboard', 'themes' ) ) ) {
 		return false;
 	}
 
@@ -163,7 +163,7 @@ function welcome_notice_display_conditions(): bool {
 	}
 
 	// Block editor context.
-	if ( $screen !== null && $screen->is_block_editor() ) {
+	if ( null !== $screen && $screen->is_block_editor() ) {
 		return false;
 	}
 
@@ -178,7 +178,7 @@ function welcome_notice_display_conditions(): bool {
  */
 function is_spectra_plugin_status(): string {
 	$plugin_slug = 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php';
-	$status = 'not-installed';
+	$status      = 'not-installed';
 
 	if ( is_plugin_active( $plugin_slug ) ) {
 		return 'activated';

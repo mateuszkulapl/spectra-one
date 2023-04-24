@@ -1,6 +1,6 @@
 <?php
 /**
- * Register Category Styles.
+ * Register archive Styles.
  *
  * @package Spectra One
  * @author Brainstorm Force
@@ -15,12 +15,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-$swt_parent_class = '.is-style-' . SWT_PFX . '-categories-minimal';
+$swt_parent_class = '.is-style-' . SWT_PFX . '-archives-minimal';
 
 register_block_style(
-	'core/categories',
+	'core/archives',
 	array(
-		'name'         => SWT_PFX . '-categories-minimal',
+		'name'         => SWT_PFX . '-archives-minimal',
 		'label'        => __( 'Minimal', 'spectra-one' ),
 		'inline_style' => '
 
@@ -33,9 +33,8 @@ register_block_style(
 				font-size: var(--wp--preset--font-size--small);
 				margin-bottom: var(--wp--preset--spacing--xx-small);
             }
-
 			
-			' . $swt_parent_class . '.wp-block-categories-dropdown select{
+			' . $swt_parent_class . '.wp-block-archives-dropdown select{
 				padding: 0px 0px 0px 18px;
 				border: 1px solid #E6E9EF;
 				border-radius: 8px;
@@ -48,11 +47,11 @@ register_block_style(
 				color: #1F2937;
             }
 
-			' . $swt_parent_class . '.wp-block-categories-dropdown {
+			' . $swt_parent_class . '.wp-block-archives-dropdown {
 				position: relative;
 			}
 
-			' . $swt_parent_class . '.wp-block-categories-dropdown:after {
+			' . $swt_parent_class . '.wp-block-archives-dropdown:after {
 				content: "\e900";
 				position: absolute;
 				font-family: "icomoon" !important;
