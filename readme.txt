@@ -90,10 +90,14 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 == Changelog ==
 
 = 0.0.5  
+* New: Added sidebar support for page and post.
+* New: Simple image right block styling for Latest post block.
+* New: Minimal block styling for Category list and Archives blocks.
+* New: Simple block styling for Latest comments block.
+* New: Pill block styling for Tag cloud block.
 * Update: Theme setup ( .nvmrc, lint:css and list:js ) 
 
-
-= 0.0.4 - April 14, 2023 =
+= 0.0.4 =
 * New: Support for transparent and sticky header at meta level for post and page.
 * New: Added new global style variations.
 * New: Support for featured image on single post.
@@ -111,7 +115,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Remove: Full width template.
 * Remove: Old patterns used on front page.
 
-= 0.0.3 - March 24, 2023 =
+= 0.0.3 =
 * New: Introduced new block style class "Wide thin line" for separator block.
 * New: Added pot file support.
 * Update: Search block style.
@@ -128,7 +132,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Fix: Header cutting off when transparent and sticky header is used when user is logged in.
 * Fix: Spectra plugin blocks not inherit width from contentSize.
 
-= 0.0.2 - March 18, 2023 =
+= 0.0.2 =
 * New: Secondary block style for button block.
 * Update: Theme screenshot.
 * Update: Hero banner pattern.
@@ -138,5 +142,5 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Fix: Button text color on dark mode.
 * Fix: Could not set front page using pages.
 
-= 0.0.1 - March 10, 2023 =
+= 0.0.1 =
 * Initial release.
