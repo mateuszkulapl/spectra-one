@@ -104,9 +104,8 @@ const Header = createHigherOrderComponent( ( BlockEdit ) => {
 		const { attributes, name } = props;
 
 		if (
-			attributes?.tagName &&
-			'header' === attributes.tagName &&
-			'core/template-part' === name
+			( attributes?.tagName && 'header' === attributes.tagName && 'core/template-part' === name ) ||
+			( attributes?.slug && attributes.slug.includes('header') && 'core/template-part' === name ) 
 		) {
 			return (
 				<>

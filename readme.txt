@@ -90,7 +90,8 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 == Changelog ==
 
 = 0.0.5  
-* Update: Theme setup ( .nvmrc, lint:css and list:js ) 
+* Update: Theme setup ( .nvmrc, lint:css and list:js )
+* Fix: Header options does not showing up when header template has been added manually.
 
 
 = 0.0.4 - April 14, 2023 =
