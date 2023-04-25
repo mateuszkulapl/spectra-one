@@ -88,6 +88,206 @@
     border-width: 1px;
 }
 
+
+/*--------------------------------------------------------------
+# Archive Block
+--------------------------------------------------------------*/
+
+.is-style-swt-archives-minimal {
+    padding: 0;
+    list-style: none;
+
+    .cat-item {
+      	font-size: var(--wp--preset--font-size--small);
+		margin-bottom: var(--wp--preset--spacing--xx-small);
+    }
+
+    .wp-block-archives-dropdown {
+        position: relative;
+
+        select {
+            padding-left: var(--wp--preset--spacing--x-small);
+            padding-right: var(--wp--preset--spacing--large);
+            padding-top: var(--wp--preset--spacing--x-small);
+            padding-bottom: var(--wp--preset--spacing--x-small);
+            border: 1px solid var(--wp--preset--color--outline);
+            border-radius: var(--wp--custom--border-radius--small);
+            font-weight: var(--wp--custom--font-weight--regular);
+            font-size: var(--wp--preset--font-size--small);
+            color: var(--wp--preset--color--heading);
+            background-color: var(--wp--preset--color--background);
+            width: 100%;
+            height: 60px;
+            appearance: none;
+        }
+        
+        &::after {
+            content: "\e900";
+            position: absolute;
+            font-family: "icomoon" !important;
+            font-size: var(--wp--preset--font-size--medium);
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# Categories Block
+--------------------------------------------------------------*/
+
+.is-style-swt-categories-minimal {
+    padding: 0;
+    list-style: none;
+
+    .cat-item {
+      	font-size: var(--wp--preset--font-size--small);
+		margin-bottom: var(--wp--preset--spacing--xx-small);
+    }
+
+    &.wp-block-categories-dropdown {
+        position: relative;
+
+        select {
+            padding-left: var(--wp--preset--spacing--x-small);
+            padding-right: var(--wp--preset--spacing--large);
+            padding-top: var(--wp--preset--spacing--x-small);
+            padding-bottom: var(--wp--preset--spacing--x-small);
+            border: 1px solid var(--wp--preset--color--outline);
+            border-radius: var(--wp--custom--border-radius--small);
+            font-weight: var(--wp--custom--font-weight--regular);
+            font-size: var(--wp--preset--font-size--small);
+            color: var(--wp--preset--color--heading);
+            background-color: var(--wp--preset--color--background);
+            width: 100%;
+            height: 60px;
+            appearance: none;
+        }
+
+        &::after {
+            content: "\e900";
+            position: absolute;
+            font-family: "icomoon" !important;
+            font-size: var(--wp--preset--font-size--medium);
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Latest comments
+--------------------------------------------------------------*/
+
+.is-style-swt-latest-comments-simple {
+    padding: 0;
+
+    .wp-block-latest-comments__comment-avatar {
+        width: 24px;
+        height: 24px;
+    }
+
+    .has-avatars {
+        .wp-block-latest-comments__comment {
+            .wp-block-latest-comments__comment-meta,  .wp-block-latest-comments__comment-excerpt {
+                margin-left: 35px;
+            }
+        }
+    }
+
+    .wp-block-latest-comments__comment {
+
+        .wp-block-latest-comments__comment-meta {
+            font-size: var(--wp--preset--font-size--small);
+            color: var(--wp--preset--color--neutral);
+            font-weight: var(--wp--custom--font-weight--regular);
+
+            .wp-block-latest-comments__comment-date {
+                font-size: var(--wp--preset--font-size--x-small);
+                font-weight: var(--wp--custom--font-weight--regular);
+                margin-top: 0.36em;
+            }
+
+            .wp-block-latest-comments__comment-excerpt {
+                p {
+                    font-size: var(--wp--preset--font-size--x-small);
+                    font-weight: var(--wp--custom--font-weight--regular);
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Latest post
+--------------------------------------------------------------*/
+
+.is-style-swt-latest-posts-simple {
+    & > li {
+        margin-bottom: var(--wp--preset--spacing--x-small);
+    }
+
+    .swt-has-featured-image > li {
+        padding-right: 75px;
+        position: relative;
+    }
+
+    .wp-block-latest-posts__featured-image {
+        position: absolute;
+        right: 0;
+
+        img {
+            object-fit: cover;
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+    .wp-block-latest-posts__featured-image + a {
+        padding-right: 75px; //temp
+    }
+
+    li > a {
+        display: block;
+        color: var(--wp--preset--color--heading);
+        font-size: var(--wp--preset--font-size--small);
+        font-weight: var(--wp--custom--font-weight--medium);
+
+    }
+
+    .wp-block-latest-posts__post-author,
+    .wp-block-latest-posts__post-date {
+        display: inline-block;
+        color: var(--wp--preset--color--neutral);
+        font-size: var(--wp--preset--font-size--x-small);
+        font-weight: var(--wp--custom--font-weight--regular);
+    }
+
+    .wp-block-latest-posts__post-author + time:before {
+        content:"·";
+        padding-right: 5px;
+        padding-left: 5px;
+        color: var(--wp--preset--color--neutral);
+    }
+
+    .wp-block-latest-posts__post-excerpt {
+        font-size: var(--wp--preset--font-size--x-small);
+        font-weight: var(--wp--custom--font-weight--regular);
+        margin-top: 0.2em;
+    }
+}
+
+
 // Note: Need to remove all above code after wordpress fixes issues with register_block_style not applying styles in the editor.
 
 

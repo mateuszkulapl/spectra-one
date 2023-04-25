@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Template sidebar
- * Slug: spectra-one/template-sidebar
+ * Title: Template page sidebar
+ * Slug: spectra-one/template-page-sidebar
  * Categories: template
  * Inserter: false
  */

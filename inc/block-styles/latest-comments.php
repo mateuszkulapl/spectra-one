@@ -54,7 +54,6 @@ register_block_style(
                 font-weight: var(--wp--custom--font-weight--regular);
             }
             
-            
 		',
 	) 
 );

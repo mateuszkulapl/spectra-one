@@ -15,6 +15,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+add_filter(
+	'block_editor_settings_all',
+	function( $editor_settings ) {
+
+		$editor_settings['styles'][] = array( 'css' => iconmoon_import_fonts() );
+
+		return $editor_settings;
+	} 
+); 
+
 add_filter( 'render_block', SWT_NS . 'render_icomoon', 10, 2 );
 
 /**
@@ -37,13 +47,23 @@ function render_icomoon( string $block_content, array $block ):string {
 }
 
 /**
- * Load transparent header inline css.
+ * Load iconmoon inline css.
  *
  * @since 0.0.5
  * @param string $css Inline CSS.
  * @return string
  */
 function icomooon_inline_css( string $css ): string {
+	return $css .= iconmoon_import_fonts();
+}
+
+/**
+ * Import icommon fonts.
+ *
+ * @since 0.0.5
+ * @return string
+ */
+function iconmoon_import_fonts():string {
 
 	$css_output = array(
 
@@ -56,6 +76,6 @@ function icomooon_inline_css( string $css ): string {
 			'font-display' => 'block',
 		),
 	);
-	$css       .= parse_css( $css_output );
-	return $css;
-}
+
+	return parse_css( $css_output );
+}	

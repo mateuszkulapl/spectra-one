@@ -527,9 +527,14 @@
   },
   "customTemplates": [
     {
-			"name": "sidebar-template",
-			"title": "Sidebar",
-			"postTypes": [ "page", "post" ]
+			"name": "template-page-sidebar",
+			"title": "Page sidebar",
+			"postTypes": [ "page" ]
+    },
+    {
+			"name": "template-post-sidebar",
+			"title": "Post sidebar",
+			"postTypes": [ "post" ]
     }
   ],
   "templateParts": [
