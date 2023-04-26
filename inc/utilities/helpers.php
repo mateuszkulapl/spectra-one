@@ -147,6 +147,8 @@ function render_image_placeholder( string $html, array $block ): string {
 
 	$url_rel             = ( isset( $block['linkTarget'] ) && $block['linkTarget'] ) ? 'target="' . $block['linkTarget'] . '"' : '';
 	$url_target          = ( isset( $block['rel'] ) && $block['rel'] ) ? 'rel="' . $block['rel'] . '"' : '';
+
+	/** @psalm-suppress PossiblyFalseOperand */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort
 	$default_placeholder = ( isset( $block['isLink'] ) && true === $block['isLink'] ) ? '<a href="' . get_the_permalink() . '" ' . $url_rel . ' ' . $url_target . ' ><figure class="wp-block-image"><img src="" alt=""/></figure></a>' : '<figure class="wp-block-image"><img src="" alt=""/></figure>'; 
 	$html                = ! $html ? $default_placeholder : $html;
 	$dom                 = dom( $html );
