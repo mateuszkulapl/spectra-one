@@ -4,8 +4,6 @@ import SwtIcons from './icons.js';
 import { __ } from '@wordpress/i18n';
 import { activatePluginUrl, installPlugin } from './plugin-helpers.js';
 
-console.log(SwtIcons);
-
 const SwtPluginInstallNotice = () => {
 	const { activationUrl, pluginSlug, pluginStatus } = spectraOne;
 

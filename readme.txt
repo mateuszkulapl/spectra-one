@@ -91,7 +91,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 = 0.0.5  
 * Update: Theme setup ( .nvmrc, lint:css and list:js ) 
-
+* Fix: Jetform block not loading inside editor.
 
 = 0.0.4 - April 14, 2023 =
 * New: Support for transparent and sticky header at meta level for post and page.
