@@ -23,7 +23,10 @@ register_block_style(
 		'name'         => SWT_PFX . '-latest-posts-simple',
 		'label'        => __( 'Simple image right', 'spectra-one' ),
 		'inline_style' => '
-
+            ' . $swt_parent_class .' {
+                color: var(--wp--preset--color--neutral);
+            }
+            
             ' . $swt_parent_class . ' > li {
                 margin-bottom: var(--wp--preset--spacing--x-small);
             }
@@ -44,7 +47,7 @@ register_block_style(
                 height: 56px;
             }
 
-            ' . $swt_parent_class . ' .wp-block-latest-posts__post-title {
+            ' . $swt_parent_class . ' a {
                 display: block;
                 color: var(--wp--preset--color--heading);
                 font-size: var(--wp--preset--font-size--small);
@@ -53,7 +56,6 @@ register_block_style(
 
             ' . $swt_parent_class . ' .wp-block-latest-posts__post-author,' . $swt_parent_class . ' .wp-block-latest-posts__post-date {
                 display: inline-block;
-                color: var(--wp--preset--color--neutral);
                 font-size: var(--wp--preset--font-size--x-small);
                 font-weight: var(--wp--custom--font-weight--regular);
             }
