@@ -26,7 +26,7 @@
 <h6 class="wp-block-heading has-x-small-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase"><?php esc_html_e( 'Recommended Topics', 'spectra-one' ); ?></h6>
 <!-- /wp:heading -->
 
-<!-- wp:categories {"displayAsDropdown":true,"showPostCounts":true,"showOnlyTopLevel":true,"className":"is-style-swt-categories-minimal"} /-->
+<!-- wp:categories {"showPostCounts":true,"showOnlyTopLevel":true,"className":"is-style-swt-categories-minimal"} /-->
 
 <!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"}}},"className":"is-style-swt-separator-wide-thin-line"} -->
 <hr class="wp-block-separator has-alpha-channel-opacity is-style-swt-separator-wide-thin-line" style="margin-top:var(--wp--preset--spacing--medium);margin-bottom:var(--wp--preset--spacing--medium)"/>
