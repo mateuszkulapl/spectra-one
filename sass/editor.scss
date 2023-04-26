@@ -233,6 +233,8 @@
 --------------------------------------------------------------*/
 
 .is-style-swt-latest-posts-simple {
+    color: var(--wp--preset--color--neutral);
+
     & > li {
         margin-bottom: var(--wp--preset--spacing--x-small);
     }
@@ -257,7 +259,7 @@
         padding-right: 75px; //temp
     }
 
-    li > a {
+     a {
         display: block;
         color: var(--wp--preset--color--heading);
         font-size: var(--wp--preset--font-size--small);
@@ -268,7 +270,6 @@
     .wp-block-latest-posts__post-author,
     .wp-block-latest-posts__post-date {
         display: inline-block;
-        color: var(--wp--preset--color--neutral);
         font-size: var(--wp--preset--font-size--x-small);
         font-weight: var(--wp--custom--font-weight--regular);
     }
