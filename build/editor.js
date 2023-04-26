@@ -257,7 +257,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-console.log(_icons_js__WEBPACK_IMPORTED_MODULE_3__["default"]);
 const SwtPluginInstallNotice = () => {
   const {
     activationUrl,
