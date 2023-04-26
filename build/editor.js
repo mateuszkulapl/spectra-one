@@ -206,6 +206,58 @@ function ResponsiveAttributes(settings) {
 
 /***/ }),
 
+/***/ "./src/blocks/index.js":
+/*!*****************************!*\
+  !*** ./src/blocks/index.js ***!
+  \*****************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _latest_post_list_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./latest-post-list.js */ "./src/blocks/latest-post-list.js");
+
+
+/***/ }),
+
+/***/ "./src/blocks/latest-post-list.js":
+/*!****************************************!*\
+  !*** ./src/blocks/latest-post-list.js ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/compose */ "@wordpress/compose");
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/hooks */ "@wordpress/hooks");
+/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+const latestPostList = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createHigherOrderComponent)(BlockListBlock => {
+  return props => {
+    const {
+      name,
+      attributes
+    } = props;
+    if (name !== 'core/latest-posts') {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockListBlock, props);
+    }
+    const {
+      displayFeaturedImage
+    } = attributes;
+    const customClass = displayFeaturedImage ? 'swt-has-featured-image' : '';
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockListBlock, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+      className: customClass
+    }));
+  };
+}, 'latestPostList');
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('editor.BlockListBlock', 'swt/latest-post-list', latestPostList);
+
+/***/ }),
+
 /***/ "./src/components/icons.js":
 /*!*********************************!*\
   !*** ./src/components/icons.js ***!
@@ -858,6 +910,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _extensions_editor_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./extensions/editor/index.js */ "./src/extensions/editor/index.js");
 /* harmony import */ var _block_extensions_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./block-extensions/index.js */ "./src/block-extensions/index.js");
+/* harmony import */ var _blocks_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/index.js */ "./src/blocks/index.js");
+
 
 
 

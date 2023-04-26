@@ -239,7 +239,7 @@
         margin-bottom: var(--wp--preset--spacing--x-small);
     }
 
-    .swt-has-featured-image > li {
+    &.swt-has-featured-image > li {
         padding-right: 75px;
         position: relative;
     }
@@ -253,10 +253,6 @@
             width: 56px;
             height: 56px;
         }
-    }
-
-    .wp-block-latest-posts__featured-image + a {
-        padding-right: 75px; //temp
     }
 
      a {

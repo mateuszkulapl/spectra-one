@@ -189,7 +189,7 @@
 .is-style-swt-latest-posts-simple > li {
   margin-bottom: var(--wp--preset--spacing--x-small);
 }
-.is-style-swt-latest-posts-simple .swt-has-featured-image > li {
+.is-style-swt-latest-posts-simple.swt-has-featured-image > li {
   padding-right: 75px;
   position: relative;
 }
@@ -202,9 +202,6 @@
   object-fit: cover;
   width: 56px;
   height: 56px;
-}
-.is-style-swt-latest-posts-simple .wp-block-latest-posts__featured-image + a {
-  padding-right: 75px;
 }
 .is-style-swt-latest-posts-simple a {
   display: block;

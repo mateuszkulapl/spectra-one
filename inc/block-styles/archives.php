@@ -50,6 +50,10 @@ register_block_style(
 				appearance: none;
             }
 
+			' . $swt_parent_class . '.wp-block-archives-dropdown select:focus-visible {
+				outline-color: var(--wp--preset--color--heading);
+			}
+
 			' . $swt_parent_class . '.wp-block-archives-dropdown {
 				position: relative;
 			}

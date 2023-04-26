@@ -31,10 +31,11 @@ register_block_style(
                 margin-bottom: var(--wp--preset--spacing--x-small);
             }
 
-             ' . $swt_parent_class . '.swt-has-featured-image > li {
-                padding-' . rtl_css( 'right' ) . ': 75px;
+            ' . $swt_parent_class . '.swt-has-featured-image > li {
                 position: relative;
-			}
+                padding-' . rtl_css( 'right' ) . ': 75px;
+            }
+
 
             ' . $swt_parent_class . ' .wp-block-latest-posts__featured-image {
                 position: absolute;
