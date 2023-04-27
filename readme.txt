@@ -93,6 +93,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Update: Theme setup ( .nvmrc, lint:css and list:js ) 
 * Fix: Cannot click on placeholder to go to single post / page on archive pages.
 * Fix: Jetform block not loading inside editor.
+* Fix: Footer alignment when less content is added on page / post.
 
 = 0.0.4 - April 14, 2023 =
 * New: Support for transparent and sticky header at meta level for post and page.
