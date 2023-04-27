@@ -96,6 +96,8 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * New: Simple block styling for Latest comments block.
 * New: Pill block styling for Tag cloud block.
 * Update: Theme setup ( .nvmrc, lint:css and list:js ) 
+* Fix: Cannot click on placeholder to go to single post / page on archive pages.
+* Fix: Jetform block not loading inside editor.
 
 = 0.0.4 =
 * New: Support for transparent and sticky header at meta level for post and page.

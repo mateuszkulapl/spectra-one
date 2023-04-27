@@ -206,7 +206,7 @@
           ],
           "fontFamily": "\"Inter\", sans-serif",
           "name": "Inter",
-          "slug": "body"
+          "slug": "inter"
         }
       ],
       "fontSizes": [
@@ -317,6 +317,9 @@
         "xLarge": "20px",
         "xxLarge": "24px",
         "full": "999px"
+      },
+      "font-family": {
+        "body": "var(--wp--preset--font-family--inter)"
       }
 		}
   },
@@ -334,7 +337,7 @@
     },
     "typography": {
       "fontSize": "var(--wp--preset--font-size--medium)",
-      "fontFamily": "var(--wp--preset--font-family--body)",
+      "fontFamily": "var(--wp--custom--font-family--body)",
       "fontWeight": "var(--wp--custom--font-weight--regular)",
       "lineHeight": "var(--wp--custom--line-height--large)"
     },
