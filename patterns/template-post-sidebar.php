@@ -28,6 +28,8 @@
 <!-- wp:post-terms {"term":"category"} /--></div>
 <!-- /wp:group -->
 
+<!-- wp:post-featured-image {"height":"432px"} /-->
+
 <!-- wp:post-content /-->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"}},"layout":{"type":"default"}} -->

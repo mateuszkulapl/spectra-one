@@ -17,6 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once __DIR__ . '/post-featured-image.php';
 require_once __DIR__ . '/latest-posts.php';
-require_once __DIR__ . '/comment-template.php';
+require_once __DIR__ . '/post-comments-form.php';
 
 
