@@ -3,7 +3,6 @@
  * Title: Template single
  * Slug: spectra-one/template-single
  * Categories: template
- * Inserter: false
  */
 ?>
 

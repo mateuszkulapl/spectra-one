@@ -3,7 +3,6 @@
  * Title: Template post sidebar
  * Slug: spectra-one/template-post-sidebar
  * Categories: template
- * Inserter: false
  */
 ?>
 

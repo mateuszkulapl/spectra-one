@@ -3,6 +3,7 @@
  * Title: Sidebar default
  * Slug: spectra-one/sidebar-default
  * Categories: sidebar
+ * Inserter: false
  */
 ?>
 
