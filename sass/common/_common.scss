@@ -9,7 +9,10 @@
     flex-grow: 1;
 }
 
-footer {
-    margin-top: auto;
+.wp-site-blocks {
+    footer {
+        margin-block-start: auto;
+        margin-top: auto;
+    }
 }
 
