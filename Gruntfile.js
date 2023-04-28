@@ -91,7 +91,6 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: [
-	
                     {
                         expand: true,
                         cwd: 'assets/css/unminified/',
@@ -187,7 +186,7 @@ module.exports = function (grunt) {
                 dest: 'spectra-one/'
             }
         },
-        
+
         compress: {
             main: {
                 options: {
@@ -297,6 +296,9 @@ module.exports = function (grunt) {
 
     // Grunt release - Create installable package of the local files
     grunt.registerTask('release', ['clean:zip', 'copy:main', 'compress:main', 'clean:main']);
+
+	// Grunt release no clean
+	grunt.registerTask('release-no-clean', ['clean:main', 'clean:zip', 'copy:main']);
 
     grunt.util.linefeed = '\n';
 };

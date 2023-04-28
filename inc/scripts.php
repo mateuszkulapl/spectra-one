@@ -92,21 +92,27 @@ function enqueue_editor_scripts(): void {
 		$file_prefix .= '-rtl';
 	}
 
+	
+
 	$js    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
 	$asset = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
 	$deps  = $asset['dependencies'];    
-
+	array_push( $deps, 'updates' );
+	
 	wp_enqueue_style( SWT_SLUG . '-gutenberg-editor', $css_uri . '/gutenberg-editor' . $file_prefix . '.css', array(), SWT_VER );
 
 	wp_register_script( SWT_SLUG . '-editor', $js . 'editor.js', $deps, SWT_VER, true );
 
 	wp_enqueue_script( SWT_SLUG . '-editor' );
 
-	wp_localize_script(
-		SWT_SLUG . '-editor',
-		SWT_LOC,
-		localize_editor_script()
-	);
+	$editor_script_data = localize_editor_script();
+	if ( is_array( $editor_script_data ) ) {
+		wp_localize_script(
+			SWT_SLUG . '-editor',
+			SWT_LOC,
+			$editor_script_data
+		);
+	}
 }
 
 add_action( 'enqueue_block_editor_assets', SWT_NS . 'enqueue_editor_scripts' );
@@ -125,6 +131,20 @@ function localize_editor_script() {
 		array(
 			'is_spectra_plugin' => defined( 'UAGB_VER' ),
 			'disable_sections'  => get_disable_section_fields(),
+			'pluginStatus'      => is_spectra_plugin_status(),
+			'pluginSlug'        => 'ultimate-addons-for-gutenberg',
+			'activationUrl'     => esc_url(
+				add_query_arg(
+					array(
+						'plugin_status' => 'all',
+						'paged'         => '1',
+						'action'        => 'activate',
+						'plugin'        => rawurlencode( 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ),
+						'_wpnonce'      => wp_create_nonce( 'activate-plugin_ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ),
+					),
+					admin_url( 'plugins.php' )
+				)
+			),
 		)
 	);
 }

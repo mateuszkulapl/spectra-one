@@ -22,11 +22,13 @@ register_block_style(
 		'label'        => __( 'Pill', 'spectra-one' ),
 		'inline_style' => '
 			.is-style-' . SWT_PFX . '-post-terms-pill a {
+				display: inline-block;
 				padding: 6px 12px;
 				border-radius: var(--wp--custom--border-radius--full);
 				color: var(--wp--preset--color--body);
 				background-color: var(--wp--preset--color--outline);
 				margin-right: var(--wp--preset--spacing--xx-small);
+				margin-bottom: var(--wp--preset--spacing--xx-small);
 				line-height: var(--wp--custom--line-height--initial);
 			}
 
