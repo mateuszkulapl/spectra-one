@@ -15,5 +15,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-require_once 'post-featured-image.php';
+require_once __DIR__ . '/post-featured-image.php';
 

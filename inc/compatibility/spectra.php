@@ -26,7 +26,7 @@ add_filter( 'wp', SWT_NS . 'spectra_compatibility', 10, 2 );
  *
  * @since 0.0.3
  * @return void
- */ 
+ */
 function spectra_compatibility() {
 	if ( is_spectra_plugin() ) {
 		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'spectra_compatibility_inline_css' );
@@ -41,7 +41,7 @@ function spectra_compatibility() {
  * @return string
  */
 function spectra_compatibility_inline_css( string $css ): string {
-	
+
 	$margin = 0;
 
 		$css_output = array(
@@ -52,6 +52,6 @@ function spectra_compatibility_inline_css( string $css ): string {
 		);
 
 		$css .= parse_css( $css_output );
-		
+
 		return $css;
 }

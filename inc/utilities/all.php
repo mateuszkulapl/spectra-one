@@ -15,5 +15,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-require_once 'dom.php';
-require_once 'helpers.php';
+require_once __DIR__ . '/dom.php';
+require_once __DIR__ . '/helpers.php';
