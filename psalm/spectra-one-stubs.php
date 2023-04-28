@@ -1,7 +1,7 @@
 <?php
 
 namespace Swt {
-    const SWT_VER = '0.0.4';
+    const SWT_VER = '0.0.5';
     const SWT_SLUG = 'spectra-one';
     const SWT_NAME = 'Spectra One';
     const SWT_PFX = 'swt';
@@ -338,10 +338,10 @@ namespace Swt {
      *
      * @since 0.0.1
      *
-     * @param \DOMElement $element DOM Element.
+     * @param DOMElement $element DOM Element.
      * @param string     $name    Tag name.
      *
-     * @return \DOMElement
+     * @return DOMElement
      */
     function change_tag_name(\DOMElement $element, string $name) : \DOMElement
     {
