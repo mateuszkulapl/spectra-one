@@ -181,7 +181,8 @@ module.exports = function (grunt) {
                     '!phpcs.xml.dist',
                     '!assets/css/unminified/**',
                     '!webpack.config.js',
-                    '!src/**'
+                    '!src/**',
+                    '!psalm/**'
                 ],
                 dest: 'spectra-one/'
             }
