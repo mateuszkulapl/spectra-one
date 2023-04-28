@@ -92,6 +92,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 = 0.0.5  
 * Fix: Placeholder not linked with single post / page on archive pages.
 * Fix: JetFormBuilder block not loading inside editor.
+* Fix: Category overlapping when pill block style is enabled.
 
 = 0.0.4 - April 14, 2023 =
 * New: Support for transparent and sticky header at meta level for post and page.
