@@ -18,5 +18,18 @@ indent_size = 4
 indent_style = space
 indent_size = 2
 
-[{*.txt,wp-config-sample.php}]
-end_of_line = crlf
+[{.gitattributes,*.gitignore,*.gitmodules}]
+indent_style = space
+indent_size = 2
+
+[package.json]
+indent_style = tab
+
+[{.editorconfig,*.md,*.txt,*.xml,*.yml}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+indent_style = space
+indent_size = 2
