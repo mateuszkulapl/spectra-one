@@ -34,7 +34,7 @@
         "@wordpress/compose": "^6.9.0",
         "@wordpress/data": "^9.2.0",
         "@wordpress/edit-post": "^7.9.0",
-        "@wordpress/env": "^6.0.0",
+        "@wordpress/env": "^4.9.0",
         "@wordpress/hooks": "^3.32.0",
         "@wordpress/i18n": "^4.32.0",
         "@wordpress/plugins": "^6.0.0",
