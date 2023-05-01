@@ -76,7 +76,10 @@ const SwtPluginInstallNotice = () => {
 			setDisableButton( true );
 
 			// Checks if plugin is only installed and not activated
-			if ( pluginStatus !== 'activated' && pluginStatus === 'installed' ) {
+			if (
+				pluginStatus !== 'activated' &&
+				pluginStatus === 'installed'
+			) {
 				// Activates the set plugin
 				activatePlugin( pluginInit );
 			} else {
