@@ -1,103 +1,104 @@
-$text-color: #1F2937;
+$text-color: #1f2937;
 $text-color-alt: #fff;
-$primary-color: #4F46E5;
+$primary-color: #4f46e5;
 $disable-color: #a7aaad;
 $mobile: 786px;
 
 .swt-welcome-notice {
-    position: relative;
-   padding-top: 48px;
+	position: relative;
+	padding-top: 48px;
 
-    .swt-row {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
+	.swt-row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
 
-        .swt-col{
-            width: 50%;
+		.swt-col {
+			width: 50%;
 
-            .notice-content {
-                max-width: 630px;
-                padding-bottom: 55px;
-                padding-left: 64px;
+			.notice-content {
+				max-width: 630px;
+				padding-bottom: 55px;
+				padding-left: 64px;
 
-                @media screen and (max-width: $mobile ) {
-                    padding: 0;
-                }
-            }
+				@media screen and (max-width: $mobile) {
+					padding: 0;
+				}
+			}
 
-            .sub-notice-title {
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 22px;
-                color: $primary-color;
-                margin-bottom: 12px;
-                margin-top: 0;
-                padding: 0;
-            }
+			.sub-notice-title {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 22px;
+				color: $primary-color;
+				margin-bottom: 12px;
+				margin-top: 0;
+				padding: 0;
+			}
 
-            .notice-title {
-                font-weight: 500;
-                font-size: 36px;
-                line-height: 47px;
-                letter-spacing: -0.5px;
-                color: $text-color;
-                margin-top: 0;
-                margin-bottom: 12px;
+			.notice-title {
+				font-weight: 500;
+				font-size: 36px;
+				line-height: 47px;
+				letter-spacing: -0.5px;
+				color: $text-color;
+				margin-top: 0;
+				margin-bottom: 12px;
 
-                @media screen and (max-width: $mobile ) {
-                    font-size: 25px;
-                    line-height: 30px;
-                }
-            }
+				@media screen and (max-width: $mobile) {
+					font-size: 25px;
+					line-height: 30px;
+				}
+			}
 
-            .description {
-                margin-bottom: 32px;
-            }
+			.description {
+				margin-bottom: 32px;
+			}
 
-            .notice-actions {
-                button {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 24px;
-                    padding: 10px 16px;
-                    background: $primary-color;
-                    border-radius: 6px;
-                    color: $text-color-alt;
-                }
-            }
+			.notice-actions {
+				button {
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 24px;
+					padding: 10px 16px;
+					background: $primary-color;
+					border-radius: 6px;
+					color: $text-color-alt;
+				}
+			}
 
-            .image-container {
-                padding-right: 2em;
-                padding-left: 2em;
-                margin-bottom: -5px;
-                img {
-                    width: 100%;
-                    height: auto;
-                }
+			.image-container {
+				padding-right: 2em;
+				padding-left: 2em;
+				margin-bottom: -5px;
 
-                @media screen and (max-width: $mobile ) {
-                    display: none;
-                }
-            }
+				img {
+					width: 100%;
+					height: auto;
+				}
 
-            @media screen and (max-width: $mobile ) {
-               width: 100%;
-            }
-        }
+				@media screen and (max-width: $mobile) {
+					display: none;
+				}
+			}
 
-        @media screen and (max-width: $mobile ) {
-            padding: 1em;
-        }
-    }
+			@media screen and (max-width: $mobile) {
+				width: 100%;
+			}
+		}
 
-    @media screen and (max-width: $mobile ) {
-        padding-top: 35px;
-    }
+		@media screen and (max-width: $mobile) {
+			padding: 1em;
+		}
+	}
+
+	@media screen and (max-width: $mobile) {
+		padding-top: 35px;
+	}
 }
 
 #swt-install-spectra {
-    &.updating-message:before {
-        color: $disable-color;
-    }
+	&.updating-message::before {
+		color: $disable-color;
+	}
 }

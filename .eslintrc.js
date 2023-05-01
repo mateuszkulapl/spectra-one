@@ -15,8 +15,7 @@ module.exports = {
 		confirm: true,
 		jQuery: true,
 		module: true,
-		aist: true,
-		aistexport: true,
-		aist_dasboard: true,
+		location: true,
+		spectraOne: true,
 	},
 };

@@ -24,7 +24,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  color: #4F46E5;
+  color: #4f46e5;
   margin-bottom: 12px;
   margin-top: 0;
   padding: 0;
@@ -34,7 +34,7 @@
   font-size: 36px;
   line-height: 47px;
   letter-spacing: -0.5px;
-  color: #1F2937;
+  color: #1f2937;
   margin-top: 0;
   margin-bottom: 12px;
 }
@@ -52,7 +52,7 @@
   font-size: 16px;
   line-height: 24px;
   padding: 10px 16px;
-  background: #4F46E5;
+  background: #4f46e5;
   border-radius: 6px;
   color: #fff;
 }
@@ -86,6 +86,6 @@
   }
 }
 
-#swt-install-spectra.updating-message:before {
+#swt-install-spectra.updating-message::before {
   color: #a7aaad;
 }
