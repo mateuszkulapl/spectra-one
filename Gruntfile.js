@@ -174,37 +174,6 @@ module.exports = function ( grunt ) {
 			},
 		},
 
-		addtextdomain: {
-			options: {
-				textdomain: 'spectra-one',
-			},
-			target: {
-				files: {
-					src: [
-						'*.php',
-						'**/*.php',
-						'!node_modules/**',
-						'!vendor/**',
-					],
-				},
-			},
-		},
-
-		makepot: {
-			target: {
-				options: {
-					domainPath: '/',
-					potFilename: 'languages/spectra-one.pot',
-					potHeaders: {
-						poedit: true,
-						'x-poedit-keywordslist': true,
-					},
-					type: 'wp-theme',
-					updateTimestamp: true,
-				},
-			},
-		},
-
 		bumpup: {
 			options: {
 				updateProps: {
@@ -312,7 +281,6 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-compress' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
-	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-bumpup' );
 	grunt.loadNpmTasks( 'grunt-text-replace' );
 
@@ -339,9 +307,6 @@ module.exports = function ( grunt ) {
 			grunt.task.run( 'replace' );
 		}
 	} );
-
-	// i18n
-	grunt.registerTask( 'i18n', [ 'addtextdomain', 'makepot' ] );
 
 	// Grunt release - Create installable package of the local files
 	grunt.registerTask( 'release', [

@@ -54,7 +54,6 @@
         "grunt-contrib-watch": "^1.1.0",
         "grunt-rtlcss": "^2.0.2",
         "grunt-sass": "^3.0.2",
-        "grunt-wp-i18n": "^1.0.3",
         "sass": "^1.58.3",
         "wp-prettier": "^2.8.5"
     },
@@ -67,7 +66,7 @@
         "pretty": "prettier --check .",
         "pretty:fix": "prettier --write .",
         "lint:js": "wp-scripts lint-js",
-        "lint:js:fix": "npm run pretty:fix && npm run lint:js -- --fix",
+        "lint:js:fix": "npm run lint:js -- --fix",
         "lint:css": "wp-scripts lint-style --allow-empty-input",
         "lint:css:fix": "npm run lint:css -- --fix",
         "lint:md:docs": "wp-scripts lint-md-docs",
