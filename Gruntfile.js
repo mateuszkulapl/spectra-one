@@ -174,59 +174,59 @@ module.exports = function ( grunt ) {
 			},
 		},
 
-        addtextdomain: {
-            options: {
-                textdomain: 'spectra-one',
-            },
-            target: {
-                files: {
-                    src: [
-                        '*.php',
-                        '**/*.php',
-                        '!node_modules/**',
+		addtextdomain: {
+			options: {
+				textdomain: 'spectra-one',
+			},
+			target: {
+				files: {
+					src: [
+						'*.php',
+						'**/*.php',
+						'!node_modules/**',
 						'!vendor/**',
-                    ]
-                }
-            }
-        },
+					],
+				},
+			},
+		},
 
 		makepot: {
-            target: {
-                options: {
-                    domainPath: '/',
-                    potFilename: 'languages/spectra-one.pot',
-                    potHeaders: {
-                        poedit: true,
-                        'x-poedit-keywordslist': true
-                    },
-                    type: 'wp-theme',
-                    updateTimestamp: true
-                }
-            }
-        },
+			target: {
+				options: {
+					domainPath: '/',
+					potFilename: 'languages/spectra-one.pot',
+					potHeaders: {
+						poedit: true,
+						'x-poedit-keywordslist': true,
+					},
+					type: 'wp-theme',
+					updateTimestamp: true,
+				},
+			},
+		},
 
 		bumpup: {
-            options: {
-                updateProps: {
-                    pkg: 'package.json'
-                }
-            },
-            file: 'package.json'
-        },
+			options: {
+				updateProps: {
+					pkg: 'package.json',
+				},
+			},
+			file: 'package.json',
+		},
 
-        replace: {
-            theme_main: {
-                src: ['style.css'],
-                overwrite: true,
-                replacements: [
-                    {
-                        from: /Version: \bv?(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)(?:-[\da-z-A-Z-]+(?:\.[\da-z-A-Z-]+)*)?(?:\+[\da-z-A-Z-]+(?:\.[\da-z-A-Z-]+)*)?\b/g,
-                        to: 'Version: <%= pkg.version %>'
-                    }
-                ]
-			}
-        },
-			
+		replace: {
+			theme_main: {
+				src: [ 'style.css' ],
+				overwrite: true,
+				replacements: [
+					{
+						from: /Version: \bv?(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)(?:-[\da-z-A-Z-]+(?:\.[\da-z-A-Z-]+)*)?(?:\+[\da-z-A-Z-]+(?:\.[\da-z-A-Z-]+)*)?\b/g,
+						to: 'Version: <%= pkg.version %>',
+					},
+				],
+			},
+		},
+
 		compress: {
 			main: {
 				options: {
@@ -312,9 +312,9 @@ module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-compress' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
-	grunt.loadNpmTasks('grunt-wp-i18n');
-	grunt.loadNpmTasks('grunt-bumpup');
-    grunt.loadNpmTasks('grunt-text-replace');
+	grunt.loadNpmTasks( 'grunt-wp-i18n' );
+	grunt.loadNpmTasks( 'grunt-bumpup' );
+	grunt.loadNpmTasks( 'grunt-text-replace' );
 
 	// rtlcss, you will still need to install ruby and sass on your system manually to run this
 	grunt.registerTask( 'rtl', [ 'rtlcss' ] );
@@ -328,22 +328,20 @@ module.exports = function ( grunt ) {
 	// min all
 	grunt.registerTask( 'minify', [ 'style', 'uglify:js', 'cssmin:css' ] );
 
-	
-    // Bump Version - `grunt version-bump --ver=<version-number>`
-    grunt.registerTask('version-bump', function (ver) {
+	// Bump Version - `grunt version-bump --ver=<version-number>`
+	grunt.registerTask( 'version-bump', function () {
+		let newVersion = grunt.option( 'ver' );
 
-        var newVersion = grunt.option('ver');
+		if ( newVersion ) {
+			newVersion = newVersion ? newVersion : 'patch';
 
-        if (newVersion) {
-            newVersion = newVersion ? newVersion : 'patch';
-
-            grunt.task.run('bumpup:' + newVersion);
-            grunt.task.run('replace');
-        }
-    });
+			grunt.task.run( 'bumpup:' + newVersion );
+			grunt.task.run( 'replace' );
+		}
+	} );
 
 	// i18n
-    grunt.registerTask('i18n', ['addtextdomain', 'makepot']);
+	grunt.registerTask( 'i18n', [ 'addtextdomain', 'makepot' ] );
 
 	// Grunt release - Create installable package of the local files
 	grunt.registerTask( 'release', [
