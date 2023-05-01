@@ -105,11 +105,14 @@ function enqueue_editor_scripts(): void {
 
 	wp_enqueue_script( SWT_SLUG . '-editor' );
 
-	wp_localize_script(
-		SWT_SLUG . '-editor',
-		SWT_LOC,
-		localize_editor_script()
-	);
+	$editor_script_data = localize_editor_script();
+	if ( is_array( $editor_script_data ) ) {
+		wp_localize_script(
+			SWT_SLUG . '-editor',
+			SWT_LOC,
+			$editor_script_data
+		);
+	}
 }
 
 add_action( 'enqueue_block_editor_assets', SWT_NS . 'enqueue_editor_scripts' );

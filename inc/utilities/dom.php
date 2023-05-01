@@ -77,7 +77,9 @@ function dom( string $html ): DOMDocument {
 		$html
 	);
 
-	$dom->loadHTML( $html, $options );
+	if ( ! empty( $html ) ) {
+		$dom->loadHTML( $html, $options );
+	}
 	$dom->formatOutput = true;
 
 	libxml_clear_errors();
@@ -133,10 +135,10 @@ function dom_element( $node ) {
  *
  * @since 0.0.1
  *
- * @param DOMElement $element DOM Element.
+ * @param \DOMElement $element DOM Element.
  * @param string     $name    Tag name.
  *
- * @return DOMElement
+ * @return \DOMElement
  */
 function change_tag_name( DOMElement $element, string $name ): DOMElement {
 	if ( ! $element->ownerDocument ) {
@@ -160,7 +162,9 @@ function change_tag_name( DOMElement $element, string $name ): DOMElement {
 		$attr_name  = $attr_node->nodeName;
 		$attr_value = $attr_node->nodeValue;
 
-		$new_element->setAttribute( $attr_name, $attr_value );
+		if ( $attr_value !== null ) {
+			$new_element->setAttribute( $attr_name, $attr_value );
+		}
 	}
 
 	if ( $element->parentNode ) {
@@ -175,7 +179,7 @@ function change_tag_name( DOMElement $element, string $name ): DOMElement {
  *
  * @since 0.0.1
  *
- * @param DOMDocument|DOMElement $dom        DOM document.
+ * @param \DOMDocument|\DOMElement $dom        DOM document.
  * @param string                 $class_name class name.
  * @param string                 $tag        tag name.
  *

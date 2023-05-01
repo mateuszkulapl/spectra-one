@@ -1,10 +1,13 @@
 <?xml version="1.0"?>
-<ruleset name="">
+<ruleset name="WordPress Coding Standards for Spectra One">
     <description>Spectra One ruleset</description>
+	<rule ref="PHPCompatibility">
+	 	<exclude name="WordPress.WhiteSpace.DisallowInlineTabs.NonIndentTabsUsed" />
+	</rule>
     <rule ref="WordPress-VIP-Go">
         <exclude name="WordPressVIPMinimum.Security.Mustache.OutputNotation"/>
     </rule>
-		<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array" value="swt"/>
 		</properties>
@@ -34,6 +37,7 @@
 
     <file>.</file>
     <exclude-pattern>node_modules/*</exclude-pattern>
+    <exclude-pattern>psalm/*</exclude-pattern>
     <exclude-pattern>vendor/*</exclude-pattern>
     <exclude-pattern>build/*</exclude-pattern>
     <exclude-pattern>Gruntfile.js</exclude-pattern>
@@ -42,4 +46,8 @@
     <exclude-pattern>assets/*</exclude-pattern>
     <exclude-pattern>patterns/*</exclude-pattern>
     <exclude-pattern>inc/utilities/dom.php</exclude-pattern>
+
+	<rule ref="Internal.Exception">
+		<severity>0</severity>
+	</rule>
 </ruleset>

@@ -85,6 +85,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 1.5em;
+  padding-right: 0;
 }
 
 .edit-post-visual-editor__post-title-wrapper .title-visibility {

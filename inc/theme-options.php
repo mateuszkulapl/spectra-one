@@ -41,7 +41,10 @@ function get_theme_custom_styles(): array {
 	);
 
 	$export_posts  = get_posts( $args );
-	$global_styles = isset( $export_posts[0]->post_content ) ? $export_posts[0]->post_content : '';
+	$global_styles = '';
+	if ( is_object( $export_posts[0] ) && isset( $export_posts[0]->post_content ) ) {
+		$global_styles = $export_posts[0]->post_content;
+	}
 
 	return json_decode( $global_styles, true );
 }
