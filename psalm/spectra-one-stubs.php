@@ -508,5 +508,4 @@ namespace {
      * Keywords: wide banner with button
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
-    const WP_PLUGIN_DIR = '';
 }
