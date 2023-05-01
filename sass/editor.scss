@@ -5,13 +5,16 @@
 // Minimal Style.
 
 .is-style-swt-search-minimal {
+
 	&.wp-block-search__button-inside {
+
 		.wp-block-search__button {
 			color: var(--wp--preset--color--heading);
 			background-color: var(--wp--preset--color--background);
 			border-radius: 0;
 			margin: 0;
-			padding: var(--wp--preset--spacing--xx-small)
+			padding:
+				var(--wp--preset--spacing--xx-small)
 				var(--wp--preset--spacing--xx-small);
 		}
 
@@ -37,6 +40,7 @@
 
 	&.wp-block-search__button-outside,
 	&.wp-block-search__no-button {
+
 		.wp-block-search__input {
 			border: 1px solid var(--wp--preset--color--outline);
 			border-radius: var(--wp--custom--border-radius--small);
@@ -51,6 +55,7 @@
 // Pill Style.
 
 .is-style-swt-post-terms-pill {
+
 	a {
 		padding: 6px 12px;
 		border-radius: var(--wp--custom--border-radius--full);
@@ -112,10 +117,7 @@ register_block_style not applying styles in the editor.
 --------------------------------------------------------------*/
 .edit-post-visual-editor__post-title-wrapper {
 	position: relative;
-	max-width: min(
-		calc(100dvw - var(--wp--preset--spacing--large, 2rem)),
-		764px
-	);
+	max-width: min(calc(100dvw - var(--wp--preset--spacing--large, 2rem)), 764px);
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
@@ -158,8 +160,16 @@ register_block_style not applying styles in the editor.
 		line-height: 26px;
 		margin-left: -1px;
 		display: flex;
-		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-			Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+		font-family:
+			-apple-system,
+			BlinkMacSystemFont,
+			"Segoe UI",
+			Roboto,
+			Oxygen-Sans,
+			Ubuntu,
+			Cantarell,
+			"Helvetica Neue",
+			sans-serif;
 		align-items: flex-start;
 		padding: 0 6px;
 		font-size: 12px;
@@ -175,6 +185,7 @@ register_block_style not applying styles in the editor.
 		box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
 
 		+ {
+
 			.title-visibility {
 				opacity: 1;
 				color: var(--wp-admin-theme-color);

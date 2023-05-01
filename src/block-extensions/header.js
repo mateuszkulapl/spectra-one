@@ -46,8 +46,8 @@ export const HeaderSettings = ( props ) => {
 						help={
 							SWTStickyHeader
 								? __(
-										'Transparent header option will be disabled on enabling this option.',
-										'spectra-one'
+									'Transparent header option will be disabled on enabling this option.',
+									'spectra-one'
 								  )
 								: ''
 						}
@@ -55,11 +55,11 @@ export const HeaderSettings = ( props ) => {
 						onChange={ ( val ) => {
 							return props.hasOwnProperty( 'setAttributes' )
 								? props.setAttributes( {
-										SWTStickyHeader: ! SWTStickyHeader,
+									SWTStickyHeader: ! SWTStickyHeader,
 								  } )
 								: props.setMetaFieldValue(
-										val,
-										'swt_meta_sticky_header'
+									val,
+									'swt_meta_sticky_header'
 								  );
 						} }
 					/>
@@ -68,15 +68,12 @@ export const HeaderSettings = ( props ) => {
 			{ ! SWTStickyHeader && (
 				<PanelRow>
 					<ToggleControl
-						label={ __(
-							'Enable Transparent Header',
-							'spectra-one'
-						) }
+						label={ __( 'Enable Transparent Header', 'spectra-one' ) }
 						help={
 							SWTTransparentHeader
 								? __(
-										'Sticky header option will be disabled on enabling this option.',
-										'spectra-one'
+									'Sticky header option will be disabled on enabling this option.',
+									'spectra-one'
 								  )
 								: ''
 						}
@@ -84,12 +81,12 @@ export const HeaderSettings = ( props ) => {
 						onChange={ ( val ) => {
 							return props.hasOwnProperty( 'setAttributes' )
 								? props.setAttributes( {
-										SWTTransparentHeader:
+									SWTTransparentHeader:
 											! SWTTransparentHeader,
 								  } )
 								: props.setMetaFieldValue(
-										val,
-										'swt_meta_transparent_header'
+									val,
+									'swt_meta_transparent_header'
 								  );
 						} }
 					/>
