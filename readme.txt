@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 6.2
-Stable tag: 0.0.4
+Stable tag: 0.0.5
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -89,13 +89,15 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 == Changelog ==
 
-= 0.0.5  
-* Update: Theme setup ( .nvmrc, lint:css and list:js ) 
-* Fix: Cannot click on placeholder to go to single post / page on archive pages.
-* Fix: Jetform block not loading inside editor.
+= 0.0.6  
 * Fix: Footer alignment when less content is added on page / post.
 
-= 0.0.4 - April 14, 2023 =
+= 0.0.5 = 
+* Fix: Placeholder not linked with single post / page on archive pages.
+* Fix: JetFormBuilder block not loading inside editor.
+* Fix: Category overlapping when pill block style is enabled.
+
+= 0.0.4 =
 * New: Support for transparent and sticky header at meta level for post and page.
 * New: Added new global style variations.
 * New: Support for featured image on single post.
@@ -113,7 +115,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Remove: Full width template.
 * Remove: Old patterns used on front page.
 
-= 0.0.3 - March 24, 2023 =
+= 0.0.3 =
 * New: Introduced new block style class "Wide thin line" for separator block.
 * New: Added pot file support.
 * Update: Search block style.
@@ -130,7 +132,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Fix: Header cutting off when transparent and sticky header is used when user is logged in.
 * Fix: Spectra plugin blocks not inherit width from contentSize.
 
-= 0.0.2 - March 18, 2023 =
+= 0.0.2 =
 * New: Secondary block style for button block.
 * Update: Theme screenshot.
 * Update: Hero banner pattern.
@@ -140,5 +142,5 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Fix: Button text color on dark mode.
 * Fix: Could not set front page using pages.
 
-= 0.0.1 - March 10, 2023 =
+= 0.0.1 =
 * Initial release.
