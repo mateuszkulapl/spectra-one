@@ -1,11 +1,11 @@
-const defaultConfig     = require( '@wordpress/scripts/config/webpack.config' );
+const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
 
-module.exports = env => {
+module.exports = () => {
 	return {
 		...defaultConfig,
 
 		module: {
-			...defaultConfig.module
+			...defaultConfig.module,
 		},
 
 		entry: {
@@ -14,9 +14,6 @@ module.exports = env => {
 			welcome_notice: './src/admin/welcome-notice.js',
 		},
 
-		plugins: [
-			...defaultConfig.plugins,
-		]
+		plugins: [ ...defaultConfig.plugins ],
 	};
 };
-

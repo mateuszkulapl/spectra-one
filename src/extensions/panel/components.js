@@ -7,11 +7,9 @@ export const SwtComponents = ( props ) => {
 	const disableSections = Object.entries( spectraOne.disable_sections ).map(
 		( [ key, value ] ) => {
 			const sectionValue =
-				props?.meta[ value.key ] && props.meta[ value.key ]
-					? true
-					: false;
+				props?.meta[ value.key ] && props.meta[ value.key ] ? true : false;
 			return (
-				<PanelRow>
+				<PanelRow key={ key }>
 					<ToggleControl
 						key={ key }
 						label={ value.label }
