@@ -33,10 +33,16 @@ input[type=search]::-webkit-search-results-decoration {
 
 .wp-site-blocks {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .site-content {
   flex-grow: 1;
+}
+
+.wp-site-blocks footer {
+  margin-block-start: auto;
+  margin-top: auto;
 }
