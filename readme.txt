@@ -89,6 +89,9 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 == Changelog ==
 
+= 0.0.6  
+* Fix: Footer alignment when less content is added on page / post.
+
 = 0.0.5 = 
 * Fix: Placeholder not linked with single post / page on archive pages.
 * Fix: JetFormBuilder block not loading inside editor.
