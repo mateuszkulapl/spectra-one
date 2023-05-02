@@ -241,6 +241,11 @@
 }
 
 /*--------------------------------------------------------------
+# Note
+Remove all above code after wordpress fixes issue with
+register_block_style not applying styles in the editor.
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Editor dynamic duotone support
 --------------------------------------------------------------*/
 .swt-duotone-primary {
@@ -260,8 +265,8 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 1.5em;
+  padding-right: 0;
 }
-
 .edit-post-visual-editor__post-title-wrapper .title-visibility {
   cursor: pointer;
   font-size: 18px;
@@ -277,16 +282,14 @@
   box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
   transition: all 0.2s;
 }
-
-.edit-post-visual-editor__post-title-wrapper .title-visibility:before {
+.edit-post-visual-editor__post-title-wrapper .title-visibility::before {
   width: 100%;
   height: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-
-.edit-post-visual-editor__post-title-wrapper .title-visibility:after {
+.edit-post-visual-editor__post-title-wrapper .title-visibility::after {
   content: attr(data-tooltip);
   white-space: nowrap;
   border-radius: 2px;
@@ -305,7 +308,6 @@
   font-size: 12px;
   transition: all 0.2s;
 }
-
 .edit-post-visual-editor__post-title-wrapper h1.editor-post-title__input {
   padding: 10px 6px;
   transition: all 0.2s;
@@ -324,7 +326,6 @@
 .edit-post-visual-editor__post-title-wrapper .swt-show-editor-title-outline {
   box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
 }
-
 .edit-post-visual-editor__post-title-wrapper.invisible {
   opacity: 0.5;
 }

@@ -135,10 +135,10 @@ function dom_element( $node ) {
  *
  * @since 0.0.1
  *
- * @param DOMElement $element DOM Element.
+ * @param \DOMElement $element DOM Element.
  * @param string     $name    Tag name.
  *
- * @return DOMElement
+ * @return \DOMElement
  */
 function change_tag_name( DOMElement $element, string $name ): DOMElement {
 	if ( ! $element->ownerDocument ) {

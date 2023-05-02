@@ -1,9 +1,22 @@
-node_modules/
-wp/
-wp-content/
+# Dependency directories
 vendor/
+node_modules/
+
+# Logs
+*.log
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Other
 *.zip
-*.lock
-*cache
-package-lock.json
-composer.lock
+
+# Exclude OS specific files
+.DS_Store
+inc/.DS_Store

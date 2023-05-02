@@ -1,7 +1,7 @@
 <?php
 
 namespace Swt {
-    const SWT_VER = '0.0.4';
+    const SWT_VER = '0.0.5';
     const SWT_SLUG = 'spectra-one';
     const SWT_NAME = 'Spectra One';
     const SWT_PFX = 'swt';
@@ -508,5 +508,4 @@ namespace {
      * Keywords: wide banner with button
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
-    const WP_PLUGIN_DIR = '';
 }

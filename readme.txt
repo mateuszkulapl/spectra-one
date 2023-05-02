@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 6.2
-Stable tag: 0.0.4
+Stable tag: 0.0.5
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -89,15 +89,18 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 == Changelog ==
 
-= 0.0.5  
+= 0.0.6  
 * New: Added sidebar support for page and post.
 * New: Simple image right block styling for Latest post block.
 * New: Minimal block styling for Category list and Archives blocks.
 * New: Simple block styling for Latest comments block.
 * New: Pill block styling for Tag cloud block.
-* Update: Theme setup ( .nvmrc, lint:css and list:js ) 
-* Fix: Cannot click on placeholder to go to single post / page on archive pages.
-* Fix: Jetform block not loading inside editor.
+* Fix: Footer alignment when less content is added on page / post.
+
+= 0.0.5 = 
+* Fix: Placeholder not linked with single post / page on archive pages.
+* Fix: JetFormBuilder block not loading inside editor.
+* Fix: Category overlapping when pill block style is enabled.
 
 = 0.0.4 =
 * New: Support for transparent and sticky header at meta level for post and page.
