@@ -1,0 +1,70 @@
+<?php
+/**
+ * Admin bar config
+ *
+ * @package Spectra One
+ * @author Brainstorm Force
+ * @since 0.0.6
+ */
+
+declare(strict_types=1);
+
+namespace Swt;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+add_filter( 'admin_bar_menu', SWT_NS . 'add_admin_menu', 90, 1 );
+
+/**
+ * Add Admin menu item.
+ *
+ * @param object WP_Admin_Bar $admin_bar Admin bar.
+ * @since 0.0.6
+ * @return void
+ */
+function add_admin_menu( $admin_bar ) {
+	
+	if ( is_admin() ) {
+		return;
+	}
+
+	// Check if current user can have edit access.
+	if ( ! current_user_can( 'edit_posts' ) ) {
+		return;
+	}
+
+	global $_wp_current_template_content;
+	$id                  = '';
+	$get_block_templates = get_block_templates();
+	$template_path       = get_post_meta( get_the_ID(), '_wp_page_template', true );
+
+	foreach ( $get_block_templates as $single ) {
+
+		if ( $template_path && isset( $single->slug ) && $single->slug === $template_path ) {
+			$id = $single->id;
+			break;
+		}
+
+		if ( isset( $single->content ) && $single->content === $_wp_current_template_content ) {
+			$id = $single->id;
+			break;
+		}
+	}
+
+	$admin_bar->add_menu(
+		array(
+			'id'     => 'swt-edit-template',
+			'parent' => null,
+			'group'  => null,
+			'title'  => 'Edit template',
+			'href'   => admin_url( 'site-editor.php?postType=wp_template&postId=' . $id . '' ),
+			'meta'   => array(
+				'title' => __( 'Edit template', 'spectra' ), // This title will show on hover.
+			),
+		) 
+	);
+
+	return $admin_bar;
+}
