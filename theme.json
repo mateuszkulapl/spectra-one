@@ -7,22 +7,22 @@
       "palette": [
         {
           "name": "Primary",
-          "color": "#6366F1",
+          "color": "#6431F6",
           "slug": "primary"
         },
         {
           "name": "Secondary",
-          "color": "#6B6EFE",
+          "color": "#7345F7",
           "slug": "secondary"
         },
         {
           "name": "Tertiary",
-          "color": "#F1FBFE",
+          "color": "#F6EBFE",
           "slug": "tertiary"
         },
         {
           "name": "Quaternary",
-          "color": "#FCFAF2",
+          "color": "#FFFBEB",
           "slug": "quaternary"
         },
         {
@@ -37,7 +37,7 @@
         },
         {
           "name": "Surface",
-          "color": "#F5F7FA",
+          "color": "#F8FAFC",
           "slug": "surface"
         },
         {
@@ -47,7 +47,7 @@
         },
         {
           "name": "Outline",
-          "color": "#E5E7EB",
+          "color": "#E6E9EF",
           "slug": "outline"
         },
         {

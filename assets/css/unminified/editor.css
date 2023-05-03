@@ -16,6 +16,7 @@
   padding: 4px;
   border: 1px solid var(--wp--preset--color--outline);
   border-radius: var(--wp--custom--border-radius--small);
+  background-color: var(--wp--preset--color--background);
 }
 .is-style-swt-search-minimal .wp-block-search__input {
   padding-left: var(--wp--preset--spacing--xx-small);

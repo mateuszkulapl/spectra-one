@@ -330,3 +330,17 @@ function css_string_to_array( string $css ): array {
 
 
 
+
+/**
+ * Check if page title is enabled or disabled.
+ *
+ * @since 0.0.6
+ * @param int $post_id Post id.
+ * @return string
+ */
+function is_page_title( int $post_id = 0 ): bool {
+	$get_check_title = get_post_meta( $post_id, 'swt_meta_site_title_display', true );
+	$check_meta      = $get_check_title ? false : true;
+
+	return ! is_admin() && is_singular() && boolval( $check_meta ) && ! in_the_loop();
+}

@@ -45,7 +45,7 @@ const HeaderSettings = props => {
     help: SWTStickyHeader ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Transparent header option will be disabled on enabling this option.', 'spectra-one') : '',
     checked: SWTStickyHeader,
     onChange: val => {
-      props.hasOwnProperty('setAttributes') ? props.setAttributes({
+      return props.hasOwnProperty('setAttributes') ? props.setAttributes({
         SWTStickyHeader: !SWTStickyHeader
       }) : props.setMetaFieldValue(val, 'swt_meta_sticky_header');
     }
@@ -54,7 +54,7 @@ const HeaderSettings = props => {
     help: SWTTransparentHeader ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Sticky header option will be disabled on enabling this option.', 'spectra-one') : '',
     checked: SWTTransparentHeader,
     onChange: val => {
-      props.hasOwnProperty('setAttributes') ? props.setAttributes({
+      return props.hasOwnProperty('setAttributes') ? props.setAttributes({
         SWTTransparentHeader: !SWTTransparentHeader
       }) : props.setMetaFieldValue(val, 'swt_meta_transparent_header');
     }
@@ -66,6 +66,7 @@ const Header = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigherOr
       attributes,
       name
     } = props;
+    console.log(props);
     if (attributes?.tagName && 'header' === attributes.tagName && 'core/template-part' === name) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
         title: "Header Settings",
@@ -139,7 +140,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // if not excluded then it causes render error as adding custom attributes to these blocks are prohibited.
-const excludeBlock = ["core/archives", "core/calendar", "core/latest-comments", "core/tag-cloud", "core/rss"];
+const excludeBlock = ['core/archives', 'core/calendar', 'core/latest-comments', 'core/tag-cloud', 'core/rss'];
 const Responsive = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigherOrderComponent)(BlockEdit => {
   return props => {
     const {
@@ -153,53 +154,52 @@ const Responsive = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigh
       SWTHideTab,
       SWTHideMob
     } = attributes;
-    if (name && name.includes("core/") && !excludeBlock.includes(name)) {
+    if (name && name.includes('core/') && !excludeBlock.includes(name)) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
         title: "Responsive Settings",
         initialOpen: true
       }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Hide Desktop", "spectra-one"),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Hide Desktop', 'spectra-one'),
         checked: SWTHideDesktop,
         onChange: () => setAttributes({
           SWTHideDesktop: !SWTHideDesktop
         })
       })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Hide Tablet", "spectra-one"),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Hide Tablet', 'spectra-one'),
         checked: SWTHideTab,
         onChange: () => setAttributes({
           SWTHideTab: !SWTHideTab
         })
       })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Hide Mobile", "spectra-one"),
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Hide Mobile', 'spectra-one'),
         checked: SWTHideMob,
         onChange: () => setAttributes({
           SWTHideMob: !SWTHideMob
         })
       }))))));
-    } else {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props));
     }
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props));
   };
-}, "Responsive");
-(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("editor.BlockEdit", "swt/responsive", Responsive);
+}, 'Responsive');
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('editor.BlockEdit', 'swt/responsive', Responsive);
 function ResponsiveAttributes(settings) {
   const {
     name,
     attributes
   } = settings;
-  if (name && name.includes("core/") && !excludeBlock.includes(name)) {
+  if (name && name.includes('core/') && !excludeBlock.includes(name)) {
     if (attributes) {
       settings.attributes = Object.assign(attributes, {
         SWTHideDesktop: {
-          type: "boolean",
+          type: 'boolean',
           default: false
         },
         SWTHideTab: {
-          type: "boolean",
+          type: 'boolean',
           default: false
         },
         SWTHideMob: {
-          type: "boolean",
+          type: 'boolean',
           default: false
         }
       });
@@ -207,7 +207,7 @@ function ResponsiveAttributes(settings) {
   }
   return settings;
 }
-(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)("blocks.registerBlockType", "swt/responsive-attributes", ResponsiveAttributes);
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('blocks.registerBlockType', 'swt/responsive-attributes', ResponsiveAttributes);
 
 /***/ }),
 
@@ -252,11 +252,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _icons_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icons.js */ "./src/components/icons.js");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _plugin_helpers_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./plugin-helpers.js */ "./src/components/plugin-helpers.js");
-
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _plugin_helpers_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./plugin-helpers.js */ "./src/components/plugin-helpers.js");
 
 
 
@@ -312,7 +310,7 @@ const SwtPluginInstallNotice = () => {
   // Function to activate plugin
   const activatePlugin = async pluginInitSlug => {
     // Setting up post request to activate plugin
-    const reqResponse = await (0,_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_5__.activatePluginUrl)(pluginInitSlug);
+    const reqResponse = await (0,_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_4__.activatePluginUrl)(pluginInitSlug);
     if (true === reqResponse.success) {
       // Shows the users that the plugin is successfully installed and reloads the page
       setButtonState(false);
@@ -348,7 +346,7 @@ const SwtPluginInstallNotice = () => {
       } else {
         try {
           // Gets the plugin files if not downloaded
-          await (0,_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_5__.installPlugin)(slug);
+          await (0,_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_4__.installPlugin)(slug);
 
           // Activates the set plugin
           activatePlugin(pluginInit);
@@ -363,14 +361,14 @@ const SwtPluginInstallNotice = () => {
     }
   };
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Spectra plugin', 'spectra-one'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Spectra plugin', 'spectra-one'),
     initialOpen: true
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Power-up your website with advanced and powerful blocks that help you build websites in no time!', 'spectra-one')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Power-up your website with advanced and powerful blocks that help you build websites in no time!', 'spectra-one')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
     className: `swt-full-width-btn ${true === buttonState ? 'is-busy ' : ''} `,
     onClick: () => handleSubmit(pluginSlug, activationUrl),
     isPrimary: true,
     "aria-disabled": disableButton
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)(buttonText, 'spectra-one')));
+  }, buttonText));
 };
 /* harmony default export */ __webpack_exports__["default"] = (SwtPluginInstallNotice);
 
@@ -567,7 +565,9 @@ const SwtComponents = props => {
   const disableSections = Object.entries(spectraOne.disable_sections).map(_ref => {
     let [key, value] = _ref;
     const sectionValue = props?.meta[value.key] && props.meta[value.key] ? true : false;
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, {
+      key: key
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
       key: key,
       label: value.label,
       checked: sectionValue,
