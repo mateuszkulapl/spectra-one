@@ -90,6 +90,11 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 == Changelog ==
 
 = 0.0.6  
+* New: Added sidebar support for page and post.
+* New: Simple image right block styling for Latest post block.
+* New: Minimal block styling for Category list and Archives blocks.
+* New: Simple block styling for Latest comments block.
+* New: Pill block styling for Tag cloud block.
 * Fix: Footer alignment when less content is added on page / post.
 
 = 0.0.5 = 

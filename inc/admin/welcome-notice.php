@@ -131,7 +131,7 @@ function welcome_notice_display_conditions(): bool {
 	}
 
 	// Check if welcome notice was closed.
-	if ( get_option( 'swt-dismiss-welcome-notice', 'no' ) === 'yes' ) {
+	if ( 'yes' === get_option( 'swt-dismiss-welcome-notice', 'no' ) ) {
 		return false;
 	}
 
