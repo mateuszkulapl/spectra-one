@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since 0.0.5
+ * @since 0.0.6
  */
 
 declare( strict_types=1 );
@@ -20,7 +20,7 @@ add_filter( 'render_block_core/latest-posts', SWT_NS . 'render_latest_post_block
 /**
  * Modifies front end HTML output of block.
  *
- * @since 0.0.5
+ * @since 0.0.6
  *
  * @param string $html  Block HTML.
  * @param array  $block Block data.
