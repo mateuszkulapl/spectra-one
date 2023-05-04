@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-add_filter( 'block_editor_settings_all', SWT_NS . 'icomoon_block_editor_css', ); 
+add_filter( 'block_editor_settings_all', SWT_NS . 'icomoon_block_editor_css', 10, 2 ); 
 
 add_filter( 'render_block', SWT_NS . 'render_icomoon', 10, 2 );
 
@@ -58,7 +58,7 @@ function icomoon_inline_css( string $css ): string {
  * @param object $block_editor_context Inline CSS.
  * @return array
  */
-function icomoon_block_editor_css( array $editor_settings, object  $block_editor_context ):array {
+function icomoon_block_editor_css( array $editor_settings, object $block_editor_context ):array {
 
 	$editor_settings['styles'][] = array( 'css' => icomoon_import_fonts() );
 
