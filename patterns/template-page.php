@@ -3,7 +3,6 @@
  * Title: Template page
  * Slug: spectra-one/template-page
  * Categories: template
- * Inserter: false
  */
 ?>
 

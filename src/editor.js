@@ -4,6 +4,7 @@ import { SwtComponents } from './extensions/panel/components.js';
 import { addFilter } from '@wordpress/hooks';
 import './extensions/editor/index.js';
 import './block-extensions/index.js';
+import './blocks/index.js';
 
 if ( spectraOne.is_spectra_plugin ) {
 	addFilter(
