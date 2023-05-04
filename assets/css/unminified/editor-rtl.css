@@ -58,6 +58,15 @@
   background-color: var(--wp--preset--color--surface);
 }
 
+.is-style-swt-button-inverse .wp-element-button {
+  color: #1F2937;
+  background-color: #fff;
+}
+.is-style-swt-button-inverse .wp-element-button:hover {
+  color: #1F2937;
+  background-color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Separator Block
 --------------------------------------------------------------*/

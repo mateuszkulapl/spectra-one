@@ -33,3 +33,22 @@ register_block_style(
 		',
 	)
 );
+
+register_block_style(
+	'core/button',
+	array(
+		'name'         => SWT_PFX . '-button-inverse',
+		'label'        => __( 'Inverse', 'spectra-one' ),
+		'inline_style' => '
+			.is-style-' . SWT_PFX . '-button-inverse .wp-element-button {
+                color: #1F2937;
+				background-color: #fff;
+			}
+
+            .is-style-' . SWT_PFX . '-button-inverse .wp-element-button:hover {
+                color: #1F2937;
+				background-color: #fff;
+			}
+		',
+	)
+);

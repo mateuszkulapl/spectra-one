@@ -75,13 +75,29 @@
 # Button Block
 --------------------------------------------------------------*/
 
-.is-style-swt-button-secondary .wp-element-button {
-	color: var(--wp--preset--color--body);
-	background-color: var(--wp--preset--color--surface);
+.is-style-swt-button-secondary {
 
-	&:hover {
+	.wp-element-button {
 		color: var(--wp--preset--color--body);
 		background-color: var(--wp--preset--color--surface);
+
+		&:hover {
+			color: var(--wp--preset--color--body);
+			background-color: var(--wp--preset--color--surface);
+		}
+	}
+}
+
+.is-style-swt-button-inverse {
+
+	.wp-element-button { /* stylelint-disable-line no-descending-specificity */
+		color: #1f2937;
+		background-color: #fff;
+
+		&:hover {
+			color: #1f2937;
+			background-color: #fff;
+		}
 	}
 }
 
@@ -310,6 +326,7 @@
 		margin-bottom: 5px;
 	}
 }
+
 
 /*--------------------------------------------------------------
 # Note

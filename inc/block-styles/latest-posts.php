@@ -21,7 +21,7 @@ register_block_style(
 	'core/latest-posts',
 	array(
 		'name'         => SWT_PFX . '-latest-posts-simple',
-		'label'        => __( 'Simple image right', 'spectra-one' ),
+		'label'        => __( 'Simple', 'spectra-one' ),
 		'inline_style' => '
             ' . $swt_parent_class . ' {
                 color: var(--wp--preset--color--neutral);
