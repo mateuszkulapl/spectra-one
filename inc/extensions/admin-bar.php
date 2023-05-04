@@ -20,11 +20,11 @@ add_filter( 'admin_bar_menu', SWT_NS . 'add_admin_menu', 90, 1 );
 /**
  * Add Admin menu item.
  *
- * @param object WP_Admin_Bar $admin_bar Admin bar.
+ * @param object \WP_Admin_Bar $admin_bar Admin bar.
  * @since 0.0.6
  * @return void
  */
-function add_admin_menu( $admin_bar ) {
+function add_admin_menu( \WP_Admin_Bar $admin_bar ):void {
 	
 	if ( is_admin() ) {
 		return;
@@ -58,13 +58,11 @@ function add_admin_menu( $admin_bar ) {
 			'id'     => 'swt-edit-template',
 			'parent' => null,
 			'group'  => null,
-			'title'  => 'Edit template',
+			'title'  => '<span class="ab-icon dashicons-edit" style="top:2px"></span>' . __( 'Edit template', 'spectra-one' ),
 			'href'   => admin_url( 'site-editor.php?postType=wp_template&postId=' . $id . '' ),
 			'meta'   => array(
-				'title' => __( 'Edit template', 'spectra' ), // This title will show on hover.
+				'title' => __( 'Edit template', 'spectra-one' ), // This title will show on hover.
 			),
 		) 
 	);
-
-	return $admin_bar;
 }
