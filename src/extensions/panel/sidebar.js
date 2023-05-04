@@ -35,8 +35,7 @@ const SwtSidebar = ( props ) => {
 
 export default compose(
 	withSelect( ( select ) => {
-		const postMeta =
-			select( 'core/editor' ).getEditedPostAttribute( 'meta' );
+		const postMeta = select( 'core/editor' ).getEditedPostAttribute( 'meta' );
 		const oldPostMeta =
 			select( 'core/editor' ).getCurrentPostAttribute( 'meta' );
 		return {

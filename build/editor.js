@@ -153,38 +153,42 @@ const Responsive = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigh
       SWTHideTab,
       SWTHideMob
     } = attributes;
-    if (name && (name.includes('uagb/') || excludeBlock.includes(name))) {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props));
+    if (name && name.includes('core/') && !excludeBlock.includes(name)) {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
+        title: "Responsive Settings",
+        initialOpen: true
+      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Hide Desktop', 'spectra-one'),
+        checked: SWTHideDesktop,
+        onChange: () => setAttributes({
+          SWTHideDesktop: !SWTHideDesktop
+        })
+      })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Hide Tablet', 'spectra-one'),
+        checked: SWTHideTab,
+        onChange: () => setAttributes({
+          SWTHideTab: !SWTHideTab
+        })
+      })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Hide Mobile', 'spectra-one'),
+        checked: SWTHideMob,
+        onChange: () => setAttributes({
+          SWTHideMob: !SWTHideMob
+        })
+      }))))));
     }
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
-      title: "Responsive Settings",
-      initialOpen: true
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Hide Desktop', 'spectra-one'),
-      checked: SWTHideDesktop,
-      onChange: () => setAttributes({
-        SWTHideDesktop: !SWTHideDesktop
-      })
-    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Hide Tablet', 'spectra-one'),
-      checked: SWTHideTab,
-      onChange: () => setAttributes({
-        SWTHideTab: !SWTHideTab
-      })
-    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Hide Mobile', 'spectra-one'),
-      checked: SWTHideMob,
-      onChange: () => setAttributes({
-        SWTHideMob: !SWTHideMob
-      })
-    }))))));
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props));
   };
 }, 'Responsive');
 (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('editor.BlockEdit', 'swt/responsive', Responsive);
 function ResponsiveAttributes(settings) {
-  if (!excludeBlock.includes(settings.name)) {
-    if (settings.attributes) {
-      settings.attributes = Object.assign(settings.attributes, {
+  const {
+    name,
+    attributes
+  } = settings;
+  if (name && name.includes('core/') && !excludeBlock.includes(name)) {
+    if (attributes) {
+      settings.attributes = Object.assign(attributes, {
         SWTHideDesktop: {
           type: 'boolean',
           default: false
@@ -203,6 +207,58 @@ function ResponsiveAttributes(settings) {
   return settings;
 }
 (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('blocks.registerBlockType', 'swt/responsive-attributes', ResponsiveAttributes);
+
+/***/ }),
+
+/***/ "./src/blocks/index.js":
+/*!*****************************!*\
+  !*** ./src/blocks/index.js ***!
+  \*****************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _latest_post_list_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./latest-post-list.js */ "./src/blocks/latest-post-list.js");
+
+
+/***/ }),
+
+/***/ "./src/blocks/latest-post-list.js":
+/*!****************************************!*\
+  !*** ./src/blocks/latest-post-list.js ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/compose */ "@wordpress/compose");
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/hooks */ "@wordpress/hooks");
+/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+const latestPostList = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createHigherOrderComponent)(BlockListBlock => {
+  return props => {
+    const {
+      name,
+      attributes
+    } = props;
+    if (name !== 'core/latest-posts') {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockListBlock, props);
+    }
+    const {
+      displayFeaturedImage
+    } = attributes;
+    const customClass = displayFeaturedImage ? 'swt-has-featured-image' : '';
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockListBlock, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+      className: customClass
+    }));
+  };
+}, 'latestPostList');
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('editor.BlockListBlock', 'swt/latest-post-list', latestPostList);
 
 /***/ }),
 
@@ -257,7 +313,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-console.log(_icons_js__WEBPACK_IMPORTED_MODULE_3__["default"]);
 const SwtPluginInstallNotice = () => {
   const {
     activationUrl,
@@ -859,6 +914,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _extensions_editor_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./extensions/editor/index.js */ "./src/extensions/editor/index.js");
 /* harmony import */ var _block_extensions_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./block-extensions/index.js */ "./src/block-extensions/index.js");
+/* harmony import */ var _blocks_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/index.js */ "./src/blocks/index.js");
+
 
 
 

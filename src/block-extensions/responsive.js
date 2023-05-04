@@ -24,66 +24,62 @@ const Responsive = createHigherOrderComponent( ( BlockEdit ) => {
 		// Adding compatibility with spectra plugin. So the slugs are same as the plugin.
 		const { SWTHideDesktop, SWTHideTab, SWTHideMob } = attributes;
 
-		if (
-			name &&
-			( name.includes( 'uagb/' ) || excludeBlock.includes( name ) )
-		) {
+		if ( name && name.includes( 'core/' ) && ! excludeBlock.includes( name ) ) {
 			return (
 				<>
 					<BlockEdit { ...props } />
+					<InspectorControls>
+						<Panel>
+							<PanelBody
+								title="Responsive Settings"
+								initialOpen={ true }
+							>
+								<PanelRow>
+									<ToggleControl
+										label={ __(
+											'Hide Desktop',
+											'spectra-one'
+										) }
+										checked={ SWTHideDesktop }
+										onChange={ () =>
+											setAttributes( {
+												SWTHideDesktop: ! SWTHideDesktop,
+											} )
+										}
+									/>
+								</PanelRow>
+
+								<PanelRow>
+									<ToggleControl
+										label={ __( 'Hide Tablet', 'spectra-one' ) }
+										checked={ SWTHideTab }
+										onChange={ () =>
+											setAttributes( {
+												SWTHideTab: ! SWTHideTab,
+											} )
+										}
+									/>
+								</PanelRow>
+								<PanelRow>
+									<ToggleControl
+										label={ __( 'Hide Mobile', 'spectra-one' ) }
+										checked={ SWTHideMob }
+										onChange={ () =>
+											setAttributes( {
+												SWTHideMob: ! SWTHideMob,
+											} )
+										}
+									/>
+								</PanelRow>
+							</PanelBody>
+						</Panel>
+					</InspectorControls>
 				</>
 			);
 		}
-
 		return (
 			<>
 				<BlockEdit { ...props } />
-				<InspectorControls>
-					<Panel>
-						<PanelBody
-							title="Responsive Settings"
-							initialOpen={ true }
-						>
-							<PanelRow>
-								<ToggleControl
-									label={ __(
-										'Hide Desktop',
-										'spectra-one'
-									) }
-									checked={ SWTHideDesktop }
-									onChange={ () =>
-										setAttributes( {
-											SWTHideDesktop: ! SWTHideDesktop,
-										} )
-									}
-								/>
-							</PanelRow>
-
-							<PanelRow>
-								<ToggleControl
-									label={ __( 'Hide Tablet', 'spectra-one' ) }
-									checked={ SWTHideTab }
-									onChange={ () =>
-										setAttributes( {
-											SWTHideTab: ! SWTHideTab,
-										} )
-									}
-								/>
-							</PanelRow>
-							<PanelRow>
-								<ToggleControl
-									label={ __( 'Hide Mobile', 'spectra-one' ) }
-									checked={ SWTHideMob }
-									onChange={ () =>
-										setAttributes( {
-											SWTHideMob: ! SWTHideMob,
-										} )
-									}
-								/>
-							</PanelRow>
-						</PanelBody>
-					</Panel>
-				</InspectorControls>
 			</>
 		);
 	};
@@ -92,9 +88,11 @@ const Responsive = createHigherOrderComponent( ( BlockEdit ) => {
 addFilter( 'editor.BlockEdit', 'swt/responsive', Responsive );
 
 function ResponsiveAttributes( settings ) {
-	if ( ! excludeBlock.includes( settings.name ) ) {
-		if ( settings.attributes ) {
-			settings.attributes = Object.assign( settings.attributes, {
+	const { name, attributes } = settings;
+
+	if ( name && name.includes( 'core/' ) && ! excludeBlock.includes( name ) ) {
+		if ( attributes ) {
+			settings.attributes = Object.assign( attributes, {
 				SWTHideDesktop: {
 					type: 'boolean',
 					default: false,

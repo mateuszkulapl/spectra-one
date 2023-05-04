@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*--------------------------------------------------------------
 # Search Block
 --------------------------------------------------------------*/
@@ -66,6 +67,186 @@
 }
 
 /*--------------------------------------------------------------
+# Archive Block
+--------------------------------------------------------------*/
+.is-style-swt-archives-minimal {
+  padding: 0;
+  list-style: none;
+}
+.is-style-swt-archives-minimal .cat-item {
+  font-size: var(--wp--preset--font-size--small);
+  margin-bottom: var(--wp--preset--spacing--xx-small);
+}
+.is-style-swt-archives-minimal .wp-block-archives-dropdown {
+  position: relative;
+}
+.is-style-swt-archives-minimal .wp-block-archives-dropdown select {
+  padding-left: var(--wp--preset--spacing--x-small);
+  padding-right: var(--wp--preset--spacing--large);
+  padding-top: var(--wp--preset--spacing--x-small);
+  padding-bottom: var(--wp--preset--spacing--x-small);
+  border: 1px solid var(--wp--preset--color--outline);
+  border-radius: var(--wp--custom--border-radius--small);
+  font-weight: var(--wp--custom--font-weight--regular);
+  font-size: var(--wp--preset--font-size--small);
+  color: var(--wp--preset--color--heading);
+  background-color: var(--wp--preset--color--background);
+  width: 100%;
+  height: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.is-style-swt-archives-minimal .wp-block-archives-dropdown::after {
+  content: "\e900";
+  position: absolute;
+  font-family: icomoon, sans-serif !important;
+  font-size: var(--wp--preset--font-size--medium);
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*--------------------------------------------------------------
+# Categories Block
+--------------------------------------------------------------*/
+.is-style-swt-categories-minimal {
+  padding: 0;
+  list-style: none;
+}
+.is-style-swt-categories-minimal .cat-item {
+  font-size: var(--wp--preset--font-size--small);
+  margin-bottom: var(--wp--preset--spacing--xx-small);
+}
+.is-style-swt-categories-minimal.wp-block-categories-dropdown {
+  position: relative;
+}
+.is-style-swt-categories-minimal.wp-block-categories-dropdown select {
+  padding-left: var(--wp--preset--spacing--x-small);
+  padding-right: var(--wp--preset--spacing--large);
+  padding-top: var(--wp--preset--spacing--x-small);
+  padding-bottom: var(--wp--preset--spacing--x-small);
+  border: 1px solid var(--wp--preset--color--outline);
+  border-radius: var(--wp--custom--border-radius--small);
+  font-weight: var(--wp--custom--font-weight--regular);
+  font-size: var(--wp--preset--font-size--small);
+  color: var(--wp--preset--color--heading);
+  background-color: var(--wp--preset--color--background);
+  width: 100%;
+  height: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.is-style-swt-categories-minimal.wp-block-categories-dropdown::after {
+  content: "\e900";
+  position: absolute;
+  font-family: icomoon, sans-serif !important;
+  font-size: var(--wp--preset--font-size--medium);
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*--------------------------------------------------------------
+# Latest comments
+--------------------------------------------------------------*/
+.is-style-swt-latest-comments-simple {
+  padding: 0;
+}
+.is-style-swt-latest-comments-simple .wp-block-latest-comments__comment-avatar {
+  width: 24px;
+  height: 24px;
+}
+.is-style-swt-latest-comments-simple .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta {
+  font-size: var(--wp--preset--font-size--small);
+  color: var(--wp--preset--color--neutral);
+  font-weight: var(--wp--custom--font-weight--regular);
+}
+.is-style-swt-latest-comments-simple .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date {
+  font-size: var(--wp--preset--font-size--x-small);
+  font-weight: var(--wp--custom--font-weight--regular);
+  margin-top: 0.36em;
+}
+.is-style-swt-latest-comments-simple .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-excerpt p {
+  font-size: var(--wp--preset--font-size--x-small);
+  font-weight: var(--wp--custom--font-weight--regular);
+}
+.is-style-swt-latest-comments-simple .has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta,
+.is-style-swt-latest-comments-simple .has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt {
+  margin-left: 35px;
+}
+
+/*--------------------------------------------------------------
+# Latest post
+--------------------------------------------------------------*/
+.is-style-swt-latest-posts-simple {
+  color: var(--wp--preset--color--neutral);
+}
+.is-style-swt-latest-posts-simple > li {
+  margin-bottom: var(--wp--preset--spacing--x-small);
+}
+.is-style-swt-latest-posts-simple.swt-has-featured-image > li {
+  padding-right: 75px;
+  position: relative;
+}
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__featured-image {
+  position: absolute;
+  right: 0;
+}
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__featured-image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 56px;
+  height: 56px;
+}
+.is-style-swt-latest-posts-simple a {
+  display: block;
+  color: var(--wp--preset--color--heading);
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: var(--wp--custom--font-weight--medium);
+}
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-author,
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-date {
+  display: inline-block;
+  font-size: var(--wp--preset--font-size--x-small);
+  font-weight: var(--wp--custom--font-weight--regular);
+}
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-author + time::before {
+  content: "·";
+  padding-right: 5px;
+  padding-left: 5px;
+  color: var(--wp--preset--color--neutral);
+}
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-excerpt {
+  font-size: var(--wp--preset--font-size--x-small);
+  font-weight: var(--wp--custom--font-weight--regular);
+  margin-top: 0.2em;
+}
+
+/*--------------------------------------------------------------
+# Tag cloud
+--------------------------------------------------------------*/
+.is-style-swt-tag-cloud-pill .tag-cloud-link {
+  font-size: var(--wp--preset--font-size--x-small);
+  color: var(--wp--preset--color--heading);
+  font-weight: var(--wp--custom--font-weight--regular);
+  border: 1px solid var(--wp--preset--color--outline);
+  border-radius: var(--wp--custom--border-radius--x-large);
+  padding: 2px 12px;
+  margin-bottom: 5px;
+}
+
+/*--------------------------------------------------------------
+# Note
+Remove all above code after wordpress fixes issue with
+register_block_style not applying styles in the editor.
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Editor dynamic duotone support
 --------------------------------------------------------------*/
 .swt-duotone-primary {
@@ -85,8 +266,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
+  padding-left: 0;
 }
-
 .edit-post-visual-editor__post-title-wrapper .title-visibility {
   cursor: pointer;
   font-size: 18px;
@@ -102,16 +283,14 @@
   box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
   transition: all 0.2s;
 }
-
-.edit-post-visual-editor__post-title-wrapper .title-visibility:before {
+.edit-post-visual-editor__post-title-wrapper .title-visibility::before {
   width: 100%;
   height: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-
-.edit-post-visual-editor__post-title-wrapper .title-visibility:after {
+.edit-post-visual-editor__post-title-wrapper .title-visibility::after {
   content: attr(data-tooltip);
   white-space: nowrap;
   border-radius: 2px;
@@ -130,7 +309,6 @@
   font-size: 12px;
   transition: all 0.2s;
 }
-
 .edit-post-visual-editor__post-title-wrapper h1.editor-post-title__input {
   padding: 10px 6px;
   transition: all 0.2s;
@@ -149,7 +327,6 @@
 .edit-post-visual-editor__post-title-wrapper .swt-show-editor-title-outline {
   box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
 }
-
 .edit-post-visual-editor__post-title-wrapper.invisible {
   opacity: 0.5;
 }

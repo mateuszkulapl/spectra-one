@@ -1,10 +1,7 @@
 import { useState } from 'react';
 import { Button, PanelBody } from '@wordpress/components';
-import SwtIcons from './icons.js';
 import { __ } from '@wordpress/i18n';
 import { activatePluginUrl, installPlugin } from './plugin-helpers.js';
-
-console.log(SwtIcons);
 
 const SwtPluginInstallNotice = () => {
 	const { activationUrl, pluginSlug, pluginStatus } = spectraOne;
@@ -79,10 +76,7 @@ const SwtPluginInstallNotice = () => {
 			setDisableButton( true );
 
 			// Checks if plugin is only installed and not activated
-			if (
-				pluginStatus !== 'activated' &&
-				pluginStatus === 'installed'
-			) {
+			if ( pluginStatus !== 'activated' && pluginStatus === 'installed' ) {
 				// Activates the set plugin
 				activatePlugin( pluginInit );
 			} else {
@@ -122,7 +116,7 @@ const SwtPluginInstallNotice = () => {
 				isPrimary={ true }
 				aria-disabled={ disableButton }
 			>
-				{ __( buttonText, 'spectra-one' ) }
+				{ buttonText }
 			</Button>
 		</PanelBody>
 	);
