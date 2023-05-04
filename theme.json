@@ -520,9 +520,26 @@
         "color": {
           "text": "var(--wp--preset--color--body)"
         }
+      },
+      "core/separator": {
+        "color": {
+          "background": "var(--wp--preset--color--outline)"
+        }
       }
     }
   },
+  "customTemplates": [
+    {
+			"name": "template-page-sidebar",
+			"title": "Page sidebar",
+			"postTypes": [ "page" ]
+    },
+    {
+			"name": "template-post-sidebar",
+			"title": "Post sidebar",
+			"postTypes": [ "post" ]
+    }
+  ],
   "templateParts": [
     {
       "name": "header",
@@ -533,6 +550,11 @@
       "name": "footer",
       "title": "Footer",
       "area": "footer"
+    },
+    {
+      "name": "sidebar",
+      "title": "Sidebar",
+      "area": "uncategorized"
     }
   ]
 }
