@@ -535,8 +535,8 @@
 			"postTypes": [ "page" ]
     },
     {
-			"name": "template-post-sidebar",
-			"title": "Post sidebar",
+			"name": "template-single-sidebar",
+			"title": "Single sidebar",
 			"postTypes": [ "post" ]
     }
   ],
