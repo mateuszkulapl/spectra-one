@@ -46,6 +46,11 @@
           "slug": "background"
         },
         {
+          "name": "Foreground",
+          "color": "#6431F7",
+          "slug": "foreground"
+        },
+        {
           "name": "Outline",
           "color": "#E6E9EF",
           "slug": "outline"
@@ -71,9 +76,16 @@
           "slug": "inherit"
         }
       ],
+      "gradients": [
+				{
+					"slug": "primary",
+					"gradient": "linear-gradient(286.83deg, #931CF0 -1.55%, #4F2CDD 100%);",
+					"name": "Primary"
+				}
+      ],
       "duotone": [
         {
-					"colors": [ "#6366F1", "#6366F1" ],
+					"colors": [ "#6431F6", "#6431F6" ],
 					"slug": "primary",
 					"name": "Primary"
 				},
