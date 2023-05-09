@@ -90,10 +90,10 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- wp:heading {"level":6,"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"heading","className":"wp-block-heading"} -->
-<h6 class="wp-block-heading has-heading-color has-text-color" style="margin-top:var(--wp--preset--spacing--small)"><?php esc_html_e( 'Endless customization', 'spectra-one' ); ?></h6>
+<h6 class="wp-block-heading has-heading-color has-text-color" style="margin-top:var(--wp--preset--spacing--small)"><?php esc_html_e( 'Great on any device', 'spectra-one' ); ?></h6>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Endless customization options and responsive design, plus great customer support. Highly recommend!', 'spectra-one' ); ?></p>
+<p><?php esc_html_e( 'I\'ve used a few different website builders over the years, and this one is by far the best. The responsive design ensures that my website looks great on any device.', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->

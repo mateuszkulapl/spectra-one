@@ -59,7 +59,7 @@ function render_welcome_notice(): void {
 
 	ob_start();
 
-	$banner_image = get_uri() . 'assets/image/spectra-plugin-banner.png';
+	$banner_image  = get_uri() . 'assets/image/spectra-plugin-banner.png';
 	$lean_more_url = 'https://wpspectra.com/';
 	?>
 
