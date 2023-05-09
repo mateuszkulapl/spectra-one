@@ -336,7 +336,7 @@ function css_string_to_array( string $css ): array {
  *
  * @since 0.0.6
  * @param int $post_id Post id.
- * @return string
+ * @return bool
  */
 function is_page_title( int $post_id = 0 ): bool {
 	$get_check_title = get_post_meta( $post_id, 'swt_meta_site_title_display', true );

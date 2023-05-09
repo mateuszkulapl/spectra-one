@@ -29,7 +29,7 @@ function remove_page_title( string $title, int $post_id = 0 ):string {
 		return $title;
 	}
 
-	if ( is_page_title( $post_id ) ) {
+	if ( is_page_title( $post_id ) ) {  /** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
 		return '';
 	}
 
