@@ -1,6 +1,6 @@
 <?php
 /**
- * Register Categories Block Styles.
+ * Register post terms block styles.
  *
  * @package Spectra One
  * @author Brainstorm Force
