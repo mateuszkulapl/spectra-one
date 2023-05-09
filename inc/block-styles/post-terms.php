@@ -21,7 +21,7 @@ register_block_style(
 		'name'         => SWT_PFX . '-post-terms-pill',
 		'label'        => __( 'Pill', 'spectra-one' ),
 		'inline_style' => '
-			.is-style-' . SWT_PFX . '-post-terms-pill a {
+			.wp-block-post-terms.is-style-' . SWT_PFX . '-post-terms-pill a {
 				padding: 6px 12px;
 				border-radius: var(--wp--custom--border-radius--full);
 				color: var(--wp--preset--color--body);
