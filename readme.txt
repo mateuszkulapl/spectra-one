@@ -102,6 +102,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Update: Header and Footer patterns.
 * Update: Global style variations.
 * Update: Default templates.
+* Update: Spectra plugin install banner UI.
 * Fix: Footer alignment when less content is added on page / post.
 
 = 0.0.5 = 

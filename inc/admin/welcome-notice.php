@@ -60,6 +60,7 @@ function render_welcome_notice(): void {
 	ob_start();
 
 	$banner_image = get_uri() . 'assets/image/spectra-plugin-banner.png';
+	$lean_more_url = 'https://wpspectra.com/';
 	?>
 
 	<div class="notice notice-info swt-welcome-notice">
@@ -84,11 +85,9 @@ function render_welcome_notice(): void {
 								?>
 							</span>
 						</button>
-						<button class="button button-primary button-hero">
-							<span class="text">
-								<?php esc_html_e( 'Learn More', 'spectra-one' ); ?>
-							</span>
-						</button>
+						<a href="<?php echo esc_url( $lean_more_url ); ?>" target="_blank" class="button button-primary button-hero">
+							<?php esc_html_e( 'Learn More', 'spectra-one' ); ?>
+						</a>
 					</div>
 				</div>
 			</div>
