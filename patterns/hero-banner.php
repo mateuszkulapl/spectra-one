@@ -10,12 +10,11 @@
 $get_url = trailingslashit(get_template_directory_uri());
 
 $images = [
-    $get_url . "assets/image/hero-gradient.svg",
     $get_url . "assets/image/hero-img.png"
 ];
 ?>
 
-<!-- wp:group {"align":"wide","style":{"color":{"gradient":"background:var(--wp--preset--gradient--primary)"},"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"wide","style":{"color":{"gradient":"var(--wp--preset--gradient--primary)"},"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide has-background" style="background:var(--wp--preset--gradient--primary);margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:0"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"letterSpacing":"-1px"},"spacing":{"margin":{"top":"var:preset|spacing|large"}}},"textColor":"white","className":"wp-block-heading"} -->
 <h1 class="wp-block-heading has-text-align-center has-white-color has-text-color" style="margin-top:var(--wp--preset--spacing--large);letter-spacing:-1px"><?php esc_html_e( 'Launch Your Website Today!', 'spectra-one' ); ?></h1>
 <!-- /wp:heading -->
@@ -31,6 +30,6 @@ $images = [
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 <!-- wp:image {"align":"center","id":1033,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="<?php echo esc_url( $images[1] ); ?>" alt="" class="wp-image-1033"/></figure>
+<figure class="wp-block-image aligncenter size-full"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-1033"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->

@@ -6,11 +6,11 @@
  * Block Types: core/template-part/header
  */
 
- $get_url = trailingslashit(get_template_directory_uri());
+$get_url = trailingslashit(get_template_directory_uri());
 
- $images = [
-     $get_url . "assets/image/logo-white.svg",
- ];
+$images = [
+    $get_url . "assets/image/logo-white.svg",
+];
 
 ?>
 <!-- wp:group {"backgroundColor":"primary","layout":{"type":"constrained"}} -->
