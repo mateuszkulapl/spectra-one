@@ -1,6 +1,6 @@
 $text-color: #1f2937;
 $text-color-alt: #fff;
-$description : #4B5563;
+$description : #4b5563;
 $primary-color: #4f46e5;
 $disable-color: #a7aaad;
 $mobile: 786px;
@@ -64,11 +64,12 @@ $mobile: 786px;
 
 			.notice-actions {
 
-				button,a {
+				button,
+				a {
 					font-weight: 500;
 					font-size: 16px;
 					line-height: 24px;
-					padding: 10px 16px;			
+					padding: 10px 16px;
 					border-radius: 6px;
 					margin-top: 5px;
 					margin-bottom: 5px;
@@ -79,12 +80,12 @@ $mobile: 786px;
 					color: $text-color-alt;
 					margin-right: 12px;
 				}
-				
+
 				a {
 					color: $primary-color;
 					border-color: $primary-color;
 					background-color: $text-color-alt;
-				
+
 				}
 			}
 
