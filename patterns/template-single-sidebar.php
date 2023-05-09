@@ -2,7 +2,8 @@
 /**
  * Title: Template single sidebar
  * Slug: spectra-one/template-single-sidebar
- * Categories: template
+ * Categories: pages
+ * Keywords: single sidebar, post sidebar
  */
 ?>
 

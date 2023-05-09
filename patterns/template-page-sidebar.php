@@ -2,7 +2,8 @@
 /**
  * Title: Template page sidebar
  * Slug: spectra-one/template-page-sidebar
- * Categories: template
+ * Categories: pages
+ * Keywords: page sidebar
  */
 ?>
 

@@ -2,7 +2,8 @@
 /**
  * Title: Template page
  * Slug: spectra-one/template-page
- * Categories: template
+ * Categories: pages
+ * Keywords: page
  */
 ?>
 

@@ -2,7 +2,8 @@
 /**
  * Title: Template single
  * Slug: spectra-one/template-single
- * Categories: template
+ * Categories: pages
+ * Keywords: post, single
  */
 ?>
 

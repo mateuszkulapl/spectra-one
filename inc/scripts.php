@@ -156,7 +156,7 @@ function localize_editor_script() {
  *
  * @return void
  */
-function enqueue_editor_block_styles() {
+function enqueue_editor_block_styles(): void {
 
 	// Disable Core Block Patterns.
 	remove_theme_support( 'core-block-patterns' );
@@ -184,7 +184,7 @@ add_action( 'after_setup_theme', SWT_NS . 'enqueue_editor_block_styles' );
  *
  * @return void
  */
-function spectra_one_setup() {
+function spectra_one_setup(): void {
 	/*
 	* Make theme available for translation.
 	* Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/twentyfifteen
@@ -195,3 +195,24 @@ function spectra_one_setup() {
 }
 
 add_action( 'after_setup_theme', SWT_NS . 'spectra_one_setup' );
+
+
+
+/**
+ * Pattern categories.
+ *
+ * @since 0.0.6
+ *
+ * @return void
+ */
+function pattern_categories(): void {
+	register_block_pattern_category(
+		'pages',
+		array(
+			'label'       => __( 'Pages', 'spectra-one' ),
+			'description' => __( 'Patterns containing page and post layouts', 'spectra-one' ),
+		)
+	);
+}
+
+add_action( 'after_setup_theme', SWT_NS . 'pattern_categories' );
