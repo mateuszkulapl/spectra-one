@@ -17,6 +17,6 @@
 <p class="has-text-align-center aligncenter has-background-color has-text-color has-large-font-size"><?php esc_html_e( 'Can\'t find what you\'re looking for? Don\'t worry, we\'ve got your back.', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
-
-<!-- wp:search {"label":"<?php esc_html_e( 'Search', 'spectra-one' ); ?>","showLabel":false,"placeholder":"<?php esc_html_e( 'Search...', 'spectra-one' ); ?>","width":50,"widthUnit":"%","buttonText":"<?php esc_html_e( 'Search', 'spectra-one' ); ?>","buttonPosition":"button-inside","buttonUseIcon":true,"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}},"border":{"radius":"6px"}},"borderColor":"background","backgroundColor":"background","className":"is-style-swt-search-minimal"} /--></main>
+<!-- wp:search {"label":"","placeholder":"<?php esc_html_e( 'Search...', 'spectra-one' ); ?>","width":50,"widthUnit":"%","buttonText":"<?php esc_html_e( 'Search', 'spectra-one' ); ?>","buttonPosition":"button-inside","buttonUseIcon":true,"align":"center","className":"is-style-swt-search-minimal"} /-->
+</main>
 <!-- /wp:group -->
