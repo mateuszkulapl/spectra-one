@@ -81,7 +81,7 @@ function render_welcome_notice(): void {
 						<button id="swt-install-spectra" class="button button-primary button-hero">
 							<span class="text">
 								<?php
-								'installed' === $plugin_status ? esc_html_e( 'Click here to Activate Spectra Builder', 'spectra-one' ) : esc_html_e( 'Click here to Install Spectra Builder', 'spectra-one' );
+								'installed' === $plugin_status ? esc_html_e( 'Activate Spectra Builder', 'spectra-one' ) : esc_html_e( 'Install Spectra Builder', 'spectra-one' );
 								?>
 							</span>
 						</button>
