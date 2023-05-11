@@ -517,7 +517,7 @@ function swtSiteTitle() {
       const titleBlock = document.querySelector('.edit-post-visual-editor__post-title-wrapper');
       if (null === titleVisibility && null !== titleBlock) {
         let titleVisibilityTrigger = '';
-        if (false === (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.select)('core/editor').getEditedPostAttribute('meta')._swt_meta_site_title_display) {
+        if (true === (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.select)('core/editor').getEditedPostAttribute('meta')._swt_meta_site_title_display) {
           titleVisibilityTrigger = '<span class="dashicons dashicons-hidden title-visibility" data-tooltip="Enable Title"></span>';
           titleBlock.classList.toggle('invisible');
         } else {
@@ -532,7 +532,7 @@ function swtSiteTitle() {
             this.dataset.tooltip = 'Disable Title';
             (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.dispatch)('core/editor').editPost({
               meta: {
-                _swt_meta_site_title_display: true
+                _swt_meta_site_title_display: false
               }
             });
           } else {
@@ -541,7 +541,7 @@ function swtSiteTitle() {
             this.dataset.tooltip = 'Enable Title';
             (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.dispatch)('core/editor').editPost({
               meta: {
-                _swt_meta_site_title_display: false
+                _swt_meta_site_title_display: true
               }
             });
           }

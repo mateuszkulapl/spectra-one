@@ -30,7 +30,6 @@ function register_meta_settings():void {
 		array(
 			'show_in_rest'  => true,
 			'single'        => true,
-			'default'       => false,
 			'type'          => 'boolean',
 			'auth_callback' => '__return_true',
 		)
@@ -42,7 +41,6 @@ function register_meta_settings():void {
 		array(
 			'show_in_rest'  => true,
 			'single'        => true,
-			'default'       => false,
 			'type'          => 'boolean',
 			'auth_callback' => '__return_true',
 		)
@@ -54,7 +52,6 @@ function register_meta_settings():void {
 		array(
 			'show_in_rest'  => true,
 			'single'        => true,
-			'default'       => true,
 			'type'          => 'boolean',
 			'auth_callback' => '__return_true',
 		)
@@ -66,7 +63,6 @@ function register_meta_settings():void {
 		array(
 			'show_in_rest'  => true,
 			'single'        => true,
-			'default'       => false,
 			'type'          => 'boolean',
 			'auth_callback' => '__return_true',
 		)
@@ -78,7 +74,6 @@ function register_meta_settings():void {
 		array(
 			'show_in_rest'  => true,
 			'single'        => true,
-			'default'       => false,
 			'type'          => 'boolean',
 			'auth_callback' => '__return_true',
 		)

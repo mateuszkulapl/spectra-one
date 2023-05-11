@@ -40,7 +40,7 @@ function swtSiteTitle() {
 			if ( null === titleVisibility && null !== titleBlock ) {
 				let titleVisibilityTrigger = '';
 				if (
-					false ===
+					true ===
 					select( 'core/editor' ).getEditedPostAttribute( 'meta' )
 						._swt_meta_site_title_display
 				) {
@@ -67,7 +67,7 @@ function swtSiteTitle() {
 							this.dataset.tooltip = 'Disable Title';
 							dispatch( 'core/editor' ).editPost( {
 								meta: {
-									_swt_meta_site_title_display: true,
+									_swt_meta_site_title_display: false,
 								},
 							} );
 						} else {
@@ -76,7 +76,7 @@ function swtSiteTitle() {
 							this.dataset.tooltip = 'Enable Title';
 							dispatch( 'core/editor' ).editPost( {
 								meta: {
-									_swt_meta_site_title_display: false,
+									_swt_meta_site_title_display: true,
 								},
 							} );
 						}
