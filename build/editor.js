@@ -37,26 +37,26 @@ const HeaderSettings = props => {
     SWTStickyHeader = props?.attributes?.SWTStickyHeader && props.attributes.SWTStickyHeader ? true : false;
     SWTTransparentHeader = props?.attributes?.SWTTransparentHeader && props.attributes.SWTTransparentHeader ? true : false;
   } else {
-    SWTStickyHeader = props?.meta.swt_meta_sticky_header && props.meta.swt_meta_sticky_header ? true : false;
-    SWTTransparentHeader = props?.meta.swt_meta_transparent_header && props.meta.swt_meta_transparent_header ? true : false;
+    SWTStickyHeader = props?.meta._swt_meta_sticky_header && props.meta._swt_meta_sticky_header ? true : false;
+    SWTTransparentHeader = props?.meta._swt_meta_transparent_header && props.meta._swt_meta_transparent_header ? true : false;
   }
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, !SWTTransparentHeader && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Enable Sticky Header', 'spectra-one'),
     help: SWTStickyHeader ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Transparent header option will be disabled on enabling this option.', 'spectra-one') : '',
     checked: SWTStickyHeader,
     onChange: val => {
-      props.hasOwnProperty('setAttributes') ? props.setAttributes({
+      return props.hasOwnProperty('setAttributes') ? props.setAttributes({
         SWTStickyHeader: !SWTStickyHeader
-      }) : props.setMetaFieldValue(val, 'swt_meta_sticky_header');
+      }) : props.setMetaFieldValue(val, '_swt_meta_sticky_header');
     }
   })), !SWTStickyHeader && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Enable Transparent Header', 'spectra-one'),
     help: SWTTransparentHeader ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Sticky header option will be disabled on enabling this option.', 'spectra-one') : '',
     checked: SWTTransparentHeader,
     onChange: val => {
-      props.hasOwnProperty('setAttributes') ? props.setAttributes({
+      return props.hasOwnProperty('setAttributes') ? props.setAttributes({
         SWTTransparentHeader: !SWTTransparentHeader
-      }) : props.setMetaFieldValue(val, 'swt_meta_transparent_header');
+      }) : props.setMetaFieldValue(val, '_swt_meta_transparent_header');
     }
   })));
 };
@@ -303,11 +303,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _icons_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icons.js */ "./src/components/icons.js");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _plugin_helpers_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./plugin-helpers.js */ "./src/components/plugin-helpers.js");
-
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _plugin_helpers_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./plugin-helpers.js */ "./src/components/plugin-helpers.js");
 
 
 
@@ -363,7 +361,7 @@ const SwtPluginInstallNotice = () => {
   // Function to activate plugin
   const activatePlugin = async pluginInitSlug => {
     // Setting up post request to activate plugin
-    const reqResponse = await (0,_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_5__.activatePluginUrl)(pluginInitSlug);
+    const reqResponse = await (0,_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_4__.activatePluginUrl)(pluginInitSlug);
     if (true === reqResponse.success) {
       // Shows the users that the plugin is successfully installed and reloads the page
       setButtonState(false);
@@ -399,7 +397,7 @@ const SwtPluginInstallNotice = () => {
       } else {
         try {
           // Gets the plugin files if not downloaded
-          await (0,_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_5__.installPlugin)(slug);
+          await (0,_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_4__.installPlugin)(slug);
 
           // Activates the set plugin
           activatePlugin(pluginInit);
@@ -414,14 +412,14 @@ const SwtPluginInstallNotice = () => {
     }
   };
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Spectra plugin', 'spectra-one'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Spectra plugin', 'spectra-one'),
     initialOpen: true
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Power-up your website with advanced and powerful blocks that help you build websites in no time!', 'spectra-one')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Power-up your website with advanced and powerful blocks that help you build websites in no time!', 'spectra-one')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
     className: `swt-full-width-btn ${true === buttonState ? 'is-busy ' : ''} `,
     onClick: () => handleSubmit(pluginSlug, activationUrl),
     isPrimary: true,
     "aria-disabled": disableButton
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)(buttonText, 'spectra-one')));
+  }, buttonText));
 };
 /* harmony default export */ __webpack_exports__["default"] = (SwtPluginInstallNotice);
 
@@ -519,7 +517,7 @@ function swtSiteTitle() {
       const titleBlock = document.querySelector('.edit-post-visual-editor__post-title-wrapper');
       if (null === titleVisibility && null !== titleBlock) {
         let titleVisibilityTrigger = '';
-        if (false === (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.select)('core/editor').getEditedPostAttribute('meta').swt_meta_site_title_display) {
+        if (false === (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.select)('core/editor').getEditedPostAttribute('meta')._swt_meta_site_title_display) {
           titleVisibilityTrigger = '<span class="dashicons dashicons-hidden title-visibility" data-tooltip="Enable Title"></span>';
           titleBlock.classList.toggle('invisible');
         } else {
@@ -534,7 +532,7 @@ function swtSiteTitle() {
             this.dataset.tooltip = 'Disable Title';
             (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.dispatch)('core/editor').editPost({
               meta: {
-                swt_meta_site_title_display: true
+                _swt_meta_site_title_display: true
               }
             });
           } else {
@@ -543,7 +541,7 @@ function swtSiteTitle() {
             this.dataset.tooltip = 'Enable Title';
             (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.dispatch)('core/editor').editPost({
               meta: {
-                swt_meta_site_title_display: false
+                _swt_meta_site_title_display: false
               }
             });
           }
@@ -618,7 +616,9 @@ const SwtComponents = props => {
   const disableSections = Object.entries(spectraOne.disable_sections).map(_ref => {
     let [key, value] = _ref;
     const sectionValue = props?.meta[value.key] && props.meta[value.key] ? true : false;
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, {
+      key: key
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
       key: key,
       label: value.label,
       checked: sectionValue,
@@ -631,7 +631,7 @@ const SwtComponents = props => {
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Disable Elements', 'spectra-one'),
     initialOpen: true,
     className: 'swt-disable-elements-panel'
-  }, disableSections), !props?.meta?.swt_meta_header_display && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
+  }, disableSections), !props?.meta?._swt_meta_header_display && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Header Settings', 'spectra-one'),
     initialOpen: true,
     className: 'swt-header-settings-panel'

@@ -29,7 +29,7 @@ function remove_page_title( string $title, int $post_id = 0 ):string {
 		return $title;
 	}
 
-	$get_check_title = get_post_meta( $post_id, 'swt_meta_site_title_display', true );
+	$get_check_title = get_post_meta( $post_id, '_swt_meta_site_title_display', true );
 	$check_meta      = $get_check_title ? false : true;
 
 	if ( ! is_admin() && is_singular() && boolval( $check_meta ) && ! in_the_loop() ) {

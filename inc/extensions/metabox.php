@@ -26,7 +26,7 @@ add_action( 'init', SWT_NS . 'register_meta_settings' );
 function register_meta_settings():void {
 	register_post_meta(
 		'',
-		'swt_meta_header_display',
+		'_swt_meta_header_display',
 		array(
 			'show_in_rest'  => true,
 			'single'        => true,
@@ -38,7 +38,7 @@ function register_meta_settings():void {
 
 	register_post_meta(
 		'',
-		'swt_meta_footer_display',
+		'_swt_meta_footer_display',
 		array(
 			'show_in_rest'  => true,
 			'single'        => true,
@@ -50,7 +50,7 @@ function register_meta_settings():void {
 
 	register_post_meta(
 		'',
-		'swt_meta_site_title_display',
+		'_swt_meta_site_title_display',
 		array(
 			'show_in_rest'  => true,
 			'single'        => true,
@@ -62,7 +62,7 @@ function register_meta_settings():void {
 
 	register_post_meta(
 		'',
-		'swt_meta_sticky_header',
+		'_swt_meta_sticky_header',
 		array(
 			'show_in_rest'  => true,
 			'single'        => true,
@@ -74,7 +74,7 @@ function register_meta_settings():void {
 
 	register_post_meta(
 		'',
-		'swt_meta_transparent_header',
+		'_swt_meta_transparent_header',
 		array(
 			'show_in_rest'  => true,
 			'single'        => true,
