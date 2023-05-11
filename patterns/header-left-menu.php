@@ -19,7 +19,7 @@
 <div class="wp-block-group"><!-- wp:image {"id":849,"sizeSlug":"full","linkDestination":"custom"} -->
 <figure class="wp-block-image size-full"><a href="<?php echo esc_url( get_home_url() ); ?>"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-849"/></a></figure>
 <!-- /wp:image -->
-<!-- wp:navigation {"textColor":"white","overlayMenu":"never","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"SWTHideMob":true} -->
+<!-- wp:navigation {"textColor":"white","overlayTextColor":"black","overlayMenu":"never","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"SWTHideMob":true} -->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Home', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'About', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Blog', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
@@ -31,7 +31,7 @@
 <div class="wp-block-button is-style-swt-button-inverse"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'spectra-one' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
-<!-- wp:navigation {"textColor":"white","overlayMenu":"always","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"SWTHideDesktop":true,"SWTHideTab":true} -->
+<!-- wp:navigation {"textColor":"white","overlayTextColor":"black","overlayMenu":"always","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"SWTHideDesktop":true,"SWTHideTab":true} -->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Home', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'About', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Blog', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
