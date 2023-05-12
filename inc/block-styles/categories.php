@@ -29,17 +29,6 @@ register_block_style(
 				list-style: none;
 			}
 
-			.is-style-' . SWT_PFX . '-post-terms-pill a {
-				display: inline-block;
-				padding: 6px 12px;
-				border-radius: var(--wp--custom--border-radius--full);
-				color: var(--wp--preset--color--body);
-				background-color: var(--wp--preset--color--outline);
-				margin-right: var(--wp--preset--spacing--xx-small);
-				margin-bottom: var(--wp--preset--spacing--xx-small);
-				line-height: var(--wp--custom--line-height--initial);
-			}
-
 			' . $swt_parent_class . ' .cat-item {
 				font-size: var(--wp--preset--font-size--small);
 				margin-bottom: var(--wp--preset--spacing--xx-small);

@@ -43,7 +43,7 @@
   }
 }
 .swt-welcome-notice .swt-row .swt-col .description {
-  color: #4B5563;
+  color: #4b5563;
   margin-bottom: 27px;
   font-size: 18px;
   line-height: 29px;
@@ -54,7 +54,8 @@
     margin-bottom: 25px;
   }
 }
-.swt-welcome-notice .swt-row .swt-col .notice-actions button, .swt-welcome-notice .swt-row .swt-col .notice-actions a {
+.swt-welcome-notice .swt-row .swt-col .notice-actions button,
+.swt-welcome-notice .swt-row .swt-col .notice-actions a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
