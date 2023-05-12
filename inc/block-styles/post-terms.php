@@ -29,7 +29,8 @@ register_block_style(
 				color: var(--wp--preset--color--body);
 				background-color: var(--wp--preset--color--outline);
 				margin-' . rtl_css( 'right' ) . ': var(--wp--preset--spacing--xx-small);
-				margin-bottom: var(--wp--preset--spacing--xx-small);
+				margin-top: var(--wp--preset--spacing--xxx-small);
+				margin-bottom: var(--wp--preset--spacing--xxx-small);
 				line-height: var(--wp--custom--line-height--initial);
 			}
 

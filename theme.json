@@ -115,6 +115,11 @@
       },
       "spacingSizes": [
         {
+          "name": "XXX Small",
+          "slug": "xxx-small",
+          "size": "calc(var(--wp--preset--font-size--medium,1rem)/4)"
+        },
+        {
           "name": "XX Small",
           "slug": "xx-small",
           "size": "calc(var(--wp--preset--font-size--medium,1rem)/2)"
