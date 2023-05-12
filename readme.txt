@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 6.2
-Stable tag: 0.0.5
+Stable tag: 0.0.6
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -96,8 +96,14 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * New: Minimal block styling for Category list and Archives blocks.
 * New: Simple block styling for Latest comments block.
 * New: Pill block styling for Tag cloud block.
+* New: Inverse block styling for button block.
 * New: Direct link to edit template for page and post inside the admin bar.
 * Update: Removed unnecessary parameters in theme.json.
+* Update: Front page and related patterns.
+* Update: Header and Footer patterns.
+* Update: Global style variations.
+* Update: Default templates.
+* Update: Spectra plugin install banner UI.
 * Fix: Footer alignment when less content is added on page / post.
 
 
