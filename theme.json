@@ -98,9 +98,6 @@
     },
     "appearanceTools": true,
     "spacing": {
-      "blockGap": true,
-      "margin": true,
-      "padding": true,
       "units": [
         "%",
         "px",
@@ -109,7 +106,6 @@
         "vh",
         "vw"
       ],
-      "customSpacingSize": true,
       "spacingScale": {
         "operator": "*",
         "increment": 0,
@@ -161,8 +157,6 @@
       ]
     },
     "typography": {
-      "lineHeight": true,
-      "customFontSize": true,
       "fontFamilies": [
         {
           "fontFace": [

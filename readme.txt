@@ -103,7 +103,9 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Update: Global style variations.
 * Update: Default templates.
 * Update: Spectra plugin install banner UI.
+* Update: Removed unnecessary parameters in theme.json.
 * Fix: Footer alignment when less content is added on page / post.
+
 
 = 0.0.5 = 
 * Fix: Placeholder not linked with single post / page on archive pages.
