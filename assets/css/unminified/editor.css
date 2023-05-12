@@ -89,7 +89,8 @@
   color: var(--wp--preset--color--body);
   background-color: var(--wp--preset--color--outline);
   margin-right: var(--wp--preset--spacing--xx-small);
-  margin-bottom: var(--wp--preset--spacing--xx-small);
+  margin-top: var(--wp--preset--spacing--xxx-small);
+  margin-bottom: var(--wp--preset--spacing--xxx-small);
   line-height: var(--wp--custom--line-height--initial);
 }
 .wp-block-post-terms.is-style-swt-post-terms-pill .wp-block-post-terms__separator {
@@ -104,7 +105,8 @@
   color: var(--wp--preset--color--body);
   background-color: var(--wp--preset--color--outline);
   margin-right: var(--wp--preset--spacing--xx-small);
-  margin-bottom: var(--wp--preset--spacing--xx-small);
+  margin-top: var(--wp--preset--spacing--xxx-small);
+  margin-bottom: var(--wp--preset--spacing--xxx-small);
   line-height: var(--wp--custom--line-height--initial);
 }
 
@@ -263,6 +265,7 @@
   color: var(--wp--preset--color--body);
   background-color: var(--wp--preset--color--outline);
   margin-right: var(--wp--preset--spacing--xx-small);
+  margin-top: var(--wp--preset--spacing--xxx-small);
   margin-bottom: var(--wp--preset--spacing--xx-small);
   line-height: var(--wp--custom--line-height--initial);
 }
