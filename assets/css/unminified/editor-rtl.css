@@ -17,6 +17,7 @@
   padding: 4px;
   border: 1px solid var(--wp--preset--color--outline);
   border-radius: var(--wp--custom--border-radius--small);
+  background-color: var(--wp--preset--color--background);
 }
 .is-style-swt-search-minimal .wp-block-search__input {
   padding-right: var(--wp--preset--spacing--xx-small);
@@ -31,18 +32,82 @@
 }
 
 /*--------------------------------------------------------------
+# Latest post
+--------------------------------------------------------------*/
+.is-style-swt-latest-posts-simple {
+  color: var(--wp--preset--color--neutral);
+}
+.is-style-swt-latest-posts-simple > li {
+  margin-bottom: var(--wp--preset--spacing--x-small);
+}
+.is-style-swt-latest-posts-simple.swt-has-featured-image > li {
+  padding-left: 75px;
+  position: relative;
+}
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__featured-image {
+  position: absolute;
+  left: 0;
+}
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__featured-image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 56px;
+  height: 56px;
+}
+.is-style-swt-latest-posts-simple a {
+  display: block;
+  color: var(--wp--preset--color--heading);
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: var(--wp--custom--font-weight--medium);
+}
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-author,
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-date {
+  display: inline-block;
+  font-size: var(--wp--preset--font-size--x-small);
+  font-weight: var(--wp--custom--font-weight--regular);
+}
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-author + time::before {
+  content: "·";
+  padding-left: 5px;
+  padding-right: 5px;
+  color: var(--wp--preset--color--neutral);
+}
+.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-excerpt {
+  font-size: var(--wp--preset--font-size--x-small);
+  font-weight: var(--wp--custom--font-weight--regular);
+  margin-top: 0.2em;
+}
+
+/*--------------------------------------------------------------
 # Category Block
 --------------------------------------------------------------*/
-.is-style-swt-post-terms-pill a {
+.wp-block-post-terms.is-style-swt-post-terms-pill a {
+  display: inline-block;
+  font-size: var(--wp--preset--font-size--x-small);
   padding: 6px 12px;
   border-radius: var(--wp--custom--border-radius--full);
   color: var(--wp--preset--color--body);
-  background-color: var(--wp--preset--color--surface);
+  background-color: var(--wp--preset--color--outline);
   margin-left: var(--wp--preset--spacing--xx-small);
+  margin-top: var(--wp--preset--spacing--xxx-small);
+  margin-bottom: var(--wp--preset--spacing--xxx-small);
   line-height: var(--wp--custom--line-height--initial);
 }
-.is-style-swt-post-terms-pill a .wp-block-post-terms__separator {
+.wp-block-post-terms.is-style-swt-post-terms-pill .wp-block-post-terms__separator {
   display: none;
+}
+
+.swt-block-post-banner-group .wp-block-post-terms.is-style-swt-post-terms-pill {
+  display: inline-block;
+  font-size: var(--wp--preset--font-size--x-small);
+  padding: 6px 12px;
+  border-radius: var(--wp--custom--border-radius--full);
+  color: var(--wp--preset--color--body);
+  background-color: var(--wp--preset--color--outline);
+  margin-left: var(--wp--preset--spacing--xx-small);
+  margin-top: var(--wp--preset--spacing--xxx-small);
+  margin-bottom: var(--wp--preset--spacing--xxx-small);
+  line-height: var(--wp--custom--line-height--initial);
 }
 
 /*--------------------------------------------------------------
@@ -55,6 +120,15 @@
 .is-style-swt-button-secondary .wp-element-button:hover {
   color: var(--wp--preset--color--body);
   background-color: var(--wp--preset--color--surface);
+}
+
+.is-style-swt-button-inverse .wp-element-button { /* stylelint-disable-line no-descending-specificity */
+  color: #1f2937;
+  background-color: #fff;
+}
+.is-style-swt-button-inverse .wp-element-button:hover {
+  color: #1f2937;
+  background-color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -182,63 +256,18 @@
 }
 
 /*--------------------------------------------------------------
-# Latest post
---------------------------------------------------------------*/
-.is-style-swt-latest-posts-simple {
-  color: var(--wp--preset--color--neutral);
-}
-.is-style-swt-latest-posts-simple > li {
-  margin-bottom: var(--wp--preset--spacing--x-small);
-}
-.is-style-swt-latest-posts-simple.swt-has-featured-image > li {
-  padding-left: 75px;
-  position: relative;
-}
-.is-style-swt-latest-posts-simple .wp-block-latest-posts__featured-image {
-  position: absolute;
-  left: 0;
-}
-.is-style-swt-latest-posts-simple .wp-block-latest-posts__featured-image img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 56px;
-  height: 56px;
-}
-.is-style-swt-latest-posts-simple a {
-  display: block;
-  color: var(--wp--preset--color--heading);
-  font-size: var(--wp--preset--font-size--small);
-  font-weight: var(--wp--custom--font-weight--medium);
-}
-.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-author,
-.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-date {
-  display: inline-block;
-  font-size: var(--wp--preset--font-size--x-small);
-  font-weight: var(--wp--custom--font-weight--regular);
-}
-.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-author + time::before {
-  content: "·";
-  padding-left: 5px;
-  padding-right: 5px;
-  color: var(--wp--preset--color--neutral);
-}
-.is-style-swt-latest-posts-simple .wp-block-latest-posts__post-excerpt {
-  font-size: var(--wp--preset--font-size--x-small);
-  font-weight: var(--wp--custom--font-weight--regular);
-  margin-top: 0.2em;
-}
-
-/*--------------------------------------------------------------
 # Tag cloud
 --------------------------------------------------------------*/
 .is-style-swt-tag-cloud-pill .tag-cloud-link {
-  font-size: var(--wp--preset--font-size--x-small);
-  color: var(--wp--preset--color--heading);
-  font-weight: var(--wp--custom--font-weight--regular);
-  border: 1px solid var(--wp--preset--color--outline);
-  border-radius: var(--wp--custom--border-radius--x-large);
-  padding: 2px 12px;
-  margin-bottom: 5px;
+  font-size: var(--wp--preset--font-size--x-small) !important;
+  padding: 6px 12px;
+  border-radius: var(--wp--custom--border-radius--full);
+  color: var(--wp--preset--color--body);
+  background-color: var(--wp--preset--color--outline);
+  margin-left: var(--wp--preset--spacing--xx-small);
+  margin-top: var(--wp--preset--spacing--xxx-small);
+  margin-bottom: var(--wp--preset--spacing--xx-small);
+  line-height: var(--wp--custom--line-height--initial);
 }
 
 /*--------------------------------------------------------------

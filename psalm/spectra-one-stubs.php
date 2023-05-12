@@ -1,7 +1,7 @@
 <?php
 
 namespace Swt {
-    const SWT_VER = '0.0.5';
+    const SWT_VER = '0.0.6';
     const SWT_SLUG = 'spectra-one';
     const SWT_NAME = 'Spectra One';
     const SWT_PFX = 'swt';
@@ -61,6 +61,46 @@ namespace Swt {
     /**
      * Modifies front end HTML output of block.
      *
+     * @since 0.0.6
+     *
+     * @param string $html  Block HTML.
+     * @param array  $block Block data.
+     *
+     * @return string
+     */
+    function render_latest_post_block(string $html, array $block) : string
+    {
+    }
+}
+namespace Swt {
+    /**
+     * Modifies front end HTML output of block.
+     *
+     * @since 0.0.6
+     *
+     * @param string $html  Block HTML.
+     * @param array  $block Block data.
+     *
+     * @return string
+     */
+    function render_post_comments_form_block(string $html, array $block) : string
+    {
+    }
+    /**
+     * Load Inline Css.
+     *
+     * @since 0.0.6
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function post_comments_form_inline_css(string $css) : string
+    {
+    }
+}
+namespace Swt {
+    /**
+     * Modifies front end HTML output of block.
+     *
      * @since 0.0.1
      *
      * @param string $html  Block HTML.
@@ -84,6 +124,31 @@ namespace Swt {
 }
 namespace Swt {
     /**
+     * Modifies front end HTML output of block.
+     *
+     * @since 0.0.6
+     *
+     * @param string $html  Block HTML.
+     * @param array  $block Block data.
+     *
+     * @return string
+     */
+    function render_post_terms_block(string $html, array $block) : string
+    {
+    }
+    /**
+     * Load Inline Css.
+     *
+     * @since 0.0.6
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function post_terms_inline_css(string $css) : string
+    {
+    }
+}
+namespace Swt {
+    /**
      * Spectra compatibility
      *
      * @since 0.0.3
@@ -100,6 +165,18 @@ namespace Swt {
      * @return string
      */
     function spectra_compatibility_inline_css(string $css) : string
+    {
+    }
+}
+namespace Swt {
+    /**
+     * Add Admin menu item.
+     *
+     * @param object \WP_Admin_Bar $admin_bar Admin bar.
+     * @since 0.0.6
+     * @return void
+     */
+    function add_admin_menu(\WP_Admin_Bar $admin_bar) : void
     {
     }
 }
@@ -178,6 +255,49 @@ namespace Swt {
 }
 namespace Swt {
     /**
+     * Icomoon render function.
+     * 
+     * @since 0.0.6
+     * @param string $block_content Entire Block Content.
+     * @param array  $block Block Properties As An Array.
+     * @return string
+     */
+    function render_icomoon(string $block_content, array $block) : string
+    {
+    }
+    /**
+     * Load icomoon inline css.
+     *
+     * @since 0.0.6
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function icomoon_inline_css(string $css) : string
+    {
+    }
+    /**
+     * Load icomoon editor inline css.
+     *
+     * @since 0.0.6
+     * @param array  $editor_settings Inline CSS.
+     * @param object $block_editor_context Inline CSS.
+     * @return array
+     */
+    function icomoon_block_editor_css(array $editor_settings, object $block_editor_context) : array
+    {
+    }
+    /**
+     * Import icomoon fonts.
+     *
+     * @since 0.0.6
+     * @return string
+     */
+    function icomoon_import_fonts() : string
+    {
+    }
+}
+namespace Swt {
+    /**
      * Register Post Meta options for react based fields.
      *
      * @since 0.0.1
@@ -197,6 +317,18 @@ namespace Swt {
      * @return string
      */
     function remove_page_title(string $title, int $post_id = 0) : string
+    {
+    }
+}
+namespace Swt {
+    /**
+     *  Render function.
+     *
+     * @param string $block_content Entire Block Content.
+     * @param array  $block Block Properties As An Array.
+     * @return string
+     */
+    function render_remove_blocks(string $block_content, array $block) : string
     {
     }
 }
@@ -260,7 +392,7 @@ namespace Swt {
      *
      * @return void
      */
-    function enqueue_editor_block_styles()
+    function enqueue_editor_block_styles() : void
     {
     }
     /**
@@ -270,7 +402,17 @@ namespace Swt {
      *
      * @return void
      */
-    function spectra_one_setup()
+    function spectra_one_setup() : void
+    {
+    }
+    /**
+     * Pattern categories.
+     *
+     * @since 0.0.6
+     *
+     * @return void
+     */
+    function pattern_categories() : void
     {
     }
 }
@@ -457,6 +599,16 @@ namespace Swt {
     function css_string_to_array(string $css) : array
     {
     }
+    /**
+     * Check if page title is enabled or disabled.
+     *
+     * @since 0.0.6
+     * @param int $post_id Post id.
+     * @return bool
+     */
+    function is_page_title(int $post_id = 0) : bool
+    {
+    }
 }
 namespace {
     /**
@@ -471,6 +623,62 @@ namespace {
      * Slug: spectra-one/featured-logos
      * Categories: gallery
      * Keywords: featured logos
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Footer five columns menu inline
+     * Slug: spectra-one/footer-five-columns-menu-inline
+     * Categories: footer
+     * Block Types: core/template-part/footer
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Footer minimal menu center
+     * Slug: spectra-one/footer-minimal-menu-center
+     * Categories: footer
+     * Block Types: core/template-part/footer
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Footer minimal menu right
+     * Slug: spectra-one/footer-minimal-menu-right
+     * Categories: footer
+     * Block Types: core/template-part/footer
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Footer six columns menu separated
+     * Slug: spectra-one/footer-six-columns-menu-separated
+     * Categories: footer
+     * Block Types: core/template-part/footer
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Footer default
+     * Slug: spectra-one/footer-default
+     * Categories: footer
+     * Block Types: core/template-part/footer
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Header center menu
+     * Slug: spectra-one/header-center-menu
+     * Categories: header
+     * Block Types: core/template-part/header
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Header left menu
+     * Slug: spectra-one/header-left-menu
+     * Categories: header
+     * Block Types: core/template-part/header
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Header default
+     * Slug: spectra-one/header-default
+     * Categories: header
+     * Block Types: core/template-part/header
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
@@ -499,13 +707,6 @@ namespace {
      * Slug: spectra-one/three-column-featured
      * Categories: services
      * Keywords: three column featured
-     */
-    $get_url = \trailingslashit(\get_template_directory_uri());
-    /**
-     * Title: Wide banner with button
-     * Slug: spectra-one/wide-banner-with-button
-     * Categories: call-to-action
-     * Keywords: wide banner with button
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
 }
