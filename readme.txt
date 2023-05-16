@@ -89,6 +89,8 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 == Changelog ==
 
+= 1.0.1 =
+* New: Simple block styling for navigation block.
 
 = 0.0.6 =
 * New: Added sidebar support for page and post.

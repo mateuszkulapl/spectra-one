@@ -25,4 +25,5 @@ require_once __DIR__ . '/tag-cloud.php';
 require_once __DIR__ . '/latest-comments.php';
 require_once __DIR__ . '/archives.php';
 require_once __DIR__ . '/post-author.php';
+require_once __DIR__ . '/navigation.php';
 

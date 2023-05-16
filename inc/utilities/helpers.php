@@ -344,3 +344,31 @@ function is_page_title( int $post_id = 0 ): bool {
 
 	return ! is_admin() && is_singular() && boolval( $check_meta ) && ! in_the_loop();
 }
+
+
+/**
+ * Media query helper.
+ *
+ * @since 0.0.6
+ * @param string $type Media query type.
+ * @return string
+ */
+function media_query( string $type ): string {
+
+	if( 'desktop' === $type ) {
+		return 'min-width:1025px';
+	}
+
+	if( 'tablet' === $type ) {
+		return 'min-width:1024px and max-width:768px';
+	}
+
+	if( 'mobile' === $type ) {
+		return 'max-width:767px';
+	}
+
+	if( 'desktop-to-tablet' === $type ) {
+		return 'min-width:1024px';
+	}
+
+}
