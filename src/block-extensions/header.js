@@ -26,13 +26,13 @@ export const HeaderSettings = ( props ) => {
 				: false;
 	} else {
 		SWTStickyHeader =
-			props?.meta.swt_meta_sticky_header &&
-			props.meta.swt_meta_sticky_header
+			props?.meta._swt_meta_sticky_header &&
+			props.meta._swt_meta_sticky_header
 				? true
 				: false;
 		SWTTransparentHeader =
-			props?.meta.swt_meta_transparent_header &&
-			props.meta.swt_meta_transparent_header
+			props?.meta._swt_meta_transparent_header &&
+			props.meta._swt_meta_transparent_header
 				? true
 				: false;
 	}
@@ -59,7 +59,7 @@ export const HeaderSettings = ( props ) => {
 								  } )
 								: props.setMetaFieldValue(
 									val,
-									'swt_meta_sticky_header'
+									'_swt_meta_sticky_header'
 								  );
 						} }
 					/>
@@ -86,7 +86,7 @@ export const HeaderSettings = ( props ) => {
 								  } )
 								: props.setMetaFieldValue(
 									val,
-									'swt_meta_transparent_header'
+									'_swt_meta_transparent_header'
 								  );
 						} }
 					/>

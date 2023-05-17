@@ -33,7 +33,7 @@ export const SwtComponents = ( props ) => {
 				{ disableSections }
 			</PanelBody>
 
-			{ ! props?.meta?.swt_meta_header_display && (
+			{ ! props?.meta?._swt_meta_header_display && (
 				<PanelBody
 					title={ __( 'Header Settings', 'spectra-one' ) }
 					initialOpen={ true }
