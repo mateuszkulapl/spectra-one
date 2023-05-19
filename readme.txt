@@ -97,6 +97,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * New: Simple block styling for Latest comments block.
 * New: Pill block styling for Tag cloud block.
 * New: Inverse block styling for button block.
+* New: Inverse Footer patterns.
 * New: Direct link to edit template for page and post inside the admin bar.
 * Update: Removed unnecessary parameters in theme.json.
 * Update: Front page and related patterns.

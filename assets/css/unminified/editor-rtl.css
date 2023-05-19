@@ -286,6 +286,10 @@ register_block_style not applying styles in the editor.
   filter: var(--wp--preset--duotone--secondary);
 }
 
+.swt-duotone-tertiary {
+  filter: var(--wp--preset--duotone--tertiary);
+}
+
 /*--------------------------------------------------------------
 # Post / Page hide and show title
 --------------------------------------------------------------*/

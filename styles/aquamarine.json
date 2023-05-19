@@ -76,12 +76,12 @@
           "slug": "inherit"
         }
       ],
-        "gradients": [
-          {
-              "slug": "primary",
-              "gradient": "linear-gradient(284.04deg, #092635 0%, #101554 25.33%, #0D574D 52.07%, #103141 100%)",
-              "name": "Primary"
-          }
+      "gradients": [
+        {
+          "slug": "primary",
+          "gradient": "linear-gradient(284.04deg, #092635 0%, #101554 25.33%, #0D574D 52.07%, #103141 100%)",
+          "name": "Primary"
+        }
       ],
       "duotone": [
         {
@@ -99,6 +99,14 @@
           ],
           "slug": "secondary",
           "name": "Secondary"
+        },
+        {
+          "colors": [
+            "#092635",
+            "#092635"
+          ],
+          "slug": "tertiary",
+          "name": "Tertiary"
         }
       ]
     }
