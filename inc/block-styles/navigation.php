@@ -24,7 +24,7 @@ register_block_style(
 		'label'        => __( 'Simple', 'spectra-one' ),
 		'inline_style' => '
 
-            @media( '. media_query('desktop-to-tablet') .' ) {
+            @media( ' . media_query( 'desktop-to-tablet' ) . ' ) {
 
                 ' . $swt_parent_class . ' .wp-block-navigation__submenu-container {
                     box-shadow: 0px 16px 40px -16px rgba(0, 0, 0, 0.16);
@@ -49,7 +49,7 @@ register_block_style(
 
             }
 
-            @media( '. media_query('mobile') .' ) {
+            @media( ' . media_query( 'mobile' ) . ' ) {
 
                 ' . $swt_parent_class . ' .wp-block-navigation-item.has-child .wp-block-navigation-item.has-child {
                     color: inherit !important;

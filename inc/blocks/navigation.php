@@ -26,8 +26,8 @@ add_filter( 'render_block', SWT_NS . 'render_navigation_block', 10, 2 );
  */
 function render_navigation_block( string $block_content, array $block ):string {
 
-    if ( isset( $block['blockName'] ) && 'core/navigation' === $block['blockName'] ) {
-        add_filter( 'swt_dynamic_theme_js', SWT_NS . 'navigation_inline_js' );
+	if ( isset( $block['blockName'] ) && 'core/navigation' === $block['blockName'] ) {
+		add_filter( 'swt_dynamic_theme_js', SWT_NS . 'navigation_inline_js' );
 	}
 
 	return $block_content;

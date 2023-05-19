@@ -355,20 +355,20 @@ function is_page_title( int $post_id = 0 ): bool {
  */
 function media_query( string $type ): string {
 
-	if( 'desktop' === $type ) {
+	if ( 'desktop' === $type ) {
 		return 'min-width:1025px';
 	}
 
-	if( 'tablet' === $type ) {
-		return 'min-width:1024px and max-width:768px';
+	if ( 'tablet' === $type ) {
+		return 'min-width:1024px and max-width:600px';
 	}
 
-	if( 'mobile' === $type ) {
-		return 'max-width:767px';
+	if ( 'mobile' === $type ) {
+		return 'max-width:599px';
 	}
 
-	if( 'desktop-to-tablet' === $type ) {
-		return 'min-width:1024px';
+	if ( 'desktop-to-tablet' === $type ) {
+		return 'min-width:600px';
 	}
 
 }
