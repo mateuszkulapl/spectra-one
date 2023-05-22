@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer minimal menu center
- * Slug: spectra-one/footer-minimal-menu-center
+ * Slug: spectra-one/footer-2
  * Categories: footer
  * Block Types: core/template-part/footer
  */

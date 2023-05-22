@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hero single blend
- * Slug: spectra-one/hero-single-secondary
+ * Slug: spectra-one/hero-single-2
  * Categories: featured
  * Keywords: hero single inverse
  */

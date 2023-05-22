@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Header default
- * Slug: spectra-one/header-default
+ * Title: Header
+ * Slug: spectra-one/header
  * Categories: header
  * Block Types: core/template-part/header
  */
