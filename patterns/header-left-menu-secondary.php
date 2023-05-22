@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Header left menu inverse
- * Slug: spectra-one/header-left-menu-inverse
+ * Title: Header left menu blend
+ * Slug: spectra-one/header-left-menu-secondary
  * Categories: header
  * Block Types: core/template-part/header
  */
