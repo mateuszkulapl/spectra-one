@@ -1,7 +1,7 @@
 <?php
 
 namespace Swt {
-    const SWT_VER = '0.0.6';
+    const SWT_VER = '1.0.0';
     const SWT_SLUG = 'spectra-one';
     const SWT_NAME = 'Spectra One';
     const SWT_PFX = 'swt';
@@ -61,7 +61,7 @@ namespace Swt {
     /**
      * Modifies front end HTML output of block.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      *
      * @param string $html  Block HTML.
      * @param array  $block Block data.
@@ -76,7 +76,57 @@ namespace Swt {
     /**
      * Modifies front end HTML output of block.
      *
-     * @since 0.0.6
+     * @since 1.0.0
+     *
+     * @param string $html  Block HTML.
+     * @param array  $block Block data.
+     *
+     * @return string
+     */
+    function render_navigation_submenu_block(string $html, array $block) : string
+    {
+    }
+    /**
+     * Load Inline Css.
+     *
+     * @since 1.0.0
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function navigation_submenu_inline_css(string $css) : string
+    {
+    }
+}
+namespace Swt {
+    /**
+     * Modifies front end HTML output of block.
+     *
+     * @since 1.0.0
+     *
+     * @param string $html  Block HTML.
+     * @param array  $block Block data.
+     *
+     * @return string
+     */
+    function render_post_author_block(string $html, array $block) : string
+    {
+    }
+    /**
+     * Load Inline Css.
+     *
+     * @since 1.0.0
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function post_author_inline_css(string $css) : string
+    {
+    }
+}
+namespace Swt {
+    /**
+     * Modifies front end HTML output of block.
+     *
+     * @since 1.0.0
      *
      * @param string $html  Block HTML.
      * @param array  $block Block data.
@@ -89,7 +139,7 @@ namespace Swt {
     /**
      * Load Inline Css.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @param string $css Inline CSS.
      * @return string
      */
@@ -126,7 +176,7 @@ namespace Swt {
     /**
      * Modifies front end HTML output of block.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      *
      * @param string $html  Block HTML.
      * @param array  $block Block data.
@@ -139,7 +189,7 @@ namespace Swt {
     /**
      * Load Inline Css.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @param string $css Inline CSS.
      * @return string
      */
@@ -173,7 +223,7 @@ namespace Swt {
      * Add Admin menu item.
      *
      * @param object \WP_Admin_Bar $admin_bar Admin bar.
-     * @since 0.0.6
+     * @since 1.0.0
      * @return void
      */
     function add_admin_menu(\WP_Admin_Bar $admin_bar) : void
@@ -257,7 +307,7 @@ namespace Swt {
     /**
      * Icomoon render function.
      * 
-     * @since 0.0.6
+     * @since 1.0.0
      * @param string $block_content Entire Block Content.
      * @param array  $block Block Properties As An Array.
      * @return string
@@ -268,7 +318,7 @@ namespace Swt {
     /**
      * Load icomoon inline css.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @param string $css Inline CSS.
      * @return string
      */
@@ -278,7 +328,7 @@ namespace Swt {
     /**
      * Load icomoon editor inline css.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @param array  $editor_settings Inline CSS.
      * @param object $block_editor_context Inline CSS.
      * @return array
@@ -289,7 +339,7 @@ namespace Swt {
     /**
      * Import icomoon fonts.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @return string
      */
     function icomoon_import_fonts() : string
@@ -408,7 +458,7 @@ namespace Swt {
     /**
      * Pattern categories.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      *
      * @return void
      */
@@ -602,7 +652,7 @@ namespace Swt {
     /**
      * Check if page title is enabled or disabled.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @param int $post_id Post id.
      * @return bool
      */
@@ -661,6 +711,13 @@ namespace {
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
+     * Title: Header center menu blend
+     * Slug: spectra-one/header-center-menu-secondary
+     * Categories: header
+     * Block Types: core/template-part/header
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
      * Title: Header center menu
      * Slug: spectra-one/header-center-menu
      * Categories: header
@@ -668,8 +725,22 @@ namespace {
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
+     * Title: Header left menu blend
+     * Slug: spectra-one/header-left-menu-secondary
+     * Categories: header
+     * Block Types: core/template-part/header
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
      * Title: Header left menu
      * Slug: spectra-one/header-left-menu
+     * Categories: header
+     * Block Types: core/template-part/header
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Header default blend
+     * Slug: spectra-one/header-default-secondary
      * Categories: header
      * Block Types: core/template-part/header
      */
