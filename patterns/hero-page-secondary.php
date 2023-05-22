@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Hero page inverse
- * Slug: spectra-one/hero-page-inverse
+ * Title: Hero page blend
+ * Slug: spectra-one/hero-page-secondary
  * Categories: featured
  * Keywords: hero page inverse
  */
