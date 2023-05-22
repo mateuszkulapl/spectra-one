@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since 0.0.6
+ * @since 1.0.0
  */
 
 declare(strict_types=1);
@@ -22,7 +22,7 @@ add_filter( 'render_block', SWT_NS . 'render_icomoon', 10, 2 );
 /**
  * Icomoon render function.
  * 
- * @since 0.0.6
+ * @since 1.0.0
  * @param string $block_content Entire Block Content.
  * @param array  $block Block Properties As An Array.
  * @return string
@@ -41,7 +41,7 @@ function render_icomoon( string $block_content, array $block ):string {
 /**
  * Load icomoon inline css.
  *
- * @since 0.0.6
+ * @since 1.0.0
  * @param string $css Inline CSS.
  * @return string
  */
@@ -53,7 +53,7 @@ function icomoon_inline_css( string $css ): string {
 /**
  * Load icomoon editor inline css.
  *
- * @since 0.0.6
+ * @since 1.0.0
  * @param array  $editor_settings Inline CSS.
  * @param object $block_editor_context Inline CSS.
  * @return array
@@ -67,7 +67,7 @@ function icomoon_block_editor_css( array $editor_settings, object $block_editor_
 /**
  * Import icomoon fonts.
  *
- * @since 0.0.6
+ * @since 1.0.0
  * @return string
  */
 function icomoon_import_fonts():string {

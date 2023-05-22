@@ -49,7 +49,6 @@
   right: 0;
 }
 .is-style-swt-latest-posts-simple .wp-block-latest-posts__featured-image img {
-  -o-object-fit: cover;
   object-fit: cover;
   width: 56px;
   height: 56px;

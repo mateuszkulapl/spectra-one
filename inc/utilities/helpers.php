@@ -334,7 +334,7 @@ function css_string_to_array( string $css ): array {
 /**
  * Check if page title is enabled or disabled.
  *
- * @since 0.0.6
+ * @since 1.0.0
  * @param int $post_id Post id.
  * @return bool
  */

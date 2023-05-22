@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Blog classic
- * Slug: spectra-one/blog-classic
+ * Slug: spectra-one/blog-3
  * Categories: posts
  * Keywords: blog classic
  */

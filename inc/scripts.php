@@ -201,7 +201,7 @@ add_action( 'after_setup_theme', SWT_NS . 'spectra_one_setup' );
 /**
  * Pattern categories.
  *
- * @since 0.0.6
+ * @since 1.0.0
  *
  * @return void
  */

@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since 0.0.6
+ * @since 1.0.0
  */
 
 declare( strict_types=1 );
@@ -21,7 +21,7 @@ add_filter( 'render_block_core/post-author', SWT_NS . 'render_post_author_block'
 /**
  * Modifies front end HTML output of block.
  *
- * @since 0.0.6
+ * @since 1.0.0
  *
  * @param string $html  Block HTML.
  * @param array  $block Block data.
@@ -40,7 +40,7 @@ function render_post_author_block( string $html, array $block ): string {
 /**
  * Load Inline Css.
  *
- * @since 0.0.6
+ * @since 1.0.0
  * @param string $css Inline CSS.
  * @return string
  */

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header center menu
- * Slug: spectra-one/header-center-menu
+ * Slug: spectra-one/header-2
  * Categories: header
  * Block Types: core/template-part/header
  */
