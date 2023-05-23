@@ -92,10 +92,10 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 = 1.0.0 =
 * New: Added sidebar support for page and post.
-* New: Simple image right block styling for Latest post block.
-* New: Minimal block styling for Category list and Archives blocks.
-* New: Simple block styling for Latest comments block.
-* New: Pill block styling for Tag cloud block.
+* New: Simple block styling for Latest post widget block.
+* New: Minimal block styling for Category list and Archives widget blocks.
+* New: Simple block styling for Latest comments widget block.
+* New: Pill block styling for Tag cloud widget block.
 * New: Inverse block styling for button block.
 * New: Direct link to edit template for page and post inside the admin bar.
 * New: Blend header patterns.
