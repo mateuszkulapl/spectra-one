@@ -103,8 +103,8 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Update: Removed unnecessary parameters in theme.json.
 * Update: Front page and related patterns.
 * Update: Global style variations.
-* Update: Post title section for all default templates 
-* Update: Header left menu pattern
+* Update: Post title section for all default templates. 
+* Update: Header left menu pattern.
 * Update: Spectra plugin install banner UI.
 * Fix: Footer alignment issue when less content is added on page and post.
 * Fix: Post meta values getting saved in database even if not selected for page and post.
