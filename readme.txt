@@ -89,7 +89,6 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 == Changelog ==
 
-
 = 1.0.0 =
 * New: Added sidebar support for page and post.
 * New: Simple block styling for Latest post widget block.
@@ -102,11 +101,11 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * New: Hero page and post pattern.
 * Update: Removed unnecessary parameters in theme.json.
 * Update: Front page and related patterns.
-* Update: Header and Footer patterns.
 * Update: Global style variations.
-* Update: Default templates.
+* Update: Post title section for all default templates 
+* Update: Header left menu pattern
 * Update: Spectra plugin install banner UI.
-* Fix: Footer alignment when less content is added on page / post.
+* Fix: Footer alignment issue when less content is added on page / post.
 
 
 = 0.0.5 = 
