@@ -108,6 +108,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Update: Spectra plugin install banner UI.
 * Fix: Footer alignment issue when less content is added on page and post.
 * Fix: Post meta values getting saved in database even if not selected for page and post.
+* Fix: Heading overflowing outside of container on responsive when padding is added.
 
 
 = 0.0.5 = 
