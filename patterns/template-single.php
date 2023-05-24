@@ -9,8 +9,10 @@
 
 <!-- wp:pattern {"slug":"spectra-one/hero-single"} /-->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-small"},"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:post-featured-image {"height":"432px"} /-->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium","padding":{"bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"className":"swt-block-featured-image","layout":{"type":"constrained"}} -->
+<div class="wp-block-group swt-block-featured-image"><!-- wp:post-featured-image {"height":"432px"} /--></div>
+<!-- /wp:group -->
 
 <!-- wp:post-content {"layout":{"type":"constrained"}} /--></div>
 <!-- /wp:group -->
