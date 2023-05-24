@@ -34,6 +34,12 @@ function render_remove_blocks( string $block_content, array $block ):string {
 		return '';
 	}
 
+	// condition for page and post featured image.
+	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
+	if ( $post_id && ! has_post_thumbnail( $post_id ) && isset( $block['attrs']['className'] ) && 'swt-block-featured-image' === $block['attrs']['className'] ) {
+		return '';
+	}
+
 	// condition for page and post comments.
 	if ( ! comments_open() && isset( $block['attrs']['className'] ) && 'swt-block-comment-group' === $block['attrs']['className'] ) {
 		return '';
