@@ -19,7 +19,7 @@
 <p class="has-text-align-center has-large-font-size"><?php esc_html_e( 'Sorry, but nothing matched your search terms. Try another search?', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"layout":{"type":"constrained","contentSize":"600px"}} -->
+<!-- wp:group {"layout":{"type":"constrained","contentSize":"480px"}} -->
 <div class="wp-block-group"><!-- wp:search {"label":"<?php esc_html_e( 'Search', 'spectra-one' ); ?>","showLabel":false,"placeholder":"<?php esc_attr_e( 'Search...', 'spectra-one' ); ?>","width":null,"widthUnit":"%","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"align":"center","className":"is-style-swt-search-minimal"} /--></div>
 <!-- /wp:group -->
 <!-- /wp:query-no-results -->
