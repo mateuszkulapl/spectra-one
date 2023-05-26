@@ -95,22 +95,6 @@ function HeaderAttributes(settings) {
   return settings;
 }
 (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('blocks.registerBlockType', 'swt/header-attributes', HeaderAttributes);
-const enableToolbarButtonOnBlocks = ['core/paragraph'];
-const setToolbarButtonAttribute = (settings, name) => {
-  // Do nothing if it's another block than our defined ones.
-  if (!enableToolbarButtonOnBlocks.includes(name)) {
-    return settings;
-  }
-  console.log('sadsad');
-  return Object.assign({}, settings, {
-    attributes: Object.assign({}, settings.attributes, {
-      paragraphAttribute: {
-        type: 'string'
-      }
-    })
-  });
-};
-wp.hooks.addFilter('blocks.registerBlockType', 'swt/set-toolbar-button-attribute', setToolbarButtonAttribute);
 
 /***/ }),
 
@@ -539,7 +523,7 @@ function swtSiteTitle() {
       const titleBlock = document.querySelector('.edit-post-visual-editor__post-title-wrapper');
       if (null === titleVisibility && null !== titleBlock) {
         let titleVisibilityTrigger = '';
-        if ((0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.select)('core/editor').getEditedPostAttribute('meta')?.swt_meta_site_title_display && true === (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.select)('core/editor').getEditedPostAttribute('meta')._swt_meta_site_title_display) {
+        if ((0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.select)('core/editor').getEditedPostAttribute('meta')?._swt_meta_site_title_display && true === (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.select)('core/editor').getEditedPostAttribute('meta')._swt_meta_site_title_display) {
           titleVisibilityTrigger = '<span class="dashicons dashicons-hidden title-visibility" data-tooltip="Enable Title"></span>';
           titleBlock.classList.toggle('invisible');
         } else {

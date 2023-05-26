@@ -112,6 +112,7 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Fix: Removed additional space on the left and right of the search width when the search page adapts to mobile screen size. 
 * Fix: Removed extra spacing while sticky header is enabled when transitioning from desktop to mobile screen sizes.
 * Fix: Center aligned post hero section categories on responsive.
+* Fix: Heading overflowing outside of container on responsive when padding is added.
 
 = 0.0.5 = 
 * Fix: Placeholder not linked with single post / page on archive pages.
