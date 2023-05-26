@@ -113,6 +113,7 @@ function header_inline_css( string $css ): string {
  */
 function header_inline_js( string $js ): string {
 	$inline_js = <<<JS
+
 	function docReady(fn) {
 		// see if DOM is already available
 		if (document.readyState === "complete" || document.readyState === "interactive") {
@@ -122,7 +123,8 @@ function header_inline_js( string $js ): string {
 			document.addEventListener("DOMContentLoaded", fn);
 		}
 	}
-	docReady(function() {
+
+	function stickyHeaderSpacing() {
 		// Sticky header option.
 		const header = document.querySelector( '.swt-sticky-header' );
 		const body = document.querySelector( 'body' );
@@ -134,7 +136,15 @@ function header_inline_js( string $js ): string {
 				body.style.paddingTop = parseFloat( height ) + 'px';
 			}
 		}
+	}
+
+	docReady(function() {
+		stickyHeaderSpacing();
 	});
+
+	window.addEventListener('resize', function(event) {
+		stickyHeaderSpacing();
+	}, true);
 JS;
 	$js       .= $inline_js;
 	return $js;
@@ -185,16 +195,24 @@ function header_wp_admin_bar_spacing_js( string $js ): string {
 			document.addEventListener("DOMContentLoaded", fn);
 		}
 	}
-	docReady(function() {
 
+	function wpAdminPaddingOffset() {
 		const wpAdminBar = document.querySelector('#wpadminbar');
 		const header = document.querySelector( 'header' );
 
 		if( header && wpAdminBar ) {
 			header.style.top = wpAdminBar.offsetHeight + 'px';
 		}
+	}
 
+	docReady(function() {
+		wpAdminPaddingOffset();
 	});
+
+	window.addEventListener('resize', function(event) {
+		wpAdminPaddingOffset();
+	}, true);
+
 JS;
 	$js       .= $inline_js;
 	return $js;

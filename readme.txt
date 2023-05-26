@@ -106,9 +106,11 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 * Update: Post title section for all default templates. 
 * Update: Header left menu pattern.
 * Update: Spectra plugin install banner UI.
+* Update: Author user name vertically aligned in the center when author bio is removed.
 * Fix: Footer alignment issue when less content is added on page and post.
 * Fix: Post meta values getting saved in database even if not selected for page and post.
-
+* Fix: Removed additional space on the left and right of the search width when the search page adapts to mobile screen size. 
+* Fix: Removed extra spacing while sticky header is enabled when transitioning from desktop to mobile screen sizes.
 
 = 0.0.5 = 
 * Fix: Placeholder not linked with single post / page on archive pages.
