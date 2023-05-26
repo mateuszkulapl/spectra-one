@@ -50,10 +50,6 @@ function post_terms_inline_css( string $css ): string {
 		'.wp-block-post-terms a' => array(
 			'color' => 'inherit',
 		),
-
-		'.swt-block-post-banner-group .wp-block-post-terms.swt-default-post-terms' => array(
-			'text-align' => 'center',
-		),
 	);
 
 	$css .= parse_css( $css_output );
