@@ -40,7 +40,7 @@ function swtSiteTitle() {
 			if ( null === titleVisibility && null !== titleBlock ) {
 				let titleVisibilityTrigger = '';
 				if ( select( 'core/editor' ).getEditedPostAttribute( 'meta' )
-					?.swt_meta_site_title_display &&
+					?._swt_meta_site_title_display &&
 					true ===
 					select( 'core/editor' ).getEditedPostAttribute( 'meta' )
 						._swt_meta_site_title_display
