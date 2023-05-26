@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-05-22T07:00:30+02:00\n"
+"POT-Creation-Date: 2023-05-26T11:06:21+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -58,8 +58,8 @@ msgstr ""
 #: patterns/alternate-image-text.php:45
 #: patterns/alternate-image-text.php:63
 #: patterns/alternate-image-text.php:91
-#: patterns/footer-five-columns-menu-inline.php:86
-#: patterns/footer-six-columns-menu-separated.php:103
+#: patterns/footer-4.php:86
+#: patterns/footer-5.php:103
 #: patterns/hero-banner.php:29
 #: patterns/split-image-right.php:29
 msgid "Learn More"
@@ -180,35 +180,35 @@ msgstr ""
 msgid "Global styles enable us to create and apply consistent design elements across the entire website, including typography, colors, and spacing. Providing us with more control over our website's look and feel."
 msgstr ""
 
-#: patterns/blog-classic.php
+#: patterns/blog-2.php
+msgctxt "Pattern title"
+msgid "Blog simple"
+msgstr ""
+
+#: patterns/blog-2.php:13
+#: patterns/blog-3.php:13
+#: patterns/blog-4.php:13
+#: patterns/blog.php:13
+msgid "Latest Posts"
+msgstr ""
+
+#: patterns/blog-3.php
 msgctxt "Pattern title"
 msgid "Blog classic"
 msgstr ""
 
-#: patterns/blog-classic.php:13
-#: patterns/blog-grid.php:13
-#: patterns/blog-left-featured-image.php:13
-#: patterns/blog-simple.php:13
-msgid "Latest Posts"
-msgstr ""
-
-#: patterns/blog-classic.php:33
+#: patterns/blog-3.php:33
 msgid "Read More"
 msgstr ""
 
-#: patterns/blog-grid.php
-msgctxt "Pattern title"
-msgid "Blog grid"
-msgstr ""
-
-#: patterns/blog-left-featured-image.php
+#: patterns/blog-4.php
 msgctxt "Pattern title"
 msgid "Blog left featured image"
 msgstr ""
 
-#: patterns/blog-simple.php
+#: patterns/blog.php
 msgctxt "Pattern title"
-msgid "Blog simple"
+msgid "Blog grid"
 msgstr ""
 
 #: patterns/faq.php
@@ -261,320 +261,320 @@ msgstr ""
 msgid "Brought to you by the creators of"
 msgstr ""
 
-#: patterns/footer-five-columns-menu-inline.php
-msgctxt "Pattern title"
-msgid "Footer five columns menu inline"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:28
-#: patterns/footer-six-columns-menu-separated.php:45
-#: patterns/footer.php:37
-msgid "Products"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:31
-#: patterns/footer-six-columns-menu-separated.php:48
-#: patterns/footer.php:40
-msgid "Products List"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:32
-#: patterns/footer-six-columns-menu-separated.php:49
-#: patterns/footer.php:41
-msgid "Plans \\u0026amp; Pricing"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:33
-#: patterns/footer-six-columns-menu-separated.php:50
-#: patterns/footer.php:42
-msgid "Services"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:34
-#: patterns/footer-six-columns-menu-separated.php:51
-#: patterns/footer.php:43
-msgid "Partners"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:43
-#: patterns/footer-six-columns-menu-separated.php:56
-#: patterns/footer.php:48
-msgid "Company"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:46
-#: patterns/footer-six-columns-menu-separated.php:59
-#: patterns/footer.php:51
-msgid "About Us"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:47
-#: patterns/footer-six-columns-menu-separated.php:60
-#: patterns/footer.php:52
-msgid "News"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:48
-#: patterns/footer-six-columns-menu-separated.php:61
-#: patterns/footer.php:53
-msgid "Contact Us"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:49
-#: patterns/footer-six-columns-menu-separated.php:62
-#: patterns/footer.php:54
-msgid "Meet Our Team"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:54
-#: patterns/footer-six-columns-menu-separated.php:82
-#: patterns/footer.php:63
-msgid "Resources"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:57
-#: patterns/footer-six-columns-menu-separated.php:74
-#: patterns/footer.php:66
-msgid "Gallery"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:58
-#: patterns/footer-six-columns-menu-separated.php:75
-#: patterns/footer.php:67
-msgid "Blog Articles"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:59
-#: patterns/footer-six-columns-menu-separated.php:76
-#: patterns/footer.php:68
-msgid "Brand Assets"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:60
-#: patterns/footer-six-columns-menu-separated.php:77
-#: patterns/footer.php:69
-msgid "Brand Guidelines"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:69
-#: patterns/footer-six-columns-menu-separated.php:71
-#: patterns/footer.php:74
-msgid "Support"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:72
-#: patterns/footer-six-columns-menu-separated.php:85
-#: patterns/footer.php:77
-msgid "Knowledge Base"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:73
-#: patterns/footer-six-columns-menu-separated.php:86
-#: patterns/footer.php:78
-msgid "Contact Support"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:74
-#: patterns/footer-six-columns-menu-separated.php:87
-#: patterns/footer-six-columns-menu-separated.php:132
-#: patterns/footer.php:79
-msgid "Privacy Policy"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:75
-#: patterns/footer-six-columns-menu-separated.php:88
-#: patterns/footer.php:80
-msgid "TOS"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:80
-msgid "Need help?"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:83
-#: patterns/footer-six-columns-menu-separated.php:100
-msgid "What’s New"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:84
-#: patterns/footer-six-columns-menu-separated.php:101
-msgid "How to Videos"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:85
-#: patterns/footer-six-columns-menu-separated.php:102
-msgid "Ask the Community"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:98
-#: patterns/footer-minimal-menu-center.php:39
-#: patterns/footer-minimal-menu-right.php:32
-#: patterns/footer-six-columns-menu-separated.php:123
-#: patterns/footer.php:88
-msgid "© %d ·"
-msgstr ""
-
-#: patterns/footer-five-columns-menu-inline.php:102
-#: patterns/footer-six-columns-menu-separated.php:127
-#: patterns/footer.php:92
-msgid "· All rights reserved"
-msgstr ""
-
-#: patterns/footer-minimal-menu-center.php
+#: patterns/footer-2.php
 msgctxt "Pattern title"
 msgid "Footer minimal menu center"
 msgstr ""
 
-#: patterns/footer-minimal-menu-center.php:24
-#: patterns/footer-minimal-menu-right.php:23
-#: patterns/footer-six-columns-menu-separated.php:24
-#: patterns/header-center-menu-secondary.php:24
-#: patterns/header-center-menu.php:22
-#: patterns/header-left-menu-secondary.php:25
-#: patterns/header-left-menu.php:24
-#: patterns/header-secondary.php:26
+#: patterns/footer-2.php:24
+#: patterns/footer-3.php:23
+#: patterns/footer-5.php:24
+#: patterns/header-2.php:22
+#: patterns/header-3.php:24
+#: patterns/header-4.php:26
+#: patterns/header-5.php:24
+#: patterns/header-6.php:25
 #: patterns/header.php:23
 msgid "Home"
 msgstr ""
 
-#: patterns/footer-minimal-menu-center.php:25
-#: patterns/footer-minimal-menu-right.php:24
-#: patterns/footer-six-columns-menu-separated.php:25
-#: patterns/header-center-menu-secondary.php:25
-#: patterns/header-center-menu.php:23
-#: patterns/header-left-menu-secondary.php:26
-#: patterns/header-left-menu.php:25
-#: patterns/header-secondary.php:27
+#: patterns/footer-2.php:25
+#: patterns/footer-3.php:24
+#: patterns/footer-5.php:25
+#: patterns/header-2.php:23
+#: patterns/header-3.php:25
+#: patterns/header-4.php:27
+#: patterns/header-5.php:25
+#: patterns/header-6.php:26
 #: patterns/header.php:24
 msgid "About"
 msgstr ""
 
-#: patterns/footer-minimal-menu-center.php:26
-#: patterns/footer-minimal-menu-right.php:25
-#: patterns/footer-six-columns-menu-separated.php:26
-#: patterns/header-center-menu-secondary.php:26
-#: patterns/header-center-menu.php:24
-#: patterns/header-left-menu-secondary.php:27
-#: patterns/header-left-menu.php:26
-#: patterns/header-secondary.php:28
+#: patterns/footer-2.php:26
+#: patterns/footer-3.php:25
+#: patterns/footer-5.php:26
+#: patterns/header-2.php:24
+#: patterns/header-3.php:26
+#: patterns/header-4.php:28
+#: patterns/header-5.php:26
+#: patterns/header-6.php:27
 #: patterns/header.php:25
 msgid "Blog"
 msgstr ""
 
-#: patterns/footer-minimal-menu-center.php:27
-#: patterns/footer-minimal-menu-right.php:26
-#: patterns/footer-six-columns-menu-separated.php:27
-#: patterns/header-center-menu-secondary.php:27
-#: patterns/header-center-menu.php:25
-#: patterns/header-left-menu-secondary.php:28
-#: patterns/header-left-menu.php:27
-#: patterns/header-secondary.php:29
+#: patterns/footer-2.php:27
+#: patterns/footer-3.php:26
+#: patterns/footer-5.php:27
+#: patterns/header-2.php:25
+#: patterns/header-3.php:27
+#: patterns/header-4.php:29
+#: patterns/header-5.php:27
+#: patterns/header-6.php:28
 #: patterns/header.php:26
 msgid "Contact"
 msgstr ""
 
-#: patterns/footer-minimal-menu-center.php:45
+#: patterns/footer-2.php:39
+#: patterns/footer-3.php:32
+#: patterns/footer-4.php:98
+#: patterns/footer-5.php:123
+#: patterns/footer.php:88
+msgid "© %d ·"
+msgstr ""
+
+#: patterns/footer-2.php:45
 msgid "Privacy"
 msgstr ""
 
-#: patterns/footer-minimal-menu-center.php:48
+#: patterns/footer-2.php:48
 msgid "."
 msgstr ""
 
-#: patterns/footer-minimal-menu-center.php:51
+#: patterns/footer-2.php:51
 msgid "Terms"
 msgstr ""
 
-#: patterns/footer-minimal-menu-right.php
+#: patterns/footer-3.php
 msgctxt "Pattern title"
 msgid "Footer minimal menu right"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php
+#: patterns/footer-4.php
+msgctxt "Pattern title"
+msgid "Footer five columns menu inline"
+msgstr ""
+
+#: patterns/footer-4.php:28
+#: patterns/footer-5.php:45
+#: patterns/footer.php:37
+msgid "Products"
+msgstr ""
+
+#: patterns/footer-4.php:31
+#: patterns/footer-5.php:48
+#: patterns/footer.php:40
+msgid "Products List"
+msgstr ""
+
+#: patterns/footer-4.php:32
+#: patterns/footer-5.php:49
+#: patterns/footer.php:41
+msgid "Plans \\u0026amp; Pricing"
+msgstr ""
+
+#: patterns/footer-4.php:33
+#: patterns/footer-5.php:50
+#: patterns/footer.php:42
+msgid "Services"
+msgstr ""
+
+#: patterns/footer-4.php:34
+#: patterns/footer-5.php:51
+#: patterns/footer.php:43
+msgid "Partners"
+msgstr ""
+
+#: patterns/footer-4.php:43
+#: patterns/footer-5.php:56
+#: patterns/footer.php:48
+msgid "Company"
+msgstr ""
+
+#: patterns/footer-4.php:46
+#: patterns/footer-5.php:59
+#: patterns/footer.php:51
+msgid "About Us"
+msgstr ""
+
+#: patterns/footer-4.php:47
+#: patterns/footer-5.php:60
+#: patterns/footer.php:52
+msgid "News"
+msgstr ""
+
+#: patterns/footer-4.php:48
+#: patterns/footer-5.php:61
+#: patterns/footer.php:53
+msgid "Contact Us"
+msgstr ""
+
+#: patterns/footer-4.php:49
+#: patterns/footer-5.php:62
+#: patterns/footer.php:54
+msgid "Meet Our Team"
+msgstr ""
+
+#: patterns/footer-4.php:54
+#: patterns/footer-5.php:82
+#: patterns/footer.php:63
+msgid "Resources"
+msgstr ""
+
+#: patterns/footer-4.php:57
+#: patterns/footer-5.php:74
+#: patterns/footer.php:66
+msgid "Gallery"
+msgstr ""
+
+#: patterns/footer-4.php:58
+#: patterns/footer-5.php:75
+#: patterns/footer.php:67
+msgid "Blog Articles"
+msgstr ""
+
+#: patterns/footer-4.php:59
+#: patterns/footer-5.php:76
+#: patterns/footer.php:68
+msgid "Brand Assets"
+msgstr ""
+
+#: patterns/footer-4.php:60
+#: patterns/footer-5.php:77
+#: patterns/footer.php:69
+msgid "Brand Guidelines"
+msgstr ""
+
+#: patterns/footer-4.php:69
+#: patterns/footer-5.php:71
+#: patterns/footer.php:74
+msgid "Support"
+msgstr ""
+
+#: patterns/footer-4.php:72
+#: patterns/footer-5.php:85
+#: patterns/footer.php:77
+msgid "Knowledge Base"
+msgstr ""
+
+#: patterns/footer-4.php:73
+#: patterns/footer-5.php:86
+#: patterns/footer.php:78
+msgid "Contact Support"
+msgstr ""
+
+#: patterns/footer-4.php:74
+#: patterns/footer-5.php:87
+#: patterns/footer-5.php:132
+#: patterns/footer.php:79
+msgid "Privacy Policy"
+msgstr ""
+
+#: patterns/footer-4.php:75
+#: patterns/footer-5.php:88
+#: patterns/footer.php:80
+msgid "TOS"
+msgstr ""
+
+#: patterns/footer-4.php:80
+msgid "Need help?"
+msgstr ""
+
+#: patterns/footer-4.php:83
+#: patterns/footer-5.php:100
+msgid "What’s New"
+msgstr ""
+
+#: patterns/footer-4.php:84
+#: patterns/footer-5.php:101
+msgid "How to Videos"
+msgstr ""
+
+#: patterns/footer-4.php:85
+#: patterns/footer-5.php:102
+msgid "Ask the Community"
+msgstr ""
+
+#: patterns/footer-4.php:102
+#: patterns/footer-5.php:127
+#: patterns/footer.php:92
+msgid "· All rights reserved"
+msgstr ""
+
+#: patterns/footer-5.php
 msgctxt "Pattern title"
 msgid "Footer six columns menu separated"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:97
+#: patterns/footer-5.php:97
 msgid "Need Help?"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:108
+#: patterns/footer-5.php:108
 msgid "Get in touch"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:111
+#: patterns/footer-5.php:111
 msgid "Book A Meeting"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:112
+#: patterns/footer-5.php:112
 msgid "Get Quote"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:113
+#: patterns/footer-5.php:113
 msgid "Ask Product Details"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:114
+#: patterns/footer-5.php:114
 msgid "Service Inquiry"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:135
+#: patterns/footer-5.php:135
 msgid "·"
 msgstr ""
 
-#: patterns/footer-six-columns-menu-separated.php:138
+#: patterns/footer-5.php:138
 msgid "Terms and Conditions"
 msgstr ""
 
 #: patterns/footer.php
 msgctxt "Pattern title"
-msgid "Footer default"
+msgid "Footer"
 msgstr ""
 
 #: patterns/footer.php:24
 msgid "Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium."
 msgstr ""
 
-#: patterns/header-center-menu-secondary.php
+#: patterns/header-2.php
 msgctxt "Pattern title"
-msgid "Header center menu blend"
+msgid "Header center menu"
 msgstr ""
 
-#: patterns/header-center-menu-secondary.php:32
-#: patterns/header-center-menu.php:29
-#: patterns/header-left-menu-secondary.php:38
-#: patterns/header-left-menu.php:37
-#: patterns/header-secondary.php:34
+#: patterns/header-2.php:29
+#: patterns/header-3.php:37
+#: patterns/header-4.php:34
+#: patterns/header-5.php:32
+#: patterns/header-6.php:38
 #: patterns/header.php:30
 #: patterns/hero-banner.php:26
 #: patterns/wide-banner-with-button.php:19
 msgid "Get Started"
 msgstr ""
 
-#: patterns/header-center-menu.php
-msgctxt "Pattern title"
-msgid "Header center menu"
-msgstr ""
-
-#: patterns/header-left-menu-secondary.php
-msgctxt "Pattern title"
-msgid "Header left menu blend"
-msgstr ""
-
-#: patterns/header-left-menu.php
+#: patterns/header-3.php
 msgctxt "Pattern title"
 msgid "Header left menu"
 msgstr ""
 
-#: patterns/header-secondary.php
+#: patterns/header-4.php
 msgctxt "Pattern title"
-msgid "Header default blend"
+msgid "Header blend"
+msgstr ""
+
+#: patterns/header-5.php
+msgctxt "Pattern title"
+msgid "Header center menu blend"
+msgstr ""
+
+#: patterns/header-6.php
+msgctxt "Pattern title"
+msgid "Header left menu blend"
 msgstr ""
 
 #: patterns/header.php
 msgctxt "Pattern title"
-msgid "Header default"
+msgid "Header"
 msgstr ""
 
 #: patterns/hero-banner.php
@@ -590,9 +590,9 @@ msgstr ""
 msgid "Create a functional and visually appealing website"
 msgstr ""
 
-#: patterns/hero-page-inverse.php
+#: patterns/hero-page-2.php
 msgctxt "Pattern title"
-msgid "Hero page inverse"
+msgid "Hero page blend"
 msgstr ""
 
 #: patterns/hero-page.php
@@ -600,9 +600,9 @@ msgctxt "Pattern title"
 msgid "Hero page"
 msgstr ""
 
-#: patterns/hero-single-inverse.php
+#: patterns/hero-single-2.php
 msgctxt "Pattern title"
-msgid "Hero single inverse"
+msgid "Hero single blend"
 msgstr ""
 
 #: patterns/hero-single.php
@@ -662,13 +662,13 @@ msgstr ""
 msgid "Can't find what you're looking for? Don't worry, we've got your back."
 msgstr ""
 
-#: patterns/template-404.php:21
-#: patterns/template-search.php:21
+#: patterns/template-404.php:22
+#: patterns/template-search.php:23
 msgid "Search..."
 msgstr ""
 
-#: patterns/template-404.php:21
-#: patterns/template-search.php:21
+#: patterns/template-404.php:22
+#: patterns/template-search.php:23
 msgid "Search"
 msgstr ""
 
@@ -697,7 +697,7 @@ msgctxt "Pattern title"
 msgid "Template search"
 msgstr ""
 
-#: patterns/template-search.php:18
+#: patterns/template-search.php:19
 msgid "Sorry, but nothing matched your search terms. Try another search?"
 msgstr ""
 
@@ -859,40 +859,40 @@ msgid "Sticky header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:415
+#: build/editor.js:421
 #: src/components/install-plugin-notice.js:102
 #: build/editor.js:434
 msgid "Spectra plugin"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:417
+#: build/editor.js:423
 #: src/components/install-plugin-notice.js:106
 #: build/editor.js:438
 msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:631
+#: build/editor.js:637
 #: src/extensions/panel/components.js:29
-#: build/editor.js:650
+#: build/editor.js:651
 msgid "Disable Elements"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:635
+#: build/editor.js:641
 #: src/extensions/panel/components.js:38
-#: build/editor.js:659
+#: build/editor.js:660
 msgid "Header Settings"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:677
-#: build/editor.js:681
+#: build/editor.js:686
+#: build/editor.js:690
 #: src/extensions/panel/sidebar.js:19
 #: src/extensions/panel/sidebar.js:27
-#: build/editor.js:697
-#: build/editor.js:705
+#: build/editor.js:698
+#: build/editor.js:706
 msgid "Spectra Page Settings"
 msgstr ""
 
