@@ -23,6 +23,6 @@
 <p>·</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:post-terms {"term":"category"} /--></div>
+<!-- wp:post-terms {"term":"category","className":"is-style-default swt-default-post-terms"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
