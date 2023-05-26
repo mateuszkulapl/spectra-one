@@ -41,11 +41,22 @@ register_block_style(
                 color: var(--wp--preset--color--heading);
                 line-height: var(--wp--custom--line-height--initial);
                 text-transform: capitalize;
+                width: 100%;
 			}
 
             ' . $swt_parent_class . ' .wp-block-post-author__bio {
                 margin-top: 10px;
                 font-size: var(--wp--preset--font-size--small);
+			}
+
+            ' . $swt_parent_class . ' .wp-block-post-author__content {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                flex-basis: inherit;
+                flex-grow: inherit;
 			}
 		',
 	)
