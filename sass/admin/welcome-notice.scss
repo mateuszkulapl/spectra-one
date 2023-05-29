@@ -4,6 +4,7 @@ $description : #4b5563;
 $primary-color: #4f46e5;
 $disable-color: #a7aaad;
 $mobile: 786px;
+$tablet: 1025px;
 
 .swt-welcome-notice {
 	position: relative;
@@ -24,6 +25,11 @@ $mobile: 786px;
 				max-width: 630px;
 				padding-left: 64px;
 				padding-bottom: 30px;
+
+				@media screen and (max-width: $tablet) {
+					padding-right: 2em;
+					padding-left: 2em;
+				}
 
 				@media screen and (max-width: $mobile) {
 					padding: 0;
@@ -64,6 +70,7 @@ $mobile: 786px;
 
 				@media screen and (max-width: $mobile) {
 					margin-bottom: 25px;
+					font-size: 16px;
 				}
 			}
 
@@ -78,6 +85,11 @@ $mobile: 786px;
 					border-radius: 6px;
 					margin-top: 5px;
 					margin-bottom: 5px;
+					text-align: center;
+
+					@media screen and (max-width: $mobile) {
+						width: 100%;
+					}
 				}
 
 				button {
@@ -109,7 +121,8 @@ $mobile: 786px;
 				}
 			}
 
-			@media screen and (max-width: $mobile) {
+
+			@media screen and (max-width: $tablet) {
 				width: 100%;
 			}
 		}
@@ -120,7 +133,8 @@ $mobile: 786px;
 	}
 
 	@media screen and (max-width: $mobile) {
-		padding-top: 35px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 }
 
