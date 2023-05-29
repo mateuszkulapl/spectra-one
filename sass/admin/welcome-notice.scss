@@ -16,9 +16,14 @@ $mobile: 786px;
 		.swt-col {
 			width: 50%;
 
+			&.swt-col-right {
+				align-self: flex-end;
+			}
+
 			.notice-content {
 				max-width: 630px;
 				padding-left: 64px;
+				padding-bottom: 30px;
 
 				@media screen and (max-width: $mobile) {
 					padding: 0;

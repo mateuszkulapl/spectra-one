@@ -9,9 +9,13 @@
 .swt-welcome-notice .swt-row .swt-col {
   width: 50%;
 }
+.swt-welcome-notice .swt-row .swt-col.swt-col-right {
+  align-self: flex-end;
+}
 .swt-welcome-notice .swt-row .swt-col .notice-content {
   max-width: 630px;
   padding-right: 64px;
+  padding-bottom: 30px;
 }
 @media screen and (max-width: 786px) {
   .swt-welcome-notice .swt-row .swt-col .notice-content {
