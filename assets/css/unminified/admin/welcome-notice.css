@@ -17,7 +17,7 @@
   padding-left: 64px;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1199px) {
   .swt-welcome-notice .swt-row .swt-col .notice-content {
     max-width: 100%;
     padding-right: 2em;
@@ -102,12 +102,12 @@
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1199px) {
   .swt-welcome-notice .swt-row .swt-col .image-container {
     display: none;
   }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1199px) {
   .swt-welcome-notice .swt-row .swt-col {
     width: 100%;
   }
