@@ -3,7 +3,7 @@ $text-color-alt: #fff;
 $description : #4b5563;
 $primary-color: #4f46e5;
 $disable-color: #a7aaad;
-$mobile: 786px;
+$mobile: 782px;
 $tablet: 1025px;
 
 .swt-welcome-notice {
@@ -27,6 +27,7 @@ $tablet: 1025px;
 				padding-bottom: 30px;
 
 				@media screen and (max-width: $tablet) {
+					max-width: 100%;
 					padding-right: 2em;
 					padding-left: 2em;
 				}
@@ -116,7 +117,7 @@ $tablet: 1025px;
 					height: auto;
 				}
 
-				@media screen and (max-width: $mobile) {
+				@media screen and (max-width: $tablet) {
 					display: none;
 				}
 			}
