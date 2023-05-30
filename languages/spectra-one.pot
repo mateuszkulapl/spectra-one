@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-05-26T11:06:21+02:00\n"
+"POT-Creation-Date: 2023-05-30T13:31:12+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -725,7 +725,7 @@ msgid "See what people have to say about us"
 msgstr ""
 
 #: patterns/testimonials.php:37
-msgid "Leslie Alexander"
+msgid "Darlene Robertson"
 msgstr ""
 
 #: patterns/testimonials.php:40
@@ -773,7 +773,7 @@ msgid "I've used a few different website builders over the years, and this one i
 msgstr ""
 
 #: patterns/testimonials.php:108
-msgid "Darlene Robertson"
+msgid "Leslie Alexander"
 msgstr ""
 
 #: patterns/testimonials.php:111
