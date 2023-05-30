@@ -43,44 +43,64 @@ License URI : https://heroicons.com
 
 Images
 
-Hero  
-License : CC0 1.0 Universal (CC0 1.0)  
-https://pxhere.com/en/license,  
-https://pxhere.com/en/photo/13688  
+Hero Banner
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://pxhere.com/en/license,
+https://pxhere.com/en/photo/518915
 
-Alternate image text  
-License : CC0 1.0 Universal (CC0 1.0)  
-https://pxhere.com/en/license,  
-https://pxhere.com/en/photo/1629588  
-https://pxhere.com/en/photo/1434697  
-https://pxhere.com/en/photo/1446749  
-https://pxhere.com/en/photo/1450327  
+Alternate image text
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://stocksnap.io/license,
+https://stocksnap.io/photo/macbook-computer-AU9KTL3NU8
+https://stocksnap.io/photo/olympus-black&white-F4YBLTO81N
+https://stocksnap.io/photo/tomato-fresh-9ISAFDQGUT
+https://stocksnap.io/photo/dirt-road-TPPZ3SU9NC
+https://stocksnap.io/photo/people-woman-FLU1A9EK7E
+https://stocksnap.io/photo/laptop-typing-JXHUVN906T
 
-Testimonial  
-License : CC0 1.0 Universal (CC0 1.0)  
-https://pxhere.com/en/license,  
-https://pxhere.com/en/photo/1573331  
-https://pxhere.com/en/photo/625568  
-https://pxhere.com/en/photo/764654  
+Testimonial
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://pxhere.com/en/license,
+License URI : https://stocksnap.io/license,
+https://stocksnap.io/photo/male-professional-6QXAIH13O6
+https://stocksnap.io/photo/confident-business-ZMIFYSYFK8
+https://stocksnap.io/photo/business-man-7BQNRHB6EX
+​​https://pxhere.com/en/photo/1573331
 
-Featured Logo  
-License : Fair Use License  
-https://logoipsum.com/license/,  
-https://logoipsum.com/artwork/265  
-https://logoipsum.com/artwork/263  
-https://logoipsum.com/artwork/239  
-https://logoipsum.com/artwork/238  
-https://logoipsum.com/artwork/236  
+Featured Logo
+License : Fair Use License
+License URI : https://logoipsum.com/license/,
+https://logoipsum.com/artwork/265
+https://logoipsum.com/artwork/263
+https://logoipsum.com/artwork/239
+https://logoipsum.com/artwork/238
+https://logoipsum.com/artwork/236
 
-Illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.  
-https://wpspectra.com/wp-content/uploads/2023/03/spectra-plugin-banner.jpg  
-https://wpspectra.com/wp-content/uploads/2023/04/spectra-one-hero-gradient.png  
-https://wpspectra.com/wp-content/uploads/2023/04/spectra-one-banner-gradient.png  
-https://wpspectra.com/wp-content/uploads/2023/04/content-1.png  
-https://wpspectra.com/wp-content/uploads/2023/04/content-2.png  
-https://wpspectra.com/wp-content/uploads/2023/04/content-3.png  
-https://wpspectra.com/wp-content/uploads/2023/04/spectra-one-hero-image.png  
-https://wpspectra.com/wp-content/uploads/2023/04/split-content.png  
+Split image right
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://pxhere.com/en/license,
+https://pxhere.com/en/photo/764654
+https://pxhere.com/en/photo/451655
+https://pxhere.com/en/photo/33863
+https://pxhere.com/en/photo/814735
+
+Spectra Install banner
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://stocksnap.io/license,
+https://stocksnap.io/photo/christmas-cookie-VDTQON9DDC
+
+
+Illustrations used are created by Brainstorm Force and released under Creative Commons ( CC0 ) License.
+https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-hero-section-img.png
+https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-content-01.png
+https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-content-02.png
+https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-content-03.png
+https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-split-content-img.png
+https://wpspectra.com/wp-content/uploads/2023/05/spectra-plugin-banner-img.png
+https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-01.png
+https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-02.png
+https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-03.png
+https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 
 
 © Copyright Spectra One 2023, Spectra.
