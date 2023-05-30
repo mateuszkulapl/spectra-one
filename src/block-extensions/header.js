@@ -26,13 +26,13 @@ export const HeaderSettings = ( props ) => {
 				: false;
 	} else {
 		SWTStickyHeader =
-			props?.meta.swt_meta_sticky_header &&
-			props.meta.swt_meta_sticky_header
+			props?.meta._swt_meta_sticky_header &&
+			props.meta._swt_meta_sticky_header
 				? true
 				: false;
 		SWTTransparentHeader =
-			props?.meta.swt_meta_transparent_header &&
-			props.meta.swt_meta_transparent_header
+			props?.meta._swt_meta_transparent_header &&
+			props.meta._swt_meta_transparent_header
 				? true
 				: false;
 	}
@@ -46,20 +46,20 @@ export const HeaderSettings = ( props ) => {
 						help={
 							SWTStickyHeader
 								? __(
-										'Transparent header option will be disabled on enabling this option.',
-										'spectra-one'
+									'Transparent header option will be disabled on enabling this option.',
+									'spectra-one'
 								  )
 								: ''
 						}
 						checked={ SWTStickyHeader }
 						onChange={ ( val ) => {
-							props.hasOwnProperty( 'setAttributes' )
+							return props.hasOwnProperty( 'setAttributes' )
 								? props.setAttributes( {
-										SWTStickyHeader: ! SWTStickyHeader,
+									SWTStickyHeader: ! SWTStickyHeader,
 								  } )
 								: props.setMetaFieldValue(
-										val,
-										'swt_meta_sticky_header'
+									val,
+									'_swt_meta_sticky_header'
 								  );
 						} }
 					/>
@@ -68,28 +68,25 @@ export const HeaderSettings = ( props ) => {
 			{ ! SWTStickyHeader && (
 				<PanelRow>
 					<ToggleControl
-						label={ __(
-							'Enable Transparent Header',
-							'spectra-one'
-						) }
+						label={ __( 'Enable Transparent Header', 'spectra-one' ) }
 						help={
 							SWTTransparentHeader
 								? __(
-										'Sticky header option will be disabled on enabling this option.',
-										'spectra-one'
+									'Sticky header option will be disabled on enabling this option.',
+									'spectra-one'
 								  )
 								: ''
 						}
 						checked={ SWTTransparentHeader }
 						onChange={ ( val ) => {
-							props.hasOwnProperty( 'setAttributes' )
+							return props.hasOwnProperty( 'setAttributes' )
 								? props.setAttributes( {
-										SWTTransparentHeader:
+									SWTTransparentHeader:
 											! SWTTransparentHeader,
 								  } )
 								: props.setMetaFieldValue(
-										val,
-										'swt_meta_transparent_header'
+									val,
+									'_swt_meta_transparent_header'
 								  );
 						} }
 					/>

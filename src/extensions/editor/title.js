@@ -32,18 +32,18 @@ function swtSiteTitle() {
 			}
 
 			// Title visibility with new editor compatibility update.
-			const titleVisibility =
-				document.querySelector( '.title-visibility' );
+			const titleVisibility = document.querySelector( '.title-visibility' );
 			const titleBlock = document.querySelector(
 				'.edit-post-visual-editor__post-title-wrapper'
 			);
 
 			if ( null === titleVisibility && null !== titleBlock ) {
 				let titleVisibilityTrigger = '';
-				if (
-					false ===
+				if ( select( 'core/editor' ).getEditedPostAttribute( 'meta' )
+					?._swt_meta_site_title_display &&
+					true ===
 					select( 'core/editor' ).getEditedPostAttribute( 'meta' )
-						.swt_meta_site_title_display
+						._swt_meta_site_title_display
 				) {
 					titleVisibilityTrigger =
 						'<span class="dashicons dashicons-hidden title-visibility" data-tooltip="Enable Title"></span>';
@@ -68,7 +68,7 @@ function swtSiteTitle() {
 							this.dataset.tooltip = 'Disable Title';
 							dispatch( 'core/editor' ).editPost( {
 								meta: {
-									swt_meta_site_title_display: true,
+									_swt_meta_site_title_display: false,
 								},
 							} );
 						} else {
@@ -77,7 +77,7 @@ function swtSiteTitle() {
 							this.dataset.tooltip = 'Enable Title';
 							dispatch( 'core/editor' ).editPost( {
 								meta: {
-									swt_meta_site_title_display: false,
+									_swt_meta_site_title_display: true,
 								},
 							} );
 						}
@@ -88,8 +88,7 @@ function swtSiteTitle() {
 			const titleInput = document.querySelector(
 				'.editor-post-title__input'
 			);
-			const visibilityIcon =
-				document.querySelector( '.title-visibility' );
+			const visibilityIcon = document.querySelector( '.title-visibility' );
 			if ( null !== titleInput && null !== visibilityIcon ) {
 				document.addEventListener( 'click', function ( event ) {
 					if ( ! titleBlock.contains( event.target ) ) {
@@ -102,17 +101,13 @@ function swtSiteTitle() {
 					}
 				} );
 				document.addEventListener( 'visibilitychange', function () {
-					visibilityIcon.classList.remove(
-						'swt-show-visibility-icon'
-					);
+					visibilityIcon.classList.remove( 'swt-show-visibility-icon' );
 					titleInput.classList.remove(
 						'swt-show-editor-title-outline'
 					);
 				} );
 				titleBlock.addEventListener( 'focusout', function () {
-					visibilityIcon.classList.remove(
-						'swt-show-visibility-icon'
-					);
+					visibilityIcon.classList.remove( 'swt-show-visibility-icon' );
 					titleInput.classList.remove(
 						'swt-show-editor-title-outline'
 					);
