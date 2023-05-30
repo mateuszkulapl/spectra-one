@@ -46,7 +46,7 @@ License URI : https://heroicons.com
 
 Images
 
-Hero Banner
+Hero banner
 License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://pxhere.com/en/license,
 https://pxhere.com/en/photo/518915
@@ -70,7 +70,7 @@ https://stocksnap.io/photo/confident-business-ZMIFYSYFK8
 https://stocksnap.io/photo/business-man-7BQNRHB6EX
 ​​https://pxhere.com/en/photo/1573331
 
-Featured Logo
+Featured logo
 License : Fair Use License
 License URI : https://logoipsum.com/license/,
 https://logoipsum.com/artwork/265
@@ -87,7 +87,7 @@ https://pxhere.com/en/photo/451655
 https://pxhere.com/en/photo/33863
 https://pxhere.com/en/photo/814735
 
-Spectra Install banner
+Spectra install banner
 License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://stocksnap.io/license,
 https://stocksnap.io/photo/christmas-cookie-VDTQON9DDC
