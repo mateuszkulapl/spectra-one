@@ -49,6 +49,14 @@ jobs:
         with:
           phpcs_bin_path: './vendor/bin/phpcs -d memory_limit=140M'
 
+      - name: Lint JS
+        if: always()
+        run: npm run lint:js
+
+      - name: Lint CSS
+        if: always()
+        run: npm run lint:css
+
       - name: "Static Analysis"
         if: always()
         run: composer run psalm

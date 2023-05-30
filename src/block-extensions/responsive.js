@@ -24,11 +24,7 @@ const Responsive = createHigherOrderComponent( ( BlockEdit ) => {
 		// Adding compatibility with spectra plugin. So the slugs are same as the plugin.
 		const { SWTHideDesktop, SWTHideTab, SWTHideMob } = attributes;
 
-		if (
-			name &&
-			name.includes( 'core/' ) &&
-			! excludeBlock.includes( name )
-		) {
+		if ( name && name.includes( 'core/' ) && ! excludeBlock.includes( name ) ) {
 			return (
 				<>
 					<BlockEdit { ...props } />
@@ -47,8 +43,7 @@ const Responsive = createHigherOrderComponent( ( BlockEdit ) => {
 										checked={ SWTHideDesktop }
 										onChange={ () =>
 											setAttributes( {
-												SWTHideDesktop:
-													! SWTHideDesktop,
+												SWTHideDesktop: ! SWTHideDesktop,
 											} )
 										}
 									/>
@@ -56,10 +51,7 @@ const Responsive = createHigherOrderComponent( ( BlockEdit ) => {
 
 								<PanelRow>
 									<ToggleControl
-										label={ __(
-											'Hide Tablet',
-											'spectra-one'
-										) }
+										label={ __( 'Hide Tablet', 'spectra-one' ) }
 										checked={ SWTHideTab }
 										onChange={ () =>
 											setAttributes( {
@@ -70,10 +62,7 @@ const Responsive = createHigherOrderComponent( ( BlockEdit ) => {
 								</PanelRow>
 								<PanelRow>
 									<ToggleControl
-										label={ __(
-											'Hide Mobile',
-											'spectra-one'
-										) }
+										label={ __( 'Hide Mobile', 'spectra-one' ) }
 										checked={ SWTHideMob }
 										onChange={ () =>
 											setAttributes( {

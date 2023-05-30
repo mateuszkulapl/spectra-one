@@ -28,15 +28,15 @@ function render_header( string $block_content, array $block ):string {
 	$post_id = get_the_ID();
 
 	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort
-	$sticky_header_condition = ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) || get_post_meta( $post_id, 'swt_meta_sticky_header', true );
+	$sticky_header_condition = ( isset( $block['attrs']['SWTStickyHeader'] ) && true === $block['attrs']['SWTStickyHeader'] ) || get_post_meta( $post_id, '_swt_meta_sticky_header', true );
 
 	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort
-	$transparent_header_condition = ( isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'] ) || get_post_meta( $post_id, 'swt_meta_transparent_header', true );
+	$transparent_header_condition = ( isset( $block['attrs']['SWTTransparentHeader'] ) && true === $block['attrs']['SWTTransparentHeader'] ) || get_post_meta( $post_id, '_swt_meta_transparent_header', true );
 
 	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort
-	$not_transparent_header_condition = ! ( isset( $block['attrs']['SWTTransparentHeader'] ) ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) || ( get_post_meta( $post_id, 'swt_meta_transparent_header', true ) );
+	$not_transparent_header_condition = ! ( isset( $block['attrs']['SWTTransparentHeader'] ) ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) || ( get_post_meta( $post_id, '_swt_meta_transparent_header', true ) );
 
-	if ( $sticky_header_condition && ! get_post_meta( $post_id, 'swt_meta_transparent_header', true ) ) {
+	if ( $sticky_header_condition && ! get_post_meta( $post_id, '_swt_meta_transparent_header', true ) ) {
 
 		$dom    = dom( $block_content );
 		$header = get_dom_element( 'header', $dom );
@@ -57,7 +57,7 @@ function render_header( string $block_content, array $block ):string {
 		}
 	}
 
-	if ( $transparent_header_condition && ! get_post_meta( $post_id, 'swt_meta_sticky_header', true ) ) {
+	if ( $transparent_header_condition && ! get_post_meta( $post_id, '_swt_meta_sticky_header', true ) ) {
 		
 		$dom    = dom( $block_content );
 		$header = get_dom_element( 'header', $dom );
@@ -113,6 +113,7 @@ function header_inline_css( string $css ): string {
  */
 function header_inline_js( string $js ): string {
 	$inline_js = <<<JS
+
 	function docReady(fn) {
 		// see if DOM is already available
 		if (document.readyState === "complete" || document.readyState === "interactive") {
@@ -122,7 +123,8 @@ function header_inline_js( string $js ): string {
 			document.addEventListener("DOMContentLoaded", fn);
 		}
 	}
-	docReady(function() {
+
+	function stickyHeaderSpacing() {
 		// Sticky header option.
 		const header = document.querySelector( '.swt-sticky-header' );
 		const body = document.querySelector( 'body' );
@@ -134,7 +136,15 @@ function header_inline_js( string $js ): string {
 				body.style.paddingTop = parseFloat( height ) + 'px';
 			}
 		}
+	}
+
+	docReady(function() {
+		stickyHeaderSpacing();
 	});
+
+	window.addEventListener('resize', function(event) {
+		stickyHeaderSpacing();
+	}, true);
 JS;
 	$js       .= $inline_js;
 	return $js;
@@ -185,16 +195,24 @@ function header_wp_admin_bar_spacing_js( string $js ): string {
 			document.addEventListener("DOMContentLoaded", fn);
 		}
 	}
-	docReady(function() {
 
+	function wpAdminPaddingOffset() {
 		const wpAdminBar = document.querySelector('#wpadminbar');
 		const header = document.querySelector( 'header' );
 
 		if( header && wpAdminBar ) {
 			header.style.top = wpAdminBar.offsetHeight + 'px';
 		}
+	}
 
+	docReady(function() {
+		wpAdminPaddingOffset();
 	});
+
+	window.addEventListener('resize', function(event) {
+		wpAdminPaddingOffset();
+	}, true);
+
 JS;
 	$js       .= $inline_js;
 	return $js;
