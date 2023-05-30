@@ -34,7 +34,7 @@
 <!-- /wp:image -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php esc_html_e( 'Leslie Alexander', 'spectra-one' ); ?></p>
+<p class="has-small-font-size"><?php esc_html_e( 'Darlene Robertson', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
 <p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Web designer', 'spectra-one' ); ?></p>
@@ -105,7 +105,7 @@
 <!-- /wp:image -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php esc_html_e( 'Darlene Robertson', 'spectra-one' ); ?></p>
+<p class="has-small-font-size"><?php esc_html_e( 'Leslie Alexander', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
 <p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Business owner', 'spectra-one' ); ?></p>
