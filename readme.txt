@@ -89,6 +89,10 @@ https://wpspectra.com/wp-content/uploads/2023/04/split-content.png
 
 == Changelog ==
 
+= 1.0.1 =
+* Update: Hide and show option preview in editor.
+* Update: Transparent header option preview in editor.
+
 = 1.0.0 =
 * New: Added sidebar support for page and post.
 * New: Simple block styling for Latest post widget block.

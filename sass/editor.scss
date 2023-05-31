@@ -460,3 +460,26 @@ register_block_style not applying styles in the editor.
 		opacity: 0.5;
 	}
 }
+
+
+/*--------------------------------------------------------------
+# hide and show blocks
+--------------------------------------------------------------*/
+
+@media (min-width: 1025px) {
+	.swt-hide-desktop {
+		display: none !important;
+	}
+}
+
+@media ( min-width: 768px ) and ( max-width: 1024px ) {
+	.swt-hide-tablet {
+		display: none !important;
+	}
+}
+
+@media (min-width: 767px) {
+	.swt-hide-mobile {
+		display: none !important;
+	}
+}
