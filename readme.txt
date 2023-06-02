@@ -109,6 +109,9 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 
 == Changelog ==
 
+= 1.0.1 =
+* Fix: Spectra plugin compatibility with button block text.
+
 = 1.0.0 =
 * New: Added sidebar support for page and post.
 * New: Simple block styling for Latest post widget block.
