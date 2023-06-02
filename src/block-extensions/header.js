@@ -158,8 +158,6 @@ addFilter(
 	HeaderAttributes
 );
 
-
-
 const HeaderCss = createHigherOrderComponent( ( BlockListBlock ) => {
 	return ( props ) => {
 		const { name, attributes } = props;
@@ -167,9 +165,7 @@ const HeaderCss = createHigherOrderComponent( ( BlockListBlock ) => {
 		const includeBlock = [ 'core/template-part' ];
 
 		if ( includeBlock.includes( name ) ) {
-
 			const { SWTTransparentHeader } = attributes;
-	
 
 			const transparentHeaderCss = `
 				.block-editor-block-list__block.swt-transparent-header {
@@ -184,15 +180,15 @@ const HeaderCss = createHigherOrderComponent( ( BlockListBlock ) => {
 				.swt-transparent-header > .has-background {
 					background: transparent !important;
 				}
-			`
+			`;
 
 			return (
 				<>
-					{ SWTTransparentHeader && <style>{transparentHeaderCss}</style> }
-					<BlockListBlock { ...props } className={`${SWTTransparentHeader ? 'swt-transparent-header' : ''}`} />
+					{ SWTTransparentHeader && <style>{ transparentHeaderCss }</style> }
+					<BlockListBlock { ...props } className={ `${ SWTTransparentHeader ? 'swt-transparent-header' : '' }` } />
 				</>
-				
-			)
+
+			);
 		}
 
 		return (
