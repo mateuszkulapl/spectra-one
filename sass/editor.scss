@@ -467,29 +467,36 @@ register_block_style not applying styles in the editor.
 --------------------------------------------------------------*/
 
 @mixin swt-hide-common {
-	background: repeating-linear-gradient(125deg,rgba(0,0,0,.05),rgba(0,0,0,.05) 1px,transparent 2px,transparent 9px);
-	opacity: .4;
+	background: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 2px, transparent 9px);
+	opacity: 0.4;
 }
-  
+
 @media (min-width: 1025px) {
+
 	.swt-hide-desktop {
+
 		@include swt-hide-common;
 	}
 }
 
 .swt-hide-desktop {
+
 	@media (min-width: 1025px) {
+
 		@include swt-hide-common;
 	}
 }
 
 .swt-hide-tablet {
+
 	@media ( min-width: 768px ) and ( max-width: 1024px ) {
+
 		@include swt-hide-common;
 	}
 }
 
 .swt-hide-mobile {
+
 	@media (min-width: 767px) {
 		display: none !important;
 	}
