@@ -92,8 +92,9 @@ function render_header( string $block_content, array $block ):string {
 function header_shadow_inline_css( string $css ): string {
 
 	$css_output = array(
-		'header' => array(
+		'.swt-sticky-header.swt-sticky-header-active' => array(
 			'box-shadow' => '0px 8px 24px -8px rgba(0, 0, 0, 0.08)',
+			'transition' => '.2s ease-in-out'
 		),
 	);
 	$css       .= parse_css( $css_output );
@@ -159,6 +160,19 @@ function header_sticky_inline_js( string $js ): string {
 
 	docReady(function() {
 		stickyHeaderSpacing();
+	});
+
+	window.addEventListener("scroll", function(){
+		const header = document.querySelector( '.swt-sticky-header' );
+
+		if( header ) {
+			if( window.scrollY >= 10 ) {
+				header.classList.add('swt-sticky-header-active');
+			} else {
+				header.classList.remove('swt-sticky-header-active');
+			}	
+		}
+	
 	});
 
 	window.addEventListener('resize', function(event) {
