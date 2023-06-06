@@ -94,7 +94,7 @@ function header_shadow_inline_css( string $css ): string {
 	$css_output = array(
 		'.swt-sticky-header.swt-sticky-header-active' => array(
 			'box-shadow' => '0px 8px 24px -8px rgba(0, 0, 0, 0.08)',
-			'transition' => '.2s ease-in-out'
+			'transition' => '.2s ease-in-out',
 		),
 	);
 	$css       .= parse_css( $css_output );

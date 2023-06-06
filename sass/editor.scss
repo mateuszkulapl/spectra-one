@@ -150,7 +150,7 @@
 # Button Block
 --------------------------------------------------------------*/
 
-.is-style-swt-button-secondary {
+div.is-style-swt-button-secondary {
 
 	.wp-element-button {
 		color: var(--wp--preset--color--body);
@@ -163,7 +163,7 @@
 	}
 }
 
-.is-style-swt-button-inverse {
+div.is-style-swt-button-inverse {
 
 	.wp-element-button { /* stylelint-disable-line no-descending-specificity */
 		color: #1f2937;
