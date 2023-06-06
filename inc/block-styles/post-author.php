@@ -23,6 +23,10 @@ register_block_style(
 		'name'         => SWT_PFX . '-post-author-simple',
 		'label'        => __( 'Simple', 'spectra-one' ),
 		'inline_style' => '
+        
+        ' . $swt_parent_class . ' {
+            flex-wrap: inherit;
+        }
 
         ' . $swt_parent_class . ' .wp-block-post-author__avatar  {
             margin-' . rtl_css( 'right' ) . ': 1.8em;
