@@ -111,6 +111,8 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 
 = 1.0.1 =
 * New: Added shadow for header while sticky.
+* Update: Hide and show option preview in editor.
+* Update: Transparent header option preview in editor.
 * Fix: When simple block style is enabled, the author block section collapses if the bio is too long.
 * Fix: Spectra plugin compatibility with button block text.
 

@@ -358,3 +358,32 @@ register_block_style not applying styles in the editor.
 .edit-post-visual-editor__post-title-wrapper.invisible {
   opacity: 0.5;
 }
+
+/*--------------------------------------------------------------
+# hide and show blocks
+--------------------------------------------------------------*/
+@media (min-width: 1025px) {
+  .swt-hide-desktop {
+    background: repeating-linear-gradient(-125deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 2px, transparent 9px);
+    opacity: 0.4;
+  }
+}
+@media (min-width: 1025px) {
+  .swt-hide-desktop {
+    background: repeating-linear-gradient(-125deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 2px, transparent 9px);
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .swt-hide-tablet {
+    background: repeating-linear-gradient(-125deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 2px, transparent 9px);
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: 767px) {
+  .swt-hide-mobile {
+    display: none !important;
+  }
+}
