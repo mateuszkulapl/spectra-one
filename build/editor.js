@@ -123,7 +123,7 @@ const HeaderCss = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createHighe
 				}
 			`;
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, SWTTransparentHeader && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("style", null, transparentHeaderCss), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockListBlock, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-        className: `${props?.className ? props.className : ''}${SWTTransparentHeader ? 'swt-transparent-header ' : ''}`
+        className: `${props?.className ? `${props.className} ` : ''}${SWTTransparentHeader ? 'swt-transparent-header ' : ''}`
       })));
     }
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockListBlock, props));
@@ -257,7 +257,7 @@ const responsiveCss = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createH
         SWTHideMob
       } = attributes;
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockListBlock, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-        className: `${props?.className ? props.className : ''}${SWTHideDesktop ? 'swt-hide-desktop ' : ''}${SWTHideTab ? 'swt-hide-tablet ' : ''}${SWTHideMob ? 'swt-hide-mobile ' : ''}`
+        className: `${props?.className ? `${props.className} ` : ''}${SWTHideDesktop ? 'swt-hide-desktop ' : ''}${SWTHideTab ? 'swt-hide-tablet ' : ''}${SWTHideMob ? 'swt-hide-mobile ' : ''}`
       })));
     }
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockListBlock, props));
