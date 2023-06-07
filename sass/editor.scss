@@ -471,14 +471,6 @@ register_block_style not applying styles in the editor.
 	opacity: 0.4;
 }
 
-@media (min-width: 1025px) {
-
-	.swt-hide-desktop {
-
-		@include swt-hide-common;
-	}
-}
-
 .swt-hide-desktop {
 
 	@media (min-width: 1025px) {
@@ -497,7 +489,8 @@ register_block_style not applying styles in the editor.
 
 .swt-hide-mobile {
 
-	@media (min-width: 767px) {
-		display: none !important;
+	@media (max-width: 767px) {
+
+		@include swt-hide-common;
 	}
 }

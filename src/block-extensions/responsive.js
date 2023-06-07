@@ -127,7 +127,7 @@ const responsiveCss = createHigherOrderComponent( ( BlockListBlock ) => {
 
 			return (
 				<>
-					<BlockListBlock { ...props } className={ `${ SWTHideDesktop ? 'swt-hide-desktop' : '' } ${ SWTHideTab ? 'swt-hide-tablet' : '' } ${ SWTHideMob ? 'swt-hide-mobile' : '' } ` } />
+					<BlockListBlock { ...props } className={ `${ props?.className ? `${ props.className } ` : '' }${ SWTHideDesktop ? 'swt-hide-desktop ' : '' }${ SWTHideTab ? 'swt-hide-tablet ' : '' }${ SWTHideMob ? 'swt-hide-mobile ' : '' }` } />
 				</>
 
 			);

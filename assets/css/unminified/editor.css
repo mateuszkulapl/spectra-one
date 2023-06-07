@@ -368,12 +368,6 @@ register_block_style not applying styles in the editor.
     opacity: 0.4;
   }
 }
-@media (min-width: 1025px) {
-  .swt-hide-desktop {
-    background: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 2px, transparent 9px);
-    opacity: 0.4;
-  }
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .swt-hide-tablet {
@@ -382,8 +376,9 @@ register_block_style not applying styles in the editor.
   }
 }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .swt-hide-mobile {
-    display: none !important;
+    background: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 2px, transparent 9px);
+    opacity: 0.4;
   }
 }
