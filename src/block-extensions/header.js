@@ -159,10 +159,6 @@ addFilter(
 );
 
 const HeaderCss = createHigherOrderComponent( ( BlockListBlock ) => {
-
-
-
-
 	return ( props ) => {
 		const { name, attributes } = props;
 
@@ -189,7 +185,7 @@ const HeaderCss = createHigherOrderComponent( ( BlockListBlock ) => {
 			return (
 				<>
 					{ SWTTransparentHeader && <style>{ transparentHeaderCss }</style> }
-					<BlockListBlock { ...props } className={`${ props?.className ? `${props.className} ` : '' }${SWTTransparentHeader ? 'swt-transparent-header ' : '' }`} />
+					<BlockListBlock { ...props } className={ `${ props?.className ? `${ props.className } ` : '' }${ SWTTransparentHeader ? 'swt-transparent-header ' : '' }` } />
 				</>
 
 			);
