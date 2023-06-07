@@ -309,9 +309,8 @@ const latestPostList = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.create
     const {
       displayFeaturedImage
     } = attributes;
-    const customClass = displayFeaturedImage ? 'swt-has-featured-image' : '';
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockListBlock, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-      className: customClass
+      className: `${props?.className ? `${props.className} ` : ''}${displayFeaturedImage ? 'swt-has-featured-image ' : ''}`
     }));
   };
 }, 'latestPostList');

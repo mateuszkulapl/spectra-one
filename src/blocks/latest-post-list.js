@@ -11,9 +11,7 @@ const latestPostList = createHigherOrderComponent( ( BlockListBlock ) => {
 
 		const { displayFeaturedImage } = attributes;
 
-		const customClass = displayFeaturedImage ? 'swt-has-featured-image' : '';
-
-		return <BlockListBlock { ...props } className={ customClass } />;
+		return <BlockListBlock { ...props } className={`${ props?.className ? `${props.className} ` : '' }${displayFeaturedImage ? 'swt-has-featured-image ' : '' }`} />;
 	};
 }, 'latestPostList' );
 
