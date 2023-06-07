@@ -490,6 +490,7 @@ register_block_style not applying styles in the editor.
 .swt-hide-mobile {
 
 	@media (max-width: 767px) {
+
 		@include swt-hide-common;
 	}
 }
