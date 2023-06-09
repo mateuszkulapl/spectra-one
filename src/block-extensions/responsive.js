@@ -117,3 +117,33 @@ addFilter(
 	'swt/responsive-attributes',
 	ResponsiveAttributes
 );
+
+const responsiveCss = createHigherOrderComponent( ( BlockListBlock ) => {
+	return ( props ) => {
+		const { name, attributes } = props;
+
+		if ( name && name.includes( 'core/' ) && ! excludeBlock.includes( name ) ) {
+			const { SWTHideDesktop, SWTHideTab, SWTHideMob } = attributes;
+
+			return (
+				<>
+					<BlockListBlock { ...props } className={ `${ props?.className ? `${ props.className } ` : '' }${ SWTHideDesktop ? 'swt-hide-desktop ' : '' }${ SWTHideTab ? 'swt-hide-tablet ' : '' }${ SWTHideMob ? 'swt-hide-mobile ' : '' }` } />
+				</>
+
+			);
+		}
+
+		return (
+			<>
+				<BlockListBlock { ...props } />
+			</>
+		);
+	};
+}, 'responsiveCss' );
+
+addFilter(
+	'editor.BlockListBlock',
+	'swt/responsive-css',
+	responsiveCss
+);
+

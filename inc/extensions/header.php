@@ -50,10 +50,11 @@ function render_header( string $block_content, array $block ):string {
 
 		$block_content = $dom->saveHTML();
 
-		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'header_inline_css' );
+		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'header_sticky_inline_css' );
 
 		if ( $not_transparent_header_condition ) {
-			add_filter( 'swt_dynamic_theme_js', SWT_NS . 'header_inline_js' );
+			add_filter( 'swt_dynamic_theme_js', SWT_NS . 'header_sticky_inline_js' );
+			add_filter( 'swt_dynamic_theme_css', SWT_NS . 'header_shadow_inline_css' );
 		}
 	}
 
@@ -71,7 +72,7 @@ function render_header( string $block_content, array $block ):string {
 
 		$block_content = $dom->saveHTML();
 
-		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'header_inline_transparent_css' );
+		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'header_transparent_inline_css' );
 	}
 
 	if ( $sticky_header_condition || $transparent_header_condition ) {
@@ -84,11 +85,30 @@ function render_header( string $block_content, array $block ):string {
 /**
  * Load header inline css.
  *
+ * @since 1.0.1
+ * @param string $css Inline CSS.
+ * @return string
+ */
+function header_shadow_inline_css( string $css ): string {
+
+	$css_output = array(
+		'.swt-sticky-header.swt-sticky-header-active' => array(
+			'box-shadow' => '0px 8px 24px -8px rgba(0, 0, 0, 0.08)',
+			'transition' => '.2s ease-in-out',
+		),
+	);
+	$css       .= parse_css( $css_output );
+	return $css;
+}
+
+/**
+ * Load header inline css.
+ *
  * @since 0.0.1
  * @param string $css Inline CSS.
  * @return string
  */
-function header_inline_css( string $css ): string {
+function header_sticky_inline_css( string $css ): string {
 
 	// Sticky header option.
 	$css_output = array(
@@ -111,7 +131,7 @@ function header_inline_css( string $css ): string {
  * @param string $js Inline JS.
  * @return string
  */
-function header_inline_js( string $js ): string {
+function header_sticky_inline_js( string $js ): string {
 	$inline_js = <<<JS
 
 	function docReady(fn) {
@@ -142,6 +162,19 @@ function header_inline_js( string $js ): string {
 		stickyHeaderSpacing();
 	});
 
+	window.addEventListener("scroll", function(){
+		const header = document.querySelector( '.swt-sticky-header' );
+
+		if( header ) {
+			if( window.scrollY >= 10 ) {
+				header.classList.add('swt-sticky-header-active');
+			} else {
+				header.classList.remove('swt-sticky-header-active');
+			}	
+		}
+	
+	});
+
 	window.addEventListener('resize', function(event) {
 		stickyHeaderSpacing();
 	}, true);
@@ -157,7 +190,7 @@ JS;
  * @param string $css Inline CSS.
  * @return string
  */
-function header_inline_transparent_css( string $css ): string {
+function header_transparent_inline_css( string $css ): string {
 
 	$css_output = array(
 		'.swt-transparent-header'                   => array(

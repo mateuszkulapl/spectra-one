@@ -112,20 +112,20 @@
 /*--------------------------------------------------------------
 # Button Block
 --------------------------------------------------------------*/
-.is-style-swt-button-secondary .wp-element-button {
+div.is-style-swt-button-secondary .wp-element-button {
   color: var(--wp--preset--color--body);
   background-color: var(--wp--preset--color--surface);
 }
-.is-style-swt-button-secondary .wp-element-button:hover {
+div.is-style-swt-button-secondary .wp-element-button:hover {
   color: var(--wp--preset--color--body);
   background-color: var(--wp--preset--color--surface);
 }
 
-.is-style-swt-button-inverse .wp-element-button { /* stylelint-disable-line no-descending-specificity */
+div.is-style-swt-button-inverse .wp-element-button { /* stylelint-disable-line no-descending-specificity */
   color: #1f2937;
   background-color: #fff;
 }
-.is-style-swt-button-inverse .wp-element-button:hover {
+div.is-style-swt-button-inverse .wp-element-button:hover {
   color: #1f2937;
   background-color: #fff;
 }
@@ -357,4 +357,28 @@ register_block_style not applying styles in the editor.
 }
 .edit-post-visual-editor__post-title-wrapper.invisible {
   opacity: 0.5;
+}
+
+/*--------------------------------------------------------------
+# hide and show blocks
+--------------------------------------------------------------*/
+@media (min-width: 1025px) {
+  .swt-hide-desktop {
+    background: repeating-linear-gradient(-125deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 2px, transparent 9px);
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .swt-hide-tablet {
+    background: repeating-linear-gradient(-125deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 2px, transparent 9px);
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 767px) {
+  .swt-hide-mobile {
+    background: repeating-linear-gradient(-125deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 2px, transparent 9px);
+    opacity: 0.4;
+  }
 }
