@@ -1,8 +1,8 @@
 === Spectra One ===
 Contributors: brainstormforce
 Requires at least: 6.1
-Tested up to: 6.2.2
-Stable tag: 1.0.0
+Tested up to: 6.2
+Stable tag: 1.0.1
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -108,6 +108,13 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 © Copyright Spectra One 2023, Spectra.
 
 == Changelog ==
+
+= 1.0.1 =
+* New: Added shadow for header while sticky.
+* Update: Hide and show option preview in the editor.
+* Update: Transparent header option preview in the editor.
+* Fix: When a simple block style is enabled, the author block section collapses if the bio is too long.
+* Fix Spectra plugin compatibility with button block text.
 
 = 1.0.0 =
 * New: Added sidebar support for page and post.

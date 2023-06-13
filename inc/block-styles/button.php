@@ -21,12 +21,12 @@ register_block_style(
 		'name'         => SWT_PFX . '-button-secondary',
 		'label'        => __( 'Secondary', 'spectra-one' ),
 		'inline_style' => '
-			.is-style-' . SWT_PFX . '-button-secondary .wp-element-button {
+			div.is-style-' . SWT_PFX . '-button-secondary .wp-element-button {
                 color: var(--wp--preset--color--body);
 				background-color: var(--wp--preset--color--surface);
 			}
 
-            .is-style-' . SWT_PFX . '-button-secondary .wp-element-button:hover {
+            div.is-style-' . SWT_PFX . '-button-secondary .wp-element-button:hover {
                 color: var(--wp--preset--color--body);
 				background-color: var(--wp--preset--color--surface);
 			}
@@ -40,12 +40,12 @@ register_block_style(
 		'name'         => SWT_PFX . '-button-inverse',
 		'label'        => __( 'Inverse', 'spectra-one' ),
 		'inline_style' => '
-			.is-style-' . SWT_PFX . '-button-inverse .wp-element-button {
+			div.is-style-' . SWT_PFX . '-button-inverse .wp-element-button {
                 color: #1F2937;
 				background-color: #fff;
 			}
 
-            .is-style-' . SWT_PFX . '-button-inverse .wp-element-button:hover {
+            div.is-style-' . SWT_PFX . '-button-inverse .wp-element-button:hover {
                 color: #1F2937;
 				background-color: #fff;
 			}
