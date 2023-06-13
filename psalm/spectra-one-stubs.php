@@ -1,7 +1,7 @@
 <?php
 
 namespace Swt {
-    const SWT_VER = '1.0.0';
+    const SWT_VER = '1.0.1';
     const SWT_SLUG = 'spectra-one';
     const SWT_NAME = 'Spectra One';
     const SWT_PFX = 'swt';
@@ -119,6 +119,16 @@ namespace Swt {
      * @return string
      */
     function post_author_inline_css(string $css) : string
+    {
+    }
+    /**
+     * Remove author bio.
+     *
+     * @since 1.0.0
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function remove_author_bio(string $css) : string
     {
     }
 }
@@ -244,11 +254,21 @@ namespace Swt {
     /**
      * Load header inline css.
      *
+     * @since 1.0.1
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function header_shadow_inline_css(string $css) : string
+    {
+    }
+    /**
+     * Load header inline css.
+     *
      * @since 0.0.1
      * @param string $css Inline CSS.
      * @return string
      */
-    function header_inline_css(string $css) : string
+    function header_sticky_inline_css(string $css) : string
     {
     }
     /**
@@ -258,7 +278,7 @@ namespace Swt {
      * @param string $js Inline JS.
      * @return string
      */
-    function header_inline_js(string $js) : string
+    function header_sticky_inline_js(string $js) : string
     {
     }
     /**
@@ -268,7 +288,7 @@ namespace Swt {
      * @param string $css Inline CSS.
      * @return string
      */
-    function header_inline_transparent_css(string $css) : string
+    function header_transparent_inline_css(string $css) : string
     {
     }
     /**
@@ -676,78 +696,78 @@ namespace {
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
-     * Title: Footer five columns menu inline
-     * Slug: spectra-one/footer-five-columns-menu-inline
-     * Categories: footer
-     * Block Types: core/template-part/footer
-     */
-    $get_url = \trailingslashit(\get_template_directory_uri());
-    /**
      * Title: Footer minimal menu center
-     * Slug: spectra-one/footer-minimal-menu-center
+     * Slug: spectra-one/footer-2
      * Categories: footer
      * Block Types: core/template-part/footer
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
      * Title: Footer minimal menu right
-     * Slug: spectra-one/footer-minimal-menu-right
+     * Slug: spectra-one/footer-3
+     * Categories: footer
+     * Block Types: core/template-part/footer
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Footer five columns menu inline
+     * Slug: spectra-one/footer-4
      * Categories: footer
      * Block Types: core/template-part/footer
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
      * Title: Footer six columns menu separated
-     * Slug: spectra-one/footer-six-columns-menu-separated
+     * Slug: spectra-one/footer-5
      * Categories: footer
      * Block Types: core/template-part/footer
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
-     * Title: Footer default
-     * Slug: spectra-one/footer-default
+     * Title: Footer
+     * Slug: spectra-one/footer
      * Categories: footer
      * Block Types: core/template-part/footer
-     */
-    $get_url = \trailingslashit(\get_template_directory_uri());
-    /**
-     * Title: Header center menu blend
-     * Slug: spectra-one/header-center-menu-secondary
-     * Categories: header
-     * Block Types: core/template-part/header
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
      * Title: Header center menu
-     * Slug: spectra-one/header-center-menu
-     * Categories: header
-     * Block Types: core/template-part/header
-     */
-    $get_url = \trailingslashit(\get_template_directory_uri());
-    /**
-     * Title: Header left menu blend
-     * Slug: spectra-one/header-left-menu-secondary
+     * Slug: spectra-one/header-2
      * Categories: header
      * Block Types: core/template-part/header
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
      * Title: Header left menu
-     * Slug: spectra-one/header-left-menu
+     * Slug: spectra-one/header-3
      * Categories: header
      * Block Types: core/template-part/header
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
-     * Title: Header default blend
-     * Slug: spectra-one/header-default-secondary
+     * Title: Header blend
+     * Slug: spectra-one/header-4
      * Categories: header
      * Block Types: core/template-part/header
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
-     * Title: Header default
-     * Slug: spectra-one/header-default
+     * Title: Header center menu blend
+     * Slug: spectra-one/header-5
+     * Categories: header
+     * Block Types: core/template-part/header
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Header left menu blend
+     * Slug: spectra-one/header-6
+     * Categories: header
+     * Block Types: core/template-part/header
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Header
+     * Slug: spectra-one/header
      * Categories: header
      * Block Types: core/template-part/header
      */
