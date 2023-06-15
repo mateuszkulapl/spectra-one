@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Spectra One 1.0.0\n"
+"Project-Id-Version: Spectra One 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/spectra-one\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-05-26T11:06:21+02:00\n"
+"POT-Creation-Date: 2023-06-09T08:31:40+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -725,7 +725,7 @@ msgid "See what people have to say about us"
 msgstr ""
 
 #: patterns/testimonials.php:37
-msgid "Leslie Alexander"
+msgid "Darlene Robertson"
 msgstr ""
 
 #: patterns/testimonials.php:40
@@ -773,7 +773,7 @@ msgid "I've used a few different website builders over the years, and this one i
 msgstr ""
 
 #: patterns/testimonials.php:108
-msgid "Darlene Robertson"
+msgid "Leslie Alexander"
 msgstr ""
 
 #: patterns/testimonials.php:111
@@ -831,89 +831,89 @@ msgid "Take your website to the next level!"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:44
+#: build/editor.js:46
 #: src/block-extensions/header.js:45
 #: build/editor.js:45
 msgid "Enable Sticky Header"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:45
+#: build/editor.js:47
 #: src/block-extensions/header.js:48
 #: build/editor.js:48
 msgid "Transparent header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:53
+#: build/editor.js:55
 #: src/block-extensions/header.js:71
 #: build/editor.js:71
 msgid "Enable Transparent Header"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:54
+#: build/editor.js:56
 #: src/block-extensions/header.js:74
 #: build/editor.js:74
 msgid "Sticky header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:421
+#: build/editor.js:477
 #: src/components/install-plugin-notice.js:102
-#: build/editor.js:434
+#: build/editor.js:511
 msgid "Spectra plugin"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:423
+#: build/editor.js:479
 #: src/components/install-plugin-notice.js:106
-#: build/editor.js:438
+#: build/editor.js:515
 msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:637
+#: build/editor.js:693
 #: src/extensions/panel/components.js:29
-#: build/editor.js:651
+#: build/editor.js:726
 msgid "Disable Elements"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:641
+#: build/editor.js:697
 #: src/extensions/panel/components.js:38
-#: build/editor.js:660
+#: build/editor.js:735
 msgid "Header Settings"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:686
-#: build/editor.js:690
+#: build/editor.js:742
+#: build/editor.js:746
 #: src/extensions/panel/sidebar.js:19
 #: src/extensions/panel/sidebar.js:27
-#: build/editor.js:698
-#: build/editor.js:706
+#: build/editor.js:773
+#: build/editor.js:781
 msgid "Spectra Page Settings"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:161
+#: build/editor.js:198
 #: src/block-extensions/responsive.js:39
-#: build/editor.js:202
+#: build/editor.js:253
 msgid "Hide Desktop"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:167
+#: build/editor.js:204
 #: src/block-extensions/responsive.js:54
-#: build/editor.js:217
+#: build/editor.js:268
 msgid "Hide Tablet"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:173
+#: build/editor.js:210
 #: src/block-extensions/responsive.js:65
-#: build/editor.js:228
+#: build/editor.js:279
 msgid "Hide Mobile"
 msgstr ""
 
