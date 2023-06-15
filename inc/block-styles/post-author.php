@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since 0.0.6
+ * @since 1.0.0
  */
 
 declare( strict_types=1 );
@@ -23,6 +23,10 @@ register_block_style(
 		'name'         => SWT_PFX . '-post-author-simple',
 		'label'        => __( 'Simple', 'spectra-one' ),
 		'inline_style' => '
+        
+        ' . $swt_parent_class . ' {
+            flex-wrap: inherit;
+        }
 
         ' . $swt_parent_class . ' .wp-block-post-author__avatar  {
             margin-' . rtl_css( 'right' ) . ': 1.8em;
@@ -41,11 +45,22 @@ register_block_style(
                 color: var(--wp--preset--color--heading);
                 line-height: var(--wp--custom--line-height--initial);
                 text-transform: capitalize;
+                width: 100%;
 			}
 
             ' . $swt_parent_class . ' .wp-block-post-author__bio {
                 margin-top: 10px;
                 font-size: var(--wp--preset--font-size--small);
+			}
+
+            ' . $swt_parent_class . ' .wp-block-post-author__content {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                flex-basis: inherit;
+                flex-grow: inherit;
 			}
 		',
 	)

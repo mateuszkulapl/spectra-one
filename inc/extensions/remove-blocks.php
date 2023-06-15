@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since 0.0.6
+ * @since 1.0.0
  */
 
 declare(strict_types=1);
@@ -31,6 +31,12 @@ function render_remove_blocks( string $block_content, array $block ):string {
 	// condition for page and post title.
 	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
 	if ( $post_id && is_page_title( $post_id ) && isset( $block['attrs']['className'] ) && ( 'swt-block-page-banner-group' === $block['attrs']['className'] || 'swt-block-post-banner-group' === $block['attrs']['className'] ) ) {
+		return '';
+	}
+
+	// condition for page and post featured image.
+	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
+	if ( $post_id && ! has_post_thumbnail( $post_id ) && isset( $block['attrs']['className'] ) && 'swt-block-featured-image' === $block['attrs']['className'] ) {
 		return '';
 	}
 

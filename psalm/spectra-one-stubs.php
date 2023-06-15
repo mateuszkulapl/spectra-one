@@ -1,7 +1,7 @@
 <?php
 
 namespace Swt {
-    const SWT_VER = '0.0.6';
+    const SWT_VER = '1.0.1';
     const SWT_SLUG = 'spectra-one';
     const SWT_NAME = 'Spectra One';
     const SWT_PFX = 'swt';
@@ -61,7 +61,7 @@ namespace Swt {
     /**
      * Modifies front end HTML output of block.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      *
      * @param string $html  Block HTML.
      * @param array  $block Block data.
@@ -76,7 +76,67 @@ namespace Swt {
     /**
      * Modifies front end HTML output of block.
      *
-     * @since 0.0.6
+     * @since 1.0.0
+     *
+     * @param string $html  Block HTML.
+     * @param array  $block Block data.
+     *
+     * @return string
+     */
+    function render_navigation_submenu_block(string $html, array $block) : string
+    {
+    }
+    /**
+     * Load Inline Css.
+     *
+     * @since 1.0.0
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function navigation_submenu_inline_css(string $css) : string
+    {
+    }
+}
+namespace Swt {
+    /**
+     * Modifies front end HTML output of block.
+     *
+     * @since 1.0.0
+     *
+     * @param string $html  Block HTML.
+     * @param array  $block Block data.
+     *
+     * @return string
+     */
+    function render_post_author_block(string $html, array $block) : string
+    {
+    }
+    /**
+     * Load Inline Css.
+     *
+     * @since 1.0.0
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function post_author_inline_css(string $css) : string
+    {
+    }
+    /**
+     * Remove author bio.
+     *
+     * @since 1.0.0
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function remove_author_bio(string $css) : string
+    {
+    }
+}
+namespace Swt {
+    /**
+     * Modifies front end HTML output of block.
+     *
+     * @since 1.0.0
      *
      * @param string $html  Block HTML.
      * @param array  $block Block data.
@@ -89,7 +149,7 @@ namespace Swt {
     /**
      * Load Inline Css.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @param string $css Inline CSS.
      * @return string
      */
@@ -126,7 +186,7 @@ namespace Swt {
     /**
      * Modifies front end HTML output of block.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      *
      * @param string $html  Block HTML.
      * @param array  $block Block data.
@@ -139,7 +199,7 @@ namespace Swt {
     /**
      * Load Inline Css.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @param string $css Inline CSS.
      * @return string
      */
@@ -173,7 +233,7 @@ namespace Swt {
      * Add Admin menu item.
      *
      * @param object \WP_Admin_Bar $admin_bar Admin bar.
-     * @since 0.0.6
+     * @since 1.0.0
      * @return void
      */
     function add_admin_menu(\WP_Admin_Bar $admin_bar) : void
@@ -194,11 +254,21 @@ namespace Swt {
     /**
      * Load header inline css.
      *
+     * @since 1.0.1
+     * @param string $css Inline CSS.
+     * @return string
+     */
+    function header_shadow_inline_css(string $css) : string
+    {
+    }
+    /**
+     * Load header inline css.
+     *
      * @since 0.0.1
      * @param string $css Inline CSS.
      * @return string
      */
-    function header_inline_css(string $css) : string
+    function header_sticky_inline_css(string $css) : string
     {
     }
     /**
@@ -208,7 +278,7 @@ namespace Swt {
      * @param string $js Inline JS.
      * @return string
      */
-    function header_inline_js(string $js) : string
+    function header_sticky_inline_js(string $js) : string
     {
     }
     /**
@@ -218,7 +288,7 @@ namespace Swt {
      * @param string $css Inline CSS.
      * @return string
      */
-    function header_inline_transparent_css(string $css) : string
+    function header_transparent_inline_css(string $css) : string
     {
     }
     /**
@@ -257,7 +327,7 @@ namespace Swt {
     /**
      * Icomoon render function.
      * 
-     * @since 0.0.6
+     * @since 1.0.0
      * @param string $block_content Entire Block Content.
      * @param array  $block Block Properties As An Array.
      * @return string
@@ -268,7 +338,7 @@ namespace Swt {
     /**
      * Load icomoon inline css.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @param string $css Inline CSS.
      * @return string
      */
@@ -278,7 +348,7 @@ namespace Swt {
     /**
      * Load icomoon editor inline css.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @param array  $editor_settings Inline CSS.
      * @param object $block_editor_context Inline CSS.
      * @return array
@@ -289,7 +359,7 @@ namespace Swt {
     /**
      * Import icomoon fonts.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @return string
      */
     function icomoon_import_fonts() : string
@@ -408,7 +478,7 @@ namespace Swt {
     /**
      * Pattern categories.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      *
      * @return void
      */
@@ -602,7 +672,7 @@ namespace Swt {
     /**
      * Check if page title is enabled or disabled.
      *
-     * @since 0.0.6
+     * @since 1.0.0
      * @param int $post_id Post id.
      * @return bool
      */
@@ -626,57 +696,78 @@ namespace {
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
-     * Title: Footer five columns menu inline
-     * Slug: spectra-one/footer-five-columns-menu-inline
-     * Categories: footer
-     * Block Types: core/template-part/footer
-     */
-    $get_url = \trailingslashit(\get_template_directory_uri());
-    /**
      * Title: Footer minimal menu center
-     * Slug: spectra-one/footer-minimal-menu-center
+     * Slug: spectra-one/footer-2
      * Categories: footer
      * Block Types: core/template-part/footer
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
      * Title: Footer minimal menu right
-     * Slug: spectra-one/footer-minimal-menu-right
+     * Slug: spectra-one/footer-3
+     * Categories: footer
+     * Block Types: core/template-part/footer
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Footer five columns menu inline
+     * Slug: spectra-one/footer-4
      * Categories: footer
      * Block Types: core/template-part/footer
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
      * Title: Footer six columns menu separated
-     * Slug: spectra-one/footer-six-columns-menu-separated
+     * Slug: spectra-one/footer-5
      * Categories: footer
      * Block Types: core/template-part/footer
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
-     * Title: Footer default
-     * Slug: spectra-one/footer-default
+     * Title: Footer
+     * Slug: spectra-one/footer
      * Categories: footer
      * Block Types: core/template-part/footer
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
      * Title: Header center menu
-     * Slug: spectra-one/header-center-menu
+     * Slug: spectra-one/header-2
      * Categories: header
      * Block Types: core/template-part/header
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
      * Title: Header left menu
-     * Slug: spectra-one/header-left-menu
+     * Slug: spectra-one/header-3
      * Categories: header
      * Block Types: core/template-part/header
      */
     $get_url = \trailingslashit(\get_template_directory_uri());
     /**
-     * Title: Header default
-     * Slug: spectra-one/header-default
+     * Title: Header blend
+     * Slug: spectra-one/header-4
+     * Categories: header
+     * Block Types: core/template-part/header
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Header center menu blend
+     * Slug: spectra-one/header-5
+     * Categories: header
+     * Block Types: core/template-part/header
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Header left menu blend
+     * Slug: spectra-one/header-6
+     * Categories: header
+     * Block Types: core/template-part/header
+     */
+    $get_url = \trailingslashit(\get_template_directory_uri());
+    /**
+     * Title: Header
+     * Slug: spectra-one/header
      * Categories: header
      * Block Types: core/template-part/header
      */

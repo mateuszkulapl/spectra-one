@@ -42,9 +42,9 @@ function enqueue_frontend_scripts(): void {
 	}
 
 	/* Load Theme Styles*/
-	wp_enqueue_style( SWT_SLUG, $css_uri . '/style' . $file_prefix . '.css', array(), SWT_VER );
+	wp_enqueue_style( SWT_SLUG, $css_uri . 'style' . $file_prefix . '.css', array(), SWT_VER );
 
-	wp_enqueue_style( SWT_SLUG . '-gutenberg', $css_uri . '/gutenberg' . $file_prefix . '.css', array(), SWT_VER );
+	wp_enqueue_style( SWT_SLUG . '-gutenberg', $css_uri . 'gutenberg' . $file_prefix . '.css', array(), SWT_VER );
 
 	$swt_inline_css = apply_filters( 'swt_dynamic_theme_css', '' );
 	if ( $swt_inline_css ) {
@@ -53,7 +53,7 @@ function enqueue_frontend_scripts(): void {
 
 	/* Load Woocommerce Styles */
 	if ( class_exists( 'WooCommerce' ) ) {
-		wp_enqueue_style( SWT_SLUG . '-woocommerce', $css_uri . '/compatibility/woocommerce' . $file_prefix . '.css', array(), SWT_VER );
+		wp_enqueue_style( SWT_SLUG . '-woocommerce', $css_uri . 'compatibility/woocommerce' . $file_prefix . '.css', array(), SWT_VER );
 	}
 
 	/* Load Theme Scripts*/
@@ -99,7 +99,7 @@ function enqueue_editor_scripts(): void {
 	$deps  = $asset['dependencies'];    
 	array_push( $deps, 'updates' );
 	
-	wp_enqueue_style( SWT_SLUG . '-gutenberg-editor', $css_uri . '/gutenberg-editor' . $file_prefix . '.css', array(), SWT_VER );
+	wp_enqueue_style( SWT_SLUG . '-gutenberg-editor', $css_uri . 'gutenberg-editor' . $file_prefix . '.css', array(), SWT_VER );
 
 	wp_register_script( SWT_SLUG . '-editor', $js . 'editor.js', $deps, SWT_VER, true );
 
@@ -201,7 +201,7 @@ add_action( 'after_setup_theme', SWT_NS . 'spectra_one_setup' );
 /**
  * Pattern categories.
  *
- * @since 0.0.6
+ * @since 1.0.0
  *
  * @return void
  */

@@ -91,7 +91,7 @@ function render_welcome_notice(): void {
 					</div>
 				</div>
 			</div>
-			<div class="swt-col">
+			<div class="swt-col swt-col-right">
 				<div class="image-container">
 					<img src="<?php echo esc_url( $banner_image ); ?>" alt="spectra-install-banner">
 				</div>

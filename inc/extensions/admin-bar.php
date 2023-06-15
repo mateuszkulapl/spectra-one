@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since 0.0.6
+ * @since 1.0.0
  */
 
 declare(strict_types=1);
@@ -21,7 +21,7 @@ add_filter( 'admin_bar_menu', SWT_NS . 'add_admin_menu', 90, 1 );
  * Add Admin menu item.
  *
  * @param object \WP_Admin_Bar $admin_bar Admin bar.
- * @since 0.0.6
+ * @since 1.0.0
  * @return void
  */
 function add_admin_menu( \WP_Admin_Bar $admin_bar ):void {
