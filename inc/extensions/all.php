@@ -23,4 +23,5 @@ require_once __DIR__ . '/page-title.php';
 require_once __DIR__ . '/remove-blocks.php';
 require_once __DIR__ . '/admin-bar.php';
 require_once __DIR__ . '/icomoon.php';
+require_once __DIR__ . '/scroll-top.php';
 
