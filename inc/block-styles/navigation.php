@@ -78,7 +78,6 @@ register_block_style(
                 ' . $swt_parent_class . ' .wp-block-navigation__container {
                     font-size: 22px;
                     line-height: 32px;
-                    color: #4B5563;
                     gap: 15px !important;
                     width: 100%;
                 }
