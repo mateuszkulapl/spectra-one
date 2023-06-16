@@ -70,7 +70,6 @@ function scroll_top_inline_css( string $css ): string {
 			'cursor'           => 'pointer',
 			'transform'        => 'scale(0)',
 			'transition'       => '.2s',
-			'box-shadow'       => '0px 8px 24px -6px var(--wp--preset--color--secondary)',
 
 		),
 
