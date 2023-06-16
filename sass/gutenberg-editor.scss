@@ -7,3 +7,13 @@
 	text-align: center;
 	justify-content: center;
 }
+
+/*--------------------------------------------------------------
+# Spectra global panel compatibility on responsive 
+--------------------------------------------------------------*/
+
+.edit-site-sidebar-edit-mode {
+	@media (max-width: 781px) {
+		width: 100%;
+	}	
+}
