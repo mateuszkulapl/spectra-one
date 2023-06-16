@@ -109,6 +109,9 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 
 == Changelog ==
 
+= 1.0.2 =
+* New: Introduced dynamic variable {site_url} for navigation link.
+
 = 1.0.1 =
 * New: Added shadow for header while sticky.
 * Update: Hide and show option preview in the editor.
