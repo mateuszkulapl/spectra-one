@@ -68,7 +68,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"25%","style":{"spacing":{"padding":{"left":"var:preset|spacing|small"}}}} -->
-<div class="wp-block-column" style="padding-left:var(--wp--preset--spacing--small);flex-basis:25%"><!-- wp:template-part {"slug":"sidebar"} /--></div>
+<div class="wp-block-column" style="padding-left:var(--wp--preset--spacing--small);flex-basis:25%"><!-- wp:template-part {"slug":"sidebar","theme": "spectra-one"} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
