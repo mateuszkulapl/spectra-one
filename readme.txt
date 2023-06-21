@@ -109,6 +109,9 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 
 == Changelog ==
 
+= 1.0.2 =
+* New: Simple, Modern, Divided block styling for navigation block.
+
 = 1.0.1 =
 * New: Simple block styling for navigation block.
 * New: Added shadow for header while sticky.

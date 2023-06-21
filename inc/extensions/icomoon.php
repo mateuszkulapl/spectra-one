@@ -28,12 +28,11 @@ add_filter( 'render_block', SWT_NS . 'render_icomoon', 10, 2 );
  * @return string
  */
 function render_icomoon( string $block_content, array $block ):string {
+	$is_core_categories   = ( ( isset( $block['blockName'] ) && 'core/archives' === $block['blockName'] ) || ( isset( $block['blockName'] ) && 'core/categories' === $block['blockName'] ) && ( isset( $block['attrs']['displayAsDropdown'] ) && true === $block['attrs']['displayAsDropdown'] ) );
+	$is_mobile_navigation = ( ( isset( $block['blockName'] ) && 'core/navigation' === $block['blockName'] ) );
 
-	if ( ( isset( $block['blockName'] ) && 'core/archives' === $block['blockName'] ) || ( isset( $block['blockName'] ) && 'core/categories' === $block['blockName'] ) ) {
-		if ( isset( $block['attrs']['displayAsDropdown'] ) && true === $block['attrs']['displayAsDropdown'] ) {
-			add_filter( 'swt_dynamic_theme_css', SWT_NS . 'icomoon_inline_css' );
-		}
-	}
+	add_filter( 'swt_dynamic_theme_css', SWT_NS . 'icomoon_inline_css' );
+	
 
 	return $block_content;
 }
