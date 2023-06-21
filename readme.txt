@@ -111,6 +111,7 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 
 = 1.0.2 =
 * New: Simple, Modern, Divided block styling for navigation block.
+* Fix: Header and footer not rendering inside child theme.
 
 = 1.0.1 =
 * New: Added shadow for header while sticky.
