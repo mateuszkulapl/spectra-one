@@ -27,7 +27,7 @@ add_filter( 'render_block', SWT_NS . 'render_dynamic_variables', 10, 2 );
  */
 function render_dynamic_variables( string $block_content, array $block ):string {
 
-	if ( isset( $block['blockName'] ) && 'core/navigation-link' === $block['blockName'] ) {
+	if ( isset( $block['blockName'] ) && ( 'core/navigation-submenu' === $block['blockName'] || 'core/navigation-link' === $block['blockName'] ) && get_home_url() ) {
 
 		$home_url              = preg_replace( '(^https?://)', '', home_url() );
 		$shortcode_label       = array( '{site_url}' );
@@ -46,5 +46,6 @@ function render_dynamic_variables( string $block_content, array $block ):string 
 
 		$block_content = $dom->saveHTML();
 	}
+	
 	return $block_content;
 }
