@@ -109,7 +109,7 @@ register_block_style(
  * Common desktop css.
  *
  * @since x.x.x
- * @param $parent_class Parent class
+ * @param string $parent_class Parent class.
  * @return string
  */
 function common_desktop_inline_style( string $parent_class ):string {
@@ -148,8 +148,8 @@ function common_desktop_inline_style( string $parent_class ):string {
                 color: var(--wp--preset--color--primary);
             }
 
-            ' . $parent_class . ' .is-menu-open .wp-block-navigation-item.has-child .wp-block-navigation-item.has-child:hover {
-                color: red !important;
+            ' . $parent_class . ' .wp-block-navigation__responsive-container:not(.has-modal-open) .wp-block-navigation-item.has-child .wp-block-navigation-item.has-child:hover {
+                color: var(--wp--preset--color--primary) !important;
             }
     ';
 
@@ -161,7 +161,7 @@ function common_desktop_inline_style( string $parent_class ):string {
  * Common mobile css.
  *
  * @since x.x.x
- * @param $parent_class Parent class
+ * @param string $parent_class Parent class.
  * @return string
  */
 function common_mobile_inline_style( string $parent_class ):string {
@@ -169,6 +169,11 @@ function common_mobile_inline_style( string $parent_class ):string {
 	$selector = $parent_class . ' .wp-block-navigation__responsive-container.has-modal-open';
 
 	$common_mobile_inline_style = '
+
+            ' . $selector . '.has-modal-open {
+                color: var(--wp--preset--color--heading);
+                background-color: var(--wp--preset--color--background);
+            }
 
             ' . $selector . ' .wp-block-navigation__responsive-container-close {
                 padding: var(--wp--preset--spacing--x-small);
@@ -234,6 +239,13 @@ function common_mobile_inline_style( string $parent_class ):string {
                 margin-bottom: 0;
                 border-bottom: 0;
             }
+
+
+            ' . $selector . ' .wp-block-navigation__submenu-container .wp-block-navigation-item .wp-block-navigation-item__content,
+            ' . $selector . ' .wp-block-navigation__submenu-container .wp-block-navigation-item:nth-last-child(1) .wp-block-navigation-item__content,
+            ' . $selector . ' .wp-block-navigation__submenu-container .wp-block-navigation-item:nth-child(1) .wp-block-navigation-item__content {
+                padding: 0;
+            }
     
             ' . $selector . ' .wp-block-navigation-submenu__toggle {
                 display: block;
@@ -241,6 +253,11 @@ function common_mobile_inline_style( string $parent_class ):string {
                 ' . rtl_css( 'right' ) . ': 0;
                 top: var(--wp--preset--spacing--xx-small)
             }
+
+            ' . $selector . ' .wp-block-navigation-submenu__toggle[aria-expanded="false"] > svg {
+                transform: rotate(0);
+            }
+
             ' . $selector . ' .wp-block-navigation-submenu__toggle[aria-expanded="true"] > svg {
                 transform: rotate(180deg);
             }
