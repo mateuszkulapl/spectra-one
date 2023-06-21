@@ -359,13 +359,10 @@ function fetch_svg_icon( string $icon = '', string $class = '', bool $base = tru
 	$swt_svgs = null;
 	$output   = '<span class="swt-svg' . ( $base ? ' svg-baseline' : '' ) . ( $class ? ' ' . $class : '' ) . '">';
 
-
-	if ( ! $swt_svgs ) {
-		ob_start();
-		echo file_get_contents( SWT_DIR . 'assets/svg/svgs.json' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Required to get svg.json.
-		$swt_svgs = json_decode( ob_get_clean(), true );
-		$swt_svgs = apply_filters( 'swt_svg_icons', $swt_svgs );
-	}
+	ob_start();
+	echo file_get_contents( SWT_DIR . 'assets/svg/svgs.json' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Required to get svg.json.
+	$swt_svgs = json_decode( ob_get_clean(), true );
+	$swt_svgs = apply_filters( 'swt_svg_icons', $swt_svgs );
 
 	$output .= isset( $swt_svgs[ $icon ] ) ? $swt_svgs[ $icon ] : '';
 	

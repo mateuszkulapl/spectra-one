@@ -42,7 +42,8 @@ function scroll_top():void {
  * @since x.x.x
  * @return void
  */
-function render_scroll_top() {
+function render_scroll_top():void {
+	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php 
 	echo fetch_svg_icon( 'arrow-top', 'swt-scroll-top', false ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Required to get svg.json.
 }
 
