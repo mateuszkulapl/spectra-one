@@ -92,6 +92,9 @@ register_block_style(
 
             ' . $swt_parent_class . ' .wp-block-navigation__submenu-container .wp-block-navigation-item:nth-last-child(1) .wp-block-navigation-item__content {
                 padding-bottom: var(--wp--preset--spacing--xx-small);
+            }
+
+            ' . $swt_parent_class . ' .wp-block-navigation__submenu-container .wp-block-navigation-item:nth-last-child(1) {
                 border-bottom: 0;
             }
 

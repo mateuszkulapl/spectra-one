@@ -320,11 +320,6 @@ div.is-style-swt-button-inverse .wp-element-button:hover {
   margin-bottom: var(--wp--preset--spacing--x-small);
   border-bottom: 1px solid var(--wp--preset--color--outline);
 }
-.is-style-swt-navigation-style-1 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child::after,
-.is-style-swt-navigation-style-2 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child::after,
-.is-style-swt-navigation-style-3 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child::after {
-  content: "sadsadsa";
-}
 
 /*--------------------------------------------------------------
 # Note
