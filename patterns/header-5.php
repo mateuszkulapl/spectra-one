@@ -20,7 +20,7 @@ $images = [
 <figure class="wp-block-image size-full swt-duotone-secondary"><a href="<?php echo esc_url( get_home_url() ); ?>"><img src="<?php echo esc_url( $images[0] ); ?>" alt="home" class="wp-image-849"/></a></figure>
 <!-- /wp:image -->
 
-<!-- wp:navigation {"textColor":"heading","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}}} -->
+<!-- wp:navigation {"textColor":"heading","overlayBackgroundColor":"background","overlayTextColor":"heading","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}}} -->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Home', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'About', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Blog', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
