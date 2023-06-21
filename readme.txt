@@ -112,6 +112,7 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 = 1.0.2 =
 * New: Added Scroll to top feature. 
 * New: Added Spectra Editor panel.
+* Fix: Header and footer not rendering inside child theme.
 
 = 1.0.1 =
 * New: Added shadow for header while sticky.
