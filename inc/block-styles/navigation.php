@@ -127,6 +127,7 @@ function common_desktop_inline_style( string $parent_class ):string {
             .wp-block-navigation__container > .wp-block-navigation-submenu{
                 padding-top: var(--wp--preset--spacing--xx-small);
                 padding-bottom: var(--wp--preset--spacing--xx-small);
+                gap: var(--wp--preset--spacing--xxx-small);
             }
 
             ' . $parent_class . ' .wp-block-navigation__submenu-container {
