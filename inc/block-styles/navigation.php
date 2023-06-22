@@ -155,6 +155,10 @@ function common_desktop_inline_style( string $parent_class ):string {
             ' . $parent_class . ' .wp-block-navigation__responsive-container:not(.has-modal-open) .wp-block-navigation-item.has-child .wp-block-navigation-item.has-child:hover {
                 color: var(--wp--preset--color--primary) !important;
             }
+
+            ' . $parent_class . ' .has-child  .wp-block-navigation__submenu-container:not(.is-menu-open) .wp-block-navigation__submenu-icon {
+                margin-right: var(--wp--preset--spacing--xxx-small);
+            }
     ';
 
 	return $common_desktop_inline_style;
