@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since 0.0.6
+ * @since 1.0.0
  */
 
 declare( strict_types=1 );
@@ -21,7 +21,7 @@ register_block_style(
 	'core/latest-posts',
 	array(
 		'name'         => SWT_PFX . '-latest-posts-simple',
-		'label'        => __( 'Simple image right', 'spectra-one' ),
+		'label'        => __( 'Simple', 'spectra-one' ),
 		'inline_style' => '
             ' . $swt_parent_class . ' {
                 color: var(--wp--preset--color--neutral);

@@ -20,6 +20,16 @@ input[type=search]::-webkit-search-results-decoration {
   display: none;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
 /*--------------------------------------------------------------
 # Frontend dynamic duotone support
 --------------------------------------------------------------*/

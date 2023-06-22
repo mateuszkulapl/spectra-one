@@ -1,18 +1,25 @@
 <?php
 /**
  * Title: Footer six columns menu separated
- * Slug: spectra-one/footer-six-columns-menu-separated
+ * Slug: spectra-one/footer-5
  * Categories: footer
  * Block Types: core/template-part/footer
  */
+
+$get_url = trailingslashit(get_template_directory_uri());
+
+$images = [
+    $get_url . "assets/image/logo.svg",
+];
+
 ?>
+
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium","padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|medium"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--medium)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:site-logo {"width":30} /-->
-<!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"small"} /--></div>
-<!-- /wp:group -->
+<div class="wp-block-group"><!-- wp:image {"id":1048,"sizeSlug":"full","linkDestination":"none","className":"swt-duotone-secondary"} -->
+<figure class="wp-block-image size-full swt-duotone-secondary"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-1048"/></figure>
+<!-- /wp:image -->
 <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"horizontal"},"style":{"spacing":{}}} -->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Home', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'About', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
@@ -39,7 +46,7 @@
 <!-- /wp:paragraph -->
 <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Products List', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
-<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Plans \u0026amp', 'spectra-one' ); ?>; Pricing","url":"#","kind":"custom","isTopLevelLink":true} /-->
+<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Plans \u0026amp; Pricing', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Services', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- wp:navigation-link {"label":"<?php esc_html_e( 'Partners', 'spectra-one' ); ?>","url":"#","kind":"custom","isTopLevelLink":true} /-->
 <!-- /wp:navigation --></div>
@@ -117,7 +124,7 @@
 <!-- /wp:paragraph -->
 <!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontSize":"x-small"} /-->
 <!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-<p class="has-text-align-center has-x-small-font-size"><?php esc_html_e( '· All rights reserved', 'spectra-one' ); ?></p>
+<p class="has-text-align-center has-x-small-font-size">·<?php esc_html_e( '· All rights reserved', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->

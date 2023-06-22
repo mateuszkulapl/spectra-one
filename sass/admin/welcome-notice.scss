@@ -1,8 +1,10 @@
 $text-color: #1f2937;
 $text-color-alt: #fff;
+$description : #4b5563;
 $primary-color: #4f46e5;
 $disable-color: #a7aaad;
-$mobile: 786px;
+$mobile: 782px;
+$tablet: 1199px;
 
 .swt-welcome-notice {
 	position: relative;
@@ -11,15 +13,24 @@ $mobile: 786px;
 	.swt-row {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: flex-end;
 
 		.swt-col {
 			width: 50%;
 
+			&.swt-col-right {
+				align-self: flex-end;
+			}
+
 			.notice-content {
 				max-width: 630px;
-				padding-bottom: 55px;
 				padding-left: 64px;
+				padding-bottom: 30px;
+
+				@media screen and (max-width: $tablet) {
+					max-width: 100%;
+					padding-right: 2em;
+					padding-left: 2em;
+				}
 
 				@media screen and (max-width: $mobile) {
 					padding: 0;
@@ -31,7 +42,7 @@ $mobile: 786px;
 				font-weight: 400;
 				line-height: 22px;
 				color: $primary-color;
-				margin-bottom: 12px;
+				margin-bottom: 10px;
 				margin-top: 0;
 				padding: 0;
 			}
@@ -43,7 +54,7 @@ $mobile: 786px;
 				letter-spacing: -0.5px;
 				color: $text-color;
 				margin-top: 0;
-				margin-bottom: 12px;
+				margin-bottom: 10px;
 
 				@media screen and (max-width: $mobile) {
 					font-size: 25px;
@@ -52,19 +63,47 @@ $mobile: 786px;
 			}
 
 			.description {
-				margin-bottom: 32px;
+				color: $description;
+				margin-bottom: 27px;
+				font-size: 18px;
+				line-height: 29px;
+				font-weight: 400;
+
+				@media screen and (max-width: $mobile) {
+					margin-bottom: 25px;
+					font-size: 16px;
+				}
 			}
 
 			.notice-actions {
 
-				button {
+				button,
+				a {
 					font-weight: 500;
 					font-size: 16px;
 					line-height: 24px;
 					padding: 10px 16px;
-					background: $primary-color;
 					border-radius: 6px;
+					margin-top: 5px;
+					margin-bottom: 5px;
+					text-align: center;
+
+					@media screen and (max-width: $mobile) {
+						width: 100%;
+					}
+				}
+
+				button {
+					background: $primary-color;
 					color: $text-color-alt;
+					margin-right: 12px;
+				}
+
+				a {
+					color: $primary-color;
+					border-color: $primary-color;
+					background-color: $text-color-alt;
+
 				}
 			}
 
@@ -78,12 +117,13 @@ $mobile: 786px;
 					height: auto;
 				}
 
-				@media screen and (max-width: $mobile) {
+				@media screen and (max-width: $tablet) {
 					display: none;
 				}
 			}
 
-			@media screen and (max-width: $mobile) {
+
+			@media screen and (max-width: $tablet) {
 				width: 100%;
 			}
 		}
@@ -94,7 +134,8 @@ $mobile: 786px;
 	}
 
 	@media screen and (max-width: $mobile) {
-		padding-top: 35px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 }
 

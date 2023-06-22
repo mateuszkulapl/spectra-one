@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since 0.0.6
+ * @since 1.0.0
  */
 
 declare( strict_types=1 );
@@ -27,17 +27,6 @@ register_block_style(
 			' . $swt_parent_class . ' {
 				padding-left: 0;
 				list-style: none;
-			}
-
-			.is-style-' . SWT_PFX . '-post-terms-pill a {
-				display: inline-block;
-				padding: 6px 12px;
-				border-radius: var(--wp--custom--border-radius--full);
-				color: var(--wp--preset--color--body);
-				background-color: var(--wp--preset--color--outline);
-				margin-right: var(--wp--preset--spacing--xx-small);
-				margin-bottom: var(--wp--preset--spacing--xx-small);
-				line-height: var(--wp--custom--line-height--initial);
 			}
 
 			' . $swt_parent_class . ' .cat-item {

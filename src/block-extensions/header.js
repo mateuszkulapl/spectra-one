@@ -26,13 +26,13 @@ export const HeaderSettings = ( props ) => {
 				: false;
 	} else {
 		SWTStickyHeader =
-			props?.meta.swt_meta_sticky_header &&
-			props.meta.swt_meta_sticky_header
+			props?.meta._swt_meta_sticky_header &&
+			props.meta._swt_meta_sticky_header
 				? true
 				: false;
 		SWTTransparentHeader =
-			props?.meta.swt_meta_transparent_header &&
-			props.meta.swt_meta_transparent_header
+			props?.meta._swt_meta_transparent_header &&
+			props.meta._swt_meta_transparent_header
 				? true
 				: false;
 	}
@@ -59,7 +59,7 @@ export const HeaderSettings = ( props ) => {
 								  } )
 								: props.setMetaFieldValue(
 									val,
-									'swt_meta_sticky_header'
+									'_swt_meta_sticky_header'
 								  );
 						} }
 					/>
@@ -86,7 +86,7 @@ export const HeaderSettings = ( props ) => {
 								  } )
 								: props.setMetaFieldValue(
 									val,
-									'swt_meta_transparent_header'
+									'_swt_meta_transparent_header'
 								  );
 						} }
 					/>
@@ -155,4 +155,51 @@ addFilter(
 	'blocks.registerBlockType',
 	'swt/header-attributes',
 	HeaderAttributes
+);
+
+const HeaderCss = createHigherOrderComponent( ( BlockListBlock ) => {
+	return ( props ) => {
+		const { name, attributes } = props;
+
+		const includeBlock = [ 'core/template-part' ];
+
+		if ( includeBlock.includes( name ) ) {
+			const { SWTTransparentHeader } = attributes;
+
+			const transparentHeaderCss = `
+				.block-editor-block-list__block.swt-transparent-header {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					z-index: 999;
+					margin-top: 0;
+				}
+
+				.swt-transparent-header > .has-background {
+					background: transparent !important;
+				}
+			`;
+
+			return (
+				<>
+					{ SWTTransparentHeader && <style>{ transparentHeaderCss }</style> }
+					<BlockListBlock { ...props } className={ `${ props?.className ? `${ props.className } ` : '' }${ SWTTransparentHeader ? 'swt-transparent-header ' : '' }` } />
+				</>
+
+			);
+		}
+
+		return (
+			<>
+				<BlockListBlock { ...props } />
+			</>
+		);
+	};
+}, 'HeaderCss' );
+
+addFilter(
+	'editor.BlockListBlock',
+	'swt/header-css',
+	HeaderCss
 );
