@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/block-extensions/header.js":
@@ -8,6 +7,7 @@
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HeaderSettings: () => (/* binding */ HeaderSettings)
@@ -139,6 +139,7 @@ const HeaderCss = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createHighe
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.js */ "./src/block-extensions/header.js");
 /* harmony import */ var _responsive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./responsive.js */ "./src/block-extensions/responsive.js");
@@ -153,6 +154,7 @@ __webpack_require__.r(__webpack_exports__);
   \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
@@ -273,6 +275,7 @@ const responsiveCss = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createH
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _latest_post_list_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./latest-post-list.js */ "./src/blocks/latest-post-list.js");
 
@@ -285,6 +288,7 @@ __webpack_require__.r(__webpack_exports__);
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
@@ -324,6 +328,7 @@ const latestPostList = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.create
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -355,6 +360,7 @@ const SwtIcons = {
   \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -493,6 +499,7 @@ const SwtPluginInstallNotice = () => {
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   activatePluginUrl: () => (/* binding */ activatePluginUrl),
@@ -533,12 +540,36 @@ async function activatePluginUrl(url) {
 
 /***/ }),
 
+/***/ "./src/components/spectra-cta.js":
+/*!***************************************!*\
+  !*** ./src/components/spectra-cta.js ***!
+  \***************************************/
+/***/ (() => {
+
+document.addEventListener('click', function (event) {
+  const target = document.querySelector('.edit-site-header-edit-mode__inserter-toggle');
+  const check = document.querySelector('.block-editor-inserter__tabs .swt-spectra-cta');
+  const html = `
+		<div style="padding: 1.5em; background-color: pink;"class="swt-spectra-cta">
+			This a cta
+		</div>
+	`;
+  if (target.classList.contains('is-pressed')) {
+    if (!check) {
+      document.querySelector(".block-editor-inserter__tabs .components-tab-panel__tabs").insertAdjacentHTML("afterend", html);
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./src/extensions/editor/index.js":
 /*!****************************************!*\
   !*** ./src/extensions/editor/index.js ***!
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _title_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./title.js */ "./src/extensions/editor/title.js");
 
@@ -551,6 +582,7 @@ __webpack_require__.r(__webpack_exports__);
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
 /* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_0__);
@@ -655,6 +687,7 @@ function swtSiteTitle() {
   \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   SwtComponents: () => (/* binding */ SwtComponents)
@@ -709,6 +742,7 @@ const SwtComponents = props => {
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -773,6 +807,7 @@ const SwtSidebar = props => {
   \************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["React"];
 
 /***/ }),
@@ -783,6 +818,7 @@ module.exports = window["React"];
   \*************************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["blockEditor"];
 
 /***/ }),
@@ -793,6 +829,7 @@ module.exports = window["wp"]["blockEditor"];
   \************************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["components"];
 
 /***/ }),
@@ -803,6 +840,7 @@ module.exports = window["wp"]["components"];
   \*********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["compose"];
 
 /***/ }),
@@ -813,6 +851,7 @@ module.exports = window["wp"]["compose"];
   \******************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["data"];
 
 /***/ }),
@@ -823,6 +862,7 @@ module.exports = window["wp"]["data"];
   \**********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["editPost"];
 
 /***/ }),
@@ -833,6 +873,7 @@ module.exports = window["wp"]["editPost"];
   \*********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["element"];
 
 /***/ }),
@@ -843,6 +884,7 @@ module.exports = window["wp"]["element"];
   \*******************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["hooks"];
 
 /***/ }),
@@ -853,6 +895,7 @@ module.exports = window["wp"]["hooks"];
   \******************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["i18n"];
 
 /***/ }),
@@ -863,6 +906,7 @@ module.exports = window["wp"]["i18n"];
   \*********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["plugins"];
 
 /***/ }),
@@ -873,6 +917,7 @@ module.exports = window["wp"]["plugins"];
   \************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ _extends)
@@ -963,8 +1008,9 @@ function _extends() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!***********************!*\
   !*** ./src/editor.js ***!
   \***********************/
@@ -980,6 +1026,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _extensions_editor_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./extensions/editor/index.js */ "./src/extensions/editor/index.js");
 /* harmony import */ var _block_extensions_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./block-extensions/index.js */ "./src/block-extensions/index.js");
 /* harmony import */ var _blocks_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/index.js */ "./src/blocks/index.js");
+/* harmony import */ var _components_spectra_cta_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/spectra-cta.js */ "./src/components/spectra-cta.js");
+/* harmony import */ var _components_spectra_cta_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_spectra_cta_js__WEBPACK_IMPORTED_MODULE_8__);
+
+
 
 
 
