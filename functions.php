@@ -39,3 +39,8 @@ require_once SWT_DIR . 'inc/block-styles/all.php';
  * Admin functions
  */
 require_once SWT_DIR . 'inc/admin/welcome-notice.php';
+
+
+if ( class_exists( 'WooCommerce' ) ) {
+	require_once SWT_DIR . 'inc/extensions/woocommerce/all.php';
+}

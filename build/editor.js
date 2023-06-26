@@ -140,8 +140,10 @@ const HeaderCss = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createHighe
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.js */ "./src/block-extensions/header.js");
-/* harmony import */ var _responsive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./responsive.js */ "./src/block-extensions/responsive.js");
+/* harmony import */ var _woocommerce_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./woocommerce/index.js */ "./src/block-extensions/woocommerce/index.js");
+/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.js */ "./src/block-extensions/header.js");
+/* harmony import */ var _responsive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./responsive.js */ "./src/block-extensions/responsive.js");
+
 
 
 
@@ -264,6 +266,90 @@ const responsiveCss = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createH
   };
 }, 'responsiveCss');
 (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_4__.addFilter)('editor.BlockListBlock', 'swt/responsive-css', responsiveCss);
+
+/***/ }),
+
+/***/ "./src/block-extensions/woocommerce/add-to-cart-form.js":
+/*!**************************************************************!*\
+  !*** ./src/block-extensions/woocommerce/add-to-cart-form.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/compose */ "@wordpress/compose");
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/hooks */ "@wordpress/hooks");
+/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+const StickyAddToCart = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.createHigherOrderComponent)(BlockEdit => {
+  return props => {
+    const {
+      attributes,
+      name,
+      setAttributes
+    } = props;
+    const {
+      SWTStickyAddToCart
+    } = attributes;
+    if (name && name.includes('woocommerce/add-to-cart-form')) {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
+        title: "Spectra One Options",
+        initialOpen: true
+      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Enable Sticky Add To Cart', 'spectra-one'),
+        checked: SWTStickyAddToCart,
+        onChange: () => setAttributes({
+          SWTStickyAddToCart: !SWTStickyAddToCart
+        })
+      }))))));
+    }
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props));
+  };
+}, 'StickyAddToCart');
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('editor.BlockEdit', 'swt/sticky-add-to-cart', Responsive);
+function StickyAddToCartAttributes(settings) {
+  const {
+    name,
+    attributes
+  } = settings;
+  if (name && name.includes('woocommerce/add-to-cart-form')) {
+    if (attributes) {
+      settings.attributes = Object.assign(attributes, {
+        SWTStickyAddToCart: {
+          type: 'boolean',
+          default: false
+        }
+      });
+    }
+  }
+  return settings;
+}
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('blocks.registerBlockType', 'swt/sticky-add-to-cart-attributes', StickyAddToCartAttributes);
+
+/***/ }),
+
+/***/ "./src/block-extensions/woocommerce/index.js":
+/*!***************************************************!*\
+  !*** ./src/block-extensions/woocommerce/index.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _add_to_cart_form_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add-to-cart-form.js */ "./src/block-extensions/woocommerce/add-to-cart-form.js");
+
 
 /***/ }),
 
