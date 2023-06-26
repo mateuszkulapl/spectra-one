@@ -302,7 +302,8 @@ const StickyAddToCart = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.creat
       setAttributes
     } = props;
     const {
-      SWTStickyAddToCart
+      SWTStickyAddToCart,
+      SWTStickyAddToCartPosition
     } = attributes;
     if (name && name.includes('woocommerce/add-to-cart-form')) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
@@ -314,12 +315,18 @@ const StickyAddToCart = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.creat
         onChange: () => setAttributes({
           SWTStickyAddToCart: !SWTStickyAddToCart
         })
+      })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Sticky Add To Cart Position', 'spectra-one'),
+        checked: SWTStickyAddToCartPosition,
+        onChange: () => setAttributes({
+          SWTStickyAddToCartPosition: !SWTStickyAddToCartPosition
+        })
       }))))));
     }
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockEdit, props));
   };
 }, 'StickyAddToCart');
-(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('editor.BlockEdit', 'swt/sticky-add-to-cart', Responsive);
+(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('editor.BlockEdit', 'swt/sticky-add-to-cart', StickyAddToCart);
 function StickyAddToCartAttributes(settings) {
   const {
     name,
@@ -329,6 +336,10 @@ function StickyAddToCartAttributes(settings) {
     if (attributes) {
       settings.attributes = Object.assign(attributes, {
         SWTStickyAddToCart: {
+          type: 'boolean',
+          default: false
+        },
+        SWTStickyAddToCartPosition: {
           type: 'boolean',
           default: false
         }

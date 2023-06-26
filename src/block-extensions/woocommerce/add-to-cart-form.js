@@ -13,7 +13,7 @@ const StickyAddToCart = createHigherOrderComponent( ( BlockEdit ) => {
 	return ( props ) => {
 		const { attributes, name, setAttributes } = props;
 
-		const { SWTStickyAddToCart } = attributes;
+		const { SWTStickyAddToCart, SWTStickyAddToCartPosition } = attributes;
 
 		if ( name && name.includes( 'woocommerce/add-to-cart-form' ) ) {
 			return (
@@ -33,6 +33,17 @@ const StickyAddToCart = createHigherOrderComponent( ( BlockEdit ) => {
 										onChange={ () =>
 											setAttributes( {
 												SWTStickyAddToCart: ! SWTStickyAddToCart,
+											} )
+										}
+									/>
+								</PanelRow>
+								<PanelRow>
+									<ToggleControl
+										label={ __( 'Sticky Add To Cart Position', 'spectra-one' ) }
+										checked={ SWTStickyAddToCartPosition }
+										onChange={ () =>
+											setAttributes( {
+												SWTStickyAddToCartPosition: ! SWTStickyAddToCartPosition,
 											} )
 										}
 									/>
@@ -60,6 +71,10 @@ function StickyAddToCartAttributes( settings ) {
 		if ( attributes ) {
 			settings.attributes = Object.assign( attributes, {
 				SWTStickyAddToCart: {
+					type: 'boolean',
+					default: false,
+				},
+				SWTStickyAddToCartPosition: {
 					type: 'boolean',
 					default: false,
 				},
