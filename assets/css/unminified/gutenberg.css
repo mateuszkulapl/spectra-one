@@ -15,3 +15,15 @@
   margin-right: calc(var(--wp--style--root--padding-right) * -1);
   margin-left: calc(var(--wp--style--root--padding-left) * -1);
 }
+
+/*--------------------------------------------------------------
+# Announcement bar compatibility
+--------------------------------------------------------------*/
+@media screen and (max-width: 782px) {
+  .swt-announcement-notice {
+    text-align: center;
+  }
+  .swt-announcement-social {
+    justify-content: center !important;
+  }
+}

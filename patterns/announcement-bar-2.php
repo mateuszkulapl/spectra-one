@@ -7,20 +7,22 @@
  */
 ?>
 
-<!-- wp:group {"backgroundColor":"primary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-primary-background-color has-background"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide"><!-- wp:paragraph {"textColor":"background"} -->
-<p class="has-background-color has-text-color"><?php esc_html_e( 'Announcement message can be here..', 'spectra-one' ); ?></p>
-<!-- /wp:paragraph -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xxx-small","bottom":"var:preset|spacing|xxx-small"}}},"backgroundColor":"primary","className":"announ","layout":{"type":"constrained"}} -->
+<div class="wp-block-group announ has-primary-background-color has-background" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:var(--wp--preset--spacing--xxx-small)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-small","left":"var:preset|spacing|xx-small"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"textColor":"background","className":"swt-announcement-notice","fontSize":"x-small"} -->
+<p class="swt-announcement-notice has-background-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Announcement message can be here..', 'spectra-one' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
 
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:social-links {"iconColor":"background","iconColorValue":"#FFFFFF","className":"is-style-logos-only"} -->
-<ul class="wp-block-social-links has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:social-links {"iconColor":"background","iconColorValue":"var(--wp--preset--color--background)","openInNewTab":true,"size":"has-small-icon-size","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|x-small"}}},"className":"is-style-logos-only swt-announcement-social","layout":{"type":"flex","justifyContent":"right"}} -->
+<ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only swt-announcement-social"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 
 <!-- wp:social-link {"url":"#","service":"youtube"} /--></ul>
 <!-- /wp:social-links --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group -->

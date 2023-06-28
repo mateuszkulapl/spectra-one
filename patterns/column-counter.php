@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Column counter
+ * Title: Three column counter left
  * Slug: spectra-one/column-counter
  * Categories: featured
  * Keywords: column counter
@@ -14,8 +14,8 @@
 <h2 class="wp-block-heading has-primary-color has-text-color"><?php esc_html_e( '32', 'spectra-one' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p><?php esc_html_e( 'Donec viverra arcu euismod eu blandit mauris viverra.', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small"}}}} -->
+<p style="margin-top:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Donec viverra arcu euismod eu blandit mauris viverra.', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -24,8 +24,8 @@
 <h2 class="wp-block-heading has-primary-color has-text-color"><?php esc_html_e( '2000+', 'spectra-one' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p><?php esc_html_e( 'Placerat elit libero nulla faucibus quam turpis habitasse.', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small"}}}} -->
+<p style="margin-top:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Placerat elit libero nulla faucibus quam turpis habitasse.', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -34,8 +34,8 @@
 <h2 class="wp-block-heading has-primary-color has-text-color"><?php esc_html_e( '4.8', 'spectra-one' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p><?php esc_html_e( 'Mi accumsan pharetra auctor egestas morbi facilisis.', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small"}}}} -->
+<p style="margin-top:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Mi accumsan pharetra auctor egestas morbi facilisis.', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

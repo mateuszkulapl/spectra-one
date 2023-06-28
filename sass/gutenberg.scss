@@ -1,3 +1,6 @@
+$mobile: 782px;
+$tablet: 1199px;
+
 /*--------------------------------------------------------------
 # Spectra plugin container compatibility
 --------------------------------------------------------------*/
@@ -15,4 +18,18 @@
 .has-global-padding > .uagb-is-root-container.alignfull {
 	margin-right: calc(var(--wp--style--root--padding-right) * -1);
 	margin-left: calc(var(--wp--style--root--padding-left) * -1);
+}
+
+/*--------------------------------------------------------------
+# Announcement bar compatibility
+--------------------------------------------------------------*/
+
+@media screen and (max-width: $mobile) {
+	.swt-announcement-notice {
+		text-align: center;
+	}
+
+	.swt-announcement-social {
+		justify-content: center !important;
+	}
 }
