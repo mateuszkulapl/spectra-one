@@ -48,3 +48,39 @@ function get_theme_custom_styles(): array {
 
 	return json_decode( $global_styles, true );
 }
+
+
+/**
+ * Get css variable prefix
+ *
+ * @since x.x.x
+ * @return string variable prefix
+ */
+function get_css_variable_prefix(): string {
+	return '--wp--preset--color--';
+}
+
+
+/**
+ * Get palette slugs
+ *
+ * @since x.x.x
+ * @return array Palette slugs.
+ */
+function get_palette_slugs(): array {
+	return array(
+		'wp--preset--color--primary',
+		'wp--preset--color--tertiary',
+		'wp--preset--color--quaternary',
+		'wp--preset--color--heading',
+		'wp--preset--color--body',
+		'wp--preset--color--surface',
+		'wp--preset--color--background',
+		'wp--preset--color--foreground',
+		'wp--preset--color--outline',
+		'wp--preset--color--neutral',
+		'wp--preset--color--transparent',
+		'wp--preset--color--current-color',
+		'wp--preset--color--inherit',
+	);
+}

@@ -17,7 +17,11 @@ $images = [
 <!-- wp:group {"backgroundColor":"background","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background-background-color has-background"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:image {"id":849,"sizeSlug":"full","linkDestination":"custom","className":"swt-duotone-secondary"} -->
-<figure class="wp-block-image size-full swt-duotone-secondary"><a href="<?php echo esc_url( get_home_url() ); ?>"><img src="<?php echo esc_url( $images[0] ); ?>" alt="home" class="wp-image-849"/></a></figure>
+<figure class="wp-block-image size-full swt-duotone-secondary"><a href="<?php echo esc_url( get_home_url() ); ?>">
+<span class="site-logo-img">
+<img src="<?php echo esc_url( $images[0] ); ?>" alt="home" class="wp-image-849"/>
+</span>
+</a></figure>
 <!-- /wp:image -->
 
 <!-- wp:navigation {"textColor":"heading","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}}} -->
