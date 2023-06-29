@@ -84,3 +84,44 @@ function get_palette_slugs(): array {
 		'wp--preset--color--inherit',
 	);
 }
+
+/**
+ * Get spectra one settings
+ *
+ * @since x.x.x
+ * @return array settings.
+ */
+function get_spectra_one_settings(): array {
+	$db_settings = get_theme_custom_styles();
+	$json_settings = get_theme_json();
+
+	$only_colors = array();
+
+	if( $db_settings && isset( $db_settings['settings']['color']['palette']['theme'] ) ) {
+		$colors = $db_settings['settings']['color']['palette']['theme'];
+		
+		foreach( $colors as $single) {
+			$only_colors[] = $single['color'];
+		}
+	
+	} else {
+
+		if( ! isset( $json_settings['settings']['color']['palette'] ) ) {
+			return [];
+		}
+
+		$colors = $json_settings['settings']['color']['palette'];
+
+		foreach( $colors as $single) {
+			$only_colors[] = $single['color'];
+		}
+
+	}
+
+	return array(
+		'global-color-palette' => array (
+			'palette' => $only_colors
+		),
+	);
+
+}
