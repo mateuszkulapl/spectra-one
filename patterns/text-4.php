@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Four column counter center
- * Slug: spectra-one/column-counter-4
+ * Title: Three column counter center
+ * Slug: spectra-one/text-4
  * Categories: featured
- * Keywords: column counter 
+ * Keywords: column counter
  */
 ?>
 
@@ -15,7 +15,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small"}}}} -->
-<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Essentials patterns', 'spectra-one' ); ?></p>
+<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Donec viverra arcu euismod eu blandit mauris viverra.', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -25,7 +25,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small"}}}} -->
-<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Active installs', 'spectra-one' ); ?></p>
+<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Placerat elit libero nulla faucibus quam turpis habitasse.', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -35,17 +35,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small"}}}} -->
-<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Average ratings', 'spectra-one' ); ?></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
-<div class="wp-block-column"><!-- wp:heading {"textAlign":"center","textColor":"primary"} -->
-<h2 class="wp-block-heading has-text-align-center has-primary-color has-text-color"><?php esc_html_e( '12', 'spectra-one' ); ?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small"}}}} -->
-<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Style variations', 'spectra-one' ); ?></p>
+<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--x-small)"><?php esc_html_e( 'Mi accumsan pharetra auctor egestas morbi facilisis.', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

@@ -1,17 +1,18 @@
 <?php
 /**
- * Title: User card with links cover
- * Slug: spectra-one/user-card
+ * Title: Teams circle four columns
+ * Slug: spectra-one/contact-6
  * Categories: featured
- * Keywords: user card
+ * Keywords: Teams circle four columns
  */
 
 $get_url = trailingslashit(get_template_directory_uri());
 
 $images = [
-    $get_url . "assets/image/featured-1.svg",
-    $get_url . "assets/image/featured-2.svg",
-    $get_url . "assets/image/featured-3.svg",
+    $get_url . "assets/image/avatar-circle-2.png",
+    $get_url . "assets/image/avatar-circle-3.png",
+    $get_url . "assets/image/avatar-circle-4.png",
+    $get_url . "assets/image/avatar-circle-5.png",
 ];
 
 ?>
@@ -19,29 +20,29 @@ $images = [
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"align":"center","style":{"typography":{"letterSpacing":"2px","textTransform":"uppercase"}},"textColor":"primary","fontSize":"x-small"} -->
-<p class="has-text-align-center has-primary-color has-text-color has-x-small-font-size" style="letter-spacing:2px;text-transform:uppercase">Meet the team</p>
+<p class="has-text-align-center has-primary-color has-text-color has-x-small-font-size" style="letter-spacing:2px;text-transform:uppercase"><?php esc_html_e( 'Meet the team', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center">The talent driving our success</h2>
+<h2 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'The talent driving our success', 'spectra-one' ); ?></h2>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Meet our dedicated team of professionals who are passionate about providing top-notch service and delivering exceptional results.</p>
+<p class="has-text-align-center"><?php esc_html_e( 'Meet our dedicated team of professionals who are passionate about providing top-notch service and delivering exceptional results.', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"align":"center","id":1188,"sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
-<figure class="wp-block-image aligncenter size-full is-style-rounded"><img src="http://fsetheme.local/wp-content/uploads/2023/06/avatar-square-1.jpg" alt="" class="wp-image-1188"/></figure>
+<figure class="wp-block-image aligncenter size-full is-style-rounded"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-1188"/></figure>
 <!-- /wp:image -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":5,"textColor":"heading","className":"wp-block-heading"} -->
-<h5 class="wp-block-heading has-text-align-center has-heading-color has-text-color">Wade Warren</h5>
+<h5 class="wp-block-heading has-text-align-center has-heading-color has-text-color"><?php esc_html_e( 'Wade Warren', 'spectra-one' ); ?></h5>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-text-align-center has-neutral-color has-text-color has-x-small-font-size">Creative Director</p>
+<p class="has-text-align-center has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Creative Director', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
-<!-- wp:social-links {"iconColor":"primary","iconColorValue":"#6431F6","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:social-links {"iconColor":"primary","iconColorValue":"var(--wp--preset--color--primary)","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 <!-- wp:social-link {"url":"#","service":"instagram"} /--></ul>
@@ -49,17 +50,17 @@ $images = [
 <!-- /wp:column -->
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"align":"center","id":1189,"sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
-<figure class="wp-block-image aligncenter size-full is-style-rounded"><img src="http://fsetheme.local/wp-content/uploads/2023/06/avatar-square-2.jpg" alt="" class="wp-image-1189"/></figure>
+<figure class="wp-block-image aligncenter size-full is-style-rounded"><img src="<?php echo esc_url( $images[1] ); ?>" alt="" class="wp-image-1189"/></figure>
 <!-- /wp:image -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":5,"textColor":"heading","className":"wp-block-heading"} -->
-<h5 class="wp-block-heading has-text-align-center has-heading-color has-text-color">Leslie Alexander</h5>
+<h5 class="wp-block-heading has-text-align-center has-heading-color has-text-color"><?php esc_html_e( 'Leslie Alexander', 'spectra-one' ); ?></h5>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-text-align-center has-neutral-color has-text-color has-x-small-font-size">Product Manager</p>
+<p class="has-text-align-center has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Product Manager', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
-<!-- wp:social-links {"iconColor":"primary","iconColorValue":"#6431F6","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:social-links {"iconColor":"primary","iconColorValue":"var(--wp--preset--color--primary)","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 <!-- wp:social-link {"url":"#","service":"instagram"} /--></ul>
@@ -67,17 +68,17 @@ $images = [
 <!-- /wp:column -->
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"align":"center","id":1190,"sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
-<figure class="wp-block-image aligncenter size-full is-style-rounded"><img src="http://fsetheme.local/wp-content/uploads/2023/06/avatar-square-3.jpg" alt="" class="wp-image-1190"/></figure>
+<figure class="wp-block-image aligncenter size-full is-style-rounded"><img src="<?php echo esc_url( $images[2] ); ?>" alt="" class="wp-image-1190"/></figure>
 <!-- /wp:image -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":5,"textColor":"heading","className":"wp-block-heading"} -->
-<h5 class="wp-block-heading has-text-align-center has-heading-color has-text-color">Esther Howard</h5>
+<h5 class="wp-block-heading has-text-align-center has-heading-color has-text-color"><?php esc_html_e( 'Esther Howard', 'spectra-one' ); ?></h5>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-text-align-center has-neutral-color has-text-color has-x-small-font-size">Senior Product Designer</p>
+<p class="has-text-align-center has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Senior Product Designer', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
-<!-- wp:social-links {"iconColor":"primary","iconColorValue":"#6431F6","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:social-links {"iconColor":"primary","iconColorValue":"var(--wp--preset--color--primary)","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 <!-- wp:social-link {"url":"#","service":"instagram"} /--></ul>
@@ -85,17 +86,17 @@ $images = [
 <!-- /wp:column -->
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"align":"center","id":1191,"sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
-<figure class="wp-block-image aligncenter size-full is-style-rounded"><img src="http://fsetheme.local/wp-content/uploads/2023/06/avatar-square-4.jpg" alt="" class="wp-image-1191"/></figure>
+<figure class="wp-block-image aligncenter size-full is-style-rounded"><img src="<?php echo esc_url( $images[3] ); ?>" alt="" class="wp-image-1191"/></figure>
 <!-- /wp:image -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":5,"textColor":"heading","className":"wp-block-heading"} -->
-<h5 class="wp-block-heading has-text-align-center has-heading-color has-text-color">Jacob Jones</h5>
+<h5 class="wp-block-heading has-text-align-center has-heading-color has-text-color"><?php esc_html_e( 'Jacob Jones', 'spectra-one' ); ?></h5>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"align":"center","textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-text-align-center has-neutral-color has-text-color has-x-small-font-size">Senior Developer</p>
+<p class="has-text-align-center has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Senior Developer', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
-<!-- wp:social-links {"iconColor":"primary","iconColorValue":"#6431F6","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:social-links {"iconColor":"primary","iconColorValue":"var(--wp--preset--color--primary)","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 <!-- wp:social-link {"url":"#","service":"instagram"} /--></ul>

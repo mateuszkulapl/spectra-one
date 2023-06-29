@@ -5,13 +5,23 @@
  * Categories: featured
  * Keywords: hero Banner
  */
+
+ $get_url = trailingslashit(get_template_directory_uri());
+
+ $images = [
+    $get_url . "assets/image/placeholder-portrait.svg",
+     $get_url . "assets/image/featured-1.svg",
+     $get_url . "assets/image/featured-2.svg",
+     $get_url . "assets/image/featured-3.svg",
+ ];
+
  ?>
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large","padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-large","left":"var:preset|spacing|xx-large"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":41,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="http://wpastra.local/wp-content/uploads/2023/06/natural-light-spectrum-image.jpg" alt="" class="wp-image-41" style="border-radius:8px"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-41" style="border-radius:8px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 <!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|small"}}} -->
@@ -29,7 +39,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"5%"} -->
 <div class="wp-block-column" style="flex-basis:5%"><!-- wp:image {"id":139,"width":24,"height":24,"sizeSlug":"large","linkDestination":"none","className":"swt-duotone-primary"} -->
-<figure class="wp-block-image size-large is-resized swt-duotone-primary"><img src="http://wpastra.local/wp-content/themes/spectra-one/assets/image/featured-1.svg" alt="" class="wp-image-139" width="24" height="24"/></figure>
+<figure class="wp-block-image size-large is-resized swt-duotone-primary"><img src="<?php echo esc_url( $images[1] ); ?>" alt="" class="wp-image-139" width="24" height="24"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 <!-- wp:column {"width":"95%","style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
@@ -44,7 +54,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"5%"} -->
 <div class="wp-block-column" style="flex-basis:5%"><!-- wp:image {"id":866,"width":24,"height":24,"sizeSlug":"large","linkDestination":"none","className":"swt-duotone-primary"} -->
-<figure class="wp-block-image size-large is-resized swt-duotone-primary"><img src="http://wpastra.local/wp-content/themes/spectra-one/assets/image/featured-2.svg" alt="" class="wp-image-866" width="24" height="24"/></figure>
+<figure class="wp-block-image size-large is-resized swt-duotone-primary"><img src="<?php echo esc_url( $images[2] ); ?>" alt="" class="wp-image-866" width="24" height="24"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 <!-- wp:column {"width":"95%","style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
@@ -59,7 +69,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"5%"} -->
 <div class="wp-block-column" style="flex-basis:5%"><!-- wp:image {"id":867,"width":24,"height":24,"sizeSlug":"large","linkDestination":"none","className":"swt-duotone-primary"} -->
-<figure class="wp-block-image size-large is-resized swt-duotone-primary"><img src="http://wpastra.local/wp-content/themes/spectra-one/assets/image/featured-3.svg" alt="" class="wp-image-867" width="24" height="24"/></figure>
+<figure class="wp-block-image size-large is-resized swt-duotone-primary"><img src="<?php echo esc_url( $images[3] ); ?>" alt="" class="wp-image-867" width="24" height="24"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 <!-- wp:column {"width":"95%","style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->

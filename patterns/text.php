@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Three column counter left
- * Slug: spectra-one/column-counter
+ * Slug: spectra-one/text
  * Categories: featured
  * Keywords: column counter
  */
