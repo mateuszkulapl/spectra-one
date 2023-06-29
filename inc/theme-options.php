@@ -86,42 +86,101 @@ function get_palette_slugs(): array {
 }
 
 /**
+ * Split font size and unit
+ *
+ * @since x.x.x
+ * @param string $font font size and unit.
+ * @return mixed
+ */
+function split_font_size_and_unit( string $font ):mixed {
+
+	if ( ! str_contains( $font, 'var:preset' ) ) {
+		$font = preg_split( '/(?<=[0-9])(?=[a-z]+)/i', $font );
+		return $font;
+	} else {
+		return array(
+			'0' => $font,
+		);
+	}
+	
+}
+
+/**
  * Get spectra one settings
  *
  * @since x.x.x
- * @return array settings.
+ * @return array settings
  */
 function get_spectra_one_settings(): array {
-	$db_settings = get_theme_custom_styles();
+	$db_settings   = get_theme_custom_styles();
 	$json_settings = get_theme_json();
 
-	$only_colors = array();
+	// Defaults.
+	$only_colors    = array();
+	$font_size_body = array(
+		'desktop'      => '',
+		'tablet'       => '',
+		'mobile'       => '',
+		'desktop-unit' => 'px',
+		'tablet-unit'  => 'px',
+		'mobile-unit'  => 'px',
+	);
 
-	if( $db_settings && isset( $db_settings['settings']['color']['palette']['theme'] ) ) {
+	if ( isset( $db_settings['styles']['typography']['fontSize'] ) ) {
+		$body_font_size = $db_settings['styles']['typography']['fontSize'];
+
+		$font_size_body = array(
+			'desktop'      => isset( split_font_size_and_unit( $body_font_size )[0] ) ? split_font_size_and_unit( $body_font_size )[0] : '',
+			'tablet'       => '',
+			'mobile'       => '',
+			'desktop-unit' => isset( split_font_size_and_unit( $body_font_size )[1] ) ? split_font_size_and_unit( $body_font_size )[1] : 'px',
+			'tablet-unit'  => 'px',
+			'mobile-unit'  => 'px',
+		);
+	}
+
+
+	// Body variables.
+	$body_font_family  = isset( $db_settings['styles']['typography']['fontFamily'] ) ? $db_settings['styles']['typography']['fontFamily'] : '';
+	$body_font_variant = '';
+	$body_font_weight  = isset( $db_settings['styles']['typography']['fontWeight'] ) ? $db_settings['styles']['typography']['fontWeight'] : '';
+	$body_line_height  = isset( $db_settings['styles']['typography']['lineHeight'] ) ? $db_settings['styles']['typography']['lineHeight'] : '';
+
+	// Heading variable.
+	$headings_font_family  = isset( $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontFamily'] : '';
+	$headings_font_weight  = isset( $db_settings['styles']['elements']['heading']['typography']['fontWeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontWeight'] : '';
+	$headings_line_height  = isset( $db_settings['styles']['elements']['heading']['typography']['lineHeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['lineHeight'] : '';
+	$headings_font_variant = '';
+
+	if ( $db_settings && isset( $db_settings['settings']['color']['palette']['theme'] ) ) {
 		$colors = $db_settings['settings']['color']['palette']['theme'];
 		
-		foreach( $colors as $single) {
+		foreach ( $colors as $single ) {
 			$only_colors[] = $single['color'];
-		}
-	
+		}	
 	} else {
+		if ( isset( $json_settings['settings']['color']['palette'] ) ) {
+			$colors = $json_settings['settings']['color']['palette'];
 
-		if( ! isset( $json_settings['settings']['color']['palette'] ) ) {
-			return [];
+			foreach ( $colors as $single ) {
+				$only_colors[] = $single['color'];
+			}
 		}
-
-		$colors = $json_settings['settings']['color']['palette'];
-
-		foreach( $colors as $single) {
-			$only_colors[] = $single['color'];
-		}
-
 	}
 
 	return array(
-		'global-color-palette' => array (
-			'palette' => $only_colors
+		'global-color-palette'  => array(
+			'palette' => $only_colors,
 		),
+		'body-font-family'      => $body_font_family,
+		'body-font-variant'     => $body_font_variant,
+		'body-font-weight'      => $body_font_weight,
+		'font-size-body'        => $font_size_body,
+		'body-line-height'      => $body_line_height,
+		'headings-font-family'  => $headings_font_family,
+		'headings-font-weight'  => $headings_font_weight,
+		'headings-line-height'  => $headings_line_height,
+		'headings-font-variant' => $headings_font_variant,
 	);
 
 }
