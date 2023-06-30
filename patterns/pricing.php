@@ -2,7 +2,7 @@
 /**
  * Title: Pricing two columns
  * Slug: spectra-one/pricing
- * Categories: featured
+ * Categories: services
  * Keywords: pricing two columns
  */
  ?>

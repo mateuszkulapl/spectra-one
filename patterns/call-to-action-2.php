@@ -22,7 +22,7 @@
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:buttons {"className":"swt-responsive-position-left","layout":{"type":"flex","justifyContent":"right"}} -->
 <div class="wp-block-buttons swt-responsive-position-left"><!-- wp:button {"className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button">Get Started<?php esc_html_e( '', 'spectra-one' ); ?></a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'spectra-one' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

@@ -2,7 +2,7 @@
 /**
  * Title: Text and contact card
  * Slug: spectra-one/contact
- * Categories: featured
+ * Categories: contact
  * Keywords: text and contact card
  */
 ?>

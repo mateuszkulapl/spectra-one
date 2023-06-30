@@ -2,7 +2,7 @@
 /**
  * Title: Three column counter center
  * Slug: spectra-one/text-4
- * Categories: featured
+ * Categories: text
  * Keywords: column counter
  */
 ?>

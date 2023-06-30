@@ -2,7 +2,7 @@
 /**
  * Title: Announcement bar with social
  * Slug: spectra-one/announcement-bar-2
- * Categories: featured
+ * Categories: header
  * Keywords: announcement bar with social
  */
 ?>

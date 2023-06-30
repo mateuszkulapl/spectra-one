@@ -2,8 +2,8 @@
 /**
  * Title: Teams cover three columns
  * Slug: spectra-one/contact-5
- * Categories: featured
- * Keywords: Teams cover three columns
+ * Categories: contact
+ * Keywords: teams cover three columns
  */
 
 $get_url = trailingslashit(get_template_directory_uri());
@@ -39,7 +39,7 @@ $images = [
 <p class="has-white-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Creative Director', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
-<!-- wp:social-links {"iconColor":"background","iconColorValue":"#ffffff","size":"has-small-icon-size","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small","right":"0","bottom":"0","left":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
+<!-- wp:social-links {"iconColor":"white","iconColorValue":"#ffffff","size":"has-small-icon-size","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small","right":"0","bottom":"0","left":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
 <ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only" style="margin-top:var(--wp--preset--spacing--x-small);margin-right:0;margin-bottom:0;margin-left:0"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 <!-- wp:social-link {"url":"#","service":"instagram"} /--></ul>
@@ -56,7 +56,7 @@ $images = [
 <p class="has-white-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Product Manager', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
-<!-- wp:social-links {"iconColor":"background","iconColorValue":"#ffffff","size":"has-small-icon-size","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small","right":"0","bottom":"0","left":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
+<!-- wp:social-links {"iconColor":"white","iconColorValue":"#ffffff","size":"has-small-icon-size","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small","right":"0","bottom":"0","left":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
 <ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only" style="margin-top:var(--wp--preset--spacing--x-small);margin-right:0;margin-bottom:0;margin-left:0"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 <!-- wp:social-link {"url":"#","service":"instagram"} /--></ul>
@@ -66,14 +66,14 @@ $images = [
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url( $images[2] ); ?>","id":1210,"dimRatio":50,"minHeight":480,"contentPosition":"bottom left","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
 <div class="wp-block-cover has-custom-content-position is-position-bottom-left" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small);min-height:480px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-1210" alt="" src="<?php echo esc_url( $images[2] ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":5,"textColor":"background","className":"wp-block-heading"} -->
-<h5 class="wp-block-heading has-background-color has-text-color"><?php esc_html_e( 'Esther Howard', 'spectra-one' ); ?></h5>
+<div class="wp-block-group"><!-- wp:heading {"level":5,"textColor":"white","className":"wp-block-heading"} -->
+<h5 class="wp-block-heading has-white-color has-text-color"><?php esc_html_e( 'Esther Howard', 'spectra-one' ); ?></h5>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"textColor":"white","fontSize":"x-small"} -->
 <p class="has-white-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Senior Product Designer', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
-<!-- wp:social-links {"iconColor":"background","iconColorValue":"#ffffff","size":"has-small-icon-size","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small","right":"0","bottom":"0","left":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
+<!-- wp:social-links {"iconColor":"white","iconColorValue":"#ffffff","size":"has-small-icon-size","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-small","right":"0","bottom":"0","left":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
 <ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only" style="margin-top:var(--wp--preset--spacing--x-small);margin-right:0;margin-bottom:0;margin-left:0"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 <!-- wp:social-link {"url":"#","service":"instagram"} /--></ul>

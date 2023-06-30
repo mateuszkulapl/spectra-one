@@ -211,6 +211,11 @@ function pattern_categories(): void {
 		array(
 			'label'       => __( 'Pages', 'spectra-one' ),
 			'description' => __( 'Patterns containing page and post layouts', 'spectra-one' ),
+		),
+		'contact',
+		array(
+			'label'       => __( 'Contact', 'spectra-one' ),
+			'description' => __( 'Patterns containing contact layouts', 'spectra-one' ),
 		)
 	);
 }

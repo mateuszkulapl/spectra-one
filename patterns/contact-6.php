@@ -2,8 +2,8 @@
 /**
  * Title: Teams circle four columns
  * Slug: spectra-one/contact-6
- * Categories: featured
- * Keywords: Teams circle four columns
+ * Categories: contact
+ * Keywords: teams circle four columns
  */
 
 $get_url = trailingslashit(get_template_directory_uri());
