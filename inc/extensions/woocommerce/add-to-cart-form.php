@@ -29,9 +29,9 @@ function render_add_to_cart_form( string $block_content, array $block ):string {
 	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort
 	$sticky_add_to_cart_condition = ( isset( $block['blockName'] ) && isset( $block['attrs']['SWTStickyAddToCart'] ) && 'woocommerce/add-to-cart-form' === $block['blockName'] && true === $block['attrs']['SWTStickyAddToCart'] );
 
- 
 	if ( is_product() && $sticky_add_to_cart_condition ) {
 		add_action( 'wp_footer', SWT_NS . 'single_product_sticky_add_to_cart' );
+		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'add_to_cart_block_inline_css' );
 		add_filter( 'swt_dynamic_theme_js', SWT_NS . 'single_product_sticky_add_to_cart_js' );
 	}
 
@@ -47,9 +47,32 @@ function render_add_to_cart_form( string $block_content, array $block ):string {
 function single_product_sticky_add_to_cart() {
 	ob_start();
 	block_template_part( 'sticky-add-to-cart' );
-	echo wp_kses_post( ob_get_clean() );
+	echo ob_get_clean();
 }
 
+/**
+ * Load add to cart inline css.
+ *
+ * @since x.x.x
+ * @param string $css Inline CSS.
+ * @return string
+ */
+function add_to_cart_block_inline_css( string $css ): string {
+
+	$css_output = array(
+		'.swt-sticky-add-to-cart' => array(
+			'position' => 'fixed',
+			'bottom' => '0',
+			'left' => '0',
+			'width' => '100%',
+			'z-index' => '9',
+			'box-shadow' => '0px -3px 24px -8px rgba(0, 0, 0, 0.08)',
+			'transition' => '.2s ease-in-out',
+		),
+	);
+	$css       .= parse_css( $css_output );
+	return $css;
+}
 
 /**
  * Load header wp_admin_bar spacing inline js.
@@ -79,14 +102,14 @@ function single_product_sticky_add_to_cart_js( string $js ): string {
 			// Smooth scrolls if select option button is active.
 			const SWTSmoothScrollBtn = document.querySelector( ".swt-sticky-add-to-cart .single_add_to_cart_button" );
 			
-			if( SWTSmoothScrollBtn ) {
-				SWTSmoothScrollBtn.addEventListener('click', function (e) {
-					e.preventDefault();
-					document.querySelector(this.getAttribute('href')).scrollIntoView({
-						behavior: 'smooth',
-					});
-				});
-			}
+			// if( SWTSmoothScrollBtn ) {
+			// 	SWTSmoothScrollBtn.addEventListener('click', function (e) {
+			// 		e.preventDefault();
+			// 		document.querySelector('.').scrollIntoView({
+			// 			behavior: 'smooth',
+			// 		});
+			// 	});
+			// }
 
 		});
 

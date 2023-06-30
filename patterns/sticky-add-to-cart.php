@@ -15,8 +15,6 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:woocommerce/product-price -->
-<div class="is-loading"></div>
-<!-- /wp:woocommerce/product-price -->
 
 <!-- wp:woocommerce/add-to-cart-form /--></div>
 <!-- /wp:column --></div>

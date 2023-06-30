@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+require_once __DIR__ . '/woocommerce/all.php';
 require_once __DIR__ . '/responsive.php';
 require_once __DIR__ . '/header.php';
 require_once __DIR__ . '/metabox.php';
