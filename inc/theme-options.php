@@ -102,7 +102,6 @@ function split_font_size_and_unit( string $font ):mixed {
 			'0' => $font,
 		);
 	}
-	
 }
 
 /**
@@ -141,16 +140,18 @@ function get_spectra_one_settings(): array {
 
 
 	// Body variables.
-	$body_font_family  = isset( $db_settings['styles']['typography']['fontFamily'] ) ? $db_settings['styles']['typography']['fontFamily'] : '';
-	$body_font_variant = '';
-	$body_font_weight  = isset( $db_settings['styles']['typography']['fontWeight'] ) ? $db_settings['styles']['typography']['fontWeight'] : '';
-	$body_line_height  = isset( $db_settings['styles']['typography']['lineHeight'] ) ? $db_settings['styles']['typography']['lineHeight'] : '';
+	$body_font_family     = isset( $db_settings['styles']['typography']['fontFamily'] ) ? str_replace( 'var:preset|font-family|', '', $db_settings['styles']['typography']['fontFamily'] ) : '';
+	$body_font_family_raw = isset( $db_settings['styles']['typography']['fontFamily'] ) ? $db_settings['styles']['typography']['fontFamily'] : '';
+	$body_font_variant    = '';
+	$body_font_weight     = isset( $db_settings['styles']['typography']['fontWeight'] ) ? $db_settings['styles']['typography']['fontWeight'] : '';
+	$body_line_height     = isset( $db_settings['styles']['typography']['lineHeight'] ) ? $db_settings['styles']['typography']['lineHeight'] : '';
 
 	// Heading variable.
-	$headings_font_family  = isset( $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontFamily'] : '';
-	$headings_font_weight  = isset( $db_settings['styles']['elements']['heading']['typography']['fontWeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontWeight'] : '';
-	$headings_line_height  = isset( $db_settings['styles']['elements']['heading']['typography']['lineHeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['lineHeight'] : '';
-	$headings_font_variant = '';
+	$headings_font_family     = isset( $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) ? str_replace( 'var:preset|font-family|', '', $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) : '';
+	$headings_font_family_raw = isset( $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontFamily'] : '';
+	$headings_font_weight     = isset( $db_settings['styles']['elements']['heading']['typography']['fontWeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontWeight'] : '';
+	$headings_line_height     = isset( $db_settings['styles']['elements']['heading']['typography']['lineHeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['lineHeight'] : '';
+	$headings_font_variant    = '';
 
 	if ( $db_settings && isset( $db_settings['settings']['color']['palette']['theme'] ) ) {
 		$colors = $db_settings['settings']['color']['palette']['theme'];
@@ -169,18 +170,21 @@ function get_spectra_one_settings(): array {
 	}
 
 	return array(
-		'global-color-palette'  => array(
+		'global-color-palette'     => array(
 			'palette' => $only_colors,
 		),
-		'body-font-family'      => $body_font_family,
-		'body-font-variant'     => $body_font_variant,
-		'body-font-weight'      => $body_font_weight,
-		'font-size-body'        => $font_size_body,
-		'body-line-height'      => $body_line_height,
-		'headings-font-family'  => $headings_font_family,
-		'headings-font-weight'  => $headings_font_weight,
-		'headings-line-height'  => $headings_line_height,
-		'headings-font-variant' => $headings_font_variant,
+		'body-font-family'         => $body_font_family,
+		'body-font-family-raw'     => $body_font_family_raw,
+		'body-font-family'         => $body_font_family,
+		'body-font-variant'        => $body_font_variant,
+		'body-font-weight'         => $body_font_weight,
+		'font-size-body'           => $font_size_body,
+		'body-line-height'         => $body_line_height,
+		'headings-font-family'     => $headings_font_family,
+		'headings-font-family-raw' => $headings_font_family_raw,
+		'headings-font-weight'     => $headings_font_weight,
+		'headings-line-height'     => $headings_line_height,
+		'headings-font-variant'    => $headings_font_variant,
 	);
 
 }
