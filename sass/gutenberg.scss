@@ -1,4 +1,4 @@
-$mobile: 782px;
+$mobile: 781px;
 $tablet: 1199px;
 
 /*--------------------------------------------------------------
@@ -24,6 +24,8 @@ $tablet: 1199px;
 # Announcement bar compatibility
 --------------------------------------------------------------*/
 
+
+
 @media screen and (max-width: $mobile) {
 	.swt-announcement-notice {
 		text-align: center;
@@ -31,5 +33,17 @@ $tablet: 1199px;
 
 	.swt-announcement-social {
 		justify-content: center !important;
+	}
+
+	.swt-responsive-position-left {
+		justify-content: left !important;
+	}
+
+	.swt-responsive-position-center {
+		justify-content: center !important;
+	}
+
+	.swt-responsive-position-right {
+		justify-content: right !important;
 	}
 }
