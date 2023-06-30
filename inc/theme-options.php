@@ -70,6 +70,7 @@ function get_css_variable_prefix(): string {
 function get_palette_slugs(): array {
 	return array(
 		'wp--preset--color--primary',
+		'wp--preset--color--secondary',
 		'wp--preset--color--tertiary',
 		'wp--preset--color--quaternary',
 		'wp--preset--color--heading',
