@@ -180,7 +180,6 @@ function get_spectra_one_settings(): array {
 		),
 		'body-font-family'         => $body_font_family,
 		'body-font-family-raw'     => $body_font_family_raw,
-		'body-font-family'         => $body_font_family,
 		'body-font-variant'        => $body_font_variant,
 		'body-font-weight'         => $body_font_weight,
 		'font-size-body'           => $font_size_body,
