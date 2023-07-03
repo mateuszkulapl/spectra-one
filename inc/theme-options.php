@@ -38,6 +38,7 @@ function get_theme_custom_styles(): array {
 		'orderby'     => 'post_type',
 		'post_status' => 'publish',
 		'post_type'   => array( 'wp_global_styles' ),
+		'name'        => 'wp-global-styles-spectra-one',
 	);
 
 	$export_posts  = get_posts( $args );
@@ -45,10 +46,6 @@ function get_theme_custom_styles(): array {
 
 	if ( isset( $export_posts[0] ) && isset( $export_posts[0]->post_content ) ) {
 		$global_styles = $export_posts[0]->post_content;
-	} else {
-		if ( isset( $export_posts[1] ) && isset( $export_posts[1]->post_content ) ) {
-			$global_styles = $export_posts[1]->post_content;
-		}
 	}
 
 	return $global_styles ? json_decode( $global_styles, true ) : array();
@@ -120,44 +117,55 @@ function get_spectra_one_settings(): array {
 	$db_settings   = get_theme_custom_styles();
 	$json_settings = get_theme_json();
 
+	// Text defaults.
+	$default_body_font_family     = 'inter';
+	$default_body_font_family_raw = 'var:preset|font-family|inter';
+	$default_body_font_variant    = '';
+	$default_font_size_body       = 'var:preset|font-size|medium';
+	$default_font_size_body_unit  = 'px';
+	$default_body_font_weight     = '';
+	$default_body_line_height     = '';
+
+	// Headings default.
+	$default_headings_font_family     = '';
+	$default_headings_font_family_raw = '';
+	$default_headings_font_weight     = '';
+	$default_headings_line_height     = '';
+	$default_headings_font_variant    = '';
+
 	// Defaults.
 	$only_colors    = array();
 	$font_size_body = array(
-		'desktop'      => '18',
+		'desktop'      => $default_font_size_body,
 		'tablet'       => '',
 		'mobile'       => '',
-		'desktop-unit' => 'px',
-		'tablet-unit'  => 'px',
-		'mobile-unit'  => 'px',
+		'desktop-unit' => $default_font_size_body_unit,
+		'tablet-unit'  => $default_font_size_body_unit,
+		'mobile-unit'  => $default_font_size_body_unit,
 	);
 
 	if ( isset( $db_settings['styles']['typography']['fontSize'] ) ) {
 		$body_font_size = $db_settings['styles']['typography']['fontSize'];
 
 		$font_size_body = array(
-			'desktop'      => isset( split_font_size_and_unit( $body_font_size )[0] ) ? split_font_size_and_unit( $body_font_size )[0] : '18',
-			'tablet'       => '',
-			'mobile'       => '',
-			'desktop-unit' => isset( split_font_size_and_unit( $body_font_size )[1] ) ? split_font_size_and_unit( $body_font_size )[1] : 'px',
-			'tablet-unit'  => 'px',
-			'mobile-unit'  => 'px',
+			'desktop'      => isset( split_font_size_and_unit( $body_font_size )[0] ) ? split_font_size_and_unit( $body_font_size )[0] : $default_font_size_body,
+			'desktop-unit' => isset( split_font_size_and_unit( $body_font_size )[1] ) ? split_font_size_and_unit( $body_font_size )[1] : $default_font_size_body_unit,
 		);
 	}
 
-
 	// Body variables.
-	$body_font_family     = isset( $db_settings['styles']['typography']['fontFamily'] ) ? str_replace( 'var:preset|font-family|', '', $db_settings['styles']['typography']['fontFamily'] ) : 'inter';
-	$body_font_family_raw = isset( $db_settings['styles']['typography']['fontFamily'] ) ? $db_settings['styles']['typography']['fontFamily'] : 'var:preset|font-family|inter';
-	$body_font_variant    = '';
-	$body_font_weight     = isset( $db_settings['styles']['typography']['fontWeight'] ) ? $db_settings['styles']['typography']['fontWeight'] : '400';
-	$body_line_height     = isset( $db_settings['styles']['typography']['lineHeight'] ) ? $db_settings['styles']['typography']['lineHeight'] : '1.6';
+	$body_font_family     = isset( $db_settings['styles']['typography']['fontFamily'] ) ? str_replace( 'var:preset|font-family|', '', $db_settings['styles']['typography']['fontFamily'] ) : $default_body_font_family;
+	$body_font_family_raw = isset( $db_settings['styles']['typography']['fontFamily'] ) ? $db_settings['styles']['typography']['fontFamily'] : $default_body_font_family_raw;
+	$body_font_variant    = $default_body_font_variant;
+	$body_font_weight     = isset( $db_settings['styles']['typography']['fontWeight'] ) ? $db_settings['styles']['typography']['fontWeight'] : $default_body_font_weight;
+	$body_line_height     = isset( $db_settings['styles']['typography']['lineHeight'] ) ? $db_settings['styles']['typography']['lineHeight'] : $default_body_line_height;
 
 	// Heading variable.
-	$headings_font_family     = isset( $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) ? str_replace( 'var:preset|font-family|', '', $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) : 'inter';
-	$headings_font_family_raw = isset( $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontFamily'] : 'var:preset|font-family|inter';
-	$headings_font_weight     = isset( $db_settings['styles']['elements']['heading']['typography']['fontWeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontWeight'] : '400';
-	$headings_line_height     = isset( $db_settings['styles']['elements']['heading']['typography']['lineHeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['lineHeight'] : '1.5';
-	$headings_font_variant    = '';
+	$headings_font_family     = isset( $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) ? str_replace( 'var:preset|font-family|', '', $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) : $default_headings_font_family;
+	$headings_font_family_raw = isset( $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontFamily'] : $default_headings_font_family_raw;
+	$headings_font_weight     = isset( $db_settings['styles']['elements']['heading']['typography']['fontWeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontWeight'] : $default_headings_font_weight;
+	$headings_line_height     = isset( $db_settings['styles']['elements']['heading']['typography']['lineHeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['lineHeight'] : $default_headings_line_height;
+	$headings_font_variant    = $default_headings_font_variant;
 
 	if ( $db_settings && isset( $db_settings['settings']['color']['palette']['theme'] ) ) {
 		$colors = $db_settings['settings']['color']['palette']['theme'];
