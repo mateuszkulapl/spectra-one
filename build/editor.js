@@ -68,6 +68,7 @@ const Header = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createHigherOr
       attributes,
       name
     } = props;
+    console.log(props);
     if (attributes?.tagName && 'header' === attributes.tagName && 'core/template-part' === name) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.PanelBody, {
         title: "Header Settings",
@@ -275,6 +276,8 @@ const responsiveCss = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createH
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _latest_post_list_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./latest-post-list.js */ "./src/blocks/latest-post-list.js");
+/* harmony import */ var _sticky_add_to_cart_block_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sticky-add-to-cart/block.js */ "./src/blocks/sticky-add-to-cart/block.js");
+
 
 
 /***/ }),
@@ -315,6 +318,78 @@ const latestPostList = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.create
   };
 }, 'latestPostList');
 (0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_3__.addFilter)('editor.BlockListBlock', 'swt/latest-post-list', latestPostList);
+
+/***/ }),
+
+/***/ "./src/blocks/sticky-add-to-cart/block.js":
+/*!************************************************!*\
+  !*** ./src/blocks/sticky-add-to-cart/block.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)("swt/sticky-add-to-cart", {
+  // block settings
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Sticky Add To Cart", "spectra-one"),
+  icon: "smiley",
+  category: "common",
+  // block implementation
+  edit: function () {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "swt-sticky-add-to-cart"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
+      template: [["core/group", {
+        className: "swt-sticky-add-to-cart",
+        backgroundColor: "background",
+        layout: {
+          type: "constrained"
+        },
+        tagName: "div"
+      }, [["core/columns", {
+        align: "wide",
+        isStackedOnMobile: false,
+        verticalAlignment: "center"
+      }, [["core/column", {
+        verticalAlignment: "center"
+      }, [["core/post-title", {
+        isLink: false,
+        level: 5,
+        linkTarget: "_self",
+        rel: ""
+      }]]], ["core/column", {
+        verticalAlignment: "center"
+      }, [["core/group", {
+        layout: {
+          flexWrap: 'nowrap',
+          justifyContent: 'right',
+          type: 'flex'
+        },
+        tagName: 'div'
+      }, [["woocommerce/product-price", {
+        isDescendentOfQueryLoop: true,
+        isDescendentOfSingleProductBlock: false,
+        isDescendentOfSingleProductTemplate: false
+      }]], [["woocommerce/add-to-cart-form", {}]]]]]]]]]]
+    }));
+  },
+  save: function () {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "my-custom-block"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null));
+  }
+});
 
 /***/ }),
 
@@ -784,6 +859,16 @@ module.exports = window["React"];
 /***/ ((module) => {
 
 module.exports = window["wp"]["blockEditor"];
+
+/***/ }),
+
+/***/ "@wordpress/blocks":
+/*!********************************!*\
+  !*** external ["wp","blocks"] ***!
+  \********************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
