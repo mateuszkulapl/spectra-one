@@ -76,15 +76,11 @@ registerBlockType("swt/sticky-add-to-cart", {
 																isDescendentOfSingleProductTemplate: false
 															},
 														],
-													],
-
-													[
 														[
 															"woocommerce/add-to-cart-form",
 															{},
 														],
 													],
-
 												],
 											],
 										],
@@ -99,9 +95,7 @@ registerBlockType("swt/sticky-add-to-cart", {
 	},
 	save: function () {
 		return (
-			<div className="my-custom-block">
 				<InnerBlocks.Content />
-			</div>
 		);
 	},
 });

@@ -381,13 +381,11 @@ __webpack_require__.r(__webpack_exports__);
         isDescendentOfQueryLoop: true,
         isDescendentOfSingleProductBlock: false,
         isDescendentOfSingleProductTemplate: false
-      }]], [["woocommerce/add-to-cart-form", {}]]]]]]]]]]
+      }], ["woocommerce/add-to-cart-form", {}]]]]]]]]]]
     }));
   },
   save: function () {
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "my-custom-block"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null));
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null);
   }
 });
 
