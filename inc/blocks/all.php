@@ -15,6 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+if ( class_exists( 'WooCommerce' ) ) {
+	require_once __DIR__ . '/woocommerce/all.php';
+}
 require_once __DIR__ . '/post-featured-image.php';
 require_once __DIR__ . '/latest-posts.php';
 require_once __DIR__ . '/post-comments-form.php';

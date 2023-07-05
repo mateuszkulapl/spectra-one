@@ -1,16 +1,63 @@
 import { registerBlockType } from "@wordpress/blocks";
 import { InnerBlocks } from "@wordpress/block-editor";
 import { __ } from "@wordpress/i18n";
+import { InspectorControls } from "@wordpress/block-editor";
+import {
+	Panel,
+	PanelBody,
+	__experimentalToggleGroupControl as ToggleGroupControl,
+	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
+} from "@wordpress/components";
+
+const blockAttributes = {
+	SWTPosition: {
+		type: "string",
+		default: "bottom",
+	},
+};
 
 registerBlockType("swt/sticky-add-to-cart", {
 	// block settings
 	title: __("Sticky Add To Cart", "spectra-one"),
 	icon: "smiley",
 	category: "common",
+	attributes: blockAttributes,
 	// block implementation
-	edit: function () {
+	edit: function (props) {
+		const { attributes, setAttributes } = props;
+		const { SWTPosition } = attributes;
+
 		return (
-			<div className="swt-sticky-add-to-cart">
+			<>
+				<InspectorControls>
+					<Panel>
+						<PanelBody
+							title="Stick Add To Cart Settings"
+							initialOpen={true}
+						>
+							<ToggleGroupControl
+								label="Position"
+								value={SWTPosition}
+								onChange={ (value) =>
+									setAttributes( {
+										SWTPosition: value,
+									} )
+								}
+								isBlock
+							>
+								<ToggleGroupControlOption
+									value="top"
+									label="Top"
+								/>
+								<ToggleGroupControlOption
+									value="bottom"
+									label="Bottom"
+								/>
+							</ToggleGroupControl>
+						</PanelBody>
+					</Panel>
+				</InspectorControls>
+
 				<InnerBlocks
 					template={[
 						[
@@ -60,11 +107,12 @@ registerBlockType("swt/sticky-add-to-cart", {
 													"core/group",
 													{
 														layout: {
-															flexWrap: 'nowrap',
-															justifyContent: 'right',
-															type: 'flex'
+															flexWrap: "nowrap",
+															justifyContent:
+																"right",
+															type: "flex",
 														},
-														tagName: 'div'
+														tagName: "div",
 													},
 
 													[
@@ -73,7 +121,7 @@ registerBlockType("swt/sticky-add-to-cart", {
 															{
 																isDescendentOfQueryLoop: true,
 																isDescendentOfSingleProductBlock: false,
-																isDescendentOfSingleProductTemplate: false
+																isDescendentOfSingleProductTemplate: false,
 															},
 														],
 														[
@@ -90,12 +138,14 @@ registerBlockType("swt/sticky-add-to-cart", {
 						],
 					]}
 				/>
-			</div>
+			</>
 		);
 	},
 	save: function () {
 		return (
+			<>
 				<InnerBlocks.Content />
+			</>
 		);
 	},
 });
