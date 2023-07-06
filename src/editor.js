@@ -5,6 +5,7 @@ import { addFilter } from '@wordpress/hooks';
 import './extensions/editor/index.js';
 import './block-extensions/index.js';
 import './blocks/index.js';
+import './admin/settings.js';
 
 if ( spectraOne.is_spectra_plugin ) {
 	addFilter(
