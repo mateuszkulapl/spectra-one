@@ -63,8 +63,11 @@ registerBlockType("swt/sticky-add-to-cart", {
 						[
 							"core/group",
 							{
-								className: "swt-sticky-add-to-cart",
+								className: `swt-sticky-add-to-cart ${SWTPosition ? SWTPosition : ''}`,
 								backgroundColor: "background",
+								attributes: {
+									SWTHideMob: true
+								},
 								layout: {
 									type: "constrained",
 								},

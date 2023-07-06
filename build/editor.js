@@ -383,8 +383,11 @@ const blockAttributes = {
       label: "Bottom"
     }))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
       template: [["core/group", {
-        className: "swt-sticky-add-to-cart",
+        className: `swt-sticky-add-to-cart ${SWTPosition ? SWTPosition : ''}`,
         backgroundColor: "background",
+        attributes: {
+          SWTHideMob: true
+        },
         layout: {
           type: "constrained"
         },

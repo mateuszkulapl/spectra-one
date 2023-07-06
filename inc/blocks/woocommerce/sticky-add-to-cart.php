@@ -31,14 +31,35 @@ function render_add_to_cart_form( string $block_content, array $block ):string {
 
         if ( is_product() && $sticky_add_to_cart_condition ) {
 
-            if( 'top' === $block['attrs']['SWTPosition'] ) {
+
+            if( isset( $block['attrs']['SWTPosition'] ) && 'top' === $block['attrs']['SWTPosition'] ) {
                 add_filter( 'swt_dynamic_theme_css', function(string $css):string {
-                    $css .= parse_css( array('.swt-sticky-add-to-cart' => array( 'top' => '0')));
+                    $css .= parse_css(
+						array(
+							'.swt-sticky-add-to-cart' => array(
+								'top' => '0'
+							),
+							'.swt-sticky-add-to-cart:not(.is-active)' => array(
+								'transform' => 'translateY(-100%)'
+							),
+						),
+					);
+
                     return $css;
                 });
             } else {
                 add_filter( 'swt_dynamic_theme_css', function(string $css):string {
-                    $css .= parse_css( array('.swt-sticky-add-to-cart' => array( 'bottom' => '0')));
+					$css .= parse_css(
+						array(
+							'.swt-sticky-add-to-cart' => array(
+								'bottom' => '0',
+								'top' => 'initial !important'
+							),
+							'.swt-sticky-add-to-cart:not(.is-active)' => array(
+								'transform' => 'translateY(100%)'
+							),
+						),
+					);
                     return $css;
                 });
             }
@@ -65,9 +86,10 @@ function add_to_cart_block_inline_css( string $css ): string {
 			'position' => 'fixed',
 			'left' => '0',
 			'width' => '100%',
-			'z-index' => '9',
+			'z-index' => '99',
+			'margin-top' => '0',
 			'box-shadow' => '0px -3px 24px -8px rgba(0, 0, 0, 0.08)',
-			'transition' => '.2s ease-in-out',
+			'transition' => '.2s ease-in',
 		),
 
         $parent_class.' .cart' => array(
@@ -90,11 +112,36 @@ function add_to_cart_block_inline_css( string $css ): string {
  * @param string $js Inline JS.
  * @return string
  */
-function single_product_sticky_add_to_cart_js( string $js ): string {
-	$inline_js = <<<JS
+	function single_product_sticky_add_to_cart_js( string $js ): string {
+		$inline_js = <<<JS
+			function docReady(fn) {
+				// see if DOM is already available
+				if (document.readyState === "complete" || document.readyState === "interactive") {
+					// call on next available tick
+					setTimeout(fn, 1);
+				} else {
+					document.addEventListener("DOMContentLoaded", fn);
+				}
+			}
+
+			function wpAdminPaddingOffset() {
+			const wpAdminBar = document.querySelector('#wpadminbar');
+			const header = document.querySelector( '.swt-sticky-add-to-cart' );
+
+			if( header && wpAdminBar ) {
+				header.style.top = wpAdminBar.offsetHeight + 'px';
+			}
+		}
+
+
+		window.addEventListener('resize', function(event) {
+			wpAdminPaddingOffset();
+		}, true);
+
 		docReady(function() {
 			// Triggers sticky add to cart on scroll.
 			const SWTStickyAddToCart = document.querySelector( ".swt-sticky-add-to-cart" );
+
 			if( SWTStickyAddToCart ) {
 				const scrollOffset = document.querySelector( '.product .single_add_to_cart_button' ).offsetTop;
 				window.addEventListener( "scroll", function() {
@@ -107,15 +154,17 @@ function single_product_sticky_add_to_cart_js( string $js ): string {
 			}
 			// Smooth scrolls if select option button is active.
 			const SWTSmoothScrollBtn = document.querySelector( ".swt-sticky-add-to-cart .single_add_to_cart_button" );
-			
-			// if( SWTSmoothScrollBtn ) {
-			// 	SWTSmoothScrollBtn.addEventListener('click', function (e) {
-			// 		e.preventDefault();
-			// 		document.querySelector('.').scrollIntoView({
-			// 			behavior: 'smooth',
-			// 		});
-			// 	});
-			// }
+
+			if( SWTSmoothScrollBtn ) {
+				SWTSmoothScrollBtn.addEventListener('click', function (e) {
+					e.preventDefault();
+					document.querySelector('.single_add_to_cart_button').scrollIntoView({
+						behavior: 'smooth',
+					});
+				});
+			}
+
+			wpAdminPaddingOffset();
 		});
 	JS;
 
