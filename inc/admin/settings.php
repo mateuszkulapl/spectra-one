@@ -51,20 +51,21 @@ function create_rest_routes():void {
  * 
  * @since x.x.x
  * @param \WP_REST_Request $request Full details about the request.
- * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
+ * @return \WP_REST_Response|\WP_Error Response object on success, or WP_Error object on failure.
  */
 function swt_get_global_settings( \WP_REST_Request $request ) {
 	$settings = get_option( 'swt_theme_options' );
 
-	return rest_ensure_response( $settings );
+	return rest_ensure_response( $settings );  
 }
+
 
 
 /**
  * Set configs
  *
  * @param \WP_REST_Request $request Full details about the request.
- * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
+ * @return \WP_REST_Response|\WP_Error Response object on success, or WP_Error object on failure.
  * @since x.x.x
  */
 function swt_update_global_settings( \WP_REST_Request $request ) {
@@ -75,6 +76,6 @@ function swt_update_global_settings( \WP_REST_Request $request ) {
 		update_option( 'swt_theme_options', $fields );
 	}
 
-	return rest_ensure_response( 'success' );
+	return rest_ensure_response( 'success' );  
 
 }
