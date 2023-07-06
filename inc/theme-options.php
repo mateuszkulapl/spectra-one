@@ -48,7 +48,7 @@ function get_theme_custom_styles(): array {
 		$global_styles = $export_posts[0]->post_content;
 	}
 
-	return $global_styles ? json_decode( $global_styles, true ) : array();
+	return $global_styles ? json_decode( stripslashes( $global_styles ), true ) : array();
 }
 
 
