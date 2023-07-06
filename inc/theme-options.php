@@ -93,9 +93,9 @@ function get_palette_slugs(): array {
  *
  * @since x.x.x
  * @param string $font font size and unit.
- * @return mixed
+ * @return array
  */
-function split_font_size_and_unit( string $font ):mixed {
+function split_font_size_and_unit( string $font ):array {
 
 	if ( ! str_contains( $font, 'var:preset' ) ) {
 		$font = preg_split( '/(?<=[0-9])(?=[a-z]+)/i', $font );
