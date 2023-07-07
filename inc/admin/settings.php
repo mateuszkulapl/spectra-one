@@ -50,23 +50,25 @@ function create_rest_routes():void {
  * Get configs
  * 
  * @since x.x.x
- * @return \WP_REST_Response|\WP_Error  Response object on success, or WP_Error object on failure.
+ * @param \WP_REST_Request $request Full details about the request.
+ * @return \WP_REST_Response|\WP_Error Response object on success, or WP_Error object on failure.
  */
-function swt_get_global_settings():\WP_REST_Response|\WP_Error { 
+function swt_get_global_settings( \WP_REST_Request $request ) {
 	$settings = get_option( 'swt_theme_options' );
 
-	return rest_ensure_response( $settings );
+	return rest_ensure_response( $settings );  
 }
+
 
 
 /**
  * Set configs
  *
- * @param mixed $request request payload.
- * @return \WP_REST_Response|\WP_Error  Response object on success, or WP_Error object on failure.
+ * @param \WP_REST_Request $request Full details about the request.
+ * @return \WP_REST_Response|\WP_Error Response object on success, or WP_Error object on failure.
  * @since x.x.x
  */
-function swt_update_global_settings( mixed $request ):\WP_REST_Response|\WP_Error {
+function swt_update_global_settings( \WP_REST_Request $request ) {
 
 	$fields = isset( $request['setting'] ) ? $request['setting'] : array();
 
@@ -74,6 +76,6 @@ function swt_update_global_settings( mixed $request ):\WP_REST_Response|\WP_Erro
 		update_option( 'swt_theme_options', $fields );
 	}
 
-	return rest_ensure_response( 'success' );
+	return rest_ensure_response( 'success' );  
 
 }
