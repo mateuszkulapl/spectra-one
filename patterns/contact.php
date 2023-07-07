@@ -49,8 +49,8 @@
 <hr class="wp-block-separator has-alpha-channel-opacity is-style-swt-separator-wide-thin-line"/>
 <!-- /wp:separator -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"neutral","className":"wp-block-heading","fontSize":"x-small"} -->
-<p class="wp-block-heading has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Address', 'spectra-one' ); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"className":"wp-block-heading","fontSize":"x-small"} -->
+<p class="wp-block-heading has-x-small-font-size"><?php esc_html_e( 'Address', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"textColor":"heading","fontSize":"large"} -->
 <p class="has-heading-color has-text-color has-large-font-size"><?php esc_html_e( '123 Demo Ave. Manchester,', 'spectra-one' ); ?><br><?php esc_html_e( 'Kentucky, KY 40962', 'spectra-one' ); ?></p>
@@ -60,8 +60,8 @@
 <hr class="wp-block-separator has-alpha-channel-opacity is-style-swt-separator-wide-thin-line"/>
 <!-- /wp:separator -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"neutral","className":"wp-block-heading","fontSize":"x-small"} -->
-<p class="wp-block-heading has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Phone', 'spectra-one' ); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"className":"wp-block-heading","fontSize":"x-small"} -->
+<p class="wp-block-heading has-x-small-font-size"><?php esc_html_e( 'Phone', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"textColor":"heading","fontSize":"large"} -->
 <p class="has-heading-color has-text-color has-large-font-size"><?php esc_html_e( '606-123-4567', 'spectra-one' ); ?></p>
@@ -71,8 +71,8 @@
 <hr class="wp-block-separator has-alpha-channel-opacity is-style-swt-separator-wide-thin-line"/>
 <!-- /wp:separator -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"neutral","className":"wp-block-heading","fontSize":"x-small"} -->
-<p class="wp-block-heading has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Email', 'spectra-one' ); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"className":"wp-block-heading","fontSize":"x-small"} -->
+<p class="wp-block-heading has-x-small-font-size"><?php esc_html_e( 'Email', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"textColor":"heading","fontSize":"large"} -->
 <p class="has-heading-color has-text-color has-large-font-size"><?php esc_html_e( 'mail@demosite.com', 'spectra-one' ); ?></p>
@@ -82,8 +82,8 @@
 <hr class="wp-block-separator has-alpha-channel-opacity is-style-swt-separator-wide-thin-line"/>
 <!-- /wp:separator -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"neutral","className":"wp-block-heading","fontSize":"x-small"} -->
-<p class="wp-block-heading has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Follow us', 'spectra-one' ); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"className":"wp-block-heading","fontSize":"x-small"} -->
+<p class="wp-block-heading has-x-small-font-size"><?php esc_html_e( 'Follow us', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:social-links {"iconColor":"heading","iconColorValue":"var(--wp--preset--color--heading)","size":"has-small-icon-size","className":"is-style-logos-only"} -->
 <ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"#","service":"facebook"} /-->

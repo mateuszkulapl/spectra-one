@@ -26,16 +26,16 @@
 <div class="wp-block-group"><!-- wp:heading {"level":6} -->
 <h6 class="wp-block-heading"><?php esc_html_e( 'Starter Plan', 'spectra-one' ); ?></h6>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Everything you need to get start building your website.', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><?php esc_html_e( 'Everything you need to get start building your website.', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"bottom"}} -->
 <div class="wp-block-group"><!-- wp:heading -->
 <h2 class="wp-block-heading"><?php esc_html_e( '$9.99', 'spectra-one' ); ?></h2>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( '/ month', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><?php esc_html_e( '/ month', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:buttons -->
@@ -45,32 +45,32 @@
 <!-- /wp:buttons -->
 <!-- wp:group {"style":{"spacing":{}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":59,"sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"unset"}}} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-59"/></figure>
+<div class="wp-block-group"><!-- wp:image {"id":59,"sizeSlug":"full","linkDestination":"none","className":"swt-duotone-secondary"} -->
+<figure class="wp-block-image size-full swt-duotone-secondary"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-59"/></figure>
 <!-- /wp:image -->
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size"><?php esc_html_e( 'Customization options', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":59,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-59"/></figure>
+<div class="wp-block-group"><!-- wp:image {"id":59,"sizeSlug":"full","linkDestination":"none","className":"swt-duotone-secondary"} -->
+<figure class="wp-block-image size-full swt-duotone-secondary"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-59"/></figure>
 <!-- /wp:image -->
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size"><?php esc_html_e( 'Essential pattern library', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":59,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-59"/></figure>
+<div class="wp-block-group"><!-- wp:image {"id":59,"sizeSlug":"full","linkDestination":"none","className":"swt-duotone-secondary"} -->
+<figure class="wp-block-image size-full swt-duotone-secondary"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-59"/></figure>
 <!-- /wp:image -->
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size"><?php esc_html_e( 'Handcrafted theme styles', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":59,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-59"/></figure>
+<div class="wp-block-group"><!-- wp:image {"id":59,"sizeSlug":"full","linkDestination":"none","className":"swt-duotone-secondary"} -->
+<figure class="wp-block-image size-full swt-duotone-secondary"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-59"/></figure>
 <!-- /wp:image -->
 <!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size"><?php esc_html_e( 'Unmatched performance', 'spectra-one' ); ?></p>
@@ -93,8 +93,8 @@
 <div class="wp-block-group"><!-- wp:heading -->
 <h2 class="wp-block-heading"><?php esc_html_e( '$19.99', 'spectra-one' ); ?></h2>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( '/ month', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><?php esc_html_e( '/ month', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:buttons -->
