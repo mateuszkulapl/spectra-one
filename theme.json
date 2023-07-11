@@ -374,6 +374,11 @@
         "border": {
           "radius": "0.375em",
           "color": "var(--wp--preset--color--primary)"
+        },
+        ":hover": {
+          "color": {
+            "background": "var(--wp--preset--color--secondary)"
+          }
         }
 			},
       "h1": {
