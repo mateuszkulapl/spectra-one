@@ -24,8 +24,8 @@ $images = [
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|large"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--medium);margin-bottom:var(--wp--preset--spacing--large)"><!-- wp:button {"className":"is-style-swt-button-inverse"} -->
-<div class="wp-block-button is-style-swt-button-inverse"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'spectra-one' ); ?></a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--medium);margin-bottom:var(--wp--preset--spacing--large)"><!-- wp:button {"backgroundColor":"background","textColor":"heading","className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-heading-color has-background-background-color has-text-color has-background wp-element-button"><?php esc_html_e( 'Get Started', 'spectra-one' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"textColor":"background","className":"is-style-outline"} -->
