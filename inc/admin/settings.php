@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 1.0.2
  */
 
 declare(strict_types=1);
@@ -20,7 +20,7 @@ add_action( 'rest_api_init', SWT_NS . 'create_rest_routes' );
 /**
  * Creating rest routes
  *
- * @since x.x.x
+ * @since 1.0.2
  * @return void
  */
 function create_rest_routes():void {
@@ -49,7 +49,7 @@ function create_rest_routes():void {
 /**
  * Get configs
  * 
- * @since x.x.x
+ * @since 1.0.2
  * @param \WP_REST_Request $request Full details about the request.
  * @return \WP_REST_Response|\WP_Error Response object on success, or WP_Error object on failure.
  */
@@ -66,7 +66,7 @@ function swt_get_global_settings( \WP_REST_Request $request ) {
  *
  * @param \WP_REST_Request $request Full details about the request.
  * @return \WP_REST_Response|\WP_Error Response object on success, or WP_Error object on failure.
- * @since x.x.x
+ * @since 1.0.2
  */
 function swt_update_global_settings( \WP_REST_Request $request ) {
 
