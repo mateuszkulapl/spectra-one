@@ -116,6 +116,7 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 * Fix: Color of the button globally does not reflect on theme buttons.
 * Fix: Added compatibility for spectra plugin regarding popup builder.
 * Fix: Header and footer not rendering inside child theme.
+* Fix: Button hover for spectra plugin and core buttons.
 
 = 1.0.1 =
 * New: Added shadow for header while sticky.
