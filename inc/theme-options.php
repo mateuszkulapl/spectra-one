@@ -44,11 +44,18 @@ function get_theme_custom_styles(): array {
 	$export_posts  = get_posts( $args );
 	$global_styles = '';
 
+	/** @psalm-suppress PossiblyInvalidPropertyFetch */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- Need to check isset for post_content.
 	if ( isset( $export_posts[0] ) && isset( $export_posts[0]->post_content ) ) {
 		$global_styles = $export_posts[0]->post_content;
 	}
 
-	return $global_styles ? json_decode( stripslashes( $global_styles ), true ) : array();
+	/** @psalm-suppress PossiblyInvalidPropertyFetch */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- Need to check isset for post id.
+	$post_id = isset( $export_posts[0] ) ? $export_posts[0]->ID : '';
+
+	return array(
+		'ID'           => $post_id,
+		'post_content' => $global_styles ? json_decode( stripslashes( $global_styles ), true ) : array(),
+	);
 }
 
 
@@ -114,7 +121,9 @@ function split_font_size_and_unit( string $font ):array {
  * @return array settings
  */
 function get_spectra_one_settings(): array {
-	$db_settings   = get_theme_custom_styles();
+	$db_settings = get_theme_custom_styles();
+	/** @psalm-suppress PossiblyUndefinedStringArrayOffset */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- post_content will already be true in this case. As post_content attribute is static.
+	$db_settings   = $db_settings['post_content'];
 	$json_settings = get_theme_json();
 
 	// Text defaults.
@@ -161,6 +170,7 @@ function get_spectra_one_settings(): array {
 	$body_line_height     = isset( $db_settings['styles']['typography']['lineHeight'] ) ? $db_settings['styles']['typography']['lineHeight'] : $default_body_line_height;
 
 	// Heading variable.
+	/** @psalm-suppress PossiblyUndefinedStringArrayOffset */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- Ignored as isset is already checked.
 	$headings_font_family     = isset( $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) ? str_replace( 'var:preset|font-family|', '', $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) : $default_headings_font_family;
 	$headings_font_family_raw = isset( $db_settings['styles']['elements']['heading']['typography']['fontFamily'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontFamily'] : $default_headings_font_family_raw;
 	$headings_font_weight     = isset( $db_settings['styles']['elements']['heading']['typography']['fontWeight'] ) ? $db_settings['styles']['elements']['heading']['typography']['fontWeight'] : $default_headings_font_weight;
