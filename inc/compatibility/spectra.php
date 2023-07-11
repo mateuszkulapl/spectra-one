@@ -11,8 +11,6 @@ declare(strict_types=1);
 
 namespace Swt;
 
-use function UAGB_Admin_Helper;
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }

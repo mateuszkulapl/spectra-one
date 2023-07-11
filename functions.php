@@ -38,4 +38,6 @@ require_once SWT_DIR . 'inc/block-styles/all.php';
 /**
  * Admin functions
  */
+
 require_once SWT_DIR . 'inc/admin/welcome-notice.php';
+require_once SWT_DIR . 'inc/admin/settings.php';
