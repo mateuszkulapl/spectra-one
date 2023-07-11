@@ -193,6 +193,10 @@ JS;
 function header_transparent_inline_css( string $css ): string {
 
 	$css_output = array(
+		'.wp-site-blocks'                           => array(
+			'position' => 'relative',
+		),
+
 		'.swt-transparent-header'                   => array(
 			'position' => 'absolute',
 			'top'      => '0',

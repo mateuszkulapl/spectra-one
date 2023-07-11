@@ -19,8 +19,8 @@ $images = [
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|xx-small"}}}} -->
 <div class="wp-block-column" style="padding-bottom:var(--wp--preset--spacing--xx-small)"><!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"top":"32px","left":"32px"}}}} -->
 <div class="wp-block-columns is-not-stacked-on-mobile"><!-- wp:column {"style":{"spacing":{}}} -->
-<div class="wp-block-column"><!-- wp:image {"id":1048,"sizeSlug":"full","linkDestination":"none","className":"swt-duotone-secondary"} -->
-<figure class="wp-block-image size-full swt-duotone-secondary"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-1048"/></figure>
+<div class="wp-block-column"><!-- wp:image {"id":1048,"sizeSlug":"full","linkDestination":"none","className":"swt-duotone-secondary site-logo-img"} -->
+<figure class="wp-block-image size-full swt-duotone-secondary site-logo-img"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-1048"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 <!-- wp:column {"style":{"spacing":{}}} -->
