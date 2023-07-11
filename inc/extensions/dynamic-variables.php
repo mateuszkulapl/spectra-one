@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since x.x.x
+ * @since 1.0.2
  */
 
 declare(strict_types=1);
@@ -20,7 +20,7 @@ add_filter( 'render_block', SWT_NS . 'render_dynamic_variables', 10, 2 );
 /**
  * Header render function.
  *
- * @since x.x.x
+ * @since 1.0.2
  * @param string $block_content Entire Block Content.
  * @param array  $block Block Properties As An Array.
  * @return string

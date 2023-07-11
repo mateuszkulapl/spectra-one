@@ -349,7 +349,7 @@ function is_page_title( int $post_id = 0 ): bool {
 /**
  * Get an SVG Icon
  *
- * @since x.x.x
+ * @since 1.0.2
  * @param string $icon the icon name.
  * @param string $class extra classes.
  * @param bool   $base if the baseline class should be added.

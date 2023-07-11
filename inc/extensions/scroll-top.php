@@ -4,7 +4,7 @@
  *
  * @package Spectra One
  * @author Brainstorm Force
- * @since x.x.xs
+ * @since 1.0.2
  */
 
 declare(strict_types=1);
@@ -21,7 +21,7 @@ add_filter( 'wp', SWT_NS . 'scroll_top', 10, 2 );
 /**
  * Scroll to top
  *
- * @since x.x.x
+ * @since 1.0.2
  * @return void
  */
 function scroll_top():void {
@@ -39,7 +39,7 @@ function scroll_top():void {
 /**
  * Render scroll to top
  *
- * @since x.x.x
+ * @since 1.0.2
  * @return void
  */
 function render_scroll_top():void {
@@ -50,7 +50,7 @@ function render_scroll_top():void {
 /**
  * Scroll top inline css.
  *
- * @since x.x.x
+ * @since 1.0.2
  * @param string $css Inline CSS.
  * @return string
  */
@@ -88,7 +88,7 @@ function scroll_top_inline_css( string $css ): string {
 /**
  * Scroll top inline js.
  *
- * @since x.x.x
+ * @since 1.0.2
  * @param string $js Inline JS.
  * @return string
  */

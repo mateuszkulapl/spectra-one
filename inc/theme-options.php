@@ -62,7 +62,7 @@ function get_theme_custom_styles(): array {
 /**
  * Get css variable prefix
  *
- * @since x.x.x
+ * @since 1.0.2
  * @return string variable prefix
  */
 function get_css_variable_prefix(): string {
@@ -73,7 +73,7 @@ function get_css_variable_prefix(): string {
 /**
  * Get palette slugs
  *
- * @since x.x.x
+ * @since 1.0.2
  * @return array Palette slugs.
  */
 function get_palette_slugs(): array {
@@ -98,7 +98,7 @@ function get_palette_slugs(): array {
 /**
  * Split font size and unit
  *
- * @since x.x.x
+ * @since 1.0.2
  * @param string $font font size and unit.
  * @return array
  */
@@ -117,7 +117,7 @@ function split_font_size_and_unit( string $font ):array {
 /**
  * Get spectra one settings
  *
- * @since x.x.x
+ * @since 1.0.2
  * @return array settings
  */
 function get_spectra_one_settings(): array {
