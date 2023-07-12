@@ -192,14 +192,17 @@ const activateSpectra = async target => {
 document.addEventListener('click', async e => {
   let elementClass = e?.target?.className ? e.target.className : '';
   if (elementClass && typeof elementClass === 'string' && elementClass.includes('block-editor-inserter__patterns-explore-button')) {
-    const button = `<button class="swt-template-kit-spectra components-button is-secondary">${(0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Get more blocks with Spectra', 'spectra-one')}</button>`;
-    const container = document.querySelector('.block-editor-block-patterns-explorer__sidebar');
+    const button = document.createElement('button');
+    button.textContent = (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Get more blocks with Spectra', 'spectra-one');
+    button.setAttribute("class", "swt-template-kit-spectra components-button is-primary");
+    const container = document.querySelector('.block-editor-block-patterns-explorer__sidebar__categories-list');
     if (container && !container.querySelector('.swt-template-kit-spectra')) {
-      container.insertAdjacentHTML("afterend", button);
+      container.appendChild(button);
     }
   }
   if (elementClass && typeof elementClass === 'string' && elementClass.includes('swt-template-kit-spectra')) {
     const target = document.querySelector('#ast-block-templates-button');
+    console.log(pluginStatus);
     if (pluginStatus === 'not-installed') {
       e.target.classList.add('updating-message');
       e.target.classList.add('disabled');
