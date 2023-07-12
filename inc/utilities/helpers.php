@@ -344,3 +344,29 @@ function is_page_title( int $post_id = 0 ): bool {
 
 	return ! is_admin() && is_singular() && boolval( $check_meta ) && ! in_the_loop();
 }
+
+
+/**
+ * Get an SVG Icon
+ *
+ * @since 1.0.2
+ * @param string $icon the icon name.
+ * @param string $class extra classes.
+ * @param bool   $base if the baseline class should be added.
+ * @return string
+ */
+function fetch_svg_icon( string $icon = '', string $class = '', bool $base = true ) :string {
+	$swt_svgs = null;
+	$output   = '<span class="swt-svg' . ( $base ? ' svg-baseline' : '' ) . ( $class ? ' ' . $class : '' ) . '">';
+
+	ob_start();
+	echo file_get_contents( SWT_DIR . 'assets/svg/svgs.json' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Required to get svg.json.
+	$swt_svgs = json_decode( ob_get_clean(), true );
+	$swt_svgs = apply_filters( 'swt_svg_icons', $swt_svgs );
+
+	$output .= isset( $swt_svgs[ $icon ] ) ? $swt_svgs[ $icon ] : '';
+	
+	$output .= '</span>';
+
+	return $output;
+}

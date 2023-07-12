@@ -133,6 +133,7 @@ function localize_editor_script() {
 			'disable_sections'  => get_disable_section_fields(),
 			'pluginStatus'      => is_spectra_plugin_status(),
 			'pluginSlug'        => 'ultimate-addons-for-gutenberg',
+			'nonce'				=> wp_create_nonce( 'wp_rest' ),
 			'activationUrl'     => esc_url(
 				add_query_arg(
 					array(

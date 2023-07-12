@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 6.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -109,9 +109,17 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 
 == Changelog ==
 
-= 1.0.2 =
+= 1.0.3 =
 * New: Added new patterns.
+
+= 1.0.2 =
+* New: Added Scroll to top feature.
+* New: Added Spectra Editor panel.
+* New: Introduced dynamic variable {site_url} for navigation link.
+* Fix: Color of the button globally does not reflect on theme buttons.
+* Fix: Added compatibility for spectra plugin regarding popup builder.
 * Fix: Header and footer not rendering inside child theme.
+* Fix: Button hover for spectra plugin and core buttons.
 
 = 1.0.1 =
 * New: Added shadow for header while sticky.
