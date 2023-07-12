@@ -161,6 +161,69 @@ const SwtPluginSidebar = () => {
 
 /***/ }),
 
+/***/ "./src/admin/spectra-editor.js":
+/*!*************************************!*\
+  !*** ./src/admin/spectra-editor.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/plugin-helpers.js */ "./src/components/plugin-helpers.js");
+
+
+const {
+  activating,
+  installing,
+  done,
+  activationUrl,
+  pluginSlug,
+  pluginStatus
+} = spectraOne;
+const activateSpectra = async target => {
+  console.log(target);
+  target.textContent = activating;
+  await (0,_components_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_1__.activatePluginUrl)(activationUrl);
+  target.classList.remove('updating-message');
+  target.classList.add('updated-message');
+  target.textContent = done;
+};
+document.addEventListener('click', async e => {
+  let elementClass = e?.target?.className ? e.target.className : '';
+  if (elementClass && typeof elementClass === 'string' && elementClass.includes('block-editor-inserter__patterns-explore-button')) {
+    const button = `<button class="swt-template-kit-spectra components-button is-secondary">${(0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Get more blocks with Spectra', 'spectra-one')}</button>`;
+    const container = document.querySelector('.block-editor-block-patterns-explorer__sidebar');
+    if (container && !container.querySelector('.swt-template-kit-spectra')) {
+      container.insertAdjacentHTML("afterend", button);
+    }
+  }
+  if (elementClass && typeof elementClass === 'string' && elementClass.includes('swt-template-kit-spectra')) {
+    const target = document.querySelector('#ast-block-templates-button');
+    if (pluginStatus === 'not-installed') {
+      e.target.classList.add('updating-message');
+      e.target.classList.add('disabled');
+      e.target.textContent = installing;
+      await (0,_components_plugin_helpers_js__WEBPACK_IMPORTED_MODULE_1__.installPlugin)(pluginSlug);
+      await activateSpectra(e.target);
+      location.reload();
+    }
+    if (pluginStatus === 'installed') {
+      e.target.classList.add('updating-message');
+      e.target.classList.add('disabled');
+      await activateSpectra(e.target);
+      location.reload();
+    }
+    if (target) {
+      if (pluginStatus === 'activated') {
+        target.click();
+      }
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./src/block-extensions/header.js":
 /*!****************************************!*\
   !*** ./src/block-extensions/header.js ***!
@@ -1160,6 +1223,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _block_extensions_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./block-extensions/index.js */ "./src/block-extensions/index.js");
 /* harmony import */ var _blocks_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/index.js */ "./src/blocks/index.js");
 /* harmony import */ var _admin_settings_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./admin/settings.js */ "./src/admin/settings.js");
+/* harmony import */ var _admin_spectra_editor_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./admin/spectra-editor.js */ "./src/admin/spectra-editor.js");
+
 
 
 

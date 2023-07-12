@@ -6,6 +6,7 @@ import './extensions/editor/index.js';
 import './block-extensions/index.js';
 import './blocks/index.js';
 import './admin/settings.js';
+import './admin/spectra-editor.js';
 
 if ( spectraOne.is_spectra_plugin ) {
 	addFilter(
