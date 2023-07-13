@@ -383,7 +383,7 @@ const blockAttributes = {
       label: "Bottom"
     }))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
       template: [["core/group", {
-        className: `swt-sticky-add-to-cart ${SWTPosition ? SWTPosition : ''}`,
+        className: 'swt-sticky-add-to-cart',
         backgroundColor: "background",
         attributes: {
           SWTHideMob: true
@@ -397,7 +397,8 @@ const blockAttributes = {
         isStackedOnMobile: false,
         verticalAlignment: "center"
       }, [["core/column", {
-        verticalAlignment: "center"
+        verticalAlignment: "center",
+        SWTHideMob: true
       }, [["core/post-title", {
         isLink: false,
         level: 5,
@@ -406,6 +407,7 @@ const blockAttributes = {
       }]]], ["core/column", {
         verticalAlignment: "center"
       }, [["core/group", {
+        className: 'swt-mobile-space-between',
         layout: {
           flexWrap: "nowrap",
           justifyContent: "right",

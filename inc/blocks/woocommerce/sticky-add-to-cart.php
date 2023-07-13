@@ -84,7 +84,7 @@ function add_to_cart_block_inline_css( string $css ): string {
 	$css_output = array(
 		$parent_class => array(
 			'position' => 'fixed',
-			'left' => '0',
+			 rtl_css( 'left' ) => '0',
 			'width' => '100%',
 			'z-index' => '99',
 			'margin-top' => '0',
@@ -98,7 +98,33 @@ function add_to_cart_block_inline_css( string $css ): string {
 		),
 
         $parent_class.' .quantity' => array(
-            'padding-'. rtl_css( 'right' ) .'' => 'var(--wp--preset--spacing--x-small)',
+            'padding-'. rtl_css( 'right' ) .'' => 'var(--wp--preset--spacing--small)',
+		),
+
+		$parent_class.' .quantity .qty ' => array(
+			'border' => '1px solid var(--wp--preset--color--outline)',
+			'border-radius' => 'var(--wp--custom--border-radius--x-small)',
+		),
+
+		$parent_class.' .wp-block-woocommerce-product-price' => array(
+			'font-weight' => 'var(--wp--custom--font-weight--semi-bold)',
+			'color' => 'var(--wp--preset--color--heading)'
+		),
+
+		$parent_class.' .wc-block-components-product-price' => array(
+			'padding-'. rtl_css( 'right' ) .'' => 'var(--wp--preset--spacing--xxx-small)',
+		),
+
+		$parent_class.' .wp-block-woocommerce-product-price ins' => array(
+			'text-decoration' => 'none',
+		),
+
+		$parent_class.' form.grouped_form .woocommerce-grouped-product-list, ' . $parent_class.' form.variations_form .variations' => array(
+			'display' => 'none',
+		),
+
+		$parent_class.' form.variations_form .quantity' => array(
+			'display' => 'inline-block'
 		),
 	);
 	$css       .= parse_css( $css_output );
@@ -125,45 +151,58 @@ function add_to_cart_block_inline_css( string $css ): string {
 			}
 
 			function wpAdminPaddingOffset() {
-			const wpAdminBar = document.querySelector('#wpadminbar');
-			const header = document.querySelector( '.swt-sticky-add-to-cart' );
+				const wpAdminBar = document.querySelector('#wpadminbar');
+				const header = document.querySelector( '.swt-sticky-add-to-cart' );
 
-			if( header && wpAdminBar ) {
-				header.style.top = wpAdminBar.offsetHeight + 'px';
+				if( header && wpAdminBar ) {
+					header.style.top = wpAdminBar.offsetHeight + 'px';
+				}
 			}
-		}
 
+			function stickyAddToCart() {
+				// Triggers sticky add to cart on scroll.
+				const SWTStickyAddToCart = document.querySelector( ".swt-sticky-add-to-cart" );
 
-		window.addEventListener('resize', function(event) {
-			wpAdminPaddingOffset();
-		}, true);
+				if( SWTStickyAddToCart ) {
+					const scrollOffset = document.querySelector( '.product .single_add_to_cart_button' ).offsetTop;
+					window.addEventListener( "scroll", function() {
+						if ( window.scrollY >= scrollOffset ) {
+							SWTStickyAddToCart.classList.add('is-active');
+						} else {
+							SWTStickyAddToCart.classList.remove('is-active');
+						}
+					})
+				}
+				// Smooth scrolls if select option button is active.
+				const SWTSmoothScrollBtn = document.querySelector( ".swt-sticky-add-to-cart .single_add_to_cart_button" );
+
+				if( SWTSmoothScrollBtn ) {
+
+				const checkProductType = SWTStickyAddToCart.querySelector('form.cart');
+
+				if( checkProductType && ( checkProductType.classList.contains('variations_form') || checkProductType.classList.contains('grouped_form') ) ) {
+
+					setTimeout(() => {
+						SWTSmoothScrollBtn.classList.remove('wc-variation-selection-needed');
+						SWTSmoothScrollBtn.classList.remove('disabled');
+					}, 500);
+
+						SWTSmoothScrollBtn.addEventListener('click', function (e) {
+							e.preventDefault();
+							document.querySelector('.product').scrollIntoView({
+								behavior: 'smooth',
+							});
+						});
+					}
+				}
+			}
+
+			window.addEventListener('resize', function(event) {
+				wpAdminPaddingOffset();
+			}, true);
 
 		docReady(function() {
-			// Triggers sticky add to cart on scroll.
-			const SWTStickyAddToCart = document.querySelector( ".swt-sticky-add-to-cart" );
-
-			if( SWTStickyAddToCart ) {
-				const scrollOffset = document.querySelector( '.product .single_add_to_cart_button' ).offsetTop;
-				window.addEventListener( "scroll", function() {
-					if ( window.scrollY >= scrollOffset ) {
-						SWTStickyAddToCart.classList.add('is-active');
-					} else {
-						SWTStickyAddToCart.classList.remove('is-active');
-					}
-				})
-			}
-			// Smooth scrolls if select option button is active.
-			const SWTSmoothScrollBtn = document.querySelector( ".swt-sticky-add-to-cart .single_add_to_cart_button" );
-
-			if( SWTSmoothScrollBtn ) {
-				SWTSmoothScrollBtn.addEventListener('click', function (e) {
-					e.preventDefault();
-					document.querySelector('.single_add_to_cart_button').scrollIntoView({
-						behavior: 'smooth',
-					});
-				});
-			}
-
+			stickyAddToCart();
 			wpAdminPaddingOffset();
 		});
 	JS;

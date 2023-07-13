@@ -1,3 +1,11 @@
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+    .swt-mobile-space-between {
+        justify-content: space-between !important;
+    }
+
+}

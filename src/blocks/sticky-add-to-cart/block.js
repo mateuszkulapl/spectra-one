@@ -63,7 +63,7 @@ registerBlockType("swt/sticky-add-to-cart", {
 						[
 							"core/group",
 							{
-								className: `swt-sticky-add-to-cart ${SWTPosition ? SWTPosition : ''}`,
+								className: 'swt-sticky-add-to-cart',
 								backgroundColor: "background",
 								attributes: {
 									SWTHideMob: true
@@ -86,6 +86,7 @@ registerBlockType("swt/sticky-add-to-cart", {
 											"core/column",
 											{
 												verticalAlignment: "center",
+												SWTHideMob: true
 											},
 											[
 												[
@@ -109,6 +110,7 @@ registerBlockType("swt/sticky-add-to-cart", {
 												[
 													"core/group",
 													{
+														className: 'swt-mobile-space-between',
 														layout: {
 															flexWrap: "nowrap",
 															justifyContent:
