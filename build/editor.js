@@ -2,6 +2,165 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/admin/components/radioButton.js":
+/*!*********************************************!*\
+  !*** ./src/admin/components/radioButton.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SwtRadioButton: () => (/* binding */ SwtRadioButton)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+const SwtRadioButton = _ref => {
+  let {
+    setting,
+    setSetting,
+    id,
+    setData,
+    notice,
+    label
+  } = _ref;
+  const handleOnChange = (0,react__WEBPACK_IMPORTED_MODULE_2__.useCallback)(() => {
+    setSetting({
+      ...setting,
+      [id]: !setting[id]
+    });
+    setData({
+      ...setting,
+      [id]: !setting[id]
+    });
+    (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_3__.dispatch)('core/notices').createNotice('success',
+    // Can be one of: success, info, warning, error.
+    notice,
+    // Text string to display.
+    {
+      type: 'snackbar',
+      isDismissible: true // Whether the user can dismiss the notice.
+    });
+  }, [setting]);
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToggleControl, {
+    label: label,
+    checked: setting[id],
+    onChange: handleOnChange
+  })));
+};
+
+/***/ }),
+
+/***/ "./src/admin/settings.js":
+/*!*******************************!*\
+  !*** ./src/admin/settings.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/plugins */ "@wordpress/plugins");
+/* harmony import */ var _wordpress_plugins__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_plugins__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_edit_site__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/edit-site */ "@wordpress/edit-site");
+/* harmony import */ var _wordpress_edit_site__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_edit_site__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_icons_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/icons.js */ "./src/components/icons.js");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_radioButton_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/radioButton.js */ "./src/admin/components/radioButton.js");
+/* harmony import */ var _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @wordpress/api-fetch */ "@wordpress/api-fetch");
+/* harmony import */ var _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
+
+
+
+
+const SwtPluginSidebar = () => {
+  const [settings, setSettings] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)({
+    scroll_top: false
+  });
+  const restEditorPanelUrl = 'swt/v1/global_settings';
+
+  // Store data into database
+  const setData = async setting => {
+    const sendData = {
+      setting
+    };
+    try {
+      await _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_7___default()({
+        path: restEditorPanelUrl,
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+          'X-WP-NONCE': spectraOne.nonce
+        },
+        body: JSON.stringify(sendData)
+      });
+    } catch (error) {}
+  };
+
+  // Get data into database
+  const getData = async () => {
+    try {
+      const response = await _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_7___default()({
+        path: restEditorPanelUrl,
+        method: 'GET',
+        headers: {
+          'content-type': 'application/json',
+          'X-WP-NONCE': spectraOne.nonce
+        }
+      });
+      if (response) {
+        setSettings(response);
+      }
+    } catch (error) {}
+  };
+
+  // Only run once.
+  (0,react__WEBPACK_IMPORTED_MODULE_8__.useEffect)(() => {
+    getData();
+  }, []);
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_edit_site__WEBPACK_IMPORTED_MODULE_2__.PluginSidebar, {
+    name: "swt-editor-sidebar",
+    icon: _components_icons_js__WEBPACK_IMPORTED_MODULE_4__["default"].logo,
+    isPinnable: true,
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Spectra Global Settings', 'spectra-one')
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Global features', 'spectra-one'),
+    initialOpen: true,
+    className: 'swt-global-features-panel'
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_radioButton_js__WEBPACK_IMPORTED_MODULE_6__.SwtRadioButton, {
+    setting: settings,
+    setSetting: setSettings,
+    id: 'scroll_top',
+    setData: setData,
+    notice: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Scroll to top updated', 'spectra-one'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Scroll To Top', 'spectra-one')
+  }))));
+};
+(0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_1__.registerPlugin)('swt-editor-sidebar', {
+  render: SwtPluginSidebar
+});
+
+/***/ }),
+
 /***/ "./src/block-extensions/header.js":
 /*!****************************************!*\
   !*** ./src/block-extensions/header.js ***!
@@ -887,6 +1046,16 @@ module.exports = window["React"];
 
 /***/ }),
 
+/***/ "@wordpress/api-fetch":
+/*!**********************************!*\
+  !*** external ["wp","apiFetch"] ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["apiFetch"];
+
+/***/ }),
+
 /***/ "@wordpress/block-editor":
 /*!*************************************!*\
   !*** external ["wp","blockEditor"] ***!
@@ -944,6 +1113,16 @@ module.exports = window["wp"]["data"];
 /***/ ((module) => {
 
 module.exports = window["wp"]["editPost"];
+
+/***/ }),
+
+/***/ "@wordpress/edit-site":
+/*!**********************************!*\
+  !*** external ["wp","editSite"] ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["editSite"];
 
 /***/ }),
 
@@ -1100,6 +1279,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _extensions_editor_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./extensions/editor/index.js */ "./src/extensions/editor/index.js");
 /* harmony import */ var _block_extensions_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./block-extensions/index.js */ "./src/block-extensions/index.js");
 /* harmony import */ var _blocks_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/index.js */ "./src/blocks/index.js");
+/* harmony import */ var _admin_settings_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./admin/settings.js */ "./src/admin/settings.js");
+
 
 
 
