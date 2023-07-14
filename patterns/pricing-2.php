@@ -116,7 +116,7 @@ $images = [
 <div class="wp-block-group" style="line-height:1.3"><!-- wp:image {"id":59,"sizeSlug":"full","linkDestination":"none","className":"swt-duotone-tertiary"} -->
 <figure class="wp-block-image size-full swt-duotone-tertiary"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-59"/></figure>
 <!-- /wp:image -->
-<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"},"layout":{"selfStretch":"fixed","flexSize":"94%"}},"textColor":"surface","fontSize":"small",} -->
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"},"layout":{"selfStretch":"fixed","flexSize":"94%"}},"textColor":"surface","fontSize":"small"} -->
 <p class="has-surface-color has-text-color has-small-font-size" style="line-height:1.5"><?php esc_html_e( 'Everything in Starter Plan plus...', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
