@@ -1,29 +1,28 @@
-import { registerBlockType } from "@wordpress/blocks";
-import { InnerBlocks } from "@wordpress/block-editor";
-import { __ } from "@wordpress/i18n";
-import { InspectorControls } from "@wordpress/block-editor";
+import { registerBlockType } from '@wordpress/blocks';
+import { InnerBlocks, InspectorControls } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
 import {
 	Panel,
 	PanelBody,
 	__experimentalToggleGroupControl as ToggleGroupControl,
 	__experimentalToggleGroupControlOption as ToggleGroupControlOption,
-} from "@wordpress/components";
+} from '@wordpress/components';
 
 const blockAttributes = {
 	SWTPosition: {
-		type: "string",
-		default: "bottom",
+		type: 'string',
+		default: 'bottom',
 	},
 };
 
-registerBlockType("swt/sticky-add-to-cart", {
+registerBlockType( 'swt/sticky-add-to-cart', {
 	// block settings
-	title: __("Sticky Add To Cart", "spectra-one"),
-	icon: "smiley",
-	category: "common",
+	title: __( 'Sticky Add To Cart', 'spectra-one' ),
+	icon: 'smiley',
+	category: 'common',
 	attributes: blockAttributes,
 	// block implementation
-	edit: function (props) {
+	edit ( props ) {
 		const { attributes, setAttributes } = props;
 		const { SWTPosition } = attributes;
 
@@ -33,12 +32,12 @@ registerBlockType("swt/sticky-add-to-cart", {
 					<Panel>
 						<PanelBody
 							title="Stick Add To Cart Settings"
-							initialOpen={true}
+							initialOpen={ true }
 						>
 							<ToggleGroupControl
 								label="Position"
-								value={SWTPosition}
-								onChange={ (value) =>
+								value={ SWTPosition }
+								onChange={ ( value ) =>
 									setAttributes( {
 										SWTPosition: value,
 									} )
@@ -59,70 +58,80 @@ registerBlockType("swt/sticky-add-to-cart", {
 				</InspectorControls>
 
 				<InnerBlocks
-					template={[
+					template={ [
 						[
-							"core/group",
+							'core/group',
 							{
 								className: 'swt-sticky-add-to-cart',
-								backgroundColor: "background",
+								backgroundColor: 'background',
 								attributes: {
-									SWTHideMob: true
+									SWTHideMob: true,
+								},
+								style: {
+									spacing: {
+										padding: {
+											bottom: 'var:preset|spacing|x-small',
+											left: 'var:preset|spacing|x-small',
+											right: 'var:preset|spacing|x-small',
+											top: 'var:preset|spacing|x-small',
+										},
+									},
 								},
 								layout: {
-									type: "constrained",
+									type: 'constrained',
 								},
-								tagName: "div",
+								tagName: 'div',
 							},
 							[
 								[
-									"core/columns",
+									'core/columns',
 									{
-										align: "wide",
+										align: 'wide',
 										isStackedOnMobile: false,
-										verticalAlignment: "center",
+										verticalAlignment: 'center',
 									},
 									[
 										[
-											"core/column",
+											'core/column',
 											{
-												verticalAlignment: "center",
-												SWTHideMob: true
+												verticalAlignment: 'center',
+												SWTHideMob: true,
 											},
 											[
 												[
-													"core/post-title",
+													'core/post-title',
 													{
 														isLink: false,
-														level: 5,
-														linkTarget: "_self",
-														rel: "",
+														level: 6,
+														linkTarget: '_self',
+														rel: '',
 													},
 												],
 											],
 										],
 
 										[
-											"core/column",
+											'core/column',
 											{
-												verticalAlignment: "center",
+												verticalAlignment: 'center',
 											},
 											[
 												[
-													"core/group",
+													'core/group',
 													{
 														className: 'swt-mobile-space-between',
 														layout: {
-															flexWrap: "nowrap",
+															flexWrap: 'nowrap',
 															justifyContent:
-																"right",
-															type: "flex",
+																'right',
+															type: 'flex',
 														},
-														tagName: "div",
+														tagName: 'div',
 													},
 
 													[
 														[
-															"woocommerce/product-price",
+															'woocommerce/product-price',
 															{
 																isDescendentOfQueryLoop: true,
 																isDescendentOfSingleProductBlock: false,
@@ -130,7 +139,7 @@ registerBlockType("swt/sticky-add-to-cart", {
 															},
 														],
 														[
-															"woocommerce/add-to-cart-form",
+															'woocommerce/add-to-cart-form',
 															{},
 														],
 													],
@@ -141,16 +150,16 @@ registerBlockType("swt/sticky-add-to-cart", {
 								],
 							],
 						],
-					]}
+					] }
 				/>
 			</>
 		);
 	},
-	save: function () {
+	save () {
 		return (
 			<>
 				<InnerBlocks.Content />
 			</>
 		);
 	},
-});
+} );

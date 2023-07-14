@@ -119,12 +119,8 @@ function add_to_cart_block_inline_css( string $css ): string {
 			'text-decoration' => 'none',
 		),
 
-		$parent_class.' form.grouped_form .woocommerce-grouped-product-list, ' . $parent_class.' form.variations_form .variations' => array(
+		$parent_class.' form.grouped_form .woocommerce-grouped-product-list, ' . $parent_class.' form.variations_form .variations, ' . $parent_class.' form.variations_form .quantity' => array(
 			'display' => 'none',
-		),
-
-		$parent_class.' form.variations_form .quantity' => array(
-			'display' => 'inline-block'
 		),
 	);
 	$css       .= parse_css( $css_output );

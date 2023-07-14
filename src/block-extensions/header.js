@@ -100,8 +100,6 @@ const Header = createHigherOrderComponent( ( BlockEdit ) => {
 	return ( props ) => {
 		const { attributes, name } = props;
 
-		console.log(props);
-
 		if (
 			attributes?.tagName &&
 			'header' === attributes.tagName &&

@@ -227,7 +227,6 @@ const Header = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.createHigherOr
       attributes,
       name
     } = props;
-    console.log(props);
     if (attributes?.tagName && 'header' === attributes.tagName && 'core/template-part' === name) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(BlockEdit, props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.Panel, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.PanelBody, {
         title: "Header Settings",
@@ -547,6 +546,16 @@ const blockAttributes = {
         attributes: {
           SWTHideMob: true
         },
+        style: {
+          spacing: {
+            padding: {
+              bottom: 'var:preset|spacing|x-small',
+              left: 'var:preset|spacing|x-small',
+              right: 'var:preset|spacing|x-small',
+              top: 'var:preset|spacing|x-small'
+            }
+          }
+        },
         layout: {
           type: "constrained"
         },
@@ -560,7 +569,7 @@ const blockAttributes = {
         SWTHideMob: true
       }, [["core/post-title", {
         isLink: false,
-        level: 5,
+        level: 6,
         linkTarget: "_self",
         rel: ""
       }]]], ["core/column", {
