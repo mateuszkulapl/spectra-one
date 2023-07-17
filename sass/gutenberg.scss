@@ -27,12 +27,8 @@ $tablet: 1199px;
 
 
 @media screen and (max-width: $mobile) {
-	.swt-announcement-notice {
+	.swt-text-align-center  {
 		text-align: center;
-	}
-
-	.swt-announcement-social {
-		justify-content: center !important;
 	}
 
 	.swt-responsive-position-left {

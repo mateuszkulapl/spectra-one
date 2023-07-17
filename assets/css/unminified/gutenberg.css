@@ -20,11 +20,8 @@
 # Announcement bar compatibility
 --------------------------------------------------------------*/
 @media screen and (max-width: 781px) {
-  .swt-announcement-notice {
+  .swt-text-align-center {
     text-align: center;
-  }
-  .swt-announcement-social {
-    justify-content: center !important;
   }
   .swt-responsive-position-left {
     justify-content: left !important;
