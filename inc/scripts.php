@@ -209,13 +209,13 @@ add_action( 'after_setup_theme', SWT_NS . 'spectra_one_setup' );
 function pattern_categories(): void {
 
 	$block_pattern_categories = array(
-		'pages' => array(
+		'pages'   => array(
 			'label' => __( 'Pages', 'spectra-one' ),
 		),
 		'contact' => array(
 			'label' => __( 'Contact', 'spectra-one' ),
 		),
-		'pricing'           => array(
+		'pricing' => array(
 			'label' => __( 'Pricing', 'spectra-one' ),
 		),
 	);
