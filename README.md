@@ -97,10 +97,18 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-content-02.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-content-03.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-split-content-img.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-plugin-banner-img.png
+https://wpspectra.com/wp-content/uploads/2023/07/placeholder-landscape.svg
+https://wpspectra.com/wp-content/uploads/2023/07/placeholder-portrait.svg
+https://wpspectra.com/wp-content/uploads/2023/07/placeholder-square.svg
+https://wpspectra.com/wp-content/uploads/2023/07/placeholder-wide.svg
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-01.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-02.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-03.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
+https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-1.jpg
+https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-2.jpg
+https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-3.jpg
+https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 
 
 © Copyright Spectra One 2023, Spectra.
