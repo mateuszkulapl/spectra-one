@@ -99,6 +99,14 @@
           ],
           "slug": "secondary",
           "name": "Secondary"
+        },
+        {
+          "colors": [
+            "#F8FAFC",
+            "#F8FAFC"
+          ],
+          "slug": "tertiary",
+          "name": "Tertiary"
         }
       ]
     }

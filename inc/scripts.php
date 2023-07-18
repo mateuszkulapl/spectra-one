@@ -207,13 +207,23 @@ add_action( 'after_setup_theme', SWT_NS . 'spectra_one_setup' );
  * @return void
  */
 function pattern_categories(): void {
-	register_block_pattern_category(
-		'pages',
-		array(
-			'label'       => __( 'Pages', 'spectra-one' ),
-			'description' => __( 'Patterns containing page and post layouts', 'spectra-one' ),
-		)
+
+	$block_pattern_categories = array(
+		'pages'   => array(
+			'label' => __( 'Pages', 'spectra-one' ),
+		),
+		'contact' => array(
+			'label' => __( 'Contact', 'spectra-one' ),
+		),
+		'pricing' => array(
+			'label' => __( 'Pricing', 'spectra-one' ),
+		),
 	);
+
+	foreach ( $block_pattern_categories as $name => $properties ) {
+		register_block_pattern_category( $name, $properties );
+	}
+
 }
 
 add_action( 'after_setup_theme', SWT_NS . 'pattern_categories' );

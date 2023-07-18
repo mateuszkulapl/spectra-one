@@ -109,6 +109,9 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 
 == Changelog ==
 
+= 1.0.3 =
+* New: Added new patterns.
+
 = 1.0.2 =
 * New: Added Scroll to top feature.
 * New: Added Spectra Editor panel.

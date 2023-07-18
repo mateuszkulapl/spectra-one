@@ -2,7 +2,7 @@
 /**
  * Title: Three column featured
  * Slug: spectra-one/three-column-featured
- * Categories: services
+ * Categories: featured
  * Keywords: three column featured
  */
 

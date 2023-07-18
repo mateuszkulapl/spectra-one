@@ -99,6 +99,14 @@
           ],
           "slug": "secondary",
           "name": "Secondary"
+        },
+        {
+          "colors": [
+            "#092635",
+            "#092635"
+          ],
+          "slug": "tertiary",
+          "name": "Tertiary"
         }
       ]
     }
