@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Spectra One 1.0.2\n"
+"Project-Id-Version: Spectra One 1.0.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/spectra-one\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-07-11T12:44:39+02:00\n"
+"POT-Creation-Date: 2023-07-18T13:25:31+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -60,6 +60,11 @@ msgstr ""
 #: patterns/alternate-image-text.php:91
 #: patterns/footer-4.php:86
 #: patterns/footer-5.php:103
+#: patterns/hero-banner-2.php:32
+#: patterns/hero-banner-3.php:32
+#: patterns/hero-banner-4.php:31
+#: patterns/hero-banner-5.php:31
+#: patterns/hero-banner-6.php:30
 #: patterns/hero-banner.php:29
 #: patterns/split-image-right.php:29
 msgid "Learn More"
@@ -123,8 +128,27 @@ msgstr ""
 msgid "Pages"
 msgstr ""
 
-#: inc/scripts.php:214
-msgid "Patterns containing page and post layouts"
+#: inc/scripts.php:216
+#: patterns/footer-2.php:27
+#: patterns/footer-3.php:26
+#: patterns/footer-5.php:27
+#: patterns/header-2.php:27
+#: patterns/header-3.php:29
+#: patterns/header-4.php:31
+#: patterns/header-5.php:29
+#: patterns/header-6.php:30
+#: patterns/header.php:28
+msgid "Contact"
+msgstr ""
+
+#: inc/scripts.php:219
+#: patterns/pricing-2.php:20
+#: patterns/pricing-3.php:22
+#: patterns/pricing-4.php:20
+#: patterns/pricing-5.php:20
+#: patterns/pricing-6.php:23
+#: patterns/pricing.php:20
+msgid "Pricing"
 msgstr ""
 
 #: inc/utilities/helpers.php:257
@@ -141,6 +165,7 @@ msgid "Discover a new way to build website"
 msgstr ""
 
 #: patterns/alternate-image-text.php:24
+#: patterns/feature.php:36
 msgid "Get online quickly with easy-to-use Full Site Editor builder"
 msgstr ""
 
@@ -180,6 +205,28 @@ msgstr ""
 msgid "Global styles enable us to create and apply consistent design elements across the entire website, including typography, colors, and spacing. Providing us with more control over our website's look and feel."
 msgstr ""
 
+#: patterns/announcement-bar-2.php
+msgctxt "Pattern title"
+msgid "Announcement bar with social"
+msgstr ""
+
+#: patterns/announcement-bar-2.php:14
+msgid "Announcement message can be here.."
+msgstr ""
+
+#: patterns/announcement-bar.php
+msgctxt "Pattern title"
+msgid "Announcement bar"
+msgstr ""
+
+#: patterns/announcement-bar.php:13
+msgid "Announcement message can be here.. "
+msgstr ""
+
+#: patterns/announcement-bar.php:13
+msgid "click here"
+msgstr ""
+
 #: patterns/blog-2.php
 msgctxt "Pattern title"
 msgid "Blog simple"
@@ -209,6 +256,264 @@ msgstr ""
 #: patterns/blog.php
 msgctxt "Pattern title"
 msgid "Blog grid"
+msgstr ""
+
+#: patterns/call-to-action-2.php
+msgctxt "Pattern title"
+msgid "Wide banner with button blend"
+msgstr ""
+
+#: patterns/call-to-action-2.php:14
+#: patterns/call-to-action-3.php:14
+#: patterns/call-to-action.php:14
+#: patterns/wide-banner-with-button.php:12
+msgid "Build your own website"
+msgstr ""
+
+#: patterns/call-to-action-2.php:18
+#: patterns/call-to-action-3.php:18
+#: patterns/call-to-action.php:18
+#: patterns/wide-banner-with-button.php:15
+msgid "Take your website to the next level!"
+msgstr ""
+
+#: patterns/call-to-action-2.php:25
+#: patterns/call-to-action-3.php:25
+#: patterns/call-to-action.php:25
+#: patterns/header-2.php:31
+#: patterns/header-3.php:39
+#: patterns/header-4.php:36
+#: patterns/header-5.php:34
+#: patterns/header-6.php:40
+#: patterns/header.php:32
+#: patterns/hero-banner-2.php:28
+#: patterns/hero-banner-3.php:28
+#: patterns/hero-banner-4.php:28
+#: patterns/hero-banner-5.php:28
+#: patterns/hero-banner-6.php:27
+#: patterns/hero-banner.php:26
+#: patterns/pricing-2.php:50
+#: patterns/pricing-2.php:110
+#: patterns/pricing-3.php:99
+#: patterns/pricing-3.php:184
+#: patterns/pricing-4.php:57
+#: patterns/pricing-4.php:129
+#: patterns/pricing-4.php:197
+#: patterns/pricing-5.php:57
+#: patterns/pricing-5.php:130
+#: patterns/pricing-5.php:207
+#: patterns/pricing-6.php:204
+#: patterns/pricing-6.php:286
+#: patterns/pricing.php:50
+#: patterns/pricing.php:110
+#: patterns/wide-banner-with-button.php:19
+msgid "Get Started"
+msgstr ""
+
+#: patterns/call-to-action-3.php
+msgctxt "Pattern title"
+msgid "Wide banner with button inverse"
+msgstr ""
+
+#: patterns/call-to-action.php
+#: patterns/wide-banner-with-button.php
+msgctxt "Pattern title"
+msgid "Wide banner with button"
+msgstr ""
+
+#: patterns/contact-2.php
+msgctxt "Pattern title"
+msgid "Contact info card"
+msgstr ""
+
+#: patterns/contact-2.php:25
+#: patterns/contact-3.php:25
+#: patterns/contact-4.php:26
+#: patterns/contact-5.php:70
+#: patterns/contact-6.php:75
+msgid "Esther Howard"
+msgstr ""
+
+#: patterns/contact-2.php:29
+#: patterns/contact-3.php:29
+#: patterns/contact-4.php:30
+msgid "Senior Product Designer at Spectra"
+msgstr ""
+
+#: patterns/contact-2.php:45
+#: patterns/contact-3.php:43
+#: patterns/contact-4.php:44
+msgid "Behance"
+msgstr ""
+
+#: patterns/contact-2.php:49
+#: patterns/contact-3.php:47
+#: patterns/contact-4.php:48
+msgid "Dribbble"
+msgstr ""
+
+#: patterns/contact-2.php:53
+#: patterns/contact-3.php:51
+#: patterns/contact-4.php:52
+msgid "Linkedin"
+msgstr ""
+
+#: patterns/contact-2.php:57
+#: patterns/contact-3.php:55
+#: patterns/contact-4.php:56
+msgid "Github"
+msgstr ""
+
+#: patterns/contact-3.php
+msgctxt "Pattern title"
+msgid "Contact info card with gradient"
+msgstr ""
+
+#: patterns/contact-4.php
+msgctxt "Pattern title"
+msgid "Contact info card with background"
+msgstr ""
+
+#: patterns/contact-5.php
+msgctxt "Pattern title"
+msgid "Teams three column"
+msgstr ""
+
+#: patterns/contact-5.php:22
+#: patterns/contact-6.php:23
+msgid "Meet the team"
+msgstr ""
+
+#: patterns/contact-5.php:25
+#: patterns/contact-6.php:26
+msgid "The talent driving our success"
+msgstr ""
+
+#: patterns/contact-5.php:28
+#: patterns/contact-6.php:29
+msgid "Meet our dedicated team of professionals who are passionate about providing top-notch service and delivering exceptional results."
+msgstr ""
+
+#: patterns/contact-5.php:36
+#: patterns/contact-6.php:39
+msgid "Wade Warren"
+msgstr ""
+
+#: patterns/contact-5.php:39
+#: patterns/contact-6.php:42
+msgid "Creative Director"
+msgstr ""
+
+#: patterns/contact-5.php:53
+#: patterns/contact-6.php:57
+#: patterns/testimonials.php:108
+msgid "Leslie Alexander"
+msgstr ""
+
+#: patterns/contact-5.php:56
+#: patterns/contact-6.php:60
+msgid "Product Manager"
+msgstr ""
+
+#: patterns/contact-5.php:73
+#: patterns/contact-6.php:78
+msgid "Senior Product Designer"
+msgstr ""
+
+#: patterns/contact-6.php
+msgctxt "Pattern title"
+msgid "Teams four columns circle"
+msgstr ""
+
+#: patterns/contact-6.php:93
+#: patterns/testimonials.php:60
+msgid "Jacob Jones"
+msgstr ""
+
+#: patterns/contact-6.php:96
+msgid "Senior Developer"
+msgstr ""
+
+#: patterns/contact.php
+msgctxt "Pattern title"
+msgid "Text with contact info"
+msgstr ""
+
+#: patterns/contact.php:15
+#: patterns/footer-5.php:108
+msgid "Get in touch"
+msgstr ""
+
+#: patterns/contact.php:18
+msgid "We look forward to hearing from you"
+msgstr ""
+
+#: patterns/contact.php:21
+msgid "We look forward to hearing from you and providing the assistance you need. Whether you have a general inquiry, require technical support, or want to learn more about our products, our knowledgeable team is ready to assist you."
+msgstr ""
+
+#: patterns/contact.php:27
+#: patterns/text-2.php:34
+#: patterns/text-3.php:34
+#: patterns/text-4.php:34
+#: patterns/text.php:34
+msgid "4.8"
+msgstr ""
+
+#: patterns/contact.php:30
+#: patterns/text-2.php:38
+#: patterns/text-3.php:38
+msgid "Average ratings"
+msgstr ""
+
+#: patterns/contact.php:35
+#: patterns/text-2.php:24
+#: patterns/text-3.php:24
+#: patterns/text-4.php:24
+#: patterns/text.php:24
+msgid "2000+"
+msgstr ""
+
+#: patterns/contact.php:38
+#: patterns/text-2.php:28
+#: patterns/text-3.php:28
+msgid "Active installs"
+msgstr ""
+
+#: patterns/contact.php:46
+msgid "Contact info"
+msgstr ""
+
+#: patterns/contact.php:53
+msgid "Address"
+msgstr ""
+
+#: patterns/contact.php:56
+msgid "123 Demo Ave. Manchester,"
+msgstr ""
+
+#: patterns/contact.php:56
+msgid "Kentucky, KY 40962"
+msgstr ""
+
+#: patterns/contact.php:64
+msgid "Phone"
+msgstr ""
+
+#: patterns/contact.php:67
+msgid "606-123-4567"
+msgstr ""
+
+#: patterns/contact.php:75
+msgid "Email"
+msgstr ""
+
+#: patterns/contact.php:78
+msgid "mail@demosite.com"
+msgstr ""
+
+#: patterns/contact.php:86
+msgid "Follow us"
 msgstr ""
 
 #: patterns/faq.php
@@ -250,6 +555,49 @@ msgstr ""
 
 #: patterns/faq.php:52
 msgid "No, Full Site Editing does not require knowledge of coding or web development. The drag-and-drop interface and pre-designed templates make it easy for users to create a professional-looking website without any coding experience."
+msgstr ""
+
+#: patterns/feature.php
+msgctxt "Pattern title"
+msgid "Image with feature list"
+msgstr ""
+
+#: patterns/feature.php:29
+msgid "Full Site Editing"
+msgstr ""
+
+#: patterns/feature.php:33
+msgid "Unleash the power of block editor"
+msgstr ""
+
+#: patterns/feature.php:47
+#: patterns/three-column-featured.php:26
+msgid "Easily Customizable"
+msgstr ""
+
+#: patterns/feature.php:50
+#: patterns/three-column-featured.php:29
+msgid "Tailor your website to your liking with endless options to personalize the design and functionality."
+msgstr ""
+
+#: patterns/feature.php:62
+#: patterns/three-column-featured.php:37
+msgid "Blazing Fast"
+msgstr ""
+
+#: patterns/feature.php:65
+#: patterns/three-column-featured.php:40
+msgid "Experience lightning-fast page load speeds for optimal user experience and SEO ranking."
+msgstr ""
+
+#: patterns/feature.php:77
+#: patterns/three-column-featured.php:48
+msgid "SEO Optimized"
+msgstr ""
+
+#: patterns/feature.php:80
+#: patterns/three-column-featured.php:51
+msgid "Built with search engines in mind, achieve higher rankings and more traffic with optimized code."
 msgstr ""
 
 #: patterns/featured-logos.php
@@ -300,18 +648,6 @@ msgstr ""
 #: patterns/header-6.php:29
 #: patterns/header.php:27
 msgid "Blog"
-msgstr ""
-
-#: patterns/footer-2.php:27
-#: patterns/footer-3.php:26
-#: patterns/footer-5.php:27
-#: patterns/header-2.php:27
-#: patterns/header-3.php:29
-#: patterns/header-4.php:31
-#: patterns/header-5.php:29
-#: patterns/header-6.php:30
-#: patterns/header.php:28
-msgid "Contact"
 msgstr ""
 
 #: patterns/footer-2.php:39
@@ -499,10 +835,6 @@ msgstr ""
 msgid "Need Help?"
 msgstr ""
 
-#: patterns/footer-5.php:108
-msgid "Get in touch"
-msgstr ""
-
 #: patterns/footer-5.php:111
 msgid "Book A Meeting"
 msgstr ""
@@ -541,17 +873,6 @@ msgctxt "Pattern title"
 msgid "Header center menu"
 msgstr ""
 
-#: patterns/header-2.php:31
-#: patterns/header-3.php:39
-#: patterns/header-4.php:36
-#: patterns/header-5.php:34
-#: patterns/header-6.php:40
-#: patterns/header.php:32
-#: patterns/hero-banner.php:26
-#: patterns/wide-banner-with-button.php:19
-msgid "Get Started"
-msgstr ""
-
 #: patterns/header-3.php
 msgctxt "Pattern title"
 msgid "Header left menu"
@@ -577,37 +898,72 @@ msgctxt "Pattern title"
 msgid "Header"
 msgstr ""
 
+#: patterns/hero-banner-2.php
+msgctxt "Pattern title"
+msgid "Hero banner blend"
+msgstr ""
+
+#: patterns/hero-banner-2.php:19
+#: patterns/hero-banner-3.php:19
+#: patterns/hero-banner-4.php:21
+#: patterns/hero-banner-5.php:21
+#: patterns/hero-banner-6.php:20
+#: patterns/hero-banner.php:19
+msgid "Launch Your Website Today!"
+msgstr ""
+
+#: patterns/hero-banner-2.php:23
+#: patterns/hero-banner-3.php:23
+#: patterns/hero-banner-4.php:24
+#: patterns/hero-banner-5.php:24
+#: patterns/hero-banner-6.php:23
+#: patterns/hero-banner.php:22
+msgid "Create a functional and visually appealing website"
+msgstr ""
+
+#: patterns/hero-banner-3.php
+msgctxt "Pattern title"
+msgid "Hero banner inverse"
+msgstr ""
+
+#: patterns/hero-banner-4.php
+msgctxt "Pattern title"
+msgid "Hero banner two column blend"
+msgstr ""
+
+#: patterns/hero-banner-5.php
+msgctxt "Pattern title"
+msgid "Hero banner two column inverse"
+msgstr ""
+
+#: patterns/hero-banner-6.php
+msgctxt "Pattern title"
+msgid "Hero banner with background"
+msgstr ""
+
 #: patterns/hero-banner.php
 msgctxt "Pattern title"
 msgid "Hero banner"
 msgstr ""
 
-#: patterns/hero-banner.php:19
-msgid "Launch Your Website Today!"
-msgstr ""
-
-#: patterns/hero-banner.php:22
-msgid "Create a functional and visually appealing website"
-msgstr ""
-
 #: patterns/hero-page-2.php
 msgctxt "Pattern title"
-msgid "Hero page blend"
+msgid "Hero page title blend"
 msgstr ""
 
 #: patterns/hero-page.php
 msgctxt "Pattern title"
-msgid "Hero page"
+msgid "Hero page title"
 msgstr ""
 
 #: patterns/hero-single-2.php
 msgctxt "Pattern title"
-msgid "Hero single blend"
+msgid "Hero single title blend"
 msgstr ""
 
 #: patterns/hero-single.php
 msgctxt "Pattern title"
-msgid "Hero single"
+msgid "Hero single title"
 msgstr ""
 
 #: patterns/post-grid.php
@@ -617,6 +973,250 @@ msgstr ""
 
 #: patterns/post-grid.php:12
 msgid "Latest from the blog"
+msgstr ""
+
+#: patterns/pricing-2.php
+msgctxt "Pattern title"
+msgid "Pricing two column highlight"
+msgstr ""
+
+#: patterns/pricing-2.php:23
+#: patterns/pricing-3.php:25
+#: patterns/pricing-4.php:24
+#: patterns/pricing-5.php:24
+#: patterns/pricing-6.php:27
+#: patterns/pricing.php:23
+msgid "Pricing tailored to your needs"
+msgstr ""
+
+#: patterns/pricing-2.php:26
+#: patterns/pricing-3.php:28
+#: patterns/pricing-4.php:28
+#: patterns/pricing-5.php:28
+#: patterns/pricing-6.php:31
+#: patterns/pricing.php:26
+msgid "Select your favorite plan and start your online store today!"
+msgstr ""
+
+#: patterns/pricing-2.php:34
+#: patterns/pricing-3.php:43
+#: patterns/pricing-4.php:37
+#: patterns/pricing-5.php:37
+#: patterns/pricing-6.php:48
+#: patterns/pricing.php:34
+msgid "Starter Plan"
+msgstr ""
+
+#: patterns/pricing-2.php:37
+#: patterns/pricing-3.php:46
+#: patterns/pricing-4.php:41
+#: patterns/pricing-4.php:184
+#: patterns/pricing-5.php:41
+#: patterns/pricing-5.php:191
+#: patterns/pricing-6.php:52
+#: patterns/pricing-6.php:226
+#: patterns/pricing.php:37
+msgid "Everything you need to get start building your website."
+msgstr ""
+
+#: patterns/pricing-2.php:42
+#: patterns/pricing-3.php:51
+#: patterns/pricing-4.php:47
+#: patterns/pricing-5.php:47
+#: patterns/pricing-6.php:58
+#: patterns/pricing.php:42
+msgid "$9.99"
+msgstr ""
+
+#: patterns/pricing-2.php:45
+#: patterns/pricing-2.php:105
+#: patterns/pricing-3.php:54
+#: patterns/pricing-3.php:131
+#: patterns/pricing-4.php:51
+#: patterns/pricing-4.php:123
+#: patterns/pricing-4.php:192
+#: patterns/pricing-5.php:51
+#: patterns/pricing-5.php:124
+#: patterns/pricing-5.php:201
+#: patterns/pricing-6.php:62
+#: patterns/pricing-6.php:146
+#: patterns/pricing-6.php:236
+#: patterns/pricing.php:45
+#: patterns/pricing.php:105
+msgid "/ month"
+msgstr ""
+
+#: patterns/pricing-2.php:60
+#: patterns/pricing-3.php:66
+#: patterns/pricing-4.php:69
+#: patterns/pricing-5.php:69
+#: patterns/pricing-6.php:77
+#: patterns/pricing.php:60
+msgid "Customization options"
+msgstr ""
+
+#: patterns/pricing-2.php:68
+#: patterns/pricing-3.php:74
+#: patterns/pricing-4.php:78
+#: patterns/pricing-5.php:78
+#: patterns/pricing-6.php:85
+#: patterns/pricing.php:68
+msgid "Essential pattern library"
+msgstr ""
+
+#: patterns/pricing-2.php:76
+#: patterns/pricing-3.php:82
+#: patterns/pricing-4.php:87
+#: patterns/pricing-5.php:87
+#: patterns/pricing-6.php:93
+#: patterns/pricing.php:76
+msgid "Handcrafted theme styles"
+msgstr ""
+
+#: patterns/pricing-2.php:84
+#: patterns/pricing-3.php:90
+#: patterns/pricing-4.php:96
+#: patterns/pricing-5.php:96
+#: patterns/pricing-6.php:101
+#: patterns/pricing.php:84
+msgid "Unmatched performance"
+msgstr ""
+
+#: patterns/pricing-2.php:94
+#: patterns/pricing-3.php:120
+#: patterns/pricing-4.php:109
+#: patterns/pricing-5.php:110
+#: patterns/pricing-6.php:132
+#: patterns/pricing.php:94
+msgid "Pro Plan"
+msgstr ""
+
+#: patterns/pricing-2.php:97
+#: patterns/pricing-3.php:123
+#: patterns/pricing-4.php:113
+#: patterns/pricing-5.php:114
+#: patterns/pricing-6.php:136
+#: patterns/pricing.php:97
+msgid "Unlock the full potential of your website with our Pro plan."
+msgstr ""
+
+#: patterns/pricing-2.php:102
+#: patterns/pricing-3.php:128
+#: patterns/pricing-4.php:119
+#: patterns/pricing-5.php:120
+#: patterns/pricing-6.php:142
+#: patterns/pricing.php:102
+msgid "$19.99"
+msgstr ""
+
+#: patterns/pricing-2.php:120
+#: patterns/pricing-3.php:143
+#: patterns/pricing-4.php:139
+#: patterns/pricing-5.php:142
+#: patterns/pricing-6.php:161
+#: patterns/pricing.php:120
+msgid "Everything in Starter Plan plus..."
+msgstr ""
+
+#: patterns/pricing-2.php:128
+#: patterns/pricing-3.php:151
+#: patterns/pricing-4.php:147
+#: patterns/pricing-5.php:150
+#: patterns/pricing-6.php:169
+#: patterns/pricing.php:128
+msgid "Custom typography"
+msgstr ""
+
+#: patterns/pricing-2.php:136
+#: patterns/pricing-3.php:159
+#: patterns/pricing-4.php:155
+#: patterns/pricing-5.php:158
+#: patterns/pricing-6.php:177
+#: patterns/pricing.php:136
+msgid "Premium pattern library"
+msgstr ""
+
+#: patterns/pricing-2.php:144
+#: patterns/pricing-3.php:167
+#: patterns/pricing-4.php:163
+#: patterns/pricing-5.php:166
+#: patterns/pricing-6.php:185
+#: patterns/pricing.php:144
+msgid "Pro blocks access"
+msgstr ""
+
+#: patterns/pricing-2.php:152
+#: patterns/pricing-3.php:175
+#: patterns/pricing-4.php:171
+#: patterns/pricing-5.php:174
+#: patterns/pricing-6.php:193
+#: patterns/pricing.php:152
+msgid "Priority customer support"
+msgstr ""
+
+#: patterns/pricing-3.php
+msgctxt "Pattern title"
+msgid "Pricing two column with icon"
+msgstr ""
+
+#: patterns/pricing-3.php:114
+msgid "Recommended"
+msgstr ""
+
+#: patterns/pricing-4.php
+msgctxt "Pattern title"
+msgid "Pricing three column"
+msgstr ""
+
+#: patterns/pricing-4.php:181
+#: patterns/pricing-5.php:187
+#: patterns/pricing-6.php:222
+msgid "Growth Plan"
+msgstr ""
+
+#: patterns/pricing-4.php:189
+#: patterns/pricing-5.php:197
+#: patterns/pricing-6.php:232
+msgid "$29.99"
+msgstr ""
+
+#: patterns/pricing-4.php:207
+#: patterns/pricing-5.php:218
+#: patterns/pricing-6.php:251
+msgid "Everything in Pro Plan plus..."
+msgstr ""
+
+#: patterns/pricing-4.php:215
+#: patterns/pricing-5.php:226
+#: patterns/pricing-6.php:259
+msgid "5 Team members license"
+msgstr ""
+
+#: patterns/pricing-4.php:223
+#: patterns/pricing-5.php:234
+#: patterns/pricing-6.php:267
+msgid "Premium starter templates"
+msgstr ""
+
+#: patterns/pricing-4.php:231
+#: patterns/pricing-5.php:242
+#: patterns/pricing-6.php:275
+msgid "Premium support"
+msgstr ""
+
+#: patterns/pricing-5.php
+msgctxt "Pattern title"
+msgid "Pricing three column highlight"
+msgstr ""
+
+#: patterns/pricing-6.php
+msgctxt "Pattern title"
+msgid "Pricing three column with icon"
+msgstr ""
+
+#: patterns/pricing.php
+msgctxt "Pattern title"
+msgid "Pricing two column"
 msgstr ""
 
 #: patterns/sidebar.php
@@ -740,10 +1340,6 @@ msgstr ""
 msgid "This theme made the process of building my website a breeze. The drag-and-drop interface was easy to use and the templates were customizable."
 msgstr ""
 
-#: patterns/testimonials.php:60
-msgid "Jacob Jones"
-msgstr ""
-
 #: patterns/testimonials.php:63
 msgid "Freelancer"
 msgstr ""
@@ -772,10 +1368,6 @@ msgstr ""
 msgid "I've used a few different website builders over the years, and this one is by far the best. The responsive design ensures that my website looks great on any device."
 msgstr ""
 
-#: patterns/testimonials.php:108
-msgid "Leslie Alexander"
-msgstr ""
-
 #: patterns/testimonials.php:111
 msgid "Business owner"
 msgstr ""
@@ -788,46 +1380,66 @@ msgstr ""
 msgid "As a small business owner, I needed a website that was affordable. I was able to create a beautiful website that represented my brand."
 msgstr ""
 
+#: patterns/text-2.php
+msgctxt "Pattern title"
+msgid "Counter four column center"
+msgstr ""
+
+#: patterns/text-2.php:14
+#: patterns/text-3.php:14
+#: patterns/text-4.php:14
+#: patterns/text.php:14
+msgid "32"
+msgstr ""
+
+#: patterns/text-2.php:18
+#: patterns/text-3.php:18
+msgid "Essentials patterns"
+msgstr ""
+
+#: patterns/text-2.php:44
+#: patterns/text-3.php:44
+msgid "12"
+msgstr ""
+
+#: patterns/text-2.php:48
+#: patterns/text-3.php:48
+msgid "Style variations"
+msgstr ""
+
+#: patterns/text-3.php
+msgctxt "Pattern title"
+msgid "Counter four column left"
+msgstr ""
+
+#: patterns/text-4.php
+msgctxt "Pattern title"
+msgid "Counter three column center"
+msgstr ""
+
+#: patterns/text-4.php:18
+#: patterns/text.php:18
+msgid "Donec viverra arcu euismod eu blandit mauris viverra."
+msgstr ""
+
+#: patterns/text-4.php:28
+#: patterns/text.php:28
+msgid "Placerat elit libero nulla faucibus quam turpis habitasse."
+msgstr ""
+
+#: patterns/text-4.php:38
+#: patterns/text.php:38
+msgid "Mi accumsan pharetra auctor egestas morbi facilisis."
+msgstr ""
+
+#: patterns/text.php
+msgctxt "Pattern title"
+msgid "Counter three column left"
+msgstr ""
+
 #: patterns/three-column-featured.php
 msgctxt "Pattern title"
 msgid "Three column featured"
-msgstr ""
-
-#: patterns/three-column-featured.php:26
-msgid "Easily Customizable"
-msgstr ""
-
-#: patterns/three-column-featured.php:29
-msgid "Tailor your website to your liking with endless options to personalize the design and functionality."
-msgstr ""
-
-#: patterns/three-column-featured.php:37
-msgid "Blazing Fast"
-msgstr ""
-
-#: patterns/three-column-featured.php:40
-msgid "Experience lightning-fast page load speeds for optimal user experience and SEO ranking."
-msgstr ""
-
-#: patterns/three-column-featured.php:48
-msgid "SEO Optimized"
-msgstr ""
-
-#: patterns/three-column-featured.php:51
-msgid "Built with search engines in mind, achieve higher rankings and more traffic with optimized code."
-msgstr ""
-
-#: patterns/wide-banner-with-button.php
-msgctxt "Pattern title"
-msgid "Wide banner with button"
-msgstr ""
-
-#: patterns/wide-banner-with-button.php:12
-msgid "Build your own website"
-msgstr ""
-
-#: patterns/wide-banner-with-button.php:15
-msgid "Take your website to the next level!"
 msgstr ""
 
 #: assets/js/editor.js:1
@@ -986,32 +1598,6 @@ msgstr ""
 #: styles/ultra-marine.json
 #: theme.json
 msgctxt "Color name"
-msgid "Tertiary"
-msgstr ""
-
-#: styles/aquamarine.json
-#: styles/dark.json
-#: styles/easter-green.json
-#: styles/mango.json
-#: styles/pink.json
-#: styles/rain-forest.json
-#: styles/sweet-corn.json
-#: styles/ultra-marine.json
-#: theme.json
-msgctxt "Color name"
-msgid "Quaternary"
-msgstr ""
-
-#: styles/aquamarine.json
-#: styles/dark.json
-#: styles/easter-green.json
-#: styles/mango.json
-#: styles/pink.json
-#: styles/rain-forest.json
-#: styles/sweet-corn.json
-#: styles/ultra-marine.json
-#: theme.json
-msgctxt "Color name"
 msgid "Heading"
 msgstr ""
 
@@ -1038,7 +1624,7 @@ msgstr ""
 #: styles/ultra-marine.json
 #: theme.json
 msgctxt "Color name"
-msgid "Surface"
+msgid "Background"
 msgstr ""
 
 #: styles/aquamarine.json
@@ -1051,7 +1637,33 @@ msgstr ""
 #: styles/ultra-marine.json
 #: theme.json
 msgctxt "Color name"
-msgid "Background"
+msgid "Tertiary"
+msgstr ""
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Quaternary"
+msgstr ""
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Surface"
 msgstr ""
 
 #: styles/aquamarine.json
@@ -1169,6 +1781,19 @@ msgstr ""
 #: theme.json
 msgctxt "Duotone name"
 msgid "Secondary"
+msgstr ""
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Tertiary"
 msgstr ""
 
 #: styles/dark.json

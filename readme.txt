@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 6.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -110,7 +110,12 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
 == Changelog ==
 
 = 1.0.3 =
-* New: Added new patterns.
+* New: Hero banner patterns.
+* New: Counter patterns.
+* New: Wide banner patterns.
+* New: Announcement bar patterns.
+* New: Contact info patterns.
+* New: Pricing patterns.
 
 = 1.0.2 =
 * New: Added Scroll to top feature.
