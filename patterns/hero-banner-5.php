@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Title: Hero banner dark
+ * Title: Hero banner two column inverse
  * Slug: spectra-one/hero-banner-5
  * Categories: featured
- * Keywords: hero Banner
+ * Keywords: hero banner two column inverse
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

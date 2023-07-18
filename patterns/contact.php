@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Text and contact card
+ * Title: Text with contact info
  * Slug: spectra-one/contact
  * Categories: contact
- * Keywords: text and contact card
+ * Keywords: text with contact info
  */
 ?>
 

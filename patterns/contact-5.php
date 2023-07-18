@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Teams cover three columns
+ * Title: Teams three column
  * Slug: spectra-one/contact-5
  * Categories: contact
- * Keywords: teams cover three columns
+ * Keywords: teams three column
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

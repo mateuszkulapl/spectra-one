@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Wide banner with button dark
+ * Title: Wide banner with button inverse
  * Slug: spectra-one/call-to-action-3
  * Categories: call-to-action
- * Keywords: wide banner with button light
+ * Keywords: wide banner with button inverse
  */
 ?>
 

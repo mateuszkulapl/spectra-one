@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Pricing with icon two column
+ * Title: Pricing two column with icon
  * Slug: spectra-one/pricing-3
- * Categories: services
- * Keywords: pricing two columns
+ * Categories: pricing
+ * Keywords: pricing two column with icon
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

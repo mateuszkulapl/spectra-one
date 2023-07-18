@@ -2,8 +2,8 @@
 /**
  * Title: Pricing three column
  * Slug: spectra-one/pricing-4
- * Categories: services
- * Keywords: pricing two columns
+ * Categories: pricing
+ * Keywords: pricing three column
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

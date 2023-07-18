@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Teams circle four columns
+ * Title: Teams four columns circle
  * Slug: spectra-one/contact-6
  * Categories: contact
- * Keywords: teams circle four columns
+ * Keywords: teams four columns circle
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

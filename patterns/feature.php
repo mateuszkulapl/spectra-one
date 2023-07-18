@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: image and features
+ * Title: Image with feature list
  * Slug: spectra-one/feature
  * Categories: featured
- * Keywords: hero Banner
+ * Keywords: image with feature list
  */
 
  $get_url = trailingslashit(get_template_directory_uri());

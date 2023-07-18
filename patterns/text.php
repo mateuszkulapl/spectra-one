@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Three column counter left
+ * Title: Counter three column left
  * Slug: spectra-one/text
  * Categories: text
- * Keywords: column counter
+ * Keywords: counter three column left
  */
 ?>
 

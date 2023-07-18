@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Title: Hero banner dark
+ * Title: Hero banner blend
  * Slug: spectra-one/hero-banner-2
  * Categories: featured
- * Keywords: hero Banner
+ * Keywords: hero banner blend
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

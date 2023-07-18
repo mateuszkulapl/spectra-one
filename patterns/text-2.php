@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Four column counter center
+ * Title: Counter four column center
  * Slug: spectra-one/text-2
  * Categories: text
- * Keywords: column counter 
+ * Keywords: counter four column center
  */
 ?>
 

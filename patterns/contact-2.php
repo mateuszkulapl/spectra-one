@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: User card with links divided
+ * Title: Contact info card
  * Slug: spectra-one/contact-2
  * Categories: contact
- * Keywords: user card with links divided
+ * Keywords: contact info card
  */
 
 $get_url = trailingslashit(get_template_directory_uri());

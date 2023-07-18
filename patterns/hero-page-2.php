@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Hero page blend
+ * Title: Hero page title blend
  * Slug: spectra-one/hero-page-2
  * Categories: featured
- * Keywords: hero page inverse
+ * Keywords: hero page title blend
  */
 ?>
 
