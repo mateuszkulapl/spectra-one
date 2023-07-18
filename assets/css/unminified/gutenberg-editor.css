@@ -26,7 +26,7 @@
   padding: 16px;
   width: 100%;
 }
-.swt-template-kit-spectra:focus:not(:disabled) {
+.swt-template-kit-spectra.is-primary:focus:not(:disabled) {
   box-shadow: none;
 }
 
