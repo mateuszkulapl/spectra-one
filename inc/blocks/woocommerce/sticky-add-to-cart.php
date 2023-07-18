@@ -29,44 +29,52 @@ function render_add_to_cart_form( string $block_content, array $block ):string {
 	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort
 	$sticky_add_to_cart_condition = ( isset( $block['blockName'] ) && 'swt/sticky-add-to-cart' === $block['blockName'] );
 
-        if ( is_product() && $sticky_add_to_cart_condition ) {
+	if ( is_product() && $sticky_add_to_cart_condition ) {
 
 
-            if( isset( $block['attrs']['SWTPosition'] ) && 'top' === $block['attrs']['SWTPosition'] ) {
-                add_filter( 'swt_dynamic_theme_css', function(string $css):string {
-                    $css .= parse_css(
-						array(
-							'.swt-sticky-add-to-cart' => array(
-								'top' => '0'
-							),
-							'.swt-sticky-add-to-cart:not(.is-active)' => array(
-								'transform' => 'translateY(-100%)'
-							),
-						),
-					);
-
-                    return $css;
-                });
-            } else {
-                add_filter( 'swt_dynamic_theme_css', function(string $css):string {
+		if ( isset( $block['attrs']['SWTPosition'] ) && 'top' === $block['attrs']['SWTPosition'] ) {
+			add_filter(
+				'swt_dynamic_theme_css',
+				function( string $css ):string {
 					$css .= parse_css(
 						array(
 							'.swt-sticky-add-to-cart' => array(
-								'bottom' => '0',
-								'top' => 'initial !important'
+								'top'        => '0',
+								'box-shadow' => '0px 3px 24px -8px rgba(0, 0, 0, 0.08)',
 							),
 							'.swt-sticky-add-to-cart:not(.is-active)' => array(
-								'transform' => 'translateY(100%)'
+								'transform' => 'translateY(-100%)',
 							),
 						),
 					);
-                    return $css;
-                });
-            }
+
+					return $css;
+				}
+			);
+		} else {
+			add_filter(
+				'swt_dynamic_theme_css',
+				function( string $css ):string {
+					$css .= parse_css(
+						array(
+							'.swt-sticky-add-to-cart' => array(
+								'bottom'     => '0',
+								'top'        => 'initial !important',
+								'box-shadow' => '0px -3px 24px -8px rgba(0, 0, 0, 0.08)',
+							),
+							'.swt-sticky-add-to-cart:not(.is-active)' => array(
+								'transform' => 'translateY(100%)',
+							),
+						),
+					);
+					return $css;
+				}
+			);
+		}
 
 		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'add_to_cart_block_inline_css' );
 		add_filter( 'swt_dynamic_theme_js', SWT_NS . 'single_product_sticky_add_to_cart_js' );
-    }
+	}
 
 	return $block_content;
 }
@@ -79,51 +87,50 @@ function render_add_to_cart_form( string $block_content, array $block ):string {
  * @return string
  */
 function add_to_cart_block_inline_css( string $css ): string {
-    $parent_class = '.swt-sticky-add-to-cart';
+	$parent_class = '.swt-sticky-add-to-cart';
 
 	$css_output = array(
-		$parent_class => array(
-			'position' => 'fixed',
-			 rtl_css( 'left' ) => '0',
-			'width' => '100%',
-			'z-index' => '99',
-			'margin-top' => '0',
-			'box-shadow' => '0px -3px 24px -8px rgba(0, 0, 0, 0.08)',
-			'transition' => '.2s ease-in',
+		$parent_class                      => array(
+			'position'        => 'fixed',
+			rtl_css( 'left' ) => '0',
+			'width'           => '100%',
+			'z-index'         => '99',
+			'margin-top'      => '0',
+			'transition'      => '.2s ease-in',
 		),
 
-        $parent_class.' .cart' => array(
-            'display' => 'flex',
-            'align-items' => 'center',
+		$parent_class . ' .cart'           => array(
+			'display'     => 'flex',
+			'align-items' => 'center',
 		),
 
-        $parent_class.' .quantity' => array(
-            'padding-'. rtl_css( 'right' ) .'' => 'var(--wp--preset--spacing--small)',
+		$parent_class . ' .quantity'       => array(
+			'padding-' . rtl_css( 'right' ) . '' => 'var(--wp--preset--spacing--small)',
 		),
 
-		$parent_class.' .quantity .qty ' => array(
-			'border' => '1px solid var(--wp--preset--color--outline)',
+		$parent_class . ' .quantity .qty ' => array(
+			'border'        => '1px solid var(--wp--preset--color--outline)',
 			'border-radius' => 'var(--wp--custom--border-radius--x-small)',
 		),
 
-		$parent_class.' .wp-block-woocommerce-product-price' => array(
+		$parent_class . ' .wp-block-woocommerce-product-price' => array(
 			'font-weight' => 'var(--wp--custom--font-weight--semi-bold)',
-			'color' => 'var(--wp--preset--color--heading)'
+			'color'       => 'var(--wp--preset--color--heading)',
 		),
 
-		$parent_class.' .wc-block-components-product-price' => array(
-			'padding-'. rtl_css( 'right' ) .'' => 'var(--wp--preset--spacing--xxx-small)',
+		$parent_class . ' .wc-block-components-product-price' => array(
+			'padding-' . rtl_css( 'right' ) . '' => 'var(--wp--preset--spacing--xxx-small)',
 		),
 
-		$parent_class.' .wp-block-woocommerce-product-price ins' => array(
+		$parent_class . ' .wp-block-woocommerce-product-price ins' => array(
 			'text-decoration' => 'none',
 		),
 
-		$parent_class.' form.grouped_form .woocommerce-grouped-product-list, ' . $parent_class.' form.variations_form .variations, ' . $parent_class.' form.variations_form .quantity' => array(
+		$parent_class . ' form.grouped_form .woocommerce-grouped-product-list, ' . $parent_class . ' form.variations_form .variations, ' . $parent_class . ' form.variations_form .quantity' => array(
 			'display' => 'none',
 		),
 	);
-	$css       .= parse_css( $css_output );
+	$css .= parse_css( $css_output );
 	return $css;
 }
 
@@ -134,8 +141,8 @@ function add_to_cart_block_inline_css( string $css ): string {
  * @param string $js Inline JS.
  * @return string
  */
-	function single_product_sticky_add_to_cart_js( string $js ): string {
-		$inline_js = <<<JS
+function single_product_sticky_add_to_cart_js( string $js ): string {
+	$inline_js = <<<JS
 			function docReady(fn) {
 				// see if DOM is already available
 				if (document.readyState === "complete" || document.readyState === "interactive") {
