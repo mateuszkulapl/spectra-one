@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Hero single
+ * Title: Hero single title
  * Slug: spectra-one/hero-single
  * Categories: featured
- * Keywords: hero single
+ * Keywords: hero single title
  */
 ?>
 

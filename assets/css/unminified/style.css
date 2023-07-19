@@ -41,6 +41,10 @@ html {
   filter: var(--wp--preset--duotone--secondary);
 }
 
+.swt-duotone-tertiary {
+  filter: var(--wp--preset--duotone--tertiary);
+}
+
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
