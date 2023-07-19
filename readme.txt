@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 6.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -87,6 +87,20 @@ https://pxhere.com/en/photo/451655
 https://pxhere.com/en/photo/33863
 https://pxhere.com/en/photo/814735
 
+Contact Info
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://stocksnap.io/license,
+https://stocksnap.io/photo/woman-business-3WCJNINSRD
+
+Teams 
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://pxhere.com/en/license,
+License URI : https://stocksnap.io/license,
+https://stocksnap.io/photo/business-man-DAAZROYMQN
+https://stocksnap.io/photo/male-professional-6QXAIH13O6
+https://stocksnap.io/photo/woman-business-3WCJNINSRD
+https://pxhere.com/en/photo/1434703
+
 Spectra install banner
 License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://stocksnap.io/license,
@@ -100,14 +114,30 @@ https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-content-02.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-content-03.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-split-content-img.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-plugin-banner-img.png
+https://wpspectra.com/wp-content/uploads/2023/07/placeholder-landscape.svg
+https://wpspectra.com/wp-content/uploads/2023/07/placeholder-portrait.svg
+https://wpspectra.com/wp-content/uploads/2023/07/placeholder-square.svg
+https://wpspectra.com/wp-content/uploads/2023/07/placeholder-wide.svg
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-01.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-02.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-03.png
 https://wpspectra.com/wp-content/uploads/2023/05/spectra-one-avatar-04.png
+https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-1.jpg
+https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-2.jpg
+https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-3.jpg
+https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 
 © Copyright Spectra One 2023, Spectra.
 
 == Changelog ==
+
+= 1.0.3 =
+* New: Hero banner patterns.
+* New: Counter patterns.
+* New: Wide banner patterns.
+* New: Announcement bar patterns.
+* New: Contact info patterns.
+* New: Pricing patterns.
 
 = 1.0.2 =
 * New: Added Scroll to top feature.
