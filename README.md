@@ -84,6 +84,15 @@ https://pxhere.com/en/photo/451655
 https://pxhere.com/en/photo/33863
 https://pxhere.com/en/photo/814735
 
+Teams 
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://pxhere.com/en/license,
+License URI : https://stocksnap.io/license,
+https://stocksnap.io/photo/business-man-DAAZROYMQN
+https://stocksnap.io/photo/male-professional-6QXAIH13O6
+https://stocksnap.io/photo/woman-business-3WCJNINSRD
+https://pxhere.com/en/photo/1434703
+
 Spectra install banner
 License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://stocksnap.io/license,
