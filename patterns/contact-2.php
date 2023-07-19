@@ -9,15 +9,17 @@
 $get_url = trailingslashit(get_template_directory_uri());
 
 $images = [
-    $get_url . "assets/image/avatar-circle-1.png",
+    $get_url . "assets/image/avatar-square-3.jpg",
 ];
 
 ?>
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"0"},"border":{"radius":"8px","width":"1px"}},"borderColor":"outline","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-border-color has-outline-border-color" style="border-width:1px;border-radius:8px"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}},"border":{"radius":{"topLeft":"8px","topRight":"8px","bottomLeft":"0px","bottomRight":"0px"}}},"gradient":"primary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-primary-gradient-background has-background" style="border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:image {"align":"center","id":1190,"sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
-<figure class="wp-block-image aligncenter size-full is-style-rounded"><img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-1190"/></figure>
+<div class="wp-block-group has-primary-gradient-background has-background" style="border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:0px;border-bottom-right-radius:0px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)">
+<!-- wp:image {"align":"center","id":1190,"width":128,"sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
+<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded">
+<img src="<?php echo esc_url( $images[0] ); ?>" alt="" class="wp-image-1190" width="128"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
