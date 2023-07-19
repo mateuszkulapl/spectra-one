@@ -84,6 +84,11 @@ https://pxhere.com/en/photo/451655
 https://pxhere.com/en/photo/33863
 https://pxhere.com/en/photo/814735
 
+Contact Info
+License : CC0 1.0 Universal (CC0 1.0)
+License URI : https://stocksnap.io/license,
+https://stocksnap.io/photo/woman-business-3WCJNINSRD
+
 Teams 
 License : CC0 1.0 Universal (CC0 1.0)
 License URI : https://pxhere.com/en/license,
