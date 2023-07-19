@@ -10,15 +10,16 @@ $get_url = trailingslashit(get_template_directory_uri());
 
 $images = [
     $get_url . "assets/image/placeholder-wide.svg",
-    $get_url . "assets/image/avatar-circle-1.png",
+    $get_url . "assets/image/avatar-square-3.jpg",
 ];
 
 ?>
 
 <!-- wp:cover {"url":"<?php echo esc_url( $images[0] ); ?>","id":1201,"dimRatio":50} -->
 <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-1201" alt="" src="<?php echo esc_url( $images[0] ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}},"border":{"radius":"8px"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-radius:8px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:image {"align":"center","id":1190,"sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
-<figure class="wp-block-image aligncenter size-full is-style-rounded"><img src="<?php echo esc_url( $images[1] ); ?>" alt="" class="wp-image-1190"/></figure>
+<div class="wp-block-group" style="border-radius:8px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
+<!-- wp:image {"align":"center","id":1190,"width":128,"sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
+<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img src="<?php echo esc_url( $images[1] ); ?>" alt="" class="wp-image-1190" width="128"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
