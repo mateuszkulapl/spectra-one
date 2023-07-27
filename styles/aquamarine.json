@@ -16,16 +16,6 @@
           "slug": "secondary"
         },
         {
-          "name": "Tertiary",
-          "color": "#103140",
-          "slug": "tertiary"
-        },
-        {
-          "name": "Quaternary",
-          "color": "#103141",
-          "slug": "quaternary"
-        },
-        {
           "name": "Heading",
           "color": "#FFFFFF",
           "slug": "heading"
@@ -36,14 +26,24 @@
           "slug": "body"
         },
         {
-          "name": "Surface",
-          "color": "#103142",
-          "slug": "surface"
-        },
-        {
           "name": "Background",
           "color": "#092635",
           "slug": "background"
+        },
+        {
+          "name": "Tertiary",
+          "color": "#103140",
+          "slug": "tertiary"
+        },
+        {
+          "name": "Quaternary",
+          "color": "#103141",
+          "slug": "quaternary"
+        },
+        {
+          "name": "Surface",
+          "color": "#103142",
+          "slug": "surface"
         },
         {
           "name": "Foreground",
@@ -99,6 +99,14 @@
           ],
           "slug": "secondary",
           "name": "Secondary"
+        },
+        {
+          "colors": [
+            "#092635",
+            "#092635"
+          ],
+          "slug": "tertiary",
+          "name": "Tertiary"
         }
       ]
     }

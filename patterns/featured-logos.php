@@ -2,7 +2,7 @@
 /**
  * Title: Featured logos
  * Slug: spectra-one/featured-logos
- * Categories: gallery
+ * Categories: featured
  * Keywords: featured logos
  */
 
