@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Three column featured
+ * Title: Three column featured grid background
  * Slug: spectra-one/feature-6
- * Categories: services
- * Keywords: three column featured
+ * Categories: featured
+ * Keywords: three column featured grid background
  */
 ?>
 
