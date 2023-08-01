@@ -131,6 +131,9 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 
 == Changelog ==
 
+= 1.0.4 =
+* Fix: Compatibility with wordpress 6.3
+
 = 1.0.3 =
 * New: Hero banner patterns.
 * New: Counter patterns.
