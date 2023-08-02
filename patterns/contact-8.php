@@ -43,8 +43,8 @@ $images = [
 <h5 class="wp-block-heading has-text-align-left has-heading-color has-text-color"><?php esc_html_e( 'Wade Warren', 'spectra-one' ); ?></h5>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"left","textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-text-align-left has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Creative Director', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"align":"left","fontSize":"x-small"} -->
+<p class="has-text-align-left has-x-small-font-size"><?php esc_html_e( 'Creative Director', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"primary","iconColorValue":"var(--wp--preset--color--primary)","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
@@ -67,8 +67,8 @@ $images = [
 <h5 class="wp-block-heading has-text-align-left has-heading-color has-text-color"><?php esc_html_e( 'Leslie Alexander', 'spectra-one' ); ?></h5>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"left","textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-text-align-left has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Product Manager', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"align":"left","fontSize":"x-small"} -->
+<p class="has-text-align-left has-x-small-font-size"><?php esc_html_e( 'Product Manager', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"primary","iconColorValue":"var(--wp--preset--color--primary)","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
@@ -91,8 +91,8 @@ $images = [
 <h5 class="wp-block-heading has-text-align-left has-heading-color has-text-color"><?php esc_html_e( 'Esther Howard', 'spectra-one' ); ?></h5>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"left","textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-text-align-left has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Senior Product Designer', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"align":"left","fontSize":"x-small"} -->
+<p class="has-text-align-left has-x-small-font-size"><?php esc_html_e( 'Senior Product Designer', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"primary","iconColorValue":"var(--wp--preset--color--primary)","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
@@ -115,8 +115,8 @@ $images = [
 <h5 class="wp-block-heading has-text-align-left has-heading-color has-text-color"><?php esc_html_e( 'Jacob Jones', 'spectra-one' ); ?></h5>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"left","textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-text-align-left has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Senior Developer', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"align":"left","fontSize":"x-small"} -->
+<p class="has-text-align-left has-x-small-font-size"><?php esc_html_e( 'Senior Developer', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"iconColor":"primary","iconColorValue":"var(--wp--preset--color--primary)","size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->

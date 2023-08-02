@@ -56,8 +56,8 @@
 <p class="has-small-font-size"><?php esc_html_e( 'Darlene Robertson', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Web designer', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><?php esc_html_e( 'Web designer', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -90,8 +90,8 @@
 <p class="has-small-font-size"><?php esc_html_e( 'Ralph Edwards', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Marketing Coordinator', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><?php esc_html_e( 'Marketing Coordinator', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -124,8 +124,8 @@
 <p class="has-small-font-size"><?php esc_html_e( 'Jenny Wilson', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Marketer', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><?php esc_html_e( 'Marketer', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -160,8 +160,8 @@
 <p class="has-small-font-size"><?php esc_html_e( 'Ronald Richards', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Developer', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><?php esc_html_e( 'Developer', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -194,8 +194,8 @@
 <p class="has-small-font-size"><?php esc_html_e( 'Leslie Alexander', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Business owner', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><?php esc_html_e( 'Business owner', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -228,8 +228,8 @@
 <p class="has-small-font-size"><?php esc_html_e( 'Jacob Jones', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"neutral","fontSize":"x-small"} -->
-<p class="has-neutral-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Freelancer', 'spectra-one' ); ?></p>
+<!-- wp:paragraph {"fontSize":"x-small"} -->
+<p class="has-x-small-font-size"><?php esc_html_e( 'Freelancer', 'spectra-one' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
