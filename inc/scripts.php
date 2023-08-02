@@ -44,6 +44,7 @@ function enqueue_frontend_scripts(): void {
 	/* Load Theme Styles*/
 	wp_enqueue_style( SWT_SLUG, $css_uri . 'style' . $file_prefix . '.css', array(), SWT_VER );
 
+	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
 	if ( wp_version_compare( '6.2.99', '<=' ) ) {
 		wp_enqueue_style( SWT_SLUG . '-duotone', $css_uri . 'compatibility/duotone' . $file_prefix . '.css', array(), SWT_VER );
 	}
@@ -175,7 +176,7 @@ function enqueue_editor_block_styles(): void {
 	add_theme_support( 'wp-block-styles' );
 
 	// Enqueue editor styles.
-
+	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
 	if ( wp_version_compare( '6.2.99', '<=' ) ) {
 		add_editor_style( $css_uri . 'compatibility/duotone' . $file_prefix . '.css' );
 	}
