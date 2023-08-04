@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Spectra One 1.0.3\n"
+"Project-Id-Version: Spectra One 1.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/spectra-one\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-07-19T07:55:52+02:00\n"
+"POT-Creation-Date: 2023-08-04T08:18:52+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -124,11 +124,11 @@ msgstr ""
 msgid "Disable Footer"
 msgstr ""
 
-#: inc/scripts.php:213
+#: inc/scripts.php:223
 msgid "Pages"
 msgstr ""
 
-#: inc/scripts.php:216
+#: inc/scripts.php:228
 #: patterns/footer-2.php:27
 #: patterns/footer-3.php:26
 #: patterns/footer-5.php:27
@@ -141,7 +141,7 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: inc/scripts.php:219
+#: inc/scripts.php:233
 #: patterns/pricing-2.php:20
 #: patterns/pricing-3.php:22
 #: patterns/pricing-4.php:20
@@ -326,41 +326,41 @@ msgctxt "Pattern title"
 msgid "Contact info card"
 msgstr ""
 
-#: patterns/contact-2.php:25
-#: patterns/contact-3.php:25
-#: patterns/contact-4.php:26
+#: patterns/contact-2.php:27
+#: patterns/contact-3.php:26
+#: patterns/contact-4.php:27
 #: patterns/contact-5.php:70
 #: patterns/contact-6.php:75
 msgid "Esther Howard"
 msgstr ""
 
-#: patterns/contact-2.php:29
-#: patterns/contact-3.php:29
-#: patterns/contact-4.php:30
+#: patterns/contact-2.php:31
+#: patterns/contact-3.php:30
+#: patterns/contact-4.php:31
 msgid "Senior Product Designer at Spectra"
 msgstr ""
 
-#: patterns/contact-2.php:45
-#: patterns/contact-3.php:43
-#: patterns/contact-4.php:44
+#: patterns/contact-2.php:47
+#: patterns/contact-3.php:44
+#: patterns/contact-4.php:45
 msgid "Behance"
 msgstr ""
 
-#: patterns/contact-2.php:49
-#: patterns/contact-3.php:47
-#: patterns/contact-4.php:48
+#: patterns/contact-2.php:51
+#: patterns/contact-3.php:48
+#: patterns/contact-4.php:49
 msgid "Dribbble"
 msgstr ""
 
-#: patterns/contact-2.php:53
-#: patterns/contact-3.php:51
-#: patterns/contact-4.php:52
+#: patterns/contact-2.php:55
+#: patterns/contact-3.php:52
+#: patterns/contact-4.php:53
 msgid "Linkedin"
 msgstr ""
 
-#: patterns/contact-2.php:57
-#: patterns/contact-3.php:55
-#: patterns/contact-4.php:56
+#: patterns/contact-2.php:59
+#: patterns/contact-3.php:56
+#: patterns/contact-4.php:57
 msgid "Github"
 msgstr ""
 
@@ -1443,117 +1443,117 @@ msgid "Three column featured"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:205
+#: build/editor.js:202
 #: src/block-extensions/header.js:45
-#: build/editor.js:161
+#: build/editor.js:160
 msgid "Enable Sticky Header"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:206
+#: build/editor.js:203
 #: src/block-extensions/header.js:48
-#: build/editor.js:164
+#: build/editor.js:163
 msgid "Transparent header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:214
+#: build/editor.js:211
 #: src/block-extensions/header.js:71
-#: build/editor.js:187
+#: build/editor.js:186
 msgid "Enable Transparent Header"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:215
+#: build/editor.js:212
 #: src/block-extensions/header.js:74
-#: build/editor.js:190
+#: build/editor.js:189
 msgid "Sticky header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:636
+#: build/editor.js:648
 #: src/components/install-plugin-notice.js:102
-#: build/editor.js:623
+#: build/editor.js:624
 msgid "Spectra plugin"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:638
+#: build/editor.js:650
 #: src/components/install-plugin-notice.js:106
-#: build/editor.js:627
+#: build/editor.js:628
 msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:852
+#: build/editor.js:861
 #: src/extensions/panel/components.js:29
-#: build/editor.js:838
+#: build/editor.js:841
 msgid "Disable Elements"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:856
+#: build/editor.js:865
 #: src/extensions/panel/components.js:38
-#: build/editor.js:847
+#: build/editor.js:850
 msgid "Header Settings"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:901
-#: build/editor.js:905
+#: build/editor.js:915
+#: build/editor.js:919
 #: src/extensions/panel/sidebar.js:19
 #: src/extensions/panel/sidebar.js:27
-#: build/editor.js:885
-#: build/editor.js:893
+#: build/editor.js:888
+#: build/editor.js:896
 msgid "Spectra Page Settings"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:357
+#: build/editor.js:363
 #: src/block-extensions/responsive.js:39
-#: build/editor.js:365
+#: build/editor.js:364
 msgid "Hide Desktop"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:363
+#: build/editor.js:369
 #: src/block-extensions/responsive.js:54
-#: build/editor.js:380
+#: build/editor.js:379
 msgid "Hide Tablet"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:369
+#: build/editor.js:375
 #: src/block-extensions/responsive.js:65
-#: build/editor.js:391
+#: build/editor.js:390
 msgid "Hide Mobile"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:144
+#: build/editor.js:143
 #: src/admin/settings.js:67
-#: build/editor.js:100
+#: build/editor.js:99
 msgid "Spectra Global Settings"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:146
+#: build/editor.js:145
 #: src/admin/settings.js:70
-#: build/editor.js:103
+#: build/editor.js:102
 msgid "Global features"
+msgstr ""
+
+#: assets/js/editor.js:1
+#: build/editor.js:153
+#: src/admin/settings.js:74
+#: build/editor.js:106
+msgid "Scroll to top updated"
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:154
 #: src/admin/settings.js:74
-#: build/editor.js:107
-msgid "Scroll to top updated"
-msgstr ""
-
-#: assets/js/editor.js:1
-#: build/editor.js:155
-#: src/admin/settings.js:74
-#: build/editor.js:107
+#: build/editor.js:106
 msgid "Scroll To Top"
 msgstr ""
 
