@@ -30,7 +30,7 @@
 <!-- /wp:navigation -->
 
 <!-- wp:spacer {"height":"8px","style":{"layout":{"selfStretch":"fill","flexSize":null}},"SWTHideMob":true} -->
-<div style="height:8px" aria-hidden="true" class="wp-block-spacer"></div>
+<div aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:group -->
 

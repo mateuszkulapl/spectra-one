@@ -23,12 +23,12 @@ register_block_style(
 		'inline_style' => '
 			div.is-style-' . SWT_PFX . '-button-secondary .wp-element-button {
                 color: var(--wp--preset--color--body);
-				background-color: var(--wp--preset--color--surface);
+				background: var(--wp--preset--color--surface);
 			}
 
             div.is-style-' . SWT_PFX . '-button-secondary .wp-element-button:hover {
                 color: var(--wp--preset--color--body);
-				background-color: var(--wp--preset--color--surface);
+				background: var(--wp--preset--color--surface);
 			}
 		',
 	)
@@ -42,12 +42,12 @@ register_block_style(
 		'inline_style' => '
 			div.is-style-' . SWT_PFX . '-button-inverse .wp-element-button {
                 color: #1F2937;
-				background-color: #fff;
+				background: #fff;
 			}
 
             div.is-style-' . SWT_PFX . '-button-inverse .wp-element-button:hover {
                 color: #1F2937;
-				background-color: #fff;
+				background: #fff;
 			}
 		',
 	)

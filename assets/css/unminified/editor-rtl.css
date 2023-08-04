@@ -114,20 +114,20 @@
 --------------------------------------------------------------*/
 div.is-style-swt-button-secondary .wp-element-button {
   color: var(--wp--preset--color--body);
-  background-color: var(--wp--preset--color--surface);
+  background: var(--wp--preset--color--surface);
 }
 div.is-style-swt-button-secondary .wp-element-button:hover {
   color: var(--wp--preset--color--body);
-  background-color: var(--wp--preset--color--surface);
+  background: var(--wp--preset--color--surface);
 }
 
 div.is-style-swt-button-inverse .wp-element-button { /* stylelint-disable-line no-descending-specificity */
   color: #1f2937;
-  background-color: #fff;
+  background: #fff;
 }
 div.is-style-swt-button-inverse .wp-element-button:hover {
   color: #1f2937;
-  background-color: #fff;
+  background: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -274,21 +274,6 @@ div.is-style-swt-button-inverse .wp-element-button:hover {
 Remove all above code after wordpress fixes issue with
 register_block_style not applying styles in the editor.
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Editor dynamic duotone support
---------------------------------------------------------------*/
-.swt-duotone-primary {
-  filter: var(--wp--preset--duotone--primary);
-}
-
-.swt-duotone-secondary {
-  filter: var(--wp--preset--duotone--secondary);
-}
-
-.swt-duotone-tertiary {
-  filter: var(--wp--preset--duotone--tertiary);
-}
-
 /*--------------------------------------------------------------
 # Post / Page hide and show title
 --------------------------------------------------------------*/

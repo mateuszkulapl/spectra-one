@@ -44,6 +44,11 @@ function enqueue_frontend_scripts(): void {
 	/* Load Theme Styles*/
 	wp_enqueue_style( SWT_SLUG, $css_uri . 'style' . $file_prefix . '.css', array(), SWT_VER );
 
+	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
+	if ( wp_version_compare( '6.2.99', '<=' ) ) {
+		wp_enqueue_style( SWT_SLUG . '-duotone', $css_uri . 'compatibility/duotone' . $file_prefix . '.css', array(), SWT_VER );
+	}
+
 	wp_enqueue_style( SWT_SLUG . '-gutenberg', $css_uri . 'gutenberg' . $file_prefix . '.css', array(), SWT_VER );
 
 	$swt_inline_css = apply_filters( 'swt_dynamic_theme_css', '' );
@@ -171,6 +176,11 @@ function enqueue_editor_block_styles(): void {
 	add_theme_support( 'wp-block-styles' );
 
 	// Enqueue editor styles.
+	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
+	if ( wp_version_compare( '6.2.99', '<=' ) ) {
+		add_editor_style( $css_uri . 'compatibility/duotone' . $file_prefix . '.css' );
+	}
+
 	add_editor_style( $css_uri . 'editor' . $file_prefix . '.css' );
 
 	add_editor_style( $css_uri . 'gutenberg' . $file_prefix . '.css' );
@@ -208,22 +218,21 @@ add_action( 'after_setup_theme', SWT_NS . 'spectra_one_setup' );
  */
 function pattern_categories(): void {
 
-	$block_pattern_categories = array(
-		'pages'   => array(
-			'label' => __( 'Pages', 'spectra-one' ),
-		),
-		'contact' => array(
-			'label' => __( 'Contact', 'spectra-one' ),
-		),
-		'pricing' => array(
-			'label' => __( 'Pricing', 'spectra-one' ),
-		),
+	register_block_pattern_category(
+		'pages',
+		array( 'label' => esc_html__( 'Pages', 'spectra-one' ) )
 	);
 
-	foreach ( $block_pattern_categories as $name => $properties ) {
-		register_block_pattern_category( $name, $properties );
-	}
+	register_block_pattern_category(
+		'contact',
+		array( 'label' => esc_html__( 'Contact', 'spectra-one' ) )
+	);
+
+	register_block_pattern_category(
+		'pricing',
+		array( 'label' => esc_html__( 'Pricing', 'spectra-one' ) )
+	);
 
 }
 
-add_action( 'after_setup_theme', SWT_NS . 'pattern_categories' );
+add_action( 'init', SWT_NS . 'pattern_categories' );

@@ -17,7 +17,7 @@ $images = [
 
 <!-- wp:group {"backgroundColor":"background","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background-background-color has-background"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide"><!-- wp:image {"id":849,"sizeSlug":"full","linkDestination":"custom","className":"swt-duotone-secondary site-logo-img"} -->
+<div class="wp-block-group alignwide"><!-- wp:image {"id":849,"sizeSlug":"full","linkDestination":"custom","style":{"color":{"duotone":"var:preset|duotone|secondary"}},"className":"swt-duotone-secondary site-logo-img"} -->
 <figure class="wp-block-image size-full swt-duotone-secondary site-logo-img"><a href="<?php echo esc_url( get_home_url() ); ?>">
 <img src="<?php echo esc_url( $images[0] ); ?>" alt="home" class="wp-image-849"/>
 </a></figure>
