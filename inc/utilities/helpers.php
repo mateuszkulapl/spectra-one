@@ -370,3 +370,17 @@ function fetch_svg_icon( string $icon = '', string $class = '', bool $base = tru
 
 	return $output;
 }
+
+/**
+ * Check the WordPress version.
+ *
+ * @since  1.0.4
+ * @param string $version   WordPress version to compare with the current version.
+ * @param mixed  $compare   Comparison value i.e > or < etc.
+ * @return bool|null            True/False based on the  $version and $compare value.
+ */
+function wp_version_compare( $version, $compare ) {
+	global $wp_version;
+	list( $current_version ) = explode( '-', $wp_version );
+	return version_compare( $current_version, $version, $compare );
+}
