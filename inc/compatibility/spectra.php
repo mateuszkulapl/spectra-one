@@ -17,7 +17,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 add_filter( 'wp', SWT_NS . 'spectra_compatibility', 10, 2 );
-add_filter( 'uagb_default_blocks_editor_spacing', SWT_NS . 'spectra_compatibility_editor_spacing', 10, 1 );
+
+// @codingStandardsIgnoreStart
+/**
+ * @psalm-suppress MissingClosureParamType
+ */
+add_filter( 'uagb_default_blocks_editor_spacing', function( $spacing ) {
+	return $spacing > 15 ? $spacing : 15;
+});
+/**
+ * @psalm-suppress MissingClosureParamType
+ */
 
 /**
  * Spectra compatibility
@@ -52,15 +62,4 @@ function spectra_compatibility_inline_css( string $css ): string {
 		$css .= parse_css( $css_output );
 
 		return $css;
-}
-
-/**
- * Spectra editor spacing compatibility.
- *
- * @since 1.0.4
- * @param mixed $spacing Spacing.
- * @return mixed
- */
-function spectra_compatibility_editor_spacing( mixed $spacing ) {
-	return $spacing > 15 ? $spacing : 15;
 }
