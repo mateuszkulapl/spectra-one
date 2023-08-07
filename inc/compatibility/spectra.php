@@ -17,7 +17,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 add_filter( 'wp', SWT_NS . 'spectra_compatibility', 10, 2 );
-
+/** @psalm-suppress UndefinedFunction */ // phpcs:ignore MissingClosureParamType, Generic.Commenting.DocComment.MissingShort -- function coming from spectra plugin. No type passed as it could be int or float
+add_filter('uagb_default_blocks_editor_spacing', function( $spacing ) {
+    return $spacing > 15 ? $spacing : 15;
+});
 
 /**
  * Spectra compatibility
