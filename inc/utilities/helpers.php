@@ -374,7 +374,7 @@ function fetch_svg_icon( string $icon = '', string $class = '', bool $base = tru
 /**
  * Check the WordPress version.
  *
- * @since  x.x.x
+ * @since  1.0.4
  * @param string $version   WordPress version to compare with the current version.
  * @param mixed  $compare   Comparison value i.e > or < etc.
  * @return bool|null            True/False based on the  $version and $compare value.
