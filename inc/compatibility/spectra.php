@@ -61,6 +61,6 @@ function spectra_compatibility_inline_css( string $css ): string {
  * @param mixed $spacing Spacing.
  * @return mixed
  */
-function spectra_compatibility_editor_spacing( mixed $spacing ): mixed {
+function spectra_compatibility_editor_spacing( mixed $spacing ) {
 	return $spacing > 15 ? $spacing : 15;
 }
