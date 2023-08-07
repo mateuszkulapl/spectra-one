@@ -184,8 +184,8 @@ const HeaderCss = createHigherOrderComponent( ( BlockListBlock ) => {
 
 			return (
 				<>
-					{ SWTTransparentHeader && <style>{ transparentHeaderCss }</style> }
 					<BlockListBlock { ...props } className={ `${ props?.className ? `${ props.className } ` : '' }${ SWTTransparentHeader ? 'swt-transparent-header ' : '' }` } />
+					{ SWTTransparentHeader && <style>{ transparentHeaderCss }</style> }
 				</>
 
 			);

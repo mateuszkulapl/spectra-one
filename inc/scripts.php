@@ -184,6 +184,7 @@ function enqueue_editor_block_styles(): void {
 	add_editor_style( $css_uri . 'editor' . $file_prefix . '.css' );
 
 	add_editor_style( $css_uri . 'gutenberg' . $file_prefix . '.css' );
+
 }
 
 add_action( 'after_setup_theme', SWT_NS . 'enqueue_editor_block_styles' );

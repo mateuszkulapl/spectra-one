@@ -1,8 +1,8 @@
 === Spectra One ===
 Contributors: brainstormforce
 Requires at least: 6.1
-Tested up to: 6.2
-Stable tag: 1.0.3
+Tested up to: 6.3
+Stable tag: 1.0.4
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -132,7 +132,9 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 == Changelog ==
 
 = 1.0.4 =
-* Fix: Compatibility with wordpress 6.3
+* Fix: Compatibility with WordPress 6.3
+* Fix: WooCommerce - Quantity input inner spacing.
+* Fix: WooCommerce - Sale badge color when dark style is active.
 
 = 1.0.3 =
 * New: Hero banner patterns.
