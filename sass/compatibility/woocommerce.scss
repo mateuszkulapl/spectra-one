@@ -6,5 +6,6 @@
 }
 
 .woocommerce span.onsale {
-	color: var(--wp--preset--color--body);
+	color: var(--wp--preset--color--background);
+	background-color: var(--wp--preset--color--primary);
 }
