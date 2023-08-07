@@ -482,3 +482,11 @@ register_block_style not applying styles in the editor.
 		@include swt-hide-common;
 	}
 }
+
+/*--------------------------------------------------------------
+# Remove margin for the first block in the editor
+--------------------------------------------------------------*/
+
+.editor-styles-wrapper :where(.wp-site-blocks) > :first-child:first-child {
+	margin-block-start: 0;
+}
