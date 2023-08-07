@@ -133,6 +133,7 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 
 = 1.0.4 =
 * Fix: Compatibility with wordpress 6.3
+* Fix: WooCommerce quantity padding issue.
 
 = 1.0.3 =
 * New: Hero banner patterns.
