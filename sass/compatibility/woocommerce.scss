@@ -4,3 +4,7 @@
 .woocommerce-js .quantity input[type="number"] {
 	padding: 0.5em 0.1em;
 }
+
+.woocommerce span.onsale {
+	color: var(--wp--preset--color--body);
+}
