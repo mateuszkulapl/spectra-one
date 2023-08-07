@@ -133,8 +133,8 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 
 = 1.0.4 =
 * Fix: Compatibility with WordPress 6.3
-* Fix: WooCommerce - quantity input inner spacing issue.
-* Fix: WooCommerce - sale badge color when dark style is active.
+* Fix: WooCommerce - Quantity input inner spacing.
+* Fix: WooCommerce - Sale badge color when dark style is active.
 
 = 1.0.3 =
 * New: Hero banner patterns.
