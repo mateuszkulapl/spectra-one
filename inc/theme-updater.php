@@ -25,18 +25,23 @@ add_action( 'after_setup_theme', SWT_NS . 'run_function_after_theme_update' );
  * @since x.x.x
  */
 function run_function_after_theme_update():void {
-	list( $current_version ) = explode( '-', wp_get_theme()->get( 'Version' ) );
-	$old_version             = get_option( 'swt_theme_version' );
+	$version = wp_get_theme()->get( 'Version' );
 
-	if ( $old_version !== $current_version && $old_version < $current_version ) {
-		// Run your function here.
-		if ( is_spectra_plugin() ) {
-			$uagb_fonts = new \UAGB_FSE_Fonts_Compatibility();
-			$uagb_fonts->save_google_fonts_to_theme();
+	if ( $version ) {
+		list( $current_version ) = explode( '-', $version );
+		$old_version             = get_option( 'swt_theme_version' );
+	
+		if ( $old_version !== $current_version && $old_version < $current_version ) {
+			// Run your function here.
+			if ( is_spectra_plugin() ) {
+				/** @psalm-suppress UndefinedClass */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- Spectra plugin class called to regenerate fonts.
+				$uagb_fonts = new \UAGB_FSE_Fonts_Compatibility();
+				$uagb_fonts->save_google_fonts_to_theme();
+			}
+	
+			// Update not to run twice.
+			update_option( 'swt_theme_version', $current_version );
 		}
-
-		// Update not to run twice.
-		update_option( 'swt_theme_version', $current_version );
 	}
 }
 
