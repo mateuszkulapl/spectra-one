@@ -28,6 +28,7 @@ function run_function_after_theme_update():void {
 	$version = wp_get_theme()->get( 'Version' );
 
 	if ( $version ) {
+		/** @psalm-suppress PossiblyInvalidArgument */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- $version comes from wordpress function itself.
 		list( $current_version ) = explode( '-', $version );
 		$old_version             = get_option( 'swt_theme_version' );
 	
@@ -36,6 +37,7 @@ function run_function_after_theme_update():void {
 			if ( is_spectra_plugin() ) {
 				/** @psalm-suppress UndefinedClass */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- Spectra plugin class called to regenerate fonts.
 				$uagb_fonts = new \UAGB_FSE_Fonts_Compatibility();
+				/** @psalm-suppress UndefinedClass */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- Class, interface or enum named UAGB_FSE_Fonts_Compatibility does exist inside spectra one plugin.
 				$uagb_fonts->save_google_fonts_to_theme();
 			}
 	
