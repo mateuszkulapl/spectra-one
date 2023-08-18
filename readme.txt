@@ -131,6 +131,9 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 
 == Changelog ==
 
+= 1.0.5 =
+* Fix: Issue with installed fonts disappearing after theme update.
+
 = 1.0.4 =
 * Fix: Compatibility with WordPress 6.3
 * Fix: WooCommerce - Quantity input inner spacing.
