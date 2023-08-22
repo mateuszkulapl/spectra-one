@@ -299,6 +299,18 @@ register_block_style not applying styles in the editor.
   opacity: 0;
   box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
   transition: all 0.2s;
+  /**
+  * 6.3 Compatibility fixes in block editor.
+  */
+}
+.edit-post-visual-editor__post-title-wrapper .title-visibility svg {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 16px;
+  height: 40px;
+  fill: var(--wp-admin-theme-color);
 }
 .edit-post-visual-editor__post-title-wrapper .title-visibility::before {
   width: 100%;
@@ -346,6 +358,19 @@ register_block_style not applying styles in the editor.
 }
 .edit-post-visual-editor__post-title-wrapper.invisible {
   opacity: 0.5;
+}
+
+body.swt-stacked-title-visibility .edit-post-visual-editor__post-title-wrapper {
+  max-width: none;
+  padding: 0 20px;
+}
+body.swt-stacked-title-visibility .edit-post-visual-editor__post-title-wrapper .title-visibility { /* stylelint-disable-line no-descending-specificity */
+  right: unset;
+  top: -41px;
+  height: 40px;
+}
+body.swt-stacked-title-visibility .edit-post-visual-editor__post-title-wrapper .editor-post-title__input {
+  margin: 0 !important;
 }
 
 /*--------------------------------------------------------------

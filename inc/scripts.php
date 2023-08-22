@@ -97,18 +97,24 @@ function enqueue_editor_scripts(): void {
 		$file_prefix .= '-rtl';
 	}
 
-	
-
 	$js    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
 	$asset = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
 	$deps  = $asset['dependencies'];    
 	array_push( $deps, 'updates' );
+
+	$settings_asset = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? require SWT_DIR . 'build/settings.asset.php' : require SWT_DIR . 'assets/js/settings.asset.php';
+	$settings_deps  = $settings_asset['dependencies'];
+	array_push( $settings_deps, 'updates' );
 	
 	wp_enqueue_style( SWT_SLUG . '-gutenberg-editor', $css_uri . 'gutenberg-editor' . $file_prefix . '.css', array(), SWT_VER );
 
 	wp_register_script( SWT_SLUG . '-editor', $js . 'editor.js', $deps, SWT_VER, true );
 
 	wp_enqueue_script( SWT_SLUG . '-editor' );
+
+	if ( isset( $GLOBALS['pagenow'] ) && 'site-editor.php' === $GLOBALS['pagenow'] ) {
+		wp_enqueue_style( SWT_SLUG . '-settings', $js . 'settings.js', $settings_deps, SWT_VER, true );
+	}
 
 	$editor_script_data = localize_editor_script();
 	if ( is_array( $editor_script_data ) ) {
@@ -134,12 +140,13 @@ function localize_editor_script() {
 	return apply_filters(
 		'swt_editor_localize',
 		array(
-			'is_spectra_plugin' => defined( 'UAGB_VER' ),
-			'disable_sections'  => get_disable_section_fields(),
-			'pluginStatus'      => is_spectra_plugin_status(),
-			'pluginSlug'        => 'ultimate-addons-for-gutenberg',
-			'nonce'				=> wp_create_nonce( 'wp_rest' ),
-			'activationUrl'     => esc_url(
+			'is_spectra_plugin'         => defined( 'UAGB_VER' ),
+			'disable_sections'          => get_disable_section_fields(),
+			'pluginStatus'              => is_spectra_plugin_status(),
+			'pluginSlug'                => 'ultimate-addons-for-gutenberg',
+			'nonce'				        => wp_create_nonce( 'wp_rest' ),
+			'swt_wp_version_higher_6_3' => wp_version_compare( '6.2.99', '>' ),
+			'activationUrl'             => esc_url(
 				add_query_arg(
 					array(
 						'plugin_status' => 'all',
