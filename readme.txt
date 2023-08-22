@@ -133,6 +133,8 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 
 = 1.0.5 =
 * Fix: Issue with installed fonts disappearing after theme update.
+* Fix: Site Title not working as expected after wp 6.3
+* Fix: Navigation block breaking on page / post.
 
 = 1.0.4 =
 * Fix: Compatibility with WordPress 6.3
