@@ -12,6 +12,7 @@ module.exports = () => {
 			script: './src/script.js',
 			editor: './src/editor.js',
 			welcome_notice: './src/admin/welcome-notice.js',
+			settings: './src/admin/settings.js',
 		},
 
 		plugins: [ ...defaultConfig.plugins ],
