@@ -131,6 +131,10 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 
 == Changelog ==
 
+= 1.0.5 =
+- Fix: Site Title not working as expected after wp 6.3
+- Fix: Navigation block breaking on page / post.
+
 = 1.0.4 =
 * Fix: Compatibility with WordPress 6.3
 * Fix: WooCommerce - Quantity input inner spacing.
