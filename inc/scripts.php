@@ -113,7 +113,8 @@ function enqueue_editor_scripts(): void {
 	wp_enqueue_script( SWT_SLUG . '-editor' );
 
 	if ( isset( $GLOBALS['pagenow'] ) && 'site-editor.php' === $GLOBALS['pagenow'] ) {
-		wp_enqueue_style( SWT_SLUG . '-settings', $js . 'settings.js', $settings_deps, SWT_VER, true );
+		wp_register_script( SWT_SLUG . '-settings', $js . 'settings.js', $settings_deps, SWT_VER, true );
+		wp_enqueue_script( SWT_SLUG . '-settings' );
 	}
 
 	$editor_script_data = localize_editor_script();
@@ -137,6 +138,8 @@ add_action( 'enqueue_block_editor_assets', SWT_NS . 'enqueue_editor_scripts' );
  */
 function localize_editor_script() {
 
+	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
+	$version_compare = wp_version_compare( '6.2.99', '>' );
 	return apply_filters(
 		'swt_editor_localize',
 		array(
@@ -145,7 +148,7 @@ function localize_editor_script() {
 			'pluginStatus'              => is_spectra_plugin_status(),
 			'pluginSlug'                => 'ultimate-addons-for-gutenberg',
 			'nonce'				        => wp_create_nonce( 'wp_rest' ),
-			'swt_wp_version_higher_6_3' => wp_version_compare( '6.2.99', '>' ),
+			'swt_wp_version_higher_6_3' => $version_compare,
 			'activationUrl'             => esc_url(
 				add_query_arg(
 					array(
