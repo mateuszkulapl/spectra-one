@@ -40,6 +40,16 @@ function is_spectra_plugin(): bool {
 }
 
 /**
+ * Is custom font plugin is enabled / available
+ *
+ * @since 1.0.5
+ * @return bool
+ */
+function is_custom_fonts_plugin(): bool {
+	return defined( 'BSF_CUSTOM_FONTS_VER' ) ? true : false;
+}
+
+/**
  * RTL For Dynamic / Inline css
  *
  * @since 0.0.1
