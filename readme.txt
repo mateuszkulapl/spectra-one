@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 6.3
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -132,8 +132,9 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 == Changelog ==
 
 = 1.0.5 =
-- Fix: Site Title not working as expected after wp 6.3
-- Fix: Navigation block breaking on page / post.
+* Fix: Issue with installed fonts disappearing after theme update.
+* Fix: Site Title not working as expected after wp 6.3
+* Fix: Navigation block breaking on page / post.
 
 = 1.0.4 =
 * Fix: Compatibility with WordPress 6.3
