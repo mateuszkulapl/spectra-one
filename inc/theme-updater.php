@@ -48,16 +48,16 @@ function run_function_after_theme_update():void {
 				$uagb_fonts->save_google_fonts_to_theme();
 			}
 
-			if ( is_custom_fonts_plugin() ) {
+			// if ( is_custom_fonts_plugin() ) {
 
-				$all_fonts = \Bsf_Custom_Fonts_Render::get_instance()->get_existing_font_posts();
+			// 	$all_fonts = \Bsf_Custom_Fonts_Render::get_instance()->get_existing_font_posts();
 
-				if ( empty( $all_fonts ) || ! is_array( $all_fonts ) ) {
-					return;
-				}
+			// 	if ( empty( $all_fonts ) || ! is_array( $all_fonts ) ) {
+			// 		return;
+			// 	}
 
-				bcf_google_fonts_compatibility()->update_fse_theme_json();
-			}
+			// 	bcf_google_fonts_compatibility()->update_fse_theme_json();
+			// }
 	
 			// Update not to run twice.
 			update_option( 'swt_theme_version', $current_version );
