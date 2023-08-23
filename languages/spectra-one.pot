@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Spectra One 1.0.4\n"
+"Project-Id-Version: Spectra One 1.0.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/spectra-one\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-08-07T11:20:23+02:00\n"
+"POT-Creation-Date: 2023-08-22T14:23:08+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: spectra-one\n"
@@ -124,11 +124,11 @@ msgstr ""
 msgid "Disable Footer"
 msgstr ""
 
-#: inc/scripts.php:224
+#: inc/scripts.php:234
 msgid "Pages"
 msgstr ""
 
-#: inc/scripts.php:229
+#: inc/scripts.php:239
 #: patterns/footer-2.php:27
 #: patterns/footer-3.php:26
 #: patterns/footer-5.php:27
@@ -141,7 +141,7 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: inc/scripts.php:234
+#: inc/scripts.php:244
 #: patterns/pricing-2.php:20
 #: patterns/pricing-3.php:22
 #: patterns/pricing-4.php:20
@@ -151,7 +151,7 @@ msgstr ""
 msgid "Pricing"
 msgstr ""
 
-#: inc/utilities/helpers.php:257
+#: inc/utilities/helpers.php:267
 msgid " Icon"
 msgstr ""
 
@@ -1443,117 +1443,117 @@ msgid "Three column featured"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:202
+#: build/editor.js:44
 #: src/block-extensions/header.js:45
-#: build/editor.js:160
+#: build/editor.js:45
 msgid "Enable Sticky Header"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:203
+#: build/editor.js:45
 #: src/block-extensions/header.js:48
-#: build/editor.js:163
+#: build/editor.js:48
 msgid "Transparent header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:211
+#: build/editor.js:53
 #: src/block-extensions/header.js:71
-#: build/editor.js:186
+#: build/editor.js:71
 msgid "Enable Transparent Header"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:212
+#: build/editor.js:54
 #: src/block-extensions/header.js:74
-#: build/editor.js:189
+#: build/editor.js:74
 msgid "Sticky header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:648
+#: build/editor.js:496
 #: src/components/install-plugin-notice.js:102
-#: build/editor.js:624
+#: build/editor.js:509
 msgid "Spectra plugin"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:650
+#: build/editor.js:498
 #: src/components/install-plugin-notice.js:106
-#: build/editor.js:628
+#: build/editor.js:513
 msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:861
+#: build/editor.js:769
 #: src/extensions/panel/components.js:29
-#: build/editor.js:841
+#: build/editor.js:771
 msgid "Disable Elements"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:865
+#: build/editor.js:773
 #: src/extensions/panel/components.js:38
-#: build/editor.js:850
+#: build/editor.js:780
 msgid "Header Settings"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:915
-#: build/editor.js:919
+#: build/editor.js:824
+#: build/editor.js:828
 #: src/extensions/panel/sidebar.js:19
 #: src/extensions/panel/sidebar.js:27
-#: build/editor.js:888
-#: build/editor.js:896
+#: build/editor.js:818
+#: build/editor.js:826
 msgid "Spectra Page Settings"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:363
+#: build/editor.js:207
 #: src/block-extensions/responsive.js:39
-#: build/editor.js:364
+#: build/editor.js:249
 msgid "Hide Desktop"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:369
+#: build/editor.js:213
 #: src/block-extensions/responsive.js:54
-#: build/editor.js:379
+#: build/editor.js:264
 msgid "Hide Tablet"
 msgstr ""
 
 #: assets/js/editor.js:1
-#: build/editor.js:375
+#: build/editor.js:219
 #: src/block-extensions/responsive.js:65
-#: build/editor.js:390
+#: build/editor.js:275
 msgid "Hide Mobile"
 msgstr ""
 
-#: assets/js/editor.js:1
-#: build/editor.js:143
+#: assets/js/settings.js:1
+#: build/settings.js:322
 #: src/admin/settings.js:67
-#: build/editor.js:99
+#: build/settings.js:178
 msgid "Spectra Global Settings"
 msgstr ""
 
-#: assets/js/editor.js:1
-#: build/editor.js:145
+#: assets/js/settings.js:1
+#: build/settings.js:324
 #: src/admin/settings.js:70
-#: build/editor.js:102
+#: build/settings.js:181
 msgid "Global features"
 msgstr ""
 
-#: assets/js/editor.js:1
-#: build/editor.js:153
+#: assets/js/settings.js:1
+#: build/settings.js:332
 #: src/admin/settings.js:74
-#: build/editor.js:106
+#: build/settings.js:185
 msgid "Scroll to top updated"
 msgstr ""
 
-#: assets/js/editor.js:1
-#: build/editor.js:154
+#: assets/js/settings.js:1
+#: build/settings.js:333
 #: src/admin/settings.js:74
-#: build/editor.js:106
+#: build/settings.js:185
 msgid "Scroll To Top"
 msgstr ""
 
