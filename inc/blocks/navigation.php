@@ -32,12 +32,13 @@ function render_navigation_block( string $block_content, array $block ): string 
 
 	if ( isset( $block['blockName'] ) && 'core/navigation' === $block['blockName'] ) {
 
-		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'navigation_inline_css' );
-
 		/**
 		* Remove this once WordPress fixes this issue in 6.3 and above, Where it add the same classes to sub navigation which causes color issue.
 		* Start
 		*/
+
+		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'navigation_inline_css' );
+
 		$dom     = dom( $block_content );
 		$element = get_dom_element( 'ul', $dom );
 
