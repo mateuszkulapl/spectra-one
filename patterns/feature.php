@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Image with feature list
+ * Title: Image with feature list and heading
  * Slug: spectra-one/feature
  * Categories: featured
  * Keywords: image with feature list
