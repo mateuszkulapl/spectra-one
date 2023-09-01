@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-const SWT_VER  = '1.0.3';
+const SWT_VER  = '1.0.5';
 const SWT_SLUG = 'spectra-one';
 const SWT_NAME = 'Spectra One';
 const SWT_PFX  = 'swt';
@@ -29,6 +29,7 @@ const SWT_DIR  = __DIR__ . SWT_DS;
  */
 require_once SWT_DIR . 'inc/utilities/all.php';
 require_once SWT_DIR . 'inc/theme-options.php';
+require_once SWT_DIR . 'inc/theme-updater.php';
 require_once SWT_DIR . 'inc/scripts.php';
 require_once SWT_DIR . 'inc/blocks/all.php';
 require_once SWT_DIR . 'inc/compatibility/all.php';

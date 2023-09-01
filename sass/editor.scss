@@ -154,11 +154,11 @@ div.is-style-swt-button-secondary {
 
 	.wp-element-button {
 		color: var(--wp--preset--color--body);
-		background-color: var(--wp--preset--color--surface);
+		background: var(--wp--preset--color--surface);
 
 		&:hover {
 			color: var(--wp--preset--color--body);
-			background-color: var(--wp--preset--color--surface);
+			background: var(--wp--preset--color--surface);
 		}
 	}
 }
@@ -167,11 +167,11 @@ div.is-style-swt-button-inverse {
 
 	.wp-element-button { /* stylelint-disable-line no-descending-specificity */
 		color: #1f2937;
-		background-color: #fff;
+		background: #fff;
 
 		&:hover {
 			color: #1f2937;
-			background-color: #fff;
+			background: #fff;
 		}
 	}
 }
@@ -355,24 +355,9 @@ register_block_style not applying styles in the editor.
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Editor dynamic duotone support
---------------------------------------------------------------*/
-
-.swt-duotone-primary {
-	filter: var(--wp--preset--duotone--primary);
-}
-
-.swt-duotone-secondary {
-	filter: var(--wp--preset--duotone--secondary);
-}
-
-.swt-duotone-tertiary {
-	filter: var(--wp--preset--duotone--tertiary);
-}
-
-/*--------------------------------------------------------------
 # Post / Page hide and show title
 --------------------------------------------------------------*/
+
 .edit-post-visual-editor__post-title-wrapper {
 	position: relative;
 	max-width: min(calc(100dvw - var(--wp--preset--spacing--large, 2rem)), 764px);
@@ -395,6 +380,19 @@ register_block_style not applying styles in the editor.
 		opacity: 0;
 		box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
 		transition: all 0.2s;
+
+		/**
+		* 6.3 Compatibility fixes in block editor.
+		*/
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 16px;
+			height: 40px;
+			fill: var(--wp-admin-theme-color);
+		}
 	}
 
 	.title-visibility::before {
@@ -462,6 +460,24 @@ register_block_style not applying styles in the editor.
 
 	&.invisible {
 		opacity: 0.5;
+	}
+}
+
+body.swt-stacked-title-visibility {
+
+	.edit-post-visual-editor__post-title-wrapper {
+		max-width: none;
+		padding: 0 20px;
+
+		.title-visibility { /* stylelint-disable-line no-descending-specificity */
+			left: unset;
+			top: -41px;
+			height: 40px;
+		}
+
+		.editor-post-title__input {
+			margin: 0 !important;
+		}
 	}
 }
 

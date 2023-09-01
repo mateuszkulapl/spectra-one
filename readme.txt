@@ -1,8 +1,8 @@
 === Spectra One ===
 Contributors: brainstormforce
 Requires at least: 6.1
-Tested up to: 6.2
-Stable tag: 1.0.3
+Tested up to: 6.3
+Stable tag: 1.0.5
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -130,6 +130,20 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 © Copyright Spectra One 2023, Spectra.
 
 == Changelog ==
+
+= 1.0.6 =
+* Fix: Navigation sub menu alignment issue.
+* Fix: Navigation menu adds the same color to sub menu which is added to main menu after WordPress 6.3
+
+= 1.0.5 =
+* Fix: Issue with installed fonts disappearing after theme update.
+* Fix: Site Title not working as expected after WordPress 6.3
+* Fix: Navigation block breaking on page / post.
+
+= 1.0.4 =
+* Fix: Compatibility with WordPress 6.3
+* Fix: WooCommerce - Quantity input inner spacing.
+* Fix: WooCommerce - Sale badge color when dark style is active.
 
 = 1.0.3 =
 * New: Hero banner patterns.

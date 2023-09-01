@@ -40,6 +40,16 @@ function is_spectra_plugin(): bool {
 }
 
 /**
+ * Is custom font plugin is enabled / available
+ *
+ * @since 1.0.5
+ * @return bool
+ */
+function is_custom_fonts_plugin(): bool {
+	return defined( 'BSF_CUSTOM_FONTS_VER' ) ? true : false;
+}
+
+/**
  * RTL For Dynamic / Inline css
  *
  * @since 0.0.1
@@ -369,4 +379,18 @@ function fetch_svg_icon( string $icon = '', string $class = '', bool $base = tru
 	$output .= '</span>';
 
 	return $output;
+}
+
+/**
+ * Check the WordPress version.
+ *
+ * @since  1.0.4
+ * @param string $version   WordPress version to compare with the current version.
+ * @param mixed  $compare   Comparison value i.e > or < etc.
+ * @return bool|null            True/False based on the  $version and $compare value.
+ */
+function wp_version_compare( $version, $compare ) {
+	global $wp_version;
+	list( $current_version ) = explode( '-', $wp_version );
+	return version_compare( $current_version, $version, $compare );
 }

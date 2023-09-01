@@ -1,0 +1,14 @@
+/*----------------------------------------------------------------
+# Editor dynamic duotone support compatibility for 6.2 and below
+------------------------------------------------------------------*/
+.swt-duotone-primary {
+  filter: var(--wp--preset--duotone--primary);
+}
+
+.swt-duotone-secondary {
+  filter: var(--wp--preset--duotone--secondary);
+}
+
+.swt-duotone-tertiary {
+  filter: var(--wp--preset--duotone--tertiary);
+}
