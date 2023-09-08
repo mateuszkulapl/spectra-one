@@ -25,8 +25,8 @@ function onLoad() {
 	wp.data.subscribe( function () {
 		setTimeout( function () {
 			// Title visibility with new editor compatibility update.
-			titleBlock = document.querySelector( '.edit-post-visual-editor__post-title-wrapper' );
-			editorDocument = document;
+			let titleBlock = document.querySelector( '.edit-post-visual-editor__post-title-wrapper' );
+			let editorDocument = document;
 
 			swtSiteTitle();
 
@@ -103,7 +103,6 @@ function onLoad() {
 }
 
 function swtSiteTitle() {
-
 	let titleVisibility = document.querySelector( '.title-visibility' ),
 		titleBlock = document.querySelector( '.edit-post-visual-editor__post-title-wrapper' ),
 		editorDocument = document;

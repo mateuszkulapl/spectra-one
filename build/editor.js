@@ -596,8 +596,8 @@ function onLoad() {
   wp.data.subscribe(function () {
     setTimeout(function () {
       // Title visibility with new editor compatibility update.
-      titleBlock = document.querySelector('.edit-post-visual-editor__post-title-wrapper');
-      editorDocument = document;
+      let titleBlock = document.querySelector('.edit-post-visual-editor__post-title-wrapper');
+      let editorDocument = document;
       swtSiteTitle();
       if (spectraOne.swt_wp_version_higher_6_3) {
         const desktopPreview = document.getElementsByClassName('is-desktop-preview'),
