@@ -134,6 +134,7 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 = 1.0.6 =
 * Fix: Navigation sub menu alignment issue.
 * Fix: Navigation menu adds the same color to sub menu which is added to main menu after WordPress 6.3
+* Fix: Site Title not working as expected on Firefox.
 
 = 1.0.5 =
 * Fix: Issue with installed fonts disappearing after theme update.
