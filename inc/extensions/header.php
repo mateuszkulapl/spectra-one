@@ -150,7 +150,7 @@ function header_sticky_inline_js( string $js ): string {
 		const body = document.querySelector( 'body' );
 		if( header ) {
 
-			const height = header.offsetHeight;
+			const height = header.getBoundingClientRect().height;
 
 			if( height ) {
 				body.style.paddingTop = parseFloat( height ) + 'px';
